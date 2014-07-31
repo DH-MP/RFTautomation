@@ -1,0 +1,93 @@
+<NewDataSet>
+  <Table>
+    <id>206</id>
+    <jobid>cn=archive agent_neptune,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-24 11:21:46</jobdatetime>
+    <logtimestamp>2012-10-24 11:22:32</logtimestamp>
+    <account>milena@po1@dom1</account>
+    <errorsource />
+    <errordescription>found error when extracting attachments...:an error occurred in allocating memory.  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>205</id>
+    <jobid>cn=archive agent_neptune,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-24 11:21:46</jobdatetime>
+    <logtimestamp>2012-10-24 11:22:31</logtimestamp>
+    <account>milena@po1@dom1</account>
+    <errorsource />
+    <errordescription>found error when extracting attachments...:an error occurred in allocating memory.  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>204</id>
+    <jobid>cn=archive agent_neptune,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-24 11:21:46</jobdatetime>
+    <logtimestamp>2012-10-24 11:22:31</logtimestamp>
+    <account>milena@po1@dom1</account>
+    <errorsource />
+    <errordescription>found error when extracting attachments...:an error occurred in allocating memory.  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>203</id>
+    <jobid>cn=archive agent_neptune,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-24 11:21:46</jobdatetime>
+    <logtimestamp>2012-10-24 11:22:30</logtimestamp>
+    <account>milena@po1@dom1</account>
+    <errorsource />
+    <errordescription>found error when extracting attachments...:an error occurred in allocating memory.  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>202</id>
+    <jobid>cn=archive agent_neptune,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-24 11:21:46</jobdatetime>
+    <logtimestamp>2012-10-24 11:22:30</logtimestamp>
+    <account>milena@po1@dom1</account>
+    <errorsource />
+    <errordescription>found error when extracting attachments...:an error occurred in allocating memory.  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>201</id>
+    <jobid>cn=archive agent_neptune,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-24 11:21:46</jobdatetime>
+    <logtimestamp>2012-10-24 11:22:28</logtimestamp>
+    <account>milena@po1@dom1</account>
+    <errorsource />
+    <errordescription>found error when extracting attachments...:an error occurred in allocating memory.  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>200</id>
+    <jobid>cn=archive agent_neptune,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-24 11:21:46</jobdatetime>
+    <logtimestamp>2012-10-24 11:22:27</logtimestamp>
+    <account>milena@po1@dom1</account>
+    <errorsource />
+    <errordescription>found error when extracting attachments...:an error occurred in allocating memory.  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+</NewDataSet>

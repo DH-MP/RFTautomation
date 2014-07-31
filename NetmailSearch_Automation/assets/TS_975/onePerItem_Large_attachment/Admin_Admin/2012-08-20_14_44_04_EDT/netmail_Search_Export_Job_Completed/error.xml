@@ -1,0 +1,279 @@
+<NewDataSet>
+  <Table>
+    <id>24</id>
+    <jobid>cn=export agent_netmail search export,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-20 13:07:59</jobdatetime>
+    <logtimestamp>2012-08-20 13:08:23</logtimestamp>
+    <account>berkley.po1.dom1</account>
+    <errorsource>java.lang.exception: exception while loading item. exception: error when calling &lt;readall&gt; function. error code: 3
+. ca: accounts\\berkley big@berkley.po1.dom1\\xml\\mailbox\\new folder\\501aa2a8.dom1.po1.100.1647069.1.58.1.xml</errorsource>
+    <errordescription>error exporting mail  error preparing for pst</errordescription>
+    <errorstacktrace>com.ma.export.storage.filestorageexception: error preparing for pst
+	at com.ma.export.storage.pststorage.addmailitem(pststorage.java:29)
+	at com.ma.export.advancedexporter.processitem(advancedexporter.java:670)
+	at com.ma.export.advancedexporter.update(advancedexporter.java:888)
+	at com.novell.webaccess.providers.gwxmlv.gwasessiondata.processitem(gwasessiondata.java:2257)
+	at com.novell.webaccess.providers.gwxmlv.gwasessiondata.edisc_search_getitemlist(gwasessiondata.java:2078)
+	at com.novell.webaccess.providers.gwxmlv.gwasessiondata.edisc_callback(gwasessiondata.java:1050)
+	at com.novell.webaccess.providers.gwxmlv.xgwxmlimpl.edisc_service(xgwxmlimpl.java:537)
+	at com.ma.export.advancedexporter.processtab(advancedexporter.java:632)
+	at com.ma.export.advancedexporter.processallmessages(advancedexporter.java:587)
+	at com.ma.export.advancedexporter.executeexport(advancedexporter.java:564)
+	at com.ma.export.advancedexporter.run(advancedexporter.java:175)
+	at com.ma.export.advancedexporter.main(advancedexporter.java:861)
+caused by: java.lang.exception: exception while loading item. exception: error when calling &lt;readall&gt; function. error code: 3
+. ca: accounts\\berkley big@berkley.po1.dom1\\xml\\mailbox\\new folder\\501aa2a8.dom1.po1.100.1647069.1.58.1.xml
+	at com.novell.webaccess.providers.gwxmlv.gwaitem.item_export(gwaitem.java:2550)
+	at com.novell.webaccess.providers.gwxmlv.mailitem.prepareforpst(mailitem.java:74)
+	at com.ma.export.storage.pststorage.addmailitem(pststorage.java:27)
+	... 11 more
+</errorstacktrace>
+    <messageid>501aa2a8.dom1.po1.100.1647069.1.58.1</messageid>
+    <messagesubject />
+    <messagecreationdate>1969-12-31 19:00:00</messagecreationdate>
+  </Table>
+  <Table>
+    <id>31</id>
+    <jobid>cn=export agent_netmail search export,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-20 13:07:59</jobdatetime>
+    <logtimestamp>2012-08-20 13:08:23</logtimestamp>
+    <account>berkley.po1.dom1</account>
+    <errorsource>java.lang.exception: exception while loading item. exception: error when calling &lt;readall&gt; function. error code: 2
+. ca: accounts\\berkley big@berkley.po1.dom1\\xml\\mailbox\\501aa217.dom1.po1.100.1647069.1.51.1.xml</errorsource>
+    <errordescription>error exporting mail  error preparing for pst</errordescription>
+    <errorstacktrace>com.ma.export.storage.filestorageexception: error preparing for pst
+	at com.ma.export.storage.pststorage.addmailitem(pststorage.java:29)
+	at com.ma.export.advancedexporter.processitem(advancedexporter.java:670)
+	at com.ma.export.advancedexporter.update(advancedexporter.java:888)
+	at com.novell.webaccess.providers.gwxmlv.gwasessiondata.processitem(gwasessiondata.java:2257)
+	at com.novell.webaccess.providers.gwxmlv.gwasessiondata.edisc_search_getitemlist(gwasessiondata.java:2078)
+	at com.novell.webaccess.providers.gwxmlv.gwasessiondata.edisc_callback(gwasessiondata.java:1050)
+	at com.novell.webaccess.providers.gwxmlv.xgwxmlimpl.edisc_service(xgwxmlimpl.java:537)
+	at com.ma.export.advancedexporter.processtab(advancedexporter.java:632)
+	at com.ma.export.advancedexporter.processallmessages(advancedexporter.java:587)
+	at com.ma.export.advancedexporter.executeexport(advancedexporter.java:564)
+	at com.ma.export.advancedexporter.run(advancedexporter.java:175)
+	at com.ma.export.advancedexporter.main(advancedexporter.java:861)
+caused by: java.lang.exception: exception while loading item. exception: error when calling &lt;readall&gt; function. error code: 2
+. ca: accounts\\berkley big@berkley.po1.dom1\\xml\\mailbox\\501aa217.dom1.po1.100.1647069.1.51.1.xml
+	at com.novell.webaccess.providers.gwxmlv.gwaitem.item_export(gwaitem.java:2550)
+	at com.novell.webaccess.providers.gwxmlv.mailitem.prepareforpst(mailitem.java:74)
+	at com.ma.export.storage.pststorage.addmailitem(pststorage.java:27)
+	... 11 more
+</errorstacktrace>
+    <messageid>501aa217.dom1.po1.100.1647069.1.51.1</messageid>
+    <messagesubject />
+    <messagecreationdate>1969-12-31 19:00:00</messagecreationdate>
+  </Table>
+  <Table>
+    <id>30</id>
+    <jobid>cn=export agent_netmail search export,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-20 13:07:59</jobdatetime>
+    <logtimestamp>2012-08-20 13:08:23</logtimestamp>
+    <account>berkley.po1.dom1</account>
+    <errorsource>java.lang.exception: exception while loading item. exception: error when calling &lt;readall&gt; function. error code: 3
+. ca: accounts\\berkley big@berkley.po1.dom1\\xml\\mailbox\\new folder\\501aa217.dom1.po1.100.1647069.1.52.1.xml</errorsource>
+    <errordescription>error exporting mail  error preparing for pst</errordescription>
+    <errorstacktrace>com.ma.export.storage.filestorageexception: error preparing for pst
+	at com.ma.export.storage.pststorage.addmailitem(pststorage.java:29)
+	at com.ma.export.advancedexporter.processitem(advancedexporter.java:670)
+	at com.ma.export.advancedexporter.update(advancedexporter.java:888)
+	at com.novell.webaccess.providers.gwxmlv.gwasessiondata.processitem(gwasessiondata.java:2257)
+	at com.novell.webaccess.providers.gwxmlv.gwasessiondata.edisc_search_getitemlist(gwasessiondata.java:2078)
+	at com.novell.webaccess.providers.gwxmlv.gwasessiondata.edisc_callback(gwasessiondata.java:1050)
+	at com.novell.webaccess.providers.gwxmlv.xgwxmlimpl.edisc_service(xgwxmlimpl.java:537)
+	at com.ma.export.advancedexporter.processtab(advancedexporter.java:632)
+	at com.ma.export.advancedexporter.processallmessages(advancedexporter.java:587)
+	at com.ma.export.advancedexporter.executeexport(advancedexporter.java:564)
+	at com.ma.export.advancedexporter.run(advancedexporter.java:175)
+	at com.ma.export.advancedexporter.main(advancedexporter.java:861)
+caused by: java.lang.exception: exception while loading item. exception: error when calling &lt;readall&gt; function. error code: 3
+. ca: accounts\\berkley big@berkley.po1.dom1\\xml\\mailbox\\new folder\\501aa217.dom1.po1.100.1647069.1.52.1.xml
+	at com.novell.webaccess.providers.gwxmlv.gwaitem.item_export(gwaitem.java:2550)
+	at com.novell.webaccess.providers.gwxmlv.mailitem.prepareforpst(mailitem.java:74)
+	at com.ma.export.storage.pststorage.addmailitem(pststorage.java:27)
+	... 11 more
+</errorstacktrace>
+    <messageid>501aa217.dom1.po1.100.1647069.1.52.1</messageid>
+    <messagesubject />
+    <messagecreationdate>1969-12-31 19:00:00</messagecreationdate>
+  </Table>
+  <Table>
+    <id>29</id>
+    <jobid>cn=export agent_netmail search export,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-20 13:07:59</jobdatetime>
+    <logtimestamp>2012-08-20 13:08:23</logtimestamp>
+    <account>berkley.po1.dom1</account>
+    <errorsource>java.lang.exception: exception while loading item. exception: error when calling &lt;readall&gt; function. error code: 2
+. ca: accounts\\berkley big@berkley.po1.dom1\\xml\\mailbox\\501aa251.dom1.po1.100.1647069.1.53.1.xml</errorsource>
+    <errordescription>error exporting mail  error preparing for pst</errordescription>
+    <errorstacktrace>com.ma.export.storage.filestorageexception: error preparing for pst
+	at com.ma.export.storage.pststorage.addmailitem(pststorage.java:29)
+	at com.ma.export.advancedexporter.processitem(advancedexporter.java:670)
+	at com.ma.export.advancedexporter.update(advancedexporter.java:888)
+	at com.novell.webaccess.providers.gwxmlv.gwasessiondata.processitem(gwasessiondata.java:2257)
+	at com.novell.webaccess.providers.gwxmlv.gwasessiondata.edisc_search_getitemlist(gwasessiondata.java:2078)
+	at com.novell.webaccess.providers.gwxmlv.gwasessiondata.edisc_callback(gwasessiondata.java:1050)
+	at com.novell.webaccess.providers.gwxmlv.xgwxmlimpl.edisc_service(xgwxmlimpl.java:537)
+	at com.ma.export.advancedexporter.processtab(advancedexporter.java:632)
+	at com.ma.export.advancedexporter.processallmessages(advancedexporter.java:587)
+	at com.ma.export.advancedexporter.executeexport(advancedexporter.java:564)
+	at com.ma.export.advancedexporter.run(advancedexporter.java:175)
+	at com.ma.export.advancedexporter.main(advancedexporter.java:861)
+caused by: java.lang.exception: exception while loading item. exception: error when calling &lt;readall&gt; function. error code: 2
+. ca: accounts\\berkley big@berkley.po1.dom1\\xml\\mailbox\\501aa251.dom1.po1.100.1647069.1.53.1.xml
+	at com.novell.webaccess.providers.gwxmlv.gwaitem.item_export(gwaitem.java:2550)
+	at com.novell.webaccess.providers.gwxmlv.mailitem.prepareforpst(mailitem.java:74)
+	at com.ma.export.storage.pststorage.addmailitem(pststorage.java:27)
+	... 11 more
+</errorstacktrace>
+    <messageid>501aa251.dom1.po1.100.1647069.1.53.1</messageid>
+    <messagesubject />
+    <messagecreationdate>1969-12-31 19:00:00</messagecreationdate>
+  </Table>
+  <Table>
+    <id>28</id>
+    <jobid>cn=export agent_netmail search export,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-20 13:07:59</jobdatetime>
+    <logtimestamp>2012-08-20 13:08:23</logtimestamp>
+    <account>berkley.po1.dom1</account>
+    <errorsource>java.lang.exception: exception while loading item. exception: error when calling &lt;readall&gt; function. error code: 3
+. ca: accounts\\berkley big@berkley.po1.dom1\\xml\\mailbox\\new folder\\501aa251.dom1.po1.100.1647069.1.54.1.xml</errorsource>
+    <errordescription>error exporting mail  error preparing for pst</errordescription>
+    <errorstacktrace>com.ma.export.storage.filestorageexception: error preparing for pst
+	at com.ma.export.storage.pststorage.addmailitem(pststorage.java:29)
+	at com.ma.export.advancedexporter.processitem(advancedexporter.java:670)
+	at com.ma.export.advancedexporter.update(advancedexporter.java:888)
+	at com.novell.webaccess.providers.gwxmlv.gwasessiondata.processitem(gwasessiondata.java:2257)
+	at com.novell.webaccess.providers.gwxmlv.gwasessiondata.edisc_search_getitemlist(gwasessiondata.java:2078)
+	at com.novell.webaccess.providers.gwxmlv.gwasessiondata.edisc_callback(gwasessiondata.java:1050)
+	at com.novell.webaccess.providers.gwxmlv.xgwxmlimpl.edisc_service(xgwxmlimpl.java:537)
+	at com.ma.export.advancedexporter.processtab(advancedexporter.java:632)
+	at com.ma.export.advancedexporter.processallmessages(advancedexporter.java:587)
+	at com.ma.export.advancedexporter.executeexport(advancedexporter.java:564)
+	at com.ma.export.advancedexporter.run(advancedexporter.java:175)
+	at com.ma.export.advancedexporter.main(advancedexporter.java:861)
+caused by: java.lang.exception: exception while loading item. exception: error when calling &lt;readall&gt; function. error code: 3
+. ca: accounts\\berkley big@berkley.po1.dom1\\xml\\mailbox\\new folder\\501aa251.dom1.po1.100.1647069.1.54.1.xml
+	at com.novell.webaccess.providers.gwxmlv.gwaitem.item_export(gwaitem.java:2550)
+	at com.novell.webaccess.providers.gwxmlv.mailitem.prepareforpst(mailitem.java:74)
+	at com.ma.export.storage.pststorage.addmailitem(pststorage.java:27)
+	... 11 more
+</errorstacktrace>
+    <messageid>501aa251.dom1.po1.100.1647069.1.54.1</messageid>
+    <messagesubject />
+    <messagecreationdate>1969-12-31 19:00:00</messagecreationdate>
+  </Table>
+  <Table>
+    <id>27</id>
+    <jobid>cn=export agent_netmail search export,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-20 13:07:59</jobdatetime>
+    <logtimestamp>2012-08-20 13:08:23</logtimestamp>
+    <account>berkley.po1.dom1</account>
+    <errorsource>java.lang.exception: exception while loading item. exception: error when calling &lt;readall&gt; function. error code: 2
+. ca: accounts\\berkley big@berkley.po1.dom1\\xml\\mailbox\\501aa26d.dom1.po1.100.1647069.1.55.1.xml</errorsource>
+    <errordescription>error exporting mail  error preparing for pst</errordescription>
+    <errorstacktrace>com.ma.export.storage.filestorageexception: error preparing for pst
+	at com.ma.export.storage.pststorage.addmailitem(pststorage.java:29)
+	at com.ma.export.advancedexporter.processitem(advancedexporter.java:670)
+	at com.ma.export.advancedexporter.update(advancedexporter.java:888)
+	at com.novell.webaccess.providers.gwxmlv.gwasessiondata.processitem(gwasessiondata.java:2257)
+	at com.novell.webaccess.providers.gwxmlv.gwasessiondata.edisc_search_getitemlist(gwasessiondata.java:2078)
+	at com.novell.webaccess.providers.gwxmlv.gwasessiondata.edisc_callback(gwasessiondata.java:1050)
+	at com.novell.webaccess.providers.gwxmlv.xgwxmlimpl.edisc_service(xgwxmlimpl.java:537)
+	at com.ma.export.advancedexporter.processtab(advancedexporter.java:632)
+	at com.ma.export.advancedexporter.processallmessages(advancedexporter.java:587)
+	at com.ma.export.advancedexporter.executeexport(advancedexporter.java:564)
+	at com.ma.export.advancedexporter.run(advancedexporter.java:175)
+	at com.ma.export.advancedexporter.main(advancedexporter.java:861)
+caused by: java.lang.exception: exception while loading item. exception: error when calling &lt;readall&gt; function. error code: 2
+. ca: accounts\\berkley big@berkley.po1.dom1\\xml\\mailbox\\501aa26d.dom1.po1.100.1647069.1.55.1.xml
+	at com.novell.webaccess.providers.gwxmlv.gwaitem.item_export(gwaitem.java:2550)
+	at com.novell.webaccess.providers.gwxmlv.mailitem.prepareforpst(mailitem.java:74)
+	at com.ma.export.storage.pststorage.addmailitem(pststorage.java:27)
+	... 11 more
+</errorstacktrace>
+    <messageid>501aa26d.dom1.po1.100.1647069.1.55.1</messageid>
+    <messagesubject />
+    <messagecreationdate>1969-12-31 19:00:00</messagecreationdate>
+  </Table>
+  <Table>
+    <id>26</id>
+    <jobid>cn=export agent_netmail search export,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-20 13:07:59</jobdatetime>
+    <logtimestamp>2012-08-20 13:08:23</logtimestamp>
+    <account>berkley.po1.dom1</account>
+    <errorsource>java.lang.exception: exception while loading item. exception: error when calling &lt;readall&gt; function. error code: 3
+. ca: accounts\\berkley big@berkley.po1.dom1\\xml\\mailbox\\new folder\\501aa26d.dom1.po1.100.1647069.1.56.1.xml</errorsource>
+    <errordescription>error exporting mail  error preparing for pst</errordescription>
+    <errorstacktrace>com.ma.export.storage.filestorageexception: error preparing for pst
+	at com.ma.export.storage.pststorage.addmailitem(pststorage.java:29)
+	at com.ma.export.advancedexporter.processitem(advancedexporter.java:670)
+	at com.ma.export.advancedexporter.update(advancedexporter.java:888)
+	at com.novell.webaccess.providers.gwxmlv.gwasessiondata.processitem(gwasessiondata.java:2257)
+	at com.novell.webaccess.providers.gwxmlv.gwasessiondata.edisc_search_getitemlist(gwasessiondata.java:2078)
+	at com.novell.webaccess.providers.gwxmlv.gwasessiondata.edisc_callback(gwasessiondata.java:1050)
+	at com.novell.webaccess.providers.gwxmlv.xgwxmlimpl.edisc_service(xgwxmlimpl.java:537)
+	at com.ma.export.advancedexporter.processtab(advancedexporter.java:632)
+	at com.ma.export.advancedexporter.processallmessages(advancedexporter.java:587)
+	at com.ma.export.advancedexporter.executeexport(advancedexporter.java:564)
+	at com.ma.export.advancedexporter.run(advancedexporter.java:175)
+	at com.ma.export.advancedexporter.main(advancedexporter.java:861)
+caused by: java.lang.exception: exception while loading item. exception: error when calling &lt;readall&gt; function. error code: 3
+. ca: accounts\\berkley big@berkley.po1.dom1\\xml\\mailbox\\new folder\\501aa26d.dom1.po1.100.1647069.1.56.1.xml
+	at com.novell.webaccess.providers.gwxmlv.gwaitem.item_export(gwaitem.java:2550)
+	at com.novell.webaccess.providers.gwxmlv.mailitem.prepareforpst(mailitem.java:74)
+	at com.ma.export.storage.pststorage.addmailitem(pststorage.java:27)
+	... 11 more
+</errorstacktrace>
+    <messageid>501aa26d.dom1.po1.100.1647069.1.56.1</messageid>
+    <messagesubject />
+    <messagecreationdate>1969-12-31 19:00:00</messagecreationdate>
+  </Table>
+  <Table>
+    <id>25</id>
+    <jobid>cn=export agent_netmail search export,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-20 13:07:59</jobdatetime>
+    <logtimestamp>2012-08-20 13:08:23</logtimestamp>
+    <account>berkley.po1.dom1</account>
+    <errorsource>java.lang.exception: exception while loading item. exception: error when calling &lt;readall&gt; function. error code: 2
+. ca: accounts\\berkley big@berkley.po1.dom1\\xml\\mailbox\\501aa2a8.dom1.po1.100.1647069.1.57.1.xml</errorsource>
+    <errordescription>error exporting mail  error preparing for pst</errordescription>
+    <errorstacktrace>com.ma.export.storage.filestorageexception: error preparing for pst
+	at com.ma.export.storage.pststorage.addmailitem(pststorage.java:29)
+	at com.ma.export.advancedexporter.processitem(advancedexporter.java:670)
+	at com.ma.export.advancedexporter.update(advancedexporter.java:888)
+	at com.novell.webaccess.providers.gwxmlv.gwasessiondata.processitem(gwasessiondata.java:2257)
+	at com.novell.webaccess.providers.gwxmlv.gwasessiondata.edisc_search_getitemlist(gwasessiondata.java:2078)
+	at com.novell.webaccess.providers.gwxmlv.gwasessiondata.edisc_callback(gwasessiondata.java:1050)
+	at com.novell.webaccess.providers.gwxmlv.xgwxmlimpl.edisc_service(xgwxmlimpl.java:537)
+	at com.ma.export.advancedexporter.processtab(advancedexporter.java:632)
+	at com.ma.export.advancedexporter.processallmessages(advancedexporter.java:587)
+	at com.ma.export.advancedexporter.executeexport(advancedexporter.java:564)
+	at com.ma.export.advancedexporter.run(advancedexporter.java:175)
+	at com.ma.export.advancedexporter.main(advancedexporter.java:861)
+caused by: java.lang.exception: exception while loading item. exception: error when calling &lt;readall&gt; function. error code: 2
+. ca: accounts\\berkley big@berkley.po1.dom1\\xml\\mailbox\\501aa2a8.dom1.po1.100.1647069.1.57.1.xml
+	at com.novell.webaccess.providers.gwxmlv.gwaitem.item_export(gwaitem.java:2550)
+	at com.novell.webaccess.providers.gwxmlv.mailitem.prepareforpst(mailitem.java:74)
+	at com.ma.export.storage.pststorage.addmailitem(pststorage.java:27)
+	... 11 more
+</errorstacktrace>
+    <messageid>501aa2a8.dom1.po1.100.1647069.1.57.1</messageid>
+    <messagesubject />
+    <messagecreationdate>1969-12-31 19:00:00</messagecreationdate>
+  </Table>
+  <Table>
+    <id>32</id>
+    <jobid>cn=export agent_netmail search export,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-20 13:07:59</jobdatetime>
+    <logtimestamp>2012-08-20 13:08:42</logtimestamp>
+    <account>post-processor</account>
+    <errorsource />
+    <errordescription>closeaccount: error closing the account. response: missing session string  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+</NewDataSet>

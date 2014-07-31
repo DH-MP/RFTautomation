@@ -1,0 +1,218 @@
+<NewDataSet>
+  <Table>
+    <id>29</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-06-22 06:24:29</jobdatetime>
+    <logtimestamp>2012-06-22 06:24:56</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>initialize()</logdata>
+  </Table>
+  <Table>
+    <id>30</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-06-22 06:24:29</jobdatetime>
+    <logtimestamp>2012-06-22 06:24:56</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>connected(local): true</logdata>
+  </Table>
+  <Table>
+    <id>31</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-06-22 06:24:29</jobdatetime>
+    <logtimestamp>2012-06-22 06:24:56</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>createldapentry(oldname=cristina orasanu@cristinao.longdom-po1.test domain with 32 char name lo, newname=cristina orasanu@cristinao.po1.dom1): ok</logdata>
+  </Table>
+  <Table>
+    <id>32</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-06-22 06:24:29</jobdatetime>
+    <logtimestamp>2012-06-22 06:24:56</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>startup(): true</logdata>
+  </Table>
+  <Table>
+    <id>33</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-06-22 06:24:29</jobdatetime>
+    <logtimestamp>2012-06-22 06:25:16</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>run()</logdata>
+  </Table>
+  <Table>
+    <id>34</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-06-22 06:24:29</jobdatetime>
+    <logtimestamp>2012-06-22 06:25:17</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>publishmessages(location=local, retention applied=false, retention days=0)</logdata>
+  </Table>
+  <Table>
+    <id>35</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-06-22 06:24:29</jobdatetime>
+    <logtimestamp>2012-06-22 06:25:17</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>connecting to devices...</logdata>
+  </Table>
+  <Table>
+    <id>36</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-06-22 06:24:29</jobdatetime>
+    <logtimestamp>2012-06-22 06:25:17</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>initializing index engine ...</logdata>
+  </Table>
+  <Table>
+    <id>37</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-06-22 06:24:29</jobdatetime>
+    <logtimestamp>2012-06-22 06:25:17</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>initializing index fail list manager...</logdata>
+  </Table>
+  <Table>
+    <id>38</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-06-22 06:24:29</jobdatetime>
+    <logtimestamp>2012-06-22 06:25:17</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>initializing message handler ...</logdata>
+  </Table>
+  <Table>
+    <id>39</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-06-22 06:24:29</jobdatetime>
+    <logtimestamp>2012-06-22 06:25:17</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>initializing archive module ...</logdata>
+  </Table>
+  <Table>
+    <id>40</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-06-22 06:24:29</jobdatetime>
+    <logtimestamp>2012-06-22 06:25:17</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>managing toindex file ...</logdata>
+  </Table>
+  <Table>
+    <id>41</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-06-22 06:24:29</jobdatetime>
+    <logtimestamp>2012-06-22 06:25:17</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>processing the toindex file...</logdata>
+  </Table>
+  <Table>
+    <id>42</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-06-22 06:24:29</jobdatetime>
+    <logtimestamp>2012-06-22 06:25:17</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>processing filters ...</logdata>
+  </Table>
+  <Table>
+    <id>43</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-06-22 06:24:29</jobdatetime>
+    <logtimestamp>2012-06-22 06:25:17</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>submittransaction(tranasync, automaticactions, logerrors)</logdata>
+  </Table>
+  <Table>
+    <id>44</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-06-22 06:24:29</jobdatetime>
+    <logtimestamp>2012-06-22 06:25:18</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>run()</logdata>
+  </Table>
+  <Table>
+    <id>45</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-06-22 06:24:29</jobdatetime>
+    <logtimestamp>2012-06-22 06:25:18</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>publishmessages(location=local, retention applied=false, retention days=0)</logdata>
+  </Table>
+  <Table>
+    <id>46</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-06-22 06:24:29</jobdatetime>
+    <logtimestamp>2012-06-22 06:25:18</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>connecting to devices...</logdata>
+  </Table>
+  <Table>
+    <id>47</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-06-22 06:24:29</jobdatetime>
+    <logtimestamp>2012-06-22 06:25:18</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>initializing index engine ...</logdata>
+  </Table>
+  <Table>
+    <id>48</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-06-22 06:24:29</jobdatetime>
+    <logtimestamp>2012-06-22 06:25:18</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>initializing index fail list manager...</logdata>
+  </Table>
+  <Table>
+    <id>49</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-06-22 06:24:29</jobdatetime>
+    <logtimestamp>2012-06-22 06:25:18</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>initializing message handler ...</logdata>
+  </Table>
+  <Table>
+    <id>50</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-06-22 06:24:29</jobdatetime>
+    <logtimestamp>2012-06-22 06:25:18</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>initializing archive module ...</logdata>
+  </Table>
+  <Table>
+    <id>51</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-06-22 06:24:29</jobdatetime>
+    <logtimestamp>2012-06-22 06:25:18</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>managing toindex file ...</logdata>
+  </Table>
+  <Table>
+    <id>52</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-06-22 06:24:29</jobdatetime>
+    <logtimestamp>2012-06-22 06:25:18</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>processing filters ...</logdata>
+  </Table>
+  <Table>
+    <id>53</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-06-22 06:24:29</jobdatetime>
+    <logtimestamp>2012-06-22 06:25:18</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>submittransaction(tranasync, automaticactions, logerrors)</logdata>
+  </Table>
+  <Table>
+    <id>54</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-06-22 06:24:29</jobdatetime>
+    <logtimestamp>2012-06-22 06:25:19</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>terminate()</logdata>
+  </Table>
+  <Table>
+    <id>55</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-06-22 06:24:29</jobdatetime>
+    <logtimestamp>2012-06-22 06:25:19</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>shutdown()</logdata>
+  </Table>
+</NewDataSet>

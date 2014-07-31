@@ -1,0 +1,15 @@
+<NewDataSet>
+  <Table>
+    <id>79</id>
+    <jobid>cn=system_logpurge,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-05-26 02:00:57</jobdatetime>
+    <logtimestamp>2012-05-26 02:01:10</logtimestamp>
+    <account>post-processor</account>
+    <errorsource />
+    <errordescription>closeaccount: error closing the account. response: missing session string  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+</NewDataSet>

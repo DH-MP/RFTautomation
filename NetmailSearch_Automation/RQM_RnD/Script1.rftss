@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rational.test.ft.visualscript:RFTScript xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.rational.test.ft.visualscript="http:///com/ibm/rational/test/ft/visualscript.ecore" name="Script1" package="RQM_RnD" userName="Administrator" date="Jun 10, 2014" time="6:03:51 PM" sinceDate="2014/06/10" hostName="WinNT Version 6.1  Build 7601 (S)" keywordSteps="">
+  <testElements xsi:type="com.ibm.rational.test.ft.visualscript:ScriptMethod" name="callScript" elementType="ScriptMethod">
+    <argument>
+      <testelement xsi:type="com.ibm.rational.test.ft.visualscript:Value" value="&quot;adminLogin&quot;" elementType="Value" valueType="String" isValueDataDrivable="true"/>
+    </argument>
+  </testElements>
+  <testElements xsi:type="com.ibm.rational.test.ft.visualscript:CustomCode" tag="asd" elementType="CustomCode" originalTag="asd"/>
+</com.ibm.rational.test.ft.visualscript:RFTScript>

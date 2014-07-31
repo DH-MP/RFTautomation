@@ -1,0 +1,28 @@
+<NewDataSet>
+  <Table>
+    <id>4253</id>
+    <jobid>cn=export agent_netmail search export,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-06 09:29:52</jobdatetime>
+    <logtimestamp>2012-12-06 09:31:26</logtimestamp>
+    <account>post-processor</account>
+    <errorsource />
+    <errordescription>error in action id [be75a1fc-c5ec-479e-827a-7dcb43f35dc5], action item type: gwaccountinfo:error in savefields.  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4252</id>
+    <jobid>cn=export agent_netmail search export,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-06 09:29:52</jobdatetime>
+    <logtimestamp>2012-12-06 09:31:26</logtimestamp>
+    <account>post-processor</account>
+    <errorsource />
+    <errordescription>exception found in convert.:error in savefields.  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+</NewDataSet>

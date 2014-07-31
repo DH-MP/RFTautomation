@@ -1,0 +1,55 @@
+<NewDataSet>
+  <Table>
+    <id>200</id>
+    <jobid>cn=system_syncab,ou=jobs,ou=gwopennode(10.10.23.115),o=netmail115</jobid>
+    <jobdatetime>2012-05-21 02:00:23</jobdatetime>
+    <logtimestamp>2012-05-21 02:00:43</logtimestamp>
+    <account>admin</account>
+    <errorsource>m+archive</errorsource>
+    <errordescription>exception has been thrown by the target of an invocation.</errordescription>
+    <errorstacktrace>   at tma.library.jobs.gwsyncabjob.c85295ce5f38e62205e2f297024a79330(addressbook c2568d39d3e14f3ca0e72b0900177b696)</errorstacktrace>
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>199</id>
+    <jobid>cn=system_syncab,ou=jobs,ou=gwopennode(10.10.23.115),o=netmail115</jobid>
+    <jobdatetime>2012-05-21 02:00:23</jobdatetime>
+    <logtimestamp>2012-05-21 02:00:43</logtimestamp>
+    <account>admin</account>
+    <errorsource>m+archive</errorsource>
+    <errordescription>the external map was configured but the dll cannot be instanciated...  exception has been thrown by the target of an invocation.</errordescription>
+    <errorstacktrace>   at tma.library.jobs.usermapbase.greateinstance(string sourcetype, string sourceconfig)
+   at tma.library.jobs.gwsyncabjob.c85295ce5f38e62205e2f297024a79330(addressbook c2568d39d3e14f3ca0e72b0900177b696)</errorstacktrace>
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>198</id>
+    <jobid>cn=system_syncab,ou=jobs,ou=gwopennode(10.10.23.115),o=netmail115</jobid>
+    <jobdatetime>2012-05-21 02:00:23</jobdatetime>
+    <logtimestamp>2012-05-21 02:00:33</logtimestamp>
+    <account>admin</account>
+    <errorsource />
+    <errordescription>closeaccount: error closing the account. response: missing session string  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>201</id>
+    <jobid>cn=system_syncab,ou=jobs,ou=gwopennode(10.10.23.115),o=netmail115</jobid>
+    <jobdatetime>2012-05-21 02:00:23</jobdatetime>
+    <logtimestamp>2012-05-21 02:01:51</logtimestamp>
+    <account>post-processor</account>
+    <errorsource />
+    <errordescription>closeaccount: error closing the account. response: missing session string  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+</NewDataSet>

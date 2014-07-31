@@ -1,0 +1,10 @@
+<NewDataSet>
+  <Table>
+    <id>3968</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-06 10:34:00</jobdatetime>
+    <logtimestamp>2012-12-06 10:34:31</logtimestamp>
+    <account>admin@dom2po1@dom2</account>
+    <logdata>initialize()</logdata>
+  </Table>
+</NewDataSet>

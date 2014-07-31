@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<account xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <name>auto100714170417</name>
+  <email>ProxyAdminTest@auto2k10.com</email>
+  <po>BASE2012</po>
+  <domain>First Organization</domain>
+  <post_office_ip>10.1.30.92</post_office_ip>
+  <post_office_port>1677</post_office_port>
+  <last_retention_date>0</last_retention_date>
+  <userID>auto100714170417</userID>
+  <accountRoot>ProxyAdminTest@auto2k10.com</accountRoot>
+  <type>User</type>
+  <folders />
+</account>

@@ -1,0 +1,133 @@
+<NewDataSet>
+  <Table>
+    <id>4177</id>
+    <jobid>cn=export agent_netmail search export,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 15:03:56</jobdatetime>
+    <logtimestamp>2012-12-05 15:04:17</logtimestamp>
+    <account>berkley.po1.dom1</account>
+    <errorsource>java.lang.exception: exception while loading item. exception: error when calling &lt;readall&gt; function. error code: 2
+. ca: accounts\\berkley big@berkley.po1.dom1\\xml\\mailbox\\501a997a.dom1.po1.100.1647069.1.20.1.xml</errorsource>
+    <errordescription>error exporting mail  exception while exporting item</errordescription>
+    <errorstacktrace>com.ma.export.storage.filestorageexception: exception while exporting item
+	at com.ma.export.storage.searchablexmlstorage.addmailitem(searchablexmlstorage.java:77)
+	at com.ma.export.advancedexporter.processitem(advancedexporter.java:644)
+	at com.ma.export.advancedexporter.update(advancedexporter.java:862)
+	at com.novell.webaccess.providers.gwxmlv.gwasessiondata.processitem(gwasessiondata.java:2303)
+	at com.novell.webaccess.providers.gwxmlv.gwasessiondata.edisc_search_getitemlist(gwasessiondata.java:2175)
+	at com.novell.webaccess.providers.gwxmlv.gwasessiondata.edisc_callback(gwasessiondata.java:1094)
+	at com.novell.webaccess.providers.gwxmlv.xgwxmlimpl.edisc_service(xgwxmlimpl.java:550)
+	at com.ma.export.advancedexporter.processtab(advancedexporter.java:606)
+	at com.ma.export.advancedexporter.processallmessages(advancedexporter.java:561)
+	at com.ma.export.advancedexporter.executeexport(advancedexporter.java:538)
+	at com.ma.export.advancedexporter.run(advancedexporter.java:175)
+	at com.ma.export.advancedexporter.main(advancedexporter.java:835)
+caused by: java.lang.exception: exception while loading item. exception: error when calling &lt;readall&gt; function. error code: 2
+. ca: accounts\\berkley big@berkley.po1.dom1\\xml\\mailbox\\501a997a.dom1.po1.100.1647069.1.20.1.xml
+	at com.novell.webaccess.providers.gwxmlv.gwaitem.item_export(gwaitem.java:2659)
+	at com.novell.webaccess.providers.gwxmlv.mailitem.item_export(mailitem.java:13)
+	at com.novell.webaccess.providers.gwxmlv.gwaitem.item_export(gwaitem.java:2643)
+	at com.novell.webaccess.providers.gwxmlv.mailitem.item_export(mailitem.java:13)
+	at com.ma.export.storage.searchablexmlstorage.addmailitem(searchablexmlstorage.java:65)
+	... 11 more
+</errorstacktrace>
+    <messageid>501a997a.dom1.po1.100.1647069.1.20.1</messageid>
+    <messagesubject>test2</messagesubject>
+    <messagecreationdate>2012-05-12 13:13:50</messagecreationdate>
+  </Table>
+  <Table>
+    <id>4176</id>
+    <jobid>cn=export agent_netmail search export,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 15:03:56</jobdatetime>
+    <logtimestamp>2012-12-05 15:04:17</logtimestamp>
+    <account>berkley.po1.dom1</account>
+    <errorsource>java.lang.exception: exception while loading item. exception: error when calling &lt;readall&gt; function. error code: 2
+. ca: accounts\\berkley big@berkley.po1.dom1\\xml\\mailbox\\502ba061.dom1.po1.100.1647069.1.6c.1.xml</errorsource>
+    <errordescription>error exporting mail  exception while exporting item</errordescription>
+    <errorstacktrace>com.ma.export.storage.filestorageexception: exception while exporting item
+	at com.ma.export.storage.searchablexmlstorage.addmailitem(searchablexmlstorage.java:77)
+	at com.ma.export.advancedexporter.processitem(advancedexporter.java:644)
+	at com.ma.export.advancedexporter.update(advancedexporter.java:862)
+	at com.novell.webaccess.providers.gwxmlv.gwasessiondata.processitem(gwasessiondata.java:2303)
+	at com.novell.webaccess.providers.gwxmlv.gwasessiondata.edisc_search_getitemlist(gwasessiondata.java:2175)
+	at com.novell.webaccess.providers.gwxmlv.gwasessiondata.edisc_callback(gwasessiondata.java:1094)
+	at com.novell.webaccess.providers.gwxmlv.xgwxmlimpl.edisc_service(xgwxmlimpl.java:550)
+	at com.ma.export.advancedexporter.processtab(advancedexporter.java:606)
+	at com.ma.export.advancedexporter.processallmessages(advancedexporter.java:561)
+	at com.ma.export.advancedexporter.executeexport(advancedexporter.java:538)
+	at com.ma.export.advancedexporter.run(advancedexporter.java:175)
+	at com.ma.export.advancedexporter.main(advancedexporter.java:835)
+caused by: java.lang.exception: exception while loading item. exception: error when calling &lt;readall&gt; function. error code: 2
+. ca: accounts\\berkley big@berkley.po1.dom1\\xml\\mailbox\\502ba061.dom1.po1.100.1647069.1.6c.1.xml
+	at com.novell.webaccess.providers.gwxmlv.gwaitem.item_export(gwaitem.java:2659)
+	at com.novell.webaccess.providers.gwxmlv.mailitem.item_export(mailitem.java:13)
+	at com.novell.webaccess.providers.gwxmlv.gwaitem.item_export(gwaitem.java:2643)
+	at com.novell.webaccess.providers.gwxmlv.mailitem.item_export(mailitem.java:13)
+	at com.ma.export.storage.searchablexmlstorage.addmailitem(searchablexmlstorage.java:65)
+	... 11 more
+</errorstacktrace>
+    <messageid>502ba061.dom1.po1.100.1647069.1.6c.1</messageid>
+    <messagesubject>fwd: food prices</messagesubject>
+    <messagecreationdate>2012-08-15 13:13:05</messagecreationdate>
+  </Table>
+  <Table>
+    <id>4175</id>
+    <jobid>cn=export agent_netmail search export,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 15:03:56</jobdatetime>
+    <logtimestamp>2012-12-05 15:04:17</logtimestamp>
+    <account>berkley.po1.dom1</account>
+    <errorsource>java.lang.exception: exception while loading item. exception: error when calling &lt;readall&gt; function. error code: 2
+. ca: accounts\\berkley big@berkley.po1.dom1\\xml\\mailbox\\50335667.dom1.po1.100.1647069.1.7f.1.xml</errorsource>
+    <errordescription>error exporting mail  exception while exporting item</errordescription>
+    <errorstacktrace>com.ma.export.storage.filestorageexception: exception while exporting item
+	at com.ma.export.storage.searchablexmlstorage.addmailitem(searchablexmlstorage.java:77)
+	at com.ma.export.advancedexporter.processitem(advancedexporter.java:644)
+	at com.ma.export.advancedexporter.update(advancedexporter.java:862)
+	at com.novell.webaccess.providers.gwxmlv.gwasessiondata.processitem(gwasessiondata.java:2303)
+	at com.novell.webaccess.providers.gwxmlv.gwasessiondata.edisc_search_getitemlist(gwasessiondata.java:2175)
+	at com.novell.webaccess.providers.gwxmlv.gwasessiondata.edisc_callback(gwasessiondata.java:1094)
+	at com.novell.webaccess.providers.gwxmlv.xgwxmlimpl.edisc_service(xgwxmlimpl.java:550)
+	at com.ma.export.advancedexporter.processtab(advancedexporter.java:606)
+	at com.ma.export.advancedexporter.processallmessages(advancedexporter.java:561)
+	at com.ma.export.advancedexporter.executeexport(advancedexporter.java:538)
+	at com.ma.export.advancedexporter.run(advancedexporter.java:175)
+	at com.ma.export.advancedexporter.main(advancedexporter.java:835)
+caused by: java.lang.exception: exception while loading item. exception: error when calling &lt;readall&gt; function. error code: 2
+. ca: accounts\\berkley big@berkley.po1.dom1\\xml\\mailbox\\50335667.dom1.po1.100.1647069.1.7f.1.xml
+	at com.novell.webaccess.providers.gwxmlv.gwaitem.item_export(gwaitem.java:2659)
+	at com.novell.webaccess.providers.gwxmlv.mailitem.item_export(mailitem.java:13)
+	at com.novell.webaccess.providers.gwxmlv.gwaitem.item_export(gwaitem.java:2643)
+	at com.novell.webaccess.providers.gwxmlv.mailitem.item_export(mailitem.java:13)
+	at com.ma.export.storage.searchablexmlstorage.addmailitem(searchablexmlstorage.java:65)
+	... 11 more
+</errorstacktrace>
+    <messageid>50335667.dom1.po1.100.1647069.1.7f.1</messageid>
+    <messagesubject />
+    <messagecreationdate>2012-08-21 09:35:35</messagecreationdate>
+  </Table>
+  <Table>
+    <id>4179</id>
+    <jobid>cn=export agent_netmail search export,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 15:03:56</jobdatetime>
+    <logtimestamp>2012-12-05 15:05:34</logtimestamp>
+    <account>post-processor</account>
+    <errorsource />
+    <errordescription>error in action id [247d48c3-2f1d-40db-98c0-c646d35f61c4], action item type: gwaccountinfo:error in savefields.  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4178</id>
+    <jobid>cn=export agent_netmail search export,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 15:03:56</jobdatetime>
+    <logtimestamp>2012-12-05 15:05:34</logtimestamp>
+    <account>post-processor</account>
+    <errorsource />
+    <errordescription>exception found in convert.:error in savefields.  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+</NewDataSet>

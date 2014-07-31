@@ -1,0 +1,2490 @@
+<NewDataSet>
+  <Table>
+    <id>474</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:31</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexmessage(c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\mailbox\\4b15387b.dom1.po1.100.16f7739.1.84.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>473</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:31</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing audit ...</logdata>
+  </Table>
+  <Table>
+    <id>472</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:31</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message ...</logdata>
+  </Table>
+  <Table>
+    <id>471</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:29</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message attachments ...</logdata>
+  </Table>
+  <Table>
+    <id>470</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:29</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message : c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\mailbox\\4b15387b.dom1.po1.100.16f7739.1.84.1.xml</logdata>
+  </Table>
+  <Table>
+    <id>469</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:29</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createfield(4b15387b.dom1.po1.100.16f7739.1.84.1, published): ok</logdata>
+  </Table>
+  <Table>
+    <id>468</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:29</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>archive(4b15387b.dom1.po1.100.16f7739.1.84.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>467</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:29</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createaudit(4b15387b.dom1.po1.100.16f7739.1.84.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>466</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:29</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexmessage(c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\mailbox\\4b1518bb.test domain with 32 char name lo.longdom-po1.100.16f7739.1.3c5.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>465</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:29</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing audit ...</logdata>
+  </Table>
+  <Table>
+    <id>464</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:29</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message ...</logdata>
+  </Table>
+  <Table>
+    <id>463</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:29</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message attachments ...</logdata>
+  </Table>
+  <Table>
+    <id>462</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:29</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message : c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\mailbox\\4b1518bb.test domain with 32 char name lo.longdom-po1.100.16f7739.1.3c5.1.xml</logdata>
+  </Table>
+  <Table>
+    <id>461</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:29</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createfield(4b1518bb.test domain with 32 char name lo.longdom-po1.100.16f7739.1.3c5.1, published): ok</logdata>
+  </Table>
+  <Table>
+    <id>460</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:29</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>archive(4b1518bb.test domain with 32 char name lo.longdom-po1.100.16f7739.1.3c5.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>459</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:29</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createaudit(4b1518bb.test domain with 32 char name lo.longdom-po1.100.16f7739.1.3c5.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>458</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:29</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexmessage(c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\mailbox\\4b14ff5f.test domain with 32 char name lo.longdom-po1.100.16f7739.1.3c4.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>457</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:29</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing audit ...</logdata>
+  </Table>
+  <Table>
+    <id>456</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:29</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message ...</logdata>
+  </Table>
+  <Table>
+    <id>455</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:29</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message attachments ...</logdata>
+  </Table>
+  <Table>
+    <id>454</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:29</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message : c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\mailbox\\4b14ff5f.test domain with 32 char name lo.longdom-po1.100.16f7739.1.3c4.1.xml</logdata>
+  </Table>
+  <Table>
+    <id>453</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:29</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createfield(4b14ff5f.test domain with 32 char name lo.longdom-po1.100.16f7739.1.3c4.1, published): ok</logdata>
+  </Table>
+  <Table>
+    <id>452</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:29</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>archive(4b14ff5f.test domain with 32 char name lo.longdom-po1.100.16f7739.1.3c4.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>451</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:29</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createaudit(4b14ff5f.test domain with 32 char name lo.longdom-po1.100.16f7739.1.3c4.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>450</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:28</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexmessage(c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\mailbox\\4b14ff5f.test domain with 32 char name lo.longdom-po1.100.16f7739.1.3c3.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>449</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:28</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing audit ...</logdata>
+  </Table>
+  <Table>
+    <id>448</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:28</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message ...</logdata>
+  </Table>
+  <Table>
+    <id>447</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:28</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message attachments ...</logdata>
+  </Table>
+  <Table>
+    <id>446</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:28</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message : c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\mailbox\\4b14ff5f.test domain with 32 char name lo.longdom-po1.100.16f7739.1.3c3.1.xml</logdata>
+  </Table>
+  <Table>
+    <id>445</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:28</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createfield(4b14ff5f.test domain with 32 char name lo.longdom-po1.100.16f7739.1.3c3.1, published): ok</logdata>
+  </Table>
+  <Table>
+    <id>444</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:28</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>archive(4b14ff5f.test domain with 32 char name lo.longdom-po1.100.16f7739.1.3c3.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>443</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:28</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createaudit(4b14ff5f.test domain with 32 char name lo.longdom-po1.100.16f7739.1.3c3.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>442</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:27</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexmessage(c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\mailbox\\4b040ef7.test domain with 32 char name lo.longdom-po1.100.16f7739.1.3c1.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>441</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:27</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing audit ...</logdata>
+  </Table>
+  <Table>
+    <id>440</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:27</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message ...</logdata>
+  </Table>
+  <Table>
+    <id>439</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:27</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message attachments ...</logdata>
+  </Table>
+  <Table>
+    <id>438</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:27</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message : c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\mailbox\\4b040ef7.test domain with 32 char name lo.longdom-po1.100.16f7739.1.3c1.1.xml</logdata>
+  </Table>
+  <Table>
+    <id>437</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:27</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createfield(4b040ef7.test domain with 32 char name lo.longdom-po1.100.16f7739.1.3c1.1, published): ok</logdata>
+  </Table>
+  <Table>
+    <id>436</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:27</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>archive(4b040ef7.test domain with 32 char name lo.longdom-po1.100.16f7739.1.3c1.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>435</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:27</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createaudit(4b040ef7.test domain with 32 char name lo.longdom-po1.100.16f7739.1.3c1.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>434</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:27</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexmessage(c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\mailbox\\4b040ef7.test domain with 32 char name lo.longdom-po1.100.16f7739.1.3c0.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>433</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:26</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing audit ...</logdata>
+  </Table>
+  <Table>
+    <id>432</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:26</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message ...</logdata>
+  </Table>
+  <Table>
+    <id>431</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:26</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message attachments ...</logdata>
+  </Table>
+  <Table>
+    <id>430</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:26</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message : c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\mailbox\\4b040ef7.test domain with 32 char name lo.longdom-po1.100.16f7739.1.3c0.1.xml</logdata>
+  </Table>
+  <Table>
+    <id>429</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:26</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createfield(4b040ef7.test domain with 32 char name lo.longdom-po1.100.16f7739.1.3c0.1, published): ok</logdata>
+  </Table>
+  <Table>
+    <id>428</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:26</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>archive(4b040ef7.test domain with 32 char name lo.longdom-po1.100.16f7739.1.3c0.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>427</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:26</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createaudit(4b040ef7.test domain with 32 char name lo.longdom-po1.100.16f7739.1.3c0.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>426</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:26</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexmessage(c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\mailbox\\4b040e7f.test domain with 32 char name lo.longdom-po1.100.16f7739.1.3bf.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>425</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:26</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing audit ...</logdata>
+  </Table>
+  <Table>
+    <id>424</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:26</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message ...</logdata>
+  </Table>
+  <Table>
+    <id>423</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:25</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message attachments ...</logdata>
+  </Table>
+  <Table>
+    <id>422</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:25</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message : c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\mailbox\\4b040e7f.test domain with 32 char name lo.longdom-po1.100.16f7739.1.3bf.1.xml</logdata>
+  </Table>
+  <Table>
+    <id>421</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:25</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createfield(4b040e7f.test domain with 32 char name lo.longdom-po1.100.16f7739.1.3bf.1, published): ok</logdata>
+  </Table>
+  <Table>
+    <id>699</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:36</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>initializing message handler ...</logdata>
+  </Table>
+  <Table>
+    <id>698</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:36</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>initializing index fail list manager...</logdata>
+  </Table>
+  <Table>
+    <id>697</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:36</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>initializing index engine ...</logdata>
+  </Table>
+  <Table>
+    <id>696</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:36</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>connecting to devices...</logdata>
+  </Table>
+  <Table>
+    <id>695</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:36</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>publishmessages(location=als, retention applied=false, retention days=0)</logdata>
+  </Table>
+  <Table>
+    <id>694</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:36</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>run()</logdata>
+  </Table>
+  <Table>
+    <id>693</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:35</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>submittransaction(tranasync, automaticactions, logerrors)</logdata>
+  </Table>
+  <Table>
+    <id>692</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:35</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>saving account stat info done.</logdata>
+  </Table>
+  <Table>
+    <id>691</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:35</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>saving account stat info.</logdata>
+  </Table>
+  <Table>
+    <id>690</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:35</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexmessage(c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\mailbox\\4d495091.dom2.dom2po1.100.16f7739.1.c6.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>689</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:35</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing audit ...</logdata>
+  </Table>
+  <Table>
+    <id>688</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:35</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message ...</logdata>
+  </Table>
+  <Table>
+    <id>687</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:35</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message attachments ...</logdata>
+  </Table>
+  <Table>
+    <id>686</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:35</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message : c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\mailbox\\4d495091.dom2.dom2po1.100.16f7739.1.c6.1.xml</logdata>
+  </Table>
+  <Table>
+    <id>685</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:35</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createfield(4d495091.dom2.dom2po1.100.16f7739.1.c6.1, published): ok</logdata>
+  </Table>
+  <Table>
+    <id>684</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:35</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>archive(4d495091.dom2.dom2po1.100.16f7739.1.c6.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>683</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:35</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createaudit(4d495091.dom2.dom2po1.100.16f7739.1.c6.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>682</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:35</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexmessage(c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\calendar\\4d495091.dom2.dom2po1.100.16f7739.1.c5.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>681</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:35</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing audit ...</logdata>
+  </Table>
+  <Table>
+    <id>680</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:35</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message ...</logdata>
+  </Table>
+  <Table>
+    <id>679</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:35</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message attachments ...</logdata>
+  </Table>
+  <Table>
+    <id>678</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:35</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message : c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\calendar\\4d495091.dom2.dom2po1.100.16f7739.1.c5.1.xml</logdata>
+  </Table>
+  <Table>
+    <id>677</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:35</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createfield(4d495091.dom2.dom2po1.100.16f7739.1.c5.1, published): ok</logdata>
+  </Table>
+  <Table>
+    <id>676</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:35</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>archive(4d495091.dom2.dom2po1.100.16f7739.1.c5.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>675</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:35</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createaudit(4d495091.dom2.dom2po1.100.16f7739.1.c5.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>674</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:35</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexmessage(c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\calendar\\4d495091.dom2.dom2po1.100.16f7739.1.c4.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>673</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:35</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing audit ...</logdata>
+  </Table>
+  <Table>
+    <id>672</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:35</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message ...</logdata>
+  </Table>
+  <Table>
+    <id>671</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:35</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message attachments ...</logdata>
+  </Table>
+  <Table>
+    <id>670</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:35</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message : c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\calendar\\4d495091.dom2.dom2po1.100.16f7739.1.c4.1.xml</logdata>
+  </Table>
+  <Table>
+    <id>669</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:35</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createfield(4d495091.dom2.dom2po1.100.16f7739.1.c4.1, published): ok</logdata>
+  </Table>
+  <Table>
+    <id>668</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:35</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>archive(4d495091.dom2.dom2po1.100.16f7739.1.c4.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>667</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:35</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createaudit(4d495091.dom2.dom2po1.100.16f7739.1.c4.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>666</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:34</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexmessage(c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\mailbox\\4c0ce11d.dom1.po1.100.16f7739.1.9f.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>665</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:34</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing audit ...</logdata>
+  </Table>
+  <Table>
+    <id>664</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:34</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message ...</logdata>
+  </Table>
+  <Table>
+    <id>663</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:34</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message attachments ...</logdata>
+  </Table>
+  <Table>
+    <id>662</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:34</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message : c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\mailbox\\4c0ce11d.dom1.po1.100.16f7739.1.9f.1.xml</logdata>
+  </Table>
+  <Table>
+    <id>661</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:34</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createfield(4c0ce11d.dom1.po1.100.16f7739.1.9f.1, published): ok</logdata>
+  </Table>
+  <Table>
+    <id>660</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:34</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>archive(4c0ce11d.dom1.po1.100.16f7739.1.9f.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>659</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:34</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createaudit(4c0ce11d.dom1.po1.100.16f7739.1.9f.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>658</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:34</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexmessage(c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\cabinet\\freds folder\\4c0ce11d.dom1.po1.100.16f7739.1.9e.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>657</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:34</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing audit ...</logdata>
+  </Table>
+  <Table>
+    <id>656</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:34</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message ...</logdata>
+  </Table>
+  <Table>
+    <id>655</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:34</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message attachments ...</logdata>
+  </Table>
+  <Table>
+    <id>654</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:34</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message : c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\cabinet\\freds folder\\4c0ce11d.dom1.po1.100.16f7739.1.9e.1.xml</logdata>
+  </Table>
+  <Table>
+    <id>653</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:34</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createfield(4c0ce11d.dom1.po1.100.16f7739.1.9e.1, published): ok</logdata>
+  </Table>
+  <Table>
+    <id>652</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:34</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>archive(4c0ce11d.dom1.po1.100.16f7739.1.9e.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>651</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:34</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createaudit(4c0ce11d.dom1.po1.100.16f7739.1.9e.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>650</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:34</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexmessage(c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\mailbox\\4c0cdccf.dom1.po1.100.16f7739.1.9d.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>649</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:34</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing audit ...</logdata>
+  </Table>
+  <Table>
+    <id>648</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:34</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message ...</logdata>
+  </Table>
+  <Table>
+    <id>647</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:34</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message attachments ...</logdata>
+  </Table>
+  <Table>
+    <id>646</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:34</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message : c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\mailbox\\4c0cdccf.dom1.po1.100.16f7739.1.9d.1.xml</logdata>
+  </Table>
+  <Table>
+    <id>645</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:34</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createfield(4c0cdccf.dom1.po1.100.16f7739.1.9d.1, published): ok</logdata>
+  </Table>
+  <Table>
+    <id>644</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:34</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>archive(4c0cdccf.dom1.po1.100.16f7739.1.9d.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>643</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:34</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createaudit(4c0cdccf.dom1.po1.100.16f7739.1.9d.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>642</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:34</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexmessage(c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\cabinet\\freds folder\\4c0cdccf.dom1.po1.100.16f7739.1.9c.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>641</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:34</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing audit ...</logdata>
+  </Table>
+  <Table>
+    <id>640</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:34</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message ...</logdata>
+  </Table>
+  <Table>
+    <id>639</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:34</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message attachments ...</logdata>
+  </Table>
+  <Table>
+    <id>638</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:34</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message : c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\cabinet\\freds folder\\4c0cdccf.dom1.po1.100.16f7739.1.9c.1.xml</logdata>
+  </Table>
+  <Table>
+    <id>637</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:34</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createfield(4c0cdccf.dom1.po1.100.16f7739.1.9c.1, published): ok</logdata>
+  </Table>
+  <Table>
+    <id>636</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:34</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>archive(4c0cdccf.dom1.po1.100.16f7739.1.9c.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>635</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:34</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createaudit(4c0cdccf.dom1.po1.100.16f7739.1.9c.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>634</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:34</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexmessage(c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\mailbox\\4bd85e9d.dom1.po1.100.16f7739.1.9a.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>633</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:34</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing audit ...</logdata>
+  </Table>
+  <Table>
+    <id>632</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:34</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message ...</logdata>
+  </Table>
+  <Table>
+    <id>631</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:34</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message attachments ...</logdata>
+  </Table>
+  <Table>
+    <id>630</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:34</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message : c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\mailbox\\4bd85e9d.dom1.po1.100.16f7739.1.9a.1.xml</logdata>
+  </Table>
+  <Table>
+    <id>629</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:34</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createfield(4bd85e9d.dom1.po1.100.16f7739.1.9a.1, published): ok</logdata>
+  </Table>
+  <Table>
+    <id>628</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:34</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>archive(4bd85e9d.dom1.po1.100.16f7739.1.9a.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>627</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:34</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createaudit(4bd85e9d.dom1.po1.100.16f7739.1.9a.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>626</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:34</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexmessage(c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\calendar\\4bd85e9d.dom1.po1.100.16f7739.1.99.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>625</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:34</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing audit ...</logdata>
+  </Table>
+  <Table>
+    <id>624</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:34</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message ...</logdata>
+  </Table>
+  <Table>
+    <id>623</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:34</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message attachments ...</logdata>
+  </Table>
+  <Table>
+    <id>622</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:34</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message : c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\calendar\\4bd85e9d.dom1.po1.100.16f7739.1.99.1.xml</logdata>
+  </Table>
+  <Table>
+    <id>621</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:34</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createfield(4bd85e9d.dom1.po1.100.16f7739.1.99.1, published): ok</logdata>
+  </Table>
+  <Table>
+    <id>620</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:34</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>archive(4bd85e9d.dom1.po1.100.16f7739.1.99.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>619</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:34</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createaudit(4bd85e9d.dom1.po1.100.16f7739.1.99.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>618</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:33</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexmessage(c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\calendar\\4bd85e9d.dom1.po1.100.16f7739.1.98.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>617</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:33</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing audit ...</logdata>
+  </Table>
+  <Table>
+    <id>616</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:33</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message ...</logdata>
+  </Table>
+  <Table>
+    <id>615</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:33</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message attachments ...</logdata>
+  </Table>
+  <Table>
+    <id>614</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:33</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message : c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\calendar\\4bd85e9d.dom1.po1.100.16f7739.1.98.1.xml</logdata>
+  </Table>
+  <Table>
+    <id>613</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:33</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createfield(4bd85e9d.dom1.po1.100.16f7739.1.98.1, published): ok</logdata>
+  </Table>
+  <Table>
+    <id>612</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:33</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>archive(4bd85e9d.dom1.po1.100.16f7739.1.98.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>611</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:33</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createaudit(4bd85e9d.dom1.po1.100.16f7739.1.98.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>610</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:33</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexmessage(c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\mailbox\\4bc5c44a.dom1.po1.100.16f7739.1.97.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>609</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:33</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing audit ...</logdata>
+  </Table>
+  <Table>
+    <id>608</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:33</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message ...</logdata>
+  </Table>
+  <Table>
+    <id>607</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:33</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message attachments ...</logdata>
+  </Table>
+  <Table>
+    <id>606</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:33</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message : c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\mailbox\\4bc5c44a.dom1.po1.100.16f7739.1.97.1.xml</logdata>
+  </Table>
+  <Table>
+    <id>605</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:33</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createfield(4bc5c44a.dom1.po1.100.16f7739.1.97.1, published): ok</logdata>
+  </Table>
+  <Table>
+    <id>604</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:33</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>archive(4bc5c44a.dom1.po1.100.16f7739.1.97.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>603</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:33</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createaudit(4bc5c44a.dom1.po1.100.16f7739.1.97.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>602</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:33</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexmessage(c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\cabinet\\freds folder\\4bc5c44a.dom1.po1.100.16f7739.1.96.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>601</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:33</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing audit ...</logdata>
+  </Table>
+  <Table>
+    <id>600</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:33</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message ...</logdata>
+  </Table>
+  <Table>
+    <id>599</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:33</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message attachments ...</logdata>
+  </Table>
+  <Table>
+    <id>598</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:33</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message : c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\cabinet\\freds folder\\4bc5c44a.dom1.po1.100.16f7739.1.96.1.xml</logdata>
+  </Table>
+  <Table>
+    <id>597</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:33</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createfield(4bc5c44a.dom1.po1.100.16f7739.1.96.1, published): ok</logdata>
+  </Table>
+  <Table>
+    <id>596</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:33</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>archive(4bc5c44a.dom1.po1.100.16f7739.1.96.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>595</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:33</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createaudit(4bc5c44a.dom1.po1.100.16f7739.1.96.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>594</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:33</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexmessage(c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\mailbox\\4bc5c1a8.dom1.po1.100.16f7739.1.95.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>593</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing audit ...</logdata>
+  </Table>
+  <Table>
+    <id>592</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message ...</logdata>
+  </Table>
+  <Table>
+    <id>591</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message attachments ...</logdata>
+  </Table>
+  <Table>
+    <id>590</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message : c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\mailbox\\4bc5c1a8.dom1.po1.100.16f7739.1.95.1.xml</logdata>
+  </Table>
+  <Table>
+    <id>589</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createfield(4bc5c1a8.dom1.po1.100.16f7739.1.95.1, published): ok</logdata>
+  </Table>
+  <Table>
+    <id>588</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>archive(4bc5c1a8.dom1.po1.100.16f7739.1.95.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>587</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createaudit(4bc5c1a8.dom1.po1.100.16f7739.1.95.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>586</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexmessage(c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\cabinet\\freds folder\\4bc5c1a8.dom1.po1.100.16f7739.1.94.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>585</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing audit ...</logdata>
+  </Table>
+  <Table>
+    <id>584</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message ...</logdata>
+  </Table>
+  <Table>
+    <id>583</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message attachments ...</logdata>
+  </Table>
+  <Table>
+    <id>582</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message : c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\cabinet\\freds folder\\4bc5c1a8.dom1.po1.100.16f7739.1.94.1.xml</logdata>
+  </Table>
+  <Table>
+    <id>581</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createfield(4bc5c1a8.dom1.po1.100.16f7739.1.94.1, published): ok</logdata>
+  </Table>
+  <Table>
+    <id>580</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>archive(4bc5c1a8.dom1.po1.100.16f7739.1.94.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>579</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createaudit(4bc5c1a8.dom1.po1.100.16f7739.1.94.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>578</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexmessage(c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\mailbox\\4bb0a3ad.dom1.po1.100.16f7739.1.93.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>577</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing audit ...</logdata>
+  </Table>
+  <Table>
+    <id>576</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message ...</logdata>
+  </Table>
+  <Table>
+    <id>575</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message attachments ...</logdata>
+  </Table>
+  <Table>
+    <id>574</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message : c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\mailbox\\4bb0a3ad.dom1.po1.100.16f7739.1.93.1.xml</logdata>
+  </Table>
+  <Table>
+    <id>573</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createfield(4bb0a3ad.dom1.po1.100.16f7739.1.93.1, published): ok</logdata>
+  </Table>
+  <Table>
+    <id>572</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>archive(4bb0a3ad.dom1.po1.100.16f7739.1.93.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>571</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createaudit(4bb0a3ad.dom1.po1.100.16f7739.1.93.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>570</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexmessage(c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\cabinet\\new folder\\4bb0a3ad.dom1.po1.100.16f7739.1.92.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>569</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing audit ...</logdata>
+  </Table>
+  <Table>
+    <id>568</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message ...</logdata>
+  </Table>
+  <Table>
+    <id>567</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message attachments ...</logdata>
+  </Table>
+  <Table>
+    <id>566</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message : c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\cabinet\\new folder\\4bb0a3ad.dom1.po1.100.16f7739.1.92.1.xml</logdata>
+  </Table>
+  <Table>
+    <id>565</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createfield(4bb0a3ad.dom1.po1.100.16f7739.1.92.1, published): ok</logdata>
+  </Table>
+  <Table>
+    <id>564</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>archive(4bb0a3ad.dom1.po1.100.16f7739.1.92.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>563</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createaudit(4bb0a3ad.dom1.po1.100.16f7739.1.92.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>562</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexmessage(c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\mailbox\\4b4b5521.dom1.po1.100.16f7739.1.91.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>561</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing audit ...</logdata>
+  </Table>
+  <Table>
+    <id>560</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message ...</logdata>
+  </Table>
+  <Table>
+    <id>559</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message attachments ...</logdata>
+  </Table>
+  <Table>
+    <id>558</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message : c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\mailbox\\4b4b5521.dom1.po1.100.16f7739.1.91.1.xml</logdata>
+  </Table>
+  <Table>
+    <id>557</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createfield(4b4b5521.dom1.po1.100.16f7739.1.91.1, published): ok</logdata>
+  </Table>
+  <Table>
+    <id>556</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>archive(4b4b5521.dom1.po1.100.16f7739.1.91.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>555</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createaudit(4b4b5521.dom1.po1.100.16f7739.1.91.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>554</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexmessage(c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\cabinet\\new folder\\4b4b5521.dom1.po1.100.16f7739.1.90.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>553</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing audit ...</logdata>
+  </Table>
+  <Table>
+    <id>552</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message ...</logdata>
+  </Table>
+  <Table>
+    <id>551</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message attachments ...</logdata>
+  </Table>
+  <Table>
+    <id>550</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message : c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\cabinet\\new folder\\4b4b5521.dom1.po1.100.16f7739.1.90.1.xml</logdata>
+  </Table>
+  <Table>
+    <id>549</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createfield(4b4b5521.dom1.po1.100.16f7739.1.90.1, published): ok</logdata>
+  </Table>
+  <Table>
+    <id>548</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>archive(4b4b5521.dom1.po1.100.16f7739.1.90.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>547</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createaudit(4b4b5521.dom1.po1.100.16f7739.1.90.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>546</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexmessage(c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\mailbox\\4b1729bf.dom1.po1.100.16f7739.1.8f.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>545</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing audit ...</logdata>
+  </Table>
+  <Table>
+    <id>544</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message ...</logdata>
+  </Table>
+  <Table>
+    <id>543</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message attachments ...</logdata>
+  </Table>
+  <Table>
+    <id>542</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message : c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\mailbox\\4b1729bf.dom1.po1.100.16f7739.1.8f.1.xml</logdata>
+  </Table>
+  <Table>
+    <id>541</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createfield(4b1729bf.dom1.po1.100.16f7739.1.8f.1, published): ok</logdata>
+  </Table>
+  <Table>
+    <id>540</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>archive(4b1729bf.dom1.po1.100.16f7739.1.8f.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>539</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createaudit(4b1729bf.dom1.po1.100.16f7739.1.8f.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>538</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexmessage(c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\mailbox\\4b1729bf.dom1.po1.100.16f7739.1.8e.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>537</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing audit ...</logdata>
+  </Table>
+  <Table>
+    <id>536</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message ...</logdata>
+  </Table>
+  <Table>
+    <id>535</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message attachments ...</logdata>
+  </Table>
+  <Table>
+    <id>534</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message : c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\mailbox\\4b1729bf.dom1.po1.100.16f7739.1.8e.1.xml</logdata>
+  </Table>
+  <Table>
+    <id>533</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createfield(4b1729bf.dom1.po1.100.16f7739.1.8e.1, published): ok</logdata>
+  </Table>
+  <Table>
+    <id>532</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>archive(4b1729bf.dom1.po1.100.16f7739.1.8e.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>531</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createaudit(4b1729bf.dom1.po1.100.16f7739.1.8e.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>530</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexmessage(c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\mailbox\\4b16ffcb.dom1.po1.100.16f7739.1.8d.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>529</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing audit ...</logdata>
+  </Table>
+  <Table>
+    <id>528</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message ...</logdata>
+  </Table>
+  <Table>
+    <id>527</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message attachments ...</logdata>
+  </Table>
+  <Table>
+    <id>526</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message : c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\mailbox\\4b16ffcb.dom1.po1.100.16f7739.1.8d.1.xml</logdata>
+  </Table>
+  <Table>
+    <id>525</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createfield(4b16ffcb.dom1.po1.100.16f7739.1.8d.1, published): ok</logdata>
+  </Table>
+  <Table>
+    <id>524</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>archive(4b16ffcb.dom1.po1.100.16f7739.1.8d.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>523</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createaudit(4b16ffcb.dom1.po1.100.16f7739.1.8d.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>522</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexmessage(c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\mailbox\\4b169423.dom1.po1.100.16f7739.1.8b.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>521</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing audit ...</logdata>
+  </Table>
+  <Table>
+    <id>520</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message ...</logdata>
+  </Table>
+  <Table>
+    <id>519</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message attachments ...</logdata>
+  </Table>
+  <Table>
+    <id>518</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message : c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\mailbox\\4b169423.dom1.po1.100.16f7739.1.8b.1.xml</logdata>
+  </Table>
+  <Table>
+    <id>517</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createfield(4b169423.dom1.po1.100.16f7739.1.8b.1, published): ok</logdata>
+  </Table>
+  <Table>
+    <id>516</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>archive(4b169423.dom1.po1.100.16f7739.1.8b.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>515</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createaudit(4b169423.dom1.po1.100.16f7739.1.8b.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>514</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexmessage(c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\mailbox\\4b169423.dom1.po1.100.16f7739.1.8a.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>513</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing audit ...</logdata>
+  </Table>
+  <Table>
+    <id>512</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message ...</logdata>
+  </Table>
+  <Table>
+    <id>511</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message attachments ...</logdata>
+  </Table>
+  <Table>
+    <id>510</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message : c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\mailbox\\4b169423.dom1.po1.100.16f7739.1.8a.1.xml</logdata>
+  </Table>
+  <Table>
+    <id>509</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createfield(4b169423.dom1.po1.100.16f7739.1.8a.1, published): ok</logdata>
+  </Table>
+  <Table>
+    <id>508</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>archive(4b169423.dom1.po1.100.16f7739.1.8a.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>507</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createaudit(4b169423.dom1.po1.100.16f7739.1.8a.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>506</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexmessage(c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\mailbox\\4b168d1c.dom1.po1.100.16f7739.1.89.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>505</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing audit ...</logdata>
+  </Table>
+  <Table>
+    <id>504</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message ...</logdata>
+  </Table>
+  <Table>
+    <id>503</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message attachments ...</logdata>
+  </Table>
+  <Table>
+    <id>502</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message : c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\mailbox\\4b168d1c.dom1.po1.100.16f7739.1.89.1.xml</logdata>
+  </Table>
+  <Table>
+    <id>501</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createfield(4b168d1c.dom1.po1.100.16f7739.1.89.1, published): ok</logdata>
+  </Table>
+  <Table>
+    <id>500</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>archive(4b168d1c.dom1.po1.100.16f7739.1.89.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>499</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createaudit(4b168d1c.dom1.po1.100.16f7739.1.89.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>498</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexmessage(c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\mailbox\\4b168d1c.dom1.po1.100.16f7739.1.88.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>497</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing audit ...</logdata>
+  </Table>
+  <Table>
+    <id>496</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message ...</logdata>
+  </Table>
+  <Table>
+    <id>495</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message attachments ...</logdata>
+  </Table>
+  <Table>
+    <id>494</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message : c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\mailbox\\4b168d1c.dom1.po1.100.16f7739.1.88.1.xml</logdata>
+  </Table>
+  <Table>
+    <id>493</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createfield(4b168d1c.dom1.po1.100.16f7739.1.88.1, published): ok</logdata>
+  </Table>
+  <Table>
+    <id>492</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>archive(4b168d1c.dom1.po1.100.16f7739.1.88.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>491</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createaudit(4b168d1c.dom1.po1.100.16f7739.1.88.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>490</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexmessage(c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\mailbox\\4b168d1c.dom1.po1.100.16f7739.1.87.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>489</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing audit ...</logdata>
+  </Table>
+  <Table>
+    <id>488</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:32</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message ...</logdata>
+  </Table>
+  <Table>
+    <id>487</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:31</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message attachments ...</logdata>
+  </Table>
+  <Table>
+    <id>486</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:31</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message : c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\mailbox\\4b168d1c.dom1.po1.100.16f7739.1.87.1.xml</logdata>
+  </Table>
+  <Table>
+    <id>485</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:31</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createfield(4b168d1c.dom1.po1.100.16f7739.1.87.1, published): ok</logdata>
+  </Table>
+  <Table>
+    <id>484</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:31</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>archive(4b168d1c.dom1.po1.100.16f7739.1.87.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>483</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:31</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createaudit(4b168d1c.dom1.po1.100.16f7739.1.87.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>482</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:31</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexmessage(c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\mailbox\\4b15387b.dom1.po1.100.16f7739.1.85.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>481</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:31</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing audit ...</logdata>
+  </Table>
+  <Table>
+    <id>480</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:31</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message ...</logdata>
+  </Table>
+  <Table>
+    <id>479</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:31</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message attachments ...</logdata>
+  </Table>
+  <Table>
+    <id>478</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:31</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message : c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\mailbox\\4b15387b.dom1.po1.100.16f7739.1.85.1.xml</logdata>
+  </Table>
+  <Table>
+    <id>477</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:31</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createfield(4b15387b.dom1.po1.100.16f7739.1.85.1, published): ok</logdata>
+  </Table>
+  <Table>
+    <id>476</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:31</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>archive(4b15387b.dom1.po1.100.16f7739.1.85.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>475</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:31</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createaudit(4b15387b.dom1.po1.100.16f7739.1.85.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>707</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:36</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>shutdown()</logdata>
+  </Table>
+  <Table>
+    <id>706</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:36</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>terminate()</logdata>
+  </Table>
+  <Table>
+    <id>705</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:36</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>submittransaction(tranasync, automaticactions, logerrors)</logdata>
+  </Table>
+  <Table>
+    <id>704</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:36</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>saving account stat info done.</logdata>
+  </Table>
+  <Table>
+    <id>703</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:36</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>saving account stat info.</logdata>
+  </Table>
+  <Table>
+    <id>702</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:36</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>processing filters ...</logdata>
+  </Table>
+  <Table>
+    <id>701</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:36</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>managing toindex file ...</logdata>
+  </Table>
+  <Table>
+    <id>700</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:36</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>initializing archive module ...</logdata>
+  </Table>
+  <Table>
+    <id>420</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:25</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>archive(4b040e7f.test domain with 32 char name lo.longdom-po1.100.16f7739.1.3bf.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>419</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:25</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createaudit(4b040e7f.test domain with 32 char name lo.longdom-po1.100.16f7739.1.3bf.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>418</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:25</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexmessage(c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\mailbox\\4b040e7f.test domain with 32 char name lo.longdom-po1.100.16f7739.1.3be.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>417</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:25</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing audit ...</logdata>
+  </Table>
+  <Table>
+    <id>416</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:25</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message ...</logdata>
+  </Table>
+  <Table>
+    <id>415</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:24</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message attachments ...</logdata>
+  </Table>
+  <Table>
+    <id>414</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:24</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>indexing message : c:/als/audit/accounts/fred yyy flinstone@fredaaa.po1.dom1/adt\\mailbox\\4b040e7f.test domain with 32 char name lo.longdom-po1.100.16f7739.1.3be.1.xml</logdata>
+  </Table>
+  <Table>
+    <id>413</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:24</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createfield(4b040e7f.test domain with 32 char name lo.longdom-po1.100.16f7739.1.3be.1, published): ok</logdata>
+  </Table>
+  <Table>
+    <id>412</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:24</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>archive(4b040e7f.test domain with 32 char name lo.longdom-po1.100.16f7739.1.3be.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>411</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:24</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createaudit(4b040e7f.test domain with 32 char name lo.longdom-po1.100.16f7739.1.3be.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>410</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:23</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>processing filters ...</logdata>
+  </Table>
+  <Table>
+    <id>409</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:23</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>processing the toindex file...</logdata>
+  </Table>
+  <Table>
+    <id>408</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:23</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>managing toindex file ...</logdata>
+  </Table>
+  <Table>
+    <id>407</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:23</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>initializing archive module ...</logdata>
+  </Table>
+  <Table>
+    <id>406</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:23</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>initializing message handler ...</logdata>
+  </Table>
+  <Table>
+    <id>405</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:23</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>initializing index fail list manager...</logdata>
+  </Table>
+  <Table>
+    <id>404</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:22</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>initializing index engine ...</logdata>
+  </Table>
+  <Table>
+    <id>403</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:22</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>connecting to devices...</logdata>
+  </Table>
+  <Table>
+    <id>402</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:22</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>publishmessages(location=als, retention applied=false, retention days=0)</logdata>
+  </Table>
+  <Table>
+    <id>401</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:11:22</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>run()</logdata>
+  </Table>
+  <Table>
+    <id>400</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:10:23</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>startup(): true</logdata>
+  </Table>
+  <Table>
+    <id>399</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:10:23</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>createldapentry(oldname=fred yyy flinstone@fredaaa.po1.dom1, newname=fred zzz flinstone@fredaaa.dom2po1.dom2): ok</logdata>
+  </Table>
+  <Table>
+    <id>398</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:10:23</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>connected(als): true</logdata>
+  </Table>
+  <Table>
+    <id>397</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-15 12:09:58</jobdatetime>
+    <logtimestamp>2012-10-15 12:10:23</logtimestamp>
+    <account>fredaaa@dom2po1@dom2</account>
+    <logdata>initialize()</logdata>
+  </Table>
+</NewDataSet>

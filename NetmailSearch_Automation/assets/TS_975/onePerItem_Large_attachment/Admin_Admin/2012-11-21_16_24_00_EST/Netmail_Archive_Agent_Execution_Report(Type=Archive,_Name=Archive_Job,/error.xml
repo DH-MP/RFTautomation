@@ -1,0 +1,16 @@
+<NewDataSet>
+  <Table>
+    <id>43</id>
+    <jobid>cn=archive agent_archive job,ou=jobs,ou=gwopennode(10.10.23.115),o=netmail115</jobid>
+    <jobdatetime>2012-11-21 15:51:07</jobdatetime>
+    <logtimestamp>2012-11-21 16:17:58</logtimestamp>
+    <account>admin@dom2po1@dom2</account>
+    <errorsource>gwooapi</errorsource>
+    <errordescription>error in action id [ffd76dc6-c20a-4155-87b9-5b61d387f2c2]  message not found in groupwise.</errordescription>
+    <errorstacktrace>   at tma.tmagwoapi.gwconverter.convert()
+   at tma.tmagwoapi.gwsession.runtransaction(string accountid, transaction gwtransaction, igwjob processor)</errorstacktrace>
+    <messageid>509727ea.dom2.dom2po1.100.1313735.1.1393.1</messageid>
+    <messagesubject>netmail archive agent execution report(type=system, name=syncab trigger, start time=11/5/2012 2:00:14 am)</messagesubject>
+    <messagecreationdate>11/5/2012 7:43:54 am</messagecreationdate>
+  </Table>
+</NewDataSet>

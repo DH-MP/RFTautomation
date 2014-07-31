@@ -1,0 +1,15 @@
+<NewDataSet>
+  <Table>
+    <id>4190</id>
+    <jobid>cn=export agent_netmail search export,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 15:09:53</jobdatetime>
+    <logtimestamp>2012-12-05 15:10:21</logtimestamp>
+    <account>admin.dom2po1.dom2</account>
+    <errorsource />
+    <errordescription>analyticerror:error exporting to pst, make sure outlook is installed on the archive nodes  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+</NewDataSet>

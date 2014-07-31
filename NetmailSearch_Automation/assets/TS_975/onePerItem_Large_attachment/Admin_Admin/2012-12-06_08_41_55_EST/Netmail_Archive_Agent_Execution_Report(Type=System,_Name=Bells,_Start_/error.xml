@@ -1,0 +1,28 @@
+<NewDataSet>
+  <Table>
+    <id>4211</id>
+    <jobid>cn=utility agent_bells,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-06 08:40:53</jobdatetime>
+    <logtimestamp>2012-12-06 08:41:12</logtimestamp>
+    <account>tkirton@po@tempe</account>
+    <errorsource />
+    <errordescription>cannot initialize the connector.:cannot open the account.  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4210</id>
+    <jobid>cn=utility agent_bells,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-06 08:40:53</jobdatetime>
+    <logtimestamp>2012-12-06 08:41:12</logtimestamp>
+    <account>tkirton@po@tempe</account>
+    <errorsource />
+    <errordescription>error opening the account.:object reference not set to an instance of an object.  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+</NewDataSet>

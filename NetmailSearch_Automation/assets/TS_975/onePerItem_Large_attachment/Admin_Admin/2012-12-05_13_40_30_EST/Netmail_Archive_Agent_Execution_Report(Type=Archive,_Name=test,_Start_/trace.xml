@@ -1,0 +1,114 @@
+<NewDataSet>
+  <Table>
+    <id>3830</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 13:38:55</jobdatetime>
+    <logtimestamp>2012-12-05 13:39:50</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>saving account stat info done.</logdata>
+  </Table>
+  <Table>
+    <id>3829</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 13:38:55</jobdatetime>
+    <logtimestamp>2012-12-05 13:39:50</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>saving account stat info.</logdata>
+  </Table>
+  <Table>
+    <id>3828</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 13:38:55</jobdatetime>
+    <logtimestamp>2012-12-05 13:39:27</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>processing the toindex file...</logdata>
+  </Table>
+  <Table>
+    <id>3827</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 13:38:55</jobdatetime>
+    <logtimestamp>2012-12-05 13:39:27</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>managing toindex file ...</logdata>
+  </Table>
+  <Table>
+    <id>3826</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 13:38:55</jobdatetime>
+    <logtimestamp>2012-12-05 13:39:27</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>initializing archive module ...</logdata>
+  </Table>
+  <Table>
+    <id>3825</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 13:38:55</jobdatetime>
+    <logtimestamp>2012-12-05 13:39:27</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>initializing message handler ...</logdata>
+  </Table>
+  <Table>
+    <id>3824</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 13:38:55</jobdatetime>
+    <logtimestamp>2012-12-05 13:39:27</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>initializing index fail list manager...</logdata>
+  </Table>
+  <Table>
+    <id>3823</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 13:38:55</jobdatetime>
+    <logtimestamp>2012-12-05 13:39:27</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>initializing index engine ...</logdata>
+  </Table>
+  <Table>
+    <id>3822</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 13:38:55</jobdatetime>
+    <logtimestamp>2012-12-05 13:39:27</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>publishmessages(location=als, retention applied=false, retention days=0)</logdata>
+  </Table>
+  <Table>
+    <id>3821</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 13:38:55</jobdatetime>
+    <logtimestamp>2012-12-05 13:39:27</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>startup(): false</logdata>
+  </Table>
+  <Table>
+    <id>3820</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 13:38:55</jobdatetime>
+    <logtimestamp>2012-12-05 13:39:27</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>createldapentry(oldname=cristina orasanu@cristinao.longdom-po1.test domain with 32 char name lo, newname=cristina orasanu@cristinao.po1.dom1): ok</logdata>
+  </Table>
+  <Table>
+    <id>3819</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 13:38:55</jobdatetime>
+    <logtimestamp>2012-12-05 13:39:27</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>connected(als): true</logdata>
+  </Table>
+  <Table>
+    <id>3818</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 13:38:55</jobdatetime>
+    <logtimestamp>2012-12-05 13:39:27</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>run()</logdata>
+  </Table>
+  <Table>
+    <id>3817</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 13:38:55</jobdatetime>
+    <logtimestamp>2012-12-05 13:39:23</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>initialize()</logdata>
+  </Table>
+</NewDataSet>

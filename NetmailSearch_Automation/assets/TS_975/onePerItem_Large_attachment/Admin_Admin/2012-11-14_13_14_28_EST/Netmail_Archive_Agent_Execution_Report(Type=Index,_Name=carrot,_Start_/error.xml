@@ -1,0 +1,15 @@
+<NewDataSet>
+  <Table>
+    <id>4</id>
+    <jobid>cn=index agent_carrot,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-11-14 12:31:14</jobdatetime>
+    <logtimestamp>2012-11-14 12:31:18</logtimestamp>
+    <account />
+    <errorsource />
+    <errordescription>error initializing the index server. :object reference not set to an instance of an object.  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+</NewDataSet>

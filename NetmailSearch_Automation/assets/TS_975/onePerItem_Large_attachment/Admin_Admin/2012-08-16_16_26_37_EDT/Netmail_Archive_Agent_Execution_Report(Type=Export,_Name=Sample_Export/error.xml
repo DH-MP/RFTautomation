@@ -1,0 +1,82 @@
+<NewDataSet>
+  <Table>
+    <id>63</id>
+    <jobid>cn=export agent_sample export job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:51:04</jobdatetime>
+    <logtimestamp>2012-08-16 14:51:09</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource>maparams</errorsource>
+    <errordescription>error retrieving index server settings.   there is an error in xml document (1, 43).</errordescription>
+    <errorstacktrace>   at tma.library.mapparams..ctor(string xmlstring)
+   at tma.library.jobs.gwexportjob.initialize(string pparameters, heartbeat pheartbeat)</errorstacktrace>
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>64</id>
+    <jobid>cn=export agent_sample export job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:51:04</jobdatetime>
+    <logtimestamp>2012-08-16 14:51:09</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource>gwexportjob</errorsource>
+    <errordescription>error retrieving location or device settings.   object reference not set to an instance of an object.</errordescription>
+    <errorstacktrace>   at tma.library.jobs.gwexportjob.initialize(string pparameters, heartbeat pheartbeat)</errorstacktrace>
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>65</id>
+    <jobid>cn=export agent_sample export job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:51:04</jobdatetime>
+    <logtimestamp>2012-08-16 14:51:15</logtimestamp>
+    <account>post-processor</account>
+    <errorsource />
+    <errordescription>closeaccount: error closing the account. response: missing session string  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>66</id>
+    <jobid>cn=export agent_sample export job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:51:04</jobdatetime>
+    <logtimestamp>2012-08-16 14:51:21</logtimestamp>
+    <account>post-processor</account>
+    <errorsource>maparams</errorsource>
+    <errordescription>error retrieving index server settings.   there is an error in xml document (1, 43).</errordescription>
+    <errorstacktrace>   at tma.library.mapparams..ctor(string xmlstring)
+   at tma.library.jobs.gwexportjob.initialize(string pparameters, heartbeat pheartbeat)</errorstacktrace>
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>67</id>
+    <jobid>cn=export agent_sample export job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:51:04</jobdatetime>
+    <logtimestamp>2012-08-16 14:51:21</logtimestamp>
+    <account>post-processor</account>
+    <errorsource>gwexportjob</errorsource>
+    <errordescription>error retrieving location or device settings.   object reference not set to an instance of an object.</errordescription>
+    <errorstacktrace>   at tma.library.jobs.gwexportjob.initialize(string pparameters, heartbeat pheartbeat)</errorstacktrace>
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>68</id>
+    <jobid>cn=export agent_sample export job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:51:04</jobdatetime>
+    <logtimestamp>2012-08-16 14:51:21</logtimestamp>
+    <account>post-processor</account>
+    <errorsource>gwexportjob</errorsource>
+    <errordescription>error committing the indexes  object reference not set to an instance of an object.</errordescription>
+    <errorstacktrace>   at tma.library.jobs.gwexportjob.run()</errorstacktrace>
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+</NewDataSet>

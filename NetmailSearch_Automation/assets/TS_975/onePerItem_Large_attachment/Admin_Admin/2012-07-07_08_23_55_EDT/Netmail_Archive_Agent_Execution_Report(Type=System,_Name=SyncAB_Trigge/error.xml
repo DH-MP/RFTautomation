@@ -1,0 +1,45 @@
+<NewDataSet>
+  <Table>
+    <id>103</id>
+    <jobid>cn=system_syncab,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-07-07 02:00:42</jobdatetime>
+    <logtimestamp>2012-07-07 02:01:06</logtimestamp>
+    <account>admin</account>
+    <errorsource />
+    <errordescription>closeaccount: error closing the account. response: missing session string  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>104</id>
+    <jobid>cn=system_syncab,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-07-07 02:00:42</jobdatetime>
+    <logtimestamp>2012-07-07 02:01:22</logtimestamp>
+    <account>admin</account>
+    <errorsource>novell.directory.ldap</errorsource>
+    <errordescription>error add contact: userwithaverylonguseridtotrytobreakthe64charactersproblem@po1@dom1  constraint violation</errordescription>
+    <errorstacktrace>   at novell.directory.ldap.ldapresponse.chkresultcode()
+   at novell.directory.ldap.ldapconnection.chkresultcode(ldapmessagequeue queue, ldapconstraints cons, ldapresponse response)
+   at novell.directory.ldap.ldapconnection.add(ldapentry entry, ldapconstraints cons)
+   at novell.directory.ldap.ldapconnection.add(ldapentry entry)
+   at tma.library.jobs.gwsyncabjob.c502e4b563d9a923f43f1b77a7ed581c7(tmalist c50a7879aca743f68e31338ee5ec4fc30, ldapentry c44666edc80f0988e45c246cdbdbf269b, ldapentry c881e796dd3704ce7ba55a3701bdc000b, ldapentry c5940805677bffc5728a4164cce288cb0)</errorstacktrace>
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>105</id>
+    <jobid>cn=system_syncab,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-07-07 02:00:42</jobdatetime>
+    <logtimestamp>2012-07-07 02:02:28</logtimestamp>
+    <account>post-processor</account>
+    <errorsource />
+    <errordescription>closeaccount: error closing the account. response: missing session string  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+</NewDataSet>

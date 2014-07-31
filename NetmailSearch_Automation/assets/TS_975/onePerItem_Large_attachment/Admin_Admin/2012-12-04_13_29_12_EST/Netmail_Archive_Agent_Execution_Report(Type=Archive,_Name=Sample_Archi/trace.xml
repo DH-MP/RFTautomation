@@ -1,0 +1,170 @@
+<NewDataSet>
+  <Table>
+    <id>2069</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:28:04</jobdatetime>
+    <logtimestamp>2012-12-04 13:28:30</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>saving account stat info done.</logdata>
+  </Table>
+  <Table>
+    <id>2068</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:28:04</jobdatetime>
+    <logtimestamp>2012-12-04 13:28:30</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>saving account stat info.</logdata>
+  </Table>
+  <Table>
+    <id>2067</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:28:04</jobdatetime>
+    <logtimestamp>2012-12-04 13:28:30</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>deleting : c:\\temp\\6a1d328a-97f4-4355-a292-efd7f5f17e33\\gwoatt\\berkley big@berkley.po1.dom1</logdata>
+  </Table>
+  <Table>
+    <id>2066</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:28:04</jobdatetime>
+    <logtimestamp>2012-12-04 13:28:30</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>submittransaction(tranasync, automaticactions, logerrors)</logdata>
+  </Table>
+  <Table>
+    <id>2065</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:28:04</jobdatetime>
+    <logtimestamp>2012-12-04 13:28:30</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>deleting : c:\\temp\\6a1d328a-97f4-4355-a292-efd7f5f17e33\\gwoatt\\berkley big@berkley.po1.dom1</logdata>
+  </Table>
+  <Table>
+    <id>2064</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:28:04</jobdatetime>
+    <logtimestamp>2012-12-04 13:28:30</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>submittransaction(tranasync, automaticactions, logerrors)</logdata>
+  </Table>
+  <Table>
+    <id>2063</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:28:04</jobdatetime>
+    <logtimestamp>2012-12-04 13:28:29</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>deleting : c:\\temp\\6a1d328a-97f4-4355-a292-efd7f5f17e33\\gwoatt\\berkley big@berkley.po1.dom1</logdata>
+  </Table>
+  <Table>
+    <id>2062</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:28:04</jobdatetime>
+    <logtimestamp>2012-12-04 13:28:29</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>submittransaction(tranasync, automaticactions, logerrors)</logdata>
+  </Table>
+  <Table>
+    <id>2061</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:28:04</jobdatetime>
+    <logtimestamp>2012-12-04 13:28:29</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>deleting : c:\\temp\\6a1d328a-97f4-4355-a292-efd7f5f17e33\\gwoatt\\berkley big@berkley.po1.dom1</logdata>
+  </Table>
+  <Table>
+    <id>2060</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:28:04</jobdatetime>
+    <logtimestamp>2012-12-04 13:28:29</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>submittransaction(tranasync, automaticactions, logerrors)</logdata>
+  </Table>
+  <Table>
+    <id>2059</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:28:04</jobdatetime>
+    <logtimestamp>2012-12-04 13:28:27</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>processing the toindex file...</logdata>
+  </Table>
+  <Table>
+    <id>2058</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:28:04</jobdatetime>
+    <logtimestamp>2012-12-04 13:28:27</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>managing toindex file ...</logdata>
+  </Table>
+  <Table>
+    <id>2057</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:28:04</jobdatetime>
+    <logtimestamp>2012-12-04 13:28:27</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>initializing archive module ...</logdata>
+  </Table>
+  <Table>
+    <id>2056</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:28:04</jobdatetime>
+    <logtimestamp>2012-12-04 13:28:27</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>initializing message handler ...</logdata>
+  </Table>
+  <Table>
+    <id>2055</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:28:04</jobdatetime>
+    <logtimestamp>2012-12-04 13:28:27</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>initializing index fail list manager...</logdata>
+  </Table>
+  <Table>
+    <id>2054</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:28:04</jobdatetime>
+    <logtimestamp>2012-12-04 13:28:27</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>initializing index engine ...</logdata>
+  </Table>
+  <Table>
+    <id>2053</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:28:04</jobdatetime>
+    <logtimestamp>2012-12-04 13:28:27</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>publishmessages(location=export, retention applied=false, retention days=0)</logdata>
+  </Table>
+  <Table>
+    <id>2052</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:28:04</jobdatetime>
+    <logtimestamp>2012-12-04 13:28:27</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>startup(): false</logdata>
+  </Table>
+  <Table>
+    <id>2051</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:28:04</jobdatetime>
+    <logtimestamp>2012-12-04 13:28:27</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>connected(export): true</logdata>
+  </Table>
+  <Table>
+    <id>2050</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:28:04</jobdatetime>
+    <logtimestamp>2012-12-04 13:28:27</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>run()</logdata>
+  </Table>
+  <Table>
+    <id>2049</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:28:04</jobdatetime>
+    <logtimestamp>2012-12-04 13:28:20</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>initialize()</logdata>
+  </Table>
+</NewDataSet>

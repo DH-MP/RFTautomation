@@ -1,0 +1,146 @@
+<NewDataSet>
+  <Table>
+    <id>2897</id>
+    <jobid>cn=export agent_sample export job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-18 13:00:27</jobdatetime>
+    <logtimestamp>2012-10-18 13:00:39</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>initialize()</logdata>
+  </Table>
+  <Table>
+    <id>2902</id>
+    <jobid>cn=export agent_sample export job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-18 13:00:27</jobdatetime>
+    <logtimestamp>2012-10-18 13:00:43</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>connected(index): true</logdata>
+  </Table>
+  <Table>
+    <id>2901</id>
+    <jobid>cn=export agent_sample export job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-18 13:00:27</jobdatetime>
+    <logtimestamp>2012-10-18 13:00:43</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>export location creation</logdata>
+  </Table>
+  <Table>
+    <id>2900</id>
+    <jobid>cn=export agent_sample export job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-18 13:00:27</jobdatetime>
+    <logtimestamp>2012-10-18 13:00:43</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>create location and device</logdata>
+  </Table>
+  <Table>
+    <id>2899</id>
+    <jobid>cn=export agent_sample export job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-18 13:00:27</jobdatetime>
+    <logtimestamp>2012-10-18 13:00:43</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>get devices</logdata>
+  </Table>
+  <Table>
+    <id>2898</id>
+    <jobid>cn=export agent_sample export job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-18 13:00:27</jobdatetime>
+    <logtimestamp>2012-10-18 13:00:43</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>get locations</logdata>
+  </Table>
+  <Table>
+    <id>2909</id>
+    <jobid>cn=export agent_sample export job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-18 13:00:27</jobdatetime>
+    <logtimestamp>2012-10-18 13:00:49</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>terminate()</logdata>
+  </Table>
+  <Table>
+    <id>2908</id>
+    <jobid>cn=export agent_sample export job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-18 13:00:27</jobdatetime>
+    <logtimestamp>2012-10-18 13:00:49</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>found 0 message(s) matching policy.</logdata>
+  </Table>
+  <Table>
+    <id>2907</id>
+    <jobid>cn=export agent_sample export job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-18 13:00:27</jobdatetime>
+    <logtimestamp>2012-10-18 13:00:49</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>searchindex(location=index): ok</logdata>
+  </Table>
+  <Table>
+    <id>2906</id>
+    <jobid>cn=export agent_sample export job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-18 13:00:27</jobdatetime>
+    <logtimestamp>2012-10-18 13:00:44</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>applying policy to message store: </logdata>
+  </Table>
+  <Table>
+    <id>2905</id>
+    <jobid>cn=export agent_sample export job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-18 13:00:27</jobdatetime>
+    <logtimestamp>2012-10-18 13:00:44</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>exportmessages(berkley big@berkley.po1.dom1)</logdata>
+  </Table>
+  <Table>
+    <id>2904</id>
+    <jobid>cn=export agent_sample export job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-18 13:00:27</jobdatetime>
+    <logtimestamp>2012-10-18 13:00:44</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>run()</logdata>
+  </Table>
+  <Table>
+    <id>2903</id>
+    <jobid>cn=export agent_sample export job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-18 13:00:27</jobdatetime>
+    <logtimestamp>2012-10-18 13:00:44</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>startup(): true</logdata>
+  </Table>
+  <Table>
+    <id>2913</id>
+    <jobid>cn=export agent_sample export job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-18 13:00:27</jobdatetime>
+    <logtimestamp>2012-10-18 13:01:01</logtimestamp>
+    <account>post-processor</account>
+    <logdata>create location and device</logdata>
+  </Table>
+  <Table>
+    <id>2912</id>
+    <jobid>cn=export agent_sample export job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-18 13:00:27</jobdatetime>
+    <logtimestamp>2012-10-18 13:01:01</logtimestamp>
+    <account>post-processor</account>
+    <logdata>get devices</logdata>
+  </Table>
+  <Table>
+    <id>2911</id>
+    <jobid>cn=export agent_sample export job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-18 13:00:27</jobdatetime>
+    <logtimestamp>2012-10-18 13:01:01</logtimestamp>
+    <account>post-processor</account>
+    <logdata>get locations</logdata>
+  </Table>
+  <Table>
+    <id>2910</id>
+    <jobid>cn=export agent_sample export job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-18 13:00:27</jobdatetime>
+    <logtimestamp>2012-10-18 13:00:57</logtimestamp>
+    <account>post-processor</account>
+    <logdata>initialize()</logdata>
+  </Table>
+  <Table>
+    <id>2914</id>
+    <jobid>cn=export agent_sample export job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-18 13:00:27</jobdatetime>
+    <logtimestamp>2012-10-18 13:01:01</logtimestamp>
+    <account>post-processor</account>
+    <logdata>export location creation</logdata>
+  </Table>
+</NewDataSet>

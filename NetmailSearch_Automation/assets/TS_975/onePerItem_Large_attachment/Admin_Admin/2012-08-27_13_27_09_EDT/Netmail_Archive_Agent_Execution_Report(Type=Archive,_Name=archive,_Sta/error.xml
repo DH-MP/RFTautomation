@@ -1,0 +1,107 @@
+<NewDataSet>
+  <Table>
+    <id>82</id>
+    <jobid>cn=archive agent_archive,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-27 11:47:10</jobdatetime>
+    <logtimestamp>2012-08-27 11:47:44</logtimestamp>
+    <account>milena@po1@dom1</account>
+    <errorsource>message.object</errorsource>
+    <errordescription>found error when extracting attachments...  an error occurred in allocating memory.</errordescription>
+    <errorstacktrace>   at system.runtimetype.forwardcalltoinvokemember(string membername, bindingflags flags, object target, int32[] awrappertypes, messagedata&amp; msgdata)
+   at gwnet.digwmessage3.get_messageid()
+   at tma.tmagwoapi.gwsession.c2608012713b8eafb01b91b1968d1bb0f(quickmessage c81395bcd05cf4f6a2e48d170a296a92f, message3 c29a7fcba1804eca063cbb47eb4303bcd, gwmessageitem c34f24cc3398f89fdf6063f96c553849e, gwaccountinfo c563adcda0530b6f0c0705de2d0fc4ddf, policyengine cd4d2f644761a177c668bfd7c3605555e, filter c49394bf83f40498b1b9c69026986b0e9, boolean c1c9bd4c6f3b02392f3b5a79576d0f9c5, arraylist ca0bc36d0bc1376e4467cb3eb40142d88, loadmode c05b468b2c4c8921985d3bd64b55bd6ae, boolean&amp; cd6c39461596061cbb1fe781c293e6588)</errorstacktrace>
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>83</id>
+    <jobid>cn=archive agent_archive,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-27 11:47:10</jobdatetime>
+    <logtimestamp>2012-08-27 11:47:44</logtimestamp>
+    <account>milena@po1@dom1</account>
+    <errorsource>message.object</errorsource>
+    <errordescription>found error when extracting attachments...  an error occurred in allocating memory.</errordescription>
+    <errorstacktrace>   at system.runtimetype.forwardcalltoinvokemember(string membername, bindingflags flags, object target, int32[] awrappertypes, messagedata&amp; msgdata)
+   at gwnet.digwmessage3.get_messageid()
+   at tma.tmagwoapi.gwsession.c2608012713b8eafb01b91b1968d1bb0f(quickmessage c81395bcd05cf4f6a2e48d170a296a92f, message3 c29a7fcba1804eca063cbb47eb4303bcd, gwmessageitem c34f24cc3398f89fdf6063f96c553849e, gwaccountinfo c563adcda0530b6f0c0705de2d0fc4ddf, policyengine cd4d2f644761a177c668bfd7c3605555e, filter c49394bf83f40498b1b9c69026986b0e9, boolean c1c9bd4c6f3b02392f3b5a79576d0f9c5, arraylist ca0bc36d0bc1376e4467cb3eb40142d88, loadmode c05b468b2c4c8921985d3bd64b55bd6ae, boolean&amp; cd6c39461596061cbb1fe781c293e6588)</errorstacktrace>
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>84</id>
+    <jobid>cn=archive agent_archive,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-27 11:47:10</jobdatetime>
+    <logtimestamp>2012-08-27 11:47:47</logtimestamp>
+    <account>milena@po1@dom1</account>
+    <errorsource>message.object</errorsource>
+    <errordescription>found error when extracting attachments...  an error occurred in allocating memory.</errordescription>
+    <errorstacktrace>   at system.runtimetype.forwardcalltoinvokemember(string membername, bindingflags flags, object target, int32[] awrappertypes, messagedata&amp; msgdata)
+   at gwnet.digwmessage3.get_messageid()
+   at tma.tmagwoapi.gwsession.c2608012713b8eafb01b91b1968d1bb0f(quickmessage c81395bcd05cf4f6a2e48d170a296a92f, message3 c29a7fcba1804eca063cbb47eb4303bcd, gwmessageitem c34f24cc3398f89fdf6063f96c553849e, gwaccountinfo c563adcda0530b6f0c0705de2d0fc4ddf, policyengine cd4d2f644761a177c668bfd7c3605555e, filter c49394bf83f40498b1b9c69026986b0e9, boolean c1c9bd4c6f3b02392f3b5a79576d0f9c5, arraylist ca0bc36d0bc1376e4467cb3eb40142d88, loadmode c05b468b2c4c8921985d3bd64b55bd6ae, boolean&amp; cd6c39461596061cbb1fe781c293e6588)</errorstacktrace>
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>85</id>
+    <jobid>cn=archive agent_archive,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-27 11:47:10</jobdatetime>
+    <logtimestamp>2012-08-27 11:47:47</logtimestamp>
+    <account>milena@po1@dom1</account>
+    <errorsource>message.object</errorsource>
+    <errordescription>found error when extracting attachments...  an error occurred in allocating memory.</errordescription>
+    <errorstacktrace>   at system.runtimetype.forwardcalltoinvokemember(string membername, bindingflags flags, object target, int32[] awrappertypes, messagedata&amp; msgdata)
+   at gwnet.digwmessage3.get_messageid()
+   at tma.tmagwoapi.gwsession.c2608012713b8eafb01b91b1968d1bb0f(quickmessage c81395bcd05cf4f6a2e48d170a296a92f, message3 c29a7fcba1804eca063cbb47eb4303bcd, gwmessageitem c34f24cc3398f89fdf6063f96c553849e, gwaccountinfo c563adcda0530b6f0c0705de2d0fc4ddf, policyengine cd4d2f644761a177c668bfd7c3605555e, filter c49394bf83f40498b1b9c69026986b0e9, boolean c1c9bd4c6f3b02392f3b5a79576d0f9c5, arraylist ca0bc36d0bc1376e4467cb3eb40142d88, loadmode c05b468b2c4c8921985d3bd64b55bd6ae, boolean&amp; cd6c39461596061cbb1fe781c293e6588)</errorstacktrace>
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>86</id>
+    <jobid>cn=archive agent_archive,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-27 11:47:10</jobdatetime>
+    <logtimestamp>2012-08-27 11:47:48</logtimestamp>
+    <account>milena@po1@dom1</account>
+    <errorsource>message.object</errorsource>
+    <errordescription>found error when extracting attachments...  an error occurred in allocating memory.</errordescription>
+    <errorstacktrace>   at system.runtimetype.forwardcalltoinvokemember(string membername, bindingflags flags, object target, int32[] awrappertypes, messagedata&amp; msgdata)
+   at gwnet.digwmessage3.get_messageid()
+   at tma.tmagwoapi.gwsession.c2608012713b8eafb01b91b1968d1bb0f(quickmessage c81395bcd05cf4f6a2e48d170a296a92f, message3 c29a7fcba1804eca063cbb47eb4303bcd, gwmessageitem c34f24cc3398f89fdf6063f96c553849e, gwaccountinfo c563adcda0530b6f0c0705de2d0fc4ddf, policyengine cd4d2f644761a177c668bfd7c3605555e, filter c49394bf83f40498b1b9c69026986b0e9, boolean c1c9bd4c6f3b02392f3b5a79576d0f9c5, arraylist ca0bc36d0bc1376e4467cb3eb40142d88, loadmode c05b468b2c4c8921985d3bd64b55bd6ae, boolean&amp; cd6c39461596061cbb1fe781c293e6588)</errorstacktrace>
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>87</id>
+    <jobid>cn=archive agent_archive,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-27 11:47:10</jobdatetime>
+    <logtimestamp>2012-08-27 11:47:48</logtimestamp>
+    <account>milena@po1@dom1</account>
+    <errorsource>message.object</errorsource>
+    <errordescription>found error when extracting attachments...  an error occurred in allocating memory.</errordescription>
+    <errorstacktrace>   at system.runtimetype.forwardcalltoinvokemember(string membername, bindingflags flags, object target, int32[] awrappertypes, messagedata&amp; msgdata)
+   at gwnet.digwmessage3.get_messageid()
+   at tma.tmagwoapi.gwsession.c2608012713b8eafb01b91b1968d1bb0f(quickmessage c81395bcd05cf4f6a2e48d170a296a92f, message3 c29a7fcba1804eca063cbb47eb4303bcd, gwmessageitem c34f24cc3398f89fdf6063f96c553849e, gwaccountinfo c563adcda0530b6f0c0705de2d0fc4ddf, policyengine cd4d2f644761a177c668bfd7c3605555e, filter c49394bf83f40498b1b9c69026986b0e9, boolean c1c9bd4c6f3b02392f3b5a79576d0f9c5, arraylist ca0bc36d0bc1376e4467cb3eb40142d88, loadmode c05b468b2c4c8921985d3bd64b55bd6ae, boolean&amp; cd6c39461596061cbb1fe781c293e6588)</errorstacktrace>
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>88</id>
+    <jobid>cn=archive agent_archive,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-27 11:47:10</jobdatetime>
+    <logtimestamp>2012-08-27 11:47:49</logtimestamp>
+    <account>milena@po1@dom1</account>
+    <errorsource>message.object</errorsource>
+    <errordescription>found error when extracting attachments...  an error occurred in allocating memory.</errordescription>
+    <errorstacktrace>   at system.runtimetype.forwardcalltoinvokemember(string membername, bindingflags flags, object target, int32[] awrappertypes, messagedata&amp; msgdata)
+   at gwnet.digwmessage3.get_messageid()
+   at tma.tmagwoapi.gwsession.c2608012713b8eafb01b91b1968d1bb0f(quickmessage c81395bcd05cf4f6a2e48d170a296a92f, message3 c29a7fcba1804eca063cbb47eb4303bcd, gwmessageitem c34f24cc3398f89fdf6063f96c553849e, gwaccountinfo c563adcda0530b6f0c0705de2d0fc4ddf, policyengine cd4d2f644761a177c668bfd7c3605555e, filter c49394bf83f40498b1b9c69026986b0e9, boolean c1c9bd4c6f3b02392f3b5a79576d0f9c5, arraylist ca0bc36d0bc1376e4467cb3eb40142d88, loadmode c05b468b2c4c8921985d3bd64b55bd6ae, boolean&amp; cd6c39461596061cbb1fe781c293e6588)</errorstacktrace>
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+</NewDataSet>

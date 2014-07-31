@@ -1,0 +1,74 @@
+<NewDataSet>
+  <Table>
+    <id>19</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-21 08:10:11</jobdatetime>
+    <logtimestamp>2012-08-21 08:10:24</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>terminate()</logdata>
+  </Table>
+  <Table>
+    <id>18</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-21 08:10:11</jobdatetime>
+    <logtimestamp>2012-08-21 08:10:24</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>number of messages: 0</logdata>
+  </Table>
+  <Table>
+    <id>17</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-21 08:10:11</jobdatetime>
+    <logtimestamp>2012-08-21 08:10:24</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>searchindex(location=local): error</logdata>
+  </Table>
+  <Table>
+    <id>16</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-21 08:10:11</jobdatetime>
+    <logtimestamp>2012-08-21 08:10:24</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>geteligiblemessages</logdata>
+  </Table>
+  <Table>
+    <id>15</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-21 08:10:11</jobdatetime>
+    <logtimestamp>2012-08-21 08:10:24</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>manageinformationlifecycle()</logdata>
+  </Table>
+  <Table>
+    <id>14</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-21 08:10:11</jobdatetime>
+    <logtimestamp>2012-08-21 08:10:24</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>run()</logdata>
+  </Table>
+  <Table>
+    <id>13</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-21 08:10:11</jobdatetime>
+    <logtimestamp>2012-08-21 08:10:24</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>startup(): true</logdata>
+  </Table>
+  <Table>
+    <id>12</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-21 08:10:11</jobdatetime>
+    <logtimestamp>2012-08-21 08:10:24</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>connected(local): true</logdata>
+  </Table>
+  <Table>
+    <id>11</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-21 08:10:11</jobdatetime>
+    <logtimestamp>2012-08-21 08:10:24</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>initialize()</logdata>
+  </Table>
+</NewDataSet>

@@ -1,0 +1,106 @@
+<NewDataSet>
+  <Table>
+    <id>3851</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 13:48:24</jobdatetime>
+    <logtimestamp>2012-12-05 13:48:58</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>initializing index engine ...</logdata>
+  </Table>
+  <Table>
+    <id>3850</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 13:48:24</jobdatetime>
+    <logtimestamp>2012-12-05 13:48:58</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>publishmessages(location=als, retention applied=false, retention days=0)</logdata>
+  </Table>
+  <Table>
+    <id>3849</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 13:48:24</jobdatetime>
+    <logtimestamp>2012-12-05 13:48:58</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>startup(): false</logdata>
+  </Table>
+  <Table>
+    <id>3848</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 13:48:24</jobdatetime>
+    <logtimestamp>2012-12-05 13:48:58</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>connected(als): true</logdata>
+  </Table>
+  <Table>
+    <id>3847</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 13:48:24</jobdatetime>
+    <logtimestamp>2012-12-05 13:48:58</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>run()</logdata>
+  </Table>
+  <Table>
+    <id>3846</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 13:48:24</jobdatetime>
+    <logtimestamp>2012-12-05 13:48:55</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>initialize()</logdata>
+  </Table>
+  <Table>
+    <id>3858</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 13:48:24</jobdatetime>
+    <logtimestamp>2012-12-05 13:49:12</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>saving account stat info done.</logdata>
+  </Table>
+  <Table>
+    <id>3857</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 13:48:24</jobdatetime>
+    <logtimestamp>2012-12-05 13:49:12</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>saving account stat info.</logdata>
+  </Table>
+  <Table>
+    <id>3856</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 13:48:24</jobdatetime>
+    <logtimestamp>2012-12-05 13:48:58</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>processing the toindex file...</logdata>
+  </Table>
+  <Table>
+    <id>3855</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 13:48:24</jobdatetime>
+    <logtimestamp>2012-12-05 13:48:58</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>managing toindex file ...</logdata>
+  </Table>
+  <Table>
+    <id>3854</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 13:48:24</jobdatetime>
+    <logtimestamp>2012-12-05 13:48:58</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>initializing archive module ...</logdata>
+  </Table>
+  <Table>
+    <id>3853</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 13:48:24</jobdatetime>
+    <logtimestamp>2012-12-05 13:48:58</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>initializing message handler ...</logdata>
+  </Table>
+  <Table>
+    <id>3852</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 13:48:24</jobdatetime>
+    <logtimestamp>2012-12-05 13:48:58</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>initializing index fail list manager...</logdata>
+  </Table>
+</NewDataSet>

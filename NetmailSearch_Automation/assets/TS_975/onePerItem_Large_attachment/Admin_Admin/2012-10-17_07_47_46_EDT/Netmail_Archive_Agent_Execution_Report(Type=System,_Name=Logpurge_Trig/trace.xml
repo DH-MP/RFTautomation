@@ -1,0 +1,42 @@
+<NewDataSet>
+  <Table>
+    <id>1438</id>
+    <jobid>cn=system_logpurge,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-17 06:47:06</jobdatetime>
+    <logtimestamp>2012-10-17 06:47:13</logtimestamp>
+    <account />
+    <logdata>terminate()</logdata>
+  </Table>
+  <Table>
+    <id>1437</id>
+    <jobid>cn=system_logpurge,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-17 06:47:06</jobdatetime>
+    <logtimestamp>2012-10-17 06:47:13</logtimestamp>
+    <account />
+    <logdata>purge()</logdata>
+  </Table>
+  <Table>
+    <id>1436</id>
+    <jobid>cn=system_logpurge,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-17 06:47:06</jobdatetime>
+    <logtimestamp>2012-10-17 06:47:13</logtimestamp>
+    <account />
+    <logdata>run()</logdata>
+  </Table>
+  <Table>
+    <id>1435</id>
+    <jobid>cn=system_logpurge,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-17 06:47:06</jobdatetime>
+    <logtimestamp>2012-10-17 06:47:13</logtimestamp>
+    <account />
+    <logdata>startup(): true</logdata>
+  </Table>
+  <Table>
+    <id>1434</id>
+    <jobid>cn=system_logpurge,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-17 06:47:06</jobdatetime>
+    <logtimestamp>2012-10-17 06:47:13</logtimestamp>
+    <account />
+    <logdata>initialize()</logdata>
+  </Table>
+</NewDataSet>

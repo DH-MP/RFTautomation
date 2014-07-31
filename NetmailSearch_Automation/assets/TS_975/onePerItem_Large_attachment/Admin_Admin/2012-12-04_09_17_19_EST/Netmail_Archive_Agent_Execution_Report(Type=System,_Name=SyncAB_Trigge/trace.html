@@ -1,0 +1,4095 @@
+﻿<html xmlns:msxml="urn:schemas-microsoft-com:xslt">
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style>
+          /* Common styles */
+          body, p, tr, td, ol, ul
+          {
+          font-family: Arial, "Trebuchet MS" , Helvetica, Geneva, Swiss, SunSans-Regular;
+          font-size: 95%;
+          margin: 0;
+          padding: 0;
+          }
+          th
+          {
+          color: black;
+          font-weight: bold;
+          letter-spacing: 0.1em;
+          text-align: left;
+          text-indent: 0.5em;
+          background-color: lightgrey;
+          }
+          body a
+          {
+          text-decoration: none;
+          }
+          h1
+          {
+          font-size: 1.1em;
+          color: black;
+          font-weight: bold;
+          letter-spacing: 0.1em;
+          margin-top: 0.4em;
+          margin-bottom: 0.4em;
+          border-bottom: 2px solid #bf0000;
+          }
+          h2
+          {
+          font-size: 1.1em;
+          color: white;
+          font-weight: bold;
+          letter-spacing: 0.1em;
+          text-indent: 0.5em;
+          background-color: #bf0000;
+          }
+          h3
+          {
+          font-size: 1em;
+          color: black;
+          font-weight: bold;
+          letter-spacing: 0.1em;
+          margin-top: 0.6em;
+          margin-bottom: 0.2em;
+          border-bottom: 1px solid #bf0000;
+          }
+          h4
+          {
+          font-size: 16px;
+          color: white;
+          font-weight: bold;
+          letter-spacing: 0.1em;
+          margin-top: 0em;
+          margin-bottom: 0em;
+          text-indent: 0.5em;
+          background-color: #6B8899;
+          }
+          h5
+          {
+          font-size: 1em;
+          color: black;
+          font-weight: bold;
+          letter-spacing: 0.1em;
+          margin-bottom: 0.1em;
+          text-indent: 0.5em;
+          background-color: #cccc99;
+          }
+          small
+          {
+          font-size: 0.8em;
+          }
+
+          select
+          {
+          font-family: Arial, "Trebuchet MS" , Helvetica, Geneva, Swiss, SunSans-Regular;
+          }
+
+          /* WebAdmin specific styles */
+          td
+          {
+          font-size: 0.9em;
+          font-family: Arial, "Trebuchet MS" , Helvetica, Geneva, Swiss, SunSans-Regular;
+          }
+          tr.tab a
+          {
+          color: #5a5958;
+          font-size: 0.8em;
+          text-decoration: none;
+          }
+          tr.tab a:hover
+          {
+          color: #000000;
+          }
+          .DN
+          {
+          font-size: 1.1em;
+          color: white;
+          font-weight: bold;
+          letter-spacing: 0.1em;
+          }
+          a.DN
+          {
+          text-decoration: none;
+          color: white !important;
+          }
+
+          div.header
+          {
+          margin: 0;
+          /*background-color: #bf0000;
+          color: white;*/
+          }
+          div.footer		{ margin: bottom; }
+          div.content
+          {
+          margin-left: 190px;
+          border-left: 1px solid gray;
+          padding: 1em;
+          }
+          div.left
+          {
+          float: left;
+          width: 160px;
+          margin: 0;
+          padding: 1em;
+          }
+          div.container
+          {
+          width: 100%;
+          margin: 0px;
+          border: 1px solid gray;
+          line-height: 150%;
+          }
+        </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <table>
+          <tr class="tab">
+            <td><a href="#admin">admin</a></td>
+          </tr>
+        </table>
+      </div>
+      <div class="content"><a name="Top"></a><table>
+          <caption><a name="admin"><h1>admin - Trace Summary
+        </h1></a><a href="#Top">Home</a></caption>
+          <tr>
+            <th><small>Account: </small></th>
+            <td colspan="2"><small>admin</small></td>
+          </tr>
+          <tr>
+            <th><small>Trigger: </small></th>
+            <td colspan="2"><small></small></td>
+          </tr>
+          <tr colspan="2">
+            <th><small>DateTime: </small></th>
+            <td colspan="2"><small></small></td>
+          </tr>
+          <tr>
+            <th><small>Job: </small></th>
+            <td colspan="2"><small>cn=system_syncab,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</small></td>
+          </tr>
+          <p></p>
+          <tr>
+            <th><small>Log DateTime</small></th>
+            <th><small>Entry</small></th>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>run()</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>initialize()</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>processing address book novell groupwise address book</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>synchronizeaddressbook(novell groupwise address book)</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=shane@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>cn=shane@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=shane@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=milena@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>cn=milena@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=milena@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=ati09@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>cn=ati09@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=ati09@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=ati0x@po1@dom1@group,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>cn=ati0x@po1@dom1@group,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=ati0x@po1@dom1@group,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=testname@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>cn=testname@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=testname@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=equipment1@po1@dom1@resource,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>cn=equipment1@po1@dom1@resource,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=equipment1@po1@dom1@resource,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=проверка@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>cn=проверка@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=проверка@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=all@po1@dom1@group,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>cn=all@po1@dom1@group,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=all@po1@dom1@group,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=ati10@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>cn=ati10@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=ati10@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=john@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>cn=john@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=john@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=sub dl@po1@dom1@group,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>cn=sub dl@po1@dom1@group,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=sub dl@po1@dom1@group,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=eyad@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>cn=eyad@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=eyad@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=load10@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>cn=load10@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=load10@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=edge01@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>cn=edge01@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=edge01@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=ευρωπλάνο@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>cn=ευρωπλάνο@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=ευρωπλάνο@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=aaron@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>cn=aaron@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=aaron@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=load01@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>cn=load01@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=load01@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=toto@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>cn=toto@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=toto@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=edge02@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>cn=edge02@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=edge02@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=außerdem@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>cn=außerdem@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=außerdem@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=népszerű@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>cn=népszerű@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=népszerű@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=edge03@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>cn=edge03@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=edge03@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=stub1@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>cn=stub1@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=stub1@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=load 0x@po1@dom1@group,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>cn=load 0x@po1@dom1@group,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=load 0x@po1@dom1@group,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=everybody@po1@dom1@group,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>cn=everybody@po1@dom1@group,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=everybody@po1@dom1@group,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=ati01@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>cn=ati01@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=ati01@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=main dl@po1@dom1@group,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>cn=main dl@po1@dom1@group,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=main dl@po1@dom1@group,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=externalentity@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>cn=externalentity@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=externalentity@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=load09@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>cn=load09@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=load09@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=edge04@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>cn=edge04@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=edge04@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=qa&amp;dev group@po1@dom1@group,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>cn=qa&amp;dev group@po1@dom1@group,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=qa&amp;dev group@po1@dom1@group,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=load02@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>cn=load02@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=load02@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=ati12_resource01@po1@dom1@resource,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>cn=ati12_resource01@po1@dom1@resource,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=ati12_resource01@po1@dom1@resource,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=ati02@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>cn=ati02@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=ati02@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=edge05@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>cn=edge05@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=edge05@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=amys@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>cn=amys@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=amys@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=granby@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>cn=granby@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=granby@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=load03@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>cn=load03@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=load03@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=tom@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>cn=tom@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=tom@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=expired@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>cn=expired@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=expired@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=simple room1@po1@dom1@resource,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>cn=simple room1@po1@dom1@resource,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=simple room1@po1@dom1@resource,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=ati03@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>cn=ati03@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=ati03@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=dl2po@po3@dom1@group,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>cn=dl2po@po3@dom1@group,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=dl2po@po3@dom1@group,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=stub2@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>cn=stub2@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=stub2@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=load04@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>cn=load04@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=load04@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=postmaster@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>cn=postmaster@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=postmaster@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=room 2@po1@dom1@resource,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>cn=room 2@po1@dom1@resource,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=room 2@po1@dom1@resource,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=ati04@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>cn=ati04@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=ati04@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=o'maley@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>cn=o'maley@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=o'maley@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=load05@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>cn=load05@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=load05@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=ati12@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>cn=ati12@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=ati12@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=altă@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>cn=altă@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=altă@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=françois@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>cn=françois@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=françois@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=a&amp;b@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>cn=a&amp;b@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=a&amp;b@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=ati05@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>cn=ati05@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=ati05@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=dexter@po3@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>cn=dexter@po3@dom1@user,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=dexter@po3@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=load06@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>cn=load06@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=load06@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=tommy@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>cn=tommy@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=tommy@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=test123@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>cn=test123@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=test123@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=stub3@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>cn=stub3@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=stub3@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=fredgroup@po1@dom1@group,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>cn=fredgroup@po1@dom1@group,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=fredgroup@po1@dom1@group,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=ati06@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>cn=ati06@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=ati06@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=lz@po1@dom1@group,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>cn=lz@po1@dom1@group,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=lz@po1@dom1@group,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=qa@po1@dom1@group,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>cn=qa@po1@dom1@group,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=qa@po1@dom1@group,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=name123@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>cn=name123@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=name123@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=q&amp;a@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>cn=q&amp;a@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=q&amp;a@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=admin@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>cn=admin@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=admin@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=ati@po1@dom1@group,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>cn=ati@po1@dom1@group,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=ati@po1@dom1@group,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=load07@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>cn=load07@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=load07@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=ati07@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>cn=ati07@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=ati07@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=\\#123 dl@po1@dom1@group,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>cn=\\#123 dl@po1@dom1@group,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=\\#123 dl@po1@dom1@group,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=stub4@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>cn=stub4@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=stub4@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=conference room@po1@dom1@resource,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>cn=conference room@po1@dom1@resource,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=conference room@po1@dom1@resource,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=load08@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>cn=load08@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=load08@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=jimmy@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>cn=jimmy@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=jimmy@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=ati08@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>cn=ati08@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=ati08@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>sync ldap contact : cn=first@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>cn=first@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214 exists in address book: false</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>delete ldap user: cn=first@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>addcontacts(54)</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding contact: gwa30004@po1@dom1@user</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute cn = gwa30004@po1@dom1@user</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute maguid = 04c47c21-0d15-0000-99d6-000c29949e8f@56:groupwisesystemaddressbook@52</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute maname = gwa30004 ma30004</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maldapattributes</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maupn</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserstate</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationmaid</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserinfo</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>createuserentry(gwa30004@po1@dom1@user): ok</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>add ldap user(cn=gwa30004@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214): ok</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>add ldap postoffice: dom2po1@dom2</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>createpostofficeentry(dom2po1@dom2): ok</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding contact: admin@dom2po1@dom2@user</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute cn = admin@dom2po1@dom2@user</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute maguid = 05943430-02cd-0000-a46a-6a00fd00c800@56:groupwisesystemaddressbook@52</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute maname = admin admin</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maldapattributes</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maupn</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserstate</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationmaid</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserinfo</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>createuserentry(admin@dom2po1@dom2@user): ok</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>add ldap user(cn=admin@dom2po1@dom2@user,ou=users,ou=gwopenserver,o=ericorg214): ok</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding contact: testdl@po1@dom1@group</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute cn = testdl@po1@dom1@group</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute maguid = 0ad1c380-09e5-0000-93b9-8394542492b3@58:groupwisesystemaddressbook@52</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute maname = testdl</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maldapattributes</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maupn</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserstate</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationmaid</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserinfo</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adddlmembers(2)</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>add dlmember: archive@po1@dom1</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adddlmembers(2)</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adddlmembers(2)</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>add dlmember: cristinao@po1@dom1</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>createuserentry(testdl@po1@dom1@group): ok</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>add ldap user(cn=testdl@po1@dom1@group,ou=users,ou=gwopenserver,o=ericorg214): ok</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding contact: tomabiene@po1@dom1@user</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute cn = tomabiene@po1@dom1@user</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute maguid = 0ad8f4e0-0452-0000-b17f-1f3e52a7c86d@56:groupwisesystemaddressbook@52</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute maname = john doe</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maldapattributes</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maupn</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserstate</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationmaid</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserinfo</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>createuserentry(tomabiene@po1@dom1@user): ok</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>add ldap user(cn=tomabiene@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214): ok</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding contact: archive@po1@dom1@user</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute cn = archive@po1@dom1@user</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute maguid = 0c9deb70-02a7-0000-a1c8-f41b868eb8d1@56:groupwisesystemaddressbook@52</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute maname = archive dedicated</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maldapattributes</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maupn</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserstate</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationmaid</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserinfo</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>createuserentry(archive@po1@dom1@user): ok</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>add ldap user(cn=archive@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214): ok</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding contact: gwa30005@po1@dom1@user</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute cn = gwa30005@po1@dom1@user</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute maguid = 0d775a41-0d15-0000-85fc-000c29949e8f@56:groupwisesystemaddressbook@52</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute maname = gwa30005 ma30005</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maldapattributes</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maupn</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserstate</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationmaid</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserinfo</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>createuserentry(gwa30005@po1@dom1@user): ok</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>add ldap user(cn=gwa30005@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214): ok</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding contact: greg@dom2po1@dom2@user</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute cn = greg@dom2po1@dom2@user</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute maguid = 0ecedc10-1017-0000-8579-005056805ff9@56:groupwisesystemaddressbook@52</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute maname = greg smith</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maldapattributes</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maupn</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserstate</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationmaid</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserinfo</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>createuserentry(greg@dom2po1@dom2@user): ok</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>add ldap user(cn=greg@dom2po1@dom2@user,ou=users,ou=gwopenserver,o=ericorg214): ok</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding contact: milena@po1@dom1@user</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute cn = milena@po1@dom1@user</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute maguid = 11606bf0-03ac-0000-b1e9-c49cdb07de50@56:groupwisesystemaddressbook@52</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute maname = milena test</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maldapattributes</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maupn</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserstate</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationmaid</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserinfo</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>createuserentry(milena@po1@dom1@user): ok</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>add ldap user(cn=milena@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214): ok</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding contact: bop-ccd/contract dvlp and admin~@po1@dom1@user</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute cn = bop-ccd/contract dvlp and admin~@po1@dom1@user</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute maguid = 1b890ef0-1899-0000-b5d1-0050568e389b@56:groupwisesystemaddressbook@52</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute maname = bop bop-ccd/contract dvlp and admin~</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maldapattributes</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maupn</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserstate</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationmaid</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserinfo</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>createuserentry(bop-ccd/contract dvlp and admin~@po1@dom1@user): ok</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>add ldap user(cn=bop-ccd/contract dvlp and admin~@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214): ok</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding contact: amy@po1@dom1@user</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute cn = amy@po1@dom1@user</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute maguid = 1c679890-0f58-0000-8f5f-d5c5f9100229@56:groupwisesystemaddressbook@52</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute maname = amy s</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maldapattributes</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maupn</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserstate</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationmaid</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserinfo</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>createuserentry(amy@po1@dom1@user): ok</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>add ldap user(cn=amy@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214): ok</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding contact: gwa30006@po1@dom1@user</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute cn = gwa30006@po1@dom1@user</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute maguid = 1f75ad01-0d15-0000-8cf1-000c29949e8f@56:groupwisesystemaddressbook@52</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute maname = gwa30006 ma30006</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maldapattributes</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maupn</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserstate</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationmaid</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserinfo</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>createuserentry(gwa30006@po1@dom1@user): ok</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>add ldap user(cn=gwa30006@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214): ok</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding contact: re30007@po1@dom1@user</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute cn = re30007@po1@dom1@user</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute maguid = 2880bd41-0d15-0000-892c-000c29949e8f@56:groupwisesystemaddressbook@52</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute maname = gwa30007 ma30007</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maldapattributes</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maupn</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserstate</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationmaid</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserinfo</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>createuserentry(re30007@po1@dom1@user): ok</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>add ldap user(cn=re30007@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214): ok</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding contact: merkés françois@dom2po1@dom2@user</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute cn = merkés françois@dom2po1@dom2@user</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute maguid = 32f59a70-14db-0000-8d37-0050568e389b@56:groupwisesystemaddressbook@52</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute maname = têst</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maldapattributes</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maupn</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserstate</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationmaid</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserinfo</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>createuserentry(merkés françois@dom2po1@dom2@user): ok</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>add ldap user(cn=merkés françois@dom2po1@dom2@user,ou=users,ou=gwopenserver,o=ericorg214): ok</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding contact: gwa30008@po1@dom1@user</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute cn = gwa30008@po1@dom1@user</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute maguid = 3a302cb1-0d15-0000-bcea-000c29949e8f@56:groupwisesystemaddressbook@52</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute maname = gwa30008 ma30008 (test with parenthesis)</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maldapattributes</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maupn</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserstate</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationmaid</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserinfo</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>createuserentry(gwa30008@po1@dom1@user): ok</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>add ldap user(cn=gwa30008@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214): ok</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding contact: berkley@po1@dom1@user</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute cn = berkley@po1@dom1@user</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute maguid = 3e67c5e0-166b-0000-8226-e44f9a3642a4@56:groupwisesystemaddressbook@52</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute maname = berkley big</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maldapattributes</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maupn</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserstate</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationmaid</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserinfo</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>createuserentry(berkley@po1@dom1@user): ok</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>add ldap user(cn=berkley@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214): ok</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding contact: resource1@po1@dom1@resource</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute cn = resource1@po1@dom1@resource</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute maguid = 42c5ef30-0dc0-0000-a22d-f70b71d9ba10@55:groupwisesystemaddressbook@52</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute maname = resource1</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maldapattributes</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maupn</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserstate</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationmaid</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserinfo</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>createuserentry(resource1@po1@dom1@resource): ok</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>add ldap user(cn=resource1@po1@dom1@resource,ou=users,ou=gwopenserver,o=ericorg214): ok</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding contact: проверка@po1@dom1@user</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute cn = проверка@po1@dom1@user</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute maguid = 44b6db90-0200-0000-b547-f03d63a914f0@56:groupwisesystemaddressbook@52</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute maname = проверка драйверы</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maldapattributes</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maupn</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserstate</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationmaid</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserinfo</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>createuserentry(проверка@po1@dom1@user): ok</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>add ldap user(cn=проверка@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214): ok</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding contact: user1dom2po1@dom2po1@dom2@user</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute cn = user1dom2po1@dom2po1@dom2@user</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute maguid = 5a9c2020-10e0-0000-9ba5-cf008e00d100@56:groupwisesystemaddressbook@52</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute maname = f user1dom2po1</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maldapattributes</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maupn</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserstate</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationmaid</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserinfo</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>createuserentry(user1dom2po1@dom2po1@dom2@user): ok</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>add ldap user(cn=user1dom2po1@dom2po1@dom2@user,ou=users,ou=gwopenserver,o=ericorg214): ok</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding contact: milenadl2@dom2po1@dom2@group</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute cn = milenadl2@dom2po1@dom2@group</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute maguid = 5d73bb81-06ab-0000-a118-0050568e389b@58:groupwisesystemaddressbook@52</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute maname = milenadl2</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maldapattributes</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maupn</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserstate</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationmaid</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserinfo</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adddlmembers(2)</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adddlmembers(2)</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adddlmembers(2)</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>add dlmember: archive@po1@dom1</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>add dlmember: cristinao@po1@dom1</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adddlmembers(3)</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adddlmembers(4)</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>add dlmember: admin@dom2po1@dom2</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>add dlmember: eva@po1@dom1</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>add dlmember: gwa30001@po1@dom1</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>add dlmember: gwa30003@dom2po1@dom2</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>add dlmember: gwa30002ppp@po1@dom1</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>createuserentry(milenadl2@dom2po1@dom2@group): ok</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>add ldap user(cn=milenadl2@dom2po1@dom2@group,ou=users,ou=gwopenserver,o=ericorg214): ok</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding contact: testwithat@po1@dom1@user</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute cn = testwithat@po1@dom1@user</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute maguid = 5e2ebf00-0b49-0000-bb4f-4fce4173b53d@56:groupwisesystemaddressbook@52</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute maname = test</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maldapattributes</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maupn</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserstate</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationmaid</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserinfo</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>createuserentry(testwithat@po1@dom1@user): ok</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>add ldap user(cn=testwithat@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214): ok</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding contact: ericsdl@po1@dom1@group</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute cn = ericsdl@po1@dom1@group</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute maguid = 62ab9220-159d-0000-8f7b-12d3b54575f7@58:groupwisesystemaddressbook@52</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute maname = ericsdl</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maldapattributes</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maupn</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserstate</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationmaid</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserinfo</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adddlmembers(4)</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>add dlmember: admin@dom2po1@dom2</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>add dlmember: eva@po1@dom1</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>add dlmember: gwa30001@po1@dom1</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>add dlmember: gwa30003@dom2po1@dom2</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>createuserentry(ericsdl@po1@dom1@group): ok</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>add ldap user(cn=ericsdl@po1@dom1@group,ou=users,ou=gwopenserver,o=ericorg214): ok</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding contact: ren30009@po1@dom1@user</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute cn = ren30009@po1@dom1@user</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute maguid = 654e75f0-0eaa-0000-9e5a-000c29949e8f@56:groupwisesystemaddressbook@52</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute maname = test ma30009</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maldapattributes</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maupn</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserstate</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationmaid</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserinfo</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>createuserentry(ren30009@po1@dom1@user): ok</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>add ldap user(cn=ren30009@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214): ok</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding contact: gwa30010@po1@dom1@user</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute cn = gwa30010@po1@dom1@user</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute maguid = 655330e0-0eaa-0000-9e5a-000c29949e8f@56:groupwisesystemaddressbook@52</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute maname = gwa30010 ma30010</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maldapattributes</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maupn</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserstate</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationmaid</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserinfo</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>createuserentry(gwa30010@po1@dom1@user): ok</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>add ldap user(cn=gwa30010@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214): ok</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>add ldap postoffice: longdom-po1@test domain with 32 char name lo</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>createpostofficeentry(longdom-po1@test domain with 32 char name lo): ok</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding contact: last@longdom-po1@test domain with 32 char name lo@user</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute cn = last@longdom-po1@test domain with 32 char name lo@user</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute maguid = 693425f0-17fd-0000-a215-0050568e389b@56:groupwisesystemaddressbook@52</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute maname = first, last</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maldapattributes</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maupn</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserstate</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationmaid</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserinfo</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>createuserentry(last@longdom-po1@test domain with 32 char name lo@user): ok</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>add ldap user(cn=last@longdom-po1@test domain with 32 char name lo@user,ou=users,ou=gwopenserver,o=ericorg214): ok</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding contact: fredaaa@dom2po1@dom2@user</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute cn = fredaaa@dom2po1@dom2@user</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute maguid = 80a71500-0de7-0000-9de1-2d09043c0d6d@56:groupwisesystemaddressbook@52</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute maname = fred zzz flinstone</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maldapattributes</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maupn</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserstate</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationmaid</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserinfo</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>createuserentry(fredaaa@dom2po1@dom2@user): ok</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>add ldap user(cn=fredaaa@dom2po1@dom2@user,ou=users,ou=gwopenserver,o=ericorg214): ok</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding contact: eric new user@po1@dom1@user</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute cn = eric new user@po1@dom1@user</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute maguid = 823f3040-08fc-0000-8def-075cb59c4c74@56:groupwisesystemaddressbook@52</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute maname = kashif surname</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maldapattributes</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maupn</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserstate</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationmaid</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserinfo</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>createuserentry(eric new user@po1@dom1@user): ok</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>add ldap user(cn=eric new user@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214): ok</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding contact: eva@po1@dom1@user</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute cn = eva@po1@dom1@user</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute maguid = 8533f020-0de7-0000-8cb4-0050568131fc@56:groupwisesystemaddressbook@52</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute maname = eva brown</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maldapattributes</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maupn</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserstate</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationmaid</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserinfo</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>createuserentry(eva@po1@dom1@user): ok</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>add ldap user(cn=eva@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214): ok</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding contact: resource2@po1@dom1@resource</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute cn = resource2@po1@dom1@resource</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute maguid = 8bb225b0-0dc0-0000-a22d-f70b71d9ba10@55:groupwisesystemaddressbook@52</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute maname = resource2</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maldapattributes</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maupn</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserstate</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationmaid</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserinfo</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>createuserentry(resource2@po1@dom1@resource): ok</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>add ldap user(cn=resource2@po1@dom1@resource,ou=users,ou=gwopenserver,o=ericorg214): ok</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding contact: ~contact@longdom-po1@test domain with 32 char name lo@user</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute cn = ~contact@longdom-po1@test domain with 32 char name lo@user</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute maguid = 8c087f31-1899-0000-bee2-0050568e389b@56:groupwisesystemaddressbook@52</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute maname = inlongdomain/po</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maldapattributes</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maupn</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserstate</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationmaid</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserinfo</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>createuserentry(~contact@longdom-po1@test domain with 32 char name lo@user): ok</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>add ldap user(cn=~contact@longdom-po1@test domain with 32 char name lo@user,ou=users,ou=gwopenserver,o=ericorg214): ok</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding contact: userwithaverylonguseridtotrytobreakthe64charactersproblem@po1@dom1@user</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute cn = userwithaverylonguseridtotrytobreakthe64charactersproblem@po1@dom1@user</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute maguid = 98998670-13fa-0000-ba4e-0626db32767e@56:groupwisesystemaddressbook@52</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute maname = long testlong</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maldapattributes</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maupn</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserstate</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationmaid</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserinfo</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>createuserentry(userwithaverylonguseridtotrytobreakthe64charactersproblem@po1@dom1@user): ok</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>add ldap user(cn=userwithaverylonguseridtotrytobreakthe64charactersproblem@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214): error</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding contact: memberlist@dom2po1@dom2@group</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute cn = memberlist@dom2po1@dom2@group</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute maguid = a4d47bb0-13bf-0000-a17f-005056b4549c@58:groupwisesystemaddressbook@52</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute maname = memberlist</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maldapattributes</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maupn</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserstate</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationmaid</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserinfo</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adddlmembers(1)</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>add dlmember: archive@po1@dom1</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>createuserentry(memberlist@dom2po1@dom2@group): ok</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>add ldap user(cn=memberlist@dom2po1@dom2@group,ou=users,ou=gwopenserver,o=ericorg214): ok</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding contact: journal@dom2po1@dom2@user</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute cn = journal@dom2po1@dom2@user</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute maguid = a8ed03c0-1739-0000-9d1d-0050568e389b@56:groupwisesystemaddressbook@52</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute maname = journal test</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maldapattributes</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maupn</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserstate</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationmaid</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserinfo</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>createuserentry(journal@dom2po1@dom2@user): ok</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>add ldap user(cn=journal@dom2po1@dom2@user,ou=users,ou=gwopenserver,o=ericorg214): ok</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding contact: agent100@dom2po1@dom2@user</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute cn = agent100@dom2po1@dom2@user</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute maguid = b10d1b41-10f8-0000-9f03-005056805ff9@56:groupwisesystemaddressbook@52</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute maname = from216</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maldapattributes</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maupn</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserstate</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationmaid</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserinfo</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>createuserentry(agent100@dom2po1@dom2@user): ok</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>add ldap user(cn=agent100@dom2po1@dom2@user,ou=users,ou=gwopenserver,o=ericorg214): ok</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding contact: \\#user@longdom-po1@test domain with 32 char name lo@user</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute cn = \\#user@longdom-po1@test domain with 32 char name lo@user</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute maguid = b3d47c31-1899-0000-914b-0050568e389b@56:groupwisesystemaddressbook@52</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute maname = test</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maldapattributes</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maupn</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserstate</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationmaid</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserinfo</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>createuserentry(\\#user@longdom-po1@test domain with 32 char name lo@user): ok</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>add ldap user(cn=\\#user@longdom-po1@test domain with 32 char name lo@user,ou=users,ou=gwopenserver,o=ericorg214): ok</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding contact: mike1r2@dom2po1@dom2@user</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute cn = mike1r2@dom2po1@dom2@user</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute maguid = b9d8e4b0-0528-0000-ae4c-0c2a195b0c37@56:groupwisesystemaddressbook@52</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute maname = mike1 test1</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maldapattributes</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maupn</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserstate</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationmaid</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserinfo</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>createuserentry(mike1r2@dom2po1@dom2@user): ok</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>add ldap user(cn=mike1r2@dom2po1@dom2@user,ou=users,ou=gwopenserver,o=ericorg214): ok</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding contact: dlpo2@dom2po1@dom2@group</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute cn = dlpo2@dom2po1@dom2@group</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute maguid = bb0ccc30-0cfc-0000-8170-0050568903c1@58:groupwisesystemaddressbook@52</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute maname = dlpo2</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maldapattributes</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maupn</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserstate</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationmaid</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserinfo</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adddlmembers(2)</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adddlmembers(2)</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>add dlmember: archive@po1@dom1</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adddlmembers(2)</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>add dlmember: cristinao@po1@dom1</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>createuserentry(dlpo2@dom2po1@dom2@group): ok</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>add ldap user(cn=dlpo2@dom2po1@dom2@group,ou=users,ou=gwopenserver,o=ericorg214): ok</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding contact: dlpo1@po1@dom1@group</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute cn = dlpo1@po1@dom1@group</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute maguid = c34d3970-0cfc-0000-a70e-42caa2b26289@58:groupwisesystemaddressbook@52</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute maname = dlpo1</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maldapattributes</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maupn</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserstate</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationmaid</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserinfo</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adddlmembers(3)</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adddlmembers(4)</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>add dlmember: admin@dom2po1@dom2</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>add dlmember: eva@po1@dom1</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>add dlmember: gwa30001@po1@dom1</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>add dlmember: gwa30003@dom2po1@dom2</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>add dlmember: gwa30002ppp@po1@dom1</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>createuserentry(dlpo1@po1@dom1@group): ok</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>add ldap user(cn=dlpo1@po1@dom1@group,ou=users,ou=gwopenserver,o=ericorg214): ok</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding contact: blankbefore@po1@dom1@user</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute cn = blankbefore@po1@dom1@user</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute maguid = c74a86d0-1333-0000-8a1d-11501674b2b0@56:groupwisesystemaddressbook@52</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute maname = blankbefore xxx</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maldapattributes</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maupn</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserstate</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationmaid</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserinfo</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>createuserentry(blankbefore@po1@dom1@user): ok</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>add ldap user(cn=blankbefore@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214): ok</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding contact: user2@longdom-po1@test domain with 32 char name lo@user</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute cn = user2@longdom-po1@test domain with 32 char name lo@user</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute maguid = cebfb4f0-141c-0000-a707-000c29d5fdb1@56:groupwisesystemaddressbook@52</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute maname = user2 test</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maldapattributes</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maupn</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserstate</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationmaid</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserinfo</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>createuserentry(user2@longdom-po1@test domain with 32 char name lo@user): ok</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>add ldap user(cn=user2@longdom-po1@test domain with 32 char name lo@user,ou=users,ou=gwopenserver,o=ericorg214): ok</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding contact: us#esr@longdom-po1@test domain with 32 char name lo@user</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute cn = us#esr@longdom-po1@test domain with 32 char name lo@user</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute maguid = d7899161-1899-0000-9d86-0050568e389b@56:groupwisesystemaddressbook@52</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute maname = te#st</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maldapattributes</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maupn</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserstate</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationmaid</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserinfo</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>createuserentry(us#esr@longdom-po1@test domain with 32 char name lo@user): ok</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>add ldap user(cn=us#esr@longdom-po1@test domain with 32 char name lo@user,ou=users,ou=gwopenserver,o=ericorg214): ok</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding contact: mezatest@dom2po1@dom2@user</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute cn = mezatest@dom2po1@dom2@user</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute maguid = dca98530-10cc-0000-9491-0050568903c1@56:groupwisesystemaddressbook@52</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute maname = display ross</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maldapattributes</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maupn</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserstate</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationmaid</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserinfo</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>createuserentry(mezatest@dom2po1@dom2@user): ok</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>add ldap user(cn=mezatest@dom2po1@dom2@user,ou=users,ou=gwopenserver,o=ericorg214): ok</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding contact: master@po1@dom1@user</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute cn = master@po1@dom1@user</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute maguid = e4d95c50-141c-0000-8b82-ba001f00a700@56:groupwisesystemaddressbook@52</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute maname = master test</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maldapattributes</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maupn</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserstate</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationmaid</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserinfo</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>createuserentry(master@po1@dom1@user): ok</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>add ldap user(cn=master@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214): ok</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding contact: external@po1@dom1@user</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute cn = external@po1@dom1@user</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute maguid = e578b120-11cd-0000-a3e1-99f19d8aeab0@56:groupwisesystemaddressbook@52</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute maname = entity</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maldapattributes</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maupn</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserstate</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationmaid</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserinfo</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>createuserentry(external@po1@dom1@user): ok</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>add ldap user(cn=external@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214): ok</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding contact: blankafter@po1@dom1@user</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute cn = blankafter@po1@dom1@user</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute maguid = e5a02ea0-1333-0000-8a1d-11501674b2b0@56:groupwisesystemaddressbook@52</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute maname = blank after</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maldapattributes</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maupn</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserstate</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationmaid</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserinfo</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>createuserentry(blankafter@po1@dom1@user): ok</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>add ldap user(cn=blankafter@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214): ok</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding contact: journal2@po1@dom1@user</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute cn = journal2@po1@dom1@user</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute maguid = e9119bd0-14ed-0000-8f7b-12d3b54575f7@56:groupwisesystemaddressbook@52</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute maname = journal2 test2</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maldapattributes</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maupn</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserstate</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationmaid</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserinfo</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>createuserentry(journal2@po1@dom1@user): ok</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>add ldap user(cn=journal2@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214): ok</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding contact: gwa30001@po1@dom1@user</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute cn = gwa30001@po1@dom1@user</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute maguid = e9c72710-0d14-0000-9ae7-000c29949e8f@56:groupwisesystemaddressbook@52</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute maname = gwa30001 ma30001</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maldapattributes</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maupn</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserstate</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationmaid</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserinfo</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>createuserentry(gwa30001@po1@dom1@user): ok</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>add ldap user(cn=gwa30001@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214): ok</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding contact: gwa30002ppp@po1@dom1@user</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute cn = gwa30002ppp@po1@dom1@user</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute maguid = e9c99810-0d14-0000-9ae7-000c29949e8f@56:groupwisesystemaddressbook@52</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute maname = bilbo the hobbit</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maldapattributes</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maupn</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserstate</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationmaid</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserinfo</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>createuserentry(gwa30002ppp@po1@dom1@user): ok</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>add ldap user(cn=gwa30002ppp@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214): ok</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding contact: gwa30003@dom2po1@dom2@user</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute cn = gwa30003@dom2po1@dom2@user</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute maguid = f2d23751-0d14-0000-92dd-000c29949e8f@56:groupwisesystemaddressbook@52</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute maname = gwa30003 ma30003</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maldapattributes</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maupn</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserstate</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationmaid</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserinfo</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>createuserentry(gwa30003@dom2po1@dom2@user): ok</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>add ldap user(cn=gwa30003@dom2po1@dom2@user,ou=users,ou=gwopenserver,o=ericorg214): ok</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding contact: tomabiene@dom2po1@dom2@user</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute cn = tomabiene@dom2po1@dom2@user</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute maguid = f76b7ef1-10cc-0000-9f8e-0050568903c1@56:groupwisesystemaddressbook@52</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute maname = tomabiene ross</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maldapattributes</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maupn</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserstate</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationmaid</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserinfo</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>createuserentry(tomabiene@dom2po1@dom2@user): ok</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>add ldap user(cn=tomabiene@dom2po1@dom2@user,ou=users,ou=gwopenserver,o=ericorg214): ok</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding contact: cristinao@po1@dom1@user</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute cn = cristinao@po1@dom1@user</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute maguid = f78a9040-0a98-0000-9518-1db3d83fd584@56:groupwisesystemaddressbook@52</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute maname = cristina orasanu</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maldapattributes</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maupn</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserstate</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationmaid</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserinfo</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>createuserentry(cristinao@po1@dom1@user): ok</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>add ldap user(cn=cristinao@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214): ok</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding contact: tommy@dom2po1@dom2@user</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute cn = tommy@dom2po1@dom2@user</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute maguid = fb8bfe60-14d7-0000-8881-005056b4549c@56:groupwisesystemaddressbook@52</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute maname = tommy the cat</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maldapattributes</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maupn</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserstate</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationmaid</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserinfo</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>createuserentry(tommy@dom2po1@dom2@user): ok</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>add ldap user(cn=tommy@dom2po1@dom2@user,ou=users,ou=gwopenserver,o=ericorg214): ok</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding contact: mike2@dom2po1@dom2@user</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute cn = mike2@dom2po1@dom2@user</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute maguid = fd8da5b0-0b5e-0000-875d-005056805ff9@56:groupwisesystemaddressbook@52</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute maname = mike2 test2</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maldapattributes</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maupn</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserstate</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationmaid</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserinfo</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>createuserentry(mike2@dom2po1@dom2@user): ok</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>add ldap user(cn=mike2@dom2po1@dom2@user,ou=users,ou=gwopenserver,o=ericorg214): ok</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding contact: journal3@po1@dom1@user</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute cn = journal3@po1@dom1@user</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute maguid = fe4b6a80-14ed-0000-8f7b-12d3b54575f7@56:groupwisesystemaddressbook@52</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute maname = journal3 test3</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maldapattributes</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maupn</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserstate</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationmaid</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserinfo</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>createuserentry(journal3@po1@dom1@user): ok</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>add ldap user(cn=journal3@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214): ok</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding contact: schützen@po1@dom1@user</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute cn = schützen@po1@dom1@user</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>attribute maguid = fe4ed700-0b57-0000-8f7c-12d3b54575f7@56:groupwisesystemaddressbook@52</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>attribute maname = schützen maßnahmen</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maldapattributes</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute maupn</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationgwemail</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserstate</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationmaid</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>adding attribute mamigrationuserinfo</small></td>
+          </tr>
+          <tr height="25">
+            <td><small></small></td>
+            <td><small>createuserentry(schützen@po1@dom1@user): ok</small></td>
+          </tr>
+          <tr bgcolor="#dddddd" height="25">
+            <td><small></small></td>
+            <td><small>add ldap user(cn=schützen@po1@dom1@user,ou=users,ou=gwopenserver,o=ericorg214): ok</small></td>
+          </tr>
+          <p></p>
+        </table>
+        <p></p>
+      </div>
+    </div>
+  </body>
+</html>

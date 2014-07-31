@@ -1,0 +1,28 @@
+<NewDataSet>
+  <Table>
+    <id>4124</id>
+    <jobid>cn=utility agent_granola,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 11:43:09</jobdatetime>
+    <logtimestamp>2012-12-05 11:43:34</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <errorsource />
+    <errordescription>error in action id [f86f3e69-af9e-4d2e-a985-df6d985cec1b], action item type: gwaccountinfo:error in savefields.  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4123</id>
+    <jobid>cn=utility agent_granola,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 11:43:09</jobdatetime>
+    <logtimestamp>2012-12-05 11:43:33</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <errorsource />
+    <errordescription>exception found in convert.:error in savefields.  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+</NewDataSet>

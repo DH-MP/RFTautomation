@@ -1,0 +1,15 @@
+<NewDataSet>
+  <Table>
+    <id>43</id>
+    <jobid>cn=archive agent_dl,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-09-18 15:26:00</jobdatetime>
+    <logtimestamp>2012-09-18 15:28:46</logtimestamp>
+    <account>post-processor</account>
+    <errorsource />
+    <errordescription>closeaccount: error closing the account. response: missing session string  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+</NewDataSet>

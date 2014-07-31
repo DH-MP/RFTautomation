@@ -1,0 +1,8 @@
+sc %1 start "AWA_XMLV_SVC"
+ping -n 11 -w 2 127.0.0.1 > nul
+
+
+sc %1 start "GWA_XMLV_SVC"
+ping -n 11 -w 2 127.0.0.1 > nul
+
+EXIT

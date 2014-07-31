@@ -1,0 +1,28 @@
+<NewDataSet>
+  <Table>
+    <id>164</id>
+    <jobid>cn=archive agent_archive,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-07-26 08:46:50</jobdatetime>
+    <logtimestamp>2012-07-26 08:47:07</logtimestamp>
+    <account>admin@dom2po1@dom2</account>
+    <errorsource />
+    <errordescription>closeaccount: error closing the account. response: missing session string  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>165</id>
+    <jobid>cn=archive agent_archive,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-07-26 08:46:50</jobdatetime>
+    <logtimestamp>2012-07-26 08:49:16</logtimestamp>
+    <account>post-processor</account>
+    <errorsource />
+    <errordescription>closeaccount: error closing the account. response: missing session string  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+</NewDataSet>

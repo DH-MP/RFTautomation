@@ -1,0 +1,210 @@
+<NewDataSet>
+  <Table>
+    <id>177</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.23.115),o=gw2012</jobid>
+    <jobdatetime>2012-11-08 10:21:11</jobdatetime>
+    <logtimestamp>2012-11-08 10:21:41</logtimestamp>
+    <account>tommy@dom2po1@dom2</account>
+    <logdata>initialize()</logdata>
+  </Table>
+  <Table>
+    <id>178</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.23.115),o=gw2012</jobid>
+    <jobdatetime>2012-11-08 10:21:11</jobdatetime>
+    <logtimestamp>2012-11-08 10:21:41</logtimestamp>
+    <account>tommy@dom2po1@dom2</account>
+    <logdata>connected(archives): true</logdata>
+  </Table>
+  <Table>
+    <id>179</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.23.115),o=gw2012</jobid>
+    <jobdatetime>2012-11-08 10:21:11</jobdatetime>
+    <logtimestamp>2012-11-08 10:21:41</logtimestamp>
+    <account>tommy@dom2po1@dom2</account>
+    <logdata>startup(): true</logdata>
+  </Table>
+  <Table>
+    <id>180</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.23.115),o=gw2012</jobid>
+    <jobdatetime>2012-11-08 10:21:11</jobdatetime>
+    <logtimestamp>2012-11-08 10:21:56</logtimestamp>
+    <account>tommy@dom2po1@dom2</account>
+    <logdata>run()</logdata>
+  </Table>
+  <Table>
+    <id>181</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.23.115),o=gw2012</jobid>
+    <jobdatetime>2012-11-08 10:21:11</jobdatetime>
+    <logtimestamp>2012-11-08 10:21:56</logtimestamp>
+    <account>tommy@dom2po1@dom2</account>
+    <logdata>publishmessages(location=archives, retention applied=false, retention days=0)</logdata>
+  </Table>
+  <Table>
+    <id>182</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.23.115),o=gw2012</jobid>
+    <jobdatetime>2012-11-08 10:21:11</jobdatetime>
+    <logtimestamp>2012-11-08 10:21:56</logtimestamp>
+    <account>tommy@dom2po1@dom2</account>
+    <logdata>connecting to devices...</logdata>
+  </Table>
+  <Table>
+    <id>183</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.23.115),o=gw2012</jobid>
+    <jobdatetime>2012-11-08 10:21:11</jobdatetime>
+    <logtimestamp>2012-11-08 10:21:56</logtimestamp>
+    <account>tommy@dom2po1@dom2</account>
+    <logdata>initializing index engine ...</logdata>
+  </Table>
+  <Table>
+    <id>184</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.23.115),o=gw2012</jobid>
+    <jobdatetime>2012-11-08 10:21:11</jobdatetime>
+    <logtimestamp>2012-11-08 10:21:57</logtimestamp>
+    <account>tommy@dom2po1@dom2</account>
+    <logdata>initializing index fail list manager...</logdata>
+  </Table>
+  <Table>
+    <id>185</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.23.115),o=gw2012</jobid>
+    <jobdatetime>2012-11-08 10:21:11</jobdatetime>
+    <logtimestamp>2012-11-08 10:21:57</logtimestamp>
+    <account>tommy@dom2po1@dom2</account>
+    <logdata>initializing message handler ...</logdata>
+  </Table>
+  <Table>
+    <id>186</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.23.115),o=gw2012</jobid>
+    <jobdatetime>2012-11-08 10:21:11</jobdatetime>
+    <logtimestamp>2012-11-08 10:21:57</logtimestamp>
+    <account>tommy@dom2po1@dom2</account>
+    <logdata>initializing archive module ...</logdata>
+  </Table>
+  <Table>
+    <id>187</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.23.115),o=gw2012</jobid>
+    <jobdatetime>2012-11-08 10:21:11</jobdatetime>
+    <logtimestamp>2012-11-08 10:21:57</logtimestamp>
+    <account>tommy@dom2po1@dom2</account>
+    <logdata>managing toindex file ...</logdata>
+  </Table>
+  <Table>
+    <id>188</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.23.115),o=gw2012</jobid>
+    <jobdatetime>2012-11-08 10:21:11</jobdatetime>
+    <logtimestamp>2012-11-08 10:21:57</logtimestamp>
+    <account>tommy@dom2po1@dom2</account>
+    <logdata>processing the toindex file...</logdata>
+  </Table>
+  <Table>
+    <id>189</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.23.115),o=gw2012</jobid>
+    <jobdatetime>2012-11-08 10:21:11</jobdatetime>
+    <logtimestamp>2012-11-08 10:21:57</logtimestamp>
+    <account>tommy@dom2po1@dom2</account>
+    <logdata>processing filters ...</logdata>
+  </Table>
+  <Table>
+    <id>190</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.23.115),o=gw2012</jobid>
+    <jobdatetime>2012-11-08 10:21:11</jobdatetime>
+    <logtimestamp>2012-11-08 10:21:57</logtimestamp>
+    <account>tommy@dom2po1@dom2</account>
+    <logdata>submittransaction(tranasync, automaticactions, logerrors)</logdata>
+  </Table>
+  <Table>
+    <id>191</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.23.115),o=gw2012</jobid>
+    <jobdatetime>2012-11-08 10:21:11</jobdatetime>
+    <logtimestamp>2012-11-08 10:21:58</logtimestamp>
+    <account>tommy@dom2po1@dom2</account>
+    <logdata>run()</logdata>
+  </Table>
+  <Table>
+    <id>192</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.23.115),o=gw2012</jobid>
+    <jobdatetime>2012-11-08 10:21:11</jobdatetime>
+    <logtimestamp>2012-11-08 10:21:58</logtimestamp>
+    <account>tommy@dom2po1@dom2</account>
+    <logdata>publishmessages(location=archives, retention applied=false, retention days=0)</logdata>
+  </Table>
+  <Table>
+    <id>193</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.23.115),o=gw2012</jobid>
+    <jobdatetime>2012-11-08 10:21:11</jobdatetime>
+    <logtimestamp>2012-11-08 10:21:58</logtimestamp>
+    <account>tommy@dom2po1@dom2</account>
+    <logdata>connecting to devices...</logdata>
+  </Table>
+  <Table>
+    <id>194</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.23.115),o=gw2012</jobid>
+    <jobdatetime>2012-11-08 10:21:11</jobdatetime>
+    <logtimestamp>2012-11-08 10:21:58</logtimestamp>
+    <account>tommy@dom2po1@dom2</account>
+    <logdata>initializing index engine ...</logdata>
+  </Table>
+  <Table>
+    <id>195</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.23.115),o=gw2012</jobid>
+    <jobdatetime>2012-11-08 10:21:11</jobdatetime>
+    <logtimestamp>2012-11-08 10:21:58</logtimestamp>
+    <account>tommy@dom2po1@dom2</account>
+    <logdata>initializing index fail list manager...</logdata>
+  </Table>
+  <Table>
+    <id>196</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.23.115),o=gw2012</jobid>
+    <jobdatetime>2012-11-08 10:21:11</jobdatetime>
+    <logtimestamp>2012-11-08 10:21:58</logtimestamp>
+    <account>tommy@dom2po1@dom2</account>
+    <logdata>initializing message handler ...</logdata>
+  </Table>
+  <Table>
+    <id>197</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.23.115),o=gw2012</jobid>
+    <jobdatetime>2012-11-08 10:21:11</jobdatetime>
+    <logtimestamp>2012-11-08 10:21:58</logtimestamp>
+    <account>tommy@dom2po1@dom2</account>
+    <logdata>initializing archive module ...</logdata>
+  </Table>
+  <Table>
+    <id>198</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.23.115),o=gw2012</jobid>
+    <jobdatetime>2012-11-08 10:21:11</jobdatetime>
+    <logtimestamp>2012-11-08 10:21:58</logtimestamp>
+    <account>tommy@dom2po1@dom2</account>
+    <logdata>managing toindex file ...</logdata>
+  </Table>
+  <Table>
+    <id>199</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.23.115),o=gw2012</jobid>
+    <jobdatetime>2012-11-08 10:21:11</jobdatetime>
+    <logtimestamp>2012-11-08 10:21:58</logtimestamp>
+    <account>tommy@dom2po1@dom2</account>
+    <logdata>processing filters ...</logdata>
+  </Table>
+  <Table>
+    <id>200</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.23.115),o=gw2012</jobid>
+    <jobdatetime>2012-11-08 10:21:11</jobdatetime>
+    <logtimestamp>2012-11-08 10:21:58</logtimestamp>
+    <account>tommy@dom2po1@dom2</account>
+    <logdata>submittransaction(tranasync, automaticactions, logerrors)</logdata>
+  </Table>
+  <Table>
+    <id>201</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.23.115),o=gw2012</jobid>
+    <jobdatetime>2012-11-08 10:21:11</jobdatetime>
+    <logtimestamp>2012-11-08 10:21:59</logtimestamp>
+    <account>tommy@dom2po1@dom2</account>
+    <logdata>terminate()</logdata>
+  </Table>
+  <Table>
+    <id>202</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.23.115),o=gw2012</jobid>
+    <jobdatetime>2012-11-08 10:21:11</jobdatetime>
+    <logtimestamp>2012-11-08 10:21:59</logtimestamp>
+    <account>tommy@dom2po1@dom2</account>
+    <logdata>shutdown()</logdata>
+  </Table>
+</NewDataSet>

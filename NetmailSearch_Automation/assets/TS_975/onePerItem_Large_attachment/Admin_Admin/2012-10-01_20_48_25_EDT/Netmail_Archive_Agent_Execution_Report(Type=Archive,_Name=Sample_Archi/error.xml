@@ -1,0 +1,34 @@
+<NewDataSet>
+  <Table>
+    <id>143</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-01 12:14:21</jobdatetime>
+    <logtimestamp>2012-10-01 12:16:11</logtimestamp>
+    <account>post-processor</account>
+    <errorsource />
+    <errordescription>closeaccount: error closing the account. response: missing session string  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>149</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-10-01 12:14:21</jobdatetime>
+    <logtimestamp>2012-10-01 19:09:39</logtimestamp>
+    <account>post-processor</account>
+    <errorsource>system.web.services</errorsource>
+    <errordescription>error committing the indexes  the operation has timed out</errordescription>
+    <errorstacktrace>   at system.web.services.protocols.webclientprotocol.getwebresponse(webrequest request)
+   at system.web.services.protocols.httpwebclientprotocol.getwebresponse(webrequest request)
+   at system.web.services.protocols.soaphttpclientprotocol.invoke(string methodname, object[] parameters)
+   at tma.library.searchengine.exaleadindex.indexingmanagerservice.getbuildgroupstatus(getbuildgroupstatus getbuildgroupstatus1)
+   at tma.library.searchengine.exaleadcluster.getstatus(boolean foraudits)
+   at tma.library.searchengine.mapushapi.commit(boolean sync)
+   at tma.library.jobs.gwarchivejob.run()</errorstacktrace>
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+</NewDataSet>

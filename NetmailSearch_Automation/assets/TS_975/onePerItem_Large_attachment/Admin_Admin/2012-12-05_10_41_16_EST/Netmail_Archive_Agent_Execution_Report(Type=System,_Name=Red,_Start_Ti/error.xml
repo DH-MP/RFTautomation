@@ -1,0 +1,1198 @@
+<NewDataSet>
+  <Table>
+    <id>4110</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:41</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][4fc620ce.dom1.po1.100.1647069.1.4b.1][html inline image].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4109</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:41</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][4fc620f6.dom1.po1.100.1647069.1.4d.1][fwd: html inline image].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4108</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:40</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][4fc621ef.dom1.po1.100.1647069.1.4f.1][attached docx].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4107</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:40</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][501aa217.dom1.po1.100.1647069.1.51.1][test aa].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4106</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:40</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][501aa251.dom1.po1.100.1647069.1.53.1][test bb].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4105</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:40</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][501aa26d.dom1.po1.100.1647069.1.55.1][test cc].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4104</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:39</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][501aa2a8.dom1.po1.100.1647069.1.57.1][test dd].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4103</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:39</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][501f9b5d.dom1.po1.100.1647069.1.59.1][vote].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4102</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:39</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][501f9b8f.dom1.po1.100.1647069.1.5b.1][border].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4101</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:39</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][501f9bd9.dom1.po1.100.1647069.1.5d.1][food prices].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4100</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:39</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][501f9c6f.dom1.po1.100.1647069.1.5f.1][mp3].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4099</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:38</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][502b7e35.dom1.po1.100.1647069.1.69.1][nécessairement folles à lier non plus].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4098</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:38</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][502ba061.dom1.po1.100.1647069.1.6b.1][fwd: food prices].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4097</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:38</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][502ba071.dom1.po1.100.1647069.1.6d.1][fwd: nécessairement folles à lier non plus].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4096</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:38</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][502ba08a.dom1.po1.100.1647069.1.6f.1][fwd: mp3].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4095</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:37</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[calendaritem][502cf1be.dom1.po1.100.1647069.1.71.1][].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4094</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:37</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[calendaritem][502cf1f6.dom1.po1.100.1647069.1.73.1][].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4093</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:37</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[calendaritem][502cf212.dom1.po1.100.1647069.1.76.1][].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4092</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:37</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][50335667.dom1.po1.100.1647069.1.7e.1][].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4091</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:37</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][503cc09e.dom1.po1.100.1647069.1.88.1][test sending to dlpo1].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4090</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:36</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][5046036b.dom1.po1.100.1647069.1.a2.1][sept 4 1:35].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4089</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:36</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][504607da.dom1.po1.100.1647069.1.a4.1][sept 4 1:53].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4088</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:36</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][50473f45.dom1.po1.100.1647069.1.b2.1][high priority].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4087</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:36</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][50473f59.dom1.po1.100.1647069.1.b4.1][low priority].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4086</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:35</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][5048986b.dom1.po1.100.1647069.1.b6.1][fwd: mp3].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4085</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:35</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][50489896.dom1.po1.100.1647069.1.b8.1][fwd: attached docx].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4084</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:35</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][504898ac.dom1.po1.100.1647069.1.ba.1][re: fwd: html inline image].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4083</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:35</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][504898ef.dom1.po1.100.1647069.1.bc.1][fwd: html inline image].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4082</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:35</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][5081352e.dom1.po1.100.1647069.1.c1.1][message with attachment].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4081</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][50813567.dom1.po1.100.1647069.1.c3.1][embedded message].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4080</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][50853891.dom1.po1.100.1647069.1.c6.1][test].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4079</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][4bc5c19e.dom1.po1.100.1647069.1.36.1][your active directory and exchange password].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4078</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][4c0cdcc8.dom1.po1.100.1647069.1.37.1][your active directory and exchange password].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4077</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:33</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][4c0ce10b.dom1.po1.100.1647069.1.38.1][your active directory and exchange password].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4076</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:33</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][4fae6215.dom1.po1.100.1647069.1.3b.1][test1].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4075</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:33</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][4fae6229.dom1.po1.100.1647069.1.3c.1][test2].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4074</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:33</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][4fae6279.dom1.po1.100.1647069.1.3d.1][test3].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4073</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:33</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][4fae6319.dom1.po1.100.1647069.1.3e.1][test5].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4072</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:32</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][4fc620ce.dom1.po1.100.1647069.1.4c.1][html inline image].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4071</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:32</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][4fc620f6.dom1.po1.100.1647069.1.4e.1][fwd: html inline image].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4070</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:32</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][4fc621ef.dom1.po1.100.1647069.1.50.1][attached docx].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4069</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:32</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][501f9b8f.dom1.po1.100.1647069.1.5c.1][border].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4068</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:32</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][501f9bd9.dom1.po1.100.1647069.1.5e.1][food prices].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4067</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:31</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][501f9c6f.dom1.po1.100.1647069.1.60.1][mp3].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4066</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:31</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][502b7e35.dom1.po1.100.1647069.1.6a.1][nécessairement folles à lier non plus].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4065</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:31</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][502ba061.dom1.po1.100.1647069.1.6c.1][fwd: food prices].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4064</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:31</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[calendaritem][502cf1be.dom1.po1.100.1647069.1.72.1][].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4063</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:30</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[calendaritem][502cf1f6.dom1.po1.100.1647069.1.74.1][].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4062</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:30</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][502d0204.dom1.po1.100.1647069.1.79.1][netmail search export job completed].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4061</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:30</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[calendaritem][502cf212.dom1.po1.100.1647069.1.77.1][].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4060</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:30</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][50335667.dom1.po1.100.1647069.1.7f.1][].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4059</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:30</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][5034d27f.dom1.po1.100.1647069.1.81.1][test aaa].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4058</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:29</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][5034d28f.dom1.po1.100.1647069.1.82.1][test junk filter 222].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4057</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:29</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][50406ff1.dom1.po1.100.1647069.1.8e.1][test july].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4056</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:28</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][50407071.dom1.po1.100.1647069.1.90.1][2nd attempt july 3. ].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4055</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:28</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][5045f8ed.dom1.po1.100.1647069.1.a1.1][sept 4 12:50].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4054</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:27</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][5046036b.dom1.po1.100.1647069.1.a3.1][sept 4 1:35].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4053</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:27</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][504607da.dom1.po1.100.1647069.1.a5.1][sept 4 1:53].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4052</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:26</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][50473f45.dom1.po1.100.1647069.1.b3.1][high priority].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4051</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:25</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][50473f59.dom1.po1.100.1647069.1.b5.1][low priority].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4050</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:25</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][5048986b.dom1.po1.100.1647069.1.b7.1][fwd: mp3].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4049</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:24</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][50489896.dom1.po1.100.1647069.1.b9.1][fwd: attached docx].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4048</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:24</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][504898ef.dom1.po1.100.1647069.1.bd.1][fwd: html inline image].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4047</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:23</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][507d6c83.dom1.po1.100.1647069.1.be.1][test oct 16].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4046</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:22</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][507d6eb3.dom1.po1.100.1647069.1.c0.1][forwarding 1 message(s).].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4045</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:21</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][5081352e.dom1.po1.100.1647069.1.c2.1][message with attachment].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4044</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:21</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][50813567.dom1.po1.100.1647069.1.c4.1][embedded message].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4043</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:20</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][508156cf.dom1.po1.100.1647069.1.c5.1][forwarding 1 message(s) for case test.].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4042</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:20</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][50853891.dom1.po1.100.1647069.1.c7.1][test].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4041</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:19</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][507d6c97.dom1.po1.100.1647069.1.bf.1][test oct 16 2].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4040</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:18</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][504898ac.dom1.po1.100.1647069.1.bb.1][re: fwd: html inline image].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4039</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:18</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[calendaritem][503f44e7.dom1.po1.100.1647069.1.89.1][testa].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4038</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:17</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[calendaritem][503f4508.dom1.po1.100.1647069.1.8b.1][testb].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4037</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:16</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][50406ff1.dom1.po1.100.1647069.1.8d.1][test july].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4036</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:16</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][50407071.dom1.po1.100.1647069.1.8f.1][2nd attempt july 3. ].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4035</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:16</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][5045da10.dom1.po1.100.1647069.1.99.1][urgent status ].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4034</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:15</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][5045da2e.dom1.po1.100.1647069.1.9b.1][low priority].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4033</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:15</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][5045da4b.dom1.po1.100.1647069.1.9d.1][personal status].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4032</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:14</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][5045da69.dom1.po1.100.1647069.1.9f.1][follow up status].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4031</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:14</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][5045da10.dom1.po1.100.1647069.1.9a.1][urgent status ].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4030</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:13</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][5045da2e.dom1.po1.100.1647069.1.9c.1][low priority].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4029</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:12</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][5045da4b.dom1.po1.100.1647069.1.9e.1][personal status].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4028</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:12</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][5045da69.dom1.po1.100.1647069.1.a0.1][follow up status].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4027</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:11</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][501aa2a8.dom1.po1.100.1647069.1.58.1][test dd].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4026</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:40:11</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][502ba08a.dom1.po1.100.1647069.1.70.1][fwd: mp3].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4025</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:39:59</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[calendaritem][503f44e7.dom1.po1.100.1647069.1.8a.1][testa].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4024</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:39:58</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[calendaritem][503f4508.dom1.po1.100.1647069.1.8c.1][testb].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4023</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:39:56</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][501f9b5d.dom1.po1.100.1647069.1.5a.1][vote].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4022</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:39:52</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][501aa26d.dom1.po1.100.1647069.1.56.1][test cc].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4021</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:39:52</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][501aa251.dom1.po1.100.1647069.1.54.1][test bb].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4020</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:39:50</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][502ba071.dom1.po1.100.1647069.1.6e.1][fwd: nécessairement folles à lier non plus].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4019</id>
+    <jobid>cn=reporting agent_red,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:38:44</jobdatetime>
+    <logtimestamp>2012-12-05 10:39:49</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>item not found in the destination data source.[message][501aa217.dom1.po1.100.1647069.1.52.1][test aa].  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+</NewDataSet>

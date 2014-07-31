@@ -1,0 +1,28 @@
+<NewDataSet>
+  <Table>
+    <id>9</id>
+    <jobid>cn=export agent_to pst,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-10 10:20:00</jobdatetime>
+    <logtimestamp>2012-08-10 10:20:13</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>error in exportmessages(). could not export some or all messages for account berkley big@berkley.po1.dom1:error instantiating gwpststore object. error in createprofile. could not add a service warning: make sure outlook is installed on the archive nodes.   </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>8</id>
+    <jobid>cn=export agent_to pst,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-10 10:20:00</jobdatetime>
+    <logtimestamp>2012-08-10 10:20:13</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource />
+    <errordescription>error creating profile: berkley big@berkley.po1.dom1:could not add a service  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+</NewDataSet>

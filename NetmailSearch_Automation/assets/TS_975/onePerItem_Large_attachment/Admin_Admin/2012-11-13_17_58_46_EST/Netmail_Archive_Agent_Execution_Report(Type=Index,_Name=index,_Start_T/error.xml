@@ -1,0 +1,197 @@
+<NewDataSet>
+  <Table>
+    <id>105642</id>
+    <jobid>cn=index agent_index,ou=jobs,ou=gwopennode(10.10.23.80),o=qaorg80,c=ca</jobid>
+    <jobdatetime>2012-11-13 12:14:32</jobdatetime>
+    <logtimestamp>2012-11-13 17:23:55</logtimestamp>
+    <account>andrewsk@houston@bmoh</account>
+    <errorsource />
+    <errordescription>:object reference not set to an instance of an object.  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>105643</id>
+    <jobid>cn=index agent_index,ou=jobs,ou=gwopennode(10.10.23.80),o=qaorg80,c=ca</jobid>
+    <jobdatetime>2012-11-13 12:14:32</jobdatetime>
+    <logtimestamp>2012-11-13 17:27:29</logtimestamp>
+    <account>andrewsk@houston@bmoh</account>
+    <errorsource />
+    <errordescription>:object reference not set to an instance of an object.  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>105631</id>
+    <jobid>cn=index agent_index,ou=jobs,ou=gwopennode(10.10.23.80),o=qaorg80,c=ca</jobid>
+    <jobdatetime>2012-11-13 12:14:32</jobdatetime>
+    <logtimestamp>2012-11-13 12:18:07</logtimestamp>
+    <account>gwa00065@po03@dom02</account>
+    <errorsource />
+    <errordescription>:object reference not set to an instance of an object.  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>105632</id>
+    <jobid>cn=index agent_index,ou=jobs,ou=gwopennode(10.10.23.80),o=qaorg80,c=ca</jobid>
+    <jobdatetime>2012-11-13 12:14:32</jobdatetime>
+    <logtimestamp>2012-11-13 12:18:10</logtimestamp>
+    <account>gwa00067@po03@dom02</account>
+    <errorsource />
+    <errordescription>:object reference not set to an instance of an object.  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>105630</id>
+    <jobid>cn=index agent_index,ou=jobs,ou=gwopennode(10.10.23.80),o=qaorg80,c=ca</jobid>
+    <jobdatetime>2012-11-13 12:14:32</jobdatetime>
+    <logtimestamp>2012-11-13 12:18:06</logtimestamp>
+    <account>gwa00068@po03@dom02</account>
+    <errorsource />
+    <errordescription>:object reference not set to an instance of an object.  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>105634</id>
+    <jobid>cn=index agent_index,ou=jobs,ou=gwopennode(10.10.23.80),o=qaorg80,c=ca</jobid>
+    <jobdatetime>2012-11-13 12:14:32</jobdatetime>
+    <logtimestamp>2012-11-13 12:18:12</logtimestamp>
+    <account>gwa00069@po03@dom02</account>
+    <errorsource />
+    <errordescription>:object reference not set to an instance of an object.  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>105633</id>
+    <jobid>cn=index agent_index,ou=jobs,ou=gwopennode(10.10.23.80),o=qaorg80,c=ca</jobid>
+    <jobdatetime>2012-11-13 12:14:32</jobdatetime>
+    <logtimestamp>2012-11-13 12:18:10</logtimestamp>
+    <account>gwa00072@po03@dom02</account>
+    <errorsource />
+    <errordescription>:object reference not set to an instance of an object.  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>105636</id>
+    <jobid>cn=index agent_index,ou=jobs,ou=gwopennode(10.10.23.80),o=qaorg80,c=ca</jobid>
+    <jobdatetime>2012-11-13 12:14:32</jobdatetime>
+    <logtimestamp>2012-11-13 12:18:12</logtimestamp>
+    <account>gwa00073@po03@dom02</account>
+    <errorsource />
+    <errordescription>:object reference not set to an instance of an object.  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>105635</id>
+    <jobid>cn=index agent_index,ou=jobs,ou=gwopennode(10.10.23.80),o=qaorg80,c=ca</jobid>
+    <jobdatetime>2012-11-13 12:14:32</jobdatetime>
+    <logtimestamp>2012-11-13 12:18:12</logtimestamp>
+    <account>gwa00075@po03@dom02</account>
+    <errorsource />
+    <errordescription>:object reference not set to an instance of an object.  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>105637</id>
+    <jobid>cn=index agent_index,ou=jobs,ou=gwopennode(10.10.23.80),o=qaorg80,c=ca</jobid>
+    <jobdatetime>2012-11-13 12:14:32</jobdatetime>
+    <logtimestamp>2012-11-13 12:18:15</logtimestamp>
+    <account>gwa00076@po03@dom02</account>
+    <errorsource />
+    <errordescription>:object reference not set to an instance of an object.  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>105638</id>
+    <jobid>cn=index agent_index,ou=jobs,ou=gwopennode(10.10.23.80),o=qaorg80,c=ca</jobid>
+    <jobdatetime>2012-11-13 12:14:32</jobdatetime>
+    <logtimestamp>2012-11-13 12:18:16</logtimestamp>
+    <account>gwa00078@po03@dom02</account>
+    <errorsource />
+    <errordescription>:object reference not set to an instance of an object.  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>105639</id>
+    <jobid>cn=index agent_index,ou=jobs,ou=gwopennode(10.10.23.80),o=qaorg80,c=ca</jobid>
+    <jobdatetime>2012-11-13 12:14:32</jobdatetime>
+    <logtimestamp>2012-11-13 12:18:21</logtimestamp>
+    <account>gwa00083@po03@dom02</account>
+    <errorsource />
+    <errordescription>:object reference not set to an instance of an object.  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>105640</id>
+    <jobid>cn=index agent_index,ou=jobs,ou=gwopennode(10.10.23.80),o=qaorg80,c=ca</jobid>
+    <jobdatetime>2012-11-13 12:14:32</jobdatetime>
+    <logtimestamp>2012-11-13 12:18:57</logtimestamp>
+    <account>gwa00099@po03@dom02</account>
+    <errorsource />
+    <errordescription>error initializing the index server. :the process cannot access the file 'e:\loadtest2009.2\test2002_2\accounts\gwa00099 ma00099@gwa00099.po03.dom02\toindex.xml' because it is being used by another process.  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>105641</id>
+    <jobid>cn=index agent_index,ou=jobs,ou=gwopennode(10.10.23.80),o=qaorg80,c=ca</jobid>
+    <jobdatetime>2012-11-13 12:14:32</jobdatetime>
+    <logtimestamp>2012-11-13 14:21:13</logtimestamp>
+    <account>gwa02678@po03@dom02</account>
+    <errorsource />
+    <errordescription>:object reference not set to an instance of an object.  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>105644</id>
+    <jobid>cn=index agent_index,ou=jobs,ou=gwopennode(10.10.23.80),o=qaorg80,c=ca</jobid>
+    <jobdatetime>2012-11-13 12:14:32</jobdatetime>
+    <logtimestamp>2012-11-13 17:27:37</logtimestamp>
+    <account>gwa02678@po03@dom02</account>
+    <errorsource />
+    <errordescription>:object reference not set to an instance of an object.  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+</NewDataSet>

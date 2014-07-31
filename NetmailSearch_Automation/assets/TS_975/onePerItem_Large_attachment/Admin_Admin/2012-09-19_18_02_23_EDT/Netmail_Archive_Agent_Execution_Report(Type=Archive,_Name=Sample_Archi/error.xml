@@ -1,0 +1,28 @@
+<NewDataSet>
+  <Table>
+    <id>14</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.23.115),o=gw2012</jobid>
+    <jobdatetime>2012-09-19 16:22:41</jobdatetime>
+    <logtimestamp>2012-09-19 16:23:06</logtimestamp>
+    <account>mike2@dom2po1@dom2</account>
+    <errorsource />
+    <errordescription>error connecting to the account [mike2], response: user not on post office  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>15</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.23.115),o=gw2012</jobid>
+    <jobdatetime>2012-09-19 16:22:41</jobdatetime>
+    <logtimestamp>2012-09-19 16:23:19</logtimestamp>
+    <account>post-processor</account>
+    <errorsource />
+    <errordescription>closeaccount: error closing the account. response: missing session string  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+</NewDataSet>

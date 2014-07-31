@@ -1,0 +1,338 @@
+<NewDataSet>
+  <Table>
+    <id>3588</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:06:48</jobdatetime>
+    <logtimestamp>2012-12-05 10:07:45</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>saving account stat info done.</logdata>
+  </Table>
+  <Table>
+    <id>3587</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:06:48</jobdatetime>
+    <logtimestamp>2012-12-05 10:07:45</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>saving account stat info.</logdata>
+  </Table>
+  <Table>
+    <id>3586</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:06:48</jobdatetime>
+    <logtimestamp>2012-12-05 10:07:41</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>deleting : c:\\temp\\3f091362-294f-478b-a49c-581d798bef13\\gwoatt\\cristinao</logdata>
+  </Table>
+  <Table>
+    <id>3585</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:06:48</jobdatetime>
+    <logtimestamp>2012-12-05 10:07:41</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>submittransaction(tranasync, automaticactions, logerrors)</logdata>
+  </Table>
+  <Table>
+    <id>3584</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:06:48</jobdatetime>
+    <logtimestamp>2012-12-05 10:07:35</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>deleting : c:\\temp\\3f091362-294f-478b-a49c-581d798bef13\\gwoatt\\cristinao</logdata>
+  </Table>
+  <Table>
+    <id>3583</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:06:48</jobdatetime>
+    <logtimestamp>2012-12-05 10:07:34</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>submittransaction(tranasync, automaticactions, logerrors)</logdata>
+  </Table>
+  <Table>
+    <id>3582</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:06:48</jobdatetime>
+    <logtimestamp>2012-12-05 10:07:30</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>deleting : c:\\temp\\3f091362-294f-478b-a49c-581d798bef13\\gwoatt\\cristinao</logdata>
+  </Table>
+  <Table>
+    <id>3581</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:06:48</jobdatetime>
+    <logtimestamp>2012-12-05 10:07:29</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>submittransaction(tranasync, automaticactions, logerrors)</logdata>
+  </Table>
+  <Table>
+    <id>3580</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:06:48</jobdatetime>
+    <logtimestamp>2012-12-05 10:07:29</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>createfield(50335667.dom1.po1.100.16a736b.1.a1.1, published): ok</logdata>
+  </Table>
+  <Table>
+    <id>3579</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:06:48</jobdatetime>
+    <logtimestamp>2012-12-05 10:07:29</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>createfield(4fe44fec.dom1.po1.100.16a736b.1.9d.1, published): ok</logdata>
+  </Table>
+  <Table>
+    <id>3578</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:06:48</jobdatetime>
+    <logtimestamp>2012-12-05 10:07:29</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>saving attachment [032edb41-72b6-41df-b1b1-ecd287548bf5] [c:\\temp\\3f091362-294f-478b-a49c-581d798bef13\\gwoatt\\cristinao\\4fe44fec.dom1.po1.100.16a736b.1.9d.1]</logdata>
+  </Table>
+  <Table>
+    <id>3577</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:06:48</jobdatetime>
+    <logtimestamp>2012-12-05 10:07:29</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>saving attachment [02310418-c8a7-4b06-8e9e-e56df8509dfd] [c:\\temp\\3f091362-294f-478b-a49c-581d798bef13\\gwoatt\\cristinao\\4fe44fec.dom1.po1.100.16a736b.1.9d.1]</logdata>
+  </Table>
+  <Table>
+    <id>3576</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:06:48</jobdatetime>
+    <logtimestamp>2012-12-05 10:07:29</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>createfield(4fe44fa3.dom1.po1.100.16a736b.1.9b.1, published): ok</logdata>
+  </Table>
+  <Table>
+    <id>3575</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:06:48</jobdatetime>
+    <logtimestamp>2012-12-05 10:07:29</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>saving attachment [d9d1805c-d10a-4e53-bafe-8ef796fc1a0e] [c:\\temp\\3f091362-294f-478b-a49c-581d798bef13\\gwoatt\\cristinao\\4fe44fa3.dom1.po1.200.20000ac.1.2f5.1]</logdata>
+  </Table>
+  <Table>
+    <id>3574</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:06:48</jobdatetime>
+    <logtimestamp>2012-12-05 10:07:29</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>createfield(4fe44f8c.dom1.po1.100.16a736b.1.99.1, published): ok</logdata>
+  </Table>
+  <Table>
+    <id>3573</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:06:48</jobdatetime>
+    <logtimestamp>2012-12-05 10:07:29</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>saving attachment [b322ade3-8d8c-4b85-90ad-3de75a66fd0e] [c:\\temp\\3f091362-294f-478b-a49c-581d798bef13\\gwoatt\\cristinao\\4fe44f8c.dom1.po1.100.16a736b.1.99.1]</logdata>
+  </Table>
+  <Table>
+    <id>3572</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:06:48</jobdatetime>
+    <logtimestamp>2012-12-05 10:07:28</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>deleting : c:\\temp\\3f091362-294f-478b-a49c-581d798bef13\\gwoatt\\cristinao</logdata>
+  </Table>
+  <Table>
+    <id>3571</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:06:48</jobdatetime>
+    <logtimestamp>2012-12-05 10:07:27</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>submittransaction(tranasync, automaticactions, logerrors)</logdata>
+  </Table>
+  <Table>
+    <id>3570</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:06:48</jobdatetime>
+    <logtimestamp>2012-12-05 10:07:21</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>deleting : c:\\temp\\3f091362-294f-478b-a49c-581d798bef13\\gwoatt\\cristinao</logdata>
+  </Table>
+  <Table>
+    <id>3569</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:06:48</jobdatetime>
+    <logtimestamp>2012-12-05 10:07:21</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>submittransaction(tranasync, automaticactions, logerrors)</logdata>
+  </Table>
+  <Table>
+    <id>3568</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:06:48</jobdatetime>
+    <logtimestamp>2012-12-05 10:07:21</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>createfield(4fe45020.dom1.po1.100.16a736b.1.9e.1, published): ok</logdata>
+  </Table>
+  <Table>
+    <id>3567</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:06:48</jobdatetime>
+    <logtimestamp>2012-12-05 10:07:21</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>saving attachment [57a8e77b-d76e-48c5-b35e-8bd60b8553c9] [c:\\temp\\3f091362-294f-478b-a49c-581d798bef13\\gwoatt\\cristinao\\4fe45020.dom1.po1.200.20000ac.1.301.1]</logdata>
+  </Table>
+  <Table>
+    <id>3566</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:06:48</jobdatetime>
+    <logtimestamp>2012-12-05 10:07:21</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>saving attachment [04ae4306-32a9-447b-8107-bd6d0acf4f59] [c:\\temp\\3f091362-294f-478b-a49c-581d798bef13\\gwoatt\\cristinao\\4fe45020.dom1.po1.200.20000ac.1.301.1]</logdata>
+  </Table>
+  <Table>
+    <id>3565</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:06:48</jobdatetime>
+    <logtimestamp>2012-12-05 10:07:21</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>createfield(4fe44fec.dom1.po1.100.16a736b.1.9c.1, published): ok</logdata>
+  </Table>
+  <Table>
+    <id>3564</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:06:48</jobdatetime>
+    <logtimestamp>2012-12-05 10:07:20</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>saving attachment [987c85af-9942-4e75-a5de-3577d9163655] [c:\\temp\\3f091362-294f-478b-a49c-581d798bef13\\gwoatt\\cristinao\\4fe44fec.dom1.po1.100.16a736b.1.9c.1]</logdata>
+  </Table>
+  <Table>
+    <id>3563</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:06:48</jobdatetime>
+    <logtimestamp>2012-12-05 10:07:20</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>saving attachment [374f9abf-d5d8-4920-8175-dab62e74c792] [c:\\temp\\3f091362-294f-478b-a49c-581d798bef13\\gwoatt\\cristinao\\4fe44fec.dom1.po1.100.16a736b.1.9c.1]</logdata>
+  </Table>
+  <Table>
+    <id>3562</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:06:48</jobdatetime>
+    <logtimestamp>2012-12-05 10:07:20</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>createfield(4fe44fa3.dom1.po1.100.16a736b.1.9a.1, published): ok</logdata>
+  </Table>
+  <Table>
+    <id>3561</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:06:48</jobdatetime>
+    <logtimestamp>2012-12-05 10:07:20</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>saving attachment [24f0ab80-3f84-420b-a272-c2283540dafd] [c:\\temp\\3f091362-294f-478b-a49c-581d798bef13\\gwoatt\\cristinao\\4fe44fa3.dom1.po1.200.20000ac.1.2f5.1]</logdata>
+  </Table>
+  <Table>
+    <id>3560</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:06:48</jobdatetime>
+    <logtimestamp>2012-12-05 10:07:20</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>createfield(4fe44f8c.dom1.po1.100.16a736b.1.98.1, published): ok</logdata>
+  </Table>
+  <Table>
+    <id>3559</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:06:48</jobdatetime>
+    <logtimestamp>2012-12-05 10:07:20</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>saving attachment [f3a73f05-b71d-476a-a22d-eb2aeabe43a0] [c:\\temp\\3f091362-294f-478b-a49c-581d798bef13\\gwoatt\\cristinao\\4fe44f8c.dom1.po1.100.16a736b.1.98.1]</logdata>
+  </Table>
+  <Table>
+    <id>3558</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:06:48</jobdatetime>
+    <logtimestamp>2012-12-05 10:07:16</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>processing the toindex file...</logdata>
+  </Table>
+  <Table>
+    <id>3557</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:06:48</jobdatetime>
+    <logtimestamp>2012-12-05 10:07:16</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>managing toindex file ...</logdata>
+  </Table>
+  <Table>
+    <id>3556</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:06:48</jobdatetime>
+    <logtimestamp>2012-12-05 10:07:16</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>initializing archive module ...</logdata>
+  </Table>
+  <Table>
+    <id>3555</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:06:48</jobdatetime>
+    <logtimestamp>2012-12-05 10:07:16</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>initializing message handler ...</logdata>
+  </Table>
+  <Table>
+    <id>3554</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:06:48</jobdatetime>
+    <logtimestamp>2012-12-05 10:07:16</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>initializing index fail list manager...</logdata>
+  </Table>
+  <Table>
+    <id>3553</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:06:48</jobdatetime>
+    <logtimestamp>2012-12-05 10:07:16</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>initializing index engine ...</logdata>
+  </Table>
+  <Table>
+    <id>3552</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:06:48</jobdatetime>
+    <logtimestamp>2012-12-05 10:07:16</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>publishmessages(location=als, retention applied=false, retention days=0)</logdata>
+  </Table>
+  <Table>
+    <id>3551</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:06:48</jobdatetime>
+    <logtimestamp>2012-12-05 10:07:16</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>startup(): false</logdata>
+  </Table>
+  <Table>
+    <id>3550</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:06:48</jobdatetime>
+    <logtimestamp>2012-12-05 10:07:16</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>createldapentry(oldname=cristina orasanu@cristinao.longdom-po1.test domain with 32 char name lo, newname=cristina orasanu@cristinao.po1.dom1): ok</logdata>
+  </Table>
+  <Table>
+    <id>3549</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:06:48</jobdatetime>
+    <logtimestamp>2012-12-05 10:07:16</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>connected(als): true</logdata>
+  </Table>
+  <Table>
+    <id>3548</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:06:48</jobdatetime>
+    <logtimestamp>2012-12-05 10:07:16</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>run()</logdata>
+  </Table>
+  <Table>
+    <id>3547</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-05 10:06:48</jobdatetime>
+    <logtimestamp>2012-12-05 10:07:12</logtimestamp>
+    <account>cristinao@po1@dom1</account>
+    <logdata>initialize()</logdata>
+  </Table>
+</NewDataSet>

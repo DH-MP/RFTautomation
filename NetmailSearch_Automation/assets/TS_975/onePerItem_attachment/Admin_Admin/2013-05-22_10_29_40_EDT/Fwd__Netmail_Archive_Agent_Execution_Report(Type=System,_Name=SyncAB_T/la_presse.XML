@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><TMAFILTER ID="Webviewer_PolicyFilter" TYPE="ON">
+      <SEARCH TYPE="Regular">  
+        <ProximityTarget/>  
+        <ProximityFrom/>  
+        <ProximityTo/>  
+        <ProximityDistance/>  
+	<EmbeddedMessage/>
+      </SEARCH>  
+       <MAIL TYPE="ON">  
+        <opened/>  
+        <read/>  
+        <archive/>  
+        <hidden/>  
+        <deleted/>  
+        <private/>  
+        <BoxType/>  
+        <priority/>  
+        <completed/>  
+        <subject>la presse</subject>  
+        <originalsubject/>  
+        <bodytext/>  
+        <classname/>  
+        <creationdate/>  
+        <modificationdate/>  
+        <fromtext/>  
+        <viewname/>  
+        <recipients/>  
+        <attachments/>  
+        <sender/>  
+        <sharer/>  
+        <enclosingfolders><folder account="Milena.dom2po1.dom2" location="local" relativepath="/"/></enclosingfolders>  
+      </MAIL>  
+      <APPOINTMENT TYPE="OFF">  
+        <accepted/>  
+        <AutoDated/>  
+        <delegated/>  
+        <OnCalendar/>  
+        <personal/>  
+        <BusyType/>  
+        <duration/>  
+        <place/>  
+        <StartDate/>  
+        <EndDate/>  
+      </APPOINTMENT>  
+      <TASK TYPE="OFF">  
+        <accepted/>  
+        <AutoDated/>  
+        <delegated/>  
+        <OnCalendar/>  
+        <personal/>  
+        <TaskPriority/>  
+        <StartDate/>  
+        <AssignedDate/>  
+        <DueDate/>  
+      </TASK>  
+      <NOTE TYPE="OFF">  
+        <accepted/>  
+        <AutoDated/>  
+        <delegated/>  
+        <OnCalendar/>  
+        <personal/>  
+        <StartDate/>  
+      </NOTE>  
+      <PHONE TYPE="OFF">  
+        <CameToSee/>  
+        <PleaseCall/>  
+        <ReturnedCall/>  
+        <Teleponed/>  
+        <Urgent/>  
+        <WantsToSee/>  
+        <WillCall/>  
+      </PHONE>  
+      <AUDIT TYPE="OFF">  
+        <action/>  
+        <auditorid/>  
+        <datetime/>  
+        <comment/>  
+      </AUDIT>
+      </TMAFILTER>

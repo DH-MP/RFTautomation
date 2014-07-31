@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mail xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <id>3f246b3a-057a-485c-b53b-a62018848fcd</id>
+  <internalid>AAMkADAyMDc3MDE3LTJhNWMtNDc3YS1iYTdjLWY3YmIyNjM3NTliYQBGAAAAAADA9pYy8X2qT4fj5s+0HhYGBwArM3L45dQKSZzKpOxx519YAAAAAAENAAArM3L45dQKSZzKpOxx519YAAAAAAj/AAA=</internalid>
+  <name>AAMkADAyMDc3MDE3LTJhNWMtNDc3YS1iYTdjLWY3YmIyNjM3NTliYQBGAAAAAADA9pYy8X2qT4fj5s+0HhYGBwArM3L45dQKSZzKpOxx519YAAAAAAENAAArM3L45dQKSZzKpOxx519YAAAAAAj/AAA=</name>
+  <version>5.3</version>
+  <modifiedDate>1404912625</modifiedDate>
+  <changes />
+  <categories />
+  <createdDate>1404904120</createdDate>
+  <customs>
+    <custom>
+      <field>Date</field>
+      <value xsi:type="xsd:string">7/9/2014 7:08:40 AM</value>
+    </custom>
+    <custom>
+      <field>DateReceived</field>
+      <value xsi:type="xsd:string">7/9/2014 7:08:40 AM</value>
+    </custom>
+    <custom>
+      <field>DisplayCc</field>
+      <value xsi:type="xsd:string" />
+    </custom>
+    <custom>
+      <field>DisplayTo</field>
+      <value xsi:type="xsd:string">ProxyAdminTest</value>
+    </custom>
+    <custom>
+      <field>FromName</field>
+      <value xsi:type="xsd:string">ProxyAdminTest</value>
+    </custom>
+    <custom>
+      <field>HtmlDescription</field>
+      <value xsi:type="xsd:string">&lt;html&gt;
+&lt;head&gt;
+&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"&gt;
+&lt;style type="text/css" style="display:none"&gt;&lt;!--P{margin-top:0;margin-bottom:0;} .ms-cui-menu {background-color:#ffffff;border:1px rgb(171, 171, 171) solid;font-family:'Segoe UI WPC', 'Segoe UI', Tahoma, 'Microsoft Sans Serif', Verdana, sans-serif;font-size:11pt;color:rgb(51, 51, 51);} .ms-cui-menusection-title {display:none;} .ms-cui-ctl {vertical-align:text-top;text-decoration:none;color:rgb(51, 51, 51);} .ms-cui-ctl-on {background-color:rgb(223, 237, 250);opacity: 0.8;} .ms-cui-img-cont-float {display:inline-block;margin-top:2px} .ms-cui-smenu-inner {padding-top:0px;} .ms-owa-paste-option-icon {margin: 2px 4px 0px 4px;vertical-align:sub;padding-bottom: 2px;display:inline-block;} .ms-rtePasteFlyout-option:hover {background-color:rgb(223, 237, 250) !important;opacity:1 !important;} .ms-rtePasteFlyout-option {padding:8px 4px 8px 4px;outline:none;} .ms-cui-menusection {float:left; width:85px;height:24px;overflow:hidden}--&gt;&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div style="font-size:12pt;color:#000000;background-color:#FFFFFF;font-family:Calibri,Arial,Helvetica,sans-serif;"&gt;
+&lt;p&gt;asd&lt;br&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</value>
+    </custom>
+    <custom>
+      <field>Importance</field>
+      <value xsi:type="xsd:string">Normal</value>
+    </custom>
+    <custom>
+      <field>InReplyTo</field>
+      <value xsi:type="xsd:string" />
+    </custom>
+    <custom>
+      <field>MessageClass</field>
+      <value xsi:type="xsd:string">IPM.Note</value>
+    </custom>
+    <custom>
+      <field>Received</field>
+      <value xsi:type="xsd:string">ProxyAdminTest &lt;SMTP:ProxyAdminTest@auto2k10.com&gt;</value>
+    </custom>
+    <custom>
+      <field>References</field>
+      <value xsi:type="xsd:string" />
+    </custom>
+  </customs>
+  <status>
+    <archived>true</archived>
+    <completed>false</completed>
+    <delegated>false</delegated>
+    <deleted>false</deleted>
+    <opened>false</opened>
+    <read>false</read>
+  </status>
+  <source>received</source>
+  <deliveredDate>1404904120</deliveredDate>
+  <class>Public</class>
+  <security>Normal</security>
+  <sender>
+    <displayName>ProxyAdminTest</displayName>
+    <email>ProxyAdminTest@auto2k10.com</email>
+    <uuid>ProxyAdminTest@auto2k10.com</uuid>
+  </sender>
+  <sharer />
+  <account>ProxyAdminTest@ProxyAdminTest.BASE2012.First Organization</account>
+  <locationID>1404939254020</locationID>
+  <messagePath>xml/Inbox/3f246b3a-057a-485c-b53b-a62018848fcd.xml</messagePath>
+  <startDate>1404904120</startDate>
+  <className>GW.MESSAGE.MAIL</className>
+  <subject>asd</subject>
+  <originalSubject />
+  <personalSubject>asd</personalSubject>
+  <from>
+    <displayName>ProxyAdminTest</displayName>
+    <email>ProxyAdminTest@auto2k10.com</email>
+    <uuid>ProxyAdminTest@auto2k10.com</uuid>
+    <replyTo>ProxyAdminTest@auto2k10.com</replyTo>
+    <fromText>ProxyAdminTest</fromText>
+  </from>
+  <to>ProxyAdminTest</to>
+  <cc />
+  <recipients>
+    <recipient>
+      <displayName>ProxyAdminTest</displayName>
+      <email>ProxyAdminTest@auto2k10.com</email>
+      <uuid>3f246b3a-057a-485c-b53b-a62018848fcd_R_0</uuid>
+      <distType>TO</distType>
+      <recipType>User</recipType>
+      <recipientStatus>
+        <delegateeStatus />
+      </recipientStatus>
+    </recipient>
+  </recipients>
+  <sendoptions>
+    <requestReply />
+    <mimeEncoding />
+    <statusTracking>None</statusTracking>
+    <notification>
+      <opened />
+      <deleted />
+      <completed />
+    </notification>
+    <updateFrequentContacts>false</updateFrequentContacts>
+  </sendoptions>
+  <enclosingFolders>
+    <folder>
+      <id>AAMkADAyMDc3MDE3LTJhNWMtNDc3YS1iYTdjLWY3YmIyNjM3NTliYQAuAAAAAADA9pYy8X2qT4fj5s+0HhYGAQArM3L45dQKSZzKpOxx519YAAAAAAENAAA=</id>
+      <name>Inbox</name>
+      <type>Mailbox</type>
+      <system>true</system>
+      <shareType>NotShared</shareType>
+    </folder>
+  </enclosingFolders>
+  <message>
+    <part length="5">asd
+</part>
+  </message>
+  <attachmentCount>0</attachmentCount>
+  <fileAttachmentsCount>0</fileAttachmentsCount>
+  <attachments />
+  <options>
+    <priority>Standard</priority>
+    <expires>0</expires>
+    <delayDeliveryUntil>0</delayDeliveryUntil>
+    <concealSubject>false</concealSubject>
+  </options>
+</Mail>

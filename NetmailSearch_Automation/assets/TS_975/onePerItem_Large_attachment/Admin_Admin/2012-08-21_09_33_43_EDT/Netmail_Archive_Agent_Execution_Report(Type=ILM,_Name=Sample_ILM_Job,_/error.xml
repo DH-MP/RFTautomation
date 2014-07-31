@@ -1,0 +1,72 @@
+<NewDataSet>
+  <Table>
+    <id>47</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-21 07:57:57</jobdatetime>
+    <logtimestamp>2012-08-21 07:58:10</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource>exalead</errorsource>
+    <errordescription>error retrieving index server settings.   object reference not set to an instance of an object.. error initializing index object.</errordescription>
+    <errorstacktrace>   at tma.library.searchengine.gwindexengine.initialize()
+   at tma.library.jobs.gwilmjob.initialize(string pparameters, heartbeat pheartbeat)</errorstacktrace>
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>48</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-21 07:57:57</jobdatetime>
+    <logtimestamp>2012-08-21 07:58:21</logtimestamp>
+    <account>post-processor</account>
+    <errorsource />
+    <errordescription>closeaccount: error closing the account. response: missing session string  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>49</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-21 07:57:57</jobdatetime>
+    <logtimestamp>2012-08-21 07:58:27</logtimestamp>
+    <account>post-processor</account>
+    <errorsource>exalead</errorsource>
+    <errordescription>error retrieving index server settings.   object reference not set to an instance of an object.. error initializing index object.</errordescription>
+    <errorstacktrace>   at tma.library.searchengine.gwindexengine.initialize()
+   at tma.library.jobs.gwilmjob.initialize(string pparameters, heartbeat pheartbeat)</errorstacktrace>
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>50</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-21 07:57:57</jobdatetime>
+    <logtimestamp>2012-08-21 07:58:27</logtimestamp>
+    <account>post-processor</account>
+    <errorsource>exalead</errorsource>
+    <errordescription>error committing the indexes  object reference not set to an instance of an object.</errordescription>
+    <errorstacktrace>   at tma.library.searchengine.mapushapi..ctor(exaleadcluster pcluster)
+   at tma.library.searchengine.gwindexengine.initiateforcommit()
+   at tma.library.jobs.gwilmjob.run()</errorstacktrace>
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>46</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-21 07:57:57</jobdatetime>
+    <logtimestamp>2012-08-21 07:58:01</logtimestamp>
+    <account>pre-processor</account>
+    <errorsource>exalead</errorsource>
+    <errordescription>error retrieving index server settings.   object reference not set to an instance of an object.. error initializing index object.</errordescription>
+    <errorstacktrace>   at tma.library.searchengine.gwindexengine.initialize()
+   at tma.library.jobs.gwilmjob.initialize(string pparameters, heartbeat pheartbeat)</errorstacktrace>
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+</NewDataSet>

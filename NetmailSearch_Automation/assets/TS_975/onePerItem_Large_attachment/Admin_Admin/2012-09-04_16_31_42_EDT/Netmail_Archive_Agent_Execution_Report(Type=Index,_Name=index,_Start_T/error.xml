@@ -1,0 +1,16 @@
+<NewDataSet>
+  <Table>
+    <id>124</id>
+    <jobid>cn=index agent_index,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-09-04 15:32:29</jobdatetime>
+    <logtimestamp>2012-09-04 15:32:35</logtimestamp>
+    <account />
+    <errorsource>exalead</errorsource>
+    <errordescription>error initializing the index server.   object reference not set to an instance of an object.</errordescription>
+    <errorstacktrace>   at tma.library.searchengine.indexfaillistmanager.init(saipath saipath, nullable`1 pallfilesindex)
+   at tma.library.jobs.gwindexjob.initialize(string pparameters, heartbeat pheartbeat)</errorstacktrace>
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+</NewDataSet>

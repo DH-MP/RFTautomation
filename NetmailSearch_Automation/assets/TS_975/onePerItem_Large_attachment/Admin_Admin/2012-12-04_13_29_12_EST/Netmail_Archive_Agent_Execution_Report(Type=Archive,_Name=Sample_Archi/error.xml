@@ -1,0 +1,580 @@
+<NewDataSet>
+  <Table>
+    <id>3789</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:28:04</jobdatetime>
+    <logtimestamp>2012-12-04 13:28:30</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource>mscorlib</errorsource>
+    <errordescription>error in runpolicyfilter.  value cannot be null.
+parameter name: key</errordescription>
+    <errorstacktrace>   at system.collections.generic.dictionary`2.findentry(tkey key)
+   at system.collections.generic.dictionary`2.containskey(tkey key)
+   at gwjob.gwitems.containskey(string name)
+   at tma.tmapstarchiveapi.pstarchivesession.getnextcursor()</errorstacktrace>
+    <messageid>000000003508507f3875e84d85be8af7b1d47e7a04042000</messageid>
+    <messagesubject>mp3</messagesubject>
+    <messagecreationdate>8/6/2012 6:29:03 am</messagecreationdate>
+  </Table>
+  <Table>
+    <id>3788</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:28:04</jobdatetime>
+    <logtimestamp>2012-12-04 13:28:30</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource>mscorlib</errorsource>
+    <errordescription>error in runpolicyfilter.  value cannot be null.
+parameter name: key</errordescription>
+    <errorstacktrace>   at system.collections.generic.dictionary`2.findentry(tkey key)
+   at system.collections.generic.dictionary`2.containskey(tkey key)
+   at gwjob.gwitems.containskey(string name)
+   at tma.tmapstarchiveapi.pstarchivesession.getnextcursor()</errorstacktrace>
+    <messageid>000000003508507f3875e84d85be8af7b1d47e7ac4032000</messageid>
+    <messagesubject>food prices</messagesubject>
+    <messagecreationdate>8/6/2012 6:26:33 am</messagecreationdate>
+  </Table>
+  <Table>
+    <id>3787</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:28:04</jobdatetime>
+    <logtimestamp>2012-12-04 13:28:30</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource>mscorlib</errorsource>
+    <errordescription>error in runpolicyfilter.  value cannot be null.
+parameter name: key</errordescription>
+    <errorstacktrace>   at system.collections.generic.dictionary`2.findentry(tkey key)
+   at system.collections.generic.dictionary`2.containskey(tkey key)
+   at gwjob.gwitems.containskey(string name)
+   at tma.tmapstarchiveapi.pstarchivesession.getnextcursor()</errorstacktrace>
+    <messageid>000000003508507f3875e84d85be8af7b1d47e7a84032000</messageid>
+    <messagesubject>border</messagesubject>
+    <messagecreationdate>8/6/2012 6:25:19 am</messagecreationdate>
+  </Table>
+  <Table>
+    <id>3786</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:28:04</jobdatetime>
+    <logtimestamp>2012-12-04 13:28:30</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource>mscorlib</errorsource>
+    <errordescription>error in runpolicyfilter.  value cannot be null.
+parameter name: key</errordescription>
+    <errorstacktrace>   at system.collections.generic.dictionary`2.findentry(tkey key)
+   at system.collections.generic.dictionary`2.containskey(tkey key)
+   at gwjob.gwitems.containskey(string name)
+   at tma.tmapstarchiveapi.pstarchivesession.getnextcursor()</errorstacktrace>
+    <messageid>000000003508507f3875e84d85be8af7b1d47e7a44032000</messageid>
+    <messagesubject>vote</messagesubject>
+    <messagecreationdate>8/6/2012 6:24:29 am</messagecreationdate>
+  </Table>
+  <Table>
+    <id>3785</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:28:04</jobdatetime>
+    <logtimestamp>2012-12-04 13:28:30</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource>mscorlib</errorsource>
+    <errordescription>error in runpolicyfilter.  value cannot be null.
+parameter name: key</errordescription>
+    <errorstacktrace>   at system.collections.generic.dictionary`2.findentry(tkey key)
+   at system.collections.generic.dictionary`2.containskey(tkey key)
+   at gwjob.gwitems.containskey(string name)
+   at tma.tmapstarchiveapi.pstarchivesession.getnextcursor()</errorstacktrace>
+    <messageid>000000003508507f3875e84d85be8af7b1d47e7a04032000</messageid>
+    <messagesubject>test dd</messagesubject>
+    <messagecreationdate>8/2/2012 11:54:16 am</messagecreationdate>
+  </Table>
+  <Table>
+    <id>3784</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:28:04</jobdatetime>
+    <logtimestamp>2012-12-04 13:28:30</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource>mscorlib</errorsource>
+    <errordescription>error in runpolicyfilter.  value cannot be null.
+parameter name: key</errordescription>
+    <errorstacktrace>   at system.collections.generic.dictionary`2.findentry(tkey key)
+   at system.collections.generic.dictionary`2.containskey(tkey key)
+   at gwjob.gwitems.containskey(string name)
+   at tma.tmapstarchiveapi.pstarchivesession.getnextcursor()</errorstacktrace>
+    <messageid>000000003508507f3875e84d85be8af7b1d47e7ac4022000</messageid>
+    <messagesubject>test cc</messagesubject>
+    <messagecreationdate>8/2/2012 11:53:17 am</messagecreationdate>
+  </Table>
+  <Table>
+    <id>3783</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:28:04</jobdatetime>
+    <logtimestamp>2012-12-04 13:28:30</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource>mscorlib</errorsource>
+    <errordescription>error in runpolicyfilter.  value cannot be null.
+parameter name: key</errordescription>
+    <errorstacktrace>   at system.collections.generic.dictionary`2.findentry(tkey key)
+   at system.collections.generic.dictionary`2.containskey(tkey key)
+   at gwjob.gwitems.containskey(string name)
+   at tma.tmapstarchiveapi.pstarchivesession.getnextcursor()</errorstacktrace>
+    <messageid>000000003508507f3875e84d85be8af7b1d47e7a84022000</messageid>
+    <messagesubject>test bb</messagesubject>
+    <messagecreationdate>8/2/2012 11:52:49 am</messagecreationdate>
+  </Table>
+  <Table>
+    <id>3782</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:28:04</jobdatetime>
+    <logtimestamp>2012-12-04 13:28:30</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource>mscorlib</errorsource>
+    <errordescription>error in runpolicyfilter.  value cannot be null.
+parameter name: key</errordescription>
+    <errorstacktrace>   at system.collections.generic.dictionary`2.findentry(tkey key)
+   at system.collections.generic.dictionary`2.containskey(tkey key)
+   at gwjob.gwitems.containskey(string name)
+   at tma.tmapstarchiveapi.pstarchivesession.getnextcursor()</errorstacktrace>
+    <messageid>000000003508507f3875e84d85be8af7b1d47e7a44022000</messageid>
+    <messagesubject>test aa</messagesubject>
+    <messagecreationdate>8/2/2012 11:51:51 am</messagecreationdate>
+  </Table>
+  <Table>
+    <id>3781</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:28:04</jobdatetime>
+    <logtimestamp>2012-12-04 13:28:30</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource>mscorlib</errorsource>
+    <errordescription>error in runpolicyfilter.  value cannot be null.
+parameter name: key</errordescription>
+    <errorstacktrace>   at system.collections.generic.dictionary`2.findentry(tkey key)
+   at system.collections.generic.dictionary`2.containskey(tkey key)
+   at gwjob.gwitems.containskey(string name)
+   at tma.tmapstarchiveapi.pstarchivesession.getnextcursor()</errorstacktrace>
+    <messageid>000000003508507f3875e84d85be8af7b1d47e7a84012000</messageid>
+    <messagesubject>attached docx</messagesubject>
+    <messagecreationdate>5/30/2012 9:34:39 am</messagecreationdate>
+  </Table>
+  <Table>
+    <id>3780</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:28:04</jobdatetime>
+    <logtimestamp>2012-12-04 13:28:30</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource>mscorlib</errorsource>
+    <errordescription>error in runpolicyfilter.  value cannot be null.
+parameter name: key</errordescription>
+    <errorstacktrace>   at system.collections.generic.dictionary`2.findentry(tkey key)
+   at system.collections.generic.dictionary`2.containskey(tkey key)
+   at gwjob.gwitems.containskey(string name)
+   at tma.tmapstarchiveapi.pstarchivesession.getnextcursor()</errorstacktrace>
+    <messageid>000000003508507f3875e84d85be8af7b1d47e7ac4002000</messageid>
+    <messagesubject>fwd: html inline image</messagesubject>
+    <messagecreationdate>5/30/2012 9:30:30 am</messagecreationdate>
+  </Table>
+  <Table>
+    <id>3779</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:28:04</jobdatetime>
+    <logtimestamp>2012-12-04 13:28:30</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource>mscorlib</errorsource>
+    <errordescription>error in runpolicyfilter.  value cannot be null.
+parameter name: key</errordescription>
+    <errorstacktrace>   at system.collections.generic.dictionary`2.findentry(tkey key)
+   at system.collections.generic.dictionary`2.containskey(tkey key)
+   at gwjob.gwitems.containskey(string name)
+   at tma.tmapstarchiveapi.pstarchivesession.getnextcursor()</errorstacktrace>
+    <messageid>000000003508507f3875e84d85be8af7b1d47e7a84002000</messageid>
+    <messagesubject>html inline image</messagesubject>
+    <messagecreationdate>5/30/2012 9:29:49 am</messagecreationdate>
+  </Table>
+  <Table>
+    <id>3778</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:28:04</jobdatetime>
+    <logtimestamp>2012-12-04 13:28:30</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource>mscorlib</errorsource>
+    <errordescription>error in runpolicyfilter.  value cannot be null.
+parameter name: key</errordescription>
+    <errorstacktrace>   at system.collections.generic.dictionary`2.findentry(tkey key)
+   at system.collections.generic.dictionary`2.containskey(tkey key)
+   at gwjob.gwitems.containskey(string name)
+   at tma.tmapstarchiveapi.pstarchivesession.getnextcursor()</errorstacktrace>
+    <messageid>000000003508507f3875e84d85be8af7b1d47e7ac4042000</messageid>
+    <messagesubject>gwopenaccountproperties</messagesubject>
+    <messagecreationdate>8/2/2012 11:32:06 am</messagecreationdate>
+  </Table>
+  <Table>
+    <id>3777</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:28:04</jobdatetime>
+    <logtimestamp>2012-12-04 13:28:29</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource>mscorlib</errorsource>
+    <errordescription>error in runpolicyfilter.  value cannot be null.
+parameter name: key</errordescription>
+    <errorstacktrace>   at system.collections.generic.dictionary`2.findentry(tkey key)
+   at system.collections.generic.dictionary`2.containskey(tkey key)
+   at gwjob.gwitems.containskey(string name)
+   at tma.tmapstarchiveapi.pstarchivesession.getnextcursor()</errorstacktrace>
+    <messageid>000000003508507f3875e84d85be8af7b1d47e7aa4042000</messageid>
+    <messagesubject>test5</messagesubject>
+    <messagecreationdate>5/12/2012 9:18:01 am</messagecreationdate>
+  </Table>
+  <Table>
+    <id>3776</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:28:04</jobdatetime>
+    <logtimestamp>2012-12-04 13:28:29</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource>mscorlib</errorsource>
+    <errordescription>error in runpolicyfilter.  value cannot be null.
+parameter name: key</errordescription>
+    <errorstacktrace>   at system.collections.generic.dictionary`2.findentry(tkey key)
+   at system.collections.generic.dictionary`2.containskey(tkey key)
+   at gwjob.gwitems.containskey(string name)
+   at tma.tmapstarchiveapi.pstarchivesession.getnextcursor()</errorstacktrace>
+    <messageid>000000003508507f3875e84d85be8af7b1d47e7a84042000</messageid>
+    <messagesubject>test3</messagesubject>
+    <messagecreationdate>5/12/2012 9:15:14 am</messagecreationdate>
+  </Table>
+  <Table>
+    <id>3775</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:28:04</jobdatetime>
+    <logtimestamp>2012-12-04 13:28:29</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource>mscorlib</errorsource>
+    <errordescription>error in runpolicyfilter.  value cannot be null.
+parameter name: key</errordescription>
+    <errorstacktrace>   at system.collections.generic.dictionary`2.findentry(tkey key)
+   at system.collections.generic.dictionary`2.containskey(tkey key)
+   at gwjob.gwitems.containskey(string name)
+   at tma.tmapstarchiveapi.pstarchivesession.getnextcursor()</errorstacktrace>
+    <messageid>000000003508507f3875e84d85be8af7b1d47e7a64042000</messageid>
+    <messagesubject>test2</messagesubject>
+    <messagecreationdate>5/12/2012 9:13:50 am</messagecreationdate>
+  </Table>
+  <Table>
+    <id>3774</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:28:04</jobdatetime>
+    <logtimestamp>2012-12-04 13:28:29</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource>mscorlib</errorsource>
+    <errordescription>error in runpolicyfilter.  value cannot be null.
+parameter name: key</errordescription>
+    <errorstacktrace>   at system.collections.generic.dictionary`2.findentry(tkey key)
+   at system.collections.generic.dictionary`2.containskey(tkey key)
+   at gwjob.gwitems.containskey(string name)
+   at tma.tmapstarchiveapi.pstarchivesession.getnextcursor()</errorstacktrace>
+    <messageid>000000003508507f3875e84d85be8af7b1d47e7a44042000</messageid>
+    <messagesubject>test1</messagesubject>
+    <messagecreationdate>5/12/2012 9:13:35 am</messagecreationdate>
+  </Table>
+  <Table>
+    <id>3773</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:28:04</jobdatetime>
+    <logtimestamp>2012-12-04 13:28:29</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource>mscorlib</errorsource>
+    <errordescription>error in runpolicyfilter.  value cannot be null.
+parameter name: key</errordescription>
+    <errorstacktrace>   at system.collections.generic.dictionary`2.findentry(tkey key)
+   at system.collections.generic.dictionary`2.containskey(tkey key)
+   at gwjob.gwitems.containskey(string name)
+   at tma.tmapstarchiveapi.pstarchivesession.getnextcursor()</errorstacktrace>
+    <messageid>000000003508507f3875e84d85be8af7b1d47e7a24042000</messageid>
+    <messagesubject>mp3</messagesubject>
+    <messagecreationdate>8/6/2012 6:29:03 am</messagecreationdate>
+  </Table>
+  <Table>
+    <id>3772</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:28:04</jobdatetime>
+    <logtimestamp>2012-12-04 13:28:29</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource>mscorlib</errorsource>
+    <errordescription>error in runpolicyfilter.  value cannot be null.
+parameter name: key</errordescription>
+    <errorstacktrace>   at system.collections.generic.dictionary`2.findentry(tkey key)
+   at system.collections.generic.dictionary`2.containskey(tkey key)
+   at gwjob.gwitems.containskey(string name)
+   at tma.tmapstarchiveapi.pstarchivesession.getnextcursor()</errorstacktrace>
+    <messageid>000000003508507f3875e84d85be8af7b1d47e7ae4032000</messageid>
+    <messagesubject>food prices</messagesubject>
+    <messagecreationdate>8/6/2012 6:26:33 am</messagecreationdate>
+  </Table>
+  <Table>
+    <id>3771</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:28:04</jobdatetime>
+    <logtimestamp>2012-12-04 13:28:29</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource>mscorlib</errorsource>
+    <errordescription>error in runpolicyfilter.  value cannot be null.
+parameter name: key</errordescription>
+    <errorstacktrace>   at system.collections.generic.dictionary`2.findentry(tkey key)
+   at system.collections.generic.dictionary`2.containskey(tkey key)
+   at gwjob.gwitems.containskey(string name)
+   at tma.tmapstarchiveapi.pstarchivesession.getnextcursor()</errorstacktrace>
+    <messageid>000000003508507f3875e84d85be8af7b1d47e7aa4032000</messageid>
+    <messagesubject>border</messagesubject>
+    <messagecreationdate>8/6/2012 6:25:19 am</messagecreationdate>
+  </Table>
+  <Table>
+    <id>3770</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:28:04</jobdatetime>
+    <logtimestamp>2012-12-04 13:28:29</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource>mscorlib</errorsource>
+    <errordescription>error in runpolicyfilter.  value cannot be null.
+parameter name: key</errordescription>
+    <errorstacktrace>   at system.collections.generic.dictionary`2.findentry(tkey key)
+   at system.collections.generic.dictionary`2.containskey(tkey key)
+   at gwjob.gwitems.containskey(string name)
+   at tma.tmapstarchiveapi.pstarchivesession.getnextcursor()</errorstacktrace>
+    <messageid>000000003508507f3875e84d85be8af7b1d47e7a64032000</messageid>
+    <messagesubject>vote</messagesubject>
+    <messagecreationdate>8/6/2012 6:24:29 am</messagecreationdate>
+  </Table>
+  <Table>
+    <id>3769</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:28:04</jobdatetime>
+    <logtimestamp>2012-12-04 13:28:29</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource>mscorlib</errorsource>
+    <errordescription>error in runpolicyfilter.  value cannot be null.
+parameter name: key</errordescription>
+    <errorstacktrace>   at system.collections.generic.dictionary`2.findentry(tkey key)
+   at system.collections.generic.dictionary`2.containskey(tkey key)
+   at gwjob.gwitems.containskey(string name)
+   at tma.tmapstarchiveapi.pstarchivesession.getnextcursor()</errorstacktrace>
+    <messageid>000000003508507f3875e84d85be8af7b1d47e7a24032000</messageid>
+    <messagesubject>test dd</messagesubject>
+    <messagecreationdate>8/2/2012 11:54:16 am</messagecreationdate>
+  </Table>
+  <Table>
+    <id>3768</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:28:04</jobdatetime>
+    <logtimestamp>2012-12-04 13:28:29</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource>mscorlib</errorsource>
+    <errordescription>error in runpolicyfilter.  value cannot be null.
+parameter name: key</errordescription>
+    <errorstacktrace>   at system.collections.generic.dictionary`2.findentry(tkey key)
+   at system.collections.generic.dictionary`2.containskey(tkey key)
+   at gwjob.gwitems.containskey(string name)
+   at tma.tmapstarchiveapi.pstarchivesession.getnextcursor()</errorstacktrace>
+    <messageid>000000003508507f3875e84d85be8af7b1d47e7ae4022000</messageid>
+    <messagesubject>test cc</messagesubject>
+    <messagecreationdate>8/2/2012 11:53:17 am</messagecreationdate>
+  </Table>
+  <Table>
+    <id>3767</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:28:04</jobdatetime>
+    <logtimestamp>2012-12-04 13:28:29</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource>mscorlib</errorsource>
+    <errordescription>error in runpolicyfilter.  value cannot be null.
+parameter name: key</errordescription>
+    <errorstacktrace>   at system.collections.generic.dictionary`2.findentry(tkey key)
+   at system.collections.generic.dictionary`2.containskey(tkey key)
+   at gwjob.gwitems.containskey(string name)
+   at tma.tmapstarchiveapi.pstarchivesession.getnextcursor()</errorstacktrace>
+    <messageid>000000003508507f3875e84d85be8af7b1d47e7aa4022000</messageid>
+    <messagesubject>test bb</messagesubject>
+    <messagecreationdate>8/2/2012 11:52:49 am</messagecreationdate>
+  </Table>
+  <Table>
+    <id>3766</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:28:04</jobdatetime>
+    <logtimestamp>2012-12-04 13:28:29</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource>mscorlib</errorsource>
+    <errordescription>error in runpolicyfilter.  value cannot be null.
+parameter name: key</errordescription>
+    <errorstacktrace>   at system.collections.generic.dictionary`2.findentry(tkey key)
+   at system.collections.generic.dictionary`2.containskey(tkey key)
+   at gwjob.gwitems.containskey(string name)
+   at tma.tmapstarchiveapi.pstarchivesession.getnextcursor()</errorstacktrace>
+    <messageid>000000003508507f3875e84d85be8af7b1d47e7a64022000</messageid>
+    <messagesubject>test aa</messagesubject>
+    <messagecreationdate>8/2/2012 11:51:51 am</messagecreationdate>
+  </Table>
+  <Table>
+    <id>3765</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:28:04</jobdatetime>
+    <logtimestamp>2012-12-04 13:28:29</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource>mscorlib</errorsource>
+    <errordescription>error in runpolicyfilter.  value cannot be null.
+parameter name: key</errordescription>
+    <errorstacktrace>   at system.collections.generic.dictionary`2.findentry(tkey key)
+   at system.collections.generic.dictionary`2.containskey(tkey key)
+   at gwjob.gwitems.containskey(string name)
+   at tma.tmapstarchiveapi.pstarchivesession.getnextcursor()</errorstacktrace>
+    <messageid>000000003508507f3875e84d85be8af7b1d47e7a24022000</messageid>
+    <messagesubject>test5</messagesubject>
+    <messagecreationdate>5/12/2012 9:18:01 am</messagecreationdate>
+  </Table>
+  <Table>
+    <id>3764</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:28:04</jobdatetime>
+    <logtimestamp>2012-12-04 13:28:29</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource>mscorlib</errorsource>
+    <errordescription>error in runpolicyfilter.  value cannot be null.
+parameter name: key</errordescription>
+    <errorstacktrace>   at system.collections.generic.dictionary`2.findentry(tkey key)
+   at system.collections.generic.dictionary`2.containskey(tkey key)
+   at gwjob.gwitems.containskey(string name)
+   at tma.tmapstarchiveapi.pstarchivesession.getnextcursor()</errorstacktrace>
+    <messageid>000000003508507f3875e84d85be8af7b1d47e7a04022000</messageid>
+    <messagesubject>test3</messagesubject>
+    <messagecreationdate>5/12/2012 9:15:14 am</messagecreationdate>
+  </Table>
+  <Table>
+    <id>3763</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:28:04</jobdatetime>
+    <logtimestamp>2012-12-04 13:28:28</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource>mscorlib</errorsource>
+    <errordescription>error in runpolicyfilter.  value cannot be null.
+parameter name: key</errordescription>
+    <errorstacktrace>   at system.collections.generic.dictionary`2.findentry(tkey key)
+   at system.collections.generic.dictionary`2.containskey(tkey key)
+   at gwjob.gwitems.containskey(string name)
+   at tma.tmapstarchiveapi.pstarchivesession.getnextcursor()</errorstacktrace>
+    <messageid>000000003508507f3875e84d85be8af7b1d47e7ae4012000</messageid>
+    <messagesubject>test2</messagesubject>
+    <messagecreationdate>5/12/2012 9:13:50 am</messagecreationdate>
+  </Table>
+  <Table>
+    <id>3762</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:28:04</jobdatetime>
+    <logtimestamp>2012-12-04 13:28:28</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource>mscorlib</errorsource>
+    <errordescription>error in runpolicyfilter.  value cannot be null.
+parameter name: key</errordescription>
+    <errorstacktrace>   at system.collections.generic.dictionary`2.findentry(tkey key)
+   at system.collections.generic.dictionary`2.containskey(tkey key)
+   at gwjob.gwitems.containskey(string name)
+   at tma.tmapstarchiveapi.pstarchivesession.getnextcursor()</errorstacktrace>
+    <messageid>000000003508507f3875e84d85be8af7b1d47e7ac4012000</messageid>
+    <messagesubject>test1</messagesubject>
+    <messagecreationdate>5/12/2012 9:13:35 am</messagecreationdate>
+  </Table>
+  <Table>
+    <id>3761</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:28:04</jobdatetime>
+    <logtimestamp>2012-12-04 13:28:28</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource>mscorlib</errorsource>
+    <errordescription>error in runpolicyfilter.  value cannot be null.
+parameter name: key</errordescription>
+    <errorstacktrace>   at system.collections.generic.dictionary`2.findentry(tkey key)
+   at system.collections.generic.dictionary`2.containskey(tkey key)
+   at gwjob.gwitems.containskey(string name)
+   at tma.tmapstarchiveapi.pstarchivesession.getnextcursor()</errorstacktrace>
+    <messageid>000000003508507f3875e84d85be8af7b1d47e7aa4012000</messageid>
+    <messagesubject>attached docx</messagesubject>
+    <messagecreationdate>5/30/2012 9:34:39 am</messagecreationdate>
+  </Table>
+  <Table>
+    <id>3760</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:28:04</jobdatetime>
+    <logtimestamp>2012-12-04 13:28:28</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource>mscorlib</errorsource>
+    <errordescription>error in runpolicyfilter.  value cannot be null.
+parameter name: key</errordescription>
+    <errorstacktrace>   at system.collections.generic.dictionary`2.findentry(tkey key)
+   at system.collections.generic.dictionary`2.containskey(tkey key)
+   at gwjob.gwitems.containskey(string name)
+   at tma.tmapstarchiveapi.pstarchivesession.getnextcursor()</errorstacktrace>
+    <messageid>000000003508507f3875e84d85be8af7b1d47e7a24012000</messageid>
+    <messagesubject>fwd: html inline image</messagesubject>
+    <messagecreationdate>5/30/2012 9:30:30 am</messagecreationdate>
+  </Table>
+  <Table>
+    <id>3759</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:28:04</jobdatetime>
+    <logtimestamp>2012-12-04 13:28:28</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource>mscorlib</errorsource>
+    <errordescription>error in runpolicyfilter.  value cannot be null.
+parameter name: key</errordescription>
+    <errorstacktrace>   at system.collections.generic.dictionary`2.findentry(tkey key)
+   at system.collections.generic.dictionary`2.containskey(tkey key)
+   at gwjob.gwitems.containskey(string name)
+   at tma.tmapstarchiveapi.pstarchivesession.getnextcursor()</errorstacktrace>
+    <messageid>000000003508507f3875e84d85be8af7b1d47e7aa4002000</messageid>
+    <messagesubject>html inline image</messagesubject>
+    <messagecreationdate>5/30/2012 9:29:49 am</messagecreationdate>
+  </Table>
+  <Table>
+    <id>3758</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:28:04</jobdatetime>
+    <logtimestamp>2012-12-04 13:28:28</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource>mscorlib</errorsource>
+    <errordescription>error in runpolicyfilter.  value cannot be null.
+parameter name: key</errordescription>
+    <errorstacktrace>   at system.collections.generic.dictionary`2.findentry(tkey key)
+   at system.collections.generic.dictionary`2.containskey(tkey key)
+   at gwjob.gwitems.containskey(string name)
+   at tma.tmapstarchiveapi.pstarchivesession.getnextcursor()</errorstacktrace>
+    <messageid>000000003508507f3875e84d85be8af7b1d47e7a64002000</messageid>
+    <messagesubject>your active directory and exchange password</messagesubject>
+    <messagecreationdate>6/7/2010 8:07:39 am</messagecreationdate>
+  </Table>
+  <Table>
+    <id>3757</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:28:04</jobdatetime>
+    <logtimestamp>2012-12-04 13:28:28</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource>mscorlib</errorsource>
+    <errordescription>error in runpolicyfilter.  value cannot be null.
+parameter name: key</errordescription>
+    <errorstacktrace>   at system.collections.generic.dictionary`2.findentry(tkey key)
+   at system.collections.generic.dictionary`2.containskey(tkey key)
+   at gwjob.gwitems.containskey(string name)
+   at tma.tmapstarchiveapi.pstarchivesession.getnextcursor()</errorstacktrace>
+    <messageid>000000003508507f3875e84d85be8af7b1d47e7a44002000</messageid>
+    <messagesubject>your active directory and exchange password</messagesubject>
+    <messagecreationdate>6/7/2010 7:49:27 am</messagecreationdate>
+  </Table>
+  <Table>
+    <id>3756</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:28:04</jobdatetime>
+    <logtimestamp>2012-12-04 13:28:28</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <errorsource>mscorlib</errorsource>
+    <errordescription>error in runpolicyfilter.  value cannot be null.
+parameter name: key</errordescription>
+    <errorstacktrace>   at system.collections.generic.dictionary`2.findentry(tkey key)
+   at system.collections.generic.dictionary`2.containskey(tkey key)
+   at gwjob.gwitems.containskey(string name)
+   at tma.tmapstarchiveapi.pstarchivesession.getnextcursor()</errorstacktrace>
+    <messageid>000000003508507f3875e84d85be8af7b1d47e7a24002000</messageid>
+    <messagesubject>your active directory and exchange password</messagesubject>
+    <messagecreationdate>4/14/2010 9:22:38 am</messagecreationdate>
+  </Table>
+</NewDataSet>

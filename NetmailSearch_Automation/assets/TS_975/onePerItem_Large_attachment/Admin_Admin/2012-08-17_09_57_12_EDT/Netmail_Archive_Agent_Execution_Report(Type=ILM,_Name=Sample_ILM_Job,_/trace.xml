@@ -1,0 +1,18 @@
+<NewDataSet>
+  <Table>
+    <id>201</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-17 08:21:25</jobdatetime>
+    <logtimestamp>2012-08-17 08:21:39</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>terminate()</logdata>
+  </Table>
+  <Table>
+    <id>200</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-17 08:21:25</jobdatetime>
+    <logtimestamp>2012-08-17 08:21:39</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>initialize()</logdata>
+  </Table>
+</NewDataSet>

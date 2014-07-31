@@ -1,0 +1,45 @@
+<NewDataSet>
+  <Table>
+    <id>88</id>
+    <jobid>cn=export agent_netmail search export,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-09-21 15:15:33</jobdatetime>
+    <logtimestamp>2012-09-21 15:19:17</logtimestamp>
+    <account>archive.po1.dom1</account>
+    <errorsource>java.lang.exception: file has too many pages for this pdf merge engine</errorsource>
+    <errordescription>error exporting mail  error while adding mail item</errordescription>
+    <errorstacktrace>com.ma.export.storage.filestorageexception: error while adding mail item
+	at com.ma.export.storage.singlepdfstorage.addmailitem(singlepdfstorage.java:223)
+	at com.ma.export.advancedexporter.processitem(advancedexporter.java:670)
+	at com.ma.export.advancedexporter.update(advancedexporter.java:888)
+	at com.novell.webaccess.providers.gwxmlv.gwasessiondata.processitem(gwasessiondata.java:2257)
+	at com.novell.webaccess.providers.gwxmlv.gwasessiondata.edisc_search_getitemlist(gwasessiondata.java:2129)
+	at com.novell.webaccess.providers.gwxmlv.gwasessiondata.edisc_callback(gwasessiondata.java:1050)
+	at com.novell.webaccess.providers.gwxmlv.xgwxmlimpl.edisc_service(xgwxmlimpl.java:537)
+	at com.ma.export.advancedexporter.processtab(advancedexporter.java:632)
+	at com.ma.export.advancedexporter.processallmessages(advancedexporter.java:592)
+	at com.ma.export.advancedexporter.executeexport(advancedexporter.java:564)
+	at com.ma.export.advancedexporter.run(advancedexporter.java:175)
+	at com.ma.export.advancedexporter.main(advancedexporter.java:861)
+caused by: java.lang.exception: file has too many pages for this pdf merge engine
+	at com.ma.export.storage.singlepdfstorage.adddocument(singlepdfstorage.java:92)
+	at com.ma.export.storage.singlepdfstorage.addmailitem(singlepdfstorage.java:191)
+	... 11 more
+</errorstacktrace>
+    <messageid>4b1518d7.dom1.po1.100.1396133.1.1a0.1</messageid>
+    <messagesubject>fwd: more than 30k attachment</messagesubject>
+    <messagecreationdate>2009-12-01 13:23:07</messagecreationdate>
+  </Table>
+  <Table>
+    <id>89</id>
+    <jobid>cn=export agent_netmail search export,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-09-21 15:15:33</jobdatetime>
+    <logtimestamp>2012-09-21 15:19:31</logtimestamp>
+    <account>post-processor</account>
+    <errorsource />
+    <errordescription>closeaccount: error closing the account. response: missing session string  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+</NewDataSet>

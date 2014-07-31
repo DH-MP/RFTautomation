@@ -1,0 +1,946 @@
+<NewDataSet>
+  <Table>
+    <id>81</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:32</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>initialize()</logdata>
+  </Table>
+  <Table>
+    <id>82</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:32</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>connected(local): true</logdata>
+  </Table>
+  <Table>
+    <id>83</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:32</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>startup(): true</logdata>
+  </Table>
+  <Table>
+    <id>84</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:32</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>run()</logdata>
+  </Table>
+  <Table>
+    <id>85</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:32</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>manageinformationlifecycle()</logdata>
+  </Table>
+  <Table>
+    <id>86</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:32</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>geteligiblemessages</logdata>
+  </Table>
+  <Table>
+    <id>87</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:33</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>searchindex(location=local): ok</logdata>
+  </Table>
+  <Table>
+    <id>88</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:33</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>number of messages: 26</logdata>
+  </Table>
+  <Table>
+    <id>89</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:33</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>purgedata(messages=26)</logdata>
+  </Table>
+  <Table>
+    <id>90</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:33</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>delete the file attachment: accounts\\berkley big@berkley.po1.dom1\\content\\de\\dec5ac9215d4d80f3f18e8039622e1907cd873844ebb42f8a9ba3a918ac14d203bb215d0 from the index server in deletemsgatt().</logdata>
+  </Table>
+  <Table>
+    <id>91</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>stampauditfile(c:/archive/localxml/audit/accounts/berkley big@berkley.po1.dom1/adt/calendar/502cf1be.dom1.po1.100.1647069.1.71.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>92</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>purgemessage(c:/archive/localxml/audit/accounts/berkley big@berkley.po1.dom1/adt/calendar/502cf1be.dom1.po1.100.1647069.1.71.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>93</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>delete the file attachment: accounts\\berkley big@berkley.po1.dom1\\content\\de\\dec5ac9215d4d80f3f18e8039622e1907cd873844ebb42f8a9ba3a918ac14d203bb215d0 from the index server in deletemsgatt().</logdata>
+  </Table>
+  <Table>
+    <id>94</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>stampauditfile(c:/archive/localxml/audit/accounts/berkley big@berkley.po1.dom1/adt/calendar/502cf1be.dom1.po1.100.1647069.1.72.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>95</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>purgemessage(c:/archive/localxml/audit/accounts/berkley big@berkley.po1.dom1/adt/calendar/502cf1be.dom1.po1.100.1647069.1.72.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>96</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>delete the file attachment: accounts\\berkley big@berkley.po1.dom1\\content\\9b\\9bf50c61bcfd20fa3bad95bbcc59e54abd20c22fc9ad16d5971302284e28e4aa1cbcf969 from the index server in deletemsgatt().</logdata>
+  </Table>
+  <Table>
+    <id>97</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>stampauditfile(c:/archive/localxml/audit/accounts/berkley big@berkley.po1.dom1/adt/mailbox/501aa217.dom1.po1.100.1647069.1.51.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>98</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>purgemessage(c:/archive/localxml/audit/accounts/berkley big@berkley.po1.dom1/adt/mailbox/501aa217.dom1.po1.100.1647069.1.51.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>99</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>delete the file attachment: accounts\\berkley big@berkley.po1.dom1\\content\\9b\\9bf50c61bcfd20fa3bad95bbcc59e54abd20c22fc9ad16d5971302284e28e4aa1cbcf969 from the index server in deletemsgatt().</logdata>
+  </Table>
+  <Table>
+    <id>100</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>stampauditfile(c:/archive/localxml/audit/accounts/berkley big@berkley.po1.dom1/adt/mailbox/new folder/501aa217.dom1.po1.100.1647069.1.52.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>101</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>purgemessage(c:/archive/localxml/audit/accounts/berkley big@berkley.po1.dom1/adt/mailbox/new folder/501aa217.dom1.po1.100.1647069.1.52.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>102</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>delete the file attachment: accounts\\berkley big@berkley.po1.dom1\\content\\96\\9660c6a32228c248b82f77d1dd928d7e93fb6047aaaa956a478964c12d26c0db745d4527 from the index server in deletemsgatt().</logdata>
+  </Table>
+  <Table>
+    <id>103</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>delete the file attachment: accounts\\berkley big@berkley.po1.dom1\\content\\46\\461a3c7068a69156d2249bed37bd2447049e52a6699edcebf4af2b98f1477157c2159577 from the index server in deletemsgatt().</logdata>
+  </Table>
+  <Table>
+    <id>104</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>stampauditfile(c:/archive/localxml/audit/accounts/berkley big@berkley.po1.dom1/adt/mailbox/501aa251.dom1.po1.100.1647069.1.53.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>105</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>purgemessage(c:/archive/localxml/audit/accounts/berkley big@berkley.po1.dom1/adt/mailbox/501aa251.dom1.po1.100.1647069.1.53.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>106</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>delete the file attachment: accounts\\berkley big@berkley.po1.dom1\\content\\96\\9660c6a32228c248b82f77d1dd928d7e93fb6047aaaa956a478964c12d26c0db745d4527 from the index server in deletemsgatt().</logdata>
+  </Table>
+  <Table>
+    <id>107</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>delete the file attachment: accounts\\berkley big@berkley.po1.dom1\\content\\46\\461a3c7068a69156d2249bed37bd2447049e52a6699edcebf4af2b98f1477157c2159577 from the index server in deletemsgatt().</logdata>
+  </Table>
+  <Table>
+    <id>108</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>stampauditfile(c:/archive/localxml/audit/accounts/berkley big@berkley.po1.dom1/adt/mailbox/new folder/501aa251.dom1.po1.100.1647069.1.54.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>109</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>purgemessage(c:/archive/localxml/audit/accounts/berkley big@berkley.po1.dom1/adt/mailbox/new folder/501aa251.dom1.po1.100.1647069.1.54.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>110</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>delete the file attachment: accounts\\berkley big@berkley.po1.dom1\\content\\9b\\9bf50c61bcfd20fa3bad95bbcc59e54abd20c22fc9ad16d5971302284e28e4aa1cbcf969 from the index server in deletemsgatt().</logdata>
+  </Table>
+  <Table>
+    <id>111</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>delete the file attachment: accounts\\berkley big@berkley.po1.dom1\\content\\ba\\ba795c011958b7c8c628abba468bd762beda403e5a9a91184e611dae3fed162b8787ce5f from the index server in deletemsgatt().</logdata>
+  </Table>
+  <Table>
+    <id>112</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>stampauditfile(c:/archive/localxml/audit/accounts/berkley big@berkley.po1.dom1/adt/mailbox/501aa26d.dom1.po1.100.1647069.1.55.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>113</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>purgemessage(c:/archive/localxml/audit/accounts/berkley big@berkley.po1.dom1/adt/mailbox/501aa26d.dom1.po1.100.1647069.1.55.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>114</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>delete the file attachment: accounts\\berkley big@berkley.po1.dom1\\content\\9b\\9bf50c61bcfd20fa3bad95bbcc59e54abd20c22fc9ad16d5971302284e28e4aa1cbcf969 from the index server in deletemsgatt().</logdata>
+  </Table>
+  <Table>
+    <id>115</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>delete the file attachment: accounts\\berkley big@berkley.po1.dom1\\content\\ba\\ba795c011958b7c8c628abba468bd762beda403e5a9a91184e611dae3fed162b8787ce5f from the index server in deletemsgatt().</logdata>
+  </Table>
+  <Table>
+    <id>116</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>stampauditfile(c:/archive/localxml/audit/accounts/berkley big@berkley.po1.dom1/adt/mailbox/new folder/501aa26d.dom1.po1.100.1647069.1.56.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>117</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>purgemessage(c:/archive/localxml/audit/accounts/berkley big@berkley.po1.dom1/adt/mailbox/new folder/501aa26d.dom1.po1.100.1647069.1.56.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>118</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>delete the file attachment: accounts\\berkley big@berkley.po1.dom1\\content\\c2\\c2ad2a6d499179cba7049f56ba4b45a3cf9bbf21891b93f679ee1b0936633fa6ca1ab718 from the index server in deletemsgatt().</logdata>
+  </Table>
+  <Table>
+    <id>119</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>delete the file attachment: accounts\\berkley big@berkley.po1.dom1\\content\\88\\88b5b2d6a47a747b7af7714fb37f3c724e647060f72f4a00e5e07c28d3546620b5bcc8ba from the index server in deletemsgatt().</logdata>
+  </Table>
+  <Table>
+    <id>120</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>delete the file attachment: accounts\\berkley big@berkley.po1.dom1\\content\\28\\2821a2196387c9caf4dfab977863612c2685318e068fc23430e98c9016ff4294e3662239 from the index server in deletemsgatt().</logdata>
+  </Table>
+  <Table>
+    <id>121</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>stampauditfile(c:/archive/localxml/audit/accounts/berkley big@berkley.po1.dom1/adt/mailbox/501aa2a8.dom1.po1.100.1647069.1.57.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>122</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>purgemessage(c:/archive/localxml/audit/accounts/berkley big@berkley.po1.dom1/adt/mailbox/501aa2a8.dom1.po1.100.1647069.1.57.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>123</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>delete the file attachment: accounts\\berkley big@berkley.po1.dom1\\content\\c2\\c2ad2a6d499179cba7049f56ba4b45a3cf9bbf21891b93f679ee1b0936633fa6ca1ab718 from the index server in deletemsgatt().</logdata>
+  </Table>
+  <Table>
+    <id>124</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>delete the file attachment: accounts\\berkley big@berkley.po1.dom1\\content\\88\\88b5b2d6a47a747b7af7714fb37f3c724e647060f72f4a00e5e07c28d3546620b5bcc8ba from the index server in deletemsgatt().</logdata>
+  </Table>
+  <Table>
+    <id>125</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>delete the file attachment: accounts\\berkley big@berkley.po1.dom1\\content\\28\\2821a2196387c9caf4dfab977863612c2685318e068fc23430e98c9016ff4294e3662239 from the index server in deletemsgatt().</logdata>
+  </Table>
+  <Table>
+    <id>126</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>stampauditfile(c:/archive/localxml/audit/accounts/berkley big@berkley.po1.dom1/adt/mailbox/new folder/501aa2a8.dom1.po1.100.1647069.1.58.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>127</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>purgemessage(c:/archive/localxml/audit/accounts/berkley big@berkley.po1.dom1/adt/mailbox/new folder/501aa2a8.dom1.po1.100.1647069.1.58.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>128</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>delete the file attachment: accounts\\berkley big@berkley.po1.dom1\\content\\50\\5092ad7e5603d349a74aba209e994a6694e70f2937d6f335134b237e255ebb73e1311ffd from the index server in deletemsgatt().</logdata>
+  </Table>
+  <Table>
+    <id>129</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>stampauditfile(c:/archive/localxml/audit/accounts/berkley big@berkley.po1.dom1/adt/mailbox/501f9b5d.dom1.po1.100.1647069.1.59.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>130</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>purgemessage(c:/archive/localxml/audit/accounts/berkley big@berkley.po1.dom1/adt/mailbox/501f9b5d.dom1.po1.100.1647069.1.59.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>131</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>delete the file attachment: accounts\\berkley big@berkley.po1.dom1\\content\\50\\5092ad7e5603d349a74aba209e994a6694e70f2937d6f335134b237e255ebb73e1311ffd from the index server in deletemsgatt().</logdata>
+  </Table>
+  <Table>
+    <id>132</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>stampauditfile(c:/archive/localxml/audit/accounts/berkley big@berkley.po1.dom1/adt/mailbox/501f9b5d.dom1.po1.100.1647069.1.5a.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>133</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>purgemessage(c:/archive/localxml/audit/accounts/berkley big@berkley.po1.dom1/adt/mailbox/501f9b5d.dom1.po1.100.1647069.1.5a.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>134</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>delete the file attachment: accounts\\berkley big@berkley.po1.dom1\\content\\e5\\e50893f790ac8a8429fd2052a421c50fcf9eafe13e882ac7612d8445baf23b6a92d10244 from the index server in deletemsgatt().</logdata>
+  </Table>
+  <Table>
+    <id>135</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>delete the file attachment: accounts\\berkley big@berkley.po1.dom1\\content\\56\\562c5b528f7aa690bb7d08b307542c6842f0bfd8da1a2c52305c1d4ac7f2fbcb9fcbd082 from the index server in deletemsgatt().</logdata>
+  </Table>
+  <Table>
+    <id>136</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>stampauditfile(c:/archive/localxml/audit/accounts/berkley big@berkley.po1.dom1/adt/mailbox/501f9b8f.dom1.po1.100.1647069.1.5b.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>137</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>purgemessage(c:/archive/localxml/audit/accounts/berkley big@berkley.po1.dom1/adt/mailbox/501f9b8f.dom1.po1.100.1647069.1.5b.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>138</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>delete the file attachment: accounts\\berkley big@berkley.po1.dom1\\content\\e5\\e50893f790ac8a8429fd2052a421c50fcf9eafe13e882ac7612d8445baf23b6a92d10244 from the index server in deletemsgatt().</logdata>
+  </Table>
+  <Table>
+    <id>139</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>delete the file attachment: accounts\\berkley big@berkley.po1.dom1\\content\\56\\562c5b528f7aa690bb7d08b307542c6842f0bfd8da1a2c52305c1d4ac7f2fbcb9fcbd082 from the index server in deletemsgatt().</logdata>
+  </Table>
+  <Table>
+    <id>140</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>stampauditfile(c:/archive/localxml/audit/accounts/berkley big@berkley.po1.dom1/adt/mailbox/501f9b8f.dom1.po1.100.1647069.1.5c.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>141</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>purgemessage(c:/archive/localxml/audit/accounts/berkley big@berkley.po1.dom1/adt/mailbox/501f9b8f.dom1.po1.100.1647069.1.5c.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>142</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>delete the file attachment: accounts\\berkley big@berkley.po1.dom1\\content\\e9\\e98bdfd2deea5ddfabf92c5ce89b40e676f5147a51c2ab14dcbf09cebe3f9c8c8801b160 from the index server in deletemsgatt().</logdata>
+  </Table>
+  <Table>
+    <id>143</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>delete the file attachment: accounts\\berkley big@berkley.po1.dom1\\content\\57\\579b872b1bb757a5a290164ec32f394d1243b4ed657765d8e749c555beef9eb6f326efda from the index server in deletemsgatt().</logdata>
+  </Table>
+  <Table>
+    <id>144</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>stampauditfile(c:/archive/localxml/audit/accounts/berkley big@berkley.po1.dom1/adt/mailbox/501f9bd9.dom1.po1.100.1647069.1.5d.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>145</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>purgemessage(c:/archive/localxml/audit/accounts/berkley big@berkley.po1.dom1/adt/mailbox/501f9bd9.dom1.po1.100.1647069.1.5d.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>146</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>delete the file attachment: accounts\\berkley big@berkley.po1.dom1\\content\\e9\\e98bdfd2deea5ddfabf92c5ce89b40e676f5147a51c2ab14dcbf09cebe3f9c8c8801b160 from the index server in deletemsgatt().</logdata>
+  </Table>
+  <Table>
+    <id>147</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>delete the file attachment: accounts\\berkley big@berkley.po1.dom1\\content\\57\\579b872b1bb757a5a290164ec32f394d1243b4ed657765d8e749c555beef9eb6f326efda from the index server in deletemsgatt().</logdata>
+  </Table>
+  <Table>
+    <id>148</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>stampauditfile(c:/archive/localxml/audit/accounts/berkley big@berkley.po1.dom1/adt/mailbox/501f9bd9.dom1.po1.100.1647069.1.5e.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>149</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>purgemessage(c:/archive/localxml/audit/accounts/berkley big@berkley.po1.dom1/adt/mailbox/501f9bd9.dom1.po1.100.1647069.1.5e.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>150</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>delete the file attachment: accounts\\berkley big@berkley.po1.dom1\\content\\20\\204fc38c207d695c0f0bded87fe361a3871aa4ca68733bd87d8db258e42d26b303136d7f from the index server in deletemsgatt().</logdata>
+  </Table>
+  <Table>
+    <id>151</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>delete the file attachment: accounts\\berkley big@berkley.po1.dom1\\content\\ba\\ba795c011958b7c8c628abba468bd762beda403e5a9a91184e611dae3fed162b8787ce5f from the index server in deletemsgatt().</logdata>
+  </Table>
+  <Table>
+    <id>152</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>stampauditfile(c:/archive/localxml/audit/accounts/berkley big@berkley.po1.dom1/adt/mailbox/501f9c6f.dom1.po1.100.1647069.1.5f.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>153</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>purgemessage(c:/archive/localxml/audit/accounts/berkley big@berkley.po1.dom1/adt/mailbox/501f9c6f.dom1.po1.100.1647069.1.5f.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>154</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>delete the file attachment: accounts\\berkley big@berkley.po1.dom1\\content\\20\\204fc38c207d695c0f0bded87fe361a3871aa4ca68733bd87d8db258e42d26b303136d7f from the index server in deletemsgatt().</logdata>
+  </Table>
+  <Table>
+    <id>155</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>delete the file attachment: accounts\\berkley big@berkley.po1.dom1\\content\\ba\\ba795c011958b7c8c628abba468bd762beda403e5a9a91184e611dae3fed162b8787ce5f from the index server in deletemsgatt().</logdata>
+  </Table>
+  <Table>
+    <id>156</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>stampauditfile(c:/archive/localxml/audit/accounts/berkley big@berkley.po1.dom1/adt/mailbox/501f9c6f.dom1.po1.100.1647069.1.60.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>157</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>purgemessage(c:/archive/localxml/audit/accounts/berkley big@berkley.po1.dom1/adt/mailbox/501f9c6f.dom1.po1.100.1647069.1.60.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>158</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>delete the file attachment: accounts\\berkley big@berkley.po1.dom1\\content\\0e\\0e0597da7e3b472f3650a17b345ce93a1ba1e48acc80ed627a44425bb888f2517ebedca3 from the index server in deletemsgatt().</logdata>
+  </Table>
+  <Table>
+    <id>159</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>stampauditfile(c:/archive/localxml/audit/accounts/berkley big@berkley.po1.dom1/adt/mailbox/502b7e35.dom1.po1.100.1647069.1.69.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>160</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>purgemessage(c:/archive/localxml/audit/accounts/berkley big@berkley.po1.dom1/adt/mailbox/502b7e35.dom1.po1.100.1647069.1.69.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>161</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>delete the file attachment: accounts\\berkley big@berkley.po1.dom1\\content\\0e\\0e0597da7e3b472f3650a17b345ce93a1ba1e48acc80ed627a44425bb888f2517ebedca3 from the index server in deletemsgatt().</logdata>
+  </Table>
+  <Table>
+    <id>162</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>stampauditfile(c:/archive/localxml/audit/accounts/berkley big@berkley.po1.dom1/adt/mailbox/502b7e35.dom1.po1.100.1647069.1.6a.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>163</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>purgemessage(c:/archive/localxml/audit/accounts/berkley big@berkley.po1.dom1/adt/mailbox/502b7e35.dom1.po1.100.1647069.1.6a.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>164</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>delete the file attachment: accounts\\berkley big@berkley.po1.dom1\\content\\de\\dec5ac9215d4d80f3f18e8039622e1907cd873844ebb42f8a9ba3a918ac14d203bb215d0 from the index server in deletemsgatt().</logdata>
+  </Table>
+  <Table>
+    <id>165</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>delete the file attachment: accounts\\berkley big@berkley.po1.dom1\\content\\e9\\e98bdfd2deea5ddfabf92c5ce89b40e676f5147a51c2ab14dcbf09cebe3f9c8c8801b160 from the index server in deletemsgatt().</logdata>
+  </Table>
+  <Table>
+    <id>166</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>delete the file attachment: accounts\\berkley big@berkley.po1.dom1\\content\\57\\579b872b1bb757a5a290164ec32f394d1243b4ed657765d8e749c555beef9eb6f326efda from the index server in deletemsgatt().</logdata>
+  </Table>
+  <Table>
+    <id>167</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>delete the msg attachment: accounts\\berkley big@berkley.po1.dom1\\msg\\502ba061.dom1.po1.100.1647069.1.6b.1\\502ba061.dom1.po1.200.2000010.1.85.1.xml from the device and index server in deletemsgatt().</logdata>
+  </Table>
+  <Table>
+    <id>168</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>stampauditfile(c:/archive/localxml/audit/accounts/berkley big@berkley.po1.dom1/adt/mailbox/502ba061.dom1.po1.100.1647069.1.6b.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>169</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>purgemessage(c:/archive/localxml/audit/accounts/berkley big@berkley.po1.dom1/adt/mailbox/502ba061.dom1.po1.100.1647069.1.6b.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>170</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>delete the file attachment: accounts\\berkley big@berkley.po1.dom1\\content\\de\\dec5ac9215d4d80f3f18e8039622e1907cd873844ebb42f8a9ba3a918ac14d203bb215d0 from the index server in deletemsgatt().</logdata>
+  </Table>
+  <Table>
+    <id>171</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>delete the file attachment: accounts\\berkley big@berkley.po1.dom1\\content\\e9\\e98bdfd2deea5ddfabf92c5ce89b40e676f5147a51c2ab14dcbf09cebe3f9c8c8801b160 from the index server in deletemsgatt().</logdata>
+  </Table>
+  <Table>
+    <id>172</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>delete the file attachment: accounts\\berkley big@berkley.po1.dom1\\content\\57\\579b872b1bb757a5a290164ec32f394d1243b4ed657765d8e749c555beef9eb6f326efda from the index server in deletemsgatt().</logdata>
+  </Table>
+  <Table>
+    <id>173</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>delete the msg attachment: accounts\\berkley big@berkley.po1.dom1\\msg\\502ba061.dom1.po1.100.1647069.1.6c.1\\502ba061.dom1.po1.200.2000010.1.85.1.xml from the device and index server in deletemsgatt().</logdata>
+  </Table>
+  <Table>
+    <id>174</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>stampauditfile(c:/archive/localxml/audit/accounts/berkley big@berkley.po1.dom1/adt/mailbox/502ba061.dom1.po1.100.1647069.1.6c.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>175</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>purgemessage(c:/archive/localxml/audit/accounts/berkley big@berkley.po1.dom1/adt/mailbox/502ba061.dom1.po1.100.1647069.1.6c.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>176</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>delete the file attachment: accounts\\berkley big@berkley.po1.dom1\\content\\de\\dec5ac9215d4d80f3f18e8039622e1907cd873844ebb42f8a9ba3a918ac14d203bb215d0 from the index server in deletemsgatt().</logdata>
+  </Table>
+  <Table>
+    <id>177</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>delete the file attachment: accounts\\berkley big@berkley.po1.dom1\\content\\0e\\0e0597da7e3b472f3650a17b345ce93a1ba1e48acc80ed627a44425bb888f2517ebedca3 from the index server in deletemsgatt().</logdata>
+  </Table>
+  <Table>
+    <id>178</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>delete the msg attachment: accounts\\berkley big@berkley.po1.dom1\\msg\\502ba071.dom1.po1.100.1647069.1.6d.1\\502ba071.dom1.po1.200.2000010.1.8c.1.xml from the device and index server in deletemsgatt().</logdata>
+  </Table>
+  <Table>
+    <id>179</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>stampauditfile(c:/archive/localxml/audit/accounts/berkley big@berkley.po1.dom1/adt/mailbox/502ba071.dom1.po1.100.1647069.1.6d.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>180</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>purgemessage(c:/archive/localxml/audit/accounts/berkley big@berkley.po1.dom1/adt/mailbox/502ba071.dom1.po1.100.1647069.1.6d.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>181</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>delete the file attachment: accounts\\berkley big@berkley.po1.dom1\\content\\de\\dec5ac9215d4d80f3f18e8039622e1907cd873844ebb42f8a9ba3a918ac14d203bb215d0 from the index server in deletemsgatt().</logdata>
+  </Table>
+  <Table>
+    <id>182</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>delete the file attachment: accounts\\berkley big@berkley.po1.dom1\\content\\0e\\0e0597da7e3b472f3650a17b345ce93a1ba1e48acc80ed627a44425bb888f2517ebedca3 from the index server in deletemsgatt().</logdata>
+  </Table>
+  <Table>
+    <id>183</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:34</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>delete the msg attachment: accounts\\berkley big@berkley.po1.dom1\\msg\\502ba071.dom1.po1.100.1647069.1.6e.1\\502ba071.dom1.po1.200.2000010.1.8c.1.xml from the device and index server in deletemsgatt().</logdata>
+  </Table>
+  <Table>
+    <id>184</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:35</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>stampauditfile(c:/archive/localxml/audit/accounts/berkley big@berkley.po1.dom1/adt/mailbox/502ba071.dom1.po1.100.1647069.1.6e.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>185</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:35</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>purgemessage(c:/archive/localxml/audit/accounts/berkley big@berkley.po1.dom1/adt/mailbox/502ba071.dom1.po1.100.1647069.1.6e.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>186</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:35</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>delete the file attachment: accounts\\berkley big@berkley.po1.dom1\\content\\f9\\f92c368deb1b8f09fee476e7ebe661704f614f0668566ae2c241da33d3ac9a3273b3fc13 from the index server in deletemsgatt().</logdata>
+  </Table>
+  <Table>
+    <id>187</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:35</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>delete the file attachment: accounts\\berkley big@berkley.po1.dom1\\content\\20\\204fc38c207d695c0f0bded87fe361a3871aa4ca68733bd87d8db258e42d26b303136d7f from the index server in deletemsgatt().</logdata>
+  </Table>
+  <Table>
+    <id>188</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:35</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>delete the file attachment: accounts\\berkley big@berkley.po1.dom1\\content\\ba\\ba795c011958b7c8c628abba468bd762beda403e5a9a91184e611dae3fed162b8787ce5f from the index server in deletemsgatt().</logdata>
+  </Table>
+  <Table>
+    <id>189</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:35</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>delete the msg attachment: accounts\\berkley big@berkley.po1.dom1\\msg\\502ba08a.dom1.po1.100.1647069.1.6f.1\\502ba08a.dom1.po1.200.2000010.1.93.1.xml from the device and index server in deletemsgatt().</logdata>
+  </Table>
+  <Table>
+    <id>190</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:35</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>stampauditfile(c:/archive/localxml/audit/accounts/berkley big@berkley.po1.dom1/adt/mailbox/502ba08a.dom1.po1.100.1647069.1.6f.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>191</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:35</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>purgemessage(c:/archive/localxml/audit/accounts/berkley big@berkley.po1.dom1/adt/mailbox/502ba08a.dom1.po1.100.1647069.1.6f.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>192</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:35</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>delete the file attachment: accounts\\berkley big@berkley.po1.dom1\\content\\f9\\f92c368deb1b8f09fee476e7ebe661704f614f0668566ae2c241da33d3ac9a3273b3fc13 from the index server in deletemsgatt().</logdata>
+  </Table>
+  <Table>
+    <id>193</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:35</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>delete the file attachment: accounts\\berkley big@berkley.po1.dom1\\content\\20\\204fc38c207d695c0f0bded87fe361a3871aa4ca68733bd87d8db258e42d26b303136d7f from the index server in deletemsgatt().</logdata>
+  </Table>
+  <Table>
+    <id>194</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:35</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>delete the file attachment: accounts\\berkley big@berkley.po1.dom1\\content\\ba\\ba795c011958b7c8c628abba468bd762beda403e5a9a91184e611dae3fed162b8787ce5f from the index server in deletemsgatt().</logdata>
+  </Table>
+  <Table>
+    <id>195</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:35</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>delete the msg attachment: accounts\\berkley big@berkley.po1.dom1\\msg\\502ba08a.dom1.po1.100.1647069.1.70.1\\502ba08a.dom1.po1.200.2000010.1.93.1.xml from the device and index server in deletemsgatt().</logdata>
+  </Table>
+  <Table>
+    <id>196</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:35</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>stampauditfile(c:/archive/localxml/audit/accounts/berkley big@berkley.po1.dom1/adt/mailbox/502ba08a.dom1.po1.100.1647069.1.70.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>197</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:35</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>purgemessage(c:/archive/localxml/audit/accounts/berkley big@berkley.po1.dom1/adt/mailbox/502ba08a.dom1.po1.100.1647069.1.70.1.xml): ok</logdata>
+  </Table>
+  <Table>
+    <id>198</id>
+    <jobid>cn=ilm agent_sample ilm job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-08-16 14:57:16</jobdatetime>
+    <logtimestamp>2012-08-16 14:57:35</logtimestamp>
+    <account>berkley@po1@dom1</account>
+    <logdata>terminate()</logdata>
+  </Table>
+</NewDataSet>

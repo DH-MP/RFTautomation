@@ -1,0 +1,80 @@
+<NewDataSet>
+  <Table>
+    <id>54</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 11:19:25</jobdatetime>
+    <logtimestamp>2012-12-04 11:19:44</logtimestamp>
+    <account>ati01@po1@dom1</account>
+    <errorsource />
+    <errordescription>multilogin failed for the gw account=ati01:login unsuccessful  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>55</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 11:19:25</jobdatetime>
+    <logtimestamp>2012-12-04 11:19:44</logtimestamp>
+    <account>ati01@po1@dom1</account>
+    <errorsource />
+    <errordescription>cannot initialize the connector.:cannot open the account.  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>58</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 11:19:25</jobdatetime>
+    <logtimestamp>2012-12-04 11:19:49</logtimestamp>
+    <account>ati02@po1@dom1</account>
+    <errorsource />
+    <errordescription>multilogin failed for the gw account=ati02:login unsuccessful  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>59</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 11:19:25</jobdatetime>
+    <logtimestamp>2012-12-04 11:19:49</logtimestamp>
+    <account>ati02@po1@dom1</account>
+    <errorsource />
+    <errordescription>cannot initialize the connector.:cannot open the account.  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>56</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 11:19:25</jobdatetime>
+    <logtimestamp>2012-12-04 11:19:46</logtimestamp>
+    <account>ati03@po1@dom1</account>
+    <errorsource />
+    <errordescription>multilogin failed for the gw account=ati03:login unsuccessful  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>57</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 11:19:25</jobdatetime>
+    <logtimestamp>2012-12-04 11:19:46</logtimestamp>
+    <account>ati03@po1@dom1</account>
+    <errorsource />
+    <errordescription>cannot initialize the connector.:cannot open the account.  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+</NewDataSet>

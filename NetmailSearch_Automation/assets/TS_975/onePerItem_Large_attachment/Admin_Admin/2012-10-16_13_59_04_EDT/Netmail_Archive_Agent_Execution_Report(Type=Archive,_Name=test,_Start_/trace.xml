@@ -1,0 +1,570 @@
+<NewDataSet>
+  <Table>
+    <id>1246</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:35</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>shutdown()</logdata>
+  </Table>
+  <Table>
+    <id>1245</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:35</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>terminate()</logdata>
+  </Table>
+  <Table>
+    <id>1244</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:34</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>submittransaction(tranasync, automaticactions, logerrors)</logdata>
+  </Table>
+  <Table>
+    <id>1243</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:34</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>saving account stat info done.</logdata>
+  </Table>
+  <Table>
+    <id>1242</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:34</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>saving account stat info.</logdata>
+  </Table>
+  <Table>
+    <id>1241</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:34</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>processing filters ...</logdata>
+  </Table>
+  <Table>
+    <id>1240</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:34</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>managing toindex file ...</logdata>
+  </Table>
+  <Table>
+    <id>1239</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:34</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>initializing archive module ...</logdata>
+  </Table>
+  <Table>
+    <id>1238</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:34</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>initializing message handler ...</logdata>
+  </Table>
+  <Table>
+    <id>1237</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:34</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>initializing index fail list manager...</logdata>
+  </Table>
+  <Table>
+    <id>1236</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:34</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>initializing index engine ...</logdata>
+  </Table>
+  <Table>
+    <id>1235</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:34</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>connecting to devices...</logdata>
+  </Table>
+  <Table>
+    <id>1234</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:34</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>publishmessages(location=groupwise, retention applied=false, retention days=0)</logdata>
+  </Table>
+  <Table>
+    <id>1233</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:34</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>run()</logdata>
+  </Table>
+  <Table>
+    <id>1232</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:31</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>submittransaction(tranasync, automaticactions, logerrors)</logdata>
+  </Table>
+  <Table>
+    <id>1231</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:31</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>saving account stat info done.</logdata>
+  </Table>
+  <Table>
+    <id>1230</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:31</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>saving account stat info.</logdata>
+  </Table>
+  <Table>
+    <id>1229</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:31</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>createfield(507d3780.dom1.po1.100.138656e.1.55.1, published): ok</logdata>
+  </Table>
+  <Table>
+    <id>1228</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:31</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>archive(507d3780.dom1.po1.100.138656e.1.55.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>1227</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:31</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>createaudit(507d3780.dom1.po1.100.138656e.1.55.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>1226</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:31</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>createfield(507d3780.dom1.po1.100.138656e.1.54.1, published): ok</logdata>
+  </Table>
+  <Table>
+    <id>1225</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:31</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>archive(507d3780.dom1.po1.100.138656e.1.54.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>1224</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:31</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>createaudit(507d3780.dom1.po1.100.138656e.1.54.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>1223</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:31</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>createfield(507bee54.dom1.po1.100.138656e.1.53.1, published): ok</logdata>
+  </Table>
+  <Table>
+    <id>1222</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:31</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>archive(507bee54.dom1.po1.100.138656e.1.53.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>1221</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:31</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>createaudit(507bee54.dom1.po1.100.138656e.1.53.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>1220</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:31</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>createfield(507bee54.dom1.po1.100.138656e.1.52.1, published): ok</logdata>
+  </Table>
+  <Table>
+    <id>1219</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:31</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>archive(507bee54.dom1.po1.100.138656e.1.52.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>1218</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:31</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>createaudit(507bee54.dom1.po1.100.138656e.1.52.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>1217</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:30</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>createfield(5077e75a.dom1.po1.100.138656e.1.51.1, published): ok</logdata>
+  </Table>
+  <Table>
+    <id>1216</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:30</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>archive(5077e75a.dom1.po1.100.138656e.1.51.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>1215</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:30</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>createaudit(5077e75a.dom1.po1.100.138656e.1.51.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>1214</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:30</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>createfield(5077e75a.dom1.po1.100.138656e.1.50.1, published): ok</logdata>
+  </Table>
+  <Table>
+    <id>1213</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:30</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>archive(5077e75a.dom1.po1.100.138656e.1.50.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>1212</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:30</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>createaudit(5077e75a.dom1.po1.100.138656e.1.50.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>1211</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:30</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>createfield(5077e747.dom1.po1.100.138656e.1.4f.1, published): ok</logdata>
+  </Table>
+  <Table>
+    <id>1210</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:30</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>archive(5077e747.dom1.po1.100.138656e.1.4f.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>1209</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:30</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>createaudit(5077e747.dom1.po1.100.138656e.1.4f.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>1208</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:30</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>createfield(5077e747.dom1.po1.100.138656e.1.4e.1, published): ok</logdata>
+  </Table>
+  <Table>
+    <id>1207</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:30</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>archive(5077e747.dom1.po1.100.138656e.1.4e.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>1206</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:30</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>createaudit(5077e747.dom1.po1.100.138656e.1.4e.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>1205</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:30</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>createfield(5077e725.dom1.po1.100.138656e.1.4d.1, published): ok</logdata>
+  </Table>
+  <Table>
+    <id>1204</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:30</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>archive(5077e725.dom1.po1.100.138656e.1.4d.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>1203</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:30</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>createaudit(5077e725.dom1.po1.100.138656e.1.4d.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>1202</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:30</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>createfield(5077e725.dom1.po1.100.138656e.1.4c.1, published): ok</logdata>
+  </Table>
+  <Table>
+    <id>1201</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:30</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>archive(5077e725.dom1.po1.100.138656e.1.4c.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>1200</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:30</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>createaudit(5077e725.dom1.po1.100.138656e.1.4c.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>1199</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:30</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>createfield(503f8bcf.dom1.po1.100.138656e.1.4a.1, published): ok</logdata>
+  </Table>
+  <Table>
+    <id>1198</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:30</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>archive(503f8bcf.dom1.po1.100.138656e.1.4a.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>1197</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:30</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>createaudit(503f8bcf.dom1.po1.100.138656e.1.4a.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>1196</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:30</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>createfield(503f89f7.dom1.po1.100.138656e.1.48.1, published): ok</logdata>
+  </Table>
+  <Table>
+    <id>1195</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:30</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>archive(503f89f7.dom1.po1.100.138656e.1.48.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>1194</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:30</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>createaudit(503f89f7.dom1.po1.100.138656e.1.48.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>1193</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:29</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>createfield(503f675a.dom1.po1.100.138656e.1.45.1, published): ok</logdata>
+  </Table>
+  <Table>
+    <id>1192</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:29</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>archive(503f675a.dom1.po1.100.138656e.1.45.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>1191</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:29</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>createaudit(503f675a.dom1.po1.100.138656e.1.45.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>1190</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:29</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>createfield(503f675a.dom1.po1.100.138656e.1.44.1, published): ok</logdata>
+  </Table>
+  <Table>
+    <id>1189</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:29</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>archive(503f675a.dom1.po1.100.138656e.1.44.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>1188</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:29</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>createaudit(503f675a.dom1.po1.100.138656e.1.44.1): ok</logdata>
+  </Table>
+  <Table>
+    <id>1187</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:28</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>processing filters ...</logdata>
+  </Table>
+  <Table>
+    <id>1186</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:28</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>managing toindex file ...</logdata>
+  </Table>
+  <Table>
+    <id>1185</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:28</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>initializing archive module ...</logdata>
+  </Table>
+  <Table>
+    <id>1184</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:28</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>initializing message handler ...</logdata>
+  </Table>
+  <Table>
+    <id>1183</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:28</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>initializing index fail list manager...</logdata>
+  </Table>
+  <Table>
+    <id>1182</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:28</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>initializing index engine ...</logdata>
+  </Table>
+  <Table>
+    <id>1181</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:28</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>connecting to devices...</logdata>
+  </Table>
+  <Table>
+    <id>1180</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:28</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>publishmessages(location=groupwise, retention applied=false, retention days=0)</logdata>
+  </Table>
+  <Table>
+    <id>1179</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:28</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>run()</logdata>
+  </Table>
+  <Table>
+    <id>1178</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:16</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>startup(): true</logdata>
+  </Table>
+  <Table>
+    <id>1177</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:16</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>connected(groupwise): true</logdata>
+  </Table>
+  <Table>
+    <id>1176</id>
+    <jobid>cn=archive agent_test,ou=jobs,ou=gwopennode(10.10.4.214),o=ericorg214</jobid>
+    <jobdatetime>2012-10-16 12:58:02</jobdatetime>
+    <logtimestamp>2012-10-16 12:58:16</logtimestamp>
+    <account>amy@po1@dom1</account>
+    <logdata>initialize()</logdata>
+  </Table>
+</NewDataSet>

@@ -1,0 +1,145 @@
+<NewDataSet>
+  <Table>
+    <id>3</id>
+    <jobid>cn=archive agent_lg archive,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-11-21 10:42:38</jobdatetime>
+    <logtimestamp>2012-11-21 10:47:46</logtimestamp>
+    <account>gwa30004@po1@dom1</account>
+    <errorsource />
+    <errordescription>error opening the account.:object reference not set to an instance of an object.  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>4</id>
+    <jobid>cn=archive agent_lg archive,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-11-21 10:42:38</jobdatetime>
+    <logtimestamp>2012-11-21 10:48:39</logtimestamp>
+    <account>mike1r2@dom2po1@dom2</account>
+    <errorsource />
+    <errordescription>error processing the message in filtering.:object reference not set to an instance of an object.  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>10</id>
+    <jobid>cn=archive agent_lg archive,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-11-21 10:42:38</jobdatetime>
+    <logtimestamp>2012-11-21 10:53:14</logtimestamp>
+    <account>milena@po1@dom1</account>
+    <errorsource />
+    <errordescription>error flushing the item : 4a97b3a7.dom2.dom2po1.200.200001a.1.50.1@1:19.dom1.po1.100.0.1.0.1@30(record not found).  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>9</id>
+    <jobid>cn=archive agent_lg archive,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-11-21 10:42:38</jobdatetime>
+    <logtimestamp>2012-11-21 10:53:14</logtimestamp>
+    <account>milena@po1@dom1</account>
+    <errorsource />
+    <errordescription>error flushing the item : 4a97b3a7.dom2.dom2po1.200.200001a.1.32.1@1:19.dom1.po1.100.0.1.0.1@30(record not found).  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>7</id>
+    <jobid>cn=archive agent_lg archive,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-11-21 10:42:38</jobdatetime>
+    <logtimestamp>2012-11-21 10:53:14</logtimestamp>
+    <account>milena@po1@dom1</account>
+    <errorsource />
+    <errordescription>error flushing the item : 4a97b3a7.dom2.dom2po1.200.200001a.1.36.1@1:19.dom1.po1.100.0.1.0.1@30(record not found).  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>6</id>
+    <jobid>cn=archive agent_lg archive,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-11-21 10:42:38</jobdatetime>
+    <logtimestamp>2012-11-21 10:53:14</logtimestamp>
+    <account>milena@po1@dom1</account>
+    <errorsource />
+    <errordescription>error flushing the item : 4a97b3a7.dom2.dom2po1.200.200001a.1.4b.1@1:19.dom1.po1.100.0.1.0.1@30(record not found).  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>5</id>
+    <jobid>cn=archive agent_lg archive,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-11-21 10:42:38</jobdatetime>
+    <logtimestamp>2012-11-21 10:53:14</logtimestamp>
+    <account>milena@po1@dom1</account>
+    <errorsource />
+    <errordescription>error flushing the item : 4a97b3a7.dom2.dom2po1.200.200001a.1.3a.1@1:19.dom1.po1.100.0.1.0.1@30(record not found).  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>8</id>
+    <jobid>cn=archive agent_lg archive,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-11-21 10:42:38</jobdatetime>
+    <logtimestamp>2012-11-21 10:53:14</logtimestamp>
+    <account>milena@po1@dom1</account>
+    <errorsource />
+    <errordescription>error flushing the item : 4a97b3a7.dom2.dom2po1.200.200001a.1.41.1@1:19.dom1.po1.100.0.1.0.1@30(record not found).  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>11</id>
+    <jobid>cn=archive agent_lg archive,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-11-21 10:42:38</jobdatetime>
+    <logtimestamp>2012-11-21 10:53:14</logtimestamp>
+    <account>milena@po1@dom1</account>
+    <errorsource />
+    <errordescription>error flushing the item : 4a97b3a7.dom2.dom2po1.200.200001a.1.3d.1@1:19.dom1.po1.100.0.1.0.1@30(record not found).  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>13</id>
+    <jobid>cn=archive agent_lg archive,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-11-21 10:42:38</jobdatetime>
+    <logtimestamp>2012-11-21 10:54:09</logtimestamp>
+    <account>tomabiene@po1@dom1</account>
+    <errorsource />
+    <errordescription>error saving account stat info.:the specified path, file name, or both are too long. the fully qualified file name must be less than 260 characters, and the directory name must be less than 248 characters.  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>12</id>
+    <jobid>cn=archive agent_lg archive,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-11-21 10:42:38</jobdatetime>
+    <logtimestamp>2012-11-21 10:54:08</logtimestamp>
+    <account>tomabiene@po1@dom1</account>
+    <errorsource />
+    <errordescription>error saving account stat info.:the specified path, file name, or both are too long. the fully qualified file name must be less than 260 characters, and the directory name must be less than 248 characters.  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+</NewDataSet>

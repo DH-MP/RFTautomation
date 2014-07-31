@@ -1,0 +1,154 @@
+<NewDataSet>
+  <Table>
+    <id>2089</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:48:33</jobdatetime>
+    <logtimestamp>2012-12-04 13:48:57</logtimestamp>
+    <account>admin@dom2po1@dom2</account>
+    <logdata>saving account stat info done.</logdata>
+  </Table>
+  <Table>
+    <id>2088</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:48:33</jobdatetime>
+    <logtimestamp>2012-12-04 13:48:57</logtimestamp>
+    <account>admin@dom2po1@dom2</account>
+    <logdata>saving account stat info.</logdata>
+  </Table>
+  <Table>
+    <id>2087</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:48:33</jobdatetime>
+    <logtimestamp>2012-12-04 13:48:56</logtimestamp>
+    <account>admin@dom2po1@dom2</account>
+    <logdata>deleting : c:\\temp\\bb366890-6bf6-4284-98b8-04c2a2dfba56\\gwoatt\\admin admin@admin.dom2po1.dom2</logdata>
+  </Table>
+  <Table>
+    <id>2086</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:48:33</jobdatetime>
+    <logtimestamp>2012-12-04 13:48:56</logtimestamp>
+    <account>admin@dom2po1@dom2</account>
+    <logdata>submittransaction(tranasync, automaticactions, logerrors)</logdata>
+  </Table>
+  <Table>
+    <id>2085</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:48:33</jobdatetime>
+    <logtimestamp>2012-12-04 13:48:56</logtimestamp>
+    <account>admin@dom2po1@dom2</account>
+    <logdata>deleting : c:\\temp\\bb366890-6bf6-4284-98b8-04c2a2dfba56\\gwoatt\\admin admin@admin.dom2po1.dom2</logdata>
+  </Table>
+  <Table>
+    <id>2084</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:48:33</jobdatetime>
+    <logtimestamp>2012-12-04 13:48:56</logtimestamp>
+    <account>admin@dom2po1@dom2</account>
+    <logdata>submittransaction(tranasync, automaticactions, logerrors)</logdata>
+  </Table>
+  <Table>
+    <id>2083</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:48:33</jobdatetime>
+    <logtimestamp>2012-12-04 13:48:56</logtimestamp>
+    <account>admin@dom2po1@dom2</account>
+    <logdata>deleting : c:\\temp\\bb366890-6bf6-4284-98b8-04c2a2dfba56\\gwoatt\\admin admin@admin.dom2po1.dom2</logdata>
+  </Table>
+  <Table>
+    <id>2082</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:48:33</jobdatetime>
+    <logtimestamp>2012-12-04 13:48:56</logtimestamp>
+    <account>admin@dom2po1@dom2</account>
+    <logdata>submittransaction(tranasync, automaticactions, logerrors)</logdata>
+  </Table>
+  <Table>
+    <id>2081</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:48:33</jobdatetime>
+    <logtimestamp>2012-12-04 13:48:55</logtimestamp>
+    <account>admin@dom2po1@dom2</account>
+    <logdata>processing the toindex file...</logdata>
+  </Table>
+  <Table>
+    <id>2080</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:48:33</jobdatetime>
+    <logtimestamp>2012-12-04 13:48:55</logtimestamp>
+    <account>admin@dom2po1@dom2</account>
+    <logdata>managing toindex file ...</logdata>
+  </Table>
+  <Table>
+    <id>2079</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:48:33</jobdatetime>
+    <logtimestamp>2012-12-04 13:48:55</logtimestamp>
+    <account>admin@dom2po1@dom2</account>
+    <logdata>initializing archive module ...</logdata>
+  </Table>
+  <Table>
+    <id>2078</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:48:33</jobdatetime>
+    <logtimestamp>2012-12-04 13:48:55</logtimestamp>
+    <account>admin@dom2po1@dom2</account>
+    <logdata>initializing message handler ...</logdata>
+  </Table>
+  <Table>
+    <id>2077</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:48:33</jobdatetime>
+    <logtimestamp>2012-12-04 13:48:55</logtimestamp>
+    <account>admin@dom2po1@dom2</account>
+    <logdata>initializing index fail list manager...</logdata>
+  </Table>
+  <Table>
+    <id>2076</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:48:33</jobdatetime>
+    <logtimestamp>2012-12-04 13:48:55</logtimestamp>
+    <account>admin@dom2po1@dom2</account>
+    <logdata>initializing index engine ...</logdata>
+  </Table>
+  <Table>
+    <id>2075</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:48:33</jobdatetime>
+    <logtimestamp>2012-12-04 13:48:55</logtimestamp>
+    <account>admin@dom2po1@dom2</account>
+    <logdata>publishmessages(location=export, retention applied=false, retention days=0)</logdata>
+  </Table>
+  <Table>
+    <id>2074</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:48:33</jobdatetime>
+    <logtimestamp>2012-12-04 13:48:55</logtimestamp>
+    <account>admin@dom2po1@dom2</account>
+    <logdata>startup(): false</logdata>
+  </Table>
+  <Table>
+    <id>2073</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:48:33</jobdatetime>
+    <logtimestamp>2012-12-04 13:48:55</logtimestamp>
+    <account>admin@dom2po1@dom2</account>
+    <logdata>connected(export): true</logdata>
+  </Table>
+  <Table>
+    <id>2072</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:48:33</jobdatetime>
+    <logtimestamp>2012-12-04 13:48:55</logtimestamp>
+    <account>admin@dom2po1@dom2</account>
+    <logdata>run()</logdata>
+  </Table>
+  <Table>
+    <id>2071</id>
+    <jobid>cn=archive agent_sample archive job,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-12-04 13:48:33</jobdatetime>
+    <logtimestamp>2012-12-04 13:48:48</logtimestamp>
+    <account>admin@dom2po1@dom2</account>
+    <logdata>initialize()</logdata>
+  </Table>
+</NewDataSet>

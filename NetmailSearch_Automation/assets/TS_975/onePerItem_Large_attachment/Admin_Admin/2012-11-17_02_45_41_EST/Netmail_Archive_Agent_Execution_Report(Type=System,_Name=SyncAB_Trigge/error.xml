@@ -1,0 +1,15 @@
+<NewDataSet>
+  <Table>
+    <id>5</id>
+    <jobid>cn=system_syncab,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-11-17 02:00:54</jobdatetime>
+    <logtimestamp>2012-11-17 02:01:32</logtimestamp>
+    <account>admin</account>
+    <errorsource />
+    <errordescription>error add contact: long testlong,   userwithaverylonguseridtotrytobreakthe64charactersproblem@po1@dom1:constraint violation  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+</NewDataSet>

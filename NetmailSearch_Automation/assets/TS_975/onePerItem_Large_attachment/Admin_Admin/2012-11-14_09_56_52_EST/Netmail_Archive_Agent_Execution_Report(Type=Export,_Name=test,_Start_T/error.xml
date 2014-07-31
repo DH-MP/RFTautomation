@@ -1,0 +1,28 @@
+<NewDataSet>
+  <Table>
+    <id>3776</id>
+    <jobid>cn=export agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-11-14 09:13:05</jobdatetime>
+    <logtimestamp>2012-11-14 09:13:25</logtimestamp>
+    <account>admin@dom2po1@dom2</account>
+    <errorsource />
+    <errordescription>error retrieving location or device settings. :object reference not set to an instance of an object.  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>3777</id>
+    <jobid>cn=export agent_test,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-11-14 09:13:05</jobdatetime>
+    <logtimestamp>2012-11-14 09:13:49</logtimestamp>
+    <account>post-processor</account>
+    <errorsource />
+    <errordescription>error retrieving location or device settings. :object reference not set to an instance of an object.  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+</NewDataSet>

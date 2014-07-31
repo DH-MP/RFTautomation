@@ -1,0 +1,45 @@
+<NewDataSet>
+  <Table>
+    <id>82</id>
+    <jobid>cn=export agent_netmail search export,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-09-21 14:56:28</jobdatetime>
+    <logtimestamp>2012-09-21 14:57:46</logtimestamp>
+    <account>merkés françois.dom2po1.dom2</account>
+    <errorsource>profman.service</errorsource>
+    <errordescription>error creating profile: t?st@merk?s fran?ois.dom2po1.dom2  could not configure the service</errordescription>
+    <errorstacktrace>   at profman.iservice.configure(serviceconfigureuienum showui, int32 parenthandle, propertybag properties)
+   at tma.library.gwpststore.c82be4a0ea057bcbcb1b5553dccdb7860(string c3c161a3c2841d90b1ee95b78ba334080, profiles c7ef07817be30ac78b6ee61ace6b657b4)</errorstacktrace>
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>83</id>
+    <jobid>cn=export agent_netmail search export,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-09-21 14:56:28</jobdatetime>
+    <logtimestamp>2012-09-21 14:57:46</logtimestamp>
+    <account>merkés françois.dom2po1.dom2</account>
+    <errorsource>gwpststore</errorsource>
+    <errordescription>error exporting the account.  error instantiating gwpststore object. error in createprofile. could not configure the service</errordescription>
+    <errorstacktrace>   at tma.library.gwpststore.open(string profile)
+   at tma.library.gwexport.c0292868ff8568daf25ddab8e2b1bfeea()
+   at tma.library.gwexport.export(string accountname, boolean addressbook, boolean datadump, boolean move, string[] messages, hashtable retention_dates, boolean enable_compliance, boolean messagesareca, string[] messagesca, boolean alwayskeeptexthtmlattachment, boolean showwarninginmessagebody)
+   at tma.library.jobs.analyticexport.c01db2334b174bdc97967a3a27b7dce1e(hashtable cb7a13b519b6a781b57cf3dec1d482e9a)</errorstacktrace>
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+  <Table>
+    <id>84</id>
+    <jobid>cn=export agent_netmail search export,ou=jobs,ou=gwopennode(10.10.24.80),o=netmail</jobid>
+    <jobdatetime>2012-09-21 14:56:28</jobdatetime>
+    <logtimestamp>2012-09-21 14:58:29</logtimestamp>
+    <account>post-processor</account>
+    <errorsource />
+    <errordescription>closeaccount: error closing the account. response: missing session string  </errordescription>
+    <errorstacktrace />
+    <messageid />
+    <messagesubject />
+    <messagecreationdate />
+  </Table>
+</NewDataSet>
