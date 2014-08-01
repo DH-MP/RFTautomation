@@ -32,15 +32,30 @@ public class TEST2 extends TEST2Helper
 		
 		// HTML Browser
 		// Document: RFT - Outlook Web App: 
-		for(int i = 546; i <1001; i++){
-			BrowserTestObject b = (BrowserTestObject) utilities.HelperClass.findBrowser();
-			TestObject[] a = b.find(atDescendant(".tag", "SPAN", "id", "_ariaId_40.folder"), false);
-			((GuiTestObject) a[0]).hover();
-			((GuiTestObject) a[0]).click(RIGHT, atPoint(12,9));
-			sleep(1);
-			((GuiTestObject) b.find(atDescendant(".tag", "DIV", ".className", "contextMenuDropShadow contextMenuPopup removeFocusOutline"), true)[0]).click(atPoint(31,14));
-			b.inputKeys(i+"{ENTER}");
-			System.out.println(i);
+		int last=834;
+		while(true){
+			try{
+				for(int i = last+1; i <1001; i++){
+					BrowserTestObject b = (BrowserTestObject) utilities.HelperClass.findBrowser();
+					TestObject[] a = b.find(atDescendant(".tag", "SPAN", "id", "_ariaId_40.folder"), false);
+					((GuiTestObject) a[0]).hover();
+					((GuiTestObject) a[0]).click(atPoint(1,1));
+					((GuiTestObject) a[0]).click(RIGHT, atPoint(1,1));
+//					sleep(1.2);
+					try{
+						((GuiTestObject) b.find(atDescendant(".tag", "DIV", ".className", "contextMenuDropShadow contextMenuPopup removeFocusOutline"), true)[0]).click(atPoint(31,14));
+						b.inputKeys(i+"{ENTER}");
+					} catch(Exception e){
+						((GuiTestObject) b.find(atDescendant(".tag", "DIV", ".className", "contextMenuDropShadow contextMenuPopup removeFocusOutline"), true)[0]).click(atPoint(31,14));
+						b.inputKeys(i+"{ENTER}");
+					}
+					System.out.println(i);
+					last=i;
+				}
+				stop();
+			}catch(Exception e){
+				
+			}
 		}
 		
 	}
