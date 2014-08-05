@@ -1,4 +1,5 @@
 package utilities;
+import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.HashMap;
@@ -76,7 +77,7 @@ public class HelperScript extends HelperScriptHelper
 			HelperClass.extract(workspace, winrarPath, fileLocation+"\\"+file, extractLocation, "WRONGPASSWORD");
 			winRARClosebutton().waitForExistence(240, DISABLED);
 			if(!winRARClosebutton().exists()){
-				logError("wrong password passed for zip file passed");
+				logError("wrong password work for zip file");
 			}
 			winRARClosebutton().click();
 			logInfo("clicked close on wrong password winrar message");
@@ -98,6 +99,62 @@ public class HelperScript extends HelperScriptHelper
 		}
 		
 		logInfo("ZIP Extraction Complete!");
+	}
+	
+	
+	public void extractZip(String fileLocation, String extractLocation, String workSpace){
+		logInfo("extracting < "+fileLocation+" > to < "+ extractLocation +" > " );
+		try {
+			Process b = Runtime.getRuntime().exec(workSpace+"\\assets\\WinRAR\\WinRaR.exe x "+fileLocation+" "+ extractLocation);
+			sleep(2);
+			while(winrarExtractingwindow().exists()){
+				sleep(5);
+			}		
+			//Rare changes the winrar extract dissapears and comes back
+			while(winrarExtractingwindow().exists()){
+				sleep(5);
+			}
+			logInfo("ZIP Extraction Complete!");
+			b.destroy();
+		} catch (IOException e) {
+			logError("ZIP Extraction FAILED:"+e.toString());
+			e.printStackTrace();
+			stop();
+		}
+	}
+	
+	public void extractZip(String fileLocation, String extractLocation, String workSpace, String password){
+		logInfo("extracting < "+fileLocation+" > to < "+ extractLocation +" > " );
+		try {
+			
+			logInfo("extracting < "+fileLocation+"> to < "+ extractLocation +" > using incorrect password" );
+			Process b = Runtime.getRuntime().exec(workSpace+"\\assets\\WinRAR\\WinRaR.exe x "+fileLocation+" -pWrongPassword"+" "+ extractLocation);
+			
+			//Wrong password checking
+			winRARClosebutton().waitForExistence(240, DISABLED);
+			if(!winRARClosebutton().exists()){
+				logError("wrong password passed for zip file passed");
+			}
+			winRARClosebutton().click();
+			logInfo("clicked close on wrong password winrar message");
+			
+			//Correct PAssword
+			b = Runtime.getRuntime().exec(workSpace+"\\assets\\WinRAR\\WinRaR.exe x "+fileLocation+" -p"+password+" "+ extractLocation);
+			sleep(2);
+			while(winrarExtractingwindow().exists()){
+				sleep(5);
+			}		
+			//Rare changes the winrar extract dissapears and comes back
+			while(winrarExtractingwindow().exists()){
+				sleep(5);
+			}
+			logInfo("ZIP Extraction Complete!");
+			b.destroy();
+		} catch (IOException e) {
+			logError("ZIP Extraction FAILED:"+e.toString());
+			e.printStackTrace();
+			stop();
+		}
 	}
 }
 

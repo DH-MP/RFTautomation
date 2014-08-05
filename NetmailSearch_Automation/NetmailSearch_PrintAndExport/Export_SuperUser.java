@@ -1,8 +1,12 @@
 package NetmailSearch_PrintAndExport;
 
+import java.io.IOException;
 import java.util.ArrayList;
 
 import resources.NetmailSearch_PrintAndExport.Export_SuperUserHelper;
+import utilities.HelperClass;
+import utilities.HelperScript;
+
 import com.rational.test.ft.*;
 import com.rational.test.ft.object.interfaces.*;
 import com.rational.test.ft.object.interfaces.SAP.*;
@@ -47,8 +51,6 @@ public class Export_SuperUser extends Export_SuperUserHelper
 	
 	public void testMain(Object[] args) 
 	{
-		
-		
 	}
 	
 	public void create(){
@@ -148,7 +150,7 @@ public class Export_SuperUser extends Export_SuperUserHelper
 		button_nextButton().click();
 		logInfo("Clicked next button");
 		
-		//Optional Information
+		//Optional Information by default it's checked if specified will be unchecked
 		if(!additionalOptions.isEmpty()){
 			String[] options = additionalOptions.split(",");
 			TestObject[] guiOptions = html_additionalOptionContainer().find(atDescendant(".class", "Html.INPUT.checkbox"), true);
@@ -355,6 +357,12 @@ public class Export_SuperUser extends Export_SuperUserHelper
 		}
 	}
 	
+	public void openExport(TestObject export){
+		TestObject[] columns = export.find(atDescendant(".tag", "TD"), false);
+		((GuiTestObject)columns[columns.length-1]).click();
+		logInfo("open export: "+columns[0].getProperty(".contentText"));
+	}
+	
 	public void openWhenTopExportComplete(){
 		TestObject[] exports = html_exportList().find(atDescendant(".tag", "TABLE", "class", "x-grid3-row-table"), true);
 		TestObject[] columns = exports[0].find(atDescendant(".tag", "TD"), false);
@@ -367,6 +375,58 @@ public class Export_SuperUser extends Export_SuperUserHelper
 			openWhenTopExportComplete();
 			return;
 		}
+	}
+	
+	public void downloadExportFile(String fileName){
+		//Download Export
+		Property[] rowProperty = {	new Property(".tag", "TABLE"),
+							new Property(".text", new RegularExpression("(?i).*"+fileName+".*", false)),
+							new Property("class", "x-grid3-row-table"),
+		};
+		TestObject[] exportFiles = html_exportFilesList().find(atDescendant(rowProperty), true);
+		if(exportFiles.length == 1){
+			((GuiTestObject)exportFiles[0]).doubleClick();
+			logInfo("Selected < "+ fileName +" > file to download");
+			sleep(10);
+		}else{
+			logError("Could not find export file by the name < "+ fileName +">");
+		}
+		
+		//IE Notification Control
+		TestObject downloadObject = HelperClass.ieNotificationElement("Notification bar Text");
+		int counter = 0;
+		while(downloadObject==null){
+			sleep(2);//wait a bit
+			downloadObject = HelperClass.ieNotificationElement("Notification bar Text");
+			if(counter == 5){
+				((GuiTestObject)exportFiles[0]).click();
+				((GuiTestObject)exportFiles[0]).doubleClick();
+			}
+			if(counter++>10){
+				logError("Could not find notification bar");
+				break;
+			}
+		}
+		
+		//Click Save button
+		HelperClass.ieNotificationElement("Save").click();
+		logInfo("Clicked Save file on browser");
+		
+		
+		//Wait for download to finish
+		try{
+			String downloadFileText = HelperClass.ieNotificationElement("Notification bar Text").getProperty(".text").toString();
+			while(!downloadFileText.matches(".*download has completed\\..*")){
+				downloadFileText = HelperClass.ieNotificationElement("Notification bar Text").getProperty(".text").toString();
+				sleep(10);
+			}
+		}catch(NullPointerException e){
+			//due to rare chances of not finding object, just wait very long for download to finish
+			sleep(400);
+		}
+		//Close ieNotifcation
+		HelperClass.ieNotificationElement("Close").click();
+		logInfo("Clicked close button for finished download notification");	
 	}
 	
 	public void openWhenTopExportComplete(String expectedStatus){

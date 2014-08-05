@@ -148,6 +148,8 @@ public class HelperClass extends RationalTestScript {
 		return null;
 	}
 	
+	//Use the one in HelperScript class
+	@Deprecated
 	public static void extract(String workspace, String winrarPath, String fileLocation, String extractLocation, String password ){
 		System.out.println("aiodjaoidja  "+password);
 		password = password == null | password.isEmpty() ? " " : " "+password+" " ;
@@ -162,7 +164,6 @@ public class HelperClass extends RationalTestScript {
 			stop();
 		}
 	}
-	
 	
 	public static String getCheckSum(File file, String format){
 
