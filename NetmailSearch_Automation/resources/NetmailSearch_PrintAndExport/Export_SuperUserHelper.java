@@ -20,11 +20,11 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>Export_SuperUser</b><br>
- * Generated     : <b>2014/07/29 2:08:21 PM</b><br>
+ * Generated     : <b>2014/08/04 3:48:21 PM</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows Server 2008 R2 x86 6.1 <br>
  * 
- * @since  July 29, 2014
+ * @since  August 04, 2014
  * @author Administrator
  */
 public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
@@ -50,6 +50,37 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	{
 		return new BrowserTestObject(
                         getMappedTestObject("browser_htmlBrowser"), anchor, flags);
+	}
+	
+	/**
+	 * DeleteExportAfterClicked: with default state.
+	 *		.text : Delete Exported Files
+	 * 		type : button
+	 * 		.title : 
+	 * 		.class : Html.BUTTON
+	 * 		.name : 
+	 * 		class :  x-btn-text
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject button_deleteExportAfterClicke() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("button_deleteExportAfterClicke"));
+	}
+	/**
+	 * DeleteExportAfterClicked: with specific test context and state.
+	 *		.text : Delete Exported Files
+	 * 		type : button
+	 * 		.title : 
+	 * 		.class : Html.BUTTON
+	 * 		.name : 
+	 * 		class :  x-btn-text
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject button_deleteExportAfterClicke(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("button_deleteExportAfterClicke"), anchor, flags);
 	}
 	
 	/**
@@ -86,8 +117,8 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		class :  x-btn-text
 	 * 		.classIndex : 0
+	 * 		class :  x-btn-text
 	 */
 	protected GuiTestObject button_exportCasebutton() 
 	{
@@ -101,8 +132,8 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		class :  x-btn-text
 	 * 		.classIndex : 0
+	 * 		class :  x-btn-text
 	 */
 	protected GuiTestObject button_exportCasebutton(TestObject anchor, long flags) 
 	{
@@ -117,8 +148,8 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		class :  x-btn-text
 	 * 		.classIndex : 0
+	 * 		class :  x-btn-text
 	 */
 	protected GuiTestObject button_finishbutton() 
 	{
@@ -132,8 +163,8 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		class :  x-btn-text
 	 * 		.classIndex : 0
+	 * 		class :  x-btn-text
 	 */
 	protected GuiTestObject button_finishbutton(TestObject anchor, long flags) 
 	{
@@ -173,8 +204,8 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		class :  x-btn-text
 	 * 		.classIndex : 0
+	 * 		class :  x-btn-text
 	 */
 	protected GuiTestObject button_netmailLite_ExportCaseb() 
 	{
@@ -188,8 +219,8 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		class :  x-btn-text
 	 * 		.classIndex : 0
+	 * 		class :  x-btn-text
 	 */
 	protected GuiTestObject button_netmailLite_ExportCaseb(TestObject anchor, long flags) 
 	{
@@ -204,8 +235,8 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		class :  x-btn-text
 	 * 		.classIndex : 0
+	 * 		class :  x-btn-text
 	 */
 	protected GuiTestObject button_netmailLite_ExportCaseb2() 
 	{
@@ -219,8 +250,8 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		class :  x-btn-text
 	 * 		.classIndex : 0
+	 * 		class :  x-btn-text
 	 */
 	protected GuiTestObject button_netmailLite_ExportCaseb2(TestObject anchor, long flags) 
 	{
@@ -235,8 +266,8 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		class :  x-btn-text
 	 * 		.classIndex : 0
+	 * 		class :  x-btn-text
 	 */
 	protected GuiTestObject button_nextButton() 
 	{
@@ -250,8 +281,8 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		class :  x-btn-text
 	 * 		.classIndex : 0
+	 * 		class :  x-btn-text
 	 */
 	protected GuiTestObject button_nextButton(TestObject anchor, long flags) 
 	{
@@ -266,8 +297,8 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		.classIndex : 0
 	 * 		class :  x-btn-text
+	 * 		.classIndex : 0
 	 */
 	protected GuiTestObject button_reminder_OKbutton() 
 	{
@@ -281,8 +312,8 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		.classIndex : 0
 	 * 		class :  x-btn-text
+	 * 		.classIndex : 0
 	 */
 	protected GuiTestObject button_reminder_OKbutton(TestObject anchor, long flags) 
 	{
@@ -297,8 +328,8 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		.classIndex : 0
 	 * 		class :  x-btn-text
+	 * 		.classIndex : 0
 	 */
 	protected GuiTestObject button_yesbutton() 
 	{
@@ -312,8 +343,8 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		.classIndex : 0
 	 * 		class :  x-btn-text
+	 * 		.classIndex : 0
 	 */
 	protected GuiTestObject button_yesbutton(TestObject anchor, long flags) 
 	{
@@ -329,8 +360,8 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.class : Html.INPUT.checkbox
 	 * 		name : step5_send_mail
 	 * 		value : step5_send_mail
-	 * 		class :  x-form-checkbox x-form-field
 	 * 		.classIndex : 0
+	 * 		class :  x-form-checkbox x-form-field
 	 */
 	protected ToggleGUITestObject checkBox_step5_send_mailstep5_() 
 	{
@@ -345,8 +376,8 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.class : Html.INPUT.checkbox
 	 * 		name : step5_send_mail
 	 * 		value : step5_send_mail
-	 * 		class :  x-form-checkbox x-form-field
 	 * 		.classIndex : 0
+	 * 		class :  x-form-checkbox x-form-field
 	 */
 	protected ToggleGUITestObject checkBox_step5_send_mailstep5_(TestObject anchor, long flags) 
 	{
@@ -361,8 +392,8 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.class : Html.INPUT.checkbox
 	 * 		name : step5_with_password
 	 * 		value : step5_with_password
-	 * 		class :  x-form-checkbox x-form-field
 	 * 		.classIndex : 0
+	 * 		class :  x-form-checkbox x-form-field
 	 */
 	protected ToggleGUITestObject checkBox_step5_with_passwordst() 
 	{
@@ -376,8 +407,8 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.class : Html.INPUT.checkbox
 	 * 		name : step5_with_password
 	 * 		value : step5_with_password
-	 * 		class :  x-form-checkbox x-form-field
 	 * 		.classIndex : 0
+	 * 		class :  x-form-checkbox x-form-field
 	 */
 	protected ToggleGUITestObject checkBox_step5_with_passwordst(TestObject anchor, long flags) 
 	{
@@ -630,8 +661,8 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.A
 	 * 		.name : 
-	 * 		class : x-menu-item
 	 * 		.classIndex : 0
+	 * 		class : x-menu-item
 	 */
 	protected GuiTestObject link_newExport() 
 	{
@@ -645,8 +676,8 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.A
 	 * 		.name : 
-	 * 		class : x-menu-item
 	 * 		.classIndex : 0
+	 * 		class : x-menu-item
 	 */
 	protected GuiTestObject link_newExport(TestObject anchor, long flags) 
 	{
@@ -663,8 +694,8 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.INPUT.radio
 	 * 		.name : include_tabs
-	 * 		.classIndex : 0
 	 * 		class :  x-form-radio x-form-field
+	 * 		.classIndex : 0
 	 */
 	protected ToggleGUITestObject radioButton_include_tabsevery_() 
 	{
@@ -680,8 +711,8 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.INPUT.radio
 	 * 		.name : include_tabs
-	 * 		.classIndex : 0
 	 * 		class :  x-form-radio x-form-field
+	 * 		.classIndex : 0
 	 */
 	protected ToggleGUITestObject radioButton_include_tabsevery_(TestObject anchor, long flags) 
 	{
@@ -697,8 +728,8 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.INPUT.radio
 	 * 		.name : include_tabs
-	 * 		.classIndex : 0
 	 * 		class :  x-form-radio x-form-field
+	 * 		.classIndex : 0
 	 */
 	protected ToggleGUITestObject radioButton_include_tabsselect() 
 	{
@@ -713,8 +744,8 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.INPUT.radio
 	 * 		.name : include_tabs
-	 * 		.classIndex : 0
 	 * 		class :  x-form-radio x-form-field
+	 * 		.classIndex : 0
 	 */
 	protected ToggleGUITestObject radioButton_include_tabsselect(TestObject anchor, long flags) 
 	{
@@ -731,8 +762,8 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.INPUT.radio
 	 * 		.name : step2_include_mails
-	 * 		.classIndex : 0
 	 * 		class :  x-form-radio x-form-field
+	 * 		.classIndex : 0
 	 */
 	protected ToggleGUITestObject radioButton_step2_everMail() 
 	{
@@ -748,8 +779,8 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.INPUT.radio
 	 * 		.name : step2_include_mails
-	 * 		.classIndex : 0
 	 * 		class :  x-form-radio x-form-field
+	 * 		.classIndex : 0
 	 */
 	protected ToggleGUITestObject radioButton_step2_everMail(TestObject anchor, long flags) 
 	{
@@ -766,8 +797,8 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.INPUT.radio
 	 * 		.name : step2_include_mails
-	 * 		.classIndex : 0
 	 * 		class :  x-form-radio x-form-field
+	 * 		.classIndex : 0
 	 */
 	protected ToggleGUITestObject radioButton_step2_selectedMail() 
 	{
@@ -783,8 +814,8 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.INPUT.radio
 	 * 		.name : step2_include_mails
-	 * 		.classIndex : 0
 	 * 		class :  x-form-radio x-form-field
+	 * 		.classIndex : 0
 	 */
 	protected ToggleGUITestObject radioButton_step2_selectedMail(TestObject anchor, long flags) 
 	{
@@ -801,8 +832,8 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.INPUT.radio
 	 * 		.name : step3_export_type
-	 * 		.classIndex : 0
 	 * 		class :  x-form-radio x-form-field
+	 * 		.classIndex : 0
 	 */
 	protected ToggleGUITestObject radioButton_step3_ONE_PDF() 
 	{
@@ -818,8 +849,8 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.INPUT.radio
 	 * 		.name : step3_export_type
-	 * 		.classIndex : 0
 	 * 		class :  x-form-radio x-form-field
+	 * 		.classIndex : 0
 	 */
 	protected ToggleGUITestObject radioButton_step3_ONE_PDF(TestObject anchor, long flags) 
 	{
@@ -836,8 +867,8 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.INPUT.radio
 	 * 		.name : step3_export_type
-	 * 		.classIndex : 0
 	 * 		class :  x-form-radio x-form-field
+	 * 		.classIndex : 0
 	 */
 	protected ToggleGUITestObject radioButton_step3_PDF_PER_ITEM() 
 	{
@@ -853,8 +884,8 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.INPUT.radio
 	 * 		.name : step3_export_type
-	 * 		.classIndex : 0
 	 * 		class :  x-form-radio x-form-field
+	 * 		.classIndex : 0
 	 */
 	protected ToggleGUITestObject radioButton_step3_PDF_PER_ITEM(TestObject anchor, long flags) 
 	{
@@ -871,8 +902,8 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.INPUT.radio
 	 * 		.name : step3_export_type
-	 * 		class :  x-form-radio x-form-field
 	 * 		.classIndex : 0
+	 * 		class :  x-form-radio x-form-field
 	 */
 	protected ToggleGUITestObject radioButton_step3_PST() 
 	{
@@ -888,8 +919,8 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.INPUT.radio
 	 * 		.name : step3_export_type
-	 * 		class :  x-form-radio x-form-field
 	 * 		.classIndex : 0
+	 * 		class :  x-form-radio x-form-field
 	 */
 	protected ToggleGUITestObject radioButton_step3_PST(TestObject anchor, long flags) 
 	{
@@ -906,8 +937,8 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.INPUT.radio
 	 * 		.name : step3_export_type
-	 * 		class :  x-form-radio x-form-field
 	 * 		.classIndex : 0
+	 * 		class :  x-form-radio x-form-field
 	 */
 	protected ToggleGUITestObject radioButton_step3_Portable() 
 	{
@@ -923,8 +954,8 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.INPUT.radio
 	 * 		.name : step3_export_type
-	 * 		class :  x-form-radio x-form-field
 	 * 		.classIndex : 0
+	 * 		class :  x-form-radio x-form-field
 	 */
 	protected ToggleGUITestObject radioButton_step3_Portable(TestObject anchor, long flags) 
 	{
@@ -1011,8 +1042,8 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.INPUT.radio
 	 * 		.name : step5_package_type
-	 * 		class :  x-form-radio x-form-field
 	 * 		.classIndex : 0
+	 * 		class :  x-form-radio x-form-field
 	 */
 	protected ToggleGUITestObject radioButton_step5_package_CD() 
 	{
@@ -1028,8 +1059,8 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.INPUT.radio
 	 * 		.name : step5_package_type
-	 * 		class :  x-form-radio x-form-field
 	 * 		.classIndex : 0
+	 * 		class :  x-form-radio x-form-field
 	 */
 	protected ToggleGUITestObject radioButton_step5_package_CD(TestObject anchor, long flags) 
 	{
@@ -1046,8 +1077,8 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.INPUT.radio
 	 * 		.name : step5_package_type
-	 * 		class :  x-form-radio x-form-field
 	 * 		.classIndex : 0
+	 * 		class :  x-form-radio x-form-field
 	 */
 	protected ToggleGUITestObject radioButton_step5_package_Cust() 
 	{
@@ -1063,8 +1094,8 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.INPUT.radio
 	 * 		.name : step5_package_type
-	 * 		class :  x-form-radio x-form-field
 	 * 		.classIndex : 0
+	 * 		class :  x-form-radio x-form-field
 	 */
 	protected ToggleGUITestObject radioButton_step5_package_Cust(TestObject anchor, long flags) 
 	{
@@ -1081,8 +1112,8 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.INPUT.radio
 	 * 		.name : step5_package_type
-	 * 		class :  x-form-radio x-form-field
 	 * 		.classIndex : 0
+	 * 		class :  x-form-radio x-form-field
 	 */
 	protected ToggleGUITestObject radioButton_step5_package_DVD() 
 	{
@@ -1098,8 +1129,8 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.INPUT.radio
 	 * 		.name : step5_package_type
-	 * 		class :  x-form-radio x-form-field
 	 * 		.classIndex : 0
+	 * 		class :  x-form-radio x-form-field
 	 */
 	protected ToggleGUITestObject radioButton_step5_package_DVD(TestObject anchor, long flags) 
 	{
@@ -1116,8 +1147,8 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.INPUT.radio
 	 * 		.name : step5_package_type
-	 * 		class :  x-form-radio x-form-field
 	 * 		.classIndex : 0
+	 * 		class :  x-form-radio x-form-field
 	 */
 	protected ToggleGUITestObject radioButton_step5_package_Sing() 
 	{
@@ -1133,8 +1164,8 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.INPUT.radio
 	 * 		.name : step5_package_type
-	 * 		class :  x-form-radio x-form-field
 	 * 		.classIndex : 0
+	 * 		class :  x-form-radio x-form-field
 	 */
 	protected ToggleGUITestObject radioButton_step5_package_Sing(TestObject anchor, long flags) 
 	{
@@ -1192,8 +1223,8 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.INPUT.text
 	 * 		name : step5_custom_size
-	 * 		class : x-form-text x-form-field
 	 * 		.classIndex : 0
+	 * 		class : x-form-text x-form-field
 	 */
 	protected TextGuiTestObject text_step5_custom_size() 
 	{
@@ -1208,8 +1239,8 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.INPUT.text
 	 * 		name : step5_custom_size
-	 * 		class : x-form-text x-form-field
 	 * 		.classIndex : 0
+	 * 		class : x-form-text x-form-field
 	 */
 	protected TextGuiTestObject text_step5_custom_size(TestObject anchor, long flags) 
 	{
@@ -1225,8 +1256,8 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.INPUT.text
 	 * 		name : step5_export_email
-	 * 		class : x-form-text x-form-field
 	 * 		.classIndex : 0
+	 * 		class : x-form-text x-form-field
 	 */
 	protected TextGuiTestObject text_step5_export_email() 
 	{
@@ -1241,8 +1272,8 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.INPUT.text
 	 * 		name : step5_export_email
-	 * 		class : x-form-text x-form-field
 	 * 		.classIndex : 0
+	 * 		class : x-form-text x-form-field
 	 */
 	protected TextGuiTestObject text_step5_export_email(TestObject anchor, long flags) 
 	{
@@ -1258,8 +1289,8 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.INPUT.text
 	 * 		name : step5_export_name
-	 * 		class : x-form-text x-form-field
 	 * 		.classIndex : 0
+	 * 		class : x-form-text x-form-field
 	 */
 	protected TextGuiTestObject text_step5_export_name() 
 	{
@@ -1274,8 +1305,8 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.INPUT.text
 	 * 		name : step5_export_name
-	 * 		class : x-form-text x-form-field
 	 * 		.classIndex : 0
+	 * 		class : x-form-text x-form-field
 	 */
 	protected TextGuiTestObject text_step5_export_name(TestObject anchor, long flags) 
 	{
@@ -1290,8 +1321,8 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.INPUT.password
 	 * 		.name : step5_password1
-	 * 		class : x-form-text x-form-field
 	 * 		.classIndex : 0
+	 * 		class : x-form-text x-form-field
 	 */
 	protected TextGuiTestObject text_step5_password1() 
 	{
@@ -1305,8 +1336,8 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.INPUT.password
 	 * 		.name : step5_password1
-	 * 		class : x-form-text x-form-field
 	 * 		.classIndex : 0
+	 * 		class : x-form-text x-form-field
 	 */
 	protected TextGuiTestObject text_step5_password1(TestObject anchor, long flags) 
 	{
@@ -1321,8 +1352,8 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.INPUT.password
 	 * 		.name : step5_password2
-	 * 		class : x-form-text x-form-field
 	 * 		.classIndex : 0
+	 * 		class : x-form-text x-form-field
 	 */
 	protected TextGuiTestObject text_step5_password2() 
 	{
@@ -1336,8 +1367,8 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.INPUT.password
 	 * 		.name : step5_password2
-	 * 		class : x-form-text x-form-field
 	 * 		.classIndex : 0
+	 * 		class : x-form-text x-form-field
 	 */
 	protected TextGuiTestObject text_step5_password2(TestObject anchor, long flags) 
 	{

@@ -83,7 +83,7 @@ public class Export_SuperUser extends Export_SuperUserHelper
 			}
 		}else{
 			while(!Boolean.parseBoolean(radioButton_include_tabsevery_().getProperty(".checked").toString())){
-				radioButton_include_tabsevery_().click();
+				radioButton_include_tabsevery_().click(atPoint(1,1));
 				logInfo("Clicked select all tabs");
 			}
 		}
@@ -97,12 +97,12 @@ public class Export_SuperUser extends Export_SuperUserHelper
 		if(itemOptions == 1){
 			logInfo("Picking All Mail");
 			while(!Boolean.parseBoolean(radioButton_step2_everMail().getProperty(".checked").toString())){
-				radioButton_step2_everMail().click();
+				radioButton_step2_everMail().click(atPoint(1,1));
 			}
 		}else{
 			logInfo("Picking Selected Mail");
 			while(!Boolean.parseBoolean(radioButton_step2_selectedMail().getProperty(".checked").toString())){
-				radioButton_step2_selectedMail().click();
+				radioButton_step2_selectedMail().click(atPoint(1,1));
 			}
 		}
 		sleep(0.5);
@@ -115,32 +115,32 @@ public class Export_SuperUser extends Export_SuperUserHelper
 			case 1:
 				logInfo("Picking ONE PDF");
 				while(!Boolean.parseBoolean(radioButton_step3_ONE_PDF().getProperty(".checked").toString())){
-					radioButton_step3_ONE_PDF().click();
+					radioButton_step3_ONE_PDF().click(atPoint(1,1));
 				}
 				isLarge();
 				break;
 			case 2:
 				logInfo("Picking ONE PDF PER ITEM");
 				while(!Boolean.parseBoolean(radioButton_step3_PDF_PER_ITEM().getProperty(".checked").toString())){
-					radioButton_step3_PDF_PER_ITEM().click();
+					radioButton_step3_PDF_PER_ITEM().click(atPoint(1,1));
 				}
 				isLarge();
 				break;
 			case 3:
 				logInfo("Picking Portable Netmail Search");
 				while(!Boolean.parseBoolean(radioButton_step3_Portable().getProperty(".checked").toString())){
-					radioButton_step3_Portable().click();
+					radioButton_step3_Portable().click(atPoint(1,1));
 				}
 				break;
 			case 4:
 				logInfo("Picking PST");
 				while(!Boolean.parseBoolean(radioButton_step3_PST().getProperty(".checked").toString())){
-					radioButton_step3_PST().click();
+					radioButton_step3_PST().click(atPoint(1,1));
 				}
 				break;
 			default:
 				while(!Boolean.parseBoolean(radioButton_step3_ONE_PDF().getProperty(".checked").toString())){
-					radioButton_step3_ONE_PDF().click();
+					radioButton_step3_ONE_PDF().click(atPoint(1,1));
 				}
 				break;
 		}
@@ -241,7 +241,7 @@ public class Export_SuperUser extends Export_SuperUserHelper
 	
 	public void closeExportManagementWindow(){
 		if(html_exportStatusWindow().exists()){
-		html_closeExportWindow().click();
+			html_closeExportWindow().click();
 		}else{
 			logWarning("closeExport window called when export status window NOT visible");
 		}
@@ -286,8 +286,9 @@ public class Export_SuperUser extends Export_SuperUserHelper
 	
 	public void deleteExport(TestObject export){
 		TestObject[] tds = export.find(atDescendant(".tag", "TD"), false);
+		((GuiTestObject) tds[tds.length/2]).click();
 		((GuiTestObject) tds[tds.length-1].find(atDescendant(".tag", "A", ".contentText", "Details"), false)[0]).click();
-		sleep(1);
+		sleep(2);
 		waitForloading();
 		button_deleteExportedFilesbutt().click();
 		button_yesbutton().click();
@@ -308,6 +309,22 @@ public class Export_SuperUser extends Export_SuperUserHelper
 		String status = columns[3].getProperty(".text").toString().trim().toLowerCase();
 		while(!(status.contentEquals(expectedStatus)|status.contentEquals("warning"))){
 			sleep(3);
+			export = getExportObject(exportName);
+			columns = export.find(atDescendant(".tag", "TD"), false);
+			status = columns[3].getProperty(".text").toString().trim().toLowerCase();
+			if(status.contentEquals("error")){
+				logError("exportFailed");
+				stop();
+			}
+		}
+	} 
+	
+	public void waitForExport(String exportName, String expectedStatus, int recheckInterval){
+		TestObject export = getExportObject(exportName);
+		TestObject[] columns = export.find(atDescendant(".tag", "TD"), false);
+		String status = columns[3].getProperty(".text").toString().trim().toLowerCase();
+		while(!(status.contentEquals(expectedStatus)|status.contentEquals("warning"))){
+			sleep(recheckInterval);
 			export = getExportObject(exportName);
 			columns = export.find(atDescendant(".tag", "TD"), false);
 			status = columns[3].getProperty(".text").toString().trim().toLowerCase();

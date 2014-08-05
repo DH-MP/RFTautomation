@@ -192,6 +192,7 @@ public class manageCase extends manageCaseHelper
 		/******LOCATION AND USER TAB **************/	
 		link_locationAndUsers().click();
 		sleep(10);
+		waitForloading();
 
 		//Validate no location selection error message.
 		button_createbutton().click();
@@ -541,8 +542,10 @@ public class manageCase extends manageCaseHelper
 			TestObject allLocationCheckBox = firstHalf.find(atDescendant(".tag", "DIV", "class", new RegularExpression(".*x-grid3-hd-checker", false)),false)[0];
 			((GuiTestObject)allLocationCheckBox).click();
 			sleep(0.5);
+			waitForloading();
 			((GuiTestObject)allLocationCheckBox).click();
 			sleep(0.5);
+			waitForloading();
 			
 			//Check Locations
 			String[] locationNames = locations.split(";");
