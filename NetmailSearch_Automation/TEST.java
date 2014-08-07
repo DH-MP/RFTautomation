@@ -50,8 +50,8 @@ public class TEST extends TESTHelper
 		
 		// HTML Browser
 		// Document: RFT - Outlook Web App: 
-		int a = browser_htmlBrowser().find(atDescendant(".tag", "SPAN", "id", "_ariaId_40.folder"), false).length;
-		System.out.println(a);
+//		int a = browser_htmlBrowser().find(atDescendant(".tag", "SPAN", "id", "_ariaId_40.folder"), false).length;
+//		System.out.println(a);
 		//		for(int i = 11; i<1001; i++){
 //			html__ariaId_40_2().click(RIGHT);
 //			html__ariaId_143().click(atPoint(35,17));
@@ -97,27 +97,35 @@ public class TEST extends TESTHelper
 //		System.out.println(sharedFolder.mkdirs());
 		
 		
-//		try {
-//
-//			FileWriter fstream2 = new FileWriter("C:\\loadTest.xml");
-//			BufferedWriter bw = new BufferedWriter(fstream2);
-//				bw.write("<tests ssid=\"20usrreq\">");
-//				bw.newLine();
-//				for(int i = 1; i<401; i++){
-//					String format = "<test name=\"user%s\" loc=\"Load\" user=\"Sales Sales%s@Sales%s.po2.gw2012\"></test>";
-//					String result = String.format(format, i, i ,i);
-//					bw.write(result);
-//					bw.newLine();
-//				}
-//				bw.write("<tests/>");
-//				
-//			bw.close();
-//
-//
-//
-//		} catch (Exception e) {
-//			System.err.println("Error: " + e.getMessage());
-//		}
+		try {
+			
+				for(int i = 1; i<100000; i++){
+					FileWriter fstream2 = new FileWriter("C:\\contactInfo\\user"+i+"@fakefake.com.xml");
+					BufferedWriter bw = new BufferedWriter(fstream2);
+					String xml = dpString("a");
+					bw.write(xml.replaceAll("mike", "user"+i));
+					bw.close();
+				}
+
+		} catch (Exception e) {
+			System.err.println("Error: " + e.getMessage());
+		}
+		
+		try {
+			
+			for(int i = 1; i<100000; i++){
+				FileWriter fstream2 = new FileWriter("\\\\10.1.30.64\\GVautomatoin\\audit\\accounts\\rft@rft.BASE2012.First Organization\\pabStub\\Contacts\\user"+i+"@fakefake.com.stb");
+				BufferedWriter bw = new BufferedWriter(fstream2);
+				String xml = dpString("b");
+				bw.write(xml.replaceAll("mikeNUMNUM", "user"+i));
+				bw.close();
+				System.out.println("wrote "+i);
+			}
+
+		} catch (Exception e) {
+			System.err.println("Error: " + e.getMessage());
+		}
+	
 		
 		
 //		int ldapPort = LDAPConnection.DEFAULT_PORT;

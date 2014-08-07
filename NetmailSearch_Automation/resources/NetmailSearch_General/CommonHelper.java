@@ -20,11 +20,11 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>Common</b><br>
- * Generated     : <b>2014/07/29 11:04:06 AM</b><br>
+ * Generated     : <b>2014/08/07 1:30:01 PM</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows Server 2008 R2 x86 6.1 <br>
  * 
- * @since  July 29, 2014
+ * @since  August 07, 2014
  * @author Administrator
  */
 public abstract class CommonHelper extends utilities.MySuperHelper
@@ -111,6 +111,31 @@ public abstract class CommonHelper extends utilities.MySuperHelper
 	}
 	
 	/**
+	 * Preferencesbutton: with default state.
+	 *		.text : Preferences
+	 * 		type : button
+	 * 		.class : Html.BUTTON
+	 * 		class :  x-btn-text
+	 */
+	protected GuiTestObject button_preferencesbutton() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("button_preferencesbutton"));
+	}
+	/**
+	 * Preferencesbutton: with specific test context and state.
+	 *		.text : Preferences
+	 * 		type : button
+	 * 		.class : Html.BUTTON
+	 * 		class :  x-btn-text
+	 */
+	protected GuiTestObject button_preferencesbutton(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("button_preferencesbutton"), anchor, flags);
+	}
+	
+	/**
 	 * previousPage: with default state.
 	 *		type : button
 	 * 		.className : RegularExpression(.*x-btn-text x-tbar-page-prev.*)
@@ -135,6 +160,150 @@ public abstract class CommonHelper extends utilities.MySuperHelper
 	{
 		return new GuiTestObject(
                         getMappedTestObject("button_previousPage"), anchor, flags);
+	}
+	
+	/**
+	 * displayingText: with default state.
+	 *		.className : xtb-text
+	 * 		.class : Html.DIV
+	 * 		.contentText : RegularExpression(^Displaying \d+ - \d+ of \d+$)
+	 * 		.classIndex : 0
+	 * 		class : xtb-text
+	 */
+	protected GuiTestObject html_displayingText() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("html_displayingText"));
+	}
+	/**
+	 * displayingText: with specific test context and state.
+	 *		.className : xtb-text
+	 * 		.class : Html.DIV
+	 * 		.contentText : RegularExpression(^Displaying \d+ - \d+ of \d+$)
+	 * 		.classIndex : 0
+	 * 		class : xtb-text
+	 */
+	protected GuiTestObject html_displayingText(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("html_displayingText"), anchor, flags);
+	}
+	
+	/**
+	 * pageSize: with default state.
+	 *		.text : Page Size
+	 * 		.class : Html.A
+	 * 		.classIndex : 0
+	 * 		class : x-menu-item x-menu-item-arrow
+	 */
+	protected GuiTestObject link_pageSize() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("link_pageSize"));
+	}
+	/**
+	 * pageSize: with specific test context and state.
+	 *		.text : Page Size
+	 * 		.class : Html.A
+	 * 		.classIndex : 0
+	 * 		class : x-menu-item x-menu-item-arrow
+	 */
+	protected GuiTestObject link_pageSize(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("link_pageSize"), anchor, flags);
+	}
+	
+	/**
+	 * pageSize100: with default state.
+	 *		.text : 100
+	 * 		.class : Html.A
+	 * 		class : x-menu-item x-menu-check-item x-menu-group-item
+	 */
+	protected GuiTestObject link_pageSize100() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("link_pageSize100"));
+	}
+	/**
+	 * pageSize100: with specific test context and state.
+	 *		.text : 100
+	 * 		.class : Html.A
+	 * 		class : x-menu-item x-menu-check-item x-menu-group-item
+	 */
+	protected GuiTestObject link_pageSize100(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("link_pageSize100"), anchor, flags);
+	}
+	
+	/**
+	 * pageSize20: with default state.
+	 *		.text : 20
+	 * 		.class : Html.A
+	 * 		class : x-menu-item x-menu-check-item x-menu-group-item
+	 */
+	protected GuiTestObject link_pageSize20() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("link_pageSize20"));
+	}
+	/**
+	 * pageSize20: with specific test context and state.
+	 *		.text : 20
+	 * 		.class : Html.A
+	 * 		class : x-menu-item x-menu-check-item x-menu-group-item
+	 */
+	protected GuiTestObject link_pageSize20(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("link_pageSize20"), anchor, flags);
+	}
+	
+	/**
+	 * pageSize200: with default state.
+	 *		.text : 200
+	 * 		.class : Html.A
+	 * 		class : x-menu-item x-menu-check-item x-menu-group-item
+	 */
+	protected GuiTestObject link_pageSize200() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("link_pageSize200"));
+	}
+	/**
+	 * pageSize200: with specific test context and state.
+	 *		.text : 200
+	 * 		.class : Html.A
+	 * 		class : x-menu-item x-menu-check-item x-menu-group-item
+	 */
+	protected GuiTestObject link_pageSize200(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("link_pageSize200"), anchor, flags);
+	}
+	
+	/**
+	 * pageSize50: with default state.
+	 *		.text : 50
+	 * 		.class : Html.A
+	 * 		class : x-menu-item x-menu-check-item x-menu-group-item
+	 */
+	protected GuiTestObject link_pageSize50() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("link_pageSize50"));
+	}
+	/**
+	 * pageSize50: with specific test context and state.
+	 *		.text : 50
+	 * 		.class : Html.A
+	 * 		class : x-menu-item x-menu-check-item x-menu-group-item
+	 */
+	protected GuiTestObject link_pageSize50(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("link_pageSize50"), anchor, flags);
 	}
 	
 	

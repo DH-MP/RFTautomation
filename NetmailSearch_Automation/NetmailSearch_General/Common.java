@@ -36,6 +36,10 @@ public class Common extends CommonHelper
 	public static void navigatePages(boolean firstPage, boolean previouspage, boolean nextPage, boolean lastPage){
 		getInstance().clickPages(firstPage, previouspage, nextPage, lastPage);
 	}
+	
+	public static TestObject getNavigationPanelDisplayText(){
+		return getInstance().html_displayingText();
+	}
 	public void clickPages(boolean firstPage, boolean previouspage, boolean nextPage, boolean lastPage ){
 		if(firstPage){
 			button_firstPage().click();
@@ -59,6 +63,33 @@ public class Common extends CommonHelper
 	
 	public static Common getInstance(){
 		return new Common();
+	}
+	
+	//Allowed _20_50_100_200
+	public static void preferencePageSize(int size){
+		getInstance().clickPageSize(size);
+	}
+	public  void clickPageSize(int size){
+		button_preferencesbutton().click();
+		link_pageSize().hover();
+		switch (size) {
+			case 20:
+				link_pageSize20().click();
+				break;
+			case 50:
+				link_pageSize50().click();
+				break;
+			case 100:
+				link_pageSize100().click();
+				break;
+				
+			case 200:
+				link_pageSize200().click();
+				break;
+	
+			default:
+				break;
+		}
 	}
 }
 

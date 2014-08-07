@@ -1,4 +1,5 @@
 package utilities;
+import java.awt.Rectangle;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -23,6 +24,7 @@ import com.rational.test.ft.object.interfaces.siebel.*;
 import com.rational.test.ft.object.interfaces.flex.*;
 import com.rational.test.ft.object.interfaces.generichtmlsubdomain.*;
 import com.rational.test.ft.script.*;
+import com.rational.test.ft.sys.graphical.Highlighter;
 import com.rational.test.ft.value.*;
 import com.rational.test.ft.vp.*;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
@@ -267,7 +269,7 @@ public class HelperClass extends RationalTestScript {
 		sleep(60);
 	}
 	
-	public static void navigateLocation(String traversePath){
+	public static TestObject navigateLocation(String traversePath){
 		//For netmail search
 		TestObject activeBody = getActiveTabBody()[0];
 		TestObject locationTree = activeBody.find(atDescendant(".tag", "DIV", "class", "x-tree-root-node"), false)[0];
@@ -294,13 +296,27 @@ public class HelperClass extends RationalTestScript {
 				logInfo("More than one path < "+path+" > in tree, clicking first one" );
 				((GuiTestObject)link[0].getParent().find(atDescendant(".tag", "IMG", "class", a),false)[0]).click();
 			}
-			root = link[0].getParent().getParent().getChildren()[1];
+			root = link[0].getParent().getParent().getChildren()[1]; //UL
 		}
 		
 		//last path click on
 		if(link!=null){
 			((GuiTestObject)link[0]).click();
 		}
+		
+		return root; //Return UL of last link clicked
+	}
+	
+	public static void highlight(TestObject x){
+		Rectangle h = ((GuiTestObject)x).getClippedScreenRectangle();
+		Highlighter r = Highlighter.create(h);
+		r.show();
+		sleep(1);
+		r.hide();
+		sleep(0.5);
+		r.show();
+		sleep(1);
+		r.hide();
 	}
 }
 

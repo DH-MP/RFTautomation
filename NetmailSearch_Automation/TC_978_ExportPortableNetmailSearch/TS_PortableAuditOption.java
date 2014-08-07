@@ -43,33 +43,53 @@ public class TS_PortableAuditOption extends TS_PortableAuditOptionHelper
 	private String workSpace = "\\\\10.10.23.61\\Data\\NetmailSearchGV\\NetmailSearch_Automation";
 	public void testMain(Object[] args) 
 	{
-		setup();
+		logInfo("==========TESTING NO AUDIT===============");
+		logInfo("");
+		logInfo("");
 		
+		setup();
+		NetmailLogin.login();
+		waitForloading();
+		adminLogin.selectUserType("Super User");
+		adminLogin.selectCase("rif");
+		waitForloading();
+		testExportAudit(false);	
+		sleep(30);
+		
+		logInfo("==========TESTING INCLUDE AUDIT===============");
+		logInfo("");
+		logInfo("");
+		
+		setup();
 		NetmailLogin.login();
 		waitForloading();
 		adminLogin.selectUserType("Super User");
 		adminLogin.selectCase("rif");
 		waitForloading();
 		testExportAudit(true);
-
-		NetmailLogin.login();
-		waitForloading();
-		adminLogin.selectUserType("Super User");
-		adminLogin.selectCase("rif");
-		waitForloading();
-		testExportAudit(false);
 		
+
 		tearDown();
 	}
 	
 	private void setup(){
 		try {
-			File isoFolder = new File("extractLocation");
+			File isoFolder = new File(extractLocation);
 			if(!isoFolder.exists()){
 				isoFolder.mkdir();
 			}else{
 				FileUtils.cleanDirectory(isoFolder);
 			}
+			File yesAudit = new File(fileLocation+"yesAudit.zip");
+			if(yesAudit.exists()){
+				yesAudit.delete();
+			}
+			
+			File noAudit = new File(fileLocation+"noAudit.zip");
+			if(noAudit.exists()){
+				noAudit.delete();
+			}
+			
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -83,6 +103,8 @@ public class TS_PortableAuditOption extends TS_PortableAuditOptionHelper
 		waitForloading();
 		
 		Export_SuperUser esu = new Export_SuperUser();
+		esu.openExportManagementWindow();
+		
 		TestObject yesaudit = esu.getExportObject("yesAudit");
 		if(yesaudit !=null){
 			esu.deleteExport(yesaudit);
@@ -142,7 +164,7 @@ public class TS_PortableAuditOption extends TS_PortableAuditOptionHelper
 		
 			TestObject[] results;
 			TestObject visibleResultContainer;
-			visibleResultContainer= HelperClass.getActiveTabBody()[0].find(atDescendant(".class", "Html.DIV", "class", new RegularExpression(".*x-panel x-panel-noborder x-grid-panel",false)))[0];
+			visibleResultContainer= HelperClass.getActiveTabBody()[0].find(atDescendant(".class", "Html.DIV", "class", new RegularExpression(".*x-panel x-panel-noborder x-grid-panel\\s*$",false)))[0];
 			results = visibleResultContainer.find(atDescendant(".class", "Html.TABLE", "class", "x-grid3-row-table"), true);
 			
 			for(TestObject result : results){
