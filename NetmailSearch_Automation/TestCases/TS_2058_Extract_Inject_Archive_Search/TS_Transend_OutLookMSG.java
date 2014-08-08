@@ -60,6 +60,8 @@ public class TS_Transend_OutLookMSG extends TS_Transend_OutLookMSGHelper
 				logInfo(e1.getMessage());
 				e1.printStackTrace();
 			}
+		}else{
+			directory.mkdir();
 		}
 		
 		//Start Transend
@@ -90,9 +92,9 @@ public class TS_Transend_OutLookMSG extends TS_Transend_OutLookMSGHelper
 		
 	}
 	
-	@Override
-	public void onTerminate(){
-		transend.destroy();
-	}
+//	@Override
+//	public void onTerminate(){
+//		transend.destroy();
+//	}
 }
 

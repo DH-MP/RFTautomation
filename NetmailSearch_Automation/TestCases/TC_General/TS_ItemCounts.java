@@ -34,14 +34,55 @@ public class TS_ItemCounts extends TS_ItemCountsHelper
 	 */
 	public void testMain(Object[] args) 
 	{
+		test();
+	}
+	
+	public void test(){
 		NetmailLogin.login();
 		adminLogin.selectUserType("Super User");
 		adminLogin.selectCase("GVautomation");
 		waitForloading();
 		Common.preferencePageSize(200);
-		TestObject folders = HelperClass.navigateLocation("GVautomation>rft");
-
+		waitForloading();
 		
+		TestObject[] folders = HelperClass.navigateLocation("GVautomation>rft").getChildren();
+		waitForloading();
+		for(TestObject folder : folders){
+			TestObject[] folderCount = folder.find(atDescendant(".tag", "SPAN", "class", "folderCounts"), false);
+			if(folderCount.length>0){
+				String countString = folderCount[0].getProperty(".contentText").toString();
+				try{
+					Integer countInteger =  Integer.parseInt(countString);
+					((GuiTestObject)folder).click();
+					waitForloading();
+					waitForloading();
+					
+					TestObject[] results;
+					TestObject visibleResultContainer;
+					visibleResultContainer = HelperClass.getActiveTabBody()[0].find(atDescendant(".class", "Html.DIV", "class", new RegularExpression(".*x-panel x-panel-noborder x-grid-panel\\s*$",false)))[0];
+					results = visibleResultContainer.find(atDescendant(".class", "Html.TABLE", "class", new RegularExpression("x-grid3-row-table", false)), true);	
+						
+					vpManual("ItemCount_Matches_Results"+results.length, results.length, countInteger).performTest();
+					
+					
+					((GuiTestObject)folderCount[0]).click();
+					waitForloading();
+					html_helpInfo().performTest( itemCountHelpInfoVP() );
+					button_oKbutton().click();
+
+				}catch (NumberFormatException nfe){
+					logError("Item count is only available after archiving");
+				}
+			}else{
+				continue;
+			}
+
+		}
+		
+		NetmailLogin.login();
+		adminLogin.selectUserType("Super User");
+		adminLogin.selectCase("GVautomation");
+		Common.preferencePageSize(20);
 	}
 }
 

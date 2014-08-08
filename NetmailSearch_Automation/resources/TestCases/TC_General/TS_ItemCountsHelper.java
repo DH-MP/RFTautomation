@@ -20,15 +20,81 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>TS_ItemCounts</b><br>
- * Generated     : <b>2014/08/07 1:20:14 PM</b><br>
+ * Generated     : <b>2014/08/08 9:35:23 AM</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows Server 2008 R2 x86 6.1 <br>
  * 
- * @since  August 07, 2014
+ * @since  August 08, 2014
  * @author Administrator
  */
 public abstract class TS_ItemCountsHelper extends utilities.MySuperHelper
 {
+	/**
+	 * OKbutton: with default state.
+	 *		.text : OK
+	 * 		type : button
+	 * 		.title : 
+	 * 		.class : Html.BUTTON
+	 * 		.name : 
+	 * 		class :  x-btn-text
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject button_oKbutton() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("button_oKbutton"));
+	}
+	/**
+	 * OKbutton: with specific test context and state.
+	 *		.text : OK
+	 * 		type : button
+	 * 		.title : 
+	 * 		.class : Html.BUTTON
+	 * 		.name : 
+	 * 		class :  x-btn-text
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject button_oKbutton(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("button_oKbutton"), anchor, flags);
+	}
+	
+	/**
+	 * helpInfo: with default state.
+	 *		.className : 
+	 * 		.class : Html.DIV
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject html_helpInfo() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("html_helpInfo"));
+	}
+	/**
+	 * helpInfo: with specific test context and state.
+	 *		.className : 
+	 * 		.class : Html.DIV
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject html_helpInfo(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("html_helpInfo"), anchor, flags);
+	}
+	
+	/**
+	 * Locate and return the verification point itemCountHelpInfo object in the SUT.
+	 */
+	protected IFtVerificationPoint itemCountHelpInfoVP() 
+	{
+		return vp("itemCountHelpInfo");
+	}
+	protected IFtVerificationPoint itemCountHelpInfoVP(TestObject anchor)
+	{
+		return vp("itemCountHelpInfo", anchor);
+	}
+	
 	
 
 	protected TS_ItemCountsHelper()

@@ -107,6 +107,7 @@ public class TS_1694_Transend_OutLookMSG extends TS_1694_Transend_OutLookMSGHelp
 				"Administrator@BASE2012@First Organization@User"
 		);
 		wa.index(name, targetUserCN, indexName);
+		sleep(10);
 		wa.waitForIndexing(indexName);
 		
 		
