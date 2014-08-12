@@ -1,5 +1,6 @@
 package utilities;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import resources.utilities.NetmailFinderHelper;
 import com.rational.test.ft.*;
@@ -190,6 +191,116 @@ public class NetmailFinder extends NetmailFinderHelper
 		return noChildren.toArray(finalArray);
 	}
 	
+	
+	
+	//This version uses hashmap which should be faster for this scenario
+	public TestObject[] findAllTextObjects2(GuiTestObject container){
+		
+		HashMap<String, TestObject> leaf = new HashMap<String, TestObject>();
+		HashMap<String, TestObject> parent = new HashMap<String, TestObject>();
+		
+		RegularExpression onlyLetterAndSpaces = new RegularExpression("[\\p{L}\\s]+", false);
+		
+		
+		TestObject[] objects;
+		
+		//Not Mappable ".value" property are ussually object that can't contain childs
+		objects = container.find(atDescendant(".value", onlyLetterAndSpaces), false);
+		for(TestObject o : objects){
+			addToMap(leaf, o);
+		}
+			
+		//Mappable ".value" property are ussually object that can't contain childs
+		objects = container.find(atDescendant(".value", onlyLetterAndSpaces), true);	
+		for(TestObject o : objects){
+			addToMap(leaf, o);
+		}
+			
+		//Not Mappable
+		objects = container.find(atChild(".contentText",  onlyLetterAndSpaces), false);
+		for(TestObject o : objects){
+			addToMap(parent, o);
+		}
+		
+		//Mappable
+		objects = container.find(atChild(".contentText",  onlyLetterAndSpaces), true);	
+		for(TestObject o : objects){
+			addToMap(parent, o);
+		}
+
+		//FILTER OUT PARENT objects that takes the child object text
+		while(!parent.isEmpty()){
+			TestObject[] parents = new TestObject[parent.size()];
+			parent.values().toArray(parents);
+			for(TestObject object: parents){
+				TestObject[] a = object.find(atChild(".contentText", onlyLetterAndSpaces), false);
+				TestObject[] b =  object.find(atChild(".contentText", onlyLetterAndSpaces), true);
+				
+				HashMap<String, TestObject> childs = new HashMap<>();
+				for(TestObject o : a){
+					addToMap(childs,o);
+				}
+				for(TestObject o : b){
+					addToMap(childs,o);
+				}
+				
+				if(childs.size()>0){		
+					//Object has children that contain text
+					String contentText = object.getProperty(".contentText").toString();
+					contentText = contentText.replaceAll("\\r", "");
+					contentText = contentText.replaceAll("\\n", "");
+					
+					TestObject[] childObjects = new TestObject[childs.size()];
+					childs.values().toArray(childObjects);
+					for(TestObject childOfObject : childObjects){
+						//Make sure that all string in parent object is within child objects.
+						String childContentText = childOfObject.getProperty(".contentText").toString();
+						childContentText = childContentText.replaceAll("\\r", "");
+						childContentText = childContentText.replaceAll("\\n", "");
+						contentText = contentText.replace(childContentText, "");
+					}
+					
+					if(!contentText.replaceAll(" ", "").isEmpty()){
+						//If has text that child doesn't have then added to noChildren array.
+						addToMap(leaf,object);
+					}
+					
+					for(TestObject o : childObjects){
+						addToMap(parent, o);
+					}	
+					
+				}else{
+					//Object has no children aka the LEAF and contains text
+					addToMap(leaf, object);
+
+				}
+				System.out.println(removeFromMap(parent,object));
+			}
+		}
+		
+		//lastFilter remove empty string objects
+		TestObject[] finalArray = new TestObject[leaf.size()];
+		leaf.values().toArray(finalArray);
+		for(TestObject o : finalArray){
+			String contentText = o.getProperty(".contentText").toString();
+			contentText = contentText.replaceAll("\\r", "");
+			contentText = contentText.replaceAll("\\n", "");
+			if(contentText.replaceAll(" ", "").isEmpty()){
+				try{
+					//If content text is empty check .value
+					o.getProperty(".value").toString().trim();
+				}catch(PropertyNotFoundException e){
+					Boolean deleted = removeFromMap(leaf, o);
+					assert deleted != false;
+				}
+			}
+		}
+		System.out.println("B"+leaf.size());
+		
+		finalArray = new TestObject[leaf.size()];
+		return leaf.values().toArray(finalArray);
+	}
+	
 	public void highlight(TestObject[] testObjects){
 		int count = 0;
 		for(TestObject o : testObjects){
@@ -198,6 +309,47 @@ public class NetmailFinder extends NetmailFinderHelper
 			sleep(1);
 			count++;
 		}
+	}
+	
+	
+	public void addToMap(HashMap<String, TestObject> map, TestObject o){
+		if(	!((TestObject)o).getProperty(".offsetHeight").toString().contentEquals("0") |
+				!((TestObject)o).getProperty(".offsetWidth").toString().contentEquals("0")  |
+				!((TestObject)o).getProperty(".offsetTop").toString().contentEquals("0")){
+			
+				String tag1 = ((TestObject)o).getProperty(".tag").toString().trim();			
+				String contentText1 = ((TestObject)o).getProperty(".contentText").toString().trim();
+				
+				String value1 = "";
+				try{
+					value1 = ((TestObject)o).getProperty(".value").toString().trim();
+				}catch(PropertyNotFoundException e){
+					//do nothing property doesn't exists
+				}		
+				String class1 = ((TestObject)o).getProperty("class").toString().trim();
+				String key = tag1+contentText1+value1+class1;
+				if(!map.containsKey(key)){
+					map.put(key, o);
+				}
+		}
+	}
+	
+	private boolean removeFromMap(HashMap<String, TestObject> map, TestObject o ){
+		String tag1 = ((TestObject)o).getProperty(".tag").toString().trim();			
+		String contentText1 = ((TestObject)o).getProperty(".contentText").toString().trim();
+		
+		String value1 = "";
+		try{
+			value1 = ((TestObject)o).getProperty(".value").toString().trim();
+		}catch(PropertyNotFoundException e){
+			//do nothing property doesn't exists
+		}		
+		String class1 = ((TestObject)o).getProperty("class").toString().trim();
+		String key = tag1+contentText1+value1+class1;
+		if(map.containsKey(key)){
+			return map.remove(key) != null;
+		}
+		return false;
 	}
 }
 

@@ -20,7 +20,7 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>TEST</b><br>
- * Generated     : <b>2014/08/12 11:13:33 AM</b><br>
+ * Generated     : <b>2014/08/12 2:05:49 PM</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows Server 2008 R2 x86 6.1 <br>
  * 
@@ -137,9 +137,31 @@ public abstract class TESTHelper extends utilities.MySuperHelper
 	}
 	
 	/**
+	 * asdhiasdo: with default state.
+	 *		.className : x-panel-body x-panel-body-noheader x-panel-body-noborder
+	 * 		.class : Html.DIV
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject html_asdhiasdo() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("html_asdhiasdo"));
+	}
+	/**
+	 * asdhiasdo: with specific test context and state.
+	 *		.className : x-panel-body x-panel-body-noheader x-panel-body-noborder
+	 * 		.class : Html.DIV
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject html_asdhiasdo(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("html_asdhiasdo"), anchor, flags);
+	}
+	
+	/**
 	 * editConf: with default state.
 	 *		.id : editConf
-	 * 		.className : 
 	 * 		.class : Html.DIV
 	 * 		.classIndex : 1
 	 */
@@ -151,7 +173,6 @@ public abstract class TESTHelper extends utilities.MySuperHelper
 	/**
 	 * editConf: with specific test context and state.
 	 *		.id : editConf
-	 * 		.className : 
 	 * 		.class : Html.DIV
 	 * 		.classIndex : 1
 	 */
@@ -182,6 +203,33 @@ public abstract class TESTHelper extends utilities.MySuperHelper
 	{
 		return new GuiTestObject(
                         getMappedTestObject("html_framework"), anchor, flags);
+	}
+	
+	/**
+	 * UL: with default state.
+	 *		.text : netmail Plattform Secure Archive Cluster (10.1.30.64) Agenten Knoten Richtlinien ...
+	 * 		.class : Html.UL
+	 * 		.title : 
+	 * 		.classIndex : 0
+	 * 		class : x-tree-root-ct x-tree-arrows
+	 */
+	protected GuiTestObject html_ul() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("html_ul"));
+	}
+	/**
+	 * UL: with specific test context and state.
+	 *		.text : netmail Plattform Secure Archive Cluster (10.1.30.64) Agenten Knoten Richtlinien ...
+	 * 		.class : Html.UL
+	 * 		.title : 
+	 * 		.classIndex : 0
+	 * 		class : x-tree-root-ct x-tree-arrows
+	 */
+	protected GuiTestObject html_ul(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("html_ul"), anchor, flags);
 	}
 	
 	/**
