@@ -284,6 +284,7 @@ public class HelperClass extends RationalTestScript {
 				//Click arrow
 				TestObject[] arrow = link[0].getParent().find(atDescendant(".tag", "IMG", "class", a),false);
 				if(arrow.length>0){
+					((GuiTestObject)arrow[0]).hover();
 					((GuiTestObject)arrow[0]).click();
 					logInfo("clicked "+path);
 					sleep(6);
@@ -294,6 +295,7 @@ public class HelperClass extends RationalTestScript {
 				
 			}else if(link.length >1 ){
 				logInfo("More than one path < "+path+" > in tree, clicking first one" );
+				((GuiTestObject)link[0].getParent().find(atDescendant(".tag", "IMG", "class", a),false)[0]).hover();
 				((GuiTestObject)link[0].getParent().find(atDescendant(".tag", "IMG", "class", a),false)[0]).click();
 			}
 			root = link[0].getParent().getParent().getChildren()[1]; //UL
@@ -301,6 +303,7 @@ public class HelperClass extends RationalTestScript {
 		
 		//last path click on
 		if(link!=null){
+			((GuiTestObject)link[0]).hover();
 			((GuiTestObject)link[0]).click();
 		}
 		
@@ -317,6 +320,13 @@ public class HelperClass extends RationalTestScript {
 		r.show();
 		sleep(1);
 		r.hide();
+	}
+	
+	
+	public static Highlighter getHighlighter(TestObject x){
+		Rectangle h = ((GuiTestObject)x).getClippedScreenRectangle();
+		Highlighter r = Highlighter.create(h);
+		return r;
 	}
 }
 

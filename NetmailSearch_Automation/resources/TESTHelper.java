@@ -20,11 +20,11 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>TEST</b><br>
- * Generated     : <b>2014/07/30 3:00:52 PM</b><br>
+ * Generated     : <b>2014/08/12 11:13:33 AM</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows Server 2008 R2 x86 6.1 <br>
  * 
- * @since  July 30, 2014
+ * @since  August 12, 2014
  * @author Administrator
  */
 public abstract class TESTHelper extends utilities.MySuperHelper
@@ -32,8 +32,6 @@ public abstract class TESTHelper extends utilities.MySuperHelper
 	/**
 	 * htmlBrowser: with default state.
 	 *		.class : Html.HtmlBrowser
-	 * 		.browserName : MS Internet Explorer
-	 * 		.processName : iexplore.exe
 	 */
 	protected BrowserTestObject browser_htmlBrowser() 
 	{
@@ -43,8 +41,6 @@ public abstract class TESTHelper extends utilities.MySuperHelper
 	/**
 	 * htmlBrowser: with specific test context and state.
 	 *		.class : Html.HtmlBrowser
-	 * 		.browserName : MS Internet Explorer
-	 * 		.processName : iexplore.exe
 	 */
 	protected BrowserTestObject browser_htmlBrowser(TestObject anchor, long flags) 
 	{
@@ -54,8 +50,7 @@ public abstract class TESTHelper extends utilities.MySuperHelper
 	
 	/**
 	 * RFTOutlookWebApp: with default state.
-	 *		.title : RFT - Outlook Web App
-	 * 		.class : Html.HtmlDocument
+	 *		.class : Html.HtmlDocument
 	 */
 	protected DocumentTestObject document_rftOutlookWebApp() 
 	{
@@ -64,8 +59,7 @@ public abstract class TESTHelper extends utilities.MySuperHelper
 	}
 	/**
 	 * RFTOutlookWebApp: with specific test context and state.
-	 *		.title : RFT - Outlook Web App
-	 * 		.class : Html.HtmlDocument
+	 *		.class : Html.HtmlDocument
 	 */
 	protected DocumentTestObject document_rftOutlookWebApp(TestObject anchor, long flags) 
 	{
@@ -75,7 +69,8 @@ public abstract class TESTHelper extends utilities.MySuperHelper
 	
 	/**
 	 * _ariaId_143: with default state.
-	 *		.className : contextMenuDropShadow contextMenuPopup removeFocusOutline
+	 *		.text : create new folder rename delete empty remove from Favorites move... mark all as  ...
+	 * 		.className : contextMenuDropShadow contextMenuPopup removeFocusOutline
 	 * 		.class : Html.DIV
 	 * 		.classIndex : 17
 	 */
@@ -86,7 +81,8 @@ public abstract class TESTHelper extends utilities.MySuperHelper
 	}
 	/**
 	 * _ariaId_143: with specific test context and state.
-	 *		.className : contextMenuDropShadow contextMenuPopup removeFocusOutline
+	 *		.text : create new folder rename delete empty remove from Favorites move... mark all as  ...
+	 * 		.className : contextMenuDropShadow contextMenuPopup removeFocusOutline
 	 * 		.class : Html.DIV
 	 * 		.classIndex : 17
 	 */
@@ -100,7 +96,6 @@ public abstract class TESTHelper extends utilities.MySuperHelper
 	 * _ariaId_40: with default state.
 	 *		.id : _ariaId_40
 	 * 		.class : Html.DIV
-	 * 		.contentText : RegularExpression(.*Inbox.*)
 	 */
 	protected GuiTestObject html__ariaId_40_2() 
 	{
@@ -111,12 +106,82 @@ public abstract class TESTHelper extends utilities.MySuperHelper
 	 * _ariaId_40: with specific test context and state.
 	 *		.id : _ariaId_40
 	 * 		.class : Html.DIV
-	 * 		.contentText : RegularExpression(.*Inbox.*)
 	 */
 	protected GuiTestObject html__ariaId_40_2(TestObject anchor, long flags) 
 	{
 		return new GuiTestObject(
                         getMappedTestObject("html__ariaId_40_2"), anchor, flags);
+	}
+	
+	/**
+	 * admin: with default state.
+	 *		.className : widget_admin hasResizeHandler
+	 * 		.class : Html.DIV
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject html_admin() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("html_admin"));
+	}
+	/**
+	 * admin: with specific test context and state.
+	 *		.className : widget_admin hasResizeHandler
+	 * 		.class : Html.DIV
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject html_admin(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("html_admin"), anchor, flags);
+	}
+	
+	/**
+	 * editConf: with default state.
+	 *		.id : editConf
+	 * 		.className : 
+	 * 		.class : Html.DIV
+	 * 		.classIndex : 1
+	 */
+	protected GuiTestObject html_editConf() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("html_editConf"));
+	}
+	/**
+	 * editConf: with specific test context and state.
+	 *		.id : editConf
+	 * 		.className : 
+	 * 		.class : Html.DIV
+	 * 		.classIndex : 1
+	 */
+	protected GuiTestObject html_editConf(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("html_editConf"), anchor, flags);
+	}
+	
+	/**
+	 * framework: with default state.
+	 *		.className : widget_mplusFramework hasResizeHandler
+	 * 		.class : Html.DIV
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject html_framework() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("html_framework"));
+	}
+	/**
+	 * framework: with specific test context and state.
+	 *		.className : widget_mplusFramework hasResizeHandler
+	 * 		.class : Html.DIV
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject html_framework(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("html_framework"), anchor, flags);
 	}
 	
 	/**

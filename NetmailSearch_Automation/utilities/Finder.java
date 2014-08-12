@@ -1,29 +1,8 @@
-
-import java.awt.Rectangle;
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.UnsupportedEncodingException;
-import java.net.InetAddress;
-import java.net.UnknownHostException;
+package utilities;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
 
-import org.apache.commons.lang3.ArrayUtils;
+import resources.utilities.FinderHelper;
 
-import resources.TESTHelper;
-
-import com.novell.ldap.LDAPAttribute;
-import com.novell.ldap.LDAPConnection;
-import com.novell.ldap.LDAPEntry;
-import com.novell.ldap.LDAPException;
-import com.novell.ldap.LDAPModification;
-import com.novell.ldap.LDAPSearchResults;
 import com.rational.test.ft.*;
 import com.rational.test.ft.object.interfaces.*;
 import com.rational.test.ft.object.interfaces.SAP.*;
@@ -41,138 +20,20 @@ import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
  * Description   : Functional Test Script
  * @author Administrator
  */
-public class TEST extends TESTHelper
+public class Finder extends FinderHelper
 {
 	/**
-	 * Script Name   : <b>TEST</b>
-	 * Generated     : <b>Jul 2, 2014 11:36:45 AM</b>
+	 * Script Name   : <b>Finder</b>
+	 * Generated     : <b>Aug 12, 2014 1:42:17 PM</b>
 	 * Description   : Functional Test Script
 	 * Original Host : WinNT Version 6.1  Build 7601 (S)
 	 * 
-	 * @since  2014/07/02
+	 * @since  2014/08/12
 	 * @author Administrator
 	 */
 	public void testMain(Object[] args) 
 	{
-		
-		
-		version1();
-		
-		
-		
-		
-		// HTML Browser
-		// Document: RFT - Outlook Web App: 
-//		int a = browser_htmlBrowser().find(atDescendant(".tag", "SPAN", "id", "_ariaId_40.folder"), false).length;
-//		System.out.println(a);
-		//		for(int i = 11; i<1001; i++){
-//			html__ariaId_40_2().click(RIGHT);
-//			html__ariaId_143().click(atPoint(35,17));
-//			browser_htmlBrowser(document_rftOutlookWebApp(),LOADED).inputKeys(i+"{ENTER}");
-//			sleep(0.5);
-//		}
-		
-		
-		
-		
-//		startApp("http://www.google.com");
-//		
-//		
-//		// HTML Browser
-//		// Document: Netmail Search: 
-//		table_htmlTable_1_2().click(atCell(atRow(atIndex(0)), 
-//                                     atColumn(atIndex(1))));
-//		table_htmlTable_7().click(SHIFT_LEFT, atCell(
-//                                        atRow(atIndex(0)), 
-//                                        atColumn(atIndex(1))));
-		
-//		// HTML Browser
-//		// Document: Netmail Search: 
-//		table_htmlTable_1().click(SHIFT_LEFT, atCell(
-//                                        atRow(atIndex(0)), 
-//                                        atColumn(atIndex(0))));
-//		table_htmlTable_2().click(SHIFT_LEFT, atCell(
-//                                        atRow(atIndex(0)), 
-//                                        atColumn(atIndex(0))));
-//		
-//		for(File a : File.listRoots()){
-//		System.out.println(a.getName());
-//		}
-//		try {
-//			System.out.println(InetAddress.getLocalHost().getHostAddress());
-//		} catch (UnknownHostException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//		
-//		File sharedFolder = new File("C:\CSEE");
-//		
-//		System.out.println(sharedFolder.mkdirs());
-		
-		
-//		try {
-//			
-//				for(int i = 1; i<100000; i++){
-//					FileWriter fstream2 = new FileWriter("C:\\contactInfo\\user"+i+"@fakefake.com.xml");
-//					BufferedWriter bw = new BufferedWriter(fstream2);
-//					String xml = dpString("a");
-//					bw.write(xml.replaceAll("mike", "user"+i));
-//					bw.close();
-//				}
-//
-//		} catch (Exception e) {
-//			System.err.println("Error: " + e.getMessage());
-//		}
-//		
-//		try {
-//			
-//			for(int i = 1; i<100000; i++){
-//				FileWriter fstream2 = new FileWriter("\\\\10.1.30.64\\GVautomatoin\\audit\\accounts\\rft@rft.BASE2012.First Organization\\pabStub\\Contacts\\user"+i+"@fakefake.com.stb");
-//				BufferedWriter bw = new BufferedWriter(fstream2);
-//				String xml = dpString("b");
-//				bw.write(xml.replaceAll("mikeNUMNUM", "user"+i));
-//				bw.close();
-//				System.out.println("wrote "+i);
-//			}
-//
-//		} catch (Exception e) {
-//			System.err.println("Error: " + e.getMessage());
-//		}
-//	
-//		
-		
-//		int ldapPort = LDAPConnection.DEFAULT_PORT;
-//		int ldapVersion = LDAPConnection.LDAP_V3;
-//		String ldapHost = "10.10.23.220";
-//		String loginDN =  "CN=administrator,CN=users,DC=auto2k10,DC=com";
-//		String password = "Pa$$w0rd";
-//		LDAPConnection lc = new LDAPConnection();
-//		ArrayList modList = new ArrayList();
-//		
-//		try {
-//			lc.connect(ldapHost, ldapPort);
-//			
-//			lc.bind(ldapVersion, loginDN, password.getBytes("UTF8"));
-//			
-//			System.out.println(lc.isConnected());
-////			LDAPSearchResults searchResults = lc.search("CN=users,DC=auto2k10,DC=com", LDAPConnection.SCOPE_ONE, "cn=RFT", null, false);
-////			LDAPEntry userRFT = searchResults.next();
-//			
-//			LDAPAttribute attribute = new LDAPAttribute( "sAMAccountName", "rftAD");
-//		    lc.modify("CN=RFT,CN=users,DC=auto2k10,DC=com", new LDAPModification(LDAPModification.REPLACE, attribute));
-//		    System.out.println(lc.read("CN=RFT,CN=users,DC=auto2k10,DC=com").getAttributeSet());
-//		    System.out.println(lc.toString());
-//		    
-//		    
-//		} catch (LDAPException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		} catch (UnsupportedEncodingException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//		
-//		logInfo("done");
+		// TODO Insert code here
 	}
 	
 	private class MyArrayList<T> extends ArrayList<T> {
@@ -226,7 +87,7 @@ public class TEST extends TESTHelper
 		}
 	}
 	
-	private void version1(){
+	private TestObject[] findAllTextObjects(GuiTestObject container){
 		MyArrayList<TestObject> noChildren = new MyArrayList<>();
 		MyArrayList<TestObject> hasChildren = new MyArrayList<TestObject>();
 		
@@ -234,7 +95,6 @@ public class TEST extends TESTHelper
 		
 		
 		TestObject[] objects;
-		GuiTestObject container = html_editConf();
 		
 		//Not Mappable ".value" property are ussually object that can't contain childs
 		objects = container.find(atDescendant(".value", onlyLetterAndSpaces), false);
@@ -325,20 +185,20 @@ public class TEST extends TESTHelper
 				}
 			}
 		}
-		
 		System.out.println("B"+noChildren.size());
 		
+		finalArray = new TestObject[noChildren.size()];
+		return noChildren.toArray(finalArray);
+	}
+	
+	public void highlight(TestObject[] testObjects){
 		int count = 0;
-		for(TestObject o : noChildren){
+		for(TestObject o : testObjects){
 			Highlighter r = utilities.HelperClass.getHighlighter(o);
 			r.show();
 			sleep(1);
 			count++;
 		}
-		
-		System.out.println("Highlighted "+count);
-		
-		sleep(100);
 	}
 }
 
