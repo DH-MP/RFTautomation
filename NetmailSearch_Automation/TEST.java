@@ -59,7 +59,7 @@ public class TEST extends TESTHelper
 		
 		
 		NetmailFinder a = new NetmailFinder();
-		TestObject[] x = a.findAllTextObjects2(html_ul());
+		TestObject[] x = a.findAllTextObjects2(html_editConf());
 		a.highlight(x);
 		
 		

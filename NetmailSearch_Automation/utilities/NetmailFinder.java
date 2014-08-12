@@ -1,4 +1,10 @@
 package utilities;
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.FontMetrics;
+import java.awt.Graphics;
+import java.awt.Rectangle;
+import java.awt.Window;
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -301,12 +307,47 @@ public class NetmailFinder extends NetmailFinderHelper
 		return leaf.values().toArray(finalArray);
 	}
 	
+	
+	
+	
+	public Window window(int count){
+		final int count2 = count;
+		Window w = new Window(null)
+		{
+		  @Override
+		  public void paint(Graphics g)
+		  {
+		    final Font font = new Font("sansserif", Font.BOLD, 13);
+		    g.setFont(font);
+		    g.setColor(Color.BLACK);
+		    final String message = "["+count2+"]";
+		    g.drawString(message, getWidth()/4, getHeight()/4);
+		  }
+		  @Override
+		  public void update(Graphics g)
+		  {
+		    paint(g);
+		  }
+		};
+		return w;
+	}
+	
 	public void highlight(TestObject[] testObjects){
-		int count = 0;
+		int count = 1;
 		for(TestObject o : testObjects){
-			Highlighter r = utilities.HelperClass.getHighlighter(o);
-			r.show();
+			Rectangle h = ((GuiTestObject)o).getClippedScreenRectangle();
+			Highlighter r = Highlighter.create(h);
+
 			sleep(1);
+			
+			//Lettering
+			Window w = window(count);
+			w.setAlwaysOnTop(true);
+			w.setBounds(h);
+			w.setBackground(new Color(333, true));
+			
+			r.show();
+			w.setVisible(true);	
 			count++;
 		}
 	}
@@ -334,6 +375,8 @@ public class NetmailFinder extends NetmailFinderHelper
 		}
 	}
 	
+
+
 	private boolean removeFromMap(HashMap<String, TestObject> map, TestObject o ){
 		String tag1 = ((TestObject)o).getProperty(".tag").toString().trim();			
 		String contentText1 = ((TestObject)o).getProperty(".contentText").toString().trim();
