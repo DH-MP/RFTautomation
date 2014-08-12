@@ -1,8 +1,7 @@
 package utilities;
 import java.util.ArrayList;
 
-import resources.utilities.FinderHelper;
-
+import resources.utilities.NetmailFinderHelper;
 import com.rational.test.ft.*;
 import com.rational.test.ft.object.interfaces.*;
 import com.rational.test.ft.object.interfaces.SAP.*;
@@ -20,7 +19,7 @@ import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
  * Description   : Functional Test Script
  * @author Administrator
  */
-public class Finder extends FinderHelper
+public class NetmailFinder extends NetmailFinderHelper
 {
 	/**
 	 * Script Name   : <b>Finder</b>
@@ -74,8 +73,8 @@ public class Finder extends FinderHelper
 						String class2 = addedTestO.getProperty("class").toString().trim();
 						
 						if(value1.contentEquals(value2) && tag1.contentEquals(tag2) && contentText1.contentEquals(contentText2) && class1.contentEquals(class2)){
-							System.out.print("FOUND==");
-							System.out.println(tag1+" "+contentText1);
+//							System.out.print("FOUND==");
+//							System.out.println(tag1+" "+contentText1);
 							foundDup = true;
 						}
 					}
@@ -87,7 +86,7 @@ public class Finder extends FinderHelper
 		}
 	}
 	
-	private TestObject[] findAllTextObjects(GuiTestObject container){
+	public TestObject[] findAllTextObjects(GuiTestObject container){
 		MyArrayList<TestObject> noChildren = new MyArrayList<>();
 		MyArrayList<TestObject> hasChildren = new MyArrayList<TestObject>();
 		

@@ -17,6 +17,7 @@ import java.util.List;
 import org.apache.commons.lang3.ArrayUtils;
 
 import resources.TESTHelper;
+import utilities.NetmailFinder;
 
 import com.novell.ldap.LDAPAttribute;
 import com.novell.ldap.LDAPConnection;
@@ -25,6 +26,7 @@ import com.novell.ldap.LDAPException;
 import com.novell.ldap.LDAPModification;
 import com.novell.ldap.LDAPSearchResults;
 import com.rational.test.ft.*;
+import com.rational.test.ft.domain.java.eclipse.Finder;
 import com.rational.test.ft.object.interfaces.*;
 import com.rational.test.ft.object.interfaces.SAP.*;
 import com.rational.test.ft.object.interfaces.WPF.*;
@@ -56,7 +58,9 @@ public class TEST extends TESTHelper
 	{
 		
 		
-		version1();
+		NetmailFinder a = new NetmailFinder();
+		TestObject[] x = a.findAllTextObjects(html_editConf());
+		a.highlight(x);
 		
 		
 		

@@ -19,21 +19,21 @@ import com.rational.test.ft.script.*;
 import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
- * Script Name   : <b>Finder</b><br>
- * Generated     : <b>2014/08/12 1:42:17 PM</b><br>
+ * Script Name   : <b>NetmailFinder</b><br>
+ * Generated     : <b>2014/08/12 1:48:14 PM</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows Server 2008 R2 x86 6.1 <br>
  * 
  * @since  August 12, 2014
  * @author Administrator
  */
-public abstract class FinderHelper extends utilities.MySuperHelper
+public abstract class NetmailFinderHelper extends utilities.MySuperHelper
 {
 	
 
-	protected FinderHelper()
+	protected NetmailFinderHelper()
 	{
-		setScriptName("utilities.Finder");
+		setScriptName("utilities.NetmailFinder");
 	}
 	
 }
