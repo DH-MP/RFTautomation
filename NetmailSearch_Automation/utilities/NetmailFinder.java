@@ -321,7 +321,7 @@ public class NetmailFinder extends NetmailFinderHelper
 		    g.setFont(font);
 		    g.setColor(Color.BLACK);
 		    final String message = "["+count2+"]";
-		    g.drawString(message, getWidth()/4, getHeight()/4);
+		    g.drawString(message, getWidth()/2, (getHeight()/2) + (getHeight()/5));
 		  }
 		  @Override
 		  public void update(Graphics g)
