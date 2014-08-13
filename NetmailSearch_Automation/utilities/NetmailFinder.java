@@ -43,14 +43,6 @@ public class NetmailFinder extends NetmailFinderHelper
 		// TODO Insert code here
 	}
 	
-	private class MyArrayList<T> extends ArrayList<T> {
-		
-		/**
-		 * 
-		 */
-		private static final long serialVersionUID = 1L;
-	
-	
 	//This version uses linkhashmap which should be faster for this scenario
 	//This version uses LINKEDhashmap which keep the order of object inserted and not based on key
 	public TestObject[] findAllTextObjects(GuiTestObject container){
