@@ -7,6 +7,7 @@ import java.awt.Rectangle;
 import java.awt.Window;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Hashtable;
 import java.util.LinkedHashMap;
 
 import resources.utilities.NetmailFinderHelper;
@@ -202,17 +203,42 @@ public class NetmailFinder extends NetmailFinderHelper
 	
 	private void addToMapSkipVisibilityCheck(LinkedHashMap<String, TestObject> map, TestObject o){	
 		//Makes sure same object are not added
-		String tag1 = ((TestObject)o).getProperty(".tag").toString().trim();			
+		Hashtable prop = o.getProperties();		
+		
+		String tag1 = prop.get(".tag").toString().trim();			
 		String contentText1 = ((TestObject)o).getProperty(".contentText").toString().trim();
 		
 		String value1 = "";
-		try{
-			value1 = ((TestObject)o).getProperty(".value").toString().trim();
-		}catch(PropertyNotFoundException e){
-			//do nothing property doesn't exists
-		}		
-		String class1 = ((TestObject)o).getProperty("class").toString().trim();
-		String key = tag1+contentText1+value1+class1;
+		if(prop.containsKey(".value")){
+			value1 = prop.get(".value").toString().trim();
+		}	
+		
+		String class1 = prop.get("class").toString().trim();
+		
+		
+		//Special handling for INPUT objects that have SAME values
+		String rftClass = prop.get(".class").toString();
+		String allInput = "Html.INPUT.*";
+		String name ="";
+		String id ="";
+		if(rftClass.matches(allInput)){	
+			
+			if(prop.containsKey("name")){
+				name = prop.get("name").toString().trim();
+				
+				//Object(s) are not added
+				if(prop.get(".class").toString().contentEquals("Html.INPUT.checkbox")){	
+					return;
+				}
+			}
+		
+			
+			if(prop.containsKey(".id")){
+				id = prop.get(".id").toString().trim();
+			}	
+		}
+			
+		String key = tag1+contentText1+value1+class1+name+id;
 		if(!map.containsKey(key)){
 			map.put(key, o);
 		}
@@ -221,32 +247,12 @@ public class NetmailFinder extends NetmailFinderHelper
 	
 	private void addToMap(LinkedHashMap<String, TestObject> map, TestObject o){
 		//Visibility Check: add only visible objects
-		if(	!((TestObject)o).getProperty(".offsetHeight").toString().contentEquals("0") |
-				!((TestObject)o).getProperty(".offsetWidth").toString().contentEquals("0")  |
-				!((TestObject)o).getProperty(".offsetTop").toString().contentEquals("0")){
-			
-				String tag1 = ((TestObject)o).getProperty(".tag").toString().trim();			
-				String contentText1 = ((TestObject)o).getProperty(".contentText").toString().trim();
+		Hashtable prop = o.getProperties();
+		if(	!prop.get(".offsetHeight").toString().contentEquals("0") |
+				!prop.get(".offsetWidth").toString().contentEquals("0")  |
+				!prop.get(".offsetTop").toString().contentEquals("0")){
 				
-				String value1 = "";
-				try{
-					value1 = ((TestObject)o).getProperty(".value").toString().trim();
-					
-					//Object(s) are not added
-					String rftClass = o.getProperty(".class").toString();
-					if(rftClass.contentEquals("Html.INPUT.checkbox")){	
-						return;
-					}
-				}catch(PropertyNotFoundException e){
-					//do nothing property doesn't exists
-				}
-
-				String class1 = ((TestObject)o).getProperty(".className").toString().trim();		
-				
-				String key = tag1+contentText1+value1+class1;
-				if(!map.containsKey(key)){
-					map.put(key, o);
-				}
+			addToMapSkipVisibilityCheck(map, o);
 		}
 	}
 	
