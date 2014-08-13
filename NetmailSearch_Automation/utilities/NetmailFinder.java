@@ -203,43 +203,8 @@ public class NetmailFinder extends NetmailFinderHelper
 	
 	private void addToMapSkipVisibilityCheck(LinkedHashMap<String, TestObject> map, TestObject o){	
 		//Makes sure same object are not added
-		Hashtable prop = o.getProperties();		
-		
-		String tag1 = prop.get(".tag").toString().trim();			
-		String contentText1 = ((TestObject)o).getProperty(".contentText").toString().trim();
-		
-		String value1 = "";
-		if(prop.containsKey(".value")){
-			value1 = prop.get(".value").toString().trim();
-		}	
-		
-		String class1 = prop.get("class").toString().trim();
-		
-		
-		//Special handling for INPUT objects that have SAME values
-		String rftClass = prop.get(".class").toString();
-		String allInput = "Html.INPUT.*";
-		String name ="";
-		String id ="";
-		if(rftClass.matches(allInput)){	
-			
-			if(prop.containsKey("name")){
-				name = prop.get("name").toString().trim();
-				
-				//Object(s) are not added
-				if(prop.get(".class").toString().contentEquals("Html.INPUT.checkbox")){	
-					return;
-				}
-			}
-		
-			
-			if(prop.containsKey(".id")){
-				id = prop.get(".id").toString().trim();
-			}	
-		}
-			
-		String key = tag1+contentText1+value1+class1+name+id;
-		if(!map.containsKey(key)){
+		String key = getKey(o);
+		if(key !=null && !map.containsKey(key)){
 			map.put(key, o);
 		}
 		
@@ -259,21 +224,51 @@ public class NetmailFinder extends NetmailFinderHelper
 
 
 	private boolean removeFromMap(LinkedHashMap<String, TestObject> map, TestObject o ){
-		String tag1 = ((TestObject)o).getProperty(".tag").toString().trim();			
-		String contentText1 = ((TestObject)o).getProperty(".contentText").toString().trim();
-		
-		String value1 = "";
-		try{
-			value1 = ((TestObject)o).getProperty(".value").toString().trim();
-		}catch(PropertyNotFoundException e){
-			//do nothing property doesn't exists
-		}		
-		String class1 = ((TestObject)o).getProperty("class").toString().trim();
-		String key = tag1+contentText1+value1+class1;
-		if(map.containsKey(key)){
+		String key = getKey(o);
+		if(key !=null && map.containsKey(key)){
 			return map.remove(key) != null;
 		}
 		return false;
+	}
+	
+	private String getKey(TestObject o){
+		Hashtable prop = o.getProperties();		
+		
+		String tag1 = prop.get(".tag").toString().trim();			
+		String contentText1 = ((TestObject)o).getProperty(".contentText").toString().trim();
+		
+		String value1 = "";
+		if(prop.containsKey(".value")){
+			value1 = prop.get(".value").toString().trim();
+		}	
+		
+		String class1 = prop.get(".className").toString().trim();
+		
+		
+		//Special handling for INPUT objects that have SAME values
+		String rftClass = prop.get(".class").toString();
+		String allInput = "Html.INPUT.*";
+		String name ="";
+		String id ="";
+		if(rftClass.matches(allInput)){	
+			
+			if(prop.containsKey("name")){
+				name = prop.get("name").toString().trim();
+				
+				//Object(s) are not added
+				if(prop.get(".class").toString().contentEquals("Html.INPUT.checkbox")){	
+					return null;
+				}
+			}
+		
+			
+			if(prop.containsKey(".id")){
+				id = prop.get(".id").toString().trim();
+			}	
+		}
+			
+		String key = tag1+contentText1+value1+class1+name+id;
+		return key;
 	}
 }
 
