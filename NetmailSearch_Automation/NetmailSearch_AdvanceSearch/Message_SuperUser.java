@@ -67,8 +67,8 @@ public class Message_SuperUser extends Message_SuperUserHelper
 					typeTask = false,			
 					typeNote = false,
 					searchEmbedded = false,
-					invalidRcvDateRange = true,
-					invalidSentDateRange = true,
+					invalidRcvDateRange = false,
+					invalidSentDateRange = false,
 					expectedResults = true,
 					checkBox_Types_Checked = typeMail|typeAppointment|typeTask|typeNote,
 					performVerification = true;
@@ -435,6 +435,152 @@ public class Message_SuperUser extends Message_SuperUserHelper
 		
 	}
 	
+	public void validateSearchResult(){	
+		//Validation Steps
+			if(performVerification){
+				TestObject[] results = html_activeTabBody().find(atDescendant(".class", "Html.TABLE", "class", "x-grid3-row-table"), true);
+				if(!expectedResults && results.length > 0){
+					//No Result Case
+					logError("Expected no result from query");
+					return;
+				}else if(expectedResults && results.length > 0 && !(invalidRcvDateRange|invalidSentDateRange)){
+						logInfo("Start validating the results");
+						//Validate Queries
+						int msgNum = 1;
+						for(TestObject result : results){
+							String msg = "Msg"+msgNum+": Checking if %s contain the word < %s > in the string < %s >";
+							String failMsg = "Msg"+msgNum+": %s field does not contain the word of interest";
+							String successMsg = "Msg"+msgNum+": %s field contains the word of interest";
+							
+							//TODO TYPE APPOINTMENT
+							//TODO TYPE TASK
+							//TODO TYPE NOTE
+							//TYPE MAIL: If is an open message or new mail check if that query specified for message type mail.
+							if(((GuiTestObject)result).compare( messageRow_IE_OPENEMAILVP()) | ((GuiTestObject)result).compare( messageRow_IE_NEWMAILVP())){
+								if(checkBox_Types_Checked){
+									if(!typeMail){
+										logError("Results return message(s) of type mail when not specified too");
+									}
+									
+								}
+							}
+			
+							
+							//Open Message
+							((GuiTestObject)result).hover();
+							((GuiTestObject)result).doubleClick();
+							sleep(2);
+							waitForloading();
+							
+							//Subject VF
+							if(!subject.isEmpty()){
+								String resultString = text_mbSubject().getProperty(".value").toString();
+								logInfo(String.format(msg, "Subject", subject, resultString));
+								if(!resultString.toLowerCase().contains(subject.toLowerCase())){
+									logError(String.format(failMsg, "Subject"));
+								}else{
+									logInfo(String.format(successMsg, "Subject"));
+								}
+							}
+							
+							//From|Sender VF
+							if(!sender.isEmpty()){
+								String resultString = text_mbFrom().getProperty(".value").toString();
+								logInfo(String.format(msg, "FROM", sender, resultString));
+								if(!resultString.toLowerCase().contains(sender.toLowerCase())){
+									logError(String.format(failMsg, "FROM"));
+								}else{
+									logInfo(String.format(successMsg, "FROM"));
+								}
+							}
+							
+							//To|Recipient VF
+							if(!recipient.isEmpty()){
+								String resultString = text_mbTo().getProperty(".value").toString();
+								logInfo(String.format(msg, "TO", recipient, resultString));
+								if(!resultString.toLowerCase().contains(recipient.toLowerCase())){
+									logError(String.format(failMsg, "TO"));
+								}else{
+									logInfo(String.format(successMsg, "TO"));
+								}
+								
+							}
+							
+							//Body message VF
+							if(!body.isEmpty()){
+								String resultString = document_messageBody().getProperty(".text").toString();
+								logInfo(String.format(msg, "MessageBody", body, resultString));
+								if(!resultString.toLowerCase().contains(body.toLowerCase())){
+									logError(String.format(failMsg, "Message Body"));
+								}else{
+									logInfo(String.format(successMsg, "Message Body"));
+								}			
+							}
+							
+							//Receive date verification
+							if(!rcvDate1.isEmpty() && !rcvDate2.isEmpty() && !invalidRcvDateRange){
+								logInfo("Checking if message's receive date respects the range: "+ rcvDate1 +" To "+ rcvDate2);
+								String messageDate = text_mbSentReceivedDate().getProperty(".value").toString();
+				
+								DateFormat formatter = new SimpleDateFormat("M/d/yy");
+								try {
+									java.util.Date messageDateObject = formatter.parse(messageDate);
+									java.util.Date receiveDateObject = formatter.parse(rcvDate1);
+									java.util.Date receive2DateObject = formatter.parse(rcvDate2);
+									logTestResult("Message_date_is_after_the_starting_received_date_contraint", messageDateObject.compareTo(receiveDateObject)>=0);
+									logTestResult("Message_date_is_before_the_ending_receive_date_contraint", messageDateObject.compareTo(receive2DateObject)<=0);
+								} catch (ParseException e) {
+									e.printStackTrace();
+								}	
+							}
+							
+							//Sent date verification
+							if(!sentDate1.isEmpty() && !sentDate2.isEmpty() && !invalidSentDateRange){
+								logInfo("Checking if message's send date respects the constraint: "+ sentDate1 +" To "+ sentDate2);
+								String messageDate = text_mbSentReceivedDate().getProperty(".value").toString();
+				
+								DateFormat formatter = new SimpleDateFormat("M/d/yy");
+								try {
+									java.util.Date messageDateObject = formatter.parse(messageDate);
+									java.util.Date sentDateObject = formatter.parse(sentDate1);
+									java.util.Date sentDate2Object = formatter.parse(sentDate2);
+									logTestResult("Message_date_is_after_the_beginnging_send_date_contraint", messageDateObject.compareTo(sentDateObject)>=0);
+									logTestResult("Message_date_is_before_the_ending_send_date_contraint", messageDateObject.compareTo(sentDate2Object)<=0);
+								} catch (ParseException e) {
+									e.printStackTrace();
+								}	
+							}				
+							
+							//TODO Category VP
+							
+							//Personal Subject VF
+							if(!personal.isEmpty()){
+								link_mbPropertyTab().click();
+								TestObject[] property = html_mbPropertiesUL().find(atDescendant(".class", "Html.A", ".text", "Personal Subject"), true);
+								
+								//Get the DIV surrounding the whole row containing that property and find the only unmappable child by rft with that class
+								TestObject[] propertyValue = property[0].getParent().getParent().find(atDescendant(".class", "Html.DIV", "class", "x-tree-col-text"), false);
+								boolean contains = propertyValue[0].getProperty("title").toString().toLowerCase().contains(personal.toLowerCase());
+								if(!contains){
+									logError(String.format(failMsg, "Personal Subject"));
+								}else{
+									logInfo(String.format(successMsg, "Pesonal Subject"));
+								}
+							}
+								
+							//Close Message box
+							html_mbCloseButtonDiv().click();
+							msgNum++;
+							sleep(2);
+						}
+				}else if(expectedResults && results.length <= 0 && !(invalidRcvDateRange|invalidSentDateRange)){
+					logError("Expected result but none returned");
+					return;
+				}
+			}
+		
+	}
+
 	public void search(){
 		button_searchsubmit().click();
 		logInfo("Clicked search");

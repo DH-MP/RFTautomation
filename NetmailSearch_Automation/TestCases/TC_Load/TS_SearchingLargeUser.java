@@ -44,27 +44,32 @@ public class TS_SearchingLargeUser extends TS_SearchingLargeUserHelper
 //		mc.setTestMode(false);
 //		mc.newCase();
 		
-//		//quickSearch test
-//		QuickSearch qs = new QuickSearch();
-//		qs.search(dpString("quickSearchTerm"));
-//		qs.validateQuickSearch(dpString("quickSearchTerm"), true);
+		if(dpBoolean("testQuickSearch")){
+			//quickSearch test
+			QuickSearch qs = new QuickSearch();
+			qs.search(dpString("quickSearchTerm"));
+			qs.validateQuickSearch(dpString("quickSearchTerm"), true);
+		}
 		
 		//Advance Message Search
 		Message_SuperUser msu = new Message_SuperUser();
-//		msu.clearSearchResult();
+		msu.clearSearchResult();
 		
-		msu.setSubject("Be on top of her");
-		msu.setSender("cristina");
-		msu.setRecipient("pqwcgcl@netmail.com");
-		msu.setBody("selection");
-		msu.setSentDate1("");
-		msu.setSentDate2("");
-		msu.setRcvDate1("10/08/08");
-		msu.setRcvDate2("10/09/08");
-		msu.setPersonal("");
-		msu.setCategory("");
-		msu.inputAdvanceMessage();
-		msu.search();
+		if(dpBoolean("testAdvanceMessage")){
+			msu.setSubject(dpString("subject"));
+			msu.setSender(dpString("sender"));
+			msu.setRecipient(dpString("recipient"));
+			msu.setBody(dpString("body"));
+			msu.setSentDate1(dpString("sendDate1"));
+			msu.setSentDate2(dpString("sendDate2"));
+			msu.setRcvDate1(dpString("rcvDate1"));
+			msu.setRcvDate2(dpString("rcvDate2"));
+			msu.setPersonal(dpString("Personal"));
+			msu.setCategory(dpString("Category"));
+			msu.inputAdvanceMessage();
+			msu.search();
+			msu.validateSearchResult();
+		}
 		
 		
 		

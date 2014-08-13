@@ -239,8 +239,10 @@ public class NetmailFinder extends NetmailFinderHelper
 					}
 				}catch(PropertyNotFoundException e){
 					//do nothing property doesn't exists
-				}		
-				String class1 = ((TestObject)o).getProperty("class").toString().trim();
+				}
+
+				String class1 = ((TestObject)o).getProperty(".className").toString().trim();		
+				
 				String key = tag1+contentText1+value1+class1;
 				if(!map.containsKey(key)){
 					map.put(key, o);
