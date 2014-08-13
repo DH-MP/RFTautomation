@@ -7,6 +7,7 @@ import java.awt.Rectangle;
 import java.awt.Window;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 
 import resources.utilities.NetmailFinderHelper;
 import com.rational.test.ft.*;
@@ -199,11 +200,12 @@ public class NetmailFinder extends NetmailFinderHelper
 	
 	
 	
-	//This version uses hashmap which should be faster for this scenario
+	//This version uses linkhashmap which should be faster for this scenario
+	//This version uses LINKEDhashmap which keep the order of object inserted and not based on key
 	public TestObject[] findAllTextObjects2(GuiTestObject container){
 		
-		HashMap<String, TestObject> leaf = new HashMap<String, TestObject>();
-		HashMap<String, TestObject> parent = new HashMap<String, TestObject>();
+		LinkedHashMap<String, TestObject> leaf = new LinkedHashMap<String, TestObject>();
+		LinkedHashMap<String, TestObject> parent = new LinkedHashMap<String, TestObject>();
 		
 		RegularExpression onlyLetterAndSpaces = new RegularExpression("[\\p{L}\\s]+", false);
 		
@@ -233,7 +235,7 @@ public class NetmailFinder extends NetmailFinderHelper
 		for(TestObject o : objects){
 			addToMap(parent, o);
 		}
-
+	
 		//FILTER OUT PARENT objects that takes the child object text
 		while(!parent.isEmpty()){
 			TestObject[] parents = new TestObject[parent.size()];
@@ -242,7 +244,7 @@ public class NetmailFinder extends NetmailFinderHelper
 				TestObject[] a = object.find(atChild(".contentText", onlyLetterAndSpaces), false);
 				TestObject[] b =  object.find(atChild(".contentText", onlyLetterAndSpaces), true);
 				
-				HashMap<String, TestObject> childs = new HashMap<>();
+				LinkedHashMap<String, TestObject> childs = new LinkedHashMap<>();
 				for(TestObject o : a){
 					addToMap(childs,o);
 				}
@@ -278,7 +280,7 @@ public class NetmailFinder extends NetmailFinderHelper
 				}else{
 					//Object has no children aka the LEAF and contains text
 					addToMap(leaf, object);
-
+	
 				}
 				System.out.println(removeFromMap(parent,object));
 			}
@@ -308,9 +310,9 @@ public class NetmailFinder extends NetmailFinderHelper
 	}
 	
 	
-	
-	
-	public Window window(int count){
+	private Window window(int count){
+		//http://stackoverflow.com/questions/21604762/drawing-over-screen-in-java
+		
 		final int count2 = count;
 		Window w = new Window(null)
 		{
@@ -353,7 +355,7 @@ public class NetmailFinder extends NetmailFinderHelper
 	}
 	
 	
-	public void addToMap(HashMap<String, TestObject> map, TestObject o){
+	private void addToMap(LinkedHashMap<String, TestObject> map, TestObject o){
 		if(	!((TestObject)o).getProperty(".offsetHeight").toString().contentEquals("0") |
 				!((TestObject)o).getProperty(".offsetWidth").toString().contentEquals("0")  |
 				!((TestObject)o).getProperty(".offsetTop").toString().contentEquals("0")){
@@ -377,7 +379,7 @@ public class NetmailFinder extends NetmailFinderHelper
 	
 
 
-	private boolean removeFromMap(HashMap<String, TestObject> map, TestObject o ){
+	private boolean removeFromMap(LinkedHashMap<String, TestObject> map, TestObject o ){
 		String tag1 = ((TestObject)o).getProperty(".tag").toString().trim();			
 		String contentText1 = ((TestObject)o).getProperty(".contentText").toString().trim();
 		
