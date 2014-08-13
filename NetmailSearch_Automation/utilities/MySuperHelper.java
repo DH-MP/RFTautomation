@@ -73,9 +73,10 @@ public abstract class MySuperHelper extends RationalTestScript
 	
 	public void waitForloading(){
 		Property[] p = new Property[4];
+		RegularExpression loadingText = new RegularExpression("(Loading data, please wait...)|(loading the users)", false);
 		p[0] = new Property("class", new RegularExpression(".*ext-el-mask-msg x-mask-loading.*", false));
 		p[1] = new Property("style", new RegularExpression(".*VISIBILITY: visible;.*", false));
-		p[2] = new Property(".text", "Loading data, please wait...");
+		p[2] = new Property(".text", loadingText);
 		p[3] = new Property(".tag", "DIV");
 		TestObject[] loading = find(atDescendant(p), true);
 		while (loading.length>0){

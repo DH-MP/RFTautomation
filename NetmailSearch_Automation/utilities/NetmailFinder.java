@@ -86,13 +86,16 @@ public class NetmailFinder extends NetmailFinderHelper
 			for(TestObject object: parents){
 				TestObject[] a = object.find(atChild(".contentText", onlyLetterAndSpaces), false);
 				TestObject[] b =  object.find(atChild(".contentText", onlyLetterAndSpaces), true);
-				
+
+				//Skip visibility because some hidden objects that contains text.
+				// These hidden objects are needed to determine if
+				// parent contains text that child objects does not have
 				LinkedHashMap<String, TestObject> childs = new LinkedHashMap<>();
 				for(TestObject o : a){
-					addToMap(childs,o);
+					addToMapSkipVisibilityCheck(childs,o);
 				}
 				for(TestObject o : b){
-					addToMap(childs,o);
+					addToMapSkipVisibilityCheck(childs,o);
 				}
 				
 				if(childs.size()>0){		
@@ -197,8 +200,27 @@ public class NetmailFinder extends NetmailFinderHelper
 		}
 	}
 	
+	private void addToMapSkipVisibilityCheck(LinkedHashMap<String, TestObject> map, TestObject o){	
+		//Makes sure same object are not added
+		String tag1 = ((TestObject)o).getProperty(".tag").toString().trim();			
+		String contentText1 = ((TestObject)o).getProperty(".contentText").toString().trim();
+		
+		String value1 = "";
+		try{
+			value1 = ((TestObject)o).getProperty(".value").toString().trim();
+		}catch(PropertyNotFoundException e){
+			//do nothing property doesn't exists
+		}		
+		String class1 = ((TestObject)o).getProperty("class").toString().trim();
+		String key = tag1+contentText1+value1+class1;
+		if(!map.containsKey(key)){
+			map.put(key, o);
+		}
+		
+	}
 	
 	private void addToMap(LinkedHashMap<String, TestObject> map, TestObject o){
+		//Visibility Check: add only visible objects
 		if(	!((TestObject)o).getProperty(".offsetHeight").toString().contentEquals("0") |
 				!((TestObject)o).getProperty(".offsetWidth").toString().contentEquals("0")  |
 				!((TestObject)o).getProperty(".offsetTop").toString().contentEquals("0")){
@@ -209,6 +231,12 @@ public class NetmailFinder extends NetmailFinderHelper
 				String value1 = "";
 				try{
 					value1 = ((TestObject)o).getProperty(".value").toString().trim();
+					
+					//Object(s) are not added
+					String rftClass = o.getProperty(".class").toString();
+					if(rftClass.contentEquals("Html.INPUT.checkbox")){	
+						return;
+					}
 				}catch(PropertyNotFoundException e){
 					//do nothing property doesn't exists
 				}		

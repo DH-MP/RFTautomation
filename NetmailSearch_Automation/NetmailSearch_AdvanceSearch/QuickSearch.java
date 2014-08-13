@@ -49,6 +49,9 @@ public class QuickSearch extends QuickSearchHelper
 	public void testMain(Object[] args) {
 		validateQuickSearch("test categories", true);
 	}
+	
+	
+	
 	public void search(String searchTerm){
 		text_quickSearchField0().click();
 		browser_htmlBrowser().inputChars(searchTerm);
@@ -56,8 +59,6 @@ public class QuickSearch extends QuickSearchHelper
 	}
 	public void validateQuickSearch(String searchTerm, Boolean expectedResults)
 	{
-		
-
 		TestObject[] results = HelperClass.getActiveTabBody()[0].find(atDescendant(".class", "Html.TABLE", "class", "x-grid3-row-table"), true);
 		if(!expectedResults && results.length > 0){
 			//No Result Case

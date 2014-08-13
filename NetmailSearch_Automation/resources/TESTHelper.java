@@ -20,11 +20,11 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>TEST</b><br>
- * Generated     : <b>2014/08/12 2:05:49 PM</b><br>
+ * Generated     : <b>2014/08/13 12:19:03 PM</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows Server 2008 R2 x86 6.1 <br>
  * 
- * @since  August 12, 2014
+ * @since  August 13, 2014
  * @author Administrator
  */
 public abstract class TESTHelper extends utilities.MySuperHelper
@@ -65,6 +65,35 @@ public abstract class TESTHelper extends utilities.MySuperHelper
 	{
 		return new DocumentTestObject(
                         getMappedTestObject("document_rftOutlookWebApp"), anchor, flags);
+	}
+	
+	/**
+	 * Details: with default state.
+	 *		.text : Address Book Cache Cached Address Book Update Settings Run cache update process  ...
+	 * 		.class : Html.FORM
+	 * 		.title : 
+	 * 		.name : Details
+	 * 		.classIndex : 0
+	 * 		class : 
+	 */
+	protected GuiTestObject form_details() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("form_details"));
+	}
+	/**
+	 * Details: with specific test context and state.
+	 *		.text : Address Book Cache Cached Address Book Update Settings Run cache update process  ...
+	 * 		.class : Html.FORM
+	 * 		.title : 
+	 * 		.name : Details
+	 * 		.classIndex : 0
+	 * 		class : 
+	 */
+	protected GuiTestObject form_details(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("form_details"), anchor, flags);
 	}
 	
 	/**
@@ -208,10 +237,10 @@ public abstract class TESTHelper extends utilities.MySuperHelper
 	/**
 	 * UL: with default state.
 	 *		.text : netmail Plattform Secure Archive Cluster (10.1.30.64) Agenten Knoten Richtlinien ...
-	 * 		.class : Html.UL
 	 * 		.title : 
-	 * 		.classIndex : 0
+	 * 		.class : Html.UL
 	 * 		class : x-tree-root-ct x-tree-arrows
+	 * 		.classIndex : 0
 	 */
 	protected GuiTestObject html_ul() 
 	{
@@ -221,10 +250,10 @@ public abstract class TESTHelper extends utilities.MySuperHelper
 	/**
 	 * UL: with specific test context and state.
 	 *		.text : netmail Plattform Secure Archive Cluster (10.1.30.64) Agenten Knoten Richtlinien ...
-	 * 		.class : Html.UL
 	 * 		.title : 
-	 * 		.classIndex : 0
+	 * 		.class : Html.UL
 	 * 		class : x-tree-root-ct x-tree-arrows
+	 * 		.classIndex : 0
 	 */
 	protected GuiTestObject html_ul(TestObject anchor, long flags) 
 	{

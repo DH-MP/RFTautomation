@@ -551,6 +551,7 @@ public class manageCase extends manageCaseHelper
 			String[] locationNames = locations.split(";");
 			for(String location : locationNames){
 				checkLocations(location);
+				waitForloading();
 			}
 		}
 		
