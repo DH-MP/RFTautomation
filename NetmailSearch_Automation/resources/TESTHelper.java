@@ -20,7 +20,7 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>TEST</b><br>
- * Generated     : <b>2014/08/13 12:19:03 PM</b><br>
+ * Generated     : <b>2014/08/13 3:18:05 PM</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows Server 2008 R2 x86 6.1 <br>
  * 
@@ -70,11 +70,11 @@ public abstract class TESTHelper extends utilities.MySuperHelper
 	/**
 	 * Details: with default state.
 	 *		.text : Address Book Cache Cached Address Book Update Settings Run cache update process  ...
-	 * 		.class : Html.FORM
 	 * 		.title : 
+	 * 		.class : Html.FORM
 	 * 		.name : Details
-	 * 		.classIndex : 0
 	 * 		class : 
+	 * 		.classIndex : 0
 	 */
 	protected GuiTestObject form_details() 
 	{
@@ -84,16 +84,43 @@ public abstract class TESTHelper extends utilities.MySuperHelper
 	/**
 	 * Details: with specific test context and state.
 	 *		.text : Address Book Cache Cached Address Book Update Settings Run cache update process  ...
-	 * 		.class : Html.FORM
 	 * 		.title : 
+	 * 		.class : Html.FORM
 	 * 		.name : Details
-	 * 		.classIndex : 0
 	 * 		class : 
+	 * 		.classIndex : 0
 	 */
 	protected GuiTestObject form_details(TestObject anchor, long flags) 
 	{
 		return new GuiTestObject(
                         getMappedTestObject("form_details"), anchor, flags);
+	}
+	
+	/**
+	 * Details: with default state.
+	 *		.text : Address Book Cache Cached Address Book Update Settings Run cache update process  ...
+	 * 		.class : Html.FORM
+	 * 		.title : 
+	 * 		.name : Details
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject form_details2() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("form_details2"));
+	}
+	/**
+	 * Details: with specific test context and state.
+	 *		.text : Address Book Cache Cached Address Book Update Settings Run cache update process  ...
+	 * 		.class : Html.FORM
+	 * 		.title : 
+	 * 		.name : Details
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject form_details2(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("form_details2"), anchor, flags);
 	}
 	
 	/**
@@ -239,8 +266,8 @@ public abstract class TESTHelper extends utilities.MySuperHelper
 	 *		.text : netmail Plattform Secure Archive Cluster (10.1.30.64) Agenten Knoten Richtlinien ...
 	 * 		.title : 
 	 * 		.class : Html.UL
-	 * 		class : x-tree-root-ct x-tree-arrows
 	 * 		.classIndex : 0
+	 * 		class : x-tree-root-ct x-tree-arrows
 	 */
 	protected GuiTestObject html_ul() 
 	{
@@ -252,8 +279,8 @@ public abstract class TESTHelper extends utilities.MySuperHelper
 	 *		.text : netmail Plattform Secure Archive Cluster (10.1.30.64) Agenten Knoten Richtlinien ...
 	 * 		.title : 
 	 * 		.class : Html.UL
-	 * 		class : x-tree-root-ct x-tree-arrows
 	 * 		.classIndex : 0
+	 * 		class : x-tree-root-ct x-tree-arrows
 	 */
 	protected GuiTestObject html_ul(TestObject anchor, long flags) 
 	{

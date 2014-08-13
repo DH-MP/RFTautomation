@@ -85,6 +85,9 @@ public class NetmailFinder extends NetmailFinderHelper
 			TestObject[] parents = new TestObject[parent.size()];
 			parent.values().toArray(parents);
 			for(TestObject object: parents){
+				if(object.getProperty(".id").toString().contentEquals("AB_FS")){
+					System.out.println("");
+				}
 				TestObject[] a = object.find(atChild(".contentText", onlyLetterAndSpaces), false);
 				TestObject[] b =  object.find(atChild(".contentText", onlyLetterAndSpaces), true);
 
@@ -104,6 +107,7 @@ public class NetmailFinder extends NetmailFinderHelper
 					String contentText = object.getProperty(".contentText").toString();
 					contentText = contentText.replaceAll("\\r", "");
 					contentText = contentText.replaceAll("\\n", "");
+					contentText = contentText.replaceAll("\\t", "");
 					
 					TestObject[] childObjects = new TestObject[childs.size()];
 					childs.values().toArray(childObjects);
@@ -112,6 +116,7 @@ public class NetmailFinder extends NetmailFinderHelper
 						String childContentText = childOfObject.getProperty(".contentText").toString();
 						childContentText = childContentText.replaceAll("\\r", "");
 						childContentText = childContentText.replaceAll("\\n", "");
+						childContentText = childContentText.replaceAll("\\t", "");
 						contentText = contentText.replace(childContentText, "");
 					}
 					
@@ -140,6 +145,7 @@ public class NetmailFinder extends NetmailFinderHelper
 			String contentText = o.getProperty(".contentText").toString();
 			contentText = contentText.replaceAll("\\r", "");
 			contentText = contentText.replaceAll("\\n", "");
+			contentText = contentText.replaceAll("\\t", "");
 			if(contentText.replaceAll(" ", "").isEmpty()){
 				try{
 					//If content text is empty check .value
