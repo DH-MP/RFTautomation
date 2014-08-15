@@ -69,13 +69,13 @@ public class NetmailFinder extends NetmailFinderHelper
 		}
 			
 		//Not Mappable
-		objects = container.find(atChild(".contentText",  onlyLetterAndSpaces), false);
+		objects = container.find(atChild(".text",  onlyLetterAndSpaces), false);
 		for(TestObject o : objects){
 			addToMap(parent, o);
 		}
 		
 		//Mappable
-		objects = container.find(atChild(".contentText",  onlyLetterAndSpaces), true);	
+		objects = container.find(atChild(".text",  onlyLetterAndSpaces), true);	
 		for(TestObject o : objects){
 			addToMap(parent, o);
 		}
@@ -85,11 +85,8 @@ public class NetmailFinder extends NetmailFinderHelper
 			TestObject[] parents = new TestObject[parent.size()];
 			parent.values().toArray(parents);
 			for(TestObject object: parents){
-				if(object.getProperty(".id").toString().contentEquals("AB_FS")){
-					System.out.println("");
-				}
-				TestObject[] a = object.find(atChild(".contentText", onlyLetterAndSpaces), false);
-				TestObject[] b =  object.find(atChild(".contentText", onlyLetterAndSpaces), true);
+				TestObject[] a = object.find(atChild(".text", onlyLetterAndSpaces), false);
+				TestObject[] b =  object.find(atChild(".text", onlyLetterAndSpaces), true);
 
 				//Skip visibility because some hidden objects that contains text.
 				// These hidden objects are needed to determine if
@@ -104,19 +101,15 @@ public class NetmailFinder extends NetmailFinderHelper
 				
 				if(childs.size()>0){		
 					//Object has children that contain text
-					String contentText = object.getProperty(".contentText").toString();
-					contentText = contentText.replaceAll("\\r", "");
-					contentText = contentText.replaceAll("\\n", "");
-					contentText = contentText.replaceAll("\\t", "");
+					String contentText = object.getProperty(".text").toString();
+					contentText = contentText.replaceAll("\\r|\\t|\\n", "");
 					
 					TestObject[] childObjects = new TestObject[childs.size()];
 					childs.values().toArray(childObjects);
 					for(TestObject childOfObject : childObjects){
 						//Make sure that all string in parent object is within child objects.
-						String childContentText = childOfObject.getProperty(".contentText").toString();
-						childContentText = childContentText.replaceAll("\\r", "");
-						childContentText = childContentText.replaceAll("\\n", "");
-						childContentText = childContentText.replaceAll("\\t", "");
+						String childContentText = childOfObject.getProperty(".text").toString();
+						childContentText = contentText.replaceAll("\\r|\\t|\\n", "");
 						contentText = contentText.replace(childContentText, "");
 					}
 					
@@ -142,10 +135,8 @@ public class NetmailFinder extends NetmailFinderHelper
 		TestObject[] finalArray = new TestObject[leaf.size()];
 		leaf.values().toArray(finalArray);
 		for(TestObject o : finalArray){
-			String contentText = o.getProperty(".contentText").toString();
-			contentText = contentText.replaceAll("\\r", "");
-			contentText = contentText.replaceAll("\\n", "");
-			contentText = contentText.replaceAll("\\t", "");
+			String contentText = o.getProperty(".text").toString();
+			contentText = contentText.replaceAll("\\r|\\t|\\n", "");
 			if(contentText.replaceAll(" ", "").isEmpty()){
 				try{
 					//If content text is empty check .value
@@ -219,11 +210,20 @@ public class NetmailFinder extends NetmailFinderHelper
 	private void addToMap(LinkedHashMap<String, TestObject> map, TestObject o){
 		//Visibility Check: add only visible objects
 		Hashtable prop = o.getProperties();
-		if(	!prop.get(".offsetHeight").toString().contentEquals("0") |
-				!prop.get(".offsetWidth").toString().contentEquals("0")  |
-				!prop.get(".offsetTop").toString().contentEquals("0")){
-				
-			addToMapSkipVisibilityCheck(map, o);
+		
+		if(prop.containsKey(".offsetHeight")){
+			if(	!prop.get(".offsetHeight").toString().contentEquals("0") |
+					!prop.get(".offsetWidth").toString().contentEquals("0")  |
+					!prop.get(".offsetTop").toString().contentEquals("0")){
+					
+				addToMapSkipVisibilityCheck(map, o);
+			}
+		}else{
+			//This object does not have those property
+			Rectangle rect = ((GuiTestObject)o).getScreenRectangle();
+			if( rect.x != 0 | rect.y != 0 | rect.height != 0 | rect.width !=0){	
+				addToMapSkipVisibilityCheck(map, o);
+			}
 		}
 	}
 	
@@ -240,16 +240,18 @@ public class NetmailFinder extends NetmailFinderHelper
 	private String getKey(TestObject o){
 		Hashtable prop = o.getProperties();		
 		
-		String tag1 = prop.get(".tag").toString().trim();			
-		String contentText1 = ((TestObject)o).getProperty(".contentText").toString().trim();
+		String rftClass1 = prop.get(".class").toString().trim();			
+		String contentText1 = ((TestObject)o).getProperty(".text").toString().trim();
 		
 		String value1 = "";
 		if(prop.containsKey(".value")){
 			value1 = prop.get(".value").toString().trim();
 		}	
 		
-		String class1 = prop.get(".className").toString().trim();
-		
+		String class1 = "";
+		if(prop.containsKey(".className")){
+			class1 = prop.get(".className").toString().trim();
+		}	
 		
 		//Special handling for INPUT objects that have SAME values
 		String rftClass = prop.get(".class").toString();
@@ -273,7 +275,7 @@ public class NetmailFinder extends NetmailFinderHelper
 			}	
 		}
 			
-		String key = tag1+contentText1+value1+class1+name+id;
+		String key = rftClass1+contentText1+value1+class1+name+id;
 		return key;
 	}
 }

@@ -18,6 +18,8 @@ import com.rational.test.ft.value.*;
 import com.rational.test.ft.vp.*;
 import com.ibm.jsse2.i;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
+
+import de.tu_darmstadt.informatik.rbg.hatlak.rockridge.impl.SUSPFactory;
 /**
  * Description   : Functional Test Script
  * @author Administrator
@@ -149,13 +151,21 @@ public class MessageWordListTab_SuperUser extends MessageWordListTab_SuperUserHe
 	}
 	
 	public void inputWordList(String wordList){
+		inputWordList(wordList, " ");
+	}
+	public void inputWordList(String wordList, String splitBy){
+		setWordList(wordList);
 		openWordListTab();
 		if(wordList != null && !wordList.isEmpty()){
 			text_wordlist().click();
-			
-			for(String word: wordList.toLowerCase().split(" ")){
-				browser_htmlBrowser().inputChars(word);
-				browser_htmlBrowser().inputKeys("~");
+			for(String word: wordList.toLowerCase().split(splitBy)){
+				try{
+					browser_htmlBrowser().inputChars(word);
+					browser_htmlBrowser().inputKeys("~");
+				}catch(StringNotInCodePageException e){
+					String currentText = text_wordlist().getProperty(".value").toString();
+					text_wordlist().setProperty(".text", currentText+"\\n"+word);
+				}
 				logInfo("input < "+word+" > in wordlist text box");
 			}
 		}
@@ -179,8 +189,78 @@ public class MessageWordListTab_SuperUser extends MessageWordListTab_SuperUserHe
 	}
 	
 	public MessageWordListTab_SuperUser setWordList(String wordList){
-		this.wordList = wordList;
+		this.wordList = wordList == null ? "" : wordList;
 		return this;
+	}
+	
+	public void validateSearchResult(){
+		performValidation(" ");
+	}
+	
+	
+	public void validateSearchResult(String splitBy){
+		performValidation(splitBy);
+	}
+	
+	private void performValidation(String splitBy){
+		if(wordList == null && wordList.isEmpty()){
+			return;
+		}
+		boolean matchesBody = false, matchesHeader = false;
+		String[] words = wordList.toLowerCase().split(splitBy);
+		TestObject[] results = html_activeTabBody().find(atDescendant(".tag", "TABLE", "class", "x-grid3-row-table"));
+		
+		for(int i = 0; i<results.length ; i++){
+			GuiTestObject msg = (GuiTestObject) results[i];
+			msg.hover();
+			msg.click();
+			msg.doubleClick();
+			sleep(2);
+			waitForloading();
+			logInfo("Opened message number "+i);
+			logInfo("Validating if word list matches this msg information");
+			text_mbSubject().waitForExistence(120, DISABLED);
+			
+			
+			//Word List condition: all the words must exists in atleast one of the following fields: from, cc, subject message body, etc.
+			TestObject[] highlightedTexts = frame_mbMessageBody().find(atDescendant(".class", "Html.SPAN", "style", "BACKGROUND-COLOR: #feff80"), false);
+			System.out.println("NUMBER OF HIGHLIGHTED TEXT IN BODY:"+highlightedTexts.length);
+			Boolean oneOfWordFound = false;
+			for (String word : words){	
+				word = word.toLowerCase().trim();
+				//Find the word in To,From,CC,Subject field 
+				Boolean[] hit = {
+									text_mbTo().getProperty(".value").toString().trim().toLowerCase().matches(".*"+word+".*"),
+									text_mbSentReceivedDate().getProperty(".value").toString().trim().toLowerCase().matches(".*"+word+".*"),
+									text_mbSubject().getProperty(".value").toString().trim().toLowerCase().matches(".*"+word+".*"),
+									text_mbFrom().getProperty(".value").toString().trim().toLowerCase().matches(".*"+word+".*"),							
+								};
+				matchesHeader = Arrays.asList(hit).contains(true);
+				
+				//Match highlighted text against word, if word exists in text but not highlighted it is also a fail.
+				for(TestObject higlightedTextObject : highlightedTexts){
+					String higlightedText = higlightedTextObject.getProperty(".text").toString().toLowerCase().trim();
+					if(higlightedText.matches(".*"+word+".*")){
+						matchesBody = true;
+						break;//Found a highlighted text term that matches word in message body
+					}
+				}
+				
+				if(!(matchesHeader|matchesBody)){
+					logInfo("The word < "+word+" >was not found in msg"+i, browser_htmlBrowser().getScreenSnapshot());
+				}else{
+					oneOfWordFound = true;
+				}
+				
+			}
+			highlightedTexts=null;
+			html_mbClose().click();
+			logInfo("closed message box");
+			
+			if(!oneOfWordFound){
+				logError("no words found in message["+i+"]", browser_htmlBrowser().getScreenSnapshot());
+			}
+		}
 	}
 }
 

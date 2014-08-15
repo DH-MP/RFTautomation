@@ -8,6 +8,8 @@ import resources.TestCases.TC_842_SearchBoundaryStressTests.TS_1009_SearchWith20
 import utilities.HelperScript;
 
 import Case_Management.manageCase;
+import NetmailSearch_AdvanceSearch.MessageWordListTab_SuperUser;
+import NetmailSearch_AdvanceSearch.Message_SuperUser;
 
 import com.rational.test.ft.*;
 import com.rational.test.ft.object.interfaces.*;
@@ -52,7 +54,7 @@ public class TS_1009_SearchWith20PlusTabs extends TS_1009_SearchWith20PlusTabsHe
 		
 		//New Case
 		manageCase mc = new manageCase();
-		mc.setName(caseName).setLocations("ALS").setTestMode(false).newCase();
+		mc.setName(caseName).setLocations("LargeUser;ALS").setTestMode(false).newCase();
 		waitForloading();
 		
 		//Add tabs put default tab into account
@@ -74,9 +76,11 @@ public class TS_1009_SearchWith20PlusTabs extends TS_1009_SearchWith20PlusTabsHe
 		
 		Object[] al2 = {caseName, "Super User"};
 		callScript("adminLogin", al2);
+		sleep(5);
+		waitForloading();
 		waitForloading();
 		
-		vpManual("numOfTabSaved", numberOfTabs+1, findAllTabs().length ).performTest();
+		vpManual("numOfTabSaved", numberOfTabs, findAllTabs().length ).performTest();
 		
 		//Test search
 		TestMessageAndWordList();
@@ -127,7 +131,7 @@ public class TS_1009_SearchWith20PlusTabs extends TS_1009_SearchWith20PlusTabsHe
 		dataPoolIter.dpReset();
 		
 		//Advance Search
-//		while(!dataPoolIter.dpDone()){
+		while(!dataPoolIter.dpDone()){
 			HashMap<String, String> query = new HashMap<String, String> ();
 			query.put("subject", dataPoolIter.dpString("subject")); 
 			query.put("sender", dataPoolIter.dpString("sender")); 
@@ -152,11 +156,23 @@ public class TS_1009_SearchWith20PlusTabs extends TS_1009_SearchWith20PlusTabsHe
 			Object[] asmnu = {query, booleanQuery};
 			callScript("NetmailSearch_AdvanceSearch.Message_SuperUser", asmnu);
 			
-			Object[] wordList = {dataPoolIter.dpString("wordList")};
-			callScript("NetmailSearch_AdvanceSearch.MessageWordListTab_SuperUser", wordList);
+
+
+			if(dataPoolIter.dpString("wordList")!=null && !dataPoolIter.dpString("wordList").isEmpty()){
+				Message_SuperUser msu = new Message_SuperUser();
+				msu.clearSearchResult();
+				msu.openAdvanceSearchMessage();
+				
+				MessageWordListTab_SuperUser mwltsu = new MessageWordListTab_SuperUser();
+				mwltsu.openWordListTab();
+				mwltsu.inputWordList(dataPoolIter.dpString("wordList"), ";");
+				mwltsu.search();
+				waitForloading();
+				mwltsu.validateSearchResult(";");
+			}
 			
-//			dataPoolIter.dpNext();
-//		}
+			dataPoolIter.dpNext();
+		}
 	}
 }
 

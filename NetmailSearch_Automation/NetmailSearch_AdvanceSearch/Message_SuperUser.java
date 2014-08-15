@@ -669,102 +669,102 @@ public class Message_SuperUser extends Message_SuperUserHelper
 	
 	/********************** SETTERS *************************/
 	public void setSubject(String subject) {
-		this.subject = subject;
+		this.subject = subject == null ? "" : subject;
 	}
 
 
 	public void setSender(String sender) {
-		this.sender = sender;
+		this.sender = sender == null ? "" : sender;
 	}
 
 
 	public void setRecipient(String recipient) {
-		this.recipient = recipient;
+		this.recipient = recipient == null ? "" :recipient;
 	}
 
 
 	public void setBody(String body) {
-		this.body = body;
+		this.body = body == null ? "" : body;
 	}
 
 
 	public void setSentDate1(String sentDate1) {
-		this.sentDate1 = sentDate1;
+		this.sentDate1 = sentDate1 == null ? "" : sentDate1;
 	}
 
 
 	public void setSentDate2(String sentDate2) {
-		this.sentDate2 = sentDate2;
+		this.sentDate2 = sentDate2 == null ? "" : sentDate2;
 	}
 
 
 	public void setRcvDate1(String rcvDate1) {
-		this.rcvDate1 = rcvDate1;
+		this.rcvDate1 = rcvDate1 == null ? "" : rcvDate1;
 	}
 
 
 	public void setRcvDate2(String rcvDate2) {
-		this.rcvDate2 = rcvDate2;
+		this.rcvDate2 = rcvDate2 == null ? "" : rcvDate2;
 	}
 
 
 	public void setPersonal(String personal) {
-		this.personal = personal;
+		this.personal = personal == null ? "" : personal;
 	}
 
 
 	public void setCategory(String category) {
-		this.category = category;
+		this.category = category == null ? "" : category;
 	}
 
 
 	public void setTypeMail(Boolean typeMail) {
-		this.typeMail = typeMail;
+		this.typeMail = typeMail == null ? false : typeMail;
 	}
 
 
 	public void setTypeAppointment(Boolean typeAppointment) {
-		this.typeAppointment = typeAppointment;
+		this.typeAppointment = typeAppointment == null ? false : typeAppointment;
 	}
 
 
 	public void setTypeTask(Boolean typeTask) {
-		this.typeTask = typeTask;
+		this.typeTask = typeTask == null ? false : typeTask;
 	}
 
 
 	public void setTypeNote(Boolean typeNote) {
-		this.typeNote = typeNote;
+		this.typeNote = typeNote == null ? false : typeNote;
 	}
 
 
 	public void setSearchEmbedded(Boolean searchEmbedded) {
-		this.searchEmbedded = searchEmbedded;
+		this.searchEmbedded = searchEmbedded == null ? false : searchEmbedded;
 	}
 
 
 	public void setInvalidRcvDateRange(Boolean invalidRcvDateRange) {
-		this.invalidRcvDateRange = invalidRcvDateRange;
+		this.invalidRcvDateRange = invalidRcvDateRange == null ? false : invalidRcvDateRange;
 	}
 
 
 	public void setInvalidSentDateRange(Boolean invalidSentDateRange) {
-		this.invalidSentDateRange = invalidSentDateRange;
+		this.invalidSentDateRange = invalidSentDateRange == null ? false :invalidSentDateRange;
 	}
 
 
 	public void setExpectedResults(Boolean expectedResults) {
-		this.expectedResults = expectedResults;
+		this.expectedResults = expectedResults == null ? true : expectedResults;
 	}
 
 
 	public void setCheckBox_Types_Checked(Boolean checkBox_Types_Checked) {
-		this.checkBox_Types_Checked = checkBox_Types_Checked;
+		this.checkBox_Types_Checked = checkBox_Types_Checked == null ? false : checkBox_Types_Checked;
 	}
 
 
 	public void setPerformVerification(Boolean performVerification) {
-		this.performVerification = performVerification;
+		this.performVerification = performVerification == null ? true : performVerification;
 	}
 }
 

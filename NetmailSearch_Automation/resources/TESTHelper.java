@@ -20,11 +20,11 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>TEST</b><br>
- * Generated     : <b>2014/08/13 3:18:05 PM</b><br>
+ * Generated     : <b>2014/08/14 11:57:49 AM</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows Server 2008 R2 x86 6.1 <br>
  * 
- * @since  August 13, 2014
+ * @since  August 14, 2014
  * @author Administrator
  */
 public abstract class TESTHelper extends utilities.MySuperHelper
@@ -46,6 +46,58 @@ public abstract class TESTHelper extends utilities.MySuperHelper
 	{
 		return new BrowserTestObject(
                         getMappedTestObject("browser_htmlBrowser"), anchor, flags);
+	}
+	
+	/**
+	 * AdvancedSearchbutton: with default state.
+	 *		.text : Advanced Search
+	 * 		type : button
+	 * 		.class : Html.BUTTON
+	 * 		.title : 
+	 * 		.name : 
+	 * 		.classIndex : 0
+	 * 		class :  x-btn-text
+	 */
+	protected GuiTestObject button_advancedSearchbutton() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("button_advancedSearchbutton"));
+	}
+	/**
+	 * AdvancedSearchbutton: with specific test context and state.
+	 *		.text : Advanced Search
+	 * 		type : button
+	 * 		.class : Html.BUTTON
+	 * 		.title : 
+	 * 		.name : 
+	 * 		.classIndex : 0
+	 * 		class :  x-btn-text
+	 */
+	protected GuiTestObject button_advancedSearchbutton(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("button_advancedSearchbutton"), anchor, flags);
+	}
+	
+	/**
+	 * aboutBlank: with default state.
+	 *		.class : Html.HtmlDocument
+	 * 		.title : 
+	 */
+	protected DocumentTestObject document_aboutBlank() 
+	{
+		return new DocumentTestObject(
+                        getMappedTestObject("document_aboutBlank"));
+	}
+	/**
+	 * aboutBlank: with specific test context and state.
+	 *		.class : Html.HtmlDocument
+	 * 		.title : 
+	 */
+	protected DocumentTestObject document_aboutBlank(TestObject anchor, long flags) 
+	{
+		return new DocumentTestObject(
+                        getMappedTestObject("document_aboutBlank"), anchor, flags);
 	}
 	
 	/**
@@ -99,8 +151,8 @@ public abstract class TESTHelper extends utilities.MySuperHelper
 	/**
 	 * Details: with default state.
 	 *		.text : Address Book Cache Cached Address Book Update Settings Run cache update process  ...
-	 * 		.class : Html.FORM
 	 * 		.title : 
+	 * 		.class : Html.FORM
 	 * 		.name : Details
 	 * 		.classIndex : 0
 	 */
@@ -112,8 +164,8 @@ public abstract class TESTHelper extends utilities.MySuperHelper
 	/**
 	 * Details: with specific test context and state.
 	 *		.text : Address Book Cache Cached Address Book Update Settings Run cache update process  ...
-	 * 		.class : Html.FORM
 	 * 		.title : 
+	 * 		.class : Html.FORM
 	 * 		.name : Details
 	 * 		.classIndex : 0
 	 */
@@ -121,6 +173,87 @@ public abstract class TESTHelper extends utilities.MySuperHelper
 	{
 		return new GuiTestObject(
                         getMappedTestObject("form_details2"), anchor, flags);
+	}
+	
+	/**
+	 * _0173: with default state.
+	 *		.text : \u0173
+	 * 		.title : 0173
+	 * 		.class : Html.LI
+	 * 		.classIndex : 371
+	 * 		class : 
+	 */
+	protected GuiTestObject html__0173() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("html__0173"));
+	}
+	/**
+	 * _0173: with specific test context and state.
+	 *		.text : \u0173
+	 * 		.title : 0173
+	 * 		.class : Html.LI
+	 * 		.classIndex : 371
+	 * 		class : 
+	 */
+	protected GuiTestObject html__0173(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("html__0173"), anchor, flags);
+	}
+	
+	/**
+	 * _05CA: with default state.
+	 *		.text : \u05ca
+	 * 		.title : 05CA
+	 * 		.class : Html.LI
+	 * 		class : 
+	 * 		.classIndex : 1482
+	 */
+	protected GuiTestObject html__05CA() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("html__05CA"));
+	}
+	/**
+	 * _05CA: with specific test context and state.
+	 *		.text : \u05ca
+	 * 		.title : 05CA
+	 * 		.class : Html.LI
+	 * 		class : 
+	 * 		.classIndex : 1482
+	 */
+	protected GuiTestObject html__05CA(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("html__05CA"), anchor, flags);
+	}
+	
+	/**
+	 * _061A: with default state.
+	 *		.text : \u061a
+	 * 		.title : 061A
+	 * 		.class : Html.LI
+	 * 		class : 
+	 * 		.classIndex : 1562
+	 */
+	protected GuiTestObject html__061A() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("html__061A"));
+	}
+	/**
+	 * _061A: with specific test context and state.
+	 *		.text : \u061a
+	 * 		.title : 061A
+	 * 		.class : Html.LI
+	 * 		class : 
+	 * 		.classIndex : 1562
+	 */
+	protected GuiTestObject html__061A(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("html__061A"), anchor, flags);
 	}
 	
 	/**
@@ -239,6 +372,81 @@ public abstract class TESTHelper extends utilities.MySuperHelper
 	}
 	
 	/**
+	 * extGen1184: with default state.
+	 *		.text : (clear search)
+	 * 		.className : x-menu-item-text
+	 * 		.class : Html.SPAN
+	 * 		.title : 
+	 */
+	protected GuiTestObject html_extGen1184() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("html_extGen1184"));
+	}
+	/**
+	 * extGen1184: with specific test context and state.
+	 *		.text : (clear search)
+	 * 		.className : x-menu-item-text
+	 * 		.class : Html.SPAN
+	 * 		.title : 
+	 */
+	protected GuiTestObject html_extGen1184(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("html_extGen1184"), anchor, flags);
+	}
+	
+	/**
+	 * extGen240: with default state.
+	 *		.text : LargeUser2 LargeUser
+	 * 		.class : Html.UL
+	 * 		.title : 
+	 * 		.classIndex : 0
+	 * 		class : x-tree-root-ct x-tree-arrows
+	 */
+	protected GuiTestObject html_extGen240() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("html_extGen240"));
+	}
+	/**
+	 * extGen240: with specific test context and state.
+	 *		.text : LargeUser2 LargeUser
+	 * 		.class : Html.UL
+	 * 		.title : 
+	 * 		.classIndex : 0
+	 * 		class : x-tree-root-ct x-tree-arrows
+	 */
+	protected GuiTestObject html_extGen240(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("html_extGen240"), anchor, flags);
+	}
+	
+	/**
+	 * extGen6086: with default state.
+	 *		.className : ext-el-mask
+	 * 		.class : Html.DIV
+	 * 		.classIndex : 23
+	 */
+	protected GuiTestObject html_extGen6086() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("html_extGen6086"));
+	}
+	/**
+	 * extGen6086: with specific test context and state.
+	 *		.className : ext-el-mask
+	 * 		.class : Html.DIV
+	 * 		.classIndex : 23
+	 */
+	protected GuiTestObject html_extGen6086(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("html_extGen6086"), anchor, flags);
+	}
+	
+	/**
 	 * framework: with default state.
 	 *		.className : widget_mplusFramework hasResizeHandler
 	 * 		.class : Html.DIV
@@ -286,6 +494,31 @@ public abstract class TESTHelper extends utilities.MySuperHelper
 	{
 		return new GuiTestObject(
                         getMappedTestObject("html_ul"), anchor, flags);
+	}
+	
+	/**
+	 * UUI_Header_Label_NewFeaturesLink: with default state.
+	 *		.text : Klicken Sie hier, um mehr über die neuen Netmail Features zu erfahren.
+	 * 		.className : 
+	 * 		.title : 
+	 * 		.class : Html.SPAN
+	 */
+	protected GuiTestObject html_uuI_Header_Label_NewFeatu() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("html_uuI_Header_Label_NewFeatu"));
+	}
+	/**
+	 * UUI_Header_Label_NewFeaturesLink: with specific test context and state.
+	 *		.text : Klicken Sie hier, um mehr über die neuen Netmail Features zu erfahren.
+	 * 		.className : 
+	 * 		.title : 
+	 * 		.class : Html.SPAN
+	 */
+	protected GuiTestObject html_uuI_Header_Label_NewFeatu(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("html_uuI_Header_Label_NewFeatu"), anchor, flags);
 	}
 	
 	/**
@@ -353,6 +586,90 @@ public abstract class TESTHelper extends utilities.MySuperHelper
 	{
 		return new TopLevelSubitemTestObject(
                         getMappedTestObject("migrationCompletedReportwindow"), anchor, flags);
+	}
+	
+	/**
+	 * HtmlTable_0: with default state.
+	 *		.class : Html.TABLE
+	 * 		.classIndex : 0
+	 */
+	protected StatelessGuiSubitemTestObject table_htmlTable_0() 
+	{
+		return new StatelessGuiSubitemTestObject(
+                        getMappedTestObject("table_htmlTable_0"));
+	}
+	/**
+	 * HtmlTable_0: with specific test context and state.
+	 *		.class : Html.TABLE
+	 * 		.classIndex : 0
+	 */
+	protected StatelessGuiSubitemTestObject table_htmlTable_0(TestObject anchor, long flags) 
+	{
+		return new StatelessGuiSubitemTestObject(
+                        getMappedTestObject("table_htmlTable_0"), anchor, flags);
+	}
+	
+	/**
+	 * HtmlTable_0: with default state.
+	 *		.class : Html.TABLE
+	 * 		.classIndex : 0
+	 */
+	protected StatelessGuiSubitemTestObject table_htmlTable_0_2() 
+	{
+		return new StatelessGuiSubitemTestObject(
+                        getMappedTestObject("table_htmlTable_0_2"));
+	}
+	/**
+	 * HtmlTable_0: with specific test context and state.
+	 *		.class : Html.TABLE
+	 * 		.classIndex : 0
+	 */
+	protected StatelessGuiSubitemTestObject table_htmlTable_0_2(TestObject anchor, long flags) 
+	{
+		return new StatelessGuiSubitemTestObject(
+                        getMappedTestObject("table_htmlTable_0_2"), anchor, flags);
+	}
+	
+	/**
+	 * HtmlTable_8: with default state.
+	 *		.class : Html.TABLE
+	 * 		.classIndex : 8
+	 */
+	protected StatelessGuiSubitemTestObject table_htmlTable_8() 
+	{
+		return new StatelessGuiSubitemTestObject(
+                        getMappedTestObject("table_htmlTable_8"));
+	}
+	/**
+	 * HtmlTable_8: with specific test context and state.
+	 *		.class : Html.TABLE
+	 * 		.classIndex : 8
+	 */
+	protected StatelessGuiSubitemTestObject table_htmlTable_8(TestObject anchor, long flags) 
+	{
+		return new StatelessGuiSubitemTestObject(
+                        getMappedTestObject("table_htmlTable_8"), anchor, flags);
+	}
+	
+	/**
+	 * searchButton0: with default state.
+	 *		.class : Html.TABLE
+	 * 		.classIndex : 1
+	 */
+	protected StatelessGuiSubitemTestObject table_searchButton0() 
+	{
+		return new StatelessGuiSubitemTestObject(
+                        getMappedTestObject("table_searchButton0"));
+	}
+	/**
+	 * searchButton0: with specific test context and state.
+	 *		.class : Html.TABLE
+	 * 		.classIndex : 1
+	 */
+	protected StatelessGuiSubitemTestObject table_searchButton0(TestObject anchor, long flags) 
+	{
+		return new StatelessGuiSubitemTestObject(
+                        getMappedTestObject("table_searchButton0"), anchor, flags);
 	}
 	
 	

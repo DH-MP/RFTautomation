@@ -20,11 +20,11 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>Audit_SuperUser</b><br>
- * Generated     : <b>2014/06/20 3:49:48 PM</b><br>
+ * Generated     : <b>2014/08/14 4:23:23 PM</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows Server 2008 R2 x86 6.1 <br>
  * 
- * @since  June 20, 2014
+ * @since  August 14, 2014
  * @author Administrator
  */
 public abstract class Audit_SuperUserHelper extends utilities.MySuperHelper
@@ -59,8 +59,8 @@ public abstract class Audit_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		class :  x-btn-text
 	 * 		.classIndex : 0
+	 * 		class :  x-btn-text
 	 */
 	protected GuiTestObject button_advancedSearchbutton() 
 	{
@@ -74,8 +74,8 @@ public abstract class Audit_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		class :  x-btn-text
 	 * 		.classIndex : 0
+	 * 		class :  x-btn-text
 	 */
 	protected GuiTestObject button_advancedSearchbutton(TestObject anchor, long flags) 
 	{
@@ -90,8 +90,8 @@ public abstract class Audit_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		class :  x-btn-text
 	 * 		.classIndex : 0
+	 * 		class :  x-btn-text
 	 */
 	protected GuiTestObject button_cancelsubmit() 
 	{
@@ -105,8 +105,8 @@ public abstract class Audit_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		class :  x-btn-text
 	 * 		.classIndex : 0
+	 * 		class :  x-btn-text
 	 */
 	protected GuiTestObject button_cancelsubmit(TestObject anchor, long flags) 
 	{
@@ -121,8 +121,8 @@ public abstract class Audit_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		class :  x-btn-text
 	 * 		.classIndex : 0
+	 * 		class :  x-btn-text
 	 */
 	protected GuiTestObject button_clearsubmit() 
 	{
@@ -136,8 +136,8 @@ public abstract class Audit_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		class :  x-btn-text
 	 * 		.classIndex : 0
+	 * 		class :  x-btn-text
 	 */
 	protected GuiTestObject button_clearsubmit(TestObject anchor, long flags) 
 	{
@@ -152,8 +152,8 @@ public abstract class Audit_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		class :  x-btn-text advanced-tb-icon
 	 * 		.classIndex : 0
+	 * 		class :  x-btn-text advanced-tb-icon
 	 */
 	protected GuiTestObject button_searchsubmit() 
 	{
@@ -167,8 +167,8 @@ public abstract class Audit_SuperUserHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		class :  x-btn-text advanced-tb-icon
 	 * 		.classIndex : 0
+	 * 		class :  x-btn-text advanced-tb-icon
 	 */
 	protected GuiTestObject button_searchsubmit(TestObject anchor, long flags) 
 	{
@@ -821,6 +821,56 @@ public abstract class Audit_SuperUserHelper extends utilities.MySuperHelper
 	}
 	
 	/**
+	 * messageClose: with default state.
+	 *		.className : x-tool x-tool-close
+	 * 		.class : Html.DIV
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject html_messageClose() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("html_messageClose"));
+	}
+	/**
+	 * messageClose: with specific test context and state.
+	 *		.className : x-tool x-tool-close
+	 * 		.class : Html.DIV
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject html_messageClose(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("html_messageClose"), anchor, flags);
+	}
+	
+	/**
+	 * messageWindow0: with default state.
+	 *		id : messageWindow0
+	 * 		.id : messageWindow0
+	 * 		.className : x-window x-window-noborder x-window-plain x-resizable-pinned
+	 * 		.class : Html.DIV
+	 * 		.classIndex : 27
+	 */
+	protected GuiTestObject html_messageWindow0() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("html_messageWindow0"));
+	}
+	/**
+	 * messageWindow0: with specific test context and state.
+	 *		id : messageWindow0
+	 * 		.id : messageWindow0
+	 * 		.className : x-window x-window-noborder x-window-plain x-resizable-pinned
+	 * 		.class : Html.DIV
+	 * 		.classIndex : 27
+	 */
+	protected GuiTestObject html_messageWindow0(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("html_messageWindow0"), anchor, flags);
+	}
+	
+	/**
 	 * advanceSearchAudit: with default state.
 	 *		.text : Audit Files
 	 * 		.class : Html.A
@@ -841,6 +891,29 @@ public abstract class Audit_SuperUserHelper extends utilities.MySuperHelper
 	{
 		return new GuiTestObject(
                         getMappedTestObject("link_advanceSearchAudit"), anchor, flags);
+	}
+	
+	/**
+	 * messageAuditTab: with default state.
+	 *		.text : Audit
+	 * 		.class : Html.A
+	 * 		class : x-tab-right
+	 */
+	protected GuiTestObject link_messageAuditTab() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("link_messageAuditTab"));
+	}
+	/**
+	 * messageAuditTab: with specific test context and state.
+	 *		.text : Audit
+	 * 		.class : Html.A
+	 * 		class : x-tab-right
+	 */
+	protected GuiTestObject link_messageAuditTab(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("link_messageAuditTab"), anchor, flags);
 	}
 	
 	/**

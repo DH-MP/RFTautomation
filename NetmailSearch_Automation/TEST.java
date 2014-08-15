@@ -58,10 +58,35 @@ public class TEST extends TESTHelper
 	{
 		
 		
-		NetmailFinder a = new NetmailFinder();
-		TestObject[] x = a.findAllTextObjects(form_details2());
-		a.highlight(x);
-		sleep(100);
+		// HTML Browser
+		// Document: 
+		html_extGen240().drag(atPoint(110,31), atPoint(46,29));
+		html_extGen6086().click(atPoint(69,79));
+		table_htmlTable_0().drag(atCell(atRow(atIndex(0)), 
+                                  atColumn(atIndex(0))), 
+                           atCell(atRow(atIndex(0)), 
+                                  atColumn(atIndex(1))));
+		button_advancedSearchbutton().click();
+		table_searchButton0().click(atCell(atRow(atIndex(1)), 
+                                     atColumn(atIndex(1))));
+		html_extGen1184().click(atPoint(46,4));
+		table_htmlTable_8().doubleClick(atCell(
+                                        atRow(atIndex(0)), 
+                                        atColumn(atIndex(5))));
+		table_htmlTable_0_2().doubleClick(atCell(
+                                        atRow(atIndex(0)), 
+                                        atColumn(atIndex(5))));
+		// Document: 
+		document_aboutBlank().drag(atPoint(121,136), atPoint(40,98));
+		document_aboutBlank().drag(atPoint(130,104), atPoint(34,69));
+		document_aboutBlank().drag(atPoint(140,107), atPoint(22,88));
+		document_aboutBlank().drag(atPoint(18,84), atPoint(127,105));
+		document_aboutBlank().drag(atPoint(131,105), atPoint(17,85));
+		
+		//		NetmailFinder a = new NetmailFinder();
+//		TestObject[] x = a.findAllTextObjects(form_details2());
+//		a.highlight(x);
+//		sleep(100);
 		
 		
 		
