@@ -264,7 +264,7 @@ public class NetmailFinder extends NetmailFinderHelper
 				name = prop.get("name").toString().trim();
 				
 				//Object(s) are not added
-				if(prop.get(".class").toString().contentEquals("Html.INPUT.checkbox")){	
+				if(prop.get(".class").toString().contentEquals("Html.INPUT.checkbox") | prop.get(".class").toString().contentEquals("Html.INPUT.radio")){	
 					return null;
 				}
 			}
