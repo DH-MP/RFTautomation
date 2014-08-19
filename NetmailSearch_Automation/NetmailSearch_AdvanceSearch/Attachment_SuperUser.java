@@ -144,17 +144,28 @@ public class Attachment_SuperUser extends Attachment_SuperUserHelper
 						logError("Result does not contain the word<"+word+"> in the file name. FAILED");
 						break;
 					}else{
-						logTestResult("Result does contains the word<"+word+"> in the file name. ", true);
+						logTestResult("Result does contains the word< "+word+" > in the file name. ", true);
 					}
 				}
 			}
 			
 			if(fileSize1!=null && fileSize2!=null){
-				((GuiTestObject)columns[2]).click();
-				((GuiTestObject)columns[2]).doubleClick();
-				logInfo("doubled click result");
-				sleep(3);
-				TestObject[] attachmentLink = html_messageWindow0().find(atDescendant(".tag", "A", ".text", actualFileName), true);
+				TestObject[] attachmentLink = null;
+				try{
+					((GuiTestObject)columns[2]).hover();
+					((GuiTestObject)columns[2]).click();
+					((GuiTestObject)columns[2]).doubleClick();
+					logInfo("doubled click result");
+					sleep(3);
+					attachmentLink = html_messageWindow0().find(atDescendant(".tag", "A", ".text", actualFileName), true);
+				}catch(ObjectNotFoundException e){
+					((GuiTestObject)columns[2]).hover();
+					((GuiTestObject)columns[2]).click();
+					((GuiTestObject)columns[2]).doubleClick();
+					logInfo("doubled click result");
+					sleep(3);
+					attachmentLink = html_messageWindow0().find(atDescendant(".tag", "A", ".text", actualFileName), true);
+				}
 				
 				//vpManual("An_attachment_link_exist_in_message", 1, attachmentLink.length).performTest();
 				if(attachmentLink.length == 1){
