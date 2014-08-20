@@ -362,6 +362,8 @@ public class TS_125_Print extends TS_125_PrintHelper
 			button_oKbutton().click();
 		}
 		
+		sleep(10);
+		
 		//Open export management
 		button_exportCasebutton().click();
 		logInfo("Clicked export case button");

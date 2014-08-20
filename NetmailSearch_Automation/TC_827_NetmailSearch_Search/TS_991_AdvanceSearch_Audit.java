@@ -91,6 +91,9 @@ public class TS_991_AdvanceSearch_Audit extends TS_991_AdvanceSearch_AuditHelper
 		}else if(!dpBoolean("expectedResults") && results.length > 0){
 			logError("Expected no results");
 			return;
+		}else{
+			if(dpInt("expectedNumberOfResults") != -1)
+				vpManual("ExpectedNumberOfResults", dpInt("expectedNumberOfResults"), results.length).performTest();
 		}
 		
 		
@@ -190,7 +193,7 @@ public class TS_991_AdvanceSearch_Audit extends TS_991_AdvanceSearch_AuditHelper
 			
 			
 			//Tags VPs
-			if(dpBoolean("relevant") | dpBoolean("privileged")| dpBoolean("tagFlagged") | dpBoolean("tagFlagged") |dpBoolean("workProduct")){
+			if(dpBoolean("relevant") | dpBoolean("privileged")| dpBoolean("tagFlagged") |dpBoolean("workProduct")){
 				HashMap<String, Boolean> tagResult = new HashMap<String, Boolean>();
 				tagResult.put("relevant", null);
 				tagResult.put("privileged", null);
@@ -198,42 +201,43 @@ public class TS_991_AdvanceSearch_Audit extends TS_991_AdvanceSearch_AuditHelper
 				tagResult.put("workProduct", null);
 				
 	
-				if(dpBoolean("relevant") | dpBoolean("privileged")| dpBoolean("tagFlagged") | dpBoolean("tagFlagged") |dpBoolean("workProduct"))
-				if(dpBoolean("relevant")){
-					tagResult.put("relevant", messageHasTag("relevant", new RegularExpression("(?i)Relevant--.*", false)));
-				}
-				
-				if(dpBoolean("privileged")){
-					tagResult.put("privileged", messageHasTag("privileged", new RegularExpression("(?i)Privileged--.*", false)));
-				}
-				
-				if(dpBoolean("tagFlagged")){
-					tagResult.put("tagFlagged", messageHasTag("tagFlagged", new RegularExpression("(?i)Flagged--.*", false)));
-				}
-				
-				if(dpBoolean("workProduct")){
-					tagResult.put("workProduct", messageHasTag("workProduct", new RegularExpression("(?i)Work Product--.*", false)));
-				}
-	
-				Iterator it = tagResult.entrySet().iterator();
-				boolean tagTest = false;
-				String tagsChecked = "";
-				while(it.hasNext()){
-					@SuppressWarnings("unchecked")
-					Map.Entry<String, Boolean> pair = (Entry<String, Boolean>) it.next();
-					if(pair.getValue() == null){
-						break;
-					}else{
-						tagsChecked += pair.getKey()+" ";
-						if(pair.getValue().booleanValue()){
-							tagTest = true;
-							vpManual("tagVerification", true,true).performTest();
-							break;
+				if(dpBoolean("relevant") | dpBoolean("privileged")| dpBoolean("tagFlagged") | dpBoolean("tagFlagged") |dpBoolean("workProduct")){
+					if(dpBoolean("relevant")){
+						tagResult.put("relevant", messageHasTag("relevant", new RegularExpression("(?i)Relevant--.*", false)));
+					}
+					
+					if(dpBoolean("privileged")){
+						tagResult.put("privileged", messageHasTag("privileged", new RegularExpression("(?i)Privileged--.*", false)));
+					}
+					
+					if(dpBoolean("tagFlagged")){
+						tagResult.put("tagFlagged", messageHasTag("tagFlagged", new RegularExpression("(?i)Flagged--.*", false)));
+					}
+					
+					if(dpBoolean("workProduct")){
+						tagResult.put("workProduct", messageHasTag("workProduct", new RegularExpression("(?i)Work Product--.*", false)));
+					}
+		
+					Iterator it = tagResult.entrySet().iterator();
+					boolean tagTest = false;
+					String tagsChecked = "";
+					while(it.hasNext()){
+						@SuppressWarnings("unchecked")
+						Map.Entry<String, Boolean> pair = (Entry<String, Boolean>) it.next();
+						if(pair.getValue() == null){
+							continue;
+						}else{
+							tagsChecked += pair.getKey()+" ";
+							if(pair.getValue().booleanValue()){
+								tagTest = true;
+								vpManual("tagVerification", true,true).performTest();
+								break;
+							}
 						}
 					}
-				}
-				if(!tagTest){
-					logTestResult("Expected one the following tags: "+tagsChecked, false);
+					if(!tagTest){
+						logTestResult("Expected one the following tags: "+tagsChecked, false);
+					}
 				}
 			}
 			

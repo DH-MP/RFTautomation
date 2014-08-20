@@ -88,6 +88,7 @@ public class AutoFixIndex extends AutoFixIndexHelper
 
 		//Create Case
 		manageCase mc = new manageCase();
+		mc.setTestMode(false);
 		mc.setName("GVautomation");
 		mc.setLocations("GVautomation");
 		mc.newCase();
@@ -102,12 +103,15 @@ public class AutoFixIndex extends AutoFixIndexHelper
 			try {
 				FileUtils.cleanDirectory(targetLocation);
 				FileUtils.copyDirectory(baselineDeletedLocation, targetLocation);
+				logInfo("Replace GVautomation folder data with deleted data");
 			} catch (IOException e1) {
 				logError(e1.getMessage());
 				e1.printStackTrace();
 			}
 		}
 		
+		HelperClass.navigateLocation("GVautomation>ProxyAdminTest");
+		waitForloading();
 		//Test
 		TestObject[] results = HelperClass.getActiveTabBody()[0].find(atDescendant(".class", "Html.TABLE", "class", "x-grid3-row-table"), true);
 		((GuiTestObject)results[0]).click();

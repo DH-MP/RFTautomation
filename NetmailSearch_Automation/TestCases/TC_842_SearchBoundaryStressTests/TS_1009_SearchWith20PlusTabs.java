@@ -42,7 +42,7 @@ public class TS_1009_SearchWith20PlusTabs extends TS_1009_SearchWith20PlusTabsHe
 	public void testMain(Object[] args) 
 	{
 		String caseName = "TS1009_20Plus";
-		int numberOfTabs = 20; 
+		int numberOfTabs = 20;  
 		
 		//Login
 		Object[] ls = {null,null, false};
@@ -54,6 +54,7 @@ public class TS_1009_SearchWith20PlusTabs extends TS_1009_SearchWith20PlusTabsHe
 		
 		//New Case
 		manageCase mc = new manageCase();
+		mc.setTestMode(false);
 		mc.setName(caseName).setLocations("LargeUser;ALS").setTestMode(false).newCase();
 		waitForloading();
 		

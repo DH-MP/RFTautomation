@@ -234,11 +234,11 @@ public class TS_992_AddTagsAndComments extends TS_992_AddTagsAndCommentsHelper
 		TestObject[] body = HelperClass.getActiveTabBody();
 		TestObject[] viewport = body[0].find(atDescendant(".class", "Html.DIV", "class", "x-grid3-viewport"),true);	
 		TestObject[] tableHeader = viewport[0].find(atDescendant(".class", "Html.TR", "class", "x-grid3-hd-row"), false);
-		TestObject[] headerColumn = tableHeader[0].find(atDescendant(".class", "Html.TD", "class", new RegularExpression("x-grid3-hd.*",false)),false);
-		java.awt.Rectangle columnBounds = (java.awt.Rectangle) ((GuiTestObject)headerColumn[5]).getProperty(".bounds");
-		((GuiTestObject)headerColumn[5]).hover(atPoint(columnBounds.width-5,columnBounds.height/2));
+		TestObject[] headerColumn = tableHeader[0].find(atDescendant(".class", "Html.TD", "class", new RegularExpression(".*cell-last.*",false)),false);
+		java.awt.Rectangle columnBounds = (java.awt.Rectangle) ((GuiTestObject)headerColumn[0]).getProperty(".bounds");
+		((GuiTestObject)headerColumn[0]).hover(atPoint(columnBounds.width-5,columnBounds.height/2));
 		sleep(2);
-		((GuiTestObject)headerColumn[5]).click(atPoint(columnBounds.width-5,columnBounds.height/2));
+		((GuiTestObject)headerColumn[0]).click(atPoint(columnBounds.width-5,columnBounds.height/2));
 		logInfo("Clicked at the corner of a header column");
 
 		
