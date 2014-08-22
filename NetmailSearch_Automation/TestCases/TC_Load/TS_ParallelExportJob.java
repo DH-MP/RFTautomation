@@ -40,7 +40,7 @@ public class TS_ParallelExportJob extends TS_ParallelExportJobHelper
 		Object[] al = {"ExportXML", "Super User"};
 		callScript("adminLogin", al);
 		
-		int parallel = 4;
+		int parallel = 3;
 		
 		Export_SuperUser esu = new Export_SuperUser();
 		esu.setSearchTabs("9");

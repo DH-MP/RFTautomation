@@ -95,6 +95,10 @@ public class DeleteMessage extends DeleteMessageHelper
 		mc.setName("GVautomation");
 		mc.setLocations("GVautomation");
 		mc.newCase();
+		waitForloading();
+		HelperClass.navigateLocation("GVautomation>ProxyAdminTest");
+		waitForloading();
+		
 		
 		//Select first message
 		TestObject[] results = HelperClass.getActiveTabBody()[0].find(atDescendant(".class", "Html.TABLE", "class", "x-grid3-row-table"), true);
@@ -105,6 +109,7 @@ public class DeleteMessage extends DeleteMessageHelper
 		//Delete
 		button_deleteMessage().click();
 		button_yesbutton().click();
+		sleep(10);
 		
 		//Validate strikethrough
 		results = HelperClass.getActiveTabBody()[0].find(atDescendant(".class", "Html.TABLE", "class", "x-grid3-row-table"), true);

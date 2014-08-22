@@ -93,7 +93,8 @@ public class TS_BasicMode extends TS_BasicModeHelper
 			button_basicModeArchive_OK().click();
 		sleep(2);
 		while(html_indexingProgressWindow().getProperty("style").toString().matches(".*VISIBILITY: visible.*"));
-		
+		waitForloading();
+		sleep(10);
 		
 		try {
 			ts995.testPagination();

@@ -229,6 +229,7 @@ public class WebAdmin extends WebAdminHelper
 		logInfo("click X button on successful save");
 		
 		selectPageTab("Criteria");
+		sleep(3);
 		
 		list_cSelect_ArchiveLocationLi().click();
 		logInfo("click archive select dropdown");
@@ -244,6 +245,7 @@ public class WebAdmin extends WebAdminHelper
 
 		
 		selectPageTab("Job Settings");
+		sleep(5);
 		
 		button_runNowbutton().click();
 		logInfo("click run button");
@@ -263,6 +265,7 @@ public class WebAdmin extends WebAdminHelper
 		
 		//Select Location
 		selectPageTab("Criteria");
+		sleep(3);
 		
 		list_indexLocationList().click();
 		logInfo("click index select dropdown list");
@@ -282,7 +285,7 @@ public class WebAdmin extends WebAdminHelper
 		logInfo("click X button on successful save");
 		
 		selectPageTab("Job Settings");
-	
+		sleep(3);
 	
 		//Select User
 		button_settingUsersSelect().click();
