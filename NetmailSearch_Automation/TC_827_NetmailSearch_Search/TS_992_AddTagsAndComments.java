@@ -233,8 +233,8 @@ public class TS_992_AddTagsAndComments extends TS_992_AddTagsAndCommentsHelper
 	public void headerColumns(boolean expander, boolean to, boolean date, boolean tampered, boolean tags, boolean comment){
 		TestObject[] body = HelperClass.getActiveTabBody();
 		TestObject[] viewport = body[0].find(atDescendant(".class", "Html.DIV", "class", "x-grid3-viewport"),true);	
-		TestObject[] tableHeader = viewport[0].find(atDescendant(".class", "Html.TR", "class", "x-grid3-hd-row"), false);
-		TestObject[] headerColumn = tableHeader[0].find(atDescendant(".class", "Html.TD", "class", new RegularExpression(".*cell-last.*",false)),false);
+		TestObject[] tableHeader = viewport[0].getChildren()[0].find(atDescendant(".class", "Html.TR", "class", "x-grid3-hd-row"), false);
+		TestObject[] headerColumn = tableHeader[0].find(atDescendant(".class", "Html.TD", ".contentText", new RegularExpression(".*from.*",false)),false);
 		java.awt.Rectangle columnBounds = (java.awt.Rectangle) ((GuiTestObject)headerColumn[0]).getProperty(".bounds");
 		((GuiTestObject)headerColumn[0]).hover(atPoint(columnBounds.width-5,columnBounds.height/2));
 		sleep(2);

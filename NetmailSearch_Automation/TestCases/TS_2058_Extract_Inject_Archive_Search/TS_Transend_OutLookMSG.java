@@ -92,9 +92,9 @@ public class TS_Transend_OutLookMSG extends TS_Transend_OutLookMSGHelper
 		
 	}
 	
-//	@Override
-//	public void onTerminate(){
-//		transend.destroy();
-//	}
+	@Override
+	public void onTerminate(){
+		transend.destroy();
+	}
 }
 

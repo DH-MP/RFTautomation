@@ -12,6 +12,7 @@ import org.eclipse.hyades.execution.runtime.datapool.IDatapoolIterator;
 import resources.TestCases.TC_BasicMode.TS_BasicModeHelper;
 import utilities.HelperClass;
 
+import NetmailSearch_General.NetmailLogin;
 import NetmailSearch_PrintAndExport.Print_SuperUser;
 import TC_831_NetmailSearch.TS_995;
 
@@ -51,13 +52,15 @@ public class TS_BasicMode extends TS_BasicModeHelper
 		enableBasicMode();
 		
 		//Login
-		Object[] ls = {null,null, false};
-		callScript("loginScript", ls);
-		
+		NetmailLogin.login();
+		sleep(1);
+		waitForloading();
+
 		//Use old script to test highlight and quick search
 		TS_995 ts995 = new TS_995();
 		HelperClass.navigateLocation("ALS>Amy S");
 		sleep(2);
+		
 		if(button_basicModeArchive_OK().exists())
 			button_basicModeArchive_OK().click();
 		sleep(2);
@@ -86,7 +89,7 @@ public class TS_BasicMode extends TS_BasicModeHelper
 		
 		
 		//Login
-		callScript("loginScript", ls);
+		NetmailLogin.login();
 		HelperClass.navigateLocation("ALS>F user1dom2po1");
 		sleep(2);
 		if(button_basicModeArchive_OK().exists())

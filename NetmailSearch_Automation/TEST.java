@@ -58,30 +58,24 @@ public class TEST extends TESTHelper
 	{
 		
 		
-		// HTML Browser
-		// Document: 
-		html_extGen240().drag(atPoint(110,31), atPoint(46,29));
-		html_extGen6086().click(atPoint(69,79));
-		table_htmlTable_0().drag(atCell(atRow(atIndex(0)), 
-                                  atColumn(atIndex(0))), 
-                           atCell(atRow(atIndex(0)), 
-                                  atColumn(atIndex(1))));
-		button_advancedSearchbutton().click();
-		table_searchButton0().click(atCell(atRow(atIndex(1)), 
-                                     atColumn(atIndex(1))));
-		html_extGen1184().click(atPoint(46,4));
-		table_htmlTable_8().doubleClick(atCell(
-                                        atRow(atIndex(0)), 
-                                        atColumn(atIndex(5))));
-		table_htmlTable_0_2().doubleClick(atCell(
-                                        atRow(atIndex(0)), 
-                                        atColumn(atIndex(5))));
-		// Document: 
-		document_aboutBlank().drag(atPoint(121,136), atPoint(40,98));
-		document_aboutBlank().drag(atPoint(130,104), atPoint(34,69));
-		document_aboutBlank().drag(atPoint(140,107), atPoint(22,88));
-		document_aboutBlank().drag(atPoint(18,84), atPoint(127,105));
-		document_aboutBlank().drag(atPoint(131,105), atPoint(17,85));
+		
+//		// HTML Browser
+//		// Document: 
+//		while(true){
+//			html__ariaId_61().click(RIGHT, atPoint(87,13));
+//			sleep(3);
+//			html__ariaId_2567().waitForExistence();
+//			html__ariaId_2567().click(atPoint(63,66));
+//			sleep(5);
+//			button_okbutton().click();
+//		}
+		
+		for(int i = 541; i<549; i++){
+			System.out.println("cn=ITX,ou=users,o=org;IT IT30@IT30.po3.gw2012;123Password;1348686567445".replaceAll("X", i+""));
+			
+		}
+		
+		
 		
 		//		NetmailFinder a = new NetmailFinder();
 //		TestObject[] x = a.findAllTextObjects(form_details2());

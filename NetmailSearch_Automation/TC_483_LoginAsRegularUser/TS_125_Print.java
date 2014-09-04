@@ -51,16 +51,16 @@ public class TS_125_Print extends TS_125_PrintHelper
 		boolean isAdmin = dpBoolean("isAdmin"),
 				testExport = dpBoolean("testExport");
 		
-		//Login
-		Object[] ls = {null,null, false};
-		callScript("loginScript", ls);
-		
-		if(isAdmin){
-			//Admin Login
-			Object[] al = {dpString("caseName"), dpString("userType")};
-			callScript("adminLogin", al);
-		}
-		
+//		//Login
+//		Object[] ls = {null,null, false};
+//		callScript("loginScript", ls);
+//		
+//		if(isAdmin){
+//			//Admin Login
+//			Object[] al = {dpString("caseName"), dpString("userType")};
+//			callScript("adminLogin", al);
+//		}
+//		
 		GuiTestObject quickSearch = isAdmin ? text_quickSearchField0(): text_normalUser_quickSearchFie();
 
 /*********SETUP ****************************************************************************/

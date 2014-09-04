@@ -20,11 +20,11 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>Transend</b><br>
- * Generated     : <b>2014/07/02 11:53:41 AM</b><br>
+ * Generated     : <b>2014/09/02 11:15:29 AM</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows Server 2008 R2 x86 6.1 <br>
  * 
- * @since  July 02, 2014
+ * @since  September 02, 2014
  * @author Administrator
  */
 public abstract class TransendHelper extends RationalTestScript

@@ -265,7 +265,7 @@ public class WebAdmin extends WebAdminHelper
 		
 		//Select Location
 		selectPageTab("Criteria");
-		sleep(3);
+		sleep(5);
 		
 		list_indexLocationList().click();
 		logInfo("click index select dropdown list");

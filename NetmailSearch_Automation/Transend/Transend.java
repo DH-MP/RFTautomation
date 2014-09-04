@@ -37,6 +37,7 @@ public class Transend extends TransendHelper
 	private String sourceUserEmail = "Cristina01@ex2010-03.com";
 	private String sourcePassword = "123Password";
 	private String selectedFolders = ".*"; //"Deleted Items, Drafts, Inbox.*, Journal, Junk E-Email, Notes, Outbox, Sent Items, tanya";
+	private String selectedFoldersNoRegexp = "";
 	private String sourceOutlookMSGDirectory = "";
 	private String sourceUserName = "";
 	
@@ -107,7 +108,9 @@ public class Transend extends TransendHelper
 		sourceFrom_Dropdownwindow().click();
 		logInfo("Open dropdown");
 		logInfo("Selected < "+sourceType+" >");
+		
 		if(sourceType.contentEquals("Exchange Server 2013")){
+			tDropDownFormwindow().inputChars("Ex");
 			sourceListlist().click(atName(sourceType));
 			sourceExchange2013();	
 		}
@@ -185,24 +188,40 @@ public class Transend extends TransendHelper
 		logInfo("Click Load Source Data");
 		sleep(5);
 		
-		String[] checked = selectedFolders.split(",");
-		TestObject[] lists = migrationOptionslist().getChildren();
-		migrationOptionslist().click(atName(lists[0].getProperty(".name").toString())); 
-		for(TestObject b : lists){
-			boolean match = false;
-			for(String c : checked){
-				if(b.getProperty(".name").toString().matches(c.trim())){
-					match = true;
+		if(selectedFoldersNoRegexp.isEmpty()){
+			String[] checked = selectedFolders.split(",");
+			TestObject[] lists = migrationOptionslist().getChildren();
+			migrationOptionslist().click(atName(lists[0].getProperty(".name").toString())); 
+			for(TestObject b : lists){
+				boolean match = false;
+				for(String c : checked){
+					if(b.getProperty(".name").toString().matches(c.trim())){
+						match = true;
+					}
+				}			
+				if(!match){
+					transendMigratorMigrationOptio().inputKeys(" {DOWN}");
+				}else{
+					transendMigratorMigrationOptio().inputKeys("{DOWN}");
 				}
-			}			
-			if(!match){
-				transendMigratorMigrationOptio().inputKeys(" {DOWN}");
-			}else{
-				transendMigratorMigrationOptio().inputKeys("{DOWN}");
 			}
+			logInfo("Finish applying folder setting");
+			folder_OKbutton().click(atPoint(22,10));	
 		}
-		logInfo("Finish applying folder setting");
-		folder_OKbutton().click(atPoint(22,10));	
+		
+		if(!selectedFoldersNoRegexp.isEmpty()){
+			migrationOptionslist().click(RIGHT);
+			contextpopupMenu().click(atPath("Manual Edit"));
+			String[] checked = selectedFolders.split(",");
+			for(String folder : checked){
+				TopLevelSubitemTestObject top =  (TopLevelSubitemTestObject) migrationOptionslist().getTopParent();
+				top.inputChars(folder);
+				top.inputKeys("{ENTER}");
+				
+			}
+			migrationOptionslist().click(RIGHT);
+			contextpopupMenu().click(atPath("Manual Edit"));
+		}
 	}
 	
 	private void sourceExchange2013(){
@@ -367,6 +386,10 @@ public class Transend extends TransendHelper
 
 	public void setCategory(String category) {
 		this.category = category;
+	}
+
+	public void setSelectedFoldersNoRegexp(String selectedFoldersNoRegexp) {
+		this.selectedFoldersNoRegexp = selectedFoldersNoRegexp;
 	}
 	
 	

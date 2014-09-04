@@ -7,6 +7,7 @@ import resources.TC_2057_Transend_Extract_Index_And_Search.TS_1695_Transend_Goog
 import utilities.HelperClass;
 import Netmail_WebAdmin.webAdmin;
 import TC_827_NetmailSearch_Search.TS_1378_ListandOrderPersistence;
+import Transend.Transend;
 
 import com.rational.test.ft.*;
 import com.rational.test.ft.object.interfaces.*;
@@ -57,7 +58,7 @@ public class TS_1695_Transend_Google extends TS_1695_Transend_GoogleHelper
 	
 	public void testMain(Object[] args) 
 	{	
-		String name = dpString("targetSharedDirectory");
+		String name = "TS1695";
 		String sourceUserEmail = dpString("sourceUserEmail");
 		String sourcePassword = dpString("sourcePassword");
 		String targetUserName = dpString("targetUserName");
@@ -80,81 +81,65 @@ public class TS_1695_Transend_Google extends TS_1695_Transend_GoogleHelper
 		sleep(5);
 		
 		//Data
-		Map<String, Object> map = new HashMap<>();	
-		Object[] arg = {map};
-		map.put("sourceType", sourceType);
-		map.put("sourceUserEmail", sourceUserEmail);
-		map.put("sourcePassword", sourcePassword);
-		
-		map.put("targetType", targetType);
-		map.put("targetSharedDirectory", targetSharedDirectory);
-		map.put("targetUserName", targetUserName);
-		map.put("targetUserCN", targetUserCN);	
-		
-		map.put("category", "email");
-		callScript("Transend.Transend", arg );
-		
-		map.put("category", "addressBook");
-		callScript("Transend.Transend", arg );
-		
-		map.put("category", "calendar");
-		callScript("Transend.Transend", arg );
-		
-		map.put("category", "task");
-		callScript("Transend.Transend", arg );
+		Transend t = new Transend();
+		t.setSourceType(sourceType);
+		t.setSourceUserEmail(sourceUserEmail);
+		t.setSourcePassword(sourcePassword);
+		t.setTargetType(targetType);
+		t.setTargetSharedDirectory(targetSharedDirectory);
+		t.setTargetUserName(targetUserName);
+		t.setTargetUserCN(targetUserCN);
+		t.setCategory("email");
+		t.setData();
+		t.startSingleMigration();
 			
-		startSingleMigrationbutton().click();
+		HelperClass.oneBrowserSetup();
+		browser_htmlBrowser().loadUrl(webAdminIP);
+		browser_htmlBrowser().activate();
+	
+		//WebAdmin
+		webAdmin wa = new webAdmin();
+		wa.login(webAdminUserName, webAdminPassword);	
+		wa.createStorage("File System", name, "\\\\10.1.30.64\\TransendData\\"+name);	
+		wa.createStorageLocation( 
+				"Standard", 
+				name, 
+				"automation", 
+				name, "\\\\10.1.30.64\\TransendData\\"+name, 
+				"Administrator@BASE2012@First Organization@User"
+		);
+		wa.index(name, sourceUserEmail, indexName);
+		wa.waitForIndexing(indexName);
 		
-		yesbutton().click();
-		//okbutton().click();
-			
-//		HelperClass.oneBrowserSetup();
-//		browser_htmlBrowser().loadUrl(webAdminIP);
-//		browser_htmlBrowser().activate();
-//	
-//		//WebAdmin
-//		webAdmin wa = new webAdmin();
-//		wa.login(webAdminUserName, webAdminPassword);	
-//		wa.createStorage("File System", name, "\\\\10.1.30.64\\TransendData\\"+name);	
-//		wa.createStorageLocation( 
-//				"Standard", 
-//				name, 
-//				"automation", 
-//				name, "\\\\10.1.30.64\\TransendData\\"+name, 
-//				"Administrator@BASE2012@First Organization@User"
-//		);
-//		wa.index(name, sourceUserEmail, indexName);
-//		wa.waitForIndexing(indexName);
-//		
-//		
-//		//Restart services
-//		HelperClass.startOrStopNetmailServices(false, IP, workSpace);
-//		HelperClass.startOrStopNetmailServices(true, IP, workSpace);
-//		
-//		//Login netmail search and new case
-//		login("");
-//		
-//		/********************NEW CASE***************************/
-//		button_newCasebutton().click();
-//		logInfo("Clicked NewCase");
-//		sleep(0.5);
-//		//DATA
-//		Object[] cmNewCase = {	name,
-//								"nothing",
-//								"New",
-//								"Claim",
-//								"06/13/14",
-//								"06/13/14",
-//								"General Liability",
-//								"Workplace",
-//								true,
-//								name,
-//								"netmail",
-//								false,
-//		};
-//		
-//		callScript("Case_Management.manageCase", cmNewCase);
-//		login(name);
+		
+		//Restart services
+		HelperClass.startOrStopNetmailServices(false, IP, workSpace);
+		HelperClass.startOrStopNetmailServices(true, IP, workSpace);
+		
+		//Login netmail search and new case
+		login("");
+		
+		/********************NEW CASE***************************/
+		button_newCasebutton().click();
+		logInfo("Clicked NewCase");
+		sleep(0.5);
+		//DATA
+		Object[] cmNewCase = {	name,
+								"nothing",
+								"New",
+								"Claim",
+								"06/13/14",
+								"06/13/14",
+								"General Liability",
+								"Workplace",
+								true,
+								name,
+								"netmail",
+								false,
+		};
+		
+		callScript("Case_Management.manageCase", cmNewCase);
+		login(name);
 		
 	}
 	

@@ -81,6 +81,8 @@ public class TS_ExportData extends TS_ExportDataHelper
 		callScript("adminLogin", al);
 		mc.deleteCase("TS_ExportDataEDITED");
 		mc.openCase("intern_mike");
+		waitForloading();
+		sleep(2);
 		
 		esu.openExportManagementWindow();
 		TestObject a = esu.getExportObject(exportName);

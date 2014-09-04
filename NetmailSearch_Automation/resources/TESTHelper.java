@@ -20,11 +20,11 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>TEST</b><br>
- * Generated     : <b>2014/08/14 11:57:49 AM</b><br>
+ * Generated     : <b>2014/08/25 3:23:51 PM</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows Server 2008 R2 x86 6.1 <br>
  * 
- * @since  August 14, 2014
+ * @since  August 25, 2014
  * @author Administrator
  */
 public abstract class TESTHelper extends utilities.MySuperHelper
@@ -52,8 +52,8 @@ public abstract class TESTHelper extends utilities.MySuperHelper
 	 * AdvancedSearchbutton: with default state.
 	 *		.text : Advanced Search
 	 * 		type : button
-	 * 		.class : Html.BUTTON
 	 * 		.title : 
+	 * 		.class : Html.BUTTON
 	 * 		.name : 
 	 * 		.classIndex : 0
 	 * 		class :  x-btn-text
@@ -67,8 +67,8 @@ public abstract class TESTHelper extends utilities.MySuperHelper
 	 * AdvancedSearchbutton: with specific test context and state.
 	 *		.text : Advanced Search
 	 * 		type : button
-	 * 		.class : Html.BUTTON
 	 * 		.title : 
+	 * 		.class : Html.BUTTON
 	 * 		.name : 
 	 * 		.classIndex : 0
 	 * 		class :  x-btn-text
@@ -80,9 +80,40 @@ public abstract class TESTHelper extends utilities.MySuperHelper
 	}
 	
 	/**
-	 * aboutBlank: with default state.
-	 *		.class : Html.HtmlDocument
+	 * okbutton: with default state.
+	 *		.text : ok
+	 * 		type : button
+	 * 		.class : Html.BUTTON
 	 * 		.title : 
+	 * 		.name : 
+	 * 		.classIndex : 23
+	 * 		class : _b_s o365button o365buttonOutlined o365buttonOutlinedHovered
+	 */
+	protected GuiTestObject button_okbutton() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("button_okbutton"));
+	}
+	/**
+	 * okbutton: with specific test context and state.
+	 *		.text : ok
+	 * 		type : button
+	 * 		.class : Html.BUTTON
+	 * 		.title : 
+	 * 		.name : 
+	 * 		.classIndex : 23
+	 * 		class : _b_s o365button o365buttonOutlined o365buttonOutlinedHovered
+	 */
+	protected GuiTestObject button_okbutton(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("button_okbutton"), anchor, flags);
+	}
+	
+	/**
+	 * aboutBlank: with default state.
+	 *		.title : 
+	 * 		.class : Html.HtmlDocument
 	 */
 	protected DocumentTestObject document_aboutBlank() 
 	{
@@ -91,8 +122,8 @@ public abstract class TESTHelper extends utilities.MySuperHelper
 	}
 	/**
 	 * aboutBlank: with specific test context and state.
-	 *		.class : Html.HtmlDocument
-	 * 		.title : 
+	 *		.title : 
+	 * 		.class : Html.HtmlDocument
 	 */
 	protected DocumentTestObject document_aboutBlank(TestObject anchor, long flags) 
 	{
@@ -282,6 +313,29 @@ public abstract class TESTHelper extends utilities.MySuperHelper
 	}
 	
 	/**
+	 * _ariaId_2567: with default state.
+	 *		.className : contextMenuDropShadow contextMenuPopup removeFocusOutline
+	 * 		.class : Html.DIV
+	 * 		.classIndex : 15
+	 */
+	protected GuiTestObject html__ariaId_2567() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("html__ariaId_2567"));
+	}
+	/**
+	 * _ariaId_2567: with specific test context and state.
+	 *		.className : contextMenuDropShadow contextMenuPopup removeFocusOutline
+	 * 		.class : Html.DIV
+	 * 		.classIndex : 15
+	 */
+	protected GuiTestObject html__ariaId_2567(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("html__ariaId_2567"), anchor, flags);
+	}
+	
+	/**
 	 * _ariaId_40: with default state.
 	 *		.id : _ariaId_40
 	 * 		.class : Html.DIV
@@ -300,6 +354,29 @@ public abstract class TESTHelper extends utilities.MySuperHelper
 	{
 		return new GuiTestObject(
                         getMappedTestObject("html__ariaId_40_2"), anchor, flags);
+	}
+	
+	/**
+	 * _ariaId_61: with default state.
+	 *		.className : 
+	 * 		.class : Html.DIV
+	 * 		.classIndex : 6
+	 */
+	protected GuiTestObject html__ariaId_61() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("html__ariaId_61"));
+	}
+	/**
+	 * _ariaId_61: with specific test context and state.
+	 *		.className : 
+	 * 		.class : Html.DIV
+	 * 		.classIndex : 6
+	 */
+	protected GuiTestObject html__ariaId_61(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("html__ariaId_61"), anchor, flags);
 	}
 	
 	/**
@@ -375,8 +452,8 @@ public abstract class TESTHelper extends utilities.MySuperHelper
 	 * extGen1184: with default state.
 	 *		.text : (clear search)
 	 * 		.className : x-menu-item-text
-	 * 		.class : Html.SPAN
 	 * 		.title : 
+	 * 		.class : Html.SPAN
 	 */
 	protected GuiTestObject html_extGen1184() 
 	{
@@ -387,8 +464,8 @@ public abstract class TESTHelper extends utilities.MySuperHelper
 	 * extGen1184: with specific test context and state.
 	 *		.text : (clear search)
 	 * 		.className : x-menu-item-text
-	 * 		.class : Html.SPAN
 	 * 		.title : 
+	 * 		.class : Html.SPAN
 	 */
 	protected GuiTestObject html_extGen1184(TestObject anchor, long flags) 
 	{
@@ -399,8 +476,8 @@ public abstract class TESTHelper extends utilities.MySuperHelper
 	/**
 	 * extGen240: with default state.
 	 *		.text : LargeUser2 LargeUser
-	 * 		.class : Html.UL
 	 * 		.title : 
+	 * 		.class : Html.UL
 	 * 		.classIndex : 0
 	 * 		class : x-tree-root-ct x-tree-arrows
 	 */
@@ -412,8 +489,8 @@ public abstract class TESTHelper extends utilities.MySuperHelper
 	/**
 	 * extGen240: with specific test context and state.
 	 *		.text : LargeUser2 LargeUser
-	 * 		.class : Html.UL
 	 * 		.title : 
+	 * 		.class : Html.UL
 	 * 		.classIndex : 0
 	 * 		class : x-tree-root-ct x-tree-arrows
 	 */

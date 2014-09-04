@@ -204,6 +204,19 @@ public class MessageNetmailTab_SuperUser extends MessageNetmailTab_SuperUserHelp
 			sleep(2);
 			waitForloading();
 			
+			
+			//Just in case first time doublecliing doesn't open message
+			try{
+				text_mbSubject().getProperty(".value").toString();
+			}catch(ObjectNotFoundException e){
+				((GuiTestObject)results[i]).hover();
+				((GuiTestObject)results[i]).click();
+				((GuiTestObject)results[i]).doubleClick();
+				sleep(2);
+				waitForloading();
+			}
+			
+			
 			for(int k = 0; k <fields.length ; k++){
 				if(!fields[k].isEmpty()){
 					String regexp = "";

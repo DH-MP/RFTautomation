@@ -36,37 +36,41 @@ public class TEST2 extends TEST2Helper
 	public void testMain(Object[] args) 
 	{
 		
+		
+		
+		// HTML Browser
+		// Document: RFT - Outlook Web App: 
+		
+		while(true){
+			html__130().click(RIGHT, atPoint(13,8));
+			sleep(2);
+			html__ariaId_146().click(atPoint(47,67));
+			button_okbutton2().click();
+			sleep(1);
+		}
+		
+		
+		
 //		// HTML Browser
 //		// Document: RFT - Outlook Web App: 
-//		int last=848;
-//		while(true){
-//			try{
-//				for(int i = last+1; i <1001; i++){
-//					BrowserTestObject b = (BrowserTestObject) utilities.HelperClass.findBrowser();
-//					TestObject[] a = b.find(atDescendant(".tag", "SPAN", "id", "_ariaId_40.folder"), false);
-//					((GuiTestObject) a[0]).hover();
-//					a = b.find(atDescendant(".tag", "SPAN", "id", "_ariaId_40.folder"), false);
-//					((GuiTestObject) a[0]).click();
-//					((GuiTestObject) a[0]).click(RIGHT);
-////					sleep(1.2);
-//					try{
-//						((GuiTestObject) b.find(atDescendant(".tag", "DIV", ".className", "contextMenuDropShadow contextMenuPopup removeFocusOutline"), true)[0]).click(atPoint(31,14));
-//						b.inputKeys(i+"{ENTER}");
-//					} catch(Exception e){
-//						((GuiTestObject) b.find(atDescendant(".tag", "DIV", ".className", "contextMenuDropShadow contextMenuPopup removeFocusOutline"), true)[0]).click(atPoint(31,14));
-//						b.inputKeys(i+"{ENTER}");
+//
+//					while(true){
+//						BrowserTestObject b = (BrowserTestObject) utilities.HelperClass.findBrowser();
+//						TestObject[] c = b.find(atDescendant(".tag", "DIV", "id", "_ariaId_40.subfolders"), false);
+//						TestObject[] a = ((GuiTestObject)c[0]).getChildren();
+//						((GuiTestObject) a[1]).hover();
+//						((GuiTestObject) a[1]).click();
+//						((GuiTestObject) a[1]).click(RIGHT);
+//						sleep(1.2);
+//						try{
+//							((GuiTestObject) b.find(atDescendant(".tag", "DIV", ".className", "contextMenuDropShadow contextMenuPopup removeFocusOutline"), true)[3]).click(atPoint(31,14));
+//							button_okbutton().click();
+//						} catch(Exception e){
+//							((GuiTestObject) b.find(atDescendant(".tag", "DIV", ".className", "contextMenuDropShadow contextMenuPopup removeFocusOutline"), true)[3]).click(atPoint(31,14));
+//							button_okbutton().click();
+//						}
+//						unregisterAll();
 //					}
-//					System.out.println(i);
-//					last=i;
-//				}
-//				stop();
-//			}catch(Exception e){
-//				
-//			}
-//		}
-//		
-		
-
 
 
 

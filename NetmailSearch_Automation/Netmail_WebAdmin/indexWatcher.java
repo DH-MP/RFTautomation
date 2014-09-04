@@ -63,7 +63,7 @@ public class indexWatcher extends indexWatcherHelper
 		
 		TestObject[] rows = table_tableContent().find(atDescendant(".tag", "TR"), false);
 		TestObject[] columns = rows[2].getChildren();
-		vpManual("NoIndexingError", "0", columns[6].getProperty(".contentText").toString().trim()).performTest();
+		vpManual("NoIndexingError", "0( 0.00% )", columns[6].getProperty(".contentText").toString().trim().replaceAll("\n|\t|\r", "")).performTest();
 	}
 	
 	private boolean foundJob(){

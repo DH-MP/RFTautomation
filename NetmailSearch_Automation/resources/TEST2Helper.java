@@ -20,11 +20,11 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>TEST2</b><br>
- * Generated     : <b>2014/07/30 3:22:57 PM</b><br>
+ * Generated     : <b>2014/09/02 9:46:46 AM</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows Server 2008 R2 x86 6.1 <br>
  * 
- * @since  July 30, 2014
+ * @since  September 02, 2014
  * @author Administrator
  */
 public abstract class TEST2Helper extends utilities.MySuperHelper
@@ -56,8 +56,8 @@ public abstract class TEST2Helper extends utilities.MySuperHelper
 	 * okbutton: with default state.
 	 *		.text : ok
 	 * 		type : button
-	 * 		.class : Html.BUTTON
 	 * 		.title : 
+	 * 		.class : Html.BUTTON
 	 * 		.name : 
 	 * 		.classIndex : 28
 	 * 		class : _b_s o365button o365buttonOutlined o365buttonOutlinedHovered
@@ -71,8 +71,8 @@ public abstract class TEST2Helper extends utilities.MySuperHelper
 	 * okbutton: with specific test context and state.
 	 *		.text : ok
 	 * 		type : button
-	 * 		.class : Html.BUTTON
 	 * 		.title : 
+	 * 		.class : Html.BUTTON
 	 * 		.name : 
 	 * 		.classIndex : 28
 	 * 		class : _b_s o365button o365buttonOutlined o365buttonOutlinedHovered
@@ -84,9 +84,40 @@ public abstract class TEST2Helper extends utilities.MySuperHelper
 	}
 	
 	/**
+	 * okbutton: with default state.
+	 *		.text : ok
+	 * 		type : button
+	 * 		.title : 
+	 * 		.class : Html.BUTTON
+	 * 		.name : 
+	 * 		.classIndex : 23
+	 * 		class : _b_s o365button o365buttonOutlined o365buttonOutlinedHovered
+	 */
+	protected GuiTestObject button_okbutton2() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("button_okbutton2"));
+	}
+	/**
+	 * okbutton: with specific test context and state.
+	 *		.text : ok
+	 * 		type : button
+	 * 		.title : 
+	 * 		.class : Html.BUTTON
+	 * 		.name : 
+	 * 		.classIndex : 23
+	 * 		class : _b_s o365button o365buttonOutlined o365buttonOutlinedHovered
+	 */
+	protected GuiTestObject button_okbutton2(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("button_okbutton2"), anchor, flags);
+	}
+	
+	/**
 	 * RFTOutlookWebApp: with default state.
-	 *		.class : Html.HtmlDocument
-	 * 		.title : RFT - Outlook Web App
+	 *		.title : RFT - Outlook Web App
+	 * 		.class : Html.HtmlDocument
 	 */
 	protected DocumentTestObject document_rftOutlookWebApp() 
 	{
@@ -95,8 +126,8 @@ public abstract class TEST2Helper extends utilities.MySuperHelper
 	}
 	/**
 	 * RFTOutlookWebApp: with specific test context and state.
-	 *		.class : Html.HtmlDocument
-	 * 		.title : RFT - Outlook Web App
+	 *		.title : RFT - Outlook Web App
+	 * 		.class : Html.HtmlDocument
 	 */
 	protected DocumentTestObject document_rftOutlookWebApp(TestObject anchor, long flags) 
 	{
@@ -105,10 +136,34 @@ public abstract class TEST2Helper extends utilities.MySuperHelper
 	}
 	
 	/**
+	 * _130: with default state.
+	 *		.text : 130
+	 * 		.className : _n_X7
+	 * 		.class : Html.SPAN
+	 * 		.title : 130
+	 */
+	protected GuiTestObject html__130() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("html__130"));
+	}
+	/**
+	 * _130: with specific test context and state.
+	 *		.text : 130
+	 * 		.className : _n_X7
+	 * 		.class : Html.SPAN
+	 * 		.title : 130
+	 */
+	protected GuiTestObject html__130(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("html__130"), anchor, flags);
+	}
+	
+	/**
 	 * _ariaId_146: with default state.
 	 *		.className : contextMenuDropShadow contextMenuPopup removeFocusOutline
 	 * 		.class : Html.DIV
-	 * 		.classIndex : 17
 	 */
 	protected GuiTestObject html__ariaId_146() 
 	{
@@ -119,7 +174,6 @@ public abstract class TEST2Helper extends utilities.MySuperHelper
 	 * _ariaId_146: with specific test context and state.
 	 *		.className : contextMenuDropShadow contextMenuPopup removeFocusOutline
 	 * 		.class : Html.DIV
-	 * 		.classIndex : 17
 	 */
 	protected GuiTestObject html__ariaId_146(TestObject anchor, long flags) 
 	{
@@ -128,11 +182,35 @@ public abstract class TEST2Helper extends utilities.MySuperHelper
 	}
 	
 	/**
+	 * _ariaId_64: with default state.
+	 *		.className : 
+	 * 		.class : Html.DIV
+	 * 		.classIndex : 3
+	 */
+	protected GuiTestObject html__ariaId_64() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("html__ariaId_64"));
+	}
+	/**
+	 * _ariaId_64: with specific test context and state.
+	 *		.className : 
+	 * 		.class : Html.DIV
+	 * 		.classIndex : 3
+	 */
+	protected GuiTestObject html__ariaId_64(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("html__ariaId_64"), anchor, flags);
+	}
+	
+	/**
 	 * Inbox: with default state.
 	 *		.text : Inbox
+	 * 		.id : _ariaId_40.folder
 	 * 		.className : _n_X7 _n_Y7
-	 * 		.class : Html.SPAN
 	 * 		.title : Inbox
+	 * 		.class : Html.SPAN
 	 */
 	protected GuiTestObject html_inbox() 
 	{
@@ -142,9 +220,10 @@ public abstract class TEST2Helper extends utilities.MySuperHelper
 	/**
 	 * Inbox: with specific test context and state.
 	 *		.text : Inbox
+	 * 		.id : _ariaId_40.folder
 	 * 		.className : _n_X7 _n_Y7
-	 * 		.class : Html.SPAN
 	 * 		.title : Inbox
+	 * 		.class : Html.SPAN
 	 */
 	protected GuiTestObject html_inbox(TestObject anchor, long flags) 
 	{

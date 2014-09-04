@@ -95,6 +95,7 @@ public class TS_1690_Transend_Exchange2013 extends TS_1690_Transend_Exchange2013
 		t.setTargetSharedDirectory(targetSharedDirectory);
 		t.setTargetUserName(targetUserName);
 		t.setTargetUserCN(targetUserCN);
+		t.setSelectedFoldersNoRegexp("Inbox,Drafts,Sent Items");
 		t.setCategory("email");
 		t.setData();
 		t.setCategory("addressBook");
@@ -113,15 +114,15 @@ public class TS_1690_Transend_Exchange2013 extends TS_1690_Transend_Exchange2013
 		//Webadmin
 		webAdmin wa = new webAdmin();
 		wa.login(webAdminUserName, webAdminPassword);	
-		wa.createStorage("File System", name, "\\\\10.1.30.64\\TransendData\\"+name);	
-		wa.createStorageLocation( 
-				"Standard", 
-				name, 
-				"automation", 
-				name, 
-				"\\\\10.1.30.64\\TransendData\\"+name, 
-				"Administrator@BASE2012@First Organization@User"
-		);
+//		wa.createStorage("File System", name, "\\\\10.1.30.64\\TransendData\\"+name);	
+//		wa.createStorageLocation( 
+//				"Standard", 
+//				name, 
+//				"automation", 
+//				name, 
+//				"\\\\10.1.30.64\\TransendData\\"+name, 
+//				"Administrator@BASE2012@First Organization@User"
+//		);
 		wa.index(name, targetUserCN, indexName);
 		wa.waitForIndexing(indexName);
 		
