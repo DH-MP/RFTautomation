@@ -20,11 +20,11 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>TS_PortableAuditOption</b><br>
- * Generated     : <b>2014/08/05 2:16:16 PM</b><br>
+ * Generated     : <b>2014/09/10 2:11:30 PM</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows Server 2008 R2 x86 6.1 <br>
  * 
- * @since  August 05, 2014
+ * @since  September 10, 2014
  * @author Administrator
  */
 public abstract class TS_PortableAuditOptionHelper extends utilities.MySuperHelper

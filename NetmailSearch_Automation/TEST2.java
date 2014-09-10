@@ -47,6 +47,7 @@ public class TEST2 extends TEST2Helper
 			html__ariaId_146().click(atPoint(47,67));
 			button_okbutton2().click();
 			sleep(1);
+			unregisterAll();
 		}
 		
 		

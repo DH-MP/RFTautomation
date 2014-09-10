@@ -20,11 +20,11 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>TS_DisplayContact</b><br>
- * Generated     : <b>2014/08/07 11:52:19 AM</b><br>
+ * Generated     : <b>2014/09/10 2:13:52 PM</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows Server 2008 R2 x86 6.1 <br>
  * 
- * @since  August 07, 2014
+ * @since  September 10, 2014
  * @author Administrator
  */
 public abstract class TS_DisplayContactHelper extends utilities.MySuperHelper
