@@ -36,6 +36,7 @@ public abstract class MySuperHelper extends RationalTestScript
 	public  String URL = "";
 	public  String adminUserName = "administrator";	
 	public  String adminPassword = "Pa$$w0rd";
+	public 	String remoteWorkSpace = "\\\\10.10.23.61\\Data\\NetmailSearch_v5.3.1";
 
 	
 	private IVariablesManager IVM;

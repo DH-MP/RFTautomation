@@ -39,7 +39,7 @@ public class TS_1690_Transend_Exchange2013 extends TS_1690_Transend_Exchange2013
 	
 	Process transend = null;
 	private String transendExePath = "C:\\Program Files (x86)\\Transend Migrator\\tmship\\tm11.exe";
-	private String workSpace = "\\\\10.10.23.61\\Data\\NetmailSearchGV\\NetmailSearch_Automation";
+	private String workSpace = remoteWorkSpace+"\\NetmailSearch_Automation";
 	private String webAdminIP = "http://"+IP+":89";
 	private String webAdminUserName = "netmail";
 	private String webAdminPassword = "M3ss4g1ng";

@@ -51,8 +51,8 @@ public class TS_975_SuperUserExportOnePDFPerItem extends TS_975_SuperUserExportO
 		TestObject[] exports = null, columns = null;
 	
 		files = dpString("filesToDownload").split(",");
-		workspace = dpString("workSpaceLocation");
-		winrarPath = dpString("winrarPath");
+		workspace = remoteWorkSpace+dpString("workSpaceLocation");
+		winrarPath = remoteWorkSpace+dpString("winrarPath");
 		fileLocation = dpString("fileLocation");
 		extractLocation = dpString("extractLocation");
 		exportName = dpString("exportName");

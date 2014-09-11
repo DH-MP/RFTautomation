@@ -39,7 +39,7 @@ public class TS_DisablingDeletion extends TS_DisablingDeletionHelper
 	String cfgFileDirectory = "\\\\"+IP+"\\Messaging Architects\\RemoteProvider";
 	private String backupName = cfgFileDirectory+"\\xgwxmlv_BACKUP.cfg";
 	private String oldFileName = cfgFileDirectory+"\\xgwxmlv.cfg";
-	private String workSpace = "\\\\10.10.23.61\\Data\\NetmailSearchGV\\NetmailSearch_Automation";
+	private String workSpace = remoteWorkSpace+"\\NetmailSearch_Automation";
 	
 	public void testMain(Object[] args) 
 	{

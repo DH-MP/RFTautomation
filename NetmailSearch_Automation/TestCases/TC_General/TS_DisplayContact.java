@@ -43,8 +43,8 @@ public class TS_DisplayContact extends TS_DisplayContactHelper
 		int numOfContact = 100;
 		setupContact(numOfContact);
 		
-		HelperClass.startstopRemoteService(false, IP, "AWA_XMLV_SVC", "\\\\10.10.23.61\\Data\\NetmailSearchGV\\NetmailSearch_Automation");
-		HelperClass.startstopRemoteService(true, IP, "AWA_XMLV_SVC", "\\\\10.10.23.61\\Data\\NetmailSearchGV\\NetmailSearch_Automation");
+		HelperClass.startstopRemoteService(false, IP, "AWA_XMLV_SVC", remoteWorkSpace+"\\NetmailSearch_Automation");
+		HelperClass.startstopRemoteService(true, IP, "AWA_XMLV_SVC", remoteWorkSpace+"\\NetmailSearch_Automation");
 		
 		NetmailLogin.login();
 		adminLogin.selectUserType("Super User");

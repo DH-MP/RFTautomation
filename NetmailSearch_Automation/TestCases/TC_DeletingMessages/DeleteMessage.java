@@ -36,7 +36,7 @@ public class DeleteMessage extends DeleteMessageHelper
 	 * @since  2014/07/14
 	 * @author Administrator
 	 */
-	private String workSpace = "\\\\10.10.23.61\\Data\\NetmailSearchGV\\NetmailSearch_Automation\\";
+	private String workSpace = remoteWorkSpace+"\\NetmailSearch_Automation\\";
 	
 	public void testMain(Object[] args) 
 	{

@@ -38,7 +38,7 @@ public class TS_1695_Transend_Google extends TS_1695_Transend_GoogleHelper
 	 */
 	Process transend = null;
 	private String transendExePath = "C:\\Program Files (x86)\\Transend Migrator\\tmship\\tm11.exe";
-	private String workSpace = "\\\\10.10.23.61\\Data\\NetmailSearchGV\\NetmailSearch_Automation";
+	private String workSpace = remoteWorkSpace+"\\NetmailSearch_Automation";
 	private String webAdminIP = "http://"+IP+":89";
 	private String webAdminUserName = "netmail";
 	private String webAdminPassword = "M3ss4g1ng";

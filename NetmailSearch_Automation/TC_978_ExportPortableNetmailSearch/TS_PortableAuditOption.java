@@ -40,7 +40,7 @@ public class TS_PortableAuditOption extends TS_PortableAuditOptionHelper
 	 */
 	private String extractLocation = "C:\\Users\\Administrator\\Downloads\\ISO";
 	private String fileLocation = "C:\\Users\\Administrator\\Downloads\\";
-	private String workSpace = "\\\\10.10.23.61\\Data\\NetmailSearchGV\\NetmailSearch_Automation";
+	private String workSpace = remoteWorkSpace+"\\NetmailSearch_Automation";
 	public void testMain(Object[] args) 
 	{
 		logInfo("==========TESTING NO AUDIT===============");

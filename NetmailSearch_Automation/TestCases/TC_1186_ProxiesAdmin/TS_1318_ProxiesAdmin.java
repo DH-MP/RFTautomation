@@ -47,7 +47,7 @@ public class TS_1318_ProxiesAdmin extends TS_1318_ProxiesAdminHelper
 	private String exAdminPassword = "";
 	private String userDN = "";
 	private String userBName = "";
-	private String workSpace = "\\\\10.10.23.61\\Data\\NetmailSearchGV\\NetmailSearch_Automation";
+	private String workSpace = remoteWorkSpace+"\\NetmailSearch_Automation";
 	public void testMain(Object[] args) 
 	{
 		String webAdminUserName = dpString("webAdminUserName");
