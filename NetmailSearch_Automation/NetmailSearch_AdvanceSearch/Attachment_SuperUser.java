@@ -29,17 +29,17 @@ public class Attachment_SuperUser extends Attachment_SuperUserHelper
 	 * @author Administrator
 	 */
 	
-	private String  filename = "final xls";
-	private Integer	fileSize1 = 100000, 
-					fileSize2 = 155000;
+	private String  filename = "";
+	private String	fileSize1 = "", 
+					fileSize2 = "";
 	private boolean testBody = true,
 					expectedResults = true;
 	public void testMain(Object[] args) 
 	{
 		if(args.length>0){
 			filename = (String) args[0];
-			fileSize1 = args[1].toString().isEmpty()? null: Integer.parseInt(args[1].toString());
-			fileSize2 = args[2].toString().isEmpty()? null: Integer.parseInt(args[2].toString());
+			fileSize1 = args[1].toString().isEmpty()? "": args[1].toString();
+			fileSize2 = args[2].toString().isEmpty()? "": args[2].toString();
 			testBody = (boolean) args[3];
 			expectedResults = (boolean) args[4];
 		}
@@ -53,14 +53,14 @@ public class Attachment_SuperUser extends Attachment_SuperUserHelper
 
 		//Enter Advance Search Attachment
 		if(!filename.isEmpty()){
-			logInfo("Input <"+filename+ "> in Filename input field");
+			logInfo("Input < "+filename+ " > in Filename input field");
 			checkBox_ifFilenameon().click();
 			text_filename().click();
 			browser_htmlBrowser().inputChars(filename);
 		}
 
 		if(fileSize1 != null && fileSize2!= null){
-			logInfo("Input file size range: <"+fileSize1.toString()+">-<"+fileSize2.toString()+">");
+			logInfo("Input file size range: < "+fileSize1.toString()+" >-< "+fileSize2.toString()+" >");
 			checkBox_ifFilesizeon().click();
 			text_filesize1().click();
 			browser_htmlBrowser().inputChars(fileSize1.toString());
@@ -70,7 +70,8 @@ public class Attachment_SuperUser extends Attachment_SuperUserHelper
 		
 		button_advAttach_Searchsubmit().click();
 		logInfo("search clicked");
-		sleep(15);
+		sleep(5);
+		waitForloading();
 		
 		//Validation Steps
 		TestObject[] activeResultListDiv = find(atDescendant(".tag", "DIV", "class", "x-panel x-panel-noborder x-grid-panel"), true);
@@ -98,18 +99,18 @@ public class Attachment_SuperUser extends Attachment_SuperUserHelper
 			
 			checkBox_ifFilenameon().click();
 			text_filename().click();
-			browser_htmlBrowser().inputChars("final");
+			browser_htmlBrowser().inputChars("22");
 			checkBox_ifFilesizeon().click();
-			text_filesize1().click();
-			browser_htmlBrowser().inputChars("110000");
-			text_filesize2().click();
-			browser_htmlBrowser().inputChars("155000");
+//			text_filesize1().click();
+//			browser_htmlBrowser().inputChars("110000");
+//			text_filesize2().click();
+//			browser_htmlBrowser().inputChars("155000");
 			
 			checkBox_ifAttBodyon().click();
 			text_body().click();
-			browser_htmlBrowser().inputChars("Base");
+			browser_htmlBrowser().inputChars("file");
 			text_nextto().click();
-			browser_htmlBrowser().inputChars("grants");
+			browser_htmlBrowser().inputChars("xfilter");
 			text_within().click();
 			browser_htmlBrowser().inputChars("4");
 			
@@ -196,7 +197,9 @@ public class Attachment_SuperUser extends Attachment_SuperUserHelper
 							  									 .find(atDescendant(".tag", "DIV", "title", new RegularExpression("\\d+", false)), false);
 					Integer size = Integer.parseInt(sizeDiv[0].getProperty(".text").toString());
 					logInfo("Is the size <"+ size +"> of attachment within specified range: "+ fileSize1+" To "+ fileSize2);
-					vpManual("Size_of_Attachment_is_within_size_range", true, fileSize1 <= size && size <= fileSize2 ).performTest();
+					Integer fs1 = fileSizeStringToInteger(fileSize1);
+					Integer fs2 = fileSizeStringToInteger(fileSize2);
+					vpManual("Size_of_Attachment_is_within_size_range", true, fs1 <= size && size <= fs2 ).performTest();
 					//TODO check nested messages
 				}
 				//Close MessageBox
@@ -207,6 +210,17 @@ public class Attachment_SuperUser extends Attachment_SuperUserHelper
 				}
 			}
 		}
+	}
+	
+	
+	private  Integer fileSizeStringToInteger (String size){
+		if(size.matches(".*kb|.*KB")){
+			return (int) (Float.parseFloat(size.replace("kb", "").replace("KB", "").trim())*1000);
+		}
+		if(size.matches(".*mb|.*MB")){
+			return (int) (Float.parseFloat(size.replace("mb", "").replace("MB", "").trim())*1000*1000);
+		}
+		return Integer.parseInt(size);
 	}
 }
 
