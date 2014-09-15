@@ -82,7 +82,7 @@ public class TS_1009_SearchWith20PlusTabs extends TS_1009_SearchWith20PlusTabsHe
 		waitForloading();
 		waitForloading();
 		
-		vpManual("numOfTabSaved", numberOfTabs, findAllTabs().length ).performTest();
+		vpManual("numOfTabSaved", numberOfTabs+1, findAllTabs().length ).performTest();
 		
 		//Test search
 		TestMessageAndWordList();

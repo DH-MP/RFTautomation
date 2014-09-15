@@ -112,6 +112,7 @@ public class AutoFixIndex extends AutoFixIndexHelper
 		
 		HelperClass.navigateLocation("GVautomation>ProxyAdminTest");
 		waitForloading();
+		
 		//Test
 		TestObject[] results = HelperClass.getActiveTabBody()[0].find(atDescendant(".class", "Html.TABLE", "class", "x-grid3-row-table"), true);
 		((GuiTestObject)results[0]).click();

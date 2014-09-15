@@ -75,7 +75,7 @@ public class QuickSearch extends QuickSearchHelper
 				//Open Message
 				((GuiTestObject)result).hover();
 				((GuiTestObject)result).doubleClick();
-				sleep(2);
+				sleep(4);
 				waitForloading();
 				
 				//Subject VF
