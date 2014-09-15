@@ -89,12 +89,12 @@ public class TS_975_SuperUserExportOnePDFPerItem extends TS_975_SuperUserExportO
 		
 		//Open export: Newest export are always first
 		openExport();
-		
+		sleep(5);
+		waitForloading();
 		
 		//Download Export zip file(s)
 		for(String file : files){
 			file = file.trim();
-
 			downloadFile(file);
 			if(files.length>1){
 				
@@ -147,6 +147,8 @@ public class TS_975_SuperUserExportOnePDFPerItem extends TS_975_SuperUserExportO
 			columns = exports[0].find(atDescendant(".tag", "TD"), false);
 			((GuiTestObject)columns[columns.length-1]).click();
 			logInfo("Clicked detail button on export: "+exportName);
+			sleep(5);
+			waitForloading();
 			
 			downloadFile(attachmentFileName);
 			
@@ -249,6 +251,7 @@ public class TS_975_SuperUserExportOnePDFPerItem extends TS_975_SuperUserExportO
 				new Property(".text", new RegularExpression("(?i).*"+file+".*", false)),
 				new Property("class", "x-grid3-row-table"),
 		};
+		
 		TestObject[] exportFiles = html_exportFilesList().find(atDescendant(rowProperty), true);
 		if(exportFiles.length >= 1){
 			
@@ -264,6 +267,7 @@ public class TS_975_SuperUserExportOnePDFPerItem extends TS_975_SuperUserExportO
 				((GuiTestObject)exportFiles[0]).doubleClick();
 				downloadObject = findNotificationBar("Notification bar Text");
 			}
+			
 			String downloadFileText = downloadObject.getProperty(".text").toString();
 			String expectedDownloadMessage = "Do you want to open or save "+file+" from .*";
 			logInfo("Verifying if < "+downloadFileText+" > mathces < "+expectedDownloadMessage+" >" );
@@ -425,7 +429,6 @@ public class TS_975_SuperUserExportOnePDFPerItem extends TS_975_SuperUserExportO
 			if( columns[0].getProperty(".text").equals(exportName)){
 				Export_SuperUser esu = new Export_SuperUser();
 				esu.openWhenTopExportComplete(dpString("exportStatus"));//wait for success Status
-				sleep(10);
 			}else{
 				logError("Export not found!");
 			}

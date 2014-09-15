@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="con" path="com.rational.test.ft.libraries.FT_LIBRARIES"/>
-	<classpathentry kind="con" path="com.rational.test.ft.libraries.FT_TESTOBJECT"/>
-	<classpathentry kind="con" path="com.rational.test.ft.libraries.FT_CUSTOMIZATION"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="src" path=""/>
 	<classpathentry kind="lib" path="C:/Users/All Users/IBM/RFT/customization/commons-io-2.4.jar"/>
 	<classpathentry kind="lib" path="C:/Users/All Users/IBM/RFT/customization/commons-logging-1.1.3.jar"/>
 	<classpathentry kind="lib" path="C:/Users/All Users/IBM/RFT/customization/diff_match_patch-current.jar"/>
@@ -13,5 +8,10 @@
 	<classpathentry kind="lib" path="C:/Users/All Users/IBM/RFT/customization/java-libpst.0.7.jar"/>
 	<classpathentry kind="lib" path="C:/Users/All Users/IBM/RFT/customization/ldap.jar"/>
 	<classpathentry kind="lib" path="C:/Users/All Users/IBM/RFT/customization/commons-lang3-3.3.2.jar"/>
+	<classpathentry kind="con" path="com.rational.test.ft.libraries.FT_LIBRARIES"/>
+	<classpathentry kind="con" path="com.rational.test.ft.libraries.FT_TESTOBJECT"/>
+	<classpathentry kind="con" path="com.rational.test.ft.libraries.FT_CUSTOMIZATION"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path=""/>
 	<classpathentry kind="output" path=""/>
 </classpath>
