@@ -89,6 +89,7 @@ public class TS_Transend_Exchange2013 extends TS_Transend_Exchange2013Helper
 		t.setTargetSharedDirectory(targetSharedDirectory);
 		t.setTargetUserName(targetUserName);
 		t.setTargetUserCN(targetUserCN);
+		t.setSelectedFoldersNoRegexp("Inbox,Drafts,Sent Items");
 		t.setCategory("email");
 		t.setData();
 		t.setCategory("addressBook");

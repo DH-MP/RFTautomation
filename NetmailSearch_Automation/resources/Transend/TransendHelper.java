@@ -20,15 +20,75 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>Transend</b><br>
- * Generated     : <b>2014/09/02 11:15:29 AM</b><br>
+ * Generated     : <b>2014/10/20 11:11:42 AM</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows Server 2008 R2 x86 6.1 <br>
  * 
- * @since  September 02, 2014
+ * @since  October 20, 2014
  * @author Administrator
  */
 public abstract class TransendHelper extends RationalTestScript
 {
+	/**
+	 * Acceptsubmit: with default state.
+	 *		id : submit_approve_access
+	 * 		.text : Accept
+	 * 		type : submit
+	 * 		.id : submit_approve_access
+	 * 		.class : Html.BUTTON
+	 * 		class : goog-buttonset-action
+	 */
+	protected GuiTestObject button_acceptsubmit() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("button_acceptsubmit"));
+	}
+	/**
+	 * Acceptsubmit: with specific test context and state.
+	 *		id : submit_approve_access
+	 * 		.text : Accept
+	 * 		type : submit
+	 * 		.id : submit_approve_access
+	 * 		.class : Html.BUTTON
+	 * 		class : goog-buttonset-action
+	 */
+	protected GuiTestObject button_acceptsubmit(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("button_acceptsubmit"), anchor, flags);
+	}
+	
+	/**
+	 * SignInsubmit: with default state.
+	 *		.id : signIn
+	 * 		.type : submit
+	 * 		.value : Sign in
+	 * 		.title : 
+	 * 		.class : Html.INPUT.submit
+	 * 		.name : signIn
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject button_signInsubmit() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("button_signInsubmit"));
+	}
+	/**
+	 * SignInsubmit: with specific test context and state.
+	 *		.id : signIn
+	 * 		.type : submit
+	 * 		.value : Sign in
+	 * 		.title : 
+	 * 		.class : Html.INPUT.submit
+	 * 		.name : signIn
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject button_signInsubmit(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("button_signInsubmit"), anchor, flags);
+	}
+	
 	/**
 	 * Close: with default state.
 	 *		.text : Close
@@ -271,6 +331,31 @@ public abstract class TransendHelper extends RationalTestScript
 	{
 		return new GuiSubitemTestObject(
                         getMappedTestObject("logonToTargetSystemWasSuccessf"), anchor, flags);
+	}
+	
+	/**
+	 * MessageVault: with default state.
+	 *		.text : Message Vault
+	 * 		.class : TApplication
+	 * 		.processName : mv.exe
+	 * 		.name : Message Vault
+	 */
+	protected TopLevelSubitemTestObject messageVaultwindow() 
+	{
+		return new TopLevelSubitemTestObject(
+                        getMappedTestObject("messageVaultwindow"));
+	}
+	/**
+	 * MessageVault: with specific test context and state.
+	 *		.text : Message Vault
+	 * 		.class : TApplication
+	 * 		.processName : mv.exe
+	 * 		.name : Message Vault
+	 */
+	protected TopLevelSubitemTestObject messageVaultwindow(TestObject anchor, long flags) 
+	{
+		return new TopLevelSubitemTestObject(
+                        getMappedTestObject("messageVaultwindow"), anchor, flags);
 	}
 	
 	/**
@@ -776,6 +861,72 @@ public abstract class TransendHelper extends RationalTestScript
 	{
 		return new GuiTestObject(
                         getMappedTestObject("testLogonbutton"), anchor, flags);
+	}
+	
+	/**
+	 * GmailEmail: with default state.
+	 *		id : Email
+	 * 		.text : 
+	 * 		type : text
+	 * 		.id : Email
+	 * 		.class : Html.INPUT.text
+	 * 		.title : 
+	 * 		name : Email
+	 * 		.classIndex : 0
+	 * 		class : 
+	 */
+	protected TextGuiTestObject text_gmailEmail() 
+	{
+		return new TextGuiTestObject(
+                        getMappedTestObject("text_gmailEmail"));
+	}
+	/**
+	 * GmailEmail: with specific test context and state.
+	 *		id : Email
+	 * 		.text : 
+	 * 		type : text
+	 * 		.id : Email
+	 * 		.class : Html.INPUT.text
+	 * 		.title : 
+	 * 		name : Email
+	 * 		.classIndex : 0
+	 * 		class : 
+	 */
+	protected TextGuiTestObject text_gmailEmail(TestObject anchor, long flags) 
+	{
+		return new TextGuiTestObject(
+                        getMappedTestObject("text_gmailEmail"), anchor, flags);
+	}
+	
+	/**
+	 * GmailPasswd: with default state.
+	 *		.id : Passwd
+	 * 		.type : password
+	 * 		.title : 
+	 * 		.class : Html.INPUT.password
+	 * 		.name : Passwd
+	 * 		class : 
+	 * 		.classIndex : 0
+	 */
+	protected TextGuiTestObject text_gmailPasswd() 
+	{
+		return new TextGuiTestObject(
+                        getMappedTestObject("text_gmailPasswd"));
+	}
+	/**
+	 * GmailPasswd: with specific test context and state.
+	 *		.id : Passwd
+	 * 		.type : password
+	 * 		.title : 
+	 * 		.class : Html.INPUT.password
+	 * 		.name : Passwd
+	 * 		class : 
+	 * 		.classIndex : 0
+	 */
+	protected TextGuiTestObject text_gmailPasswd(TestObject anchor, long flags) 
+	{
+		return new TextGuiTestObject(
+                        getMappedTestObject("text_gmailPasswd"), anchor, flags);
 	}
 	
 	/**

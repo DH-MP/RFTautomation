@@ -81,12 +81,12 @@ public class TS_991_AdvanceSearch_Audit extends TS_991_AdvanceSearch_AuditHelper
 		
 		Object[] aSAS = {query, query2};
 		callScript("NetmailSearch_AdvanceSearch.Audit_SuperUser", aSAS);
-		
+		sleep(4);
+		waitForloading();
 
 		TestObject[] results = find(atDescendant(".class", "Html.TABLE", "class", "x-grid3-row-table"), true);
-		
 		if(dpBoolean("expectedResults") && results.length == 0){
-			logError("No results when expected to have results");
+			logTestResult("No results when expected to have results", false);
 			return;
 		}else if(!dpBoolean("expectedResults") && results.length > 0){
 			logError("Expected no results");

@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-import resources.TC_2057_Transend_Extract_Index_And_Search.TS_1695_Transend_GoogleHelper;
+import resources.TC_2057_Transend_Extract_Index_And_Search.TS_1695_Transend_YahooHelper;
 import utilities.HelperClass;
 import Netmail_WebAdmin.webAdmin;
 import TC_827_NetmailSearch_Search.TS_1378_ListandOrderPersistence;
@@ -21,11 +21,12 @@ import com.rational.test.ft.script.*;
 import com.rational.test.ft.value.*;
 import com.rational.test.ft.vp.*;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
+
 /**
  * Description   : Functional Test Script
  * @author Administrator
  */
-public class TS_1695_Transend_Google extends TS_1695_Transend_GoogleHelper
+public class TS_1695_Transend_Yahoo extends TS_1695_Transend_YahooHelper
 {
 	/**
 	 * Script Name   : <b>TS_1695_Transend_Google</b>
@@ -43,10 +44,10 @@ public class TS_1695_Transend_Google extends TS_1695_Transend_GoogleHelper
 	private String webAdminUserName = "netmail";
 	private String webAdminPassword = "M3ss4g1ng";
 	
-	private String sourceType = "Google Single User";
+	private String sourceType = "Yahoo (via IMAP)";
 	private String targetType = "Netmail XML Archive";
 	
-	public TS_1695_Transend_Google(){
+	public TS_1695_Transend_Yahoo(){
 		//Constructor	
 		IVariablesManager vm = getVariablesManager();
 		IParameter rqmIP = vm.getInputParameter("ip");
@@ -58,7 +59,7 @@ public class TS_1695_Transend_Google extends TS_1695_Transend_GoogleHelper
 	
 	public void testMain(Object[] args) 
 	{	
-		String name = "TS1695";
+		String name = "TS1695_Yahoo";
 		String sourceUserEmail = dpString("sourceUserEmail");
 		String sourcePassword = dpString("sourcePassword");
 		String targetUserName = dpString("targetUserName");
@@ -91,10 +92,8 @@ public class TS_1695_Transend_Google extends TS_1695_Transend_GoogleHelper
 		t.setTargetUserCN(targetUserCN);
 		t.setCategory("email");
 		t.setData();
-		t.setCategory("addressBook");
-		t.setData();
-		t.setCategory("calendar");
-		t.setData();
+
+		
 		t.startSingleMigration();
 			
 		HelperClass.oneBrowserSetup();

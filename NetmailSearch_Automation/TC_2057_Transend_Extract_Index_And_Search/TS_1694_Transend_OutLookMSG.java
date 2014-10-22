@@ -98,14 +98,14 @@ public class TS_1694_Transend_OutLookMSG extends TS_1694_Transend_OutLookMSGHelp
 		//WebAdmin
 		webAdmin wa = new webAdmin();
 		wa.login(webAdminUserName, webAdminPassword);	
-//		wa.createStorage("File System", name, "\\\\10.1.30.64\\TransendData\\"+name);	
-//		wa.createStorageLocation( 
-//				"Standard", 
-//				name, 
-//				"automation", 
-//				name, "\\\\10.1.30.64\\TransendData\\"+name, 
-//				"Administrator@BASE2012@First Organization@User"
-//		);
+		wa.createStorage("File System", name, "\\\\10.1.30.64\\TransendData\\"+name);	
+		wa.createStorageLocation( 
+				"Standard", 
+				name, 
+				"automation", 
+				name, "\\\\10.1.30.64\\TransendData\\"+name, 
+				"Administrator@BASE2012@First Organization@User"
+		);
 		wa.index(name, targetUserCN, indexName);
 		sleep(10);
 		wa.waitForIndexing(indexName);
@@ -114,31 +114,31 @@ public class TS_1694_Transend_OutLookMSG extends TS_1694_Transend_OutLookMSGHelp
 //		//Restart services
 //		HelperClass.startOrStopNetmailServices(false, IP, workSpace);
 //		HelperClass.startOrStopNetmailServices(true, IP, workSpace);
-//		
-//		//Login netmail search and new case
-//		login("");
-//		
-//		/********************NEW CASE***************************/
-//		button_newCasebutton().click();
-//		logInfo("Clicked NewCase");
-//		sleep(0.5);
-//		//DATA
-//		Object[] cmNewCase = {	name,
-//								"nothing",
-//								"New",
-//								"Claim",
-//								"06/13/14",
-//								"06/13/14",
-//								"General Liability",
-//								"Workplace",
-//								true,
-//								name,
-//								"netmail",
-//								false,
-//		};
-//		
-//		callScript("Case_Management.manageCase", cmNewCase);
-//		login(name);
+		
+		//Login netmail search and new case
+		login("");
+		
+		/********************NEW CASE***************************/
+		button_newCasebutton().click();
+		logInfo("Clicked NewCase");
+		sleep(0.5);
+		//DATA
+		Object[] cmNewCase = {	name,
+								"nothing",
+								"New",
+								"Claim",
+								"06/13/14",
+								"06/13/14",
+								"General Liability",
+								"Workplace",
+								true,
+								name,
+								"netmail",
+								false,
+		};
+		
+		callScript("Case_Management.manageCase", cmNewCase);
+		login(name);
 		
 	}
 	

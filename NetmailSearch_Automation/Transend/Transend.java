@@ -139,14 +139,21 @@ public class Transend extends TransendHelper
 				sourceGmailOtherSection();
 			}
 		}
-
 		
+		if(sourceType.contentEquals("Yahoo (via IMAP)") ){	
+			tDropDownFormwindow().inputChars("ya");
+			sourceListlist().click(atName("Yahoo Mail <i>(via IMAP) </i>"));
+			if(emailSection){
+				sourceYahooEmail();	
+			}
+		}
+
 		//Folders only in email section
 		if(emailSection){
 			selectFolders();
 		}
 		
-	//TARGET
+		//TARGET
 		targetTo_DropDownwindow().click();
 		targetListlist().click(atName(targetType));
 		logInfo("Selected targetType < "+targetType+" >");
@@ -315,8 +322,31 @@ public class Transend extends TransendHelper
 	
 	
 	private void sourceGmailOtherSection(){
+		serverDomainComOrIPAddresstext().click();
+		transendMigratorCProgramDataTr().inputKeys("{BKSP}");
+		serverDomainComOrIPAddresstext().click();
+		sleep(0.5);
+		System.out.println(sourceUserEmail);
+		transendMigratorCProgramDataTr().inputChars(sourceUserEmail);
 	}
 	
+	private void sourceYahooEmail(){
+		serverDomainComOrIPAddresstext().click();
+		transendMigratorCProgramDataTr().inputKeys("^a{BKSP}imap.mail.yahoo.com;993");
+		logInfo("input imap yahoo address");
+		
+		sourceEmailtext().click();
+		sourceEmailtext().click(RIGHT);
+		contextpopupMenu().click(atPath("Select All"));
+		transendMigratorCProgramDataTr().inputKeys("{BKSP}");
+		sourceEmailtext().doubleClick(atPoint(1,1));
+		transendMigratorCProgramDataTr().inputChars(sourceUserEmail);
+		logInfo("Input source user email < "+sourceUserEmail+" > ");
+				
+		sourcePasswordtext().click();
+		transendMigratorCProgramDataTr().inputChars(sourcePassword);
+		logInfo("input password <"+sourcePassword+">");
+	}
 	
 	public void startSingleMigration(){
 		startSingleMigrationbutton().click();
@@ -328,10 +358,35 @@ public class Transend extends TransendHelper
 			yesbutton().click();
 		}
 		
-		//Migration Completed Report
-		migrationCompletedReportwindow().waitForExistence(1000, 3);
-		logInfo("click ok on migration complete", migrationCompletedReportwindow().getScreenSnapshot());
-		okMigrationCompletebutton().click(atPoint(24,9));
+		
+		try{
+			//Migration Completed Report
+			migrationCompletedReportwindow().waitForExistence(100, 1);
+			logInfo("click ok on migration complete", migrationCompletedReportwindow().getScreenSnapshot());
+			okMigrationCompletebutton().click(atPoint(24,9));
+			
+		}catch(ObjectNotFoundException e){
+			if(sourceType.contentEquals("Google Single User") && messageVaultwindow().exists()){
+				if(text_gmailEmail().exists()){
+					text_gmailEmail().click();
+					messageVaultwindow().inputChars(sourceUserEmail);
+					
+					text_gmailPasswd().click();
+					messageVaultwindow().inputChars(sourcePassword);
+					
+					button_signInsubmit().click();
+					
+				}
+				if(button_acceptsubmit().exists()){
+					button_acceptsubmit().waitForExistence(100, 1);
+					button_acceptsubmit().click();
+				}
+			}
+			//Migration Completed Report
+			migrationCompletedReportwindow().waitForExistence(100, 1);
+			logInfo("click ok on migration complete", migrationCompletedReportwindow().getScreenSnapshot());
+			okMigrationCompletebutton().click(atPoint(24,9));
+		}
 		
 	}
 
