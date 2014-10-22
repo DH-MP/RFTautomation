@@ -6,6 +6,8 @@ import java.util.HashMap;
 import resources.TC_446_ExportPST.TS_979_ExportPSTHelper;
 import utilities.HelperClass;
 
+import NetmailSearch_General.NetmailLogin;
+import NetmailSearch_General.adminLogin;
 import NetmailSearch_PrintAndExport.Export_SuperUser;
 
 import com.rational.test.ft.*;
@@ -61,11 +63,10 @@ public class TS_979_ExportPST extends TS_979_ExportPSTHelper
 		password = dpString("password");
 		
 		//Login
-		Object[] ls = {null,null, false, true};
-		callScript("loginScript", ls);
+		NetmailLogin.login();
 		//AdminLogin
-		Object[] al = {dpString("caseName"), dpString("userType"), true};
-		callScript("adminLogin", al);
+		adminLogin.selectUserType( dpString("userType"));
+		adminLogin.selectCase(dpString("caseName"));
 		
 		//NewExport
 		Object[] nES = {dpString("searchTabIndex"), 
@@ -97,8 +98,12 @@ public class TS_979_ExportPST extends TS_979_ExportPSTHelper
 			if(files.length>1){
 				//RFT BUG when downloading: No object can be found after notification bar appears;
 				HelperClass.CloseAllBrowsers();
-				callScript("loginScript", ls);
-				callScript("adminLogin", al);
+				
+				//Login
+				NetmailLogin.login();
+				//AdminLogin
+				adminLogin.selectUserType( dpString("userType"));
+				adminLogin.selectCase(dpString("caseName"));
 				
 				button_exportCasebutton().click();
 				logInfo("Clicked export dropdown menu");
@@ -136,8 +141,13 @@ public class TS_979_ExportPST extends TS_979_ExportPSTHelper
 		//Delete Export
 		HelperClass.CloseAllBrowsers();
 		logInfo("Close all browsers"); //Bug bypass: There is a RFT bug when notification bar comes up no object can be found anymore.
-		callScript("loginScript", ls);
-		callScript("adminLogin", al);	
+		
+		//Login
+		NetmailLogin.login();
+		//AdminLogin
+		adminLogin.selectUserType( dpString("userType"));
+		adminLogin.selectCase(dpString("caseName"));
+		
 		deleteExport();
 		
 		//Delete Files

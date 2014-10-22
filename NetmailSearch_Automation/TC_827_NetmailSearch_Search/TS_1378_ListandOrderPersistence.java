@@ -18,6 +18,9 @@ import java.util.regex.Matcher;
 import resources.TC_827_NetmailSearch_Search.TS_1378_ListandOrderPersistenceHelper;
 import utilities.HelperClass;
 
+import NetmailSearch_General.NetmailLogin;
+import NetmailSearch_General.adminLogin;
+
 import com.rational.test.ft.*;
 import com.rational.test.ft.object.interfaces.*;
 import com.rational.test.ft.object.interfaces.SAP.*;
@@ -56,13 +59,9 @@ public class TS_1378_ListandOrderPersistence extends
 		browser_htmlBrowser().waitForExistence(30, DISABLED);
 		browser_htmlBrowser().deleteCookies();
 		
-		Object[] ls = {null, null, false}; //CREDENTIAL
-		callScript("loginScript", ls);
+		NetmailLogin.login();
 		
-		Object[] al = {"", "Normal User"}; //CREDENTIAL
-		callScript("adminLogin", al);
-		sleep(2);
-		waitForloading();
+		adminLogin.selectUserType("Normal User");
 		
 		TS_992_AddTagsAndComments atac = new TS_992_AddTagsAndComments();
 		atac.headerColumns(true, true, true, false, false, false);
@@ -91,8 +90,8 @@ public class TS_1378_ListandOrderPersistence extends
 		browser_htmlBrowser().waitForExistence(30, DISABLED);
 		browser_htmlBrowser().deleteCookies();
 
-		callScript("loginScript", ls);
-		callScript("adminLogin", al);
+		NetmailLogin.login();
+		adminLogin.selectUserType("Normal User");
 		
 		String columnName = dpString("columnOrder").replace("'", "");
 		String[] columnOrderSplit = columnName.split(",");

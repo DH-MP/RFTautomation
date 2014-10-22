@@ -1,5 +1,8 @@
 package TC_831_NetmailSearch;
 import resources.TC_831_NetmailSearch.TS_996Helper;
+import NetmailSearch_General.NetmailLogin;
+import NetmailSearch_General.adminLogin;
+
 import com.rational.test.ft.*;
 import com.rational.test.ft.object.interfaces.*;
 import com.rational.test.ft.object.interfaces.SAP.*;
@@ -30,16 +33,15 @@ public class TS_996 extends TS_996Helper
 	public void testMain(Object[] args) 
 	{
 	//Login
-			Object[] ls = {dpString("userName"), dpString("password"), dpBoolean("failToLogin")};
-			callScript("loginScript", ls);
-			if(dpBoolean("failToLogin"))
+		NetmailLogin.login(dpString("userName"), dpString("password"), dpBoolean("failToLogin"));
+		if(dpBoolean("failToLogin"))
 			return;
 
 	//Admin Login
-			if(dpBoolean("hasPrivilege")){
-				Object[] al = {dpString("caseListName"), "Normal User"};
-				callScript("adminLogin", al);
-			}else{				
+		if(dpBoolean("hasPrivilege")){
+			adminLogin.selectUserType("Normal User");
+			adminLogin.selectCase(dpString("caseListName"));
+		}else{				
 //				//ALS MailBox Default
 //				Property[] ps = new Property[3];
 //				ps[0] = new Property(".class", "Html.A");
@@ -50,7 +52,7 @@ public class TS_996 extends TS_996Helper
 //				GuiTestObject expander = (GuiTestObject) alsLink.getParent().getChildren()[1];
 //				expander.click();
 //				sleep(3);	
-			}
+		}
 		
 	//UserDropDown
 			logInfo("Checking preference menu if it has all button");

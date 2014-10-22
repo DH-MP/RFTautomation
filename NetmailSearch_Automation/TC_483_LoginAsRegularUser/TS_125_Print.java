@@ -10,6 +10,9 @@ import name.fraser.neil.plaintext.diff_match_patch.Diff;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.util.PDFTextStripper;
 
+import NetmailSearch_General.NetmailLogin;
+import NetmailSearch_General.adminLogin;
+
 import com.rational.test.ft.script.Property;
 import com.rational.test.ft.script.RationalTestScript;
 import com.rational.test.ft.vp.IFtVerificationPoint;
@@ -52,14 +55,10 @@ public class TS_125_Print extends TS_125_PrintHelper
 				testExport = dpBoolean("testExport");
 		
 		//Login
-		Object[] ls = {null,null, false};
-		callScript("loginScript", ls);
-		
-		if(isAdmin){
-			//Admin Login
-			Object[] al = {dpString("caseName"), dpString("userType")};
-			callScript("adminLogin", al);
-		}
+		NetmailLogin.login();
+		//AdminLogin
+		adminLogin.selectUserType(dpString("userType"));
+		adminLogin.selectCase(dpString("caseName"));
 		
 		GuiTestObject quickSearch = isAdmin ? text_quickSearchField0(): text_normalUser_quickSearchFie();
 

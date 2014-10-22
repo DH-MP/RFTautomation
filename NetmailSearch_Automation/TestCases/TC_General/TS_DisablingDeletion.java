@@ -8,6 +8,9 @@ import java.io.FileWriter;
 import resources.TestCases.TC_General.TS_DisablingDeletionHelper;
 import utilities.HelperClass;
 
+import NetmailSearch_General.NetmailLogin;
+import NetmailSearch_General.adminLogin;
+
 import com.rational.test.ft.*;
 import com.rational.test.ft.object.interfaces.*;
 import com.rational.test.ft.object.interfaces.SAP.*;
@@ -44,19 +47,16 @@ public class TS_DisablingDeletion extends TS_DisablingDeletionHelper
 	public void testMain(Object[] args) 
 	{
 		
-		Object[] ls = {null,null, false};
-		Object[] al = {"post", "Super User"}; 
-		Object[] al2 = {"", "Normal User"}; 
-		
 		//Both have delete flag off
 		setDeletion(false, false);
 		
-		callScript("loginScript", ls);
-		callScript("adminLogin", al);
+		NetmailLogin.login();
+		adminLogin.superUser();
+		adminLogin.selectCase("post");
 		logTestResult("Delete does NOT exist for super user", !button_deleteMessage().exists());
 		
-		callScript("loginScript", ls);
-		callScript("adminLogin", al2);
+		NetmailLogin.login();
+		adminLogin.normalUser();
 		logTestResult("Delete does NOT exist for normal user", !button_normalUserDeleteMessage().exists());
 		
 		
@@ -64,36 +64,39 @@ public class TS_DisablingDeletion extends TS_DisablingDeletionHelper
 		revert();
 		setDeletion(true, true);
 		
-		callScript("loginScript", ls);
-		callScript("adminLogin", al);
+		NetmailLogin.login();
+		adminLogin.superUser();
+		adminLogin.selectCase("post");
 		logTestResult("Delete does exist for super user", button_deleteMessage().exists());
 		
-		callScript("loginScript", ls);
-		callScript("adminLogin", al2);
+		NetmailLogin.login();
+		adminLogin.normalUser();
 		logTestResult("Delete does exist for normal user", button_normalUserDeleteMessage().exists());
 		
 		//both have delete fla
 		revert();
 		setDeletion(true, false);
 		
-		callScript("loginScript", ls);
-		callScript("adminLogin", al);
+		NetmailLogin.login();
+		adminLogin.superUser();
+		adminLogin.selectCase("post");
 		logTestResult("Delete does exist for super user", button_deleteMessage().exists());
 		
-		callScript("loginScript", ls);
-		callScript("adminLogin", al2);
+		NetmailLogin.login();
+		adminLogin.normalUser();
 		logTestResult("Delete does NOT exist for normal user", !button_normalUserDeleteMessage().exists());
 		
 		//both have delete fla
 		revert();
 		setDeletion(false, true);
 		
-		callScript("loginScript", ls);
-		callScript("adminLogin", al);
+		NetmailLogin.login();
+		adminLogin.superUser();
+		adminLogin.selectCase("post");
 		logTestResult("Delete does NOT exist for super user", !button_deleteMessage().exists());
 		
-		callScript("loginScript", ls);
-		callScript("adminLogin", al2);
+		NetmailLogin.login();
+		adminLogin.normalUser();
 		logTestResult("Delete does exist for normal user", button_normalUserDeleteMessage().exists());
 		
 		

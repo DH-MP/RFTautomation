@@ -1,5 +1,8 @@
 package TC_822_SetupAndLogin;
 import resources.TC_822_SetupAndLogin.TS_985_SuperuserHelper;
+import NetmailSearch_General.NetmailLogin;
+import NetmailSearch_General.adminLogin;
+
 import com.rational.test.ft.*;
 import com.rational.test.ft.object.interfaces.*;
 import com.rational.test.ft.object.interfaces.SAP.*;
@@ -33,15 +36,15 @@ public class TS_985_Superuser extends TS_985_SuperuserHelper
 		languageFrenchCanadianTest();
 		languageDeutschTest();
 		
-		browser_htmlBrowser().loadUrl("http://10.10.24.80:8888");
+		browser_htmlBrowser().loadUrl(URL);
 		button_loginLanguagebutton().click();
 		link_langEnglish().click();
 		
-		Object[] ls = {"admin", "password", false, true};
-		callScript("loginScript", ls);
-		
-		Object[] al = {"themeAndLanguage", "Super User", true};
-		callScript("adminLogin", al);
+		//Login
+		NetmailLogin.login();
+		//AdminLogin
+		adminLogin.selectUserType("Super User");
+		adminLogin.selectCase("themeAndLanguage");
 		
 		button_adminbutton().click();
 		sleep(0.5);

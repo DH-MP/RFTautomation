@@ -8,6 +8,8 @@ import resources.TestCases.TC_DeletingMessages.DeleteMessageHelper;
 import utilities.HelperClass;
 import Case_Management.manageCase;
 import NetmailAdminUUI.WebAdmin;
+import NetmailSearch_General.NetmailLogin;
+import NetmailSearch_General.adminLogin;
 
 import com.rational.test.ft.*;
 import com.rational.test.ft.object.interfaces.*;
@@ -84,11 +86,9 @@ public class DeleteMessage extends DeleteMessageHelper
 		HelperClass.startOrStopNetmailServices(true, IP, workSpace);
 		
 		//Login
-		Object[] ls = {null,null, false};
-		callScript("loginScript", ls);
-		
-		Object[] al = {"", "Super User"}; 
-		callScript("adminLogin", al);
+		NetmailLogin.login();
+		//Admin Login
+		adminLogin.superUser();
 
 		//Create Case
 		manageCase mc = new manageCase();
@@ -130,20 +130,22 @@ public class DeleteMessage extends DeleteMessageHelper
 		HelperClass.startOrStopNetmailServices(false, IP, workSpace);
 		HelperClass.startOrStopNetmailServices(true, IP, workSpace);
 		
+		
 		//Login
-		callScript("loginScript", ls);
-		Object[] al2 = {"GVautomation", "Super User"}; 
-		callScript("adminLogin", al2);
-		sleep(3);
+		NetmailLogin.login();
+		//Admin Login
+		adminLogin.superUser();
+		adminLogin.selectCase("GVautomation");
 		
 		//Verify commited
 		int oldResult = results.length;
 		results = HelperClass.getActiveTabBody()[0].find(atDescendant(".class", "Html.TABLE", "class", "x-grid3-row-table"), true);
 		logTestResult("message removed", results.length == oldResult-1);
 		
-		//Delete Case
-		callScript("loginScript", ls);
-		callScript("adminLogin", al);
+		//Login
+		NetmailLogin.login();
+		//Admin Login
+		adminLogin.superUser();
 		mc.deleteCase("GVautomation");
 	}
 }

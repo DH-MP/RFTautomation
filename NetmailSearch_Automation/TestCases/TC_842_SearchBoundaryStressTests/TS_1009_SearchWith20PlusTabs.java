@@ -10,6 +10,8 @@ import utilities.HelperScript;
 import Case_Management.manageCase;
 import NetmailSearch_AdvanceSearch.MessageWordListTab_SuperUser;
 import NetmailSearch_AdvanceSearch.Message_SuperUser;
+import NetmailSearch_General.NetmailLogin;
+import NetmailSearch_General.adminLogin;
 
 import com.rational.test.ft.*;
 import com.rational.test.ft.object.interfaces.*;
@@ -44,13 +46,8 @@ public class TS_1009_SearchWith20PlusTabs extends TS_1009_SearchWith20PlusTabsHe
 		String caseName = "TS1009_20Plus";
 		int numberOfTabs = 20;  
 		
-		//Login
-		Object[] ls = {null,null, false};
-		callScript("loginScript", ls);
-		
-		//Admin Login
-		Object[] al = {null, "Super User"};
-		callScript("adminLogin", al);
+		NetmailLogin.login();
+		adminLogin.selectUserType(dpString("Super User"));
 		
 		//New Case
 		manageCase mc = new manageCase();
@@ -74,10 +71,11 @@ public class TS_1009_SearchWith20PlusTabs extends TS_1009_SearchWith20PlusTabsHe
 		sleep(20);
 		browser_htmlBrowser().inputKeys("{F5}");
 		sleep(20);
-		callScript("loginScript", ls);
 		
-		Object[] al2 = {caseName, "Super User"};
-		callScript("adminLogin", al2);
+		NetmailLogin.login();
+		adminLogin.selectUserType("Super User");
+		adminLogin.selectCase(caseName);
+		
 		sleep(5);
 		waitForloading();
 		waitForloading();
@@ -88,9 +86,9 @@ public class TS_1009_SearchWith20PlusTabs extends TS_1009_SearchWith20PlusTabsHe
 		TestMessageAndWordList();
 			
 		
-		//Relogin and delete case
-		callScript("loginScript", ls);
-		callScript("adminLogin", al);
+		//Relogin and delete case		
+		NetmailLogin.login();
+		adminLogin.selectUserType("Super User");
 		mc.deleteCase("TS1009_20Plus");
 		
 	}

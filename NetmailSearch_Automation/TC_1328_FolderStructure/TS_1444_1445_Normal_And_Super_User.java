@@ -1,5 +1,8 @@
 package TC_1328_FolderStructure;
 import resources.TC_1328_FolderStructure.TS_1444_1445_Normal_And_Super_UserHelper;
+import NetmailSearch_General.NetmailLogin;
+import NetmailSearch_General.adminLogin;
+
 import com.rational.test.ft.*;
 import com.rational.test.ft.object.interfaces.*;
 import com.rational.test.ft.object.interfaces.SAP.*;
@@ -31,19 +34,16 @@ public class TS_1444_1445_Normal_And_Super_User extends TS_1444_1445_Normal_And_
 	{
 		Boolean admin = dpBoolean("isAdmin");
 		
-		//Login
-		Object[] ls = {dpString("username"), dpString("password"), false, true};
-		callScript("loginScript", ls);
-		
+		//Login	
+		NetmailLogin.login(dpString("username"), dpString("password"));	
 		if(admin){
 			//Admin login
-			Object[] al = {dpString("caseName"), dpString("userType")};
-			callScript("adminLogin", al);
+			adminLogin.selectUserType( dpString("userType"));
+			adminLogin.selectCase(dpString("caseName"));
 			waitForloading();
 			waitForloading();
 		}
 		
-
 		TestObject folderUL = admin ? html_folderUL_Admin() : html_folderUL_Normal();
 		TestObject rootNode = folderUL.getChildren()[0];
 		

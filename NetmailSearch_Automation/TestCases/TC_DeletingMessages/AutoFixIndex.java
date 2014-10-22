@@ -8,6 +8,8 @@ import resources.TestCases.TC_DeletingMessages.AutoFixIndexHelper;
 import utilities.HelperClass;
 import Case_Management.manageCase;
 import NetmailAdminUUI.WebAdmin;
+import NetmailSearch_General.NetmailLogin;
+import NetmailSearch_General.adminLogin;
 
 import com.rational.test.ft.*;
 import com.rational.test.ft.object.interfaces.*;
@@ -80,11 +82,10 @@ public class AutoFixIndex extends AutoFixIndexHelper
 		HelperClass.startOrStopNetmailServices(false, IP, workSpace);
 		HelperClass.startOrStopNetmailServices(true, IP, workSpace);
 		
-		Object[] ls = {null,null, false};
-		callScript("loginScript", ls);
-		
-		Object[] al = {"", "Super User"}; 
-		callScript("adminLogin", al);
+		//Login
+		NetmailLogin.login();
+		//Admin Login
+		adminLogin.superUser();
 
 		//Create Case
 		manageCase mc = new manageCase();
@@ -123,9 +124,10 @@ public class AutoFixIndex extends AutoFixIndexHelper
 		button_deletedMessage_OKbutton().click();
 		
 		
-		//Delete Case
-		callScript("loginScript", ls);
-		callScript("adminLogin", al);
+		//Login
+		NetmailLogin.login();
+		//Admin Login
+		adminLogin.superUser();
 		mc.deleteCase("GVautomation");
 	}
 	

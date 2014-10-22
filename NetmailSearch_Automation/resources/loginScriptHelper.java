@@ -7,7 +7,7 @@
 // file will be lost when automatically updated.
 
 package resources;
-
+import utilities.MySuperHelper;
 import com.rational.test.ft.object.interfaces.*;
 import com.rational.test.ft.object.interfaces.SAP.*;
 import com.rational.test.ft.object.interfaces.WPF.*;
@@ -20,11 +20,11 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>loginScript</b><br>
- * Generated     : <b>2013/06/25 2:05:14 PM</b><br>
+ * Generated     : <b>2014/10/22 1:41:24 PM</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows Server 2008 R2 x86 6.1 <br>
  * 
- * @since  June 25, 2013
+ * @since  October 22, 2014
  * @author Administrator
  */
 public abstract class loginScriptHelper extends utilities.MySuperHelper
@@ -32,6 +32,8 @@ public abstract class loginScriptHelper extends utilities.MySuperHelper
 	/**
 	 * htmlBrowser: with default state.
 	 *		.class : Html.HtmlBrowser
+	 * 		.browserName : MS Internet Explorer
+	 * 		.processName : iexplore.exe
 	 */
 	protected BrowserTestObject browser_htmlBrowser() 
 	{
@@ -41,6 +43,8 @@ public abstract class loginScriptHelper extends utilities.MySuperHelper
 	/**
 	 * htmlBrowser: with specific test context and state.
 	 *		.class : Html.HtmlBrowser
+	 * 		.browserName : MS Internet Explorer
+	 * 		.processName : iexplore.exe
 	 */
 	protected BrowserTestObject browser_htmlBrowser(TestObject anchor, long flags) 
 	{
@@ -50,12 +54,8 @@ public abstract class loginScriptHelper extends utilities.MySuperHelper
 	
 	/**
 	 * Languagebutton: with default state.
-	 *		.text : Language
-	 * 		type : button
-	 * 		.title : 
+	 *		type : button
 	 * 		.class : Html.BUTTON
-	 * 		.name : 
-	 * 		.classIndex : 0
 	 * 		class :  x-btn-text
 	 */
 	protected GuiTestObject button_languagebutton() 
@@ -65,12 +65,8 @@ public abstract class loginScriptHelper extends utilities.MySuperHelper
 	}
 	/**
 	 * Languagebutton: with specific test context and state.
-	 *		.text : Language
-	 * 		type : button
-	 * 		.title : 
+	 *		type : button
 	 * 		.class : Html.BUTTON
-	 * 		.name : 
-	 * 		.classIndex : 0
 	 * 		class :  x-btn-text
 	 */
 	protected GuiTestObject button_languagebutton(TestObject anchor, long flags) 
@@ -81,13 +77,9 @@ public abstract class loginScriptHelper extends utilities.MySuperHelper
 	
 	/**
 	 * Loginbutton: with default state.
-	 *		.text : Login
-	 * 		.type : button
-	 * 		.title : 
+	 *		.type : button
 	 * 		.class : Html.BUTTON
-	 * 		.name : 
 	 * 		class :  x-btn-text
-	 * 		.classIndex : 0
 	 */
 	protected GuiTestObject button_loginbutton() 
 	{
@@ -96,13 +88,9 @@ public abstract class loginScriptHelper extends utilities.MySuperHelper
 	}
 	/**
 	 * Loginbutton: with specific test context and state.
-	 *		.text : Login
-	 * 		.type : button
-	 * 		.title : 
+	 *		.type : button
 	 * 		.class : Html.BUTTON
-	 * 		.name : 
 	 * 		class :  x-btn-text
-	 * 		.classIndex : 0
 	 */
 	protected GuiTestObject button_loginbutton(TestObject anchor, long flags) 
 	{
@@ -190,14 +178,30 @@ public abstract class loginScriptHelper extends utilities.MySuperHelper
 	}
 	
 	/**
+	 * languageUL: with default state.
+	 *		.class : Html.UL
+	 * 		class : x-menu-list
+	 */
+	protected GuiTestObject html_languageUL() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("html_languageUL"));
+	}
+	/**
+	 * languageUL: with specific test context and state.
+	 *		.class : Html.UL
+	 * 		class : x-menu-list
+	 */
+	protected GuiTestObject html_languageUL(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("html_languageUL"), anchor, flags);
+	}
+	
+	/**
 	 * loginWindow: with default state.
-	 *		.offsetTop : RegularExpression(^[1-9][0-9]*$)
-	 * 		.screenLeft : RegularExpression(^[1-9][0-9]*$)
-	 * 		.id : loginWindow
-	 * 		.screenTop : RegularExpression(^[1-9][0-9]*$)
-	 * 		.class : RegularExpression(Html\.DIV)
-	 * 		style : RegularExpression(Z-INDEX: (\d)*; POSITION: absolute; WIDTH: (\d)*px; DISPLAY: b ...
-	 * 		.offsetLeft : RegularExpression(^[1-9][0-9]*$)
+	 *		.id : loginWindow
+	 * 		.class : Html.DIV
 	 */
 	protected GuiTestObject html_loginWindow() 
 	{
@@ -206,13 +210,8 @@ public abstract class loginScriptHelper extends utilities.MySuperHelper
 	}
 	/**
 	 * loginWindow: with specific test context and state.
-	 *		.offsetTop : RegularExpression(^[1-9][0-9]*$)
-	 * 		.screenLeft : RegularExpression(^[1-9][0-9]*$)
-	 * 		.id : loginWindow
-	 * 		.screenTop : RegularExpression(^[1-9][0-9]*$)
-	 * 		.class : RegularExpression(Html\.DIV)
-	 * 		style : RegularExpression(Z-INDEX: (\d)*; POSITION: absolute; WIDTH: (\d)*px; DISPLAY: b ...
-	 * 		.offsetLeft : RegularExpression(^[1-9][0-9]*$)
+	 *		.id : loginWindow
+	 * 		.class : Html.DIV
 	 */
 	protected GuiTestObject html_loginWindow(TestObject anchor, long flags) 
 	{
@@ -222,13 +221,12 @@ public abstract class loginScriptHelper extends utilities.MySuperHelper
 	
 	/**
 	 * loginWindowDynamic: with default state.
-	 *		.screenTop : RegularExpression(^[1-9][0-9]*$)
-	 * 		.className :  x-window x-window-noborder
+	 *		.offsetTop : RegularExpression(^[1-9][0-9]*$)
 	 * 		.id : loginWindow
-	 * 		.offsetTop : RegularExpression(^[1-9][0-9]*$)
+	 * 		.screenLeft : RegularExpression(^[1-9][0-9]*$)
+	 * 		.screenTop : RegularExpression(^[1-9][0-9]*$)
 	 * 		.class : Html.DIV
 	 * 		.offsetLeft : RegularExpression(^[1-9][0-9]*$)
-	 * 		.screenLeft : RegularExpression(^[1-9][0-9]*$)
 	 */
 	protected GuiTestObject html_loginWindowDynamic() 
 	{
@@ -237,13 +235,12 @@ public abstract class loginScriptHelper extends utilities.MySuperHelper
 	}
 	/**
 	 * loginWindowDynamic: with specific test context and state.
-	 *		.screenTop : RegularExpression(^[1-9][0-9]*$)
-	 * 		.className :  x-window x-window-noborder
+	 *		.offsetTop : RegularExpression(^[1-9][0-9]*$)
 	 * 		.id : loginWindow
-	 * 		.offsetTop : RegularExpression(^[1-9][0-9]*$)
+	 * 		.screenLeft : RegularExpression(^[1-9][0-9]*$)
+	 * 		.screenTop : RegularExpression(^[1-9][0-9]*$)
 	 * 		.class : Html.DIV
 	 * 		.offsetLeft : RegularExpression(^[1-9][0-9]*$)
-	 * 		.screenLeft : RegularExpression(^[1-9][0-9]*$)
 	 */
 	protected GuiTestObject html_loginWindowDynamic(TestObject anchor, long flags) 
 	{
@@ -253,9 +250,10 @@ public abstract class loginScriptHelper extends utilities.MySuperHelper
 	
 	/**
 	 * WrongPasswordWindow: with default state.
-	 *		.className :  x-window x-window-plain x-window-dlg
+	 *		.text : RegularExpression(Login Failed.*)
+	 * 		.className :  x-window x-window-plain x-window-dlg
 	 * 		.class : Html.DIV
-	 * 		.contentText : RegularExpression( Login Failed.*)
+	 * 		.contentText : RegularExpression((\s)*Login Failed.*)
 	 */
 	protected GuiTestObject html_wrongPasswordWindow() 
 	{
@@ -264,9 +262,10 @@ public abstract class loginScriptHelper extends utilities.MySuperHelper
 	}
 	/**
 	 * WrongPasswordWindow: with specific test context and state.
-	 *		.className :  x-window x-window-plain x-window-dlg
+	 *		.text : RegularExpression(Login Failed.*)
+	 * 		.className :  x-window x-window-plain x-window-dlg
 	 * 		.class : Html.DIV
-	 * 		.contentText : RegularExpression( Login Failed.*)
+	 * 		.contentText : RegularExpression((\s)*Login Failed.*)
 	 */
 	protected GuiTestObject html_wrongPasswordWindow(TestObject anchor, long flags) 
 	{

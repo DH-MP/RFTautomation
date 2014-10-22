@@ -1,5 +1,8 @@
 package TC_831_NetmailSearch;
 import resources.TC_831_NetmailSearch.TS_1256Helper;
+import NetmailSearch_General.NetmailLogin;
+import NetmailSearch_General.adminLogin;
+
 import com.rational.test.ft.*;
 import com.rational.test.ft.object.interfaces.*;
 import com.rational.test.ft.object.interfaces.SAP.*;
@@ -32,14 +35,14 @@ public class TS_1256 extends TS_1256Helper
 	public void testMain(Object[] args) 
 	{
 		//Login
-				Object[] ls = {null, null, dpBoolean("failToLogin")};
-				callScript("loginScript", ls);
-				if(dpBoolean("failToLogin"))
-					return;
+		NetmailLogin.login(dpBoolean("failToLogin"));
+		if(dpBoolean("failToLogin"))
+			return;
 
 		//Admin Login
-				Object[] al = {dpString("caseListName"), "Super User"};
-				callScript("adminLogin", al);
+		Object[] al = {, };
+		adminLogin.selectUserType("Super User");
+		adminLogin.selectCase(dpString("caseListName"));
 		
 		sleep(3);
 		

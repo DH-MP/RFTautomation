@@ -2,6 +2,9 @@ package TC_1333_FilterAndFolderStats;
 import java.util.regex.Matcher;
 
 import resources.TC_1333_FilterAndFolderStats.TS_1454_FilterAndFolderHelper;
+import NetmailSearch_General.NetmailLogin;
+import NetmailSearch_General.adminLogin;
+
 import com.rational.test.ft.*;
 import com.rational.test.ft.object.interfaces.*;
 import com.rational.test.ft.object.interfaces.SAP.*;
@@ -33,14 +36,11 @@ public class TS_1454_FilterAndFolder extends TS_1454_FilterAndFolderHelper
 	{
 		
 		//Login
-		Object[] ls = {null, null, false, true};
-		callScript("loginScript", ls);
+		NetmailLogin.login();
 		//AdminLogin
 		Object[] al = {dpString("caseName"), dpString("userType"), true};
-		callScript("adminLogin", al);
-		sleep(1);
-		waitForloading();
-		
+		adminLogin.selectUserType( dpString("userType"));
+		adminLogin.selectCase(dpString("caseName"));
 		
 		button_preferencesbutton().click();
 		logInfo("clicked preference");

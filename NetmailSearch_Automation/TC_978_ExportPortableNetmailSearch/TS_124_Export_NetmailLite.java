@@ -7,6 +7,9 @@ import java.util.HashMap;
 import resources.TC_978_ExportPortableNetmailSearch.TS_124_Export_NetmailLiteHelper;
 import utilities.HelperClass;
 
+import NetmailSearch_General.NetmailLogin;
+import NetmailSearch_General.adminLogin;
+
 import com.rational.test.ft.*;
 import com.rational.test.ft.object.interfaces.*;
 import com.rational.test.ft.object.interfaces.SAP.*;
@@ -58,11 +61,9 @@ public class TS_124_Export_NetmailLite extends TS_124_Export_NetmailLiteHelper
 		attachmentFileName = dpString("attachmentFileName");
 		
 		//Login
-		Object[] ls = {dpString("username"), dpString("password"), false, true};
-		callScript("loginScript", ls);
-		//AdminLogin
-		Object[] al = {dpString("caseName"), dpString("userType"), true};
-		callScript("adminLogin", al);
+		NetmailLogin.login(dpString("username"), dpString("password"));
+		adminLogin.selectUserType(dpString("userType"));
+		adminLogin.selectCase(dpString("caseName"));
 		
 		Object[] startNetmail = {	1, 
 									2,

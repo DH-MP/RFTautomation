@@ -5,6 +5,8 @@ import java.io.IOException;
 import org.apache.commons.io.FileUtils;
 
 import resources.TC_449_NetmailSearch_ExportToXML.TS_977_AND_978_SuperUserExportsTheSearchResultsHelper;
+import NetmailSearch_General.NetmailLogin;
+import NetmailSearch_General.adminLogin;
 import NetmailSearch_PrintAndExport.Export_SuperUser;
 
 import com.rational.test.ft.*;
@@ -54,11 +56,10 @@ public class TS_977_AND_978_SuperUserExportsTheSearchResults extends TS_977_AND_
 		exportName = dpString("exportName");
 		
 		//Login
-		Object[] ls = {null,null, false, true};
-		callScript("loginScript", ls);
+		NetmailLogin.login();
 		//AdminLogin
-		Object[] al = {"ExportXML", "Super User", true};
-		callScript("adminLogin", al);
+		adminLogin.selectUserType("Super User");
+		adminLogin.selectCase("ExportXML");
 
 		//NewExport
 		Object[] nES = {dpString("searchTabIndex"), 
@@ -145,8 +146,11 @@ public class TS_977_AND_978_SuperUserExportsTheSearchResults extends TS_977_AND_
 		logInfo("Close all browsers"); //Bug bypass: There is a RFT bug when notification bar comes up no object can be found anymore.
 
 		
-		callScript("loginScript", ls);
-		callScript("adminLogin", al);	
+		//Login
+		NetmailLogin.login();
+		//AdminLogin
+		adminLogin.selectUserType("Super User");
+		adminLogin.selectCase("ExportXML");
 		
 		deleteExport();
 		

@@ -1,5 +1,8 @@
 package TC_827_NetmailSearch_Search;
 import resources.TC_827_NetmailSearch_Search.TS_988_CaseManagementHelper;
+import NetmailSearch_General.NetmailLogin;
+import NetmailSearch_General.adminLogin;
+
 import com.rational.test.ft.*;
 import com.rational.test.ft.object.interfaces.*;
 import com.rational.test.ft.object.interfaces.SAP.*;
@@ -211,13 +214,8 @@ public class TS_988_CaseManagement extends TS_988_CaseManagementHelper
 	}
 	
 	private void login(){
-		//Login
-			Object[] ls = {null,null, false};
-			callScript("loginScript", ls);
-			
-		//Admin Login
-			Object[] al = {"", dpString("userType")};
-			callScript("adminLogin", al);
+		NetmailLogin.login();
+		adminLogin.selectUserType(dpString("userType"));
 	}
 }
 

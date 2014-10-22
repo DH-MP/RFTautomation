@@ -7,7 +7,7 @@
 // file will be lost when automatically updated.
 
 package resources.TC_822_SetupAndLogin;
-
+import utilities.MySuperHelper;
 import com.rational.test.ft.object.interfaces.*;
 import com.rational.test.ft.object.interfaces.SAP.*;
 import com.rational.test.ft.object.interfaces.WPF.*;
@@ -20,14 +20,14 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>TS_985_Superuser</b><br>
- * Generated     : <b>2013/07/30 2:56:17 PM</b><br>
+ * Generated     : <b>2014/10/22 2:20:45 PM</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows Server 2008 R2 x86 6.1 <br>
  * 
- * @since  July 30, 2013
+ * @since  October 22, 2014
  * @author Administrator
  */
-public abstract class TS_985_SuperuserHelper extends RationalTestScript
+public abstract class TS_985_SuperuserHelper extends utilities.MySuperHelper
 {
 	/**
 	 * htmlBrowser: with default state.

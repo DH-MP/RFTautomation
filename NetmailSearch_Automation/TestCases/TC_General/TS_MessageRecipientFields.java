@@ -5,6 +5,9 @@ import java.util.Map;
 import resources.TestCases.TC_General.TS_MessageRecipientFieldsHelper;
 import utilities.HelperClass;
 
+import NetmailSearch_General.NetmailLogin;
+import NetmailSearch_General.adminLogin;
+
 import com.rational.test.ft.*;
 import com.rational.test.ft.object.interfaces.*;
 import com.rational.test.ft.object.interfaces.SAP.*;
@@ -35,12 +38,11 @@ public class TS_MessageRecipientFields extends TS_MessageRecipientFieldsHelper
 	public void testMain(Object[] args) 
 	{
 		//Login
-		Object[] ls = {null,null, false};
-		callScript("loginScript", ls);
+		NetmailLogin.login();
 		
 		//Admin Login
-		Object[] al = {"post", "Super User"};
-		callScript("adminLogin", al);
+		adminLogin.superUser();
+		adminLogin.selectCase("post");
 		waitForloading();
 				
 		TestObject[] messages = HelperClass.getActiveTabBody()[0].find(atDescendant(".class", "Html.TABLE", "class", "x-grid3-row-table"), true);

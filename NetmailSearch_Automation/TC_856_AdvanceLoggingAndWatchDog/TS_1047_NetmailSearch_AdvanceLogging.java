@@ -7,6 +7,8 @@ import java.text.SimpleDateFormat;
 import resources.TC_856_AdvanceLoggingAndWatchDog.TS_1047_NetmailSearch_AdvanceLoggingHelper;
 import utilities.HelperClass;
 
+import NetmailSearch_General.NetmailLogin;
+
 import com.rational.test.ft.*;
 import com.rational.test.ft.object.interfaces.*;
 import com.rational.test.ft.object.interfaces.SAP.*;
@@ -54,10 +56,8 @@ public class TS_1047_NetmailSearch_AdvanceLogging extends TS_1047_NetmailSearch_
 		vpManual("DoneMessage", "Done", document_htmlDocument().getProperty(".text").toString().trim()).performTest();
 		logInfo("Turning on dplog");
 		
-		
-		//Login
-		Object[] ls = {userName, "blub", true, false};
-		callScript("loginScript", ls);
+		//bad login
+		NetmailLogin.login(userName, "blub", true);
 		
 		BufferedReader br = null;
 		try {

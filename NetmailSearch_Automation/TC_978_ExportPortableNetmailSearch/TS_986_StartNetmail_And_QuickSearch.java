@@ -2,6 +2,9 @@ package TC_978_ExportPortableNetmailSearch;
 import resources.TC_978_ExportPortableNetmailSearch.TS_986_StartNetmail_And_QuickSearchHelper;
 import utilities.HelperClass;
 
+import NetmailSearch_General.NetmailLogin;
+import NetmailSearch_General.adminLogin;
+
 import com.rational.test.ft.*;
 import com.rational.test.ft.object.interfaces.*;
 import com.rational.test.ft.object.interfaces.SAP.*;
@@ -31,12 +34,9 @@ public class TS_986_StartNetmail_And_QuickSearch extends TS_986_StartNetmail_And
 	 */
 	public void testMain(Object[] args) 
 	{
-		//Login
-		Object[] ls = {null, null, false, true};
-		callScript("loginScript", ls);
-		//AdminLogin
-		Object[] al = {dpString("caseName"), dpString("userType"), true};
-		callScript("adminLogin", al);
+		NetmailLogin.login();
+		adminLogin.selectUserType(dpString("userType"));
+		adminLogin.selectCase(dpString("caseName"));
 		
 		Object[] startNetmail = {	dpString("searchTabIndex"), 
 									dpInt("itemOption"),

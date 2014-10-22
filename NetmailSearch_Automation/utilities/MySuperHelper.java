@@ -42,14 +42,14 @@ public abstract class MySuperHelper extends RationalTestScript
 	private IVariablesManager IVM;
 	private TestObject[] browsers = find(atDescendant(".class", "Html.HtmlBrowser"));
 	
-	public MySuperHelper(){
+	public MySuperHelper(){	
+		//RQM variable override default values IP, adminusername, adminpassword
 		IVariablesManager vm = getVariablesManager();
 		IParameter rqmIP = vm.getInputParameter("ip");
 		IP = rqmIP == null ? IP : rqmIP.getValue();
 		URL = "http://"+IP+":8888";
 		webAdminIP = "http://"+IP+":89";
 		webAdminUUI = "http://"+IP+":8989";
-		
 		
 		IParameter rqmUserName = vm.getInputParameter("adminUserName");
 		IParameter rqmPassword = vm.getInputParameter("adminPassword");

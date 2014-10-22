@@ -1,6 +1,8 @@
 package TestCases.TC_CaseData;
 import resources.TestCases.TC_CaseData.TS_ExportDataHelper;
 import Case_Management.manageCase;
+import NetmailSearch_General.NetmailLogin;
+import NetmailSearch_General.adminLogin;
 import NetmailSearch_PrintAndExport.Export_SuperUser;
 
 import com.rational.test.ft.*;
@@ -35,12 +37,9 @@ public class TS_ExportData extends TS_ExportDataHelper
 		String exportName = "Hodor";
 		String caseName = "TS_ExportData";
 		//Login
-		Object[] ls = {null,null, false};
-		callScript("loginScript", ls);
-		
+		NetmailLogin.login();
 		//Admin Login
-		Object[] al = {null, "Super User"};
-		callScript("adminLogin", al);
+		adminLogin.superUser();
 		
 		manageCase mc = new manageCase();
 		mc.setTestMode(false);
@@ -75,10 +74,11 @@ public class TS_ExportData extends TS_ExportDataHelper
 		
 		
 		//Login
-		callScript("loginScript", ls);
-		
+		NetmailLogin.login();
 		//Admin Login
-		callScript("adminLogin", al);
+		adminLogin.superUser();
+		
+		
 		mc.deleteCase("TS_ExportDataEDITED");
 		mc.openCase("intern_mike");
 		waitForloading();

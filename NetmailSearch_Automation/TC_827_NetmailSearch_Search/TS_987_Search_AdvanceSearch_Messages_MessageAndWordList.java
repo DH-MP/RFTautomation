@@ -2,6 +2,9 @@ package TC_827_NetmailSearch_Search;
 import java.util.HashMap;
 
 import resources.TC_827_NetmailSearch_Search.TS_987_Search_AdvanceSearch_Messages_MessageAndWordListHelper;
+import NetmailSearch_General.NetmailLogin;
+import NetmailSearch_General.adminLogin;
+
 import com.rational.test.ft.*;
 import com.rational.test.ft.object.interfaces.*;
 import com.rational.test.ft.object.interfaces.SAP.*;
@@ -37,12 +40,9 @@ public class TS_987_Search_AdvanceSearch_Messages_MessageAndWordList extends TS_
 		
 		if(!skipLogin){
 			//Login
-			Object[] ls = {null, null, false};
-			callScript("loginScript", ls);
-			
-			//Admin Login
-			Object[] al = {dpString("caseName"), dpString("userType")};
-			callScript("adminLogin", al);
+			NetmailLogin.login();
+			adminLogin.selectUserType(dpString("userType"));
+			adminLogin.selectCase(dpString("caseName"));
 		}
 				
 		//Advance Search

@@ -1,5 +1,8 @@
 package TC_827_NetmailSearch_Search;
 import resources.TC_827_NetmailSearch_Search.TS_987_Search_AdvanceSearch_Messages_NetmailSearchHelper;
+import NetmailSearch_General.NetmailLogin;
+import NetmailSearch_General.adminLogin;
+
 import com.rational.test.ft.*;
 import com.rational.test.ft.object.interfaces.*;
 import com.rational.test.ft.object.interfaces.SAP.*;
@@ -29,13 +32,9 @@ public class TS_987_Search_AdvanceSearch_Messages_NetmailSearch extends TS_987_S
 	 */
 	public void testMain(Object[] args) 
 	{
-		//Login
-				Object[] ls = {null,null, false};
-				callScript("loginScript", ls);
-				
-		//Admin Login
-				Object[] al = {dpString("caseName"), dpString("userType")};
-				callScript("adminLogin", al);
+		NetmailLogin.login();
+		adminLogin.selectUserType(dpString("userType"));
+		adminLogin.selectCase(dpString("caseName"));
 				
 		Object[] aSMN = {	dpString("field1"),
 							dpString("field2"), 

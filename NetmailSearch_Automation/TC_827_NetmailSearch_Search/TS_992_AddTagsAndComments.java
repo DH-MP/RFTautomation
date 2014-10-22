@@ -2,6 +2,9 @@ package TC_827_NetmailSearch_Search;
 import resources.TC_827_NetmailSearch_Search.TS_992_AddTagsAndCommentsHelper;
 import utilities.HelperClass;
 
+import NetmailSearch_General.NetmailLogin;
+import NetmailSearch_General.adminLogin;
+
 import com.rational.test.ft.*;
 import com.rational.test.ft.object.interfaces.*;
 import com.rational.test.ft.object.interfaces.SAP.*;
@@ -283,13 +286,9 @@ public class TS_992_AddTagsAndComments extends TS_992_AddTagsAndCommentsHelper
 	}
 	
 	private void setup(){
-		//Login
-		Object[] ls = {null, null, false};
-		callScript("loginScript", ls);
-		
-		//Admin Login
-		Object[] al = {dpString("caseName"), dpString("userType")};
-		callScript("adminLogin", al);
+		NetmailLogin.login();
+		adminLogin.selectUserType(dpString("userType"));
+		adminLogin.selectCase(dpString("caseName"));
 		waitForloading();
 		
 		//QuickSearch term should contain more than 4 message result

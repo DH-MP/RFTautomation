@@ -1,6 +1,8 @@
 package TC_827_NetmailSearch_Search;
 import resources.TC_827_NetmailSearch_Search.TS_QuickSearchHelper;
 import NetmailSearch_AdvanceSearch.QuickSearch;
+import NetmailSearch_General.NetmailLogin;
+import NetmailSearch_General.adminLogin;
 
 import com.rational.test.ft.*;
 import com.rational.test.ft.object.interfaces.*;
@@ -31,11 +33,9 @@ public class TS_QuickSearch extends TS_QuickSearchHelper
 	 */
 	public void testMain(Object[] args) 
 	{
-		Object[] ls = {null, null, false};
-		callScript("loginScript", ls);
-		
-		Object[] al = {"post", "Super User"};
-		callScript("adminLogin", al);
+		NetmailLogin.login();
+		adminLogin.selectUserType("Super User");
+		adminLogin.selectCase("post");
 
 		QuickSearch qs = new QuickSearch();
 		qs.search(dpString("searchTerm"));

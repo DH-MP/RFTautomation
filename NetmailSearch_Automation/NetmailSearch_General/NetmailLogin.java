@@ -45,8 +45,15 @@ public class NetmailLogin extends NetmailLoginHelper
 	{
 	}
 	
+	
+	//Login using default value (may be override by RQM value)
 	public static void login(){
 		NetmailLogin nl = getInstance();
+		nl.performLogin(nl.username, nl.password);
+	}
+	public static void login(boolean failToLogin){
+		NetmailLogin nl = getInstance();
+		nl.failToLogin = failToLogin;
 		nl.performLogin(nl.username, nl.password);
 	}
 	public static void login(String username, String password){
@@ -62,7 +69,6 @@ public class NetmailLogin extends NetmailLoginHelper
 	
 	private void performLogin(String username, String password){
 		String url = URL;
-		
 		//Set up browsers;
 		try{
 			utilities.HelperClass.oneBrowserSetup();
@@ -83,7 +89,16 @@ public class NetmailLogin extends NetmailLoginHelper
 		String msg;
 		html_loginWindow().waitForExistence(120, DISABLED);
 
-		msg = "Logging in with the following information: username = %s, password = %s";
+		button_languagebutton().click();
+		TestObject[] languages = html_languageUL().find(atDescendant(".class", "Html.LI"));
+		vpManual("NumOfLanguageOption", 5, languages.length).performTest();
+		vpManual("FirstLanguageOption", "English", languages[0].getProperty(".text")).performTest();
+		vpManual("SecondLanguageOption", "Français", languages[1].getProperty(".text")).performTest();
+		vpManual("ThirdLanguageOption", "Français (Canadien)", languages[2].getProperty(".text")).performTest();
+		vpManual("FourthLanguageOption", "Deutsch", languages[3].getProperty(".text")).performTest();
+		vpManual("FourthLanguageOption", "Magyar", languages[4].getProperty(".text")).performTest();
+		
+		msg = "Logging in with the following information: username = < %s >, password = < %s >";
 		logInfo(String.format(msg, username, password));
 		text_username().click();
 		browser_htmlBrowser().inputChars(username);
@@ -108,7 +123,7 @@ public class NetmailLogin extends NetmailLoginHelper
 			vpManual("AfterLogin_LoginWindow_isNotVisible", false, html_loginWindow().ensureObjectIsVisible()).performTest();
 			vpManual("AfterLogin_Username_Input_NotVisible", false, text_username().ensureObjectIsVisible()).performTest();
 			vpManual("AfterLogin_Password_Input_NotVisible", false, text_pwd().ensureObjectIsVisible()).performTest();
-			sleep(5);
+			sleep(2);
 		}
 		unregisterAll();
 	}

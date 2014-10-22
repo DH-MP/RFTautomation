@@ -5,6 +5,8 @@ import java.util.regex.Matcher;
 import resources.TC_483_LoginAsRegularUser.TS_981_NormalUserHelper;
 import utilities.HelperClass;
 
+import NetmailSearch_General.NetmailLogin;
+
 import com.rational.test.ft.*;
 import com.rational.test.ft.object.interfaces.*;
 import com.rational.test.ft.object.interfaces.SAP.*;
@@ -40,8 +42,7 @@ public class TS_981_NormalUser extends TS_981_NormalUserHelper
 		performForwardingMessage = dpBoolean("testForwardingMessage");
 		
 		//Login
-		Object[] ls = {dpString("userName"), dpString("password"), dpBoolean("failToLogin")};
-		callScript("loginScript", ls);
+		NetmailLogin.login(dpString("userName"), dpString("password"), dpBoolean("failToLogin"));
 		sleep(5);
 		if(dpBoolean("failToLogin"))
 			return;
@@ -137,9 +138,9 @@ public class TS_981_NormalUser extends TS_981_NormalUserHelper
 			//Forward Message Tests
 //			TestMessageWithNoAttachment();
 			//TODO: BROKEN missing messages NOT GROUPWISE
-//			callScript("loginScript", ls);	
+//			NetmailLogin.login(dpString("userName"), dpString("password"), dpBoolean("failToLogin"));
 //			TestMessageWithAttachment();
-//			callScript("loginScript", ls);		
+//			NetmailLogin.login(dpString("userName"), dpString("password"), dpBoolean("failToLogin"));		
 //			TestMessageWithNestedMessage();
 		}
 		

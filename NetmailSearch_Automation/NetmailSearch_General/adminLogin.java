@@ -39,6 +39,17 @@ public class adminLogin extends adminLoginHelper
 		al.userType = userType;
 		al.selectUserType();
 	}
+	public static void superUser(){
+		adminLogin al = getInstance();
+		al.userType = "Super User";
+		al.selectUserType();
+	}
+	public static void normalUser(){
+		adminLogin al = getInstance();
+		al.userType = "Normal User";
+		al.selectUserType();
+	}
+	
 	private void selectUserType(){
 		/******Click UserType*******/
 		String info = "On admin login, selecting: %s";

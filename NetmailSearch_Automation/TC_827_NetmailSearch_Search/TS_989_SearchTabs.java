@@ -5,6 +5,9 @@ import resources.TC_827_NetmailSearch_Search.TS_989_SearchTabsHelper;
 import utilities.HelperClass;
 import utilities.HelperScript;
 
+import NetmailSearch_General.NetmailLogin;
+import NetmailSearch_General.adminLogin;
+
 import com.rational.test.ft.*;
 import com.rational.test.ft.object.interfaces.*;
 import com.rational.test.ft.object.interfaces.SAP.*;
@@ -40,11 +43,9 @@ public class TS_989_SearchTabs extends TS_989_SearchTabsHelper
 			oldNumOfTabs = -1;
 		String 	tabName = "Acorn", quickSearchTerm = "BCC";
 
-		Object[] ls = {null,null, false};
-		callScript("loginScript", ls);
-		
-		Object[] al = {"intern_mike", "Super User"};
-		callScript("adminLogin", al);
+		NetmailLogin.login();
+		adminLogin.selectUserType("Super User");
+		adminLogin.selectCase("intern_mike");
 		
 /******* Advance Search + Quick search on result  *****************************************************************/	
 	//Advance Search

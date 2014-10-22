@@ -70,8 +70,17 @@ public class loginScript extends loginScriptHelper
 		html_loginWindow().waitForExistence(120, DISABLED);
 		html_body().click(atPoint(1,1));
 		button_languagebutton().click();
-		html_body().hover(atPoint(1,1));
+
 		
+		TestObject[] languages = html_languageUL().find(atDescendant(".class", "Html.LI"));
+		vpManual("NumOfLanguageOption", 5, languages.length).performTest();
+		vpManual("FirstLanguageOption", "English", languages[0].getProperty(".text")).performTest();
+		vpManual("SecondLanguageOption", "Français", languages[1].getProperty(".text")).performTest();
+		vpManual("ThirdLanguageOption", "Français (Canadien)", languages[2].getProperty(".text")).performTest();
+		vpManual("FourthLanguageOption", "Deutsch", languages[3].getProperty(".text")).performTest();
+		vpManual("FourthLanguageOption", "Magyar", languages[4].getProperty(".text")).performTest();
+		
+//		html_body().hover(atPoint(1,1));
 //		if(!skipLoginVerification){
 //			if(isIE){
 //				if( !html_body().compare( loginWindow_IEVP() )){
@@ -84,7 +93,7 @@ public class loginScript extends loginScriptHelper
 //			}
 //		}
 		
-		msg = "Logging in with the following information: username = %s, password = %s";
+		msg = "Logging in with the following information: username = < %s > , password = < %s >";
 		logInfo(String.format(msg, username, password));
 		text_username().click();
 		browser_htmlBrowser().inputChars(username);
@@ -109,7 +118,7 @@ public class loginScript extends loginScriptHelper
 			vpManual("AfterLogin_LoginWindow_isNotVisible", false, html_loginWindow().ensureObjectIsVisible()).performTest();
 			vpManual("AfterLogin_Username_Input_NotVisible", false, text_username().ensureObjectIsVisible()).performTest();
 			vpManual("AfterLogin_Password_Input_NotVisible", false, text_pwd().ensureObjectIsVisible()).performTest();
-			sleep(5);
+			sleep(2);
 		}
 		unregisterAll();
 	}

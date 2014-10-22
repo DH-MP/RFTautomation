@@ -5,6 +5,9 @@ import java.io.IOException;
 import resources.TC_446_ExportPST.TS_120_FailureToSavePSTHelper;
 import utilities.HelperClass;
 
+import NetmailSearch_General.NetmailLogin;
+import NetmailSearch_General.adminLogin;
+
 import com.rational.test.ft.*;
 import com.rational.test.ft.object.interfaces.*;
 import com.rational.test.ft.object.interfaces.SAP.*;
@@ -40,11 +43,10 @@ public class TS_120_FailureToSavePST extends TS_120_FailureToSavePSTHelper
 		exportName = dpString("exportName");
 		HelperClass.CloseAllBrowsers();
 		//Login
-		Object[] ls = {dpString("username"), dpString("password"), false, true};
-		callScript("loginScript", ls);
+		NetmailLogin.login(dpString("username"), dpString("password"));
 		//AdminLogin
-		Object[] al = {dpString("caseName"), dpString("userType"), true};
-		callScript("adminLogin", al);
+		adminLogin.selectUserType(dpString("userType"));
+		adminLogin.selectCase(dpString("caseName"));
 		
 		
 		button_exportCasebutton().click();

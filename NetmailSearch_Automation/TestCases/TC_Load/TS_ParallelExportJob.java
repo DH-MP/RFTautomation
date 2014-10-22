@@ -1,5 +1,7 @@
 package TestCases.TC_Load;
 import resources.TestCases.TC_Load.TS_ParallelExportJobHelper;
+import NetmailSearch_General.NetmailLogin;
+import NetmailSearch_General.adminLogin;
 import NetmailSearch_PrintAndExport.Export_SuperUser;
 
 import com.rational.test.ft.*;
@@ -33,12 +35,11 @@ public class TS_ParallelExportJob extends TS_ParallelExportJobHelper
 	{
 		
 		//Login
-		Object[] ls = {null,null, false};
-		callScript("loginScript", ls);
+		NetmailLogin.login();
 		
 		//Admin Login
-		Object[] al = {"ExportXML", "Super User"};
-		callScript("adminLogin", al);
+		adminLogin.superUser();
+		adminLogin.selectCase("ExportXML");
 		
 		int parallel = 3;
 		

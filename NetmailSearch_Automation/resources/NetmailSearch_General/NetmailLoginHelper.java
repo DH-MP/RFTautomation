@@ -20,11 +20,11 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>NetmailLogin</b><br>
- * Generated     : <b>2014/07/28 4:09:07 PM</b><br>
+ * Generated     : <b>2014/10/22 1:56:43 PM</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows Server 2008 R2 x86 6.1 <br>
  * 
- * @since  July 28, 2014
+ * @since  October 22, 2014
  * @author Administrator
  */
 public abstract class NetmailLoginHelper extends utilities.MySuperHelper
@@ -175,6 +175,27 @@ public abstract class NetmailLoginHelper extends utilities.MySuperHelper
 	{
 		return new GuiTestObject(
                         getMappedTestObject("html_extGen13"), anchor, flags);
+	}
+	
+	/**
+	 * languageUL: with default state.
+	 *		.class : Html.UL
+	 * 		class : x-menu-list
+	 */
+	protected GuiTestObject html_languageUL() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("html_languageUL"));
+	}
+	/**
+	 * languageUL: with specific test context and state.
+	 *		.class : Html.UL
+	 * 		class : x-menu-list
+	 */
+	protected GuiTestObject html_languageUL(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("html_languageUL"), anchor, flags);
 	}
 	
 	/**

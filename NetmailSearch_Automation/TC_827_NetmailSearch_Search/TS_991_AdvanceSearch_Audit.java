@@ -7,6 +7,9 @@ import java.util.Map.Entry;
 import java.util.Vector;
 
 import resources.TC_827_NetmailSearch_Search.TS_991_AdvanceSearch_AuditHelper;
+import NetmailSearch_General.NetmailLogin;
+import NetmailSearch_General.adminLogin;
+
 import com.rational.test.ft.*;
 import com.rational.test.ft.object.interfaces.*;
 import com.rational.test.ft.object.interfaces.SAP.*;
@@ -36,13 +39,9 @@ public class TS_991_AdvanceSearch_Audit extends TS_991_AdvanceSearch_AuditHelper
 	 */
 	public void testMain(Object[] args) 
 	{
-		//Login
-		Object[] ls = {null,null, false};
-		callScript("loginScript", ls);
-		
-		//Admin Login
-		Object[] al = {dpString("caseName"), dpString("userType")};
-		callScript("adminLogin", al);
+		NetmailLogin.login();
+		adminLogin.selectUserType(dpString("userType"));
+		adminLogin.selectCase(dpString("caseName"));
 		
 		
 		HashMap<String, Boolean> query = new HashMap<String, Boolean> ();

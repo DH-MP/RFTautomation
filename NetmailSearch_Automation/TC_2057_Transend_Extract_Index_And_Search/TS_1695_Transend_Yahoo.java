@@ -5,6 +5,8 @@ import java.util.Map;
 
 import resources.TC_2057_Transend_Extract_Index_And_Search.TS_1695_Transend_YahooHelper;
 import utilities.HelperClass;
+import NetmailSearch_General.NetmailLogin;
+import NetmailSearch_General.adminLogin;
 import Netmail_WebAdmin.webAdmin;
 import TC_827_NetmailSearch_Search.TS_1378_ListandOrderPersistence;
 import Transend.Transend;
@@ -148,12 +150,11 @@ public class TS_1695_Transend_Yahoo extends TS_1695_Transend_YahooHelper
 	
 	private void login(String caseName){
 		//Login
-			Object[] ls = {null,null, false};
-			callScript("loginScript", ls);
+		NetmailLogin.login();
 			
 		//Admin Login
-			Object[] al = {caseName, "Super User"};
-			callScript("adminLogin", al);
+		adminLogin.selectUserType("Super User");
+		adminLogin.selectCase(caseName);
 	}
 	
 	@Override

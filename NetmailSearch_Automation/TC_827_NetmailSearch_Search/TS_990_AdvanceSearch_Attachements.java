@@ -1,5 +1,8 @@
 package TC_827_NetmailSearch_Search;
 import resources.TC_827_NetmailSearch_Search.TS_990_AdvanceSearch_AttachementsHelper;
+import NetmailSearch_General.NetmailLogin;
+import NetmailSearch_General.adminLogin;
+
 import com.rational.test.ft.*;
 import com.rational.test.ft.object.interfaces.*;
 import com.rational.test.ft.object.interfaces.SAP.*;
@@ -29,13 +32,9 @@ public class TS_990_AdvanceSearch_Attachements extends TS_990_AdvanceSearch_Atta
 	 */
 	public void testMain(Object[] args) 
 	{
-		//Login
-		Object[] ls = {null,null, false};
-		callScript("loginScript", ls);
-		
-		//Admin Login
-		Object[] al = {dpString("caseName"), dpString("userType")};
-		callScript("adminLogin", al);
+		NetmailLogin.login();
+		adminLogin.selectUserType(dpString("userType"));
+		adminLogin.selectCase(dpString("caseName"));
 		
 		Object[] aSASU = {dpString("fileName"), dpString("fileSize1"), dpString("fileSize2"), dpBoolean("testBody"), dpBoolean("expectedResults")};
 		callScript("NetmailSearch_AdvanceSearch.Attachment_SuperUser", aSASU);

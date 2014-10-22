@@ -4,6 +4,9 @@ import java.util.Arrays;
 import resources.TC_831_NetmailSearch.TS_995Helper;
 import utilities.HelperClass;
 
+import NetmailSearch_General.NetmailLogin;
+import NetmailSearch_General.adminLogin;
+
 import com.rational.test.ft.*;
 import com.rational.test.ft.object.interfaces.*;
 import com.rational.test.ft.object.interfaces.SAP.*;
@@ -43,16 +46,14 @@ public class TS_995 extends TS_995Helper
 		sleep(2);
 		HelperClass.oneBrowserSetup();
 		sleep(5);
-		
-		Object[] ls = {dpString("userName"), dpString("password"), dpBoolean("failToLogin")};
-		callScript("loginScript", ls);
-		
+
+		NetmailLogin.login(dpString("userName"), dpString("password"), dpBoolean("failToLogin"));
 		if(dpBoolean("failToLogin"))
 			return;
 
 //Admin Login
-		Object[] al = {dpString("caseListName"), "Super User"};
-		callScript("adminLogin", al);
+		adminLogin.selectUserType("Super User");
+		adminLogin.selectCase(dpString("caseListName"));
 
 //Check user dropdown
 		logInfo("Check User dropdown menu");

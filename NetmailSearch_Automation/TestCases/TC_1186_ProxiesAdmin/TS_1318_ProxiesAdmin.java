@@ -9,6 +9,7 @@ import resources.TestCases.TC_1186_ProxiesAdmin.TS_1318_ProxiesAdminHelper;
 import utilities.HelperClass;
 import utilities.HelperScript;
 import NetmailAdminUUI.WebAdmin;
+import NetmailSearch_General.NetmailLogin;
 
 import com.novell.ldap.LDAPAttribute;
 import com.novell.ldap.LDAPConnection;
@@ -103,8 +104,8 @@ public class TS_1318_ProxiesAdmin extends TS_1318_ProxiesAdminHelper
 		HelperClass.startOrStopNetmailServices(true, IP, workSpace);
 		
 		//Login NS and verify proxy access
-		Object[] ls = {userAName, userApassword, false};
-		callScript("loginScript", ls);
+		NetmailLogin.login(userAName, userApassword, false);
+		
 		HelperClass.navigateLocation(storageLocation+">"+userBName);
 
 		//LDAP change account name
@@ -131,7 +132,7 @@ public class TS_1318_ProxiesAdmin extends TS_1318_ProxiesAdminHelper
 		HelperClass.startOrStopNetmailServices(true, IP, workSpace);
 		
 		//Check if still has proxy access
-		callScript("loginScript", ls);
+		NetmailLogin.login(userAName, userApassword, false);
 		HelperClass.navigateLocation(storageLocation+">"+newName);
 		
 		//Remove proxy access

@@ -6,6 +6,8 @@ import java.util.Arrays;
 import resources.TC_441_ExportToPDF.TS_975_SuperUserExportOnePDFPerItemHelper;
 import utilities.HelperClass;
 
+import NetmailSearch_General.NetmailLogin;
+import NetmailSearch_General.adminLogin;
 import NetmailSearch_PrintAndExport.Export_SuperUser;
 
 import com.rational.test.ft.*;
@@ -60,12 +62,11 @@ public class TS_975_SuperUserExportOnePDFPerItem extends TS_975_SuperUserExportO
 		attachmentFileName = dpString("attachmentFileName");
 		
 		//Login
-		Object[] ls = {null, null, false, true};
-		callScript("loginScript", ls);
+		NetmailLogin.login();
 		//AdminLogin
-		Object[] al = {dpString("caseName"), dpString("userType"), true};
-		callScript("adminLogin", al);
-		sleep(30);
+		adminLogin.selectUserType(dpString("userType"));
+		adminLogin.selectCase(dpString("caseName"));
+		sleep(10);
 		
 		//NewExport
 		Object[] nES = {dpString("searchTabIndex"), 
@@ -100,8 +101,12 @@ public class TS_975_SuperUserExportOnePDFPerItem extends TS_975_SuperUserExportO
 				
 				//RFT BUG when downloading: No object can be found after notification bar appears;
 				HelperClass.CloseAllBrowsers();
-				callScript("loginScript", ls);
-				callScript("adminLogin", al);
+				
+				//Login
+				NetmailLogin.login();
+				//AdminLogin
+				adminLogin.selectUserType(dpString("userType"));
+				adminLogin.selectCase(dpString("caseName"));
 				
 				button_exportCasebutton().click();
 				logInfo("Clicked export dropdown menu");
@@ -133,8 +138,11 @@ public class TS_975_SuperUserExportOnePDFPerItem extends TS_975_SuperUserExportO
 			
 			//RFT BUG when downloading: No object can be found after notification bar appears;
 			HelperClass.CloseAllBrowsers();
-			callScript("loginScript", ls);
-			callScript("adminLogin", al);
+			//Login
+			NetmailLogin.login();
+			//AdminLogin
+			adminLogin.selectUserType(dpString("userType"));
+			adminLogin.selectCase(dpString("caseName"));
 			
 			button_exportCasebutton().click();
 			logInfo("Clicked export dropdown menu");
@@ -160,8 +168,11 @@ public class TS_975_SuperUserExportOnePDFPerItem extends TS_975_SuperUserExportO
 		//Delete Export
 		HelperClass.CloseAllBrowsers();
 		logInfo("Close all browsers"); //Bug bypass: There is a RFT bug when notification bar comes up no object can be found anymore.
-		callScript("loginScript", ls);
-		callScript("adminLogin", al);	
+		//Login
+		NetmailLogin.login();
+		//AdminLogin
+		adminLogin.selectUserType(dpString("userType"));
+		adminLogin.selectCase(dpString("caseName"));
 		deleteExport();
 		
 		//Delete Files

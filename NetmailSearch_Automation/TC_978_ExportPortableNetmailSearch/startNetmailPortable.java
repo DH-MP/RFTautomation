@@ -6,6 +6,8 @@ import java.util.HashMap;
 import resources.TC_978_ExportPortableNetmailSearch.startNetmailPortableHelper;
 import utilities.HelperClass;
 
+import NetmailSearch_General.NetmailLogin;
+import NetmailSearch_General.adminLogin;
 import NetmailSearch_PrintAndExport.Export_SuperUser;
 
 import com.rational.test.ft.*;
@@ -53,8 +55,10 @@ public class startNetmailPortable extends startNetmailPortableHelper
 		exportName = dpString("exportName");
 		
 		//For Bug after downloading notification appear(relogin)
-		Object[] ls = {null, null, false, true};
-		Object[] al = {"ExportXML", "Super User", true};
+		NetmailLogin.login();
+
+		adminLogin.selectUserType("Super User");
+		adminLogin.selectCase("ExportXML");
 	
 		//NewExport
 		Object[] nES = {args[0].toString(), 
@@ -144,8 +148,10 @@ public class startNetmailPortable extends startNetmailPortableHelper
 		HelperClass.CloseAllBrowsers();
 		sleep(3);
 		logInfo("Close all browsers"); //Bug bypass: There is a RFT bug when notification bar comes up no object can be found anymore.
-		callScript("loginScript", ls);
-		callScript("adminLogin", al);
+		//For Bug after downloading notification appear(relogin)
+		NetmailLogin.login();
+		adminLogin.selectUserType("Super User");
+		adminLogin.selectCase("ExportXML");
 		sleep(1);
 		deleteExport();
 	
