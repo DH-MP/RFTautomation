@@ -87,6 +87,9 @@ public class adminLogin extends adminLoginHelper
 		al.selectCase();
 	}
 	private void selectCase(){
+		
+		
+		
 		/******Click Case*******/
 		if( caseListName != null && !caseListName.isEmpty()){
 			String info = "As super user login, selecting the case: %s ";
