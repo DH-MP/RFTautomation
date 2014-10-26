@@ -3,6 +3,8 @@ package NetmailSearch_General;
 import java.util.Arrays;
 
 import resources.NetmailSearch_General.adminLoginHelper;
+import Case_Management.manageCase;
+
 import com.rational.test.ft.*;
 import com.rational.test.ft.object.interfaces.*;
 import com.rational.test.ft.object.interfaces.SAP.*;
@@ -87,8 +89,7 @@ public class adminLogin extends adminLoginHelper
 		al.selectCase();
 	}
 	private void selectCase(){
-		
-		
+		manageCase.clickOkButtonReviewCase();
 		
 		/******Click Case*******/
 		if( caseListName != null && !caseListName.isEmpty()){
@@ -111,5 +112,7 @@ public class adminLogin extends adminLoginHelper
 		}
 		return al;
 	}
+	
+
 }
 

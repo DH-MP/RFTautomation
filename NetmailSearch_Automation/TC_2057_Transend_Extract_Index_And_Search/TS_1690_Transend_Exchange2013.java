@@ -6,6 +6,7 @@ import java.util.Map;
 import resources.TC_2057_Transend_Extract_Index_And_Search.TS_1690_Transend_Exchange2013Helper;
 import utilities.HelperClass;
 
+import Case_Management.manageCase;
 import NetmailSearch_General.NetmailLogin;
 import NetmailSearch_General.adminLogin;
 import Netmail_WebAdmin.webAdmin;
@@ -167,7 +168,12 @@ public class TS_1690_Transend_Exchange2013 extends TS_1690_Transend_Exchange2013
 			
 		//Admin Login
 		adminLogin.selectUserType("Super User");
-		adminLogin.selectCase(caseName);
+
+		if(caseName != null && !caseName.isEmpty()){
+			adminLogin.selectCase(caseName);
+		}else{
+			manageCase.clickOkButtonReviewCase();
+		}		
 	}
 	@Override
 	public void onTerminate(){

@@ -20,11 +20,11 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>manageCase</b><br>
- * Generated     : <b>2014/07/18 3:56:26 PM</b><br>
+ * Generated     : <b>2014/10/23 10:16:03 AM</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows Server 2008 R2 x86 6.1 <br>
  * 
- * @since  July 18, 2014
+ * @since  October 23, 2014
  * @author Administrator
  */
 public abstract class manageCaseHelper extends utilities.MySuperHelper
@@ -177,8 +177,8 @@ public abstract class manageCaseHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		class :  x-btn-text edit-tb-icon
 	 * 		.classIndex : 0
+	 * 		class :  x-btn-text edit-tb-icon
 	 */
 	protected GuiTestObject button_editCaseCM() 
 	{
@@ -192,8 +192,8 @@ public abstract class manageCaseHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		class :  x-btn-text edit-tb-icon
 	 * 		.classIndex : 0
+	 * 		class :  x-btn-text edit-tb-icon
 	 */
 	protected GuiTestObject button_editCaseCM(TestObject anchor, long flags) 
 	{
@@ -255,11 +255,8 @@ public abstract class manageCaseHelper extends utilities.MySuperHelper
 	 * NewCasebutton: with default state.
 	 *		.text : New Case
 	 * 		type : button
-	 * 		.title : 
 	 * 		.class : Html.BUTTON
-	 * 		.name : 
 	 * 		class :  x-btn-text new-tb-icon
-	 * 		.classIndex : 0
 	 */
 	protected GuiTestObject button_newCasebutton() 
 	{
@@ -270,11 +267,8 @@ public abstract class manageCaseHelper extends utilities.MySuperHelper
 	 * NewCasebutton: with specific test context and state.
 	 *		.text : New Case
 	 * 		type : button
-	 * 		.title : 
 	 * 		.class : Html.BUTTON
-	 * 		.name : 
 	 * 		class :  x-btn-text new-tb-icon
-	 * 		.classIndex : 0
 	 */
 	protected GuiTestObject button_newCasebutton(TestObject anchor, long flags) 
 	{
@@ -488,9 +482,9 @@ public abstract class manageCaseHelper extends utilities.MySuperHelper
 	
 	/**
 	 * caseListDIV: with default state.
-	 *		.className : x-grid3-body
+	 *		.className : x-grid3-scroller
 	 * 		.class : Html.DIV
-	 * 		.classIndex : 0
+	 * 		.classIndex : 1
 	 */
 	protected GuiTestObject html_caseListDIV() 
 	{
@@ -499,9 +493,9 @@ public abstract class manageCaseHelper extends utilities.MySuperHelper
 	}
 	/**
 	 * caseListDIV: with specific test context and state.
-	 *		.className : x-grid3-body
+	 *		.className : x-grid3-scroller
 	 * 		.class : Html.DIV
-	 * 		.classIndex : 0
+	 * 		.classIndex : 1
 	 */
 	protected GuiTestObject html_caseListDIV(TestObject anchor, long flags) 
 	{
@@ -559,6 +553,29 @@ public abstract class manageCaseHelper extends utilities.MySuperHelper
 	{
 		return new GuiTestObject(
                         getMappedTestObject("html_errorMessage"), anchor, flags);
+	}
+	
+	/**
+	 * requireReviewCaseTXT: with default state.
+	 *		.text : We have detected that some cases are currently in a state that requires your rev ...
+	 * 		.className : ext-mb-text
+	 * 		.class : Html.SPAN
+	 */
+	protected GuiTestObject html_requireReviewCaseTXT() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("html_requireReviewCaseTXT"));
+	}
+	/**
+	 * requireReviewCaseTXT: with specific test context and state.
+	 *		.text : We have detected that some cases are currently in a state that requires your rev ...
+	 * 		.className : ext-mb-text
+	 * 		.class : Html.SPAN
+	 */
+	protected GuiTestObject html_requireReviewCaseTXT(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("html_requireReviewCaseTXT"), anchor, flags);
 	}
 	
 	/**

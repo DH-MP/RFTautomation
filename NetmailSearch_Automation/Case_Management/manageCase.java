@@ -5,6 +5,9 @@ import java.text.SimpleDateFormat;
 import java.util.Arrays;
 
 import resources.Case_Management.manageCaseHelper;
+import utilities.HelperClass;
+import NetmailSearch_General.adminLogin;
+
 import com.rational.test.ft.*;
 import com.rational.test.ft.object.interfaces.*;
 import com.rational.test.ft.object.interfaces.SAP.*;
@@ -59,7 +62,7 @@ public class manageCase extends manageCaseHelper
 					oldCheckLoadAllCase = true,
 					edit = false,
 					cancelOperation = false,
-					testMode = true;
+					testMode = false;
 	public void testMain(Object[] args) 
 	{	
 		if(args.length>0){
@@ -155,6 +158,8 @@ public class manageCase extends manageCaseHelper
 			String buttonName = edit? "save button" : "create button";
 			logInfo("Clicked "+buttonName);
 			sleep(4);
+	
+			manageCase.clickOkButtonReviewCase();
 		}else{
 			button_cancelbutton().click();
 			logInfo("Clicked cancel button");
@@ -216,6 +221,7 @@ public class manageCase extends manageCaseHelper
 			logInfo("Clicked create button ");
 			sleep(4);
 			
+			manageCase.clickOkButtonReviewCase();
 			openCase(name);
 		}else{
 			button_cancelbutton().click();
@@ -225,7 +231,7 @@ public class manageCase extends manageCaseHelper
 		return this;
 	}
 	
-	
+	//Case must be opened
 	public manageCase editCase(){
 		waitForloading();
 		button_editCasebutton().click();
@@ -236,11 +242,22 @@ public class manageCase extends manageCaseHelper
 	
 	public manageCase editCase(String caseName){
 			openCase(caseName);
+			waitForloading();
 			button_editCasebutton().click();
 			sleep(1);
 			waitForloading();
 			return edit();
 	}
+	
+	//from casemanager
+	public manageCase editCaseCM(String caseName){
+		clickCase(caseName);
+		waitForloading();
+		button_editCaseCM().click();
+		sleep(1);
+		waitForloading();
+		return edit();
+}
 	
 	private manageCase edit(){
 		/******CASE INFO TAB ***********************/
@@ -270,18 +287,34 @@ public class manageCase extends manageCaseHelper
 	}
 	
 	public manageCase openCase(String caseName){
-		String info = "As super user login, OPENING the case: %s ";
-		logInfo(String.format(info, caseName));
-		html_caseListDIV().waitForExistence(1000, DISABLED);
-		sleep(0.5);
-		TestObject[] searchCase = html_caseListDIV().find(atDescendant(".class", "Html.DIV", ".text", caseName), false);
-		((GuiTestObject)searchCase[0]).click();
+		clickCase(caseName);
 		button_openCasebutton().click();
 		return this;
 	}
 	
-	public manageCase deleteCase(String caseName){
-		String info = "As super user, DELETING the case: %s ";
+	private manageCase clickCase(String caseName){
+		html_caseListDIV().waitForExistence(1000, DISABLED);
+		sleep(0.5);
+		TestObject[] searchCase = html_caseListDIV().find(atDescendant(".class", "Html.DIV", ".text", caseName), false);
+		((GuiTestObject)searchCase[0]).click();
+		return this;
+	}
+	
+	
+	public static void deleteCase(String caseName){
+		manageCase mc = new manageCase();
+		mc.setTestMode(false);
+		mc.setStatus("Closed");
+		mc.delete(caseName);
+	}
+	private manageCase delete(String caseName){
+		String info = "As super user, closing the case: %s ";
+		logInfo(String.format(info, caseName));
+		editCaseCM(caseName);
+		waitForloading();
+		clickOkButtonReviewCase();
+		
+		info = "As super user, DELETING the case: %s ";
 		logInfo(String.format(info, caseName));
 		html_caseListDIV().waitForExistence(1000, DISABLED);
 		sleep(0.5);
@@ -289,9 +322,11 @@ public class manageCase extends manageCaseHelper
 		((GuiTestObject)searchCase[0]).click();
 		button_deleteCasebutton().click();
 		button_deleteCaseYesbutton().click();
+		clickOkButtonReviewCase();
 		return this;
 	}
 	
+	//When case already open, saving the STATE of the case
 	public manageCase saveCurrentCase(){
 		button_saveCasebutton().click();
 		waitForloading();
@@ -567,12 +602,14 @@ public class manageCase extends manageCaseHelper
 			}
 			logInfo("Uncheck select all user checkbox");
 			sleep(1);
+			waitForloading();
 			
 			String[] userNames = users.split(";");
 			TestObject secondHalf = bodyParts()[1];
 			TestObject userBody = secondHalf.find(atDescendant(".tag","DIV", "class", "x-grid3-body"),false)[0];
 			for(String name : userNames){
-				TestObject[] user = userBody.find(atDescendant(".text", name.trim()));
+				TestObject[] user = userBody.find(atDescendant(".text", name.trim(), "class", "x-grid3-row"));
+				user = user.length==0 ? userBody.find(atDescendant(".text", name.trim())) : user;
 				if(user.length == 1){
 					((GuiTestObject) user[0]).click();
 				}else{
@@ -583,10 +620,28 @@ public class manageCase extends manageCaseHelper
 			
 		}
 		
-
 	}
 	
 	
+	
+	
+	public static void clickOkButtonReviewCase(){
+		new manageCase().okButtonReviewCase().click();
+	}
+	
+	private GuiTestObject okButtonReviewCase(){
+		if(html_requireReviewCaseTXT().exists()){
+			if(Integer.parseInt(html_requireReviewCaseTXT().getProperty(".screenTop").toString())>0){
+				TestObject parent = html_requireReviewCaseTXT().getParent();
+				while(!parent.getProperty(".class").toString().contentEquals("Html.BODY")){
+					parent = parent.getParent();
+				}
+				TestObject okButton = parent.find(atDescendant(".class", "Html.BUTTON", ".text", "OK"), false)[0];
+				return ((GuiTestObject)okButton);
+			}
+		}
+		return null;
+	}
 
 	
 	/***************************************************SETTERS*******************************************/

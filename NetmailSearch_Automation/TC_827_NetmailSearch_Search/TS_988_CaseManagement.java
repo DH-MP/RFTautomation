@@ -1,5 +1,6 @@
 package TC_827_NetmailSearch_Search;
 import resources.TC_827_NetmailSearch_Search.TS_988_CaseManagementHelper;
+import Case_Management.manageCase;
 import NetmailSearch_General.NetmailLogin;
 import NetmailSearch_General.adminLogin;
 
@@ -216,6 +217,7 @@ public class TS_988_CaseManagement extends TS_988_CaseManagementHelper
 	private void login(){
 		NetmailLogin.login();
 		adminLogin.selectUserType(dpString("userType"));
+		manageCase.clickOkButtonReviewCase();
 	}
 }
 

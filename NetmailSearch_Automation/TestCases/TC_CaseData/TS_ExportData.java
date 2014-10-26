@@ -46,6 +46,7 @@ public class TS_ExportData extends TS_ExportDataHelper
 		mc.setName(caseName);
 		mc.setLocations("ALS");
 		mc.setUsers("First, Last@Last.LongDom-po1.Test Domain with 32 char name lo");
+		manageCase.clickOkButtonReviewCase();
 		mc.newCase();
 		
 		
@@ -77,9 +78,9 @@ public class TS_ExportData extends TS_ExportDataHelper
 		NetmailLogin.login();
 		//Admin Login
 		adminLogin.superUser();
-		
-		
-		mc.deleteCase("TS_ExportDataEDITED");
+		manageCase.clickOkButtonReviewCase();	
+
+		manageCase.deleteCase("TS_ExportDataEDITED");
 		mc.openCase("intern_mike");
 		waitForloading();
 		sleep(2);

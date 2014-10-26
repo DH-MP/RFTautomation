@@ -20,11 +20,11 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>adminLogin</b><br>
- * Generated     : <b>2014/07/28 4:18:57 PM</b><br>
+ * Generated     : <b>2014/10/22 3:47:10 PM</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows Server 2008 R2 x86 6.1 <br>
  * 
- * @since  July 28, 2014
+ * @since  October 22, 2014
  * @author Administrator
  */
 public abstract class adminLoginHelper extends utilities.MySuperHelper
@@ -84,11 +84,9 @@ public abstract class adminLoginHelper extends utilities.MySuperHelper
 	/**
 	 * OpenCasebutton: with default state.
 	 *		.text : Open Case
-	 * 		.type : button
-	 * 		.title : 
+	 * 		type : button
 	 * 		.class : Html.BUTTON
-	 * 		.name : 
-	 * 		.classIndex : 0
+	 * 		.contentText : Open Case
 	 * 		class :  x-btn-text load-tb-icon
 	 */
 	protected GuiTestObject button_openCasebutton() 
@@ -99,11 +97,9 @@ public abstract class adminLoginHelper extends utilities.MySuperHelper
 	/**
 	 * OpenCasebutton: with specific test context and state.
 	 *		.text : Open Case
-	 * 		.type : button
-	 * 		.title : 
+	 * 		type : button
 	 * 		.class : Html.BUTTON
-	 * 		.name : 
-	 * 		.classIndex : 0
+	 * 		.contentText : Open Case
 	 * 		class :  x-btn-text load-tb-icon
 	 */
 	protected GuiTestObject button_openCasebutton(TestObject anchor, long flags) 
@@ -131,6 +127,29 @@ public abstract class adminLoginHelper extends utilities.MySuperHelper
 	{
 		return new GuiTestObject(
                         getMappedTestObject("html_caseListDIV_extGen166"), anchor, flags);
+	}
+	
+	/**
+	 * RequireReviewCaseTXT: with default state.
+	 *		.text : We have detected that some cases are currently in a state that requires your rev ...
+	 * 		.className : ext-mb-text
+	 * 		.class : Html.SPAN
+	 */
+	protected GuiTestObject html_requireReviewCaseTXT() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("html_requireReviewCaseTXT"));
+	}
+	/**
+	 * RequireReviewCaseTXT: with specific test context and state.
+	 *		.text : We have detected that some cases are currently in a state that requires your rev ...
+	 * 		.className : ext-mb-text
+	 * 		.class : Html.SPAN
+	 */
+	protected GuiTestObject html_requireReviewCaseTXT(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("html_requireReviewCaseTXT"), anchor, flags);
 	}
 	
 	/**
