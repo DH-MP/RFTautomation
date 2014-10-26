@@ -4,6 +4,7 @@ import java.util.Arrays;
 import resources.TC_831_NetmailSearch.TS_995Helper;
 import utilities.HelperClass;
 
+import Case_Management.manageCase;
 import NetmailSearch_General.NetmailLogin;
 import NetmailSearch_General.adminLogin;
 
@@ -79,6 +80,7 @@ public class TS_995 extends TS_995Helper
 		
 		logInfo("Check if casemanagement button works");
 		button_caseManagementbutton().click();
+		manageCase.clickOkButtonReviewCase();
 		button_caseList_Cancelbutton().click();
 	
 		logInfo("Select the case name <"+dpString("quickCaseListName")+"> under quick case list dropdown");
