@@ -368,7 +368,8 @@ public class TS_125_Print extends TS_125_PrintHelper
 		logInfo("Clicked export case button");
 		link_exportManagement().click();
 		logInfo("Clicked export Management on dropdown");
-		
+		sleep(3);
+		waitForloading();
 		
 		//Find print export
 		openExport("Print");

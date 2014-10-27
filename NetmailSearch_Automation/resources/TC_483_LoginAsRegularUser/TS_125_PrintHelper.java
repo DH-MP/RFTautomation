@@ -7,7 +7,7 @@
 // file will be lost when automatically updated.
 
 package resources.TC_483_LoginAsRegularUser;
-
+import utilities.MySuperHelper;
 import com.rational.test.ft.object.interfaces.*;
 import com.rational.test.ft.object.interfaces.SAP.*;
 import com.rational.test.ft.object.interfaces.WPF.*;
@@ -20,14 +20,14 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>TS_125_Print</b><br>
- * Generated     : <b>2014/03/20 4:20:59 PM</b><br>
+ * Generated     : <b>2014/10/27 10:13:08 AM</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows Server 2008 R2 x86 6.1 <br>
  * 
- * @since  March 20, 2014
+ * @since  October 27, 2014
  * @author Administrator
  */
-public abstract class TS_125_PrintHelper extends RationalTestScript
+public abstract class TS_125_PrintHelper extends utilities.MySuperHelper
 {
 	/**
 	 * htmlBrowser: with default state.
@@ -59,8 +59,8 @@ public abstract class TS_125_PrintHelper extends RationalTestScript
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		.classIndex : 0
 	 * 		class :  x-btn-text
+	 * 		.classIndex : 0
 	 */
 	protected GuiTestObject button_backgroundbutton() 
 	{
@@ -74,8 +74,8 @@ public abstract class TS_125_PrintHelper extends RationalTestScript
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		.classIndex : 0
 	 * 		class :  x-btn-text
+	 * 		.classIndex : 0
 	 */
 	protected GuiTestObject button_backgroundbutton(TestObject anchor, long flags) 
 	{
@@ -90,8 +90,8 @@ public abstract class TS_125_PrintHelper extends RationalTestScript
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		class :  x-btn-text
 	 * 		.classIndex : 0
+	 * 		class :  x-btn-text
 	 */
 	protected GuiTestObject button_deleteExport_Yesbutton() 
 	{
@@ -105,8 +105,8 @@ public abstract class TS_125_PrintHelper extends RationalTestScript
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		class :  x-btn-text
 	 * 		.classIndex : 0
+	 * 		class :  x-btn-text
 	 */
 	protected GuiTestObject button_deleteExport_Yesbutton(TestObject anchor, long flags) 
 	{
@@ -121,8 +121,8 @@ public abstract class TS_125_PrintHelper extends RationalTestScript
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		.classIndex : 0
 	 * 		class :  x-btn-text
+	 * 		.classIndex : 0
 	 */
 	protected GuiTestObject button_deleteExportedFilesbutt() 
 	{
@@ -136,8 +136,8 @@ public abstract class TS_125_PrintHelper extends RationalTestScript
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		.classIndex : 0
 	 * 		class :  x-btn-text
+	 * 		.classIndex : 0
 	 */
 	protected GuiTestObject button_deleteExportedFilesbutt(TestObject anchor, long flags) 
 	{
@@ -152,8 +152,8 @@ public abstract class TS_125_PrintHelper extends RationalTestScript
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		.classIndex : 0
 	 * 		class :  x-btn-text
+	 * 		.classIndex : 0
 	 */
 	protected GuiTestObject button_exportCancelbutton() 
 	{
@@ -167,8 +167,8 @@ public abstract class TS_125_PrintHelper extends RationalTestScript
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		.classIndex : 0
 	 * 		class :  x-btn-text
+	 * 		.classIndex : 0
 	 */
 	protected GuiTestObject button_exportCancelbutton(TestObject anchor, long flags) 
 	{
@@ -183,8 +183,8 @@ public abstract class TS_125_PrintHelper extends RationalTestScript
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		class :  x-btn-text
 	 * 		.classIndex : 0
+	 * 		class :  x-btn-text
 	 */
 	protected GuiTestObject button_exportCasebutton() 
 	{
@@ -198,8 +198,8 @@ public abstract class TS_125_PrintHelper extends RationalTestScript
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		class :  x-btn-text
 	 * 		.classIndex : 0
+	 * 		class :  x-btn-text
 	 */
 	protected GuiTestObject button_exportCasebutton(TestObject anchor, long flags) 
 	{
@@ -214,8 +214,8 @@ public abstract class TS_125_PrintHelper extends RationalTestScript
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		.classIndex : 0
 	 * 		class :  x-btn-text
+	 * 		.classIndex : 0
 	 */
 	protected GuiTestObject button_exportPrintbutton() 
 	{
@@ -229,8 +229,8 @@ public abstract class TS_125_PrintHelper extends RationalTestScript
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		.classIndex : 0
 	 * 		class :  x-btn-text
+	 * 		.classIndex : 0
 	 */
 	protected GuiTestObject button_exportPrintbutton(TestObject anchor, long flags) 
 	{
@@ -291,8 +291,8 @@ public abstract class TS_125_PrintHelper extends RationalTestScript
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		class :  x-btn-text print-tb-icon
 	 * 		.classIndex : 0
+	 * 		class :  x-btn-text print-tb-icon
 	 */
 	protected GuiTestObject button_messagePrintButton() 
 	{
@@ -306,8 +306,8 @@ public abstract class TS_125_PrintHelper extends RationalTestScript
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		class :  x-btn-text print-tb-icon
 	 * 		.classIndex : 0
+	 * 		class :  x-btn-text print-tb-icon
 	 */
 	protected GuiTestObject button_messagePrintButton(TestObject anchor, long flags) 
 	{
@@ -319,11 +319,13 @@ public abstract class TS_125_PrintHelper extends RationalTestScript
 	 * OKbutton: with default state.
 	 *		.text : OK
 	 * 		type : button
-	 * 		.class : Html.BUTTON
+	 * 		.screenLeft : NR:Range[0 .. 10000000000000]
+	 * 		.hasFocus : true
 	 * 		.title : 
+	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		.classIndex : 0
 	 * 		class :  x-btn-text
+	 * 		.classIndex : 0
 	 */
 	protected GuiTestObject button_oKbutton() 
 	{
@@ -334,11 +336,13 @@ public abstract class TS_125_PrintHelper extends RationalTestScript
 	 * OKbutton: with specific test context and state.
 	 *		.text : OK
 	 * 		type : button
-	 * 		.class : Html.BUTTON
+	 * 		.screenLeft : NR:Range[0 .. 10000000000000]
+	 * 		.hasFocus : true
 	 * 		.title : 
+	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		.classIndex : 0
 	 * 		class :  x-btn-text
+	 * 		.classIndex : 0
 	 */
 	protected GuiTestObject button_oKbutton(TestObject anchor, long flags) 
 	{
@@ -376,8 +380,8 @@ public abstract class TS_125_PrintHelper extends RationalTestScript
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		.classIndex : 0
 	 * 		class :  x-btn-text
+	 * 		.classIndex : 0
 	 */
 	protected GuiTestObject button_printCancelbutton() 
 	{
@@ -391,8 +395,8 @@ public abstract class TS_125_PrintHelper extends RationalTestScript
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		.classIndex : 0
 	 * 		class :  x-btn-text
+	 * 		.classIndex : 0
 	 */
 	protected GuiTestObject button_printCancelbutton(TestObject anchor, long flags) 
 	{
@@ -407,8 +411,8 @@ public abstract class TS_125_PrintHelper extends RationalTestScript
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		.classIndex : 0
 	 * 		class :  x-btn-text
+	 * 		.classIndex : 0
 	 */
 	protected GuiTestObject button_windowExportFile_Closeb() 
 	{
@@ -422,8 +426,8 @@ public abstract class TS_125_PrintHelper extends RationalTestScript
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		.classIndex : 0
 	 * 		class :  x-btn-text
+	 * 		.classIndex : 0
 	 */
 	protected GuiTestObject button_windowExportFile_Closeb(TestObject anchor, long flags) 
 	{
@@ -688,10 +692,10 @@ public abstract class TS_125_PrintHelper extends RationalTestScript
 	
 	/**
 	 * printStatusWindow: with default state.
-	 *		.id : printStatusWindow
-	 * 		.className :  x-window x-window-noborder x-window-plain
+	 *		id : printStatusWindow
+	 * 		.text : RegularExpression(Printing to PDF.*)
+	 * 		.id : printStatusWindow
 	 * 		.class : Html.DIV
-	 * 		.classIndex : 30
 	 */
 	protected GuiTestObject html_printStatusWindow() 
 	{
@@ -700,10 +704,10 @@ public abstract class TS_125_PrintHelper extends RationalTestScript
 	}
 	/**
 	 * printStatusWindow: with specific test context and state.
-	 *		.id : printStatusWindow
-	 * 		.className :  x-window x-window-noborder x-window-plain
+	 *		id : printStatusWindow
+	 * 		.text : RegularExpression(Printing to PDF.*)
+	 * 		.id : printStatusWindow
 	 * 		.class : Html.DIV
-	 * 		.classIndex : 30
 	 */
 	protected GuiTestObject html_printStatusWindow(TestObject anchor, long flags) 
 	{
@@ -743,8 +747,8 @@ public abstract class TS_125_PrintHelper extends RationalTestScript
 	 * 		.title : 
 	 * 		.class : Html.A
 	 * 		.name : 
-	 * 		class : x-menu-item
 	 * 		.classIndex : 0
+	 * 		class : x-menu-item
 	 */
 	protected GuiTestObject link_exportManagement() 
 	{
@@ -758,8 +762,8 @@ public abstract class TS_125_PrintHelper extends RationalTestScript
 	 * 		.title : 
 	 * 		.class : Html.A
 	 * 		.name : 
-	 * 		class : x-menu-item
 	 * 		.classIndex : 0
+	 * 		class : x-menu-item
 	 */
 	protected GuiTestObject link_exportManagement(TestObject anchor, long flags) 
 	{
@@ -775,8 +779,8 @@ public abstract class TS_125_PrintHelper extends RationalTestScript
 	 * 		.title : 
 	 * 		.class : Html.INPUT.text
 	 * 		name : quickSearchField0
-	 * 		class : x-form-text x-form-field search_field_effect x-form-empty-field
 	 * 		.classIndex : 0
+	 * 		class : x-form-text x-form-field search_field_effect x-form-empty-field
 	 */
 	protected TextGuiTestObject text_normalUser_quickSearchFie() 
 	{
@@ -791,8 +795,8 @@ public abstract class TS_125_PrintHelper extends RationalTestScript
 	 * 		.title : 
 	 * 		.class : Html.INPUT.text
 	 * 		name : quickSearchField0
-	 * 		class : x-form-text x-form-field search_field_effect x-form-empty-field
 	 * 		.classIndex : 0
+	 * 		class : x-form-text x-form-field search_field_effect x-form-empty-field
 	 */
 	protected TextGuiTestObject text_normalUser_quickSearchFie(TestObject anchor, long flags) 
 	{
@@ -808,8 +812,8 @@ public abstract class TS_125_PrintHelper extends RationalTestScript
 	 * 		.title : 
 	 * 		.class : Html.INPUT.text
 	 * 		name : quickSearchField0
-	 * 		.classIndex : 0
 	 * 		class : x-form-text x-form-field search_field_effect x-form-empty-field
+	 * 		.classIndex : 0
 	 */
 	protected TextGuiTestObject text_quickSearchField0() 
 	{
@@ -824,8 +828,8 @@ public abstract class TS_125_PrintHelper extends RationalTestScript
 	 * 		.title : 
 	 * 		.class : Html.INPUT.text
 	 * 		name : quickSearchField0
-	 * 		.classIndex : 0
 	 * 		class : x-form-text x-form-field search_field_effect x-form-empty-field
+	 * 		.classIndex : 0
 	 */
 	protected TextGuiTestObject text_quickSearchField0(TestObject anchor, long flags) 
 	{
