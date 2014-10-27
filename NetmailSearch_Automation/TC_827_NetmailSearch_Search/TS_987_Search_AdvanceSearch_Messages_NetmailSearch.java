@@ -32,10 +32,10 @@ public class TS_987_Search_AdvanceSearch_Messages_NetmailSearch extends TS_987_S
 	 */
 	public void testMain(Object[] args) 
 	{
-		NetmailLogin.login();
-		adminLogin.selectUserType(dpString("userType"));
-		adminLogin.selectCase(dpString("caseName"));
-				
+//		NetmailLogin.login();
+//		adminLogin.selectUserType(dpString("userType"));
+//		adminLogin.selectCase(dpString("caseName"));
+//				
 		Object[] aSMN = {	dpString("field1"),
 							dpString("field2"), 
 							dpString("field3"), 
