@@ -170,6 +170,10 @@ public class manageCase extends manageCaseHelper
 	}
 	
 	public manageCase newCase(){
+		if(html_requireReviewCaseTXT().exists()){
+			clickOkButtonReviewCase();
+		}
+		
 		if(html_caseListWindow().exists()){
 			button_newCasebutton2().click();
 			waitForloading();

@@ -332,6 +332,7 @@ public class TS_992_AddTagsAndComments_NetmailLite extends TS_992_AddTagsAndComm
 		text_quickSearchField0().click();
 		logInfo("clicked quick search field");
 		browser_htmlBrowser().inputChars("bcc");
+		browser_htmlBrowser().inputKeys("{ENTER}");
 		logInfo(" entered < bcc >");
 		sleep(6);
 	}
