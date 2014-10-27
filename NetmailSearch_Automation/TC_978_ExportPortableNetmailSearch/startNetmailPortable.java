@@ -55,20 +55,21 @@ public class startNetmailPortable extends startNetmailPortableHelper
 		exportName = dpString("exportName");
 		
 		//For Bug after downloading notification appear(relogin)
-		NetmailLogin.login();
-
-		adminLogin.selectUserType("Super User");
-		adminLogin.selectCase("ExportXML");
+//		NetmailLogin.login();
+//
+//		adminLogin.selectUserType("Super User");
+//		adminLogin.selectCase("ExportXML");
 	
 		//NewExport
-		Object[] nES = {args[0].toString(), 
-						(int) args[1],
-						(int) args[2],
-						dpString("exportName"),
-						dpString("email"),
-						dpString("password"),
-		};
-		callScript("newExport_Super", nES);
+		Export_SuperUser esu = new Export_SuperUser();
+		esu.setSearchTabs(args[0].toString());
+		esu.setItemOptions((int) args[1]);
+		esu.setExportTypeOption((int) args[2]);
+		esu.setExportName(dpString("exportName"));
+		esu.setEmail(dpString("email"));
+		esu.setPassword(dpString("password"));
+		
+		esu.create();
 		
 		//Setup
 		setUpAndTearDown(true);
@@ -78,7 +79,7 @@ public class startNetmailPortable extends startNetmailPortableHelper
 		exports = html_exportList().find(atDescendant(".tag", "TABLE", "class", "x-grid3-row-table"), true);
 		columns = exports[0].find(atDescendant(".tag", "TD"), false);
 		if( columns[0].getProperty(".text").equals(exportName)){
-			Export_SuperUser esu = new Export_SuperUser();
+			esu = new Export_SuperUser();
 			esu.openWhenTopExportComplete();//wait for success Status
 			sleep(10);
 		}else{
