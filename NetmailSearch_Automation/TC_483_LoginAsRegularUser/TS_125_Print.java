@@ -326,6 +326,10 @@ public class TS_125_Print extends TS_125_PrintHelper
 				TestObject[] exports = html_exportList().find(atDescendant(".tag", "TABLE", "class", "x-grid3-row-table"), true);
 				TestObject[] columns = exports[0].find(atDescendant(".tag", "TD"), false);
 				while(!columns[3].getProperty(".text").toString().trim().toLowerCase().contentEquals("success")){
+					if(columns[3].getProperty(".text").toString().trim().toLowerCase().contentEquals("error")){
+						logTestResult("Print job failed", false);
+						return;
+					}
 					exports = html_exportList().find(atDescendant(".tag", "TABLE", "class", "x-grid3-row-table"), true);
 					columns = exports[0].find(atDescendant(".tag", "TD"), false);
 					sleep(3);
