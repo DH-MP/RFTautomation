@@ -156,12 +156,7 @@ public class TS_988_CaseManagement extends TS_988_CaseManagementHelper
 		logInfo("Clicked No on delete case window");
 		
 		//Delete case + Yes/Confirm
-		((GuiTestObject)newCase).click();
-		button_deleteCasebutton().click();
-		logInfo("Clicked delete case");
-		button_deleteCase_Yesbutton().click();
-		logInfo("Clicked Yes on delete case window");
-		sleep(3);
+		manageCase.deleteCase(dpString("newName"));
 		
 		//Verify case is deleted
 		TestObject[] findCase = caseListBody.find(atChild(".tag", "DIV", ".contentText", new RegularExpression(dpString("newName")+".*", false)), false);

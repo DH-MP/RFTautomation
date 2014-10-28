@@ -159,7 +159,7 @@ public class TS_992_AddTagsAndComments extends TS_992_AddTagsAndCommentsHelper
 		
 		//Msg5
 		resultsColumn = results[4].find(atDescendant(".class", "Html.TD", "class", new RegularExpression(".*x-grid3-td-13.*", false)), false);
-		vpManual("Msg5Comment", "autoCommented", resultsColumn[0].getProperty(".contentText").toString().trim()).performTest();
+		vpManual("Msg5Comment", "autoCommented", resultsColumn[0].getProperty(".contentText").toString().split("--")[0].trim()).performTest();
 		
 		
 /*********************************REMOVE TAGS AND COMMENT**************************************/
@@ -211,7 +211,7 @@ public class TS_992_AddTagsAndComments extends TS_992_AddTagsAndCommentsHelper
 		
 		//Msg5
 		resultsColumn = results[3].find(atDescendant(".class", "Html.TD", "class", new RegularExpression(".*x-grid3-td-13.*", false)), false);
-		vpManual("Msg3CommentRemoved", "", resultsColumn[0].getProperty(".contentText").toString().trim()).performTest();
+		vpManual("Msg3CommentRemoved", "", resultsColumn[0].getProperty(".contentText").toString().split("--")[0].trim()).performTest();
 		
 	}
 	

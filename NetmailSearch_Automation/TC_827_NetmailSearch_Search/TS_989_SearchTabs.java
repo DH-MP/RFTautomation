@@ -66,12 +66,12 @@ public class TS_989_SearchTabs extends TS_989_SearchTabsHelper
 		
 		activeTabBody = getActiveTabBody();
 		((GuiTestObject)activeTabBody[0].find(atDescendant(".tag", "INPUT", "id", new RegularExpression("quickSearchField\\d", false)), true)[0]).click();
-		browser_htmlBrowser().inputKeys("dave{ENTER}");
-		logInfo("inputed [DAVE] in quick search field and pressed enter");
+		browser_htmlBrowser().inputKeys("top{ENTER}");
+		logInfo("inputed [top] in quick search field and pressed enter");
 		sleep(6);
 		
 		TestObject[] subResults = getActiveTabBody()[0].find(atDescendant(".tag", "TABLE", "class", "x-grid3-row-table"));
-		vpManual("Expected_number_of_Results", 1, subResults.length).performTest();
+		vpManual("Expected_number_of_Results", 2, subResults.length).performTest();
 		boolean exists = true;
 		for(TestObject subResult : subResults){
 			exists = false;
