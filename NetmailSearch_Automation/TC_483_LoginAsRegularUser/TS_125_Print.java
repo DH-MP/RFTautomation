@@ -54,11 +54,11 @@ public class TS_125_Print extends TS_125_PrintHelper
 		boolean isAdmin = dpBoolean("isAdmin"),
 				testExport = dpBoolean("testExport");
 		
-		//Login
-		NetmailLogin.login();
-		//AdminLogin
-		adminLogin.selectUserType(dpString("userType"));
-		adminLogin.selectCase(dpString("caseName"));
+//		//Login
+//		NetmailLogin.login();
+//		//AdminLogin
+//		adminLogin.selectUserType(dpString("userType"));
+//		adminLogin.selectCase(dpString("caseName"));
 		
 		GuiTestObject quickSearch = isAdmin ? text_quickSearchField0(): text_normalUser_quickSearchFie();
 
@@ -222,7 +222,7 @@ public class TS_125_Print extends TS_125_PrintHelper
 		openExport(exportName);
 		
 		//Download export pdf	
-		doubleClickExportfile(dpString("pdfName_PrintMethod"));
+		doubleClickExportfile(exportName+".pdf");
 		
 		//Save file
 		button_ieDownload_Save().waitForExistence(60, DISABLED);

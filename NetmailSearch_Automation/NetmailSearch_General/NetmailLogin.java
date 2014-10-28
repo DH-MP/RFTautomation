@@ -128,10 +128,10 @@ public class NetmailLogin extends NetmailLoginHelper
 //				sleep(3);
 //				loginWindow = find(atDescendant(".id", "loginWindow", "style", new RegularExpression("visibility: visible", false)));
 //			}
-			vpManual("AfterLogin_LoginWindow_isNotVisible", false, html_loginWindow().ensureObjectIsVisible()).performTest();
-			vpManual("AfterLogin_Username_Input_NotVisible", false, text_username().ensureObjectIsVisible()).performTest();
-			vpManual("AfterLogin_Password_Input_NotVisible", false, text_pwd().ensureObjectIsVisible()).performTest();
-			sleep(2);
+//			vpManual("AfterLogin_LoginWindow_isNotVisible", false, html_loginWindow().ensureObjectIsVisible()).performTest();
+//			vpManual("AfterLogin_Username_Input_NotVisible", false, text_username().ensureObjectIsVisible()).performTest();
+//			vpManual("AfterLogin_Password_Input_NotVisible", false, text_pwd().ensureObjectIsVisible()).performTest();
+//			sleep(2);
 		}
 		unregisterAll();
 	}

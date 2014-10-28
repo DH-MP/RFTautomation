@@ -153,6 +153,7 @@ public class TS_981_NormalUser extends TS_981_NormalUserHelper
 		button_advancedSearchbutton().click();
 		link_clearSearch().click();
 		sleep(3);
+		waitForloading();
 	}
 	
 	private String extractEmailOnly(String t){
