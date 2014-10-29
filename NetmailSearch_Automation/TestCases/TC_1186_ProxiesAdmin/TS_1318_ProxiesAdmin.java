@@ -77,19 +77,19 @@ public class TS_1318_ProxiesAdmin extends TS_1318_ProxiesAdminHelper
 		wa.loadWebadminUUI();
 		wa.login();
 		sleep(10);
-		
-		//Run SYNCAB
-		wa.navigateTree("Cluster");
-		wa.selectPageTab("Address Book Sync");
-		wa.runSyncAB(null, null, null, null);//run current settings
-		sleep(30);
-		
-		//Archive account
-		wa.navigateTree("Archive>Cluster.*>Agents>Archive>"+archiveAgent);
-		wa.archiveAccount(userBName+domain, storageLocation);
-		wa.navigateTree("Archive");
-		sleep(30);
-		wa.waitForJob(archiveAgent);
+//		
+//		//Run SYNCAB
+//		wa.navigateTree("Cluster");
+//		wa.selectPageTab("Address Book Sync");
+//		wa.runSyncAB(null, null, null, null);//run current settings
+//		sleep(30);
+//		
+//		//Archive account
+//		wa.navigateTree("Archive>Cluster.*>Agents>Archive>"+archiveAgent);
+//		wa.archiveAccount(userBName+domain, storageLocation);
+//		wa.navigateTree("Archive");
+//		sleep(30);
+//		wa.waitForJob(archiveAgent);
 		
 		
 		//Add Proxy access
@@ -99,13 +99,8 @@ public class TS_1318_ProxiesAdmin extends TS_1318_ProxiesAdminHelper
 		sleep(2);
 		wa.addProxiesAccess(userAName+domain, userBName+domain);
 		
-		//Restart NetmailSearch
-		HelperClass.startOrStopNetmailServices(false, IP, workSpace);
-		HelperClass.startOrStopNetmailServices(true, IP, workSpace);
-		
 		//Login NS and verify proxy access
 		NetmailLogin.login(userAName, userApassword, false);
-		
 		HelperClass.navigateLocation(storageLocation+">"+userBName);
 
 		//LDAP change account name
@@ -127,11 +122,12 @@ public class TS_1318_ProxiesAdmin extends TS_1318_ProxiesAdminHelper
 		sleep(30);
 		wa.waitForJob(archiveAgent);
 		
-		//Restart NetmailSearch
-		HelperClass.startOrStopNetmailServices(false, IP, workSpace);
-		HelperClass.startOrStopNetmailServices(true, IP, workSpace);
-		
 		//Check if still has proxy access
+		
+//		//Restart NetmailSearch
+//		HelperClass.startOrStopNetmailServices(false, IP, workSpace);
+//		HelperClass.startOrStopNetmailServices(true, IP, workSpace);
+		
 		NetmailLogin.login(userAName, userApassword, false);
 		HelperClass.navigateLocation(storageLocation+">"+newName);
 		
@@ -176,7 +172,7 @@ public class TS_1318_ProxiesAdmin extends TS_1318_ProxiesAdminHelper
 			if(newName == null){
 				//Set some random anme
 				currentName = lc.read(userCN).getAttributeSet().getAttribute("sAMAccountName").getStringValue();
-				System.out.println(currentName);
+				System.out.println("currentname"+currentName);
 				java.util.Date date= new java.util.Date();
 				DateFormat df = new SimpleDateFormat("ddMMYYHHmmss");
 				newName = "auto" + df.format(date);

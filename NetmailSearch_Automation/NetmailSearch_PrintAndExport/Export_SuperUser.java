@@ -73,7 +73,7 @@ public class Export_SuperUser extends Export_SuperUserHelper
 		//Choose Search tabs to export
 		if(searchTabIndexes.length > 0){
 			while(!Boolean.parseBoolean(radioButton_include_tabsselect().getProperty(".checked").toString())){
-				radioButton_include_tabsselect().click(atPoint(4,4));
+				radioButton_include_tabsselect().click(atPoint(6,6));
 			}
 			radioButton_include_tabsselect().click();
 			logInfo("Clicked include selected tab");
@@ -85,7 +85,7 @@ public class Export_SuperUser extends Export_SuperUserHelper
 			}
 		}else{
 			while(!Boolean.parseBoolean(radioButton_include_tabsevery_().getProperty(".checked").toString())){
-				radioButton_include_tabsevery_().click(atPoint(4,4));
+				radioButton_include_tabsevery_().click(atPoint(6,6));
 				logInfo("Clicked select all tabs");
 			}
 		}
@@ -99,12 +99,12 @@ public class Export_SuperUser extends Export_SuperUserHelper
 		if(itemOptions == 1){
 			logInfo("Picking All Mail");
 			while(!Boolean.parseBoolean(radioButton_step2_everMail().getProperty(".checked").toString())){
-				radioButton_step2_everMail().click(atPoint(4,4));
+				radioButton_step2_everMail().click(atPoint(6,6));
 			}
 		}else{
 			logInfo("Picking Selected Mail");
 			while(!Boolean.parseBoolean(radioButton_step2_selectedMail().getProperty(".checked").toString())){
-				radioButton_step2_selectedMail().click(atPoint(4,4));
+				radioButton_step2_selectedMail().click(atPoint(6,6));
 			}
 		}
 		sleep(0.5);
@@ -117,32 +117,32 @@ public class Export_SuperUser extends Export_SuperUserHelper
 			case 1:
 				logInfo("Picking ONE PDF");
 				while(!Boolean.parseBoolean(radioButton_step3_ONE_PDF().getProperty(".checked").toString())){
-					radioButton_step3_ONE_PDF().click(atPoint(4,4));
+					radioButton_step3_ONE_PDF().click(atPoint(6,6));
 				}
 				isLarge();
 				break;
 			case 2:
 				logInfo("Picking ONE PDF PER ITEM");
 				while(!Boolean.parseBoolean(radioButton_step3_PDF_PER_ITEM().getProperty(".checked").toString())){
-					radioButton_step3_PDF_PER_ITEM().click(atPoint(4,4));
+					radioButton_step3_PDF_PER_ITEM().click(atPoint(6,6));
 				}
 				isLarge();
 				break;
 			case 3:
 				logInfo("Picking Portable Netmail Search");
 				while(!Boolean.parseBoolean(radioButton_step3_Portable().getProperty(".checked").toString())){
-					radioButton_step3_Portable().click(atPoint(4,4));
+					radioButton_step3_Portable().click(atPoint(6,6));
 				}
 				break;
 			case 4:
 				logInfo("Picking PST");
 				while(!Boolean.parseBoolean(radioButton_step3_PST().getProperty(".checked").toString())){
-					radioButton_step3_PST().click(atPoint(4,4));
+					radioButton_step3_PST().click(atPoint(6,6));
 				}
 				break;
 			default:
 				while(!Boolean.parseBoolean(radioButton_step3_ONE_PDF().getProperty(".checked").toString())){
-					radioButton_step3_ONE_PDF().click(atPoint(4,4));
+					radioButton_step3_ONE_PDF().click(atPoint(6,6));
 				}
 				break;
 		}
