@@ -312,6 +312,9 @@ public class manageCase extends manageCaseHelper
 		mc.delete(caseName);
 	}
 	private manageCase delete(String caseName){
+		if(html_requireReviewCaseTXT().exists()){
+			clickOkButtonReviewCase();
+		}
 		String info = "As super user, closing the case: %s ";
 		logInfo(String.format(info, caseName));
 		editCaseCM(caseName);
@@ -326,7 +329,9 @@ public class manageCase extends manageCaseHelper
 		((GuiTestObject)searchCase[0]).click();
 		button_deleteCasebutton().click();
 		button_deleteCaseYesbutton().click();
-		clickOkButtonReviewCase();
+		if(html_requireReviewCaseTXT().exists()){
+			clickOkButtonReviewCase();
+		}
 		return this;
 	}
 	

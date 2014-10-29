@@ -136,6 +136,7 @@ public class DeleteMessage extends DeleteMessageHelper
 		//Admin Login
 		adminLogin.superUser();
 		adminLogin.selectCase("GVautomation");
+		HelperClass.navigateLocation("GVautomation>ProxyAdminTest");
 		
 		//Verify commited
 		int oldResult = results.length;
@@ -146,7 +147,7 @@ public class DeleteMessage extends DeleteMessageHelper
 		NetmailLogin.login();
 		//Admin Login
 		adminLogin.superUser();
-		mc.deleteCase("GVautomation");
+		manageCase.deleteCase("GVautomation");
 	}
 }
 

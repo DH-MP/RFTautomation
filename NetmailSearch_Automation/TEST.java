@@ -57,7 +57,8 @@ public class TEST extends TESTHelper
 	public void testMain(Object[] args) 
 	{
 		
-		
+		File f = new File("\\\\10.10.23.251\\acorn");
+		f.mkdir();
 		
 //		// HTML Browser
 //		// Document: 
@@ -70,10 +71,10 @@ public class TEST extends TESTHelper
 //			button_okbutton().click();
 //		}
 		
-		for(int i = 541; i<549; i++){
-			System.out.println("cn=ITX,ou=users,o=org;IT IT30@IT30.po3.gw2012;123Password;1348686567445".replaceAll("X", i+""));
-			
-		}
+//		for(int i = 541; i<549; i++){
+//			System.out.println("cn=ITX,ou=users,o=org;IT IT30@IT30.po3.gw2012;123Password;1348686567445".replaceAll("X", i+""));
+//			
+//		}
 		
 		
 		
