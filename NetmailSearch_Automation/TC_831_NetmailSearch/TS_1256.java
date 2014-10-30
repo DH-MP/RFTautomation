@@ -50,7 +50,6 @@ public class TS_1256 extends TS_1256Helper
 		vpManual("bottom_pain_notVisible", false, html_bottomPanel_extComp1307().exists()).performTest();
 		vpManual("side_pain_notVisible", false, html_topPanel_extComp1309().exists()).performTest();
 		
-		
 		//Choose display side panel, 
 		button_preferencesbutton().click();
 		link_previewMenu().hover();

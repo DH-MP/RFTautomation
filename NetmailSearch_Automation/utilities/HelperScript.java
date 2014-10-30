@@ -107,13 +107,9 @@ public class HelperScript extends HelperScriptHelper
 		try {
 			Process b = Runtime.getRuntime().exec(workSpace+"\\assets\\WinRAR\\WinRaR.exe x "+fileLocation+" "+ extractLocation);
 			sleep(2);
-			while(winrarExtractingwindow().exists()){
-				sleep(5);
-			}		
+			waitForZipToComplete();
 			//Rare changes the winrar extract dissapears and comes back
-			while(winrarExtractingwindow().exists()){
-				sleep(5);
-			}
+			waitForZipToComplete();
 			logInfo("ZIP Extraction Complete!");
 			b.destroy();
 		} catch (IOException e) {
@@ -141,19 +137,26 @@ public class HelperScript extends HelperScriptHelper
 			//Correct PAssword
 			b = Runtime.getRuntime().exec(workSpace+"\\assets\\WinRAR\\WinRaR.exe x "+fileLocation+" -p"+password+" "+ extractLocation);
 			sleep(2);
-			while(winrarExtractingwindow().exists()){
-				sleep(5);
-			}		
-			//Rare changes the winrar extract dissapears and comes back
-			while(winrarExtractingwindow().exists()){
-				sleep(5);
-			}
+			waitForZipToComplete();	
+			waitForZipToComplete();
 			logInfo("ZIP Extraction Complete!");
 			b.destroy();
 		} catch (IOException e) {
 			logError("ZIP Extraction FAILED:"+e.toString());
 			e.printStackTrace();
 			stop();
+		}
+	}
+	
+	private void waitForZipToComplete(){
+		while(winrarExtractingwindow().exists()){
+			if(noArchivesFoundlabel().exists()){
+				noArchive_OKbutton().click();
+				logError("Archive not found to extract!");
+				HelperClass.CloseAllBrowsers();
+				stop();
+			}
+			sleep(3);
 		}
 	}
 }

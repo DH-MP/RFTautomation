@@ -61,11 +61,11 @@ public abstract class MySuperHelper extends RationalTestScript
 	
 	
 
-//	public boolean onUnhandledException(java.lang.Throwable e){
-////		((BrowserTestObject) HelperClass.findBrowser()).click();
-////		logError("An Unhandled Exception" + e, ((BrowserTestObject)browsers[0]).getScreenSnapshot());
-//		return false;
-//	}
+	public boolean onUnhandledException(java.lang.Throwable e){
+		((BrowserTestObject) HelperClass.findBrowser()).click();
+		logError("An Unhandled Exception" + e, ((BrowserTestObject) HelperClass.findBrowser()).getScreenSnapshot());
+		return false;
+	}
 	
 //	public void onObjectNotFound(ITestObjectMethodState testObjectMethodState){
 //		logError("Object Not Found Exception ", getRootTestObject().getScreenSnapshot());

@@ -101,8 +101,10 @@ public class TS_995 extends TS_995Helper
 		testHighlightAndQuickSearch(dpString("quickSearchTerm"), dpInt("expectedNumberOfResults"));
 		
 //Test Pagination: Number of Display Result for 3 pages
-		testPagination();
-
+		if(dpBoolean("testPagination")){
+			testPagination();
+		}
+		
 	}
 	
 	public void testPagination(){
@@ -137,6 +139,7 @@ public class TS_995 extends TS_995Helper
 		link_pageSize().hover();
 		link_page20().click();
 	}
+	
 	public void testHighlightAndQuickSearch(String quickSearchTerm, int expectedNumberOfResults){
 		logInfo("Search the term: "+quickSearchTerm);
 		sleep(5);

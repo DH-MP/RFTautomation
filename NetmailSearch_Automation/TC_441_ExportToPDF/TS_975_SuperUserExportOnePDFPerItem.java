@@ -5,6 +5,7 @@ import java.util.Arrays;
 
 import resources.TC_441_ExportToPDF.TS_975_SuperUserExportOnePDFPerItemHelper;
 import utilities.HelperClass;
+import utilities.HelperScript;
 
 import NetmailSearch_General.NetmailLogin;
 import NetmailSearch_General.adminLogin;
@@ -68,18 +69,16 @@ public class TS_975_SuperUserExportOnePDFPerItem extends TS_975_SuperUserExportO
 		adminLogin.selectCase(dpString("caseName"));
 		sleep(10);
 		
-		//NewExport
-		Object[] nES = {dpString("searchTabIndex"), 
-						dpInt("itemOption"),
-						dpInt("exportTypeOption"),
-						dpString("exportName"),
-						"", //no email
-						password,
-						dpFloat("customGB"),
-						dpString("additionalOptions"),
-						dpBoolean("largeExport"),
-		};
-		callScript("newExport_Super", nES);
+		Export_SuperUser esu = new Export_SuperUser();
+		esu.setExportName(dpString("exportName"));
+		esu.setSearchTabs(dpString("searchTabIndex"));
+		esu.setItemOptions(dpInt("itemOption"));
+		esu.setExportTypeOption(dpInt("exportTypeOption"));
+		esu.setPassword(password);
+		esu.setCustomGB(String.valueOf(dpFloat("customGB")));
+		esu.setAdditionalOptions(dpString("additionalOptions"));
+		esu.setIsLargeExport(dpBoolean("largeExport"));
+		esu.create();
 		
 		
 		//Setup
@@ -225,27 +224,12 @@ public class TS_975_SuperUserExportOnePDFPerItem extends TS_975_SuperUserExportO
 	}
 	
 	private void extract(String file){
+		HelperScript hs = new HelperScript();
 		if(password!=null && !password.isEmpty()){
-			logInfo("extracting < "+file+"> to < "+ extractLocation +" > using incorrect password" );
-			HelperClass.extract(workspace, winrarPath, fileLocation+"\\"+file, extractLocation, "WRONGPASSWORD");
-			winRARClosebutton().waitForExistence(240, DISABLED);
-			if(!winRARClosebutton().exists()){
-				logError("wrong password passed for zip file passed");
-			}
-			winRARClosebutton().click();
-			logInfo("clicked close on wrong password winrar message");
-		}
-		
-		logInfo("extracting < "+file+" > to < "+ extractLocation +" > using password < "+password+" >" );
-		HelperClass.extract(workspace, winrarPath, fileLocation+"\\"+file, extractLocation, password);
-		while(winrarExtractingwindow().exists()){
-			if(noArchivesFoundlabel().exists()){
-				noArchive_OKbutton().click();
-				logError("Archive not found to extract!");
-				HelperClass.CloseAllBrowsers();
-				stop();
-			}
-			sleep(2);
+			hs.extractZip(fileLocation+"\\"+file, extractLocation, workspace);
+		}else{
+			logInfo("extracting < "+file+" > to < "+ extractLocation +" > using password < "+password+" >" );
+			hs.extractZip(fileLocation+"\\"+file, extractLocation, workspace, password);
 		}
 		logInfo("ZIP Extraction Complete!");
 	}
@@ -311,21 +295,14 @@ public class TS_975_SuperUserExportOnePDFPerItem extends TS_975_SuperUserExportO
 	
 	
 	
-	private void deleteExport(){
-		button_exportCasebutton().click();
-		logInfo("Clicked export dropdown menu");
-		link_exportManagement().click();
-		logInfo("Clicked export management on dropdown");
+	private void deleteExport(){	
+		Export_SuperUser esu = new Export_SuperUser();
+		esu.openExportManagementWindow();
+		waitForloading();
 		
 		html_exportList().waitForExistence(120, DISABLED);
 		TestObject[] exports = html_exportList().find(atDescendant(".tag", "TABLE", "class", "x-grid3-row-table"), true);
-		TestObject[] columns = exports[0].find(atDescendant(".tag", "TD"), false);
-		((GuiTestObject)columns[columns.length-1]).click();
-		logInfo("Clicked detail button on export: "+exportName);
-		button_deleteExportedFilesbutt().click();
-		logInfo("Clicked delete export button");
-		button_yesbutton().click();
-		logInfo("Clicked yes to delete export");
+		esu.deleteExport(exports[0]);
 		waitForloading();
 	}
 	

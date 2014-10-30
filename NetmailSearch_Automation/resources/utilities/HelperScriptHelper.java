@@ -20,15 +20,63 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>HelperScript</b><br>
- * Generated     : <b>2013/09/05 5:30:29 PM</b><br>
+ * Generated     : <b>2014/10/30 10:56:19 AM</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows Server 2008 R2 x86 6.1 <br>
  * 
- * @since  September 05, 2013
+ * @since  October 30, 2014
  * @author Administrator
  */
 public abstract class HelperScriptHelper extends utilities.MySuperHelper
 {
+	/**
+	 * noArchive_OK: with default state.
+	 *		.text : OK
+	 * 		.class : .Pushbutton
+	 * 		.name : OK
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject noArchive_OKbutton() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("noArchive_OKbutton"));
+	}
+	/**
+	 * noArchive_OK: with specific test context and state.
+	 *		.text : OK
+	 * 		.class : .Pushbutton
+	 * 		.name : OK
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject noArchive_OKbutton(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("noArchive_OKbutton"), anchor, flags);
+	}
+	
+	/**
+	 * NoArchivesFound: with default state.
+	 *		.class : .Statictext
+	 * 		.name : No archives found
+	 * 		.classIndex : 0
+	 */
+	protected GuiSubitemTestObject noArchivesFoundlabel() 
+	{
+		return new GuiSubitemTestObject(
+                        getMappedTestObject("noArchivesFoundlabel"));
+	}
+	/**
+	 * NoArchivesFound: with specific test context and state.
+	 *		.class : .Statictext
+	 * 		.name : No archives found
+	 * 		.classIndex : 0
+	 */
+	protected GuiSubitemTestObject noArchivesFoundlabel(TestObject anchor, long flags) 
+	{
+		return new GuiSubitemTestObject(
+                        getMappedTestObject("noArchivesFoundlabel"), anchor, flags);
+	}
+	
 	/**
 	 * winRARClose: with default state.
 	 *		.text : Close

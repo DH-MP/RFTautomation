@@ -88,6 +88,7 @@ public class NetmailLogin extends NetmailLoginHelper
 			utilities.HelperClass.CloseAllBrowsers();
 			startApp("http://www.google.com");
 			browser_htmlBrowser().waitForExistence(120, DISABLED);
+			sleep(5);
 			browser_htmlBrowser().loadUrl(url);
 			sleep(20);
 			logInfo("lost track of Browser:"+e.toString());

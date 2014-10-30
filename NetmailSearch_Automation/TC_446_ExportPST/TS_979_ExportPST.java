@@ -5,6 +5,7 @@ import java.util.HashMap;
 
 import resources.TC_446_ExportPST.TS_979_ExportPSTHelper;
 import utilities.HelperClass;
+import utilities.HelperScript;
 
 import NetmailSearch_General.NetmailLogin;
 import NetmailSearch_General.adminLogin;
@@ -68,18 +69,17 @@ public class TS_979_ExportPST extends TS_979_ExportPSTHelper
 		adminLogin.selectUserType( dpString("userType"));
 		adminLogin.selectCase(dpString("caseName"));
 		
-		//NewExport
-		Object[] nES = {dpString("searchTabIndex"), 
-						dpInt("itemOption"),
-						dpInt("exportTypeOption"),
-						dpString("exportName"),
-						"", //no email
-						password,
-						dpFloat("customGB"),
-						"",
-						dpBoolean("largeExport"),
-		};
-		callScript("newExport_Super", nES);
+		
+		Export_SuperUser esu = new Export_SuperUser();
+		esu.setExportName(dpString("exportName"));
+		esu.setSearchTabs(dpString("searchTabIndex"));
+		esu.setItemOptions(dpInt("itemOption"));
+		esu.setExportTypeOption(dpInt("exportTypeOption"));
+		esu.setPassword(password);
+		esu.setCustomGB(String.valueOf(dpFloat("customGB")));
+		esu.setAdditionalOptions("");
+		esu.setIsLargeExport(dpBoolean("largeExport"));
+		esu.create();
 		
 		//Setup
 		for(String file : files){
@@ -122,19 +122,15 @@ public class TS_979_ExportPST extends TS_979_ExportPSTHelper
 		for(String file : files){
 			file = file.trim();
 			//Extract ISO
-			if(file.contains(".zip")){
-				HashMap<String, String> params = new HashMap<String, String> ();
-				params.put("file", file);
-				params.put("password", password);
-				params.put("extractLocation", extractLocation);
-				params.put("fileLocation", fileLocation);
-				params.put("workspace", workspace);
-				params.put("file", file);
-				params.put("winrarPath", winrarPath);
-				
-				Object[] uHS = {"extractZip", params};
-				callScript("utilities.HelperScript", uHS );
-
+			if(file.contains(".zip")){				
+				HelperScript hs = new HelperScript();
+				if(password!=null && !password.isEmpty()){
+					hs.extractZip(fileLocation+"\\"+file, extractLocation, workspace);
+				}else{
+					logInfo("extracting < "+file+" > to < "+ extractLocation +" > using password < "+password+" >" );
+					hs.extractZip(fileLocation+"\\"+file, extractLocation, workspace, password);
+				}
+				logInfo("ZIP Extraction Complete!");
 			}
 		}
 				
@@ -222,20 +218,13 @@ public class TS_979_ExportPST extends TS_979_ExportPSTHelper
 	}
 	
 	private void deleteExport(){
-		button_exportCasebutton().click();
-		logInfo("Clicked export dropdown menu");
-		link_exportManagement().click();
-		logInfo("Clicked export management on dropdown");
+		Export_SuperUser esu = new Export_SuperUser();
+		esu.openExportManagementWindow();
+		waitForloading();
 		
-		html_exportList().waitForExistence(123, DISABLED);
+		html_exportList().waitForExistence(120, DISABLED);
 		TestObject[] exports = html_exportList().find(atDescendant(".tag", "TABLE", "class", "x-grid3-row-table"), true);
-		TestObject[] columns = exports[0].find(atDescendant(".tag", "TD"), false);
-		((GuiTestObject)columns[columns.length-1]).click();
-		logInfo("Clicked detail button on export: "+exportName);
-		button_deleteExportedFilesbutt().click();
-		logInfo("Clicked delete export button");
-		button_yesbutton().click();
-		logInfo("Clicked yes to delete export");
+		esu.deleteExport(exports[0]);
 		waitForloading();
 	}
 	

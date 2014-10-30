@@ -38,7 +38,6 @@ public class TS_990_AdvanceSearch_Attachements extends TS_990_AdvanceSearch_Atta
 		
 		Object[] aSASU = {dpString("fileName"), dpString("fileSize1"), dpString("fileSize2"), dpBoolean("testBody"), dpBoolean("expectedResults")};
 		callScript("NetmailSearch_AdvanceSearch.Attachment_SuperUser", aSASU);
-
 	}
 }
 

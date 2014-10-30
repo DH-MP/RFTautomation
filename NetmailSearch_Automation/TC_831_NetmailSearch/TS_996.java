@@ -40,7 +40,7 @@ public class TS_996 extends TS_996Helper
 	//Admin Login
 		if(dpBoolean("hasPrivilege")){
 			adminLogin.selectUserType("Normal User");
-			adminLogin.selectCase(dpString("caseListName"));
+//			adminLogin.selectCase(dpString("caseListName"));
 		}else{				
 //				//ALS MailBox Default
 //				Property[] ps = new Property[3];

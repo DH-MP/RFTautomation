@@ -67,6 +67,8 @@ public class Export_SuperUser extends Export_SuperUserHelper
 		logInfo("Clicked export case dropdown");
 		sleep(0.5);
 		link_newExport().click();
+		waitForloading();
+		waitForloading();
 		logInfo("Clicked new export");
 		html_exportWindow().waitForExistence();
 		
@@ -238,7 +240,7 @@ public class Export_SuperUser extends Export_SuperUserHelper
 		logInfo("Clicked export case dropdown");
 		
 		link_exportManage().click();
-		
+		waitForloading();
 	}
 	
 	public void closeExportManagementWindow(){
@@ -286,6 +288,8 @@ public class Export_SuperUser extends Export_SuperUserHelper
 	}
 	
 	
+	
+	//parameter is the container of the export
 	public void deleteExport(TestObject export){
 		TestObject[] tds = export.find(atDescendant(".tag", "TD"), false);
 		((GuiTestObject) tds[tds.length/2]).click();

@@ -117,6 +117,8 @@ public class Attachment_SuperUser extends Attachment_SuperUserHelper
 			button_advAttach_Searchsubmit().click();
 			logInfo("search clicked");
 			
+			sleep(2);
+			waitForloading();
 			
 			//Validation Steps
 			activeResultListDiv = find(atDescendant(".tag", "DIV", "class", "x-panel x-panel-noborder x-grid-panel"), true);

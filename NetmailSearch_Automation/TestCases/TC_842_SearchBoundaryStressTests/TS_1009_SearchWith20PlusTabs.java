@@ -47,7 +47,7 @@ public class TS_1009_SearchWith20PlusTabs extends TS_1009_SearchWith20PlusTabsHe
 		int numberOfTabs = 20;  
 		
 		NetmailLogin.login();
-		adminLogin.selectUserType(dpString("Super User"));
+		adminLogin.selectUserType("Super User");
 		
 		//New Case
 		manageCase mc = new manageCase();
