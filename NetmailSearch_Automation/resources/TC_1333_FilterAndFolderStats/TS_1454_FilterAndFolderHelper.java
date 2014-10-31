@@ -20,11 +20,11 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>TS_1454_FilterAndFolder</b><br>
- * Generated     : <b>2014/07/24 11:03:09 AM</b><br>
+ * Generated     : <b>2014/10/31 11:11:52 AM</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows Server 2008 R2 x86 6.1 <br>
  * 
- * @since  July 24, 2014
+ * @since  October 31, 2014
  * @author Administrator
  */
 public abstract class TS_1454_FilterAndFolderHelper extends utilities.MySuperHelper
@@ -102,8 +102,8 @@ public abstract class TS_1454_FilterAndFolderHelper extends utilities.MySuperHel
 	
 	/**
 	 * filterTree0Xcollapsed: with default state.
-	 *		id : RegularExpression(ext-comp-\d*-xcollapsed)
-	 * 		.id : RegularExpression(ext-comp-\d*-xcollapsed)
+	 *		id : filterTree0-xcollapsed
+	 * 		.id : filterTree0-xcollapsed
 	 * 		.className : x-layout-collapsed x-layout-collapsed-south x-layout-cmini-south
 	 * 		.class : Html.DIV
 	 */
@@ -114,8 +114,8 @@ public abstract class TS_1454_FilterAndFolderHelper extends utilities.MySuperHel
 	}
 	/**
 	 * filterTree0Xcollapsed: with specific test context and state.
-	 *		id : RegularExpression(ext-comp-\d*-xcollapsed)
-	 * 		.id : RegularExpression(ext-comp-\d*-xcollapsed)
+	 *		id : filterTree0-xcollapsed
+	 * 		.id : filterTree0-xcollapsed
 	 * 		.className : x-layout-collapsed x-layout-collapsed-south x-layout-cmini-south
 	 * 		.class : Html.DIV
 	 */
@@ -259,6 +259,29 @@ public abstract class TS_1454_FilterAndFolderHelper extends utilities.MySuperHel
 	{
 		return new GuiTestObject(
                         getMappedTestObject("link_msgPropertyRead"), anchor, flags);
+	}
+	
+	/**
+	 * msgPropertySource: with default state.
+	 *		.text : Source
+	 * 		.class : Html.A
+	 * 		class : x-tree-node-anchor
+	 */
+	protected GuiTestObject link_msgPropertySource() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("link_msgPropertySource"));
+	}
+	/**
+	 * msgPropertySource: with specific test context and state.
+	 *		.text : Source
+	 * 		.class : Html.A
+	 * 		class : x-tree-node-anchor
+	 */
+	protected GuiTestObject link_msgPropertySource(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("link_msgPropertySource"), anchor, flags);
 	}
 	
 	/**

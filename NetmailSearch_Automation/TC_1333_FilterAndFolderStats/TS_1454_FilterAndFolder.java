@@ -71,7 +71,7 @@ public class TS_1454_FilterAndFolder extends TS_1454_FilterAndFolderHelper
 		}
 		
 		logInfo("Verify filters");
-		validatePercentageForAllFilters("opened,read");
+		validatePercentageForAllFilters("opened,read,source");
 	}
 	
 	
@@ -112,33 +112,59 @@ public class TS_1454_FilterAndFolder extends TS_1454_FilterAndFolderHelper
 					
 
 					switch (topFilter) {
-					case "opened": case "read":
-						GuiTestObject propertyRow = topFilter.contentEquals("opened") ? link_msgPropertyOpened():link_msgPropertyRead();
-						String expectedOpenedValue = filterName.toLowerCase().trim().contentEquals("yes")? "true" : "false";
-						text_quickSearchField0().click();
-						browser_htmlBrowser().inputKeys("for your eyes only -----> confidential{ENTER}"); //Shorten the verification with a quick search using a known term that has both yes and no results
-						waitForloading();
-						results = find(atDescendant(".class", "Html.TABLE", "class", "x-grid3-row-table"), true);
-						for(TestObject result : results){
-							
-							((GuiTestObject)result).doubleClick();
-							sleep(1);
+						case "opened": case "read":
+							GuiTestObject propertyRow = topFilter.contentEquals("opened") ? link_msgPropertyOpened():link_msgPropertyRead();
+							String expectedOpenedValue = filterName.toLowerCase().trim().contentEquals("yes")? "true" : "false";
+							text_quickSearchField0().click();
+							browser_htmlBrowser().inputKeys("for your eyes only -----> confidential{ENTER}"); //Shorten the verification with a quick search using a known term that has both yes and no results
 							waitForloading();
-							
-							link_msgPropertyTab().click();
-							sleep(1);
+							results = find(atDescendant(".class", "Html.TABLE", "class", "x-grid3-row-table"), true);
+							for(TestObject result : results){
+								
+								((GuiTestObject)result).doubleClick();
+								sleep(1);
+								waitForloading();
+								
+								link_msgPropertyTab().click();
+								sleep(1);
+								waitForloading();
+								String openValue = propertyRow.getParent().getParent().getChildren()[1].getProperty(".contentText").toString();
+								vpManual("Filtered_"+topFilter+"_"+filterName, expectedOpenedValue, openValue).performTest();
+								
+								html_msgCloseButton().click();
+								sleep(1);
+							}
+							text_quickSearchField0().click();
+							browser_htmlBrowser().inputKeys("^a{DELETE}{ENTER}");
 							waitForloading();
-							String openValue = propertyRow.getParent().getParent().getChildren()[1].getProperty(".contentText").toString();
-							vpManual("Filtered_"+topFilter+"_"+filterName, expectedOpenedValue, openValue).performTest();
-							
-							html_msgCloseButton().click();
-							sleep(1);
-						}
-						text_quickSearchField0().click();
-						browser_htmlBrowser().inputKeys("^a{DELETE}{ENTER}");
-						waitForloading();
-						break;
-					default:
+							break;
+						case "source":
+							propertyRow = link_msgPropertySource();
+							String expectedValue = filterName.toLowerCase().trim().contentEquals("received")? "received" : "sent";
+							text_quickSearchField0().click();
+							browser_htmlBrowser().inputKeys("for your eyes only -----> confidential{ENTER}"); //Shorten the verification with a quick search using a known term that has both yes and no results
+							waitForloading();
+							results = find(atDescendant(".class", "Html.TABLE", "class", "x-grid3-row-table"), true);
+							for(TestObject result : results){
+								
+								((GuiTestObject)result).doubleClick();
+								sleep(1);
+								waitForloading();
+								
+								link_msgPropertyTab().click();
+								sleep(1);
+								waitForloading();
+								String openValue = propertyRow.getParent().getParent().getChildren()[1].getProperty(".contentText").toString();
+								vpManual("Filtered_"+topFilter+"_"+filterName, expectedValue, openValue).performTest();
+								
+								html_msgCloseButton().click();
+								sleep(1);
+							}
+							text_quickSearchField0().click();
+							browser_htmlBrowser().inputKeys("^a{DELETE}{ENTER}");
+							waitForloading();
+							break;
+						default:
 					}
 					
 					//Refind after load
