@@ -610,14 +610,15 @@ public class manageCase extends manageCaseHelper
 				checkBox_allMenuon().click();
 			}
 			logInfo("Uncheck select all user checkbox");
-			sleep(1);
+			sleep(3);
+			waitForloading();
 			waitForloading();
 			
 			String[] userNames = users.split(";");
 			TestObject secondHalf = bodyParts()[1];
 			TestObject userBody = secondHalf.find(atDescendant(".tag","DIV", "class", "x-grid3-body"),false)[0];
 			for(String name : userNames){
-				TestObject[] user = userBody.find(atDescendant(".text", name.trim(), "class", "x-grid3-row"));
+				TestObject[] user = userBody.find(atDescendant(".text", name.trim(), "class", "x-grid3-row-table"));
 				user = user.length==0 ? userBody.find(atDescendant(".text", name.trim())) : user;
 				if(user.length == 1){
 					((GuiTestObject) user[0]).click();

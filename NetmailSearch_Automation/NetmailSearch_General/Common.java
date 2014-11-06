@@ -90,6 +90,7 @@ public class Common extends CommonHelper
 			default:
 				break;
 		}
+		waitForloading();
 	}
 }
 

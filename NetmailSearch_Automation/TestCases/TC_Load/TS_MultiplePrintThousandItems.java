@@ -47,7 +47,11 @@ public class TS_MultiplePrintThousandItems extends TS_MultiplePrintThousandItems
 		mc.setUsers("smith@greg.dom2po1.dom2");
 		mc.newCase();
 		
+		HelperClass.navigateLocation("ALS>smith>Mailbox");
+		
 		int messageCount = 1000;
+			
+		Common.preferencePageSize(200);
 		
 		while(messageCount > 0){
 			TestObject[] results = HelperClass.getActiveTabBody()[0].find(atDescendant(".class", "Html.TABLE", "class", "x-grid3-row-table"), true);
@@ -99,7 +103,6 @@ public class TS_MultiplePrintThousandItems extends TS_MultiplePrintThousandItems
 		NetmailLogin.login();
 		adminLogin.selectUserType("Super User");
 		mc.deleteCase("TS_MultiplePrintThousandItems");
-		
 		
 		
 	}
