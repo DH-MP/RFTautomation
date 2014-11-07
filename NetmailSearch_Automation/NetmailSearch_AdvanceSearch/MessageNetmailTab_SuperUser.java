@@ -224,7 +224,7 @@ public class MessageNetmailTab_SuperUser extends MessageNetmailTab_SuperUserHelp
 					
 					switch (fields[k].trim()){
 						case "exact":
-							regexp = "(?i).*\\b"+values[k].trim().replace(" ", "\\b.*\\b")+"\\b.*";
+							regexp = "(?i).*\\b"+values[k].trim().replace(" ", "\\b[^a-zA-Z\\d]\\b")+"\\b.*";
 							isFound = findWordInMessage(regexp);
 							bool.add(isFound);
 							vpManual("NetmailSearch_exactPhrase", true, isFound).performTest();
@@ -313,11 +313,20 @@ public class MessageNetmailTab_SuperUser extends MessageNetmailTab_SuperUserHelp
 		//Match highlighted text against word, NOTE: if word exists in text but not highlighted it is also a fail.
 		for(TestObject higlightedTextObject : highlightedTexts){
 			String highlightedText = higlightedTextObject.getProperty(".text").toString().toLowerCase().trim();
+			
 			if(highlightedText.matches(regexp)){
 				matchesBody = true;
 				break;//Found a highlighted text term that matches word in message body
 			}
 		}
+		
+		//Check
+		String contentOfBody = frame_mbMessageBody().find(atDescendant(".class", "Html.BODY"), false)[0].getProperty(".text").toString();
+		regexp = "(?i).*\\b"+"Dean John".replace(" ", "\\b[^a-zA-Z0-9]*\\b")+"\\b.*";
+		if(contentOfBody.matches(regexp) ){
+			matchesBody = true;
+		}
+		
 		return matchesHeader|matchesBody;
 	}
 	

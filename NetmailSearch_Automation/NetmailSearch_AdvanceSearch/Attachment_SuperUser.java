@@ -119,6 +119,7 @@ public class Attachment_SuperUser extends Attachment_SuperUserHelper
 			
 			sleep(2);
 			waitForloading();
+			waitForloading();
 			
 			//Validation Steps
 			activeResultListDiv = find(atDescendant(".tag", "DIV", "class", "x-panel x-panel-noborder x-grid-panel"), true);

@@ -226,10 +226,10 @@ public class TS_975_SuperUserExportOnePDFPerItem extends TS_975_SuperUserExportO
 	private void extract(String file){
 		HelperScript hs = new HelperScript();
 		if(password!=null && !password.isEmpty()){
-			hs.extractZip(fileLocation+"\\"+file, extractLocation, workspace);
-		}else{
 			logInfo("extracting < "+file+" > to < "+ extractLocation +" > using password < "+password+" >" );
 			hs.extractZip(fileLocation+"\\"+file, extractLocation, workspace, password);
+		}else{
+			hs.extractZip(fileLocation+"\\"+file, extractLocation, workspace);
 		}
 		logInfo("ZIP Extraction Complete!");
 	}

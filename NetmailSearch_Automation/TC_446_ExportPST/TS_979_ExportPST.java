@@ -124,11 +124,11 @@ public class TS_979_ExportPST extends TS_979_ExportPSTHelper
 			//Extract ISO
 			if(file.contains(".zip")){				
 				HelperScript hs = new HelperScript();
-				if(password!=null && !password.isEmpty()){
-					hs.extractZip(fileLocation+"\\"+file, extractLocation, workspace);
-				}else{
+				if(password !=null && !password.isEmpty()){
 					logInfo("extracting < "+file+" > to < "+ extractLocation +" > using password < "+password+" >" );
 					hs.extractZip(fileLocation+"\\"+file, extractLocation, workspace, password);
+				}else{
+					hs.extractZip(fileLocation+"\\"+file, extractLocation, workspace);
 				}
 				logInfo("ZIP Extraction Complete!");
 			}

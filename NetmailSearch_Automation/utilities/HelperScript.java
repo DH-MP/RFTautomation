@@ -124,7 +124,8 @@ public class HelperScript extends HelperScriptHelper
 		try {
 			
 			logInfo("extracting < "+fileLocation+"> to < "+ extractLocation +" > using incorrect password" );
-			Process b = Runtime.getRuntime().exec(workSpace+"\\assets\\WinRAR\\WinRaR.exe x "+fileLocation+" -pWrongPassword"+" "+ extractLocation);
+			String arg = workSpace+"\\assets\\WinRAR\\WinRaR.exe x "+fileLocation+" -pWrongPassword"+" "+ extractLocation;
+			Process b = Runtime.getRuntime().exec(arg);
 			
 			//Wrong password checking
 			winRARClosebutton().waitForExistence(240, DISABLED);
