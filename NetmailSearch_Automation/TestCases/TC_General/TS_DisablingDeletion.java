@@ -148,6 +148,7 @@ public class TS_DisablingDeletion extends TS_DisablingDeletionHelper
 		
 		//start NetmailSearch
 		HelperClass.startOrStopNetmailServices(true, IP, workSpace);
+		sleep(30);
 	}
 	
 	public void revert(){
