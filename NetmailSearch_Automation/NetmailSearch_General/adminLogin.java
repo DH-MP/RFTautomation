@@ -90,7 +90,9 @@ public class adminLogin extends adminLoginHelper
 	}
 	
 	private void selectCase(){
-		manageCase.clickOkButtonReviewCase();
+		if(html_requireReviewCaseTXT().exists()){
+			manageCase.clickOkButtonReviewCase();
+		}
 		
 		/******Click Case*******/
 		if( caseListName != null && !caseListName.isEmpty()){
