@@ -1,4 +1,6 @@
 package RQM_RnD;
+import java.util.Iterator;
+
 import resources.RQM_RnD.PassingExecutionVariableHelper;
 import com.rational.test.ft.*;
 import com.rational.test.ft.object.interfaces.*;
@@ -30,6 +32,11 @@ public class PassingExecutionVariable extends PassingExecutionVariableHelper
 	public void testMain(Object[] args) 
 	{
 		IVariablesManager vm =getVariablesManager();
+		Iterator<IParameter> inputP = vm.getAllInputParameters();
+		while(inputP.hasNext()){
+			IParameter  p = inputP.next();
+			logInfo(p.getName()+" "+p.getValue());
+		}
 		IVariable passing = vm.createOutputVariable("A", "blood");
 	}
 }
