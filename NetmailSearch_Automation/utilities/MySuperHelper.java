@@ -62,8 +62,7 @@ public abstract class MySuperHelper extends RationalTestScript
 	
 
 	public boolean onUnhandledException(java.lang.Throwable e){
-		((BrowserTestObject) HelperClass.findBrowser()).click();
-		logError("An Unhandled Exception" + e, ((BrowserTestObject) HelperClass.findBrowser()).getScreenSnapshot());
+		logError("An Unhandled Exception" + e, getRootTestObject().getScreenSnapshot());
 		return false;
 	}
 	

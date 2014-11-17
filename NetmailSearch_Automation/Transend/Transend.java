@@ -193,12 +193,26 @@ public class Transend extends TransendHelper
 		logInfo("Click Folder Button");
 		loadFromEMailSourcebutton().click();
 		logInfo("Click Load Source Data");
-		sleep(15);
+		sleep(5);
 		
 		if(selectedFoldersNoRegexp.isEmpty()){
 			String[] checked = selectedFolders.split(",");
 			TestObject[] lists = migrationOptionslist().getChildren();
-			migrationOptionslist().click(atName(lists[0].getProperty(".name").toString())); 
+			
+			int jump = 0;
+			while(true){
+				if(jump == 4){
+					break;
+				}
+				try{
+					migrationOptionslist().click(atName(lists[0].getProperty(".name").toString()));
+					break;
+				}catch(Exception e){
+					jump++;
+					sleep(15);
+				}
+			}
+
 			for(TestObject b : lists){
 				boolean match = false;
 				for(String c : checked){
