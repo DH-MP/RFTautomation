@@ -193,7 +193,7 @@ public class Transend extends TransendHelper
 		logInfo("Click Folder Button");
 		loadFromEMailSourcebutton().click();
 		logInfo("Click Load Source Data");
-		sleep(5);
+		sleep(15);
 		
 		if(selectedFoldersNoRegexp.isEmpty()){
 			String[] checked = selectedFolders.split(",");
