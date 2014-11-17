@@ -164,7 +164,7 @@ public class TS_1695_Transend_Yahoo extends TS_1695_Transend_YahooHelper
 	
 	@Override
 	public void onTerminate(){
-//		transend.destroy();
+		transend.destroy();
 	}
 }
 

@@ -186,7 +186,7 @@ public class TS_1691_Transend_GroupWise extends TS_1691_Transend_GroupWiseHelper
 		
 	@Override
 	public void onTerminate(){
-//		transend.destroy();
+		transend.destroy();
 	}
 }
 

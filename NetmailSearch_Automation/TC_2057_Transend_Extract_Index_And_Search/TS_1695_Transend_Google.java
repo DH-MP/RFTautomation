@@ -165,7 +165,7 @@ public class TS_1695_Transend_Google extends TS_1695_Transend_GoogleHelper
 	
 	@Override
 	public void onTerminate(){
-//		transend.destroy();
+		transend.destroy();
 	}
 }
 
