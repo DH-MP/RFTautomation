@@ -201,13 +201,14 @@ public class Transend extends TransendHelper
 			
 			int jump = 0;
 			while(true){
-				if(jump == 4){
+				if(jump == 10){
 					break;
 				}
 				try{
 					migrationOptionslist().click(atName(lists[0].getProperty(".name").toString()));
 					break;
 				}catch(Exception e){
+					System.out.println("waiting still");
 					jump++;
 					sleep(15);
 				}
