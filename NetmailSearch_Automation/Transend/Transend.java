@@ -205,6 +205,7 @@ public class Transend extends TransendHelper
 					break;
 				}
 				try{
+					lists = migrationOptionslist().getChildren();
 					migrationOptionslist().click(atName(lists[0].getProperty(".name").toString()));
 					break;
 				}catch(Exception e){
@@ -212,6 +213,7 @@ public class Transend extends TransendHelper
 					jump++;
 					sleep(15);
 				}
+				
 			}
 
 			for(TestObject b : lists){
