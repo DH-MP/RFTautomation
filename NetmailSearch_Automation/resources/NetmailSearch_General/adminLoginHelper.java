@@ -20,11 +20,11 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>adminLogin</b><br>
- * Generated     : <b>2014/10/22 3:47:10 PM</b><br>
+ * Generated     : <b>2014/11/27 5:38:26 PM</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows Server 2008 R2 x86 6.1 <br>
  * 
- * @since  October 22, 2014
+ * @since  November 27, 2014
  * @author Administrator
  */
 public abstract class adminLoginHelper extends utilities.MySuperHelper
@@ -130,7 +130,7 @@ public abstract class adminLoginHelper extends utilities.MySuperHelper
 	}
 	
 	/**
-	 * RequireReviewCaseTXT: with default state.
+	 * requireReviewCaseTXT: with default state.
 	 *		.text : We have detected that some cases are currently in a state that requires your rev ...
 	 * 		.className : ext-mb-text
 	 * 		.class : Html.SPAN
@@ -141,7 +141,7 @@ public abstract class adminLoginHelper extends utilities.MySuperHelper
                         getMappedTestObject("html_requireReviewCaseTXT"));
 	}
 	/**
-	 * RequireReviewCaseTXT: with specific test context and state.
+	 * requireReviewCaseTXT: with specific test context and state.
 	 *		.text : We have detected that some cases are currently in a state that requires your rev ...
 	 * 		.className : ext-mb-text
 	 * 		.class : Html.SPAN
