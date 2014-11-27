@@ -98,6 +98,9 @@ public class TS_1695_Transend_Google extends TS_1695_Transend_GoogleHelper
 		t.setData();
 		t.setCategory("calendar");
 		t.setData();
+		t.setCategory("task");
+		t.setData();	
+		
 		t.startSingleMigration();
 			
 		HelperClass.oneBrowserSetup();

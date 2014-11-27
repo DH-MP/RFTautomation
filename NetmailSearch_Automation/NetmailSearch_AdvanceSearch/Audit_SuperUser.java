@@ -400,6 +400,19 @@ public class Audit_SuperUser extends Audit_SuperUserHelper
 			((GuiTestObject)results[i]).hover();
 			((GuiTestObject)results[i]).click();
 			((GuiTestObject)results[i]).doubleClick();
+			
+			
+			//Just in case it doesn't open in first try
+			try{
+				link_messageAuditTab().getProperty(".text").toString();
+			}catch(ObjectNotFoundException e){
+				((GuiTestObject)results[i]).hover();
+				((GuiTestObject)results[i]).click();
+				((GuiTestObject)results[i]).doubleClick();
+				sleep(2);
+				waitForloading();
+			}
+			
 			logInfo("open message: "+i);
 			html_messageWindow0().waitForExistence(123, DISABLED);
 			waitForloading();

@@ -83,6 +83,7 @@ public class NetmailLogin extends NetmailLoginHelper
 			browser_htmlBrowser().waitForExistence(120, DISABLED);
 			browser_htmlBrowser().activate();
 			browser_htmlBrowser().deleteCookies();
+			browser_htmlBrowser().maximize();
 			sleep(3);
 			browser_htmlBrowser().loadUrl(url);
 
@@ -91,10 +92,10 @@ public class NetmailLogin extends NetmailLoginHelper
 			utilities.HelperClass.CloseAllBrowsers();
 			startApp("http://www.google.com");
 			browser_htmlBrowser().waitForExistence(120, DISABLED);
-			sleep(5);
 			browser_htmlBrowser().deleteCookies();
-			sleep(3);
+			sleep(5);
 			browser_htmlBrowser().loadUrl(url);
+			browser_htmlBrowser().maximize();
 			sleep(20);
 			logInfo("lost track of Browser:"+e.toString());
 		}
