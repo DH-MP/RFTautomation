@@ -7,6 +7,7 @@ import org.eclipse.hyades.execution.runtime.datapool.IDatapoolIterator;
 import com.rational.test.ft.script.IParameter;
 import com.rational.test.ft.script.IVariablesManager;
 import com.rational.test.ft.script.RationalTestScript;
+import com.rational.test.ft.application.rational_ft_impl;
 import com.rational.test.ft.datapool.DatapoolFactory;
 import com.rational.test.ft.object.interfaces.BrowserTestObject;
 import com.rational.test.ft.object.interfaces.TestObject;
@@ -56,9 +57,6 @@ public abstract class MySuperHelper extends RationalTestScript
 		this.adminUserName = rqmUserName != null ? rqmUserName.getValue() : this.adminUserName;
 		this.adminPassword = rqmPassword != null ? rqmPassword.getValue() : this.adminPassword;
 	}
-	
-	
-	
 
 //	public boolean onUnhandledException(java.lang.Throwable e){
 ////		((BrowserTestObject) HelperClass.findBrowser()).click();

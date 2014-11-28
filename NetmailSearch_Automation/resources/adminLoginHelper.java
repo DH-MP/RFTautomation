@@ -7,7 +7,7 @@
 // file will be lost when automatically updated.
 
 package resources;
-
+import utilities.MySuperHelper;
 import com.rational.test.ft.object.interfaces.*;
 import com.rational.test.ft.object.interfaces.SAP.*;
 import com.rational.test.ft.object.interfaces.WPF.*;
@@ -20,11 +20,11 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>adminLogin</b><br>
- * Generated     : <b>2013/06/05 5:01:43 PM</b><br>
+ * Generated     : <b>2014/11/14 2:15:58 PM</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows Server 2008 R2 x86 6.1 <br>
  * 
- * @since  June 05, 2013
+ * @since  November 14, 2014
  * @author Administrator
  */
 public abstract class adminLoginHelper extends utilities.MySuperHelper
@@ -32,6 +32,8 @@ public abstract class adminLoginHelper extends utilities.MySuperHelper
 	/**
 	 * htmlBrowser: with default state.
 	 *		.class : Html.HtmlBrowser
+	 * 		.browserName : MS Internet Explorer
+	 * 		.processName : iexplore.exe
 	 */
 	protected BrowserTestObject browser_htmlBrowser() 
 	{
@@ -41,6 +43,8 @@ public abstract class adminLoginHelper extends utilities.MySuperHelper
 	/**
 	 * htmlBrowser: with specific test context and state.
 	 *		.class : Html.HtmlBrowser
+	 * 		.browserName : MS Internet Explorer
+	 * 		.processName : iexplore.exe
 	 */
 	protected BrowserTestObject browser_htmlBrowser(TestObject anchor, long flags) 
 	{
@@ -50,7 +54,7 @@ public abstract class adminLoginHelper extends utilities.MySuperHelper
 	
 	/**
 	 * Continuebutton: with default state.
-	 *		.text : Continue
+	 *		.text : RegularExpression(Continue|Continuer|Fortsetzen)
 	 * 		.type : button
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
@@ -64,7 +68,7 @@ public abstract class adminLoginHelper extends utilities.MySuperHelper
 	}
 	/**
 	 * Continuebutton: with specific test context and state.
-	 *		.text : Continue
+	 *		.text : RegularExpression(Continue|Continuer|Fortsetzen)
 	 * 		.type : button
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
@@ -78,34 +82,28 @@ public abstract class adminLoginHelper extends utilities.MySuperHelper
 	}
 	
 	/**
-	 * OpenCasebutton: with default state.
+	 * openTheCasebutton: with default state.
 	 *		.text : Open Case
-	 * 		.type : button
-	 * 		.title : 
+	 * 		type : button
 	 * 		.class : Html.BUTTON
-	 * 		.name : 
 	 * 		class :  x-btn-text load-tb-icon
-	 * 		.classIndex : 0
 	 */
-	protected GuiTestObject button_openCasebutton() 
+	protected GuiTestObject button_openTheCasebutton() 
 	{
 		return new GuiTestObject(
-                        getMappedTestObject("button_openCasebutton"));
+                        getMappedTestObject("button_openTheCasebutton"));
 	}
 	/**
-	 * OpenCasebutton: with specific test context and state.
+	 * openTheCasebutton: with specific test context and state.
 	 *		.text : Open Case
-	 * 		.type : button
-	 * 		.title : 
+	 * 		type : button
 	 * 		.class : Html.BUTTON
-	 * 		.name : 
 	 * 		class :  x-btn-text load-tb-icon
-	 * 		.classIndex : 0
 	 */
-	protected GuiTestObject button_openCasebutton(TestObject anchor, long flags) 
+	protected GuiTestObject button_openTheCasebutton(TestObject anchor, long flags) 
 	{
 		return new GuiTestObject(
-                        getMappedTestObject("button_openCasebutton"), anchor, flags);
+                        getMappedTestObject("button_openTheCasebutton"), anchor, flags);
 	}
 	
 	/**

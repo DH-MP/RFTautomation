@@ -40,7 +40,18 @@ public class HelperClass extends RationalTestScript {
 			sleep(2);
 			
 			TestObject browser = findBrowser();
-			((BrowserTestObject) browser).waitForExistence(120, DISABLED);
+			
+			//Two tries
+			try{
+				((BrowserTestObject) browser).waitForExistence(20, DISABLED);
+			}catch(ObjectNotFoundException e){
+				startBrowser("Internet Explorer","http://www.google.com");
+				logInfo("Open IE AGAIN");
+				sleep(2);
+				browser = findBrowser();
+				((BrowserTestObject) browser).waitForExistence(20, DISABLED);
+			}
+			
 			((BrowserTestObject) browser).deleteCookies();
 			((BrowserTestObject) browser).maximize();
 			logInfo("Maximize browser");

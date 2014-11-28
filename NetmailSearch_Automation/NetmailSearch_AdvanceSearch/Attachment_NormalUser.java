@@ -67,7 +67,8 @@ public class Attachment_NormalUser extends Attachment_NormalUserHelper
 		
 		button_advAttach_Searchsubmit().click();
 		logInfo("search clicked");
-		sleep(15);
+		sleep(6);
+		waitForloading();
 		
 		//Validation Steps
 		TestObject[] activeResultListDiv = find(atDescendant(".tag", "DIV", "class", "x-panel x-panel-noborder x-grid-panel"), true);
@@ -87,6 +88,8 @@ public class Attachment_NormalUser extends Attachment_NormalUserHelper
 				sleep(0.5);
 				((GuiTestObject)columns[2]).doubleClick();
 				sleep(0.5);
+				waitForloading();
+				
 				logInfo("open result");
 				sleep(3);
 				TestObject[] attachmentLink = null;

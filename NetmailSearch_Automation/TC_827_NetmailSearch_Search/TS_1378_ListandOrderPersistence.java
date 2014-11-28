@@ -65,7 +65,7 @@ public class TS_1378_ListandOrderPersistence extends
 		waitForloading();
 		
 		TS_992_AddTagsAndComments atac = new TS_992_AddTagsAndComments();
-		atac.headerColumns(true, true, true, false, false, false);
+		atac.headerColumns(true, true, true, false, false, false, false, false);
 		
 		
 		//default
@@ -222,17 +222,21 @@ public class TS_1378_ListandOrderPersistence extends
 		String backupName = cfgFileDirectory+"\\xgwxmlv_BACKUP.cfg";
 		String oldFileName = cfgFileDirectory+"\\xgwxmlv.cfg";
 		
-		//stop services
-		startOrStopNetmailServices(false);
+		
 		
 		File bkFile = new File(backupName);
 		if(bkFile.exists()){
+			//stop services
+			startOrStopNetmailServices(false);
+			
 			File oldFile = new File(oldFileName);
 			oldFile.delete();
 			oldFile = new File(oldFileName);
 			bkFile.renameTo(oldFile);
+			
+
+
 		}
-		
 		
 		//start services
 		startOrStopNetmailServices(true);
@@ -273,6 +277,6 @@ public class TS_1378_ListandOrderPersistence extends
 			}
 		}
 		
-		sleep(50);
+		sleep(70);
 	}
 }

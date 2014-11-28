@@ -98,7 +98,9 @@ public class TS_995 extends TS_995Helper
 		testHighlightAndQuickSearch(dpString("quickSearchTerm"), dpInt("expectedNumberOfResults"));
 		
 //Test Pagination: Number of Display Result for 3 pages
-		testPagination();
+		if(dpBoolean("testPagination")){
+			testPagination();
+		}
 
 	}
 	

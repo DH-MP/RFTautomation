@@ -430,11 +430,12 @@ public class Export_SuperUser extends Export_SuperUserHelper
 	}
 	
 	public void openWhenTopExportComplete(String expectedStatus){
-		TestObject[] exports = html_exportList().find(atDescendant(".tag", "TABLE", "class", "x-grid3-row-table"), true);
-		TestObject[] columns = exports[0].find(atDescendant(".tag", "TD"), false);
+
 		try{
 			waitForTopExport(expectedStatus);
 			logInfo("Selecting the export with name: "+exportName);
+			TestObject[] exports = html_exportList().find(atDescendant(".tag", "TABLE", "class", "x-grid3-row-table"), true);
+			TestObject[] columns = exports[0].find(atDescendant(".tag", "TD"), false);
 			((GuiTestObject)columns[columns.length-1]).click();
 			return;
 		}catch(ArrayIndexOutOfBoundsException | ObjectNotFoundException e){

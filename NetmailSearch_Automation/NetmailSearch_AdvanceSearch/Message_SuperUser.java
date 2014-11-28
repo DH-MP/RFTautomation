@@ -129,6 +129,7 @@ public class Message_SuperUser extends Message_SuperUserHelper
 			inputAdvanceMessage();
 			button_searchsubmit().click();
 			logInfo("Clicked search");
+			sleep(6);
 			waitForloading();
 	
 			

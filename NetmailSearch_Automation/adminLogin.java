@@ -84,7 +84,7 @@ public class adminLogin extends adminLoginHelper
 			sleep(0.5);
 			TestObject[] searchCase = html_caseListDIV_extGen166().find(atDescendant(".class", "Html.DIV", ".text", caseListName), false);
 			((GuiTestObject)searchCase[0]).click();
-			button_openCasebutton().click();
+			button_openTheCasebutton().click();
 		}
 		waitForloading();
 		waitForloading();

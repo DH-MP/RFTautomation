@@ -77,18 +77,18 @@ public class TS_1318_ProxiesAdmin extends TS_1318_ProxiesAdminHelper
 		wa.login();
 		sleep(10);
 		
-		//Run SYNCAB
-		wa.navigateTree("Cluster");
-		wa.selectPageTab("Address Book Sync");
-		wa.runSyncAB(null, null, null, null);//run current settings
-		sleep(30);
-		
-		//Archive account
-		wa.navigateTree("Archive>Cluster.*>Agents>Archive>"+archiveAgent);
-		wa.archiveAccount(userBName+domain, storageLocation);
-		wa.navigateTree("Archive");
-		sleep(30);
-		wa.waitForJob(archiveAgent);
+//		//Run SYNCAB
+//		wa.navigateTree("Cluster");
+//		wa.selectPageTab("Address Book Sync");
+//		wa.runSyncAB(null, null, null, null);//run current settings
+//		sleep(30);
+//		
+//		//Archive account
+//		wa.navigateTree("Archive>Cluster.*>Agents>Archive>"+archiveAgent);
+//		wa.archiveAccount(userBName+domain, storageLocation);
+//		wa.navigateTree("Archive");
+//		sleep(30);
+//		wa.waitForJob(archiveAgent);
 		
 		
 		//Add Proxy access

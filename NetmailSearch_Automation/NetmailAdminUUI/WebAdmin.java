@@ -147,13 +147,16 @@ public class WebAdmin extends WebAdminHelper
 		html_admin().click();
 		button_findbutton().click();
 		logInfo("clicked find button");
-		list_idUserList().click(atText(userName));
+		sleep(15);
+		list_idUserList().click();
+		browser_htmlBrowser().inputKeys(userName);
 		logInfo("selected "+userName+" on user list");
 		button_selectButton().click();
 		logInfo("click select button");
 		
 		for(String user : accessedUserList.split(",")){
-			list_idUserList().click(atText(user));
+			list_idUserList().click();
+			browser_htmlBrowser().inputKeys(user);
 			logInfo("click "+user+" in proxy list");
 			button_addButton().click();
 			logInfo("click add button");

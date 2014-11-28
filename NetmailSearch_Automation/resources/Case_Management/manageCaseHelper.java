@@ -20,11 +20,11 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>manageCase</b><br>
- * Generated     : <b>2014/07/18 3:56:26 PM</b><br>
+ * Generated     : <b>2014/11/26 11:37:32 AM</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows Server 2008 R2 x86 6.1 <br>
  * 
- * @since  July 18, 2014
+ * @since  November 26, 2014
  * @author Administrator
  */
 public abstract class manageCaseHelper extends utilities.MySuperHelper
@@ -284,10 +284,10 @@ public abstract class manageCaseHelper extends utilities.MySuperHelper
 	
 	/**
 	 * NewCasebutton: with default state.
-	 *		.text : New Case
+	 *		class :  x-btn-text new-tb-icon
+	 * 		.text : New Case
 	 * 		type : button
 	 * 		.class : Html.BUTTON
-	 * 		class :  x-btn-text new-tb-icon
 	 */
 	protected GuiTestObject button_newCasebutton2() 
 	{
@@ -296,10 +296,10 @@ public abstract class manageCaseHelper extends utilities.MySuperHelper
 	}
 	/**
 	 * NewCasebutton: with specific test context and state.
-	 *		.text : New Case
+	 *		class :  x-btn-text new-tb-icon
+	 * 		.text : New Case
 	 * 		type : button
 	 * 		.class : Html.BUTTON
-	 * 		class :  x-btn-text new-tb-icon
 	 */
 	protected GuiTestObject button_newCasebutton2(TestObject anchor, long flags) 
 	{

@@ -53,12 +53,14 @@ public class loginScript extends loginScriptHelper
 			browser_htmlBrowser().waitForExistence(120, DISABLED);
 			browser_htmlBrowser().activate();
 			browser_htmlBrowser().loadUrl(url);
+			browser_htmlBrowser().maximize();
 			sleep(6);
 		}catch(Exception  e){
 			utilities.HelperClass.CloseAllBrowsers();
 			startApp("http://www.google.com");
 			browser_htmlBrowser().waitForExistence(120, DISABLED);
 			browser_htmlBrowser().loadUrl(url);
+			browser_htmlBrowser().maximize();
 			sleep(20);
 			logInfo("lost track of Browser:"+e.toString());
 		}

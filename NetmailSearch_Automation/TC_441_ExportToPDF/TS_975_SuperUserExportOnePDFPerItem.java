@@ -159,7 +159,8 @@ public class TS_975_SuperUserExportOnePDFPerItem extends TS_975_SuperUserExportO
 		HelperClass.CloseAllBrowsers();
 		logInfo("Close all browsers"); //Bug bypass: There is a RFT bug when notification bar comes up no object can be found anymore.
 		callScript("loginScript", ls);
-		callScript("adminLogin", al);	
+		callScript("adminLogin", al);
+		waitForloading();
 		deleteExport();
 		
 		//Delete Files
@@ -301,6 +302,8 @@ public class TS_975_SuperUserExportOnePDFPerItem extends TS_975_SuperUserExportO
 		logInfo("Clicked export dropdown menu");
 		link_exportManagement().click();
 		logInfo("Clicked export management on dropdown");
+		sleep(2);
+		waitForloading();
 		
 		html_exportList().waitForExistence(120, DISABLED);
 		TestObject[] exports = html_exportList().find(atDescendant(".tag", "TABLE", "class", "x-grid3-row-table"), true);

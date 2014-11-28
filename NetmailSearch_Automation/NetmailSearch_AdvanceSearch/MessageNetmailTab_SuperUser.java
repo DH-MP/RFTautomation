@@ -98,6 +98,8 @@ public class MessageNetmailTab_SuperUser extends MessageNetmailTab_SuperUserHelp
 
 		button_searchsubmit().click();
 		sleep(10);
+		waitForloading();
+		waitForloading();
 		if(customSearch.isEmpty()){
 			validateSearch();
 		}else{

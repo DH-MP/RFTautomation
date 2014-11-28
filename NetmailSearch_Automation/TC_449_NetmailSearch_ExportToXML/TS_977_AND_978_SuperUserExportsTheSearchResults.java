@@ -147,7 +147,7 @@ public class TS_977_AND_978_SuperUserExportsTheSearchResults extends TS_977_AND_
 		
 		callScript("loginScript", ls);
 		callScript("adminLogin", al);	
-		
+		waitForloading();
 		deleteExport();
 		
 		//Wait for extract to finished before proceeding
@@ -277,7 +277,8 @@ public class TS_977_AND_978_SuperUserExportsTheSearchResults extends TS_977_AND_
 		logInfo("Clicked export dropdown menu");
 		link_exportManagement().click();
 		logInfo("Clicked export management on dropdown");
-		
+		sleep(2);
+		waitForloading();
 		
 		html_exportList().waitForExistence(120, DISABLED);
 		sleep(2);

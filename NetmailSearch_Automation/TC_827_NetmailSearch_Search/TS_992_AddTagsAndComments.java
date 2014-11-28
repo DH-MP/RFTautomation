@@ -29,12 +29,15 @@ public class TS_992_AddTagsAndComments extends TS_992_AddTagsAndCommentsHelper
 	 * @since  2013/09/19
 	 * @author Administrator
 	 */
+
 	public void testMain(Object[] args) {
-		setup();
 		
+		TestObject[] results;
+		TestObject[] resultsColumn;
+		
+		setup();		
 /*********************************TEST ALL COLUMN******************************/
-		headerColumns(true, true, true, true, true, true);
-		unregisterAll();
+		headerColumns(true, true, true, false, false, true, true, true);
 		waitForloading();
 		
 		
@@ -63,7 +66,7 @@ public class TS_992_AddTagsAndComments extends TS_992_AddTagsAndCommentsHelper
 		}
 		
 /********************************TEST ADDING TAGGING AND COMMENT ***************************************************************/
-		TestObject[] results = body().find(atDescendant(".class", "Html.TABLE", "class", "x-grid3-row-table"), true);
+		results = body().find(atDescendant(".class", "Html.TABLE", "class", "x-grid3-row-table"), true);
 		
 	//Relevant
 		((GuiTestObject)results[0].find(atDescendant(".class", "Html.TD"), false)[1]).click();
@@ -127,18 +130,19 @@ public class TS_992_AddTagsAndComments extends TS_992_AddTagsAndCommentsHelper
 		logInfo("Clicked OK on successful comment");
 		((GuiTestObject)results[4].find(atDescendant(".class", "Html.TD"), false)[1]).click();
 		logInfo("Unchecked fifth message");
+		waitForloading();
 		
 		
 		setup();
 		
 		
 	//Verify Tagging and Commenting
-		headerColumns(false, false, false, false, true, true);
+		headerColumns(false, false, false, false, false, false, true, true);
 		
 		results = body().find(atDescendant(".class", "Html.TABLE", "class", "x-grid3-row-table"), true);
 		
 		//Msg1
-		TestObject[] resultsColumn = results[0].find(atDescendant(".class", "Html.TD", "class", new RegularExpression(".*x-grid3-td-12.*", false)), false);
+		resultsColumn = results[0].find(atDescendant(".class", "Html.TD", "class", new RegularExpression(".*x-grid3-td-12.*", false)), false);
 		vpManual("Msg1TaggedRelevant", "Relevant;", resultsColumn[0].getProperty(".contentText").toString().trim()).performTest();
 		
 		//Msg2
@@ -184,9 +188,8 @@ public class TS_992_AddTagsAndComments extends TS_992_AddTagsAndCommentsHelper
 		
 		setup();
 		
-		
 		//Verify Tagging and Commenting
-		headerColumns(false, false, false, false, true, true);
+		headerColumns(false, false, false, false, false, false, true, true);
 		
 		results = body().find(atDescendant(".class", "Html.TABLE", "class", "x-grid3-row-table"), true);
 		
@@ -230,7 +233,7 @@ public class TS_992_AddTagsAndComments extends TS_992_AddTagsAndCommentsHelper
 	}
 	
 	
-	public void headerColumns(boolean expander, boolean to, boolean date, boolean tampered, boolean tags, boolean comment){
+	public void headerColumns(boolean expander, boolean to, boolean date, boolean sentReceived, boolean folder, boolean tampered, boolean tags, boolean comment){
 		TestObject[] body = HelperClass.getActiveTabBody();
 		TestObject[] viewport = body[0].find(atDescendant(".class", "Html.DIV", "class", "x-grid3-viewport"),true);	
 		TestObject[] tableHeader = viewport[0].getChildren()[0].find(atDescendant(".class", "Html.TR", "class", "x-grid3-hd-row"), false);
@@ -241,41 +244,40 @@ public class TS_992_AddTagsAndComments extends TS_992_AddTagsAndCommentsHelper
 		((GuiTestObject)headerColumn[0]).click(atPoint(columnBounds.width-5,columnBounds.height/2));
 		logInfo("Clicked at the corner of a header column");
 
-		
+
 		link_columns().hover();
-		logInfo("clicked column on dropdown");
-		if(expander){
-			link_expander().click();
-			logInfo("clicked expander");
-		}
-		if(to){
-			link_to().click();
-			logInfo("clicked to");
-		}
+		logInfo("hovering column on dropdown");
+		sleep(1);
+	
+		TestObject UL = link_expander().getParent().getParent();
+		checkColumn("Expander", expander, UL);
 		
-		if(date){
-			link_date().click();
-			logInfo("clicked date");
-		}
-		
-		if(tampered){
-			link_tampered().click();
-			logInfo("clicked tampered");
-		}
-		
-		if(tags){
-			link_tags().click();
-			logInfo("clicked tags");
-		}
-		
-		if(comment){
-			link_comment().click();
-			logInfo("clicked comment");
-		}
+		checkColumn("To", to, UL);
+
+		checkColumn("Date", date, UL);
+
+		checkColumn("Sent / Received", sentReceived, UL);
+
+		checkColumn("Folder", folder, UL);	
+
+		checkColumn("Tampered", tampered, UL);
+
+		checkColumn("Tags", tags, UL);
+
+		checkColumn("Comment", comment, UL);
 		
 		sleep(2);
 		waitForloading();
 		html_extGen3().click(atPoint(1,1));
+	}
+	
+	private void checkColumn(String columnName, boolean check, TestObject UL){
+		TestObject[] columnLink = UL.find(atDescendant(".class", "Html.A", ".text", columnName));
+		
+		if(check && columnLink.length > 0){
+		   ((GuiTestObject) columnLink[0]).click();
+		}
+		logInfo("clicked "+columnName);
 	}
 	
 	private TestObject body(){
@@ -291,13 +293,17 @@ public class TS_992_AddTagsAndComments extends TS_992_AddTagsAndCommentsHelper
 		Object[] al = {dpString("caseName"), dpString("userType")};
 		callScript("adminLogin", al);
 		waitForloading();
+		waitForloading();
+		waitForloading();
 		
 		//QuickSearch term should contain more than 4 message result
 		text_quickSearchField0().click();
 		logInfo("clicked quick search field");
 		browser_htmlBrowser().inputChars(dpString("quickSearchTerm"));
+		browser_htmlBrowser().inputKeys("{ENTER}");
 		logInfo(" entered < "+ dpString("quickSearchTerm")+">");
 		sleep(6);
+		waitForloading();
 	}
 }
 

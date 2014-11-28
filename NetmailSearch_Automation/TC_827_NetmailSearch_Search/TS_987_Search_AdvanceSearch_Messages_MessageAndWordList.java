@@ -2,6 +2,9 @@ package TC_827_NetmailSearch_Search;
 import java.util.HashMap;
 
 import resources.TC_827_NetmailSearch_Search.TS_987_Search_AdvanceSearch_Messages_MessageAndWordListHelper;
+import NetmailSearch_AdvanceSearch.MessageWordListTab_SuperUser;
+import NetmailSearch_AdvanceSearch.Message_SuperUser;
+
 import com.rational.test.ft.*;
 import com.rational.test.ft.object.interfaces.*;
 import com.rational.test.ft.object.interfaces.SAP.*;
@@ -70,9 +73,24 @@ public class TS_987_Search_AdvanceSearch_Messages_MessageAndWordList extends TS_
 		Object[] asmnu = {query, booleanQuery};
 		callScript("NetmailSearch_AdvanceSearch.Message_SuperUser", asmnu);
 		
-	
-		Object[] wordList = {dpString("wordList")};
-		callScript("NetmailSearch_AdvanceSearch.MessageWordListTab_SuperUser", wordList);		
+		
+		if(dpString("wordList")!= null && !dpString("wordList").isEmpty() ){
+			//Advance Message WordList
+			Message_SuperUser msu = new Message_SuperUser();
+			msu.openAdvanceSearchMessage();
+			
+			MessageWordListTab_SuperUser mwltsu = new MessageWordListTab_SuperUser();
+			mwltsu.openWordListTab();
+			
+			String a = dpString("wordList");
+			mwltsu.inputWordList(a, ";");
+			mwltsu.search();
+			waitForloading();
+			if(dpInt("numOfExpectedResults")>-1){
+				mwltsu.validateExpectedResults(dpInt("numOfExpectedResults"));
+			}
+			mwltsu.validateSearchResult(";");
+		}
 	}
 	
 	public void setSkipLogin(boolean skipLogin) {

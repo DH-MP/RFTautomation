@@ -136,6 +136,9 @@ public class DeleteMessage extends DeleteMessageHelper
 		callScript("adminLogin", al2);
 		sleep(3);
 		
+		HelperClass.navigateLocation("GVautomation>ProxyAdminTest");
+		waitForloading();
+		
 		//Verify commited
 		int oldResult = results.length;
 		results = HelperClass.getActiveTabBody()[0].find(atDescendant(".class", "Html.TABLE", "class", "x-grid3-row-table"), true);
