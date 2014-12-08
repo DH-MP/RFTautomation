@@ -52,7 +52,7 @@ public class TS_ParallelExportJob extends TS_ParallelExportJobHelper
 			esu.closeExportManagementWindow();
 			esu.setExportName("p"+i);
 			esu.create();
-			sleep(4);
+			sleep(1);
 		}
 		
 

@@ -123,10 +123,9 @@ public class TS_1318_ProxiesAdmin extends TS_1318_ProxiesAdminHelper
 		wa.waitForJob(archiveAgent);
 		
 		//Check if still has proxy access
-		
-//		//Restart NetmailSearch
-//		HelperClass.startOrStopNetmailServices(false, IP, workSpace);
-//		HelperClass.startOrStopNetmailServices(true, IP, workSpace);
+		//Restart NetmailSearch
+		HelperClass.startOrStopNetmailServices(false, IP, workSpace);
+		HelperClass.startOrStopNetmailServices(true, IP, workSpace);
 		
 		NetmailLogin.login(userAName, userApassword, false);
 		HelperClass.navigateLocation(storageLocation+">"+newName);

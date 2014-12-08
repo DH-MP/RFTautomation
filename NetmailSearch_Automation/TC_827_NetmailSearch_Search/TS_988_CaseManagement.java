@@ -179,14 +179,14 @@ public class TS_988_CaseManagement extends TS_988_CaseManagementHelper
 		TestObject caseListBody = html_caseListWindow().find(atDescendant(".tag", "DIV", "class", "x-grid3-scroller"), true)[0].find(atChild(".tag", "DIV"))[0];
 		TestObject newCase = caseListBody.find(atChild(".tag", "DIV", ".contentText", new RegularExpression(caseName+".*", false)), false)[0];
 		((GuiTestObject)newCase).doubleClick();
-		sleep(20);
+		sleep(10);
+		waitForloading();
 		logInfo(" doubleClicked on case < "+caseName+" >");
 		
 		logInfo("Validating case creations for: locations, loaded or not loaded all case");
 		String[] locations = ((String)args[9]).split("\\s");
 
 		TestObject activeBody = utilities.HelperClass.getActiveTabBody()[0];
-		System.out.println(activeBody.getProperties());
 		TestObject[] results = activeBody.find(atDescendant(".tag", "TABLE", "class", "x-grid3-row-table"), false);
 		if((Boolean)args[8]){
 			vpManual("Expected_message_on_load", true, results.length>0).performTest();

@@ -7,6 +7,7 @@ import org.apache.commons.io.FileUtils;
 
 import resources.TestCases.TC_General.TS_DisplayContactHelper;
 import utilities.HelperClass;
+import NetmailAdminUUI.WebAdmin;
 import NetmailSearch_General.Common;
 import NetmailSearch_General.NetmailLogin;
 import NetmailSearch_General.adminLogin;
@@ -50,8 +51,30 @@ public class TS_DisplayContact extends TS_DisplayContactHelper
 		adminLogin.selectUserType("Super User");
 		adminLogin.selectCase("GVautomation");
 		waitForloading();
+		TestObject inboxSubFoldersUL;
+		try{
+			inboxSubFoldersUL = HelperClass.navigateLocation("GVautomation>rft>Contacts>Contacts");
+		}catch(Exception e){
+			//Archive account
+			WebAdmin wa = new WebAdmin();
+			wa.setIp(IP);
+			wa.setUserName(adminUserName);
+			wa.setPassword(adminPassword);
+			
+			wa.navigateTree("Archive>Cluster.*>Agents>Archive>ok");
+			wa.archiveAccount("rft@BASE2012@First Organization@User", "GVautomation");
+			wa.navigateTree("Archive");
+			sleep(30);
+			wa.waitForJob("ok");
+			
+			
+			NetmailLogin.login();
+			adminLogin.selectUserType("Super User");
+			adminLogin.selectCase("GVautomation");
+			waitForloading();
+			inboxSubFoldersUL = HelperClass.navigateLocation("GVautomation>rft>Contacts>Contacts");
+		}
 		
-		TestObject inboxSubFoldersUL = HelperClass.navigateLocation("GVautomation>rft>Contacts>Contacts");
 		waitForloading();
 		logTestResult("Correct number of contacts", Common.getNavigationPanelDisplayText().getProperty(".contentText").toString().matches("^Displaying \\d+ - \\d+ of "+(numOfContact-1)+"$"));
 		

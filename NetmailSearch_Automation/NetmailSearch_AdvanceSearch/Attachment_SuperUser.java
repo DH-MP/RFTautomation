@@ -91,8 +91,6 @@ public class Attachment_SuperUser extends Attachment_SuperUserHelper
 			logInfo("Open Advance Search dropdown");
 			link_clearSearch().click();
 			waitForloading();
-			waitForloading();
-			
 			button_advancedSearchbutton().click();
 			logInfo("Open Advance Search dropdown");
 			link_attachments().click();
@@ -101,23 +99,24 @@ public class Attachment_SuperUser extends Attachment_SuperUserHelper
 			
 			checkBox_ifFilenameon().click();
 			text_filename().click();
-			browser_htmlBrowser().inputChars("22");
-//			checkBox_ifFilesizeon().click();
-//			text_filesize1().click();
-//			browser_htmlBrowser().inputChars("110000");
-//			text_filesize2().click();
-//			browser_htmlBrowser().inputChars("155000");
+			browser_htmlBrowser().inputChars("final");
+			checkBox_ifFilesizeon().click();
+			text_filesize1().click();
+			browser_htmlBrowser().inputChars("110000");
+			text_filesize2().click();
+			browser_htmlBrowser().inputChars("155000");
 			
 			checkBox_ifAttBodyon().click();
 			text_body().click();
-			browser_htmlBrowser().inputChars("file");
+			browser_htmlBrowser().inputChars("Base");
 			text_nextto().click();
-			browser_htmlBrowser().inputChars("xfilter");
+			browser_htmlBrowser().inputChars("grants");
 			text_within().click();
 			browser_htmlBrowser().inputChars("4");
 			
 			button_advAttach_Searchsubmit().click();
 			logInfo("search clicked");
+			
 			
 			sleep(4);
 			waitForloading();

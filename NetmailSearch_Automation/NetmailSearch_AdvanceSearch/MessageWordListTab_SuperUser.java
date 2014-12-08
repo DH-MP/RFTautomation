@@ -1,5 +1,6 @@
 package NetmailSearch_AdvanceSearch;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 import resources.NetmailSearch_AdvanceSearch.MessageWordListTab_SuperUserHelper;
@@ -207,8 +208,10 @@ public class MessageWordListTab_SuperUser extends MessageWordListTab_SuperUserHe
 			return;
 		}
 		boolean matchesBody = false, matchesHeader = false;
-		String[] words = wordList.toLowerCase().split(splitBy);
+		String[] lines = wordList.toLowerCase().split(splitBy);
 		TestObject[] results = html_activeTabBody().find(atDescendant(".tag", "TABLE", "class", "x-grid3-row-table"));
+		
+		
 		
 		for(int i = 0; i<results.length ; i++){
 			GuiTestObject msg = (GuiTestObject) results[i];
@@ -225,42 +228,85 @@ public class MessageWordListTab_SuperUser extends MessageWordListTab_SuperUserHe
 			//Word List condition: all the words must exists in atleast one of the following fields: from, cc, subject message body, etc.
 			TestObject[] highlightedTexts = frame_mbMessageBody().find(atDescendant(".class", "Html.SPAN", "style", "BACKGROUND-COLOR: #feff80"), false);
 			System.out.println("NUMBER OF HIGHLIGHTED TEXT IN BODY:"+highlightedTexts.length);
-			Boolean oneOfWordFound = false;
-			for (String word : words){	
-				word = word.toLowerCase().trim();
+			
+			Boolean oneOfLinePasses = false;
+			for (String line : lines){	
+				line = line.toLowerCase().trim();
 				//Find the word in To,From,CC,Subject field 
-				Boolean[] hit = {
-									text_mbTo().getProperty(".value").toString().trim().toLowerCase().matches(".*"+word+".*"),
-									text_mbSentReceivedDate().getProperty(".value").toString().trim().toLowerCase().matches(".*"+word+".*"),
-									text_mbSubject().getProperty(".value").toString().trim().toLowerCase().matches(".*"+word+".*"),
-									text_mbFrom().getProperty(".value").toString().trim().toLowerCase().matches(".*"+word+".*"),							
-								};
-				matchesHeader = Arrays.asList(hit).contains(true);
-				
-				//Match highlighted text against word, if word exists in text but not highlighted it is also a fail.
-				for(TestObject higlightedTextObject : highlightedTexts){
-					String higlightedText = higlightedTextObject.getProperty(".text").toString().toLowerCase().trim();
-					if(higlightedText.matches(".*"+word+".*")){
-						matchesBody = true;
-						break;//Found a highlighted text term that matches word in message body
+					
+				String[] words = line.split(" ");
+				if(words.length<=1){
+					Boolean[] hit = {
+										text_mbTo().getProperty(".value").toString().trim().toLowerCase().matches(".*"+line+".*"),
+										text_mbSentReceivedDate().getProperty(".value").toString().trim().toLowerCase().matches(".*"+line+".*"),
+										text_mbSubject().getProperty(".value").toString().trim().toLowerCase().matches(".*"+line+".*"),
+										text_mbFrom().getProperty(".value").toString().trim().toLowerCase().matches(".*"+line+".*"),							
+									};
+					matchesHeader = Arrays.asList(hit).contains(true);
+					
+					//Match highlighted text against word, if word exists in text but not highlighted it is also a fail.
+					for(TestObject higlightedTextObject : highlightedTexts){
+						String higlightedText = higlightedTextObject.getProperty(".text").toString().toLowerCase().trim();
+						if(higlightedText.matches(".*"+line+".*")){
+							matchesBody = true;
+							break;//Found a highlighted text term that matches word in message body
+						}
 					}
-				}
-				
-				if(!(matchesHeader|matchesBody)){
-					logInfo("The word < "+word+" >was not found in msg"+i, browser_htmlBrowser().getScreenSnapshot());
-				}else{
-					oneOfWordFound = true;
-				}
-				
+					
+					if(!(matchesHeader|matchesBody)){
+						logInfo("The word < "+line+" >was not found in msg"+i, browser_htmlBrowser().getScreenSnapshot());
+					}else{
+						oneOfLinePasses = true;
+					}			
+				}else{		
+					ArrayList<Boolean> andConditionMet = new ArrayList<Boolean>();
+					for(String word : words){//One line condition: all must exists , treat multiple words as one word
+						Boolean[] hit = {
+								text_mbTo().getProperty(".value").toString().trim().toLowerCase().matches(".*"+word+".*"),
+								text_mbSentReceivedDate().getProperty(".value").toString().trim().toLowerCase().matches(".*"+word+".*"),
+								text_mbSubject().getProperty(".value").toString().trim().toLowerCase().matches(".*"+word+".*"),
+								text_mbFrom().getProperty(".value").toString().trim().toLowerCase().matches(".*"+word+".*"),							
+							};
+						matchesHeader = Arrays.asList(hit).contains(true);
+						
+						//Match highlighted text against word, if word exists in text but not highlighted it is also a fail.
+						for(TestObject higlightedTextObject : highlightedTexts){
+							String higlightedText = higlightedTextObject.getProperty(".text").toString().toLowerCase().trim();
+							if(higlightedText.matches(".*"+word+".*")){
+								matchesBody = true;
+								break;//Found a highlighted text term that matches word in message body
+							}
+						}
+						
+						if(!(matchesHeader|matchesBody)){
+							logInfo("The word < "+word+" >was not found in msg"+i, browser_htmlBrowser().getScreenSnapshot());
+							andConditionMet.add(false);
+						}else{
+							andConditionMet.add(true);
+						}			
+	
+					}
+					
+					if(!andConditionMet.contains(false)){
+						oneOfLinePasses = true;
+					}
+				}				
 			}
+			
+			
 			highlightedTexts=null;
 			html_mbClose().click();
 			logInfo("closed message box");
 			
-			if(!oneOfWordFound){
-				logError("no words found in message["+i+"]", browser_htmlBrowser().getScreenSnapshot());
+			if(!oneOfLinePasses){
+				logError("no lines/words found in message["+i+"]", browser_htmlBrowser().getScreenSnapshot());
 			}
 		}
+	}
+	
+	public void validateExpectedResults(int numOfResults){
+		TestObject[] results = html_activeTabBody().find(atDescendant(".tag", "TABLE", "class", "x-grid3-row-table"));
+		vpManual("WordList_ExpectedResults", numOfResults, results.length).performTest();
 	}
 }
 

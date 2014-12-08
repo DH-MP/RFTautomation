@@ -61,15 +61,14 @@ public class TS_977_AND_978_SuperUserExportsTheSearchResults extends TS_977_AND_
 		adminLogin.selectUserType("Super User");
 		adminLogin.selectCase("ExportXML");
 
-		//NewExport
-		Object[] nES = {dpString("searchTabIndex"), 
-						dpInt("itemOption"),
-						dpInt("exportTypeOption"),
-						dpString("exportName"),
-						dpString("email"),
-						dpString("password"),
-		};
-		callScript("newExport_Super", nES);
+		Export_SuperUser esu = new Export_SuperUser();
+		esu.setExportName(dpString("exportName"));
+		esu.setSearchTabs(dpString("searchTabIndex"));
+		esu.setItemOptions(dpInt("itemOption"));
+		esu.setExportTypeOption(dpInt("exportTypeOption"));
+		esu.setPassword(dpString("password"));
+		esu.setEmail(dpString("email"));
+		esu.create();
 		
 		//Setup
 		setUpAndTearDown(true);
@@ -79,7 +78,6 @@ public class TS_977_AND_978_SuperUserExportsTheSearchResults extends TS_977_AND_
 		exports = html_exportList().find(atDescendant(".tag", "TABLE", "class", "x-grid3-row-table"), true);
 		columns = exports[0].find(atDescendant(".tag", "TD"), false);
 		if( columns[0].getProperty(".text").equals(exportName)){
-			Export_SuperUser esu = new Export_SuperUser();
 			esu.openWhenTopExportComplete();//wait for success Status
 			sleep(10);
 		}else{
@@ -101,9 +99,6 @@ public class TS_977_AND_978_SuperUserExportsTheSearchResults extends TS_977_AND_
 		}else{
 			logError("Could not find export file by the name < "+ file +">");
 		}
-		
-
-		
 		
 		//IE Notification Control
 		TestObject downloadObject = HelperClass.ieNotificationElement("Notification bar Text");

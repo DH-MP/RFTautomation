@@ -1,6 +1,7 @@
 package TestCases.TC_General;
 import resources.TestCases.TC_General.TS_ItemCountsHelper;
 import utilities.HelperClass;
+import NetmailAdminUUI.WebAdmin;
 import NetmailSearch_General.Common;
 import NetmailSearch_General.NetmailLogin;
 import NetmailSearch_General.adminLogin;
@@ -46,6 +47,31 @@ public class TS_ItemCounts extends TS_ItemCountsHelper
 		waitForloading();
 		
 		TestObject[] folders = HelperClass.navigateLocation("GVautomation>rft").getChildren();
+		try{
+			folders = HelperClass.navigateLocation("GVautomation>rft").getChildren();
+		}catch(Exception e){
+			//Archive account
+			WebAdmin wa = new WebAdmin();
+			wa.setIp(IP);
+			wa.setUserName(adminUserName);
+			wa.setPassword(adminPassword);
+			
+			wa.navigateTree("Archive>Cluster.*>Agents>Archive>ok");
+			wa.archiveAccount("rft@BASE2012@First Organization@User", "GVautomation");
+			wa.navigateTree("Archive");
+			sleep(30);
+			wa.waitForJob("ok");
+			
+			
+			NetmailLogin.login();
+			adminLogin.selectUserType("Super User");
+			adminLogin.selectCase("GVautomation");
+			waitForloading();
+			Common.preferencePageSize(200);
+			waitForloading();
+			folders = HelperClass.navigateLocation("GVautomation>rft").getChildren();
+		}
+
 		waitForloading();
 		for(TestObject folder : folders){
 			TestObject[] folderCount = folder.find(atDescendant(".tag", "SPAN", "class", "folderCounts"), false);

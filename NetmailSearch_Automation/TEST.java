@@ -57,8 +57,14 @@ public class TEST extends TESTHelper
 	public void testMain(Object[] args) 
 	{
 		
-		File f = new File("\\\\10.10.23.251\\acorn");
-		f.mkdir();
+		// HTML Browser
+		// Document: 
+		text_uid().click(atPoint(75,12));
+		browser_htmlBrowser(document_rftOutlookWebApp(),DEFAULT_FLAGS).inputKeys("^a{BKSP}");
+		
+		
+//		File f = new File("\\\\10.10.23.251\\acorn");
+//		f.mkdir();
 		
 //		// HTML Browser
 //		// Document: 

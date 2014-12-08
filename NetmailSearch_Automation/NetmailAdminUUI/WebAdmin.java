@@ -147,7 +147,7 @@ public class WebAdmin extends WebAdminHelper
 		html_admin().click();
 		button_findbutton().click();
 		logInfo("clicked find button");
-		sleep(15);
+		sleep(30);
 		list_idUserList().click();
 		browser_htmlBrowser().inputKeys(userName);
 		logInfo("selected "+userName+" on user list");
@@ -163,6 +163,7 @@ public class WebAdmin extends WebAdminHelper
 		}
 		button_savebutton().click();
 		logInfo("Clicked Save button");
+		button_htmlDialogButtonOK().waitForExistence(30, 2);
 		button_htmlDialogButtonOK().click();
 		logInfo("click dialog OK button");
 		logInfo("< "+userName+" > now has proxy access to the following users < "+accessedUserList+">");
@@ -178,6 +179,7 @@ public class WebAdmin extends WebAdminHelper
 	public void removeProxiesAccess(String userName, String accessedUserList){
 		html_admin().click();
 		button_findbutton().click();
+		sleep(30);
 		logInfo("clicked find button");
 		list_idUserList().click(atText(userName));
 		logInfo("selected "+userName+" on user list");

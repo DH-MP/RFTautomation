@@ -2,6 +2,7 @@ package TestCases.TC_General;
 import resources.TestCases.TC_General.TS_FolderSortingHelper;
 import utilities.HelperClass;
 
+import NetmailAdminUUI.WebAdmin;
 import NetmailSearch_General.NetmailLogin;
 import NetmailSearch_General.adminLogin;
 
@@ -34,13 +35,37 @@ public class TS_FolderSorting extends TS_FolderSortingHelper
 	 */
 	public void testMain(Object[] args) 
 	{
+		String expectedOrderOfFolders = "Ab, ac, be, bee, bez, bz, z, za, zaa, Zv";
+		
 		NetmailLogin.login();
 		adminLogin.selectUserType("Super User");
 		adminLogin.selectCase("GVautomation");
 		waitForloading();
+	
+		TestObject inboxSubFoldersUL;
+		try{
+			inboxSubFoldersUL = HelperClass.navigateLocation("GVautomation>rft>Inbox>__caseSensitive");
+		}catch(Exception e){
+			//Archive account
+			WebAdmin wa = new WebAdmin();
+			wa.setIp(IP);
+			wa.setUserName(adminUserName);
+			wa.setPassword(adminPassword);
+			
+			wa.navigateTree("Archive>Cluster.*>Agents>Archive>ok");
+			wa.archiveAccount("rft@BASE2012@First Organization@User", "GVautomation");
+			wa.navigateTree("Archive");
+			sleep(30);
+			wa.waitForJob("ok");
+			
+			
+			NetmailLogin.login();
+			adminLogin.selectUserType("Super User");
+			adminLogin.selectCase("GVautomation");
+			waitForloading();
+			inboxSubFoldersUL = HelperClass.navigateLocation("GVautomation>rft>Inbox>__caseSensitive");
+		}
 		
-		String expectedOrderOfFolders = "Ab, ac, be, bee, bez, bz, z, za, zaa, Zv";
-		TestObject inboxSubFoldersUL = HelperClass.navigateLocation("GVautomation>rft>Inbox>__caseSensitive");
 		TestObject[] subFolders = inboxSubFoldersUL.find(atDescendant(".tag", "LI"), false);
 		String[] expectedSubFoldersOrder = expectedOrderOfFolders.split(",");
 		for(int i = 0; i<subFolders.length; i++){
