@@ -61,6 +61,9 @@ public class DeleteMessage extends DeleteMessageHelper
 			try {
 				FileUtils.cleanDirectory(targetLocation);
 				FileUtils.copyDirectory(baselineLocation, targetLocation);
+				while(FileUtils.sizeOf(targetLocation) != FileUtils.sizeOf(baselineLocation)){
+					System.out.println(FileUtils.sizeOf(targetLocation)/FileUtils.sizeOf(baselineLocation));
+				}
 			} catch (IOException e1) {
 				logError(e1.getMessage());
 				e1.printStackTrace();
@@ -96,7 +99,7 @@ public class DeleteMessage extends DeleteMessageHelper
 		mc.setLocations("GVautomation");
 		mc.newCase();
 		waitForloading();
-		HelperClass.navigateLocation("GVautomation>ProxyAdminTest");
+		HelperClass.navigateLocation("GVautomation>ProxyAdminTest>Inbox");
 		waitForloading();
 		
 		
@@ -130,13 +133,12 @@ public class DeleteMessage extends DeleteMessageHelper
 		HelperClass.startOrStopNetmailServices(false, IP, workSpace);
 		HelperClass.startOrStopNetmailServices(true, IP, workSpace);
 		
-		
 		//Login
 		NetmailLogin.login();
 		//Admin Login
 		adminLogin.superUser();
 		adminLogin.selectCase("GVautomation");
-		HelperClass.navigateLocation("GVautomation>ProxyAdminTest");
+		HelperClass.navigateLocation("GVautomation>ProxyAdminTest>Inbox");
 		
 		//Verify commited
 		int oldResult = results.length;

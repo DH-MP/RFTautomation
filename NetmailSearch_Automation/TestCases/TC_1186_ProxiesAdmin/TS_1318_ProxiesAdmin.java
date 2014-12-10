@@ -119,11 +119,11 @@ public class TS_1318_ProxiesAdmin extends TS_1318_ProxiesAdminHelper
 		wa.navigateTree("Archive>Cluster.*>Agents>Archive>"+archiveAgent);
 		wa.archiveAccount(newName+domain, storageLocation);
 		wa.navigateTree("Archive");
-		sleep(30);
-		wa.waitForJob(archiveAgent);
+		sleep(1000);
+//		wa.waitForJob(archiveAgent);
 		
 		//Check if still has proxy access
-		//Restart NetmailSearch
+		//Restart awa remote provider service
 		HelperClass.startOrStopNetmailServices(false, IP, workSpace);
 		HelperClass.startOrStopNetmailServices(true, IP, workSpace);
 		
