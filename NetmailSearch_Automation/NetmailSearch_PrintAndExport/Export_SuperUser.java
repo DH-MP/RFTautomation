@@ -212,6 +212,7 @@ public class Export_SuperUser extends Export_SuperUserHelper
 			vpManual("finishButton_isEnabledOnCorrectPassword", false, table_cardFinish().getProperty("class").toString().matches(".*x-item-disabled$")).performTest();
 		}
 		sleep(1);
+		button_finishbutton().hover();
 		button_finishbutton().click();
 		logInfo("Clicked finish button");
 		waitForloading();

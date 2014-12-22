@@ -36,6 +36,8 @@ public abstract class MySuperHelper extends RationalTestScript
 	public  String URL = "";
 	public  String adminUserName = "administrator";	
 	public  String adminPassword = "Pa$$w0rd";
+	public 	String webAdminUserName = "netmail";
+	public  String webAdminPassword = "M3ss4g1ng";
 	public 	String remoteWorkSpace = "\\\\10.10.23.61\\Data\\NetmailSearch_v5.3.1";
 
 	
@@ -54,8 +56,12 @@ public abstract class MySuperHelper extends RationalTestScript
 		IParameter rqmUserName = vm.getInputParameter("adminUserName");
 		IParameter rqmPassword = vm.getInputParameter("adminPassword");
 		
-		this.adminUserName = rqmUserName != null ? rqmUserName.getValue() : this.adminUserName;
-		this.adminPassword = rqmPassword != null ? rqmPassword.getValue() : this.adminPassword;
+		if(rqmUserName != null | rqmPassword !=null){
+			logInfo("Overriding default credential with RQM execution variables");
+			logInfo("RQMCRED:"+ rqmUserName.getValue()+"/"+rqmPassword.getValue());
+			this.adminUserName = rqmUserName.getValue();
+			this.adminPassword = rqmPassword.getValue();
+		}
 	}
 	
 	

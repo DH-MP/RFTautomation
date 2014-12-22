@@ -253,11 +253,22 @@ public class MessageWordListTab_SuperUser extends MessageWordListTab_SuperUserHe
 						}
 					}
 					
+					//Check if highlight is broken
+					if(!matchesBody){
+						String contentOfBody = frame_mbMessageBody().find(atDescendant(".class", "Html.BODY"), false)[0].getProperty(".text").toString();
+						String regexp = "(?i).*\\b"+line.replace(" ", "\\b[^a-zA-Z0-9]*\\b")+"\\b.*";
+						if(contentOfBody.matches(regexp) ){
+							matchesBody = true;
+							logError("Highlight is broken");
+						}
+					}
+					
 					if(!(matchesHeader|matchesBody)){
 						logInfo("The word < "+line+" >was not found in msg"+i, browser_htmlBrowser().getScreenSnapshot());
 					}else{
 						oneOfLinePasses = true;
-					}			
+					}	
+					
 				}else{		
 					ArrayList<Boolean> andConditionMet = new ArrayList<Boolean>();
 					for(String word : words){//One line condition: all must exists , treat multiple words as one word
@@ -275,6 +286,16 @@ public class MessageWordListTab_SuperUser extends MessageWordListTab_SuperUserHe
 							if(higlightedText.matches(".*"+word+".*")){
 								matchesBody = true;
 								break;//Found a highlighted text term that matches word in message body
+							}
+						}
+						
+						//Check if highlight is broken
+						if(!matchesBody){
+							String contentOfBody = frame_mbMessageBody().find(atDescendant(".class", "Html.BODY"), false)[0].getProperty(".text").toString();
+							String regexp = "(?i).*\\b"+word.replace(" ", "\\b[^a-zA-Z0-9]*\\b")+"\\b.*";
+							if(contentOfBody.matches(regexp) ){
+								matchesBody = true;
+								logError("Highlight is broken");
 							}
 						}
 						

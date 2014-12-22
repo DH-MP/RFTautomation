@@ -13,5 +13,6 @@
 	<classpathentry kind="con" path="com.rational.test.ft.libraries.FT_CUSTOMIZATION"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="src" path=""/>
+	<classpathentry kind="lib" path="C:/Users/All Users/IBM/RFT/customization/json-simple-1.1.1.jar"/>
 	<classpathentry kind="output" path=""/>
 </classpath>

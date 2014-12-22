@@ -68,8 +68,11 @@ public class NetmailLogin extends NetmailLoginHelper
 	public static void login(String username, String password, boolean failToLogin){
 		NetmailLogin nl = getInstance();
 		if(username != null && password != null ){
-			username = username.isEmpty() ? nl.username : username;
-			password = password.isEmpty() ? nl.password : password;
+			if(username.isEmpty() | password.isEmpty()){
+				logInfo("Using default password");
+				username = nl.username ;
+				password = nl.password ;
+			}
 		}
 		nl.failToLogin = failToLogin;
 		nl.performLogin(username, password);

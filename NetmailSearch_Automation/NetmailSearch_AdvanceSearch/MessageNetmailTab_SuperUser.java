@@ -322,7 +322,7 @@ public class MessageNetmailTab_SuperUser extends MessageNetmailTab_SuperUserHelp
 		
 		//Check
 		String contentOfBody = frame_mbMessageBody().find(atDescendant(".class", "Html.BODY"), false)[0].getProperty(".text").toString();
-		regexp = "(?i).*\\b"+"Dean John".replace(" ", "\\b[^a-zA-Z0-9]*\\b")+"\\b.*";
+		regexp = "(?i).*\\b"+regexp.replace(" ", "\\b[^a-zA-Z0-9]*\\b")+"\\b.*";
 		if(contentOfBody.matches(regexp) ){
 			matchesBody = true;
 		}
