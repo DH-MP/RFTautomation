@@ -35,9 +35,9 @@ public class WebAdmin extends WebAdminHelper
 	 */
 	
 	private String jobName = "";
-	private String ip = "";
-	private String userName = "";
-	private String password = "";
+	private String ip = IP;
+	private String userName = webAdminUserName;
+	private String password = webAdminPassword;
 	
 	public void testMain(Object[] args) 
 	{
@@ -56,14 +56,14 @@ public class WebAdmin extends WebAdminHelper
 			utilities.HelperClass.oneBrowserSetup();
 			browser_htmlBrowser().waitForExistence(120, DISABLED);
 			browser_htmlBrowser().activate();
-			browser_htmlBrowser().loadUrl("https://"+ip+":9090");
-			logInfo("loading page "+"https://"+ip+":9090");
+			browser_htmlBrowser().loadUrl("https://"+ip);
+			logInfo("loading page "+"https://"+ip);
 			sleep(6);
 		}catch(Exception  e){
 			utilities.HelperClass.CloseAllBrowsers();
 			utilities.HelperClass.oneBrowserSetup();			
 			browser_htmlBrowser().waitForExistence(120, DISABLED);
-			browser_htmlBrowser().loadUrl("https://"+ip+":9090");
+			browser_htmlBrowser().loadUrl("https://"+ip);
 			sleep(20);
 			logInfo("lost track of Browser:"+e.toString());
 		}
@@ -89,7 +89,7 @@ public class WebAdmin extends WebAdminHelper
 		browser_htmlBrowser(document_netmail(), DEFAULT_FLAGS).inputChars(password);
 		button_logInbutton().doubleClick();
 		link_archive().waitForExistence(300, 5);
-		logInfo("logging in webadmin UUI: "+userName+"/"+"password");
+		logInfo("logging in webadmin UUI: "+userName+"/"+password);
 		
 	}
 	
@@ -147,7 +147,7 @@ public class WebAdmin extends WebAdminHelper
 		html_admin().click();
 		button_findbutton().click();
 		logInfo("clicked find button");
-		sleep(15);
+		sleep(30);
 		list_idUserList().click();
 		browser_htmlBrowser().inputKeys(userName);
 		logInfo("selected "+userName+" on user list");
@@ -163,6 +163,7 @@ public class WebAdmin extends WebAdminHelper
 		}
 		button_savebutton().click();
 		logInfo("Clicked Save button");
+		button_htmlDialogButtonOK().waitForExistence(30, 2);
 		button_htmlDialogButtonOK().click();
 		logInfo("click dialog OK button");
 		logInfo("< "+userName+" > now has proxy access to the following users < "+accessedUserList+">");
@@ -178,6 +179,7 @@ public class WebAdmin extends WebAdminHelper
 	public void removeProxiesAccess(String userName, String accessedUserList){
 		html_admin().click();
 		button_findbutton().click();
+		sleep(30);
 		logInfo("clicked find button");
 		list_idUserList().click(atText(userName));
 		logInfo("selected "+userName+" on user list");

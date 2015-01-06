@@ -46,7 +46,7 @@ public class TS_995 extends TS_995Helper
 		HelperClass.CloseAllBrowsers();
 		sleep(2);
 		HelperClass.oneBrowserSetup();
-		sleep(5);
+		sleep(6);
 
 		NetmailLogin.login(dpString("userName"), dpString("password"), dpBoolean("failToLogin"));
 		if(dpBoolean("failToLogin"))

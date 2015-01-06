@@ -43,7 +43,7 @@ public class TS_1047_NetmailSearch_AdvanceLogging extends TS_1047_NetmailSearch_
 		IParameter rqmPort = vm.getInputParameter("port");
 		String ip = rqmIP == null ? IP : rqmIP.getValue();
 		String port = rqmPort == null? "8888" : rqmPort.getValue();
-		String userName = "amy";
+		String userName = "rft";
 		
 		HelperClass.CloseAllBrowsers();
 		sleep(5);

@@ -245,16 +245,23 @@ public class manageCase extends manageCaseHelper
 	}
 	
 	public manageCase editCase(String caseName){
-			openCase(caseName);
-			waitForloading();
-			button_editCasebutton().click();
-			sleep(1);
-			waitForloading();
-			return edit();
+		if(html_requireReviewCaseTXT().exists()){
+			clickOkButtonReviewCase();
+		}
+		openCase(caseName);
+		waitForloading();
+		button_editCasebutton().click();
+		sleep(1);
+		waitForloading();
+		return edit();
 	}
 	
 	//from casemanager
 	public manageCase editCaseCM(String caseName){
+		if(html_requireReviewCaseTXT().exists()){
+			clickOkButtonReviewCase();
+		}
+		
 		clickCase(caseName);
 		waitForloading();
 		button_editCaseCM().click();
@@ -282,6 +289,10 @@ public class manageCase extends manageCaseHelper
 			button_savebutton().click();
 			logInfo("Clicked save button ");
 			sleep(4);
+			
+			if(html_requireReviewCaseTXT().exists()){
+				clickOkButtonReviewCase();
+			}
 		}else{
 			button_cancelbutton().click();
 			logInfo("Clicked cancel button");
@@ -291,6 +302,10 @@ public class manageCase extends manageCaseHelper
 	}
 	
 	public manageCase openCase(String caseName){
+		if(html_requireReviewCaseTXT().exists()){
+			clickOkButtonReviewCase();
+		}
+		
 		clickCase(caseName);
 		button_openCasebutton().click();
 		return this;
@@ -312,7 +327,9 @@ public class manageCase extends manageCaseHelper
 		mc.delete(caseName);
 	}
 	private manageCase delete(String caseName){
-		clickOkButtonReviewCase();
+		if(html_requireReviewCaseTXT().exists()){
+			clickOkButtonReviewCase();
+		}
 
 		String info = "As super user, closing the case: %s ";
 		logInfo(String.format(info, caseName));

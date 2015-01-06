@@ -49,6 +49,7 @@ public class TS_1318_ProxiesAdmin extends TS_1318_ProxiesAdminHelper
 	private String userDN = "";
 	private String userBName = "";
 	private String workSpace = remoteWorkSpace+"\\NetmailSearch_Automation";
+	
 	public void testMain(Object[] args) 
 	{
 		String webAdminUserName = dpString("webAdminUserName");
@@ -119,14 +120,13 @@ public class TS_1318_ProxiesAdmin extends TS_1318_ProxiesAdminHelper
 		wa.navigateTree("Archive>Cluster.*>Agents>Archive>"+archiveAgent);
 		wa.archiveAccount(newName+domain, storageLocation);
 		wa.navigateTree("Archive");
-		sleep(30);
-		wa.waitForJob(archiveAgent);
+		sleep(1000);
+//		wa.waitForJob(archiveAgent);
 		
 		//Check if still has proxy access
-		
-//		//Restart NetmailSearch
-//		HelperClass.startOrStopNetmailServices(false, IP, workSpace);
-//		HelperClass.startOrStopNetmailServices(true, IP, workSpace);
+		//Restart awa remote provider service
+		HelperClass.startOrStopNetmailServices(false, IP, workSpace);
+		HelperClass.startOrStopNetmailServices(true, IP, workSpace);
 		
 		NetmailLogin.login(userAName, userApassword, false);
 		HelperClass.navigateLocation(storageLocation+">"+newName);

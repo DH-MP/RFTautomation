@@ -86,7 +86,6 @@ public class startNetmailPortable extends startNetmailPortableHelper
 			logError("Export not found!");
 		}
 		
-		
 		//Download Export
 		String file = this.file.trim();
 		Property[] rowProperty = {	new Property(".tag", "TABLE"),

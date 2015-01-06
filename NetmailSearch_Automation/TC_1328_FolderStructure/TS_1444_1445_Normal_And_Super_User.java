@@ -77,7 +77,8 @@ public class TS_1444_1445_Normal_And_Super_User extends TS_1444_1445_Normal_And_
 	
 	private void expandNode(TestObject node){
 		TestObject[] expander = node.find(atChild(".class", "Html.DIV"), false)[0].find(atChild(".class", "Html.IMG", "class", new RegularExpression("x-tree-ec-icon.*", false)));
-		((GuiTestObject)expander[0]).click();
+		if(expander[0].getProperty("class").toString().contains("end-plus"))
+			((GuiTestObject)expander[0]).click();
 		sleep(1);
 	}
 	

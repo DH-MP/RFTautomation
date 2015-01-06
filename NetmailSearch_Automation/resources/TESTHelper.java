@@ -20,11 +20,11 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>TEST</b><br>
- * Generated     : <b>2014/08/25 3:23:51 PM</b><br>
+ * Generated     : <b>2014/12/03 10:01:40 PM</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows Server 2008 R2 x86 6.1 <br>
  * 
- * @since  August 25, 2014
+ * @since  December 03, 2014
  * @author Administrator
  */
 public abstract class TESTHelper extends utilities.MySuperHelper
@@ -55,8 +55,8 @@ public abstract class TESTHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		.classIndex : 0
 	 * 		class :  x-btn-text
+	 * 		.classIndex : 0
 	 */
 	protected GuiTestObject button_advancedSearchbutton() 
 	{
@@ -70,8 +70,8 @@ public abstract class TESTHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		.classIndex : 0
 	 * 		class :  x-btn-text
+	 * 		.classIndex : 0
 	 */
 	protected GuiTestObject button_advancedSearchbutton(TestObject anchor, long flags) 
 	{
@@ -83,11 +83,11 @@ public abstract class TESTHelper extends utilities.MySuperHelper
 	 * okbutton: with default state.
 	 *		.text : ok
 	 * 		type : button
-	 * 		.class : Html.BUTTON
 	 * 		.title : 
+	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		.classIndex : 23
 	 * 		class : _b_s o365button o365buttonOutlined o365buttonOutlinedHovered
+	 * 		.classIndex : 23
 	 */
 	protected GuiTestObject button_okbutton() 
 	{
@@ -98,11 +98,11 @@ public abstract class TESTHelper extends utilities.MySuperHelper
 	 * okbutton: with specific test context and state.
 	 *		.text : ok
 	 * 		type : button
-	 * 		.class : Html.BUTTON
 	 * 		.title : 
+	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		.classIndex : 23
 	 * 		class : _b_s o365button o365buttonOutlined o365buttonOutlinedHovered
+	 * 		.classIndex : 23
 	 */
 	protected GuiTestObject button_okbutton(TestObject anchor, long flags) 
 	{
@@ -156,8 +156,8 @@ public abstract class TESTHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.FORM
 	 * 		.name : Details
-	 * 		class : 
 	 * 		.classIndex : 0
+	 * 		class : 
 	 */
 	protected GuiTestObject form_details() 
 	{
@@ -170,8 +170,8 @@ public abstract class TESTHelper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.FORM
 	 * 		.name : Details
-	 * 		class : 
 	 * 		.classIndex : 0
+	 * 		class : 
 	 */
 	protected GuiTestObject form_details(TestObject anchor, long flags) 
 	{
@@ -211,8 +211,8 @@ public abstract class TESTHelper extends utilities.MySuperHelper
 	 *		.text : \u0173
 	 * 		.title : 0173
 	 * 		.class : Html.LI
-	 * 		.classIndex : 371
 	 * 		class : 
+	 * 		.classIndex : 371
 	 */
 	protected GuiTestObject html__0173() 
 	{
@@ -224,8 +224,8 @@ public abstract class TESTHelper extends utilities.MySuperHelper
 	 *		.text : \u0173
 	 * 		.title : 0173
 	 * 		.class : Html.LI
-	 * 		.classIndex : 371
 	 * 		class : 
+	 * 		.classIndex : 371
 	 */
 	protected GuiTestObject html__0173(TestObject anchor, long flags) 
 	{
@@ -238,8 +238,8 @@ public abstract class TESTHelper extends utilities.MySuperHelper
 	 *		.text : \u05ca
 	 * 		.title : 05CA
 	 * 		.class : Html.LI
-	 * 		class : 
 	 * 		.classIndex : 1482
+	 * 		class : 
 	 */
 	protected GuiTestObject html__05CA() 
 	{
@@ -251,8 +251,8 @@ public abstract class TESTHelper extends utilities.MySuperHelper
 	 *		.text : \u05ca
 	 * 		.title : 05CA
 	 * 		.class : Html.LI
-	 * 		class : 
 	 * 		.classIndex : 1482
+	 * 		class : 
 	 */
 	protected GuiTestObject html__05CA(TestObject anchor, long flags) 
 	{
@@ -265,8 +265,8 @@ public abstract class TESTHelper extends utilities.MySuperHelper
 	 *		.text : \u061a
 	 * 		.title : 061A
 	 * 		.class : Html.LI
-	 * 		class : 
 	 * 		.classIndex : 1562
+	 * 		class : 
 	 */
 	protected GuiTestObject html__061A() 
 	{
@@ -278,8 +278,8 @@ public abstract class TESTHelper extends utilities.MySuperHelper
 	 *		.text : \u061a
 	 * 		.title : 061A
 	 * 		.class : Html.LI
-	 * 		class : 
 	 * 		.classIndex : 1562
+	 * 		class : 
 	 */
 	protected GuiTestObject html__061A(TestObject anchor, long flags) 
 	{
@@ -358,9 +358,8 @@ public abstract class TESTHelper extends utilities.MySuperHelper
 	
 	/**
 	 * _ariaId_61: with default state.
-	 *		.className : 
-	 * 		.class : Html.DIV
-	 * 		.classIndex : 6
+	 *		.class : Html.DIV
+	 * 		.classIndex : 3
 	 */
 	protected GuiTestObject html__ariaId_61() 
 	{
@@ -369,9 +368,8 @@ public abstract class TESTHelper extends utilities.MySuperHelper
 	}
 	/**
 	 * _ariaId_61: with specific test context and state.
-	 *		.className : 
-	 * 		.class : Html.DIV
-	 * 		.classIndex : 6
+	 *		.class : Html.DIV
+	 * 		.classIndex : 3
 	 */
 	protected GuiTestObject html__ariaId_61(TestObject anchor, long flags) 
 	{
@@ -478,8 +476,8 @@ public abstract class TESTHelper extends utilities.MySuperHelper
 	 *		.text : LargeUser2 LargeUser
 	 * 		.title : 
 	 * 		.class : Html.UL
-	 * 		.classIndex : 0
 	 * 		class : x-tree-root-ct x-tree-arrows
+	 * 		.classIndex : 0
 	 */
 	protected GuiTestObject html_extGen240() 
 	{
@@ -491,8 +489,8 @@ public abstract class TESTHelper extends utilities.MySuperHelper
 	 *		.text : LargeUser2 LargeUser
 	 * 		.title : 
 	 * 		.class : Html.UL
-	 * 		.classIndex : 0
 	 * 		class : x-tree-root-ct x-tree-arrows
+	 * 		.classIndex : 0
 	 */
 	protected GuiTestObject html_extGen240(TestObject anchor, long flags) 
 	{
@@ -551,8 +549,8 @@ public abstract class TESTHelper extends utilities.MySuperHelper
 	 *		.text : netmail Plattform Secure Archive Cluster (10.1.30.64) Agenten Knoten Richtlinien ...
 	 * 		.title : 
 	 * 		.class : Html.UL
-	 * 		.classIndex : 0
 	 * 		class : x-tree-root-ct x-tree-arrows
+	 * 		.classIndex : 0
 	 */
 	protected GuiTestObject html_ul() 
 	{
@@ -564,8 +562,8 @@ public abstract class TESTHelper extends utilities.MySuperHelper
 	 *		.text : netmail Plattform Secure Archive Cluster (10.1.30.64) Agenten Knoten Richtlinien ...
 	 * 		.title : 
 	 * 		.class : Html.UL
-	 * 		.classIndex : 0
 	 * 		class : x-tree-root-ct x-tree-arrows
+	 * 		.classIndex : 0
 	 */
 	protected GuiTestObject html_ul(TestObject anchor, long flags) 
 	{
@@ -747,6 +745,39 @@ public abstract class TESTHelper extends utilities.MySuperHelper
 	{
 		return new StatelessGuiSubitemTestObject(
                         getMappedTestObject("table_searchButton0"), anchor, flags);
+	}
+	
+	/**
+	 * uid: with default state.
+	 *		.text : 
+	 * 		type : text
+	 * 		.id : tmaLoginUsername
+	 * 		.class : Html.INPUT.text
+	 * 		.title : 
+	 * 		name : uid
+	 * 		.classIndex : 0
+	 * 		class : x-form-text x-form-field
+	 */
+	protected TextGuiTestObject text_uid() 
+	{
+		return new TextGuiTestObject(
+                        getMappedTestObject("text_uid"));
+	}
+	/**
+	 * uid: with specific test context and state.
+	 *		.text : 
+	 * 		type : text
+	 * 		.id : tmaLoginUsername
+	 * 		.class : Html.INPUT.text
+	 * 		.title : 
+	 * 		name : uid
+	 * 		.classIndex : 0
+	 * 		class : x-form-text x-form-field
+	 */
+	protected TextGuiTestObject text_uid(TestObject anchor, long flags) 
+	{
+		return new TextGuiTestObject(
+                        getMappedTestObject("text_uid"), anchor, flags);
 	}
 	
 	

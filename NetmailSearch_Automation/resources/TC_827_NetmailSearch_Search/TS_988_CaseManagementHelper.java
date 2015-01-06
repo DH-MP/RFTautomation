@@ -7,7 +7,7 @@
 // file will be lost when automatically updated.
 
 package resources.TC_827_NetmailSearch_Search;
-
+import utilities.MySuperHelper;
 import com.rational.test.ft.object.interfaces.*;
 import com.rational.test.ft.object.interfaces.SAP.*;
 import com.rational.test.ft.object.interfaces.WPF.*;
@@ -20,14 +20,14 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>TS_988_CaseManagement</b><br>
- * Generated     : <b>2014/10/22 4:41:11 PM</b><br>
+ * Generated     : <b>2014/12/01 12:20:16 PM</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows Server 2008 R2 x86 6.1 <br>
  * 
- * @since  October 22, 2014
+ * @since  December 01, 2014
  * @author Administrator
  */
-public abstract class TS_988_CaseManagementHelper extends RationalTestScript
+public abstract class TS_988_CaseManagementHelper extends utilities.MySuperHelper
 {
 	/**
 	 * Cancelbutton: with default state.
@@ -36,8 +36,8 @@ public abstract class TS_988_CaseManagementHelper extends RationalTestScript
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		.classIndex : 0
 	 * 		class :  x-btn-text cancel-tb-icon
+	 * 		.classIndex : 0
 	 */
 	protected GuiTestObject button_cancelbutton() 
 	{
@@ -51,8 +51,8 @@ public abstract class TS_988_CaseManagementHelper extends RationalTestScript
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		.classIndex : 0
 	 * 		class :  x-btn-text cancel-tb-icon
+	 * 		.classIndex : 0
 	 */
 	protected GuiTestObject button_cancelbutton(TestObject anchor, long flags) 
 	{
@@ -67,8 +67,8 @@ public abstract class TS_988_CaseManagementHelper extends RationalTestScript
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		class :  x-btn-text
 	 * 		.classIndex : 0
+	 * 		class :  x-btn-text
 	 */
 	protected GuiTestObject button_deleteCase_Nobutton() 
 	{
@@ -82,8 +82,8 @@ public abstract class TS_988_CaseManagementHelper extends RationalTestScript
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		class :  x-btn-text
 	 * 		.classIndex : 0
+	 * 		class :  x-btn-text
 	 */
 	protected GuiTestObject button_deleteCase_Nobutton(TestObject anchor, long flags) 
 	{
@@ -98,8 +98,8 @@ public abstract class TS_988_CaseManagementHelper extends RationalTestScript
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		class :  x-btn-text
 	 * 		.classIndex : 0
+	 * 		class :  x-btn-text
 	 */
 	protected GuiTestObject button_deleteCase_Yesbutton() 
 	{
@@ -113,8 +113,8 @@ public abstract class TS_988_CaseManagementHelper extends RationalTestScript
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		class :  x-btn-text
 	 * 		.classIndex : 0
+	 * 		class :  x-btn-text
 	 */
 	protected GuiTestObject button_deleteCase_Yesbutton(TestObject anchor, long flags) 
 	{
@@ -129,8 +129,8 @@ public abstract class TS_988_CaseManagementHelper extends RationalTestScript
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		class :  x-btn-text delete-tb-icon
 	 * 		.classIndex : 0
+	 * 		class :  x-btn-text delete-tb-icon
 	 */
 	protected GuiTestObject button_deleteCasebutton() 
 	{
@@ -144,8 +144,8 @@ public abstract class TS_988_CaseManagementHelper extends RationalTestScript
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		class :  x-btn-text delete-tb-icon
 	 * 		.classIndex : 0
+	 * 		class :  x-btn-text delete-tb-icon
 	 */
 	protected GuiTestObject button_deleteCasebutton(TestObject anchor, long flags) 
 	{
@@ -160,8 +160,8 @@ public abstract class TS_988_CaseManagementHelper extends RationalTestScript
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		class :  x-btn-text edit-tb-icon
 	 * 		.classIndex : 0
+	 * 		class :  x-btn-text edit-tb-icon
 	 */
 	protected GuiTestObject button_editCasebutton() 
 	{
@@ -175,8 +175,8 @@ public abstract class TS_988_CaseManagementHelper extends RationalTestScript
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		class :  x-btn-text edit-tb-icon
 	 * 		.classIndex : 0
+	 * 		class :  x-btn-text edit-tb-icon
 	 */
 	protected GuiTestObject button_editCasebutton(TestObject anchor, long flags) 
 	{
@@ -216,8 +216,8 @@ public abstract class TS_988_CaseManagementHelper extends RationalTestScript
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		.classIndex : 0
 	 * 		class :  x-btn-text load-tb-icon
+	 * 		.classIndex : 0
 	 */
 	protected GuiTestObject button_openCasebutton() 
 	{
@@ -231,8 +231,8 @@ public abstract class TS_988_CaseManagementHelper extends RationalTestScript
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		.classIndex : 0
 	 * 		class :  x-btn-text load-tb-icon
+	 * 		.classIndex : 0
 	 */
 	protected GuiTestObject button_openCasebutton(TestObject anchor, long flags) 
 	{

@@ -91,7 +91,7 @@ public class adminLogin extends adminLoginHelper
 	
 	private void selectCase(){
 		if(html_requireReviewCaseTXT().exists()){
-			manageCase.clickOkButtonReviewCase();
+			okButtonReviewCase().click();
 		}
 		
 		/******Click Case*******/
@@ -116,6 +116,18 @@ public class adminLogin extends adminLoginHelper
 		return al;
 	}
 	
-
+	private GuiTestObject okButtonReviewCase(){
+		if(html_requireReviewCaseTXT().exists()){
+			if(Integer.parseInt(html_requireReviewCaseTXT().getProperty(".screenTop").toString())>0){
+				TestObject parent = html_requireReviewCaseTXT().getParent();
+				while(!parent.getProperty(".class").toString().contentEquals("Html.BODY")){
+					parent = parent.getParent();
+				}
+				TestObject okButton = parent.find(atDescendant(".class", "Html.BUTTON", ".text", "OK"), false)[0];
+				return ((GuiTestObject)okButton);
+			}
+		}
+		return null;
+	}
 }
 

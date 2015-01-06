@@ -65,7 +65,7 @@ public class Export_SuperUser extends Export_SuperUserHelper
 			table_netmailLite_exportButton().click(atPoint(bounds.width-3,bounds.height/2));
 		}
 		logInfo("Clicked export case dropdown");
-		sleep(0.5);
+		sleep(1);
 		link_newExport().click();
 		waitForloading();
 		waitForloading();
@@ -74,22 +74,22 @@ public class Export_SuperUser extends Export_SuperUserHelper
 		
 		//Choose Search tabs to export
 		if(searchTabIndexes.length > 0){
-			while(!Boolean.parseBoolean(radioButton_include_tabsselect().getProperty(".checked").toString())){
-				radioButton_include_tabsselect().click(atPoint(6,6));
-			}
-			radioButton_include_tabsselect().click();
+			clickRadio(radioButton_include_tabsselect());
 			logInfo("Clicked include selected tab");
 			TestObject[] searchTabs = html_step1_list_search_tabs().find(atDescendant(".tag", "TABLE", "class", new RegularExpression("^x-grid3-row-table$", false)));
 			for(String searchTabIndex : searchTabIndexes ){
 				logInfo("Checked tab at index "+ searchTabIndex);
 				int index = Integer.parseInt(searchTabIndex.trim()); 
-				((GuiTestObject)searchTabs[index-1].find(atDescendant(".tag", "DIV", "class", "x-grid3-row-checker"), false)[0]).click();
+
+				TestObject tableParent = ((GuiTestObject)searchTabs[index-1]).getParent();
+				
+				//x-grid3-row-selected (DIV ACTS AS CHECKBOX)
+				if(!tableParent.getProperty("class").toString().contains("selected"))
+					((GuiTestObject)searchTabs[index-1].find(atDescendant(".tag", "DIV", "class", "x-grid3-row-checker"), false)[0]).click();
 			}
 		}else{
-			while(!Boolean.parseBoolean(radioButton_include_tabsevery_().getProperty(".checked").toString())){
-				radioButton_include_tabsevery_().click(atPoint(6,6));
-				logInfo("Clicked select all tabs");
-			}
+			clickRadio(radioButton_include_tabsevery_());
+			logInfo("Clicked select all tabs");
 		}
 		sleep(0.5);
 		button_nextButton().click();
@@ -100,14 +100,10 @@ public class Export_SuperUser extends Export_SuperUserHelper
 		//Which item to exports (selected or all)
 		if(itemOptions == 1){
 			logInfo("Picking All Mail");
-			while(!Boolean.parseBoolean(radioButton_step2_everMail().getProperty(".checked").toString())){
-				radioButton_step2_everMail().click(atPoint(6,6));
-			}
+			clickRadio(radioButton_step2_everMail());
 		}else{
 			logInfo("Picking Selected Mail");
-			while(!Boolean.parseBoolean(radioButton_step2_selectedMail().getProperty(".checked").toString())){
-				radioButton_step2_selectedMail().click(atPoint(6,6));
-			}
+			clickRadio(radioButton_step2_selectedMail());
 		}
 		sleep(0.5);
 		button_nextButton().click();
@@ -118,44 +114,42 @@ public class Export_SuperUser extends Export_SuperUserHelper
 		switch (exportTypeOption) {
 			case 1:
 				logInfo("Picking ONE PDF");
-				while(!Boolean.parseBoolean(radioButton_step3_ONE_PDF().getProperty(".checked").toString())){
-					radioButton_step3_ONE_PDF().click(atPoint(6,6));
-				}
+				clickRadio(radioButton_step3_ONE_PDF());
 				isLarge();
 				break;
 			case 2:
 				logInfo("Picking ONE PDF PER ITEM");
-				while(!Boolean.parseBoolean(radioButton_step3_PDF_PER_ITEM().getProperty(".checked").toString())){
-					radioButton_step3_PDF_PER_ITEM().click(atPoint(6,6));
-				}
+				clickRadio(radioButton_step3_PDF_PER_ITEM());
 				isLarge();
 				break;
 			case 3:
 				logInfo("Picking Portable Netmail Search");
-				while(!Boolean.parseBoolean(radioButton_step3_Portable().getProperty(".checked").toString())){
-					radioButton_step3_Portable().click(atPoint(6,6));
-				}
+				clickRadio(radioButton_step3_Portable());
 				break;
 			case 4:
-				logInfo("Picking PST");
-				while(!Boolean.parseBoolean(radioButton_step3_PST().getProperty(".checked").toString())){
-					radioButton_step3_PST().click(atPoint(6,6));
-				}
+					logInfo("Picking PST");
+					clickRadio(radioButton_step3_PST());
 				break;
 			default:
-				while(!Boolean.parseBoolean(radioButton_step3_ONE_PDF().getProperty(".checked").toString())){
-					radioButton_step3_ONE_PDF().click(atPoint(6,6));
-				}
+					clickRadio(radioButton_step3_ONE_PDF());
 				break;
 		}
 		sleep(0.5);
 		button_nextButton().click();
+		sleep(2);
 		logInfo("Clicked next button");
 		
 		//Optional Information by default it's checked if specified will be unchecked
 		if(!additionalOptions.isEmpty()){
 			String[] options = additionalOptions.split(",");
 			TestObject[] guiOptions = html_additionalOptionContainer().find(atDescendant(".class", "Html.INPUT.checkbox"), true);
+			
+			//HACK: 5.3.1 changed the default option
+			for(TestObject option : guiOptions){
+				if(!Boolean.parseBoolean(option.getProperty("CHECKED").toString())){
+					((GuiTestObject)option).click();
+				}
+			}
 			
 			for(String option : options){
 				GuiTestObject GuiObject = (GuiTestObject)guiOptions[Integer.parseInt(option.trim()) - 1];
@@ -169,7 +163,8 @@ public class Export_SuperUser extends Export_SuperUserHelper
 		try{		
 			//Export Name and etc
 			logInfo("Entering export name:"+exportName);
-			text_step5_export_name().click();		
+			text_step5_export_name().click();	
+			browser_htmlBrowser().inputKeys("^a{BKSP}");
 			browser_htmlBrowser().inputChars(exportName);
 			
 		}catch(Exception e){
@@ -183,6 +178,15 @@ public class Export_SuperUser extends Export_SuperUserHelper
 			logInfo("Clicked next button");
 			sleep(1);
 		}
+
+		//HACK put this to default pre-5.3.1
+		if(Boolean.parseBoolean(checkBox_step5_send_mailstep5_().getProperty(".checked").toString())){
+			checkBox_step5_send_mailstep5_().click();
+		}
+		if(Boolean.parseBoolean(checkBox_step5_with_passwordst().getProperty(".checked").toString())){
+			checkBox_step5_with_passwordst().click();
+		}
+		
 
 		if(email !=null && !email.isEmpty()){
 			logInfo("entering email:"+email);
@@ -208,13 +212,14 @@ public class Export_SuperUser extends Export_SuperUserHelper
 			vpManual("finishButton_isEnabledOnCorrectPassword", false, table_cardFinish().getProperty("class").toString().matches(".*x-item-disabled$")).performTest();
 		}
 		sleep(1);
+		button_finishbutton().hover();
 		button_finishbutton().click();
 		logInfo("Clicked finish button");
 		waitForloading();
 		
 		//Validate creation
 		html_exportStatusWindow().waitForExistence(240, DISABLED);
-		sleep(3);
+		sleep(6);
 		waitForloading();
 		vpManual("ExportStatusWindow_Visible", true, html_exportStatusWindow().ensureObjectIsVisible()).performTest();
 		TestObject[] exports = html_exportList().find(atDescendant(".tag", "TABLE", "class", "x-grid3-row-table"), true);
@@ -444,6 +449,15 @@ public class Export_SuperUser extends Export_SuperUserHelper
 		}catch(ArrayIndexOutOfBoundsException | ObjectNotFoundException e){
 			openWhenTopExportComplete(expectedStatus);
 			return;
+		}
+	}
+	
+	public void clickRadio(GuiTestObject radio){
+		int posX = 6;
+		while(!Boolean.parseBoolean(radio.getProperty(".checked").toString())){
+			radio.click(atPoint(6,posX));
+			sleep(0.5);
+			posX++;
 		}
 	}
 	

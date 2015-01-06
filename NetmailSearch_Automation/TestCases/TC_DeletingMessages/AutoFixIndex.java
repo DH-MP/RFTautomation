@@ -48,8 +48,8 @@ public class AutoFixIndex extends AutoFixIndexHelper
 		String indexAgentName = "indexinator";
 		
 		//Restart open
-		HelperClass.startstopRemoteService(false, IP, "MAOpen", workSpace);
-		HelperClass.startstopRemoteService(true, IP, "MAOpen", workSpace);
+//		HelperClass.startstopRemoteService(false, IP, "MAOpen", workSpace);
+//		HelperClass.startstopRemoteService(true, IP, "MAOpen", workSpace);
 		
 		//Replace location with good baseline
 		File targetLocation = new File(targetFolderLocation);
@@ -58,6 +58,10 @@ public class AutoFixIndex extends AutoFixIndexHelper
 			try {
 				FileUtils.cleanDirectory(targetLocation);
 				FileUtils.copyDirectory(baselineLocation, targetLocation);
+				while(FileUtils.sizeOf(targetLocation) != FileUtils.sizeOf(baselineLocation)){
+					System.out.println(FileUtils.sizeOf(targetLocation)/FileUtils.sizeOf(baselineLocation));
+					sleep(10);
+				}
 			} catch (IOException e1) {
 				logError(e1.getMessage());
 				e1.printStackTrace();
@@ -105,13 +109,17 @@ public class AutoFixIndex extends AutoFixIndexHelper
 				FileUtils.cleanDirectory(targetLocation);
 				FileUtils.copyDirectory(baselineDeletedLocation, targetLocation);
 				logInfo("Replace GVautomation folder data with deleted data");
+				while(FileUtils.sizeOf(targetLocation) != FileUtils.sizeOf(baselineLocation)){
+					System.out.println(FileUtils.sizeOf(targetLocation)/FileUtils.sizeOf(baselineLocation));
+					sleep(10);
+				}
 			} catch (IOException e1) {
 				logError(e1.getMessage());
 				e1.printStackTrace();
 			}
 		}
 		
-		HelperClass.navigateLocation("GVautomation>ProxyAdminTest");
+		HelperClass.navigateLocation("GVautomation>ProxyAdminTest>Inbox");
 		waitForloading();
 		
 		//Test
