@@ -150,6 +150,7 @@ public class TS_988_CaseManagement extends TS_988_CaseManagementHelper
 		
 		//Delete + No/Cancel
 		((GuiTestObject)newCase).click();
+		button_deleteCasebutton().hover();
 		button_deleteCasebutton().click();
 		logInfo("Clicked delete case");
 		button_deleteCase_Nobutton().click();
@@ -180,6 +181,7 @@ public class TS_988_CaseManagement extends TS_988_CaseManagementHelper
 		TestObject newCase = caseListBody.find(atChild(".tag", "DIV", ".contentText", new RegularExpression(caseName+".*", false)), false)[0];
 		((GuiTestObject)newCase).doubleClick();
 		sleep(10);
+		waitForloading();
 		waitForloading();
 		logInfo(" doubleClicked on case < "+caseName+" >");
 		

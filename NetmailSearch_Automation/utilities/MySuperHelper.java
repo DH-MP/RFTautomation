@@ -39,16 +39,21 @@ public abstract class MySuperHelper extends RationalTestScript
 	public 	String webAdminUserName = "netmail";
 	public  String webAdminPassword = "M3ss4g1ng";
 	public 	String remoteWorkSpace = "\\\\10.10.23.61\\Data\\NetmailSearch_v5.3.1";
-
-	
+	public  String version = "n/a";
 	private IVariablesManager IVM;
 	private TestObject[] browsers = find(atDescendant(".class", "Html.HtmlBrowser"));
 	
+	
 	public MySuperHelper(){	
+
+		
 		//RQM variable override default values IP, adminusername, adminpassword
 		IVariablesManager vm = getVariablesManager();
 		IParameter rqmIP = vm.getInputParameter("ip");
+		IParameter rqmVersion = vm.getInputParameter("version");
+		
 		IP = rqmIP == null ? IP : rqmIP.getValue();
+		version = rqmVersion == null ? version : rqmVersion.getValue();
 		URL = "http://"+IP+":8888";
 		webAdminIP = "http://"+IP+":89";
 		webAdminUUI = "http://"+IP+":8989";
@@ -75,8 +80,6 @@ public abstract class MySuperHelper extends RationalTestScript
 //	public void onObjectNotFound(ITestObjectMethodState testObjectMethodState){
 //		logError("Object Not Found Exception ", getRootTestObject().getScreenSnapshot());
 //	}
-	
-	
 	public void waitForloading(){
 		Property[] p = new Property[4];
 		RegularExpression loadingText = new RegularExpression("(Loading data, please wait...)|(loading the users)", false);
@@ -97,6 +100,8 @@ public abstract class MySuperHelper extends RationalTestScript
 		//logInfo("Called on terminate");
 		unregisterAll();
 		cleanup();
+		
+		logInfo("Version:"+version);
 	}
 	
 	public TestObject[] findAtDescendant(TestObject testObject, Property[] properties, boolean savable){

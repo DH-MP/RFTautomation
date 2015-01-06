@@ -289,6 +289,10 @@ public class manageCase extends manageCaseHelper
 			button_savebutton().click();
 			logInfo("Clicked save button ");
 			sleep(4);
+			
+			if(html_requireReviewCaseTXT().exists()){
+				clickOkButtonReviewCase();
+			}
 		}else{
 			button_cancelbutton().click();
 			logInfo("Clicked cancel button");
