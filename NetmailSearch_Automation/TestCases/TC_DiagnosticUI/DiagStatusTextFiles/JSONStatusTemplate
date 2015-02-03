@@ -1,0 +1,539 @@
+{
+	"Exchange":{
+		"label":"Exchange",
+		"Secure: SECURE.IP":{
+			"label":"Secure: SECURE.IP",
+			"Mail Routes":{
+				"label":"Mail Routes",
+				"help":"Mail_Routes_Delivery_Secure",
+				"graphs":{
+					"Local Delivery":{
+						"label":"Local Delivery",
+						"sufix":"(% of successful connections)",
+						"ident":"",
+						"graphName":"SECURE.IP_mailroute.1",
+						"status":0,
+						"value":100
+					}
+				},
+				"status":0
+			}
+		},
+		"Archive:ARCHIVE.IP;MailServerName;MAIL.IP":{
+			"label":"Archive: ARCHIVE.IP<BR>&nbsp;&nbsp;&nbsp;Exchange 2010 SP1 and Up (On-Premises)&nbsp;MAIL.IP",
+			"Exchange Connectivity":{
+				"label":"Exchange Connectivity",
+				"help":"Exchange_Connectivity_User_Archive",
+				"graphs":{
+					"User Access":{
+						"label":"User Access",
+						"sufix":"(0-Failed, 1-OK)",
+						"ident":"",
+						"graphName":"ARCHIVE.IP_useracess",
+						"value":1,
+						"status":0
+					}
+				},
+				"status":0
+			},
+			"Exchange PowerShell":{
+				"label":"Exchange PowerShell",
+				"help":"Exchange_Connectivity_PowerShell_Archive",
+				"graphs":{
+					"PowerShell Connectivity":{
+						"label":"PowerShell Connectivity",
+						"sufix":"(0-Failed, 1-OK)",
+						"ident":"",
+						"graphName":"ARCHIVE.IP_pwshell",
+						"value":1,
+						"status":0
+					}
+				},
+				"status":0
+			}
+		},
+		"status":0
+	},
+	"Configuration Repository":{
+		"label":"Configuration Repository",
+		"Secure: 10.10.3.170":{
+			"label":"Secure: 10.10.3.170",
+			"eDirectory Connectivity":{
+				"label":"eDirectory Connectivity",
+				"help":"eDirectory_Connectivity_Config_Secure",
+				"graphs":{
+					"eDirectory Connectivity":{
+						"label":"eDirectory Connectivity",
+						"sufix":"(% of successful connections)",
+						"ident":"",
+						"graphName":"10.10.3.170_edirconnsecure",
+						"value":100,
+						"status":0
+					}
+				},
+				"status":0
+			}
+		},
+		"Archive: 10.1.30.64":{
+			"label":"Archive: 10.1.30.64",
+			"eDirectory Connectivity":{
+				"label":"eDirectory Connectivity",
+				"help":"eDirectory_Connectivity_Configs_Archive",
+				"graphs":{
+					"10.1.30.64":{
+						"label":"10.1.30.64",
+						"sufix":"(0-Failed, 1-OK)",
+						"ident":"",
+						"graphName":"10.1.30.64_edirconfconn.1",
+						"status":0,
+						"value":1
+					}
+				},
+				"status":0
+			}
+		},
+		"status":0
+	},
+	"Authentication Source":{
+		"label":"Authentication Source",
+		"Secure: 10.10.3.170":{
+			"label":"Secure: 10.10.3.170",
+			"Authentication Sources":{
+				"label":"Authentication Sources",
+				"help":"Authentication_Sources_Secure",
+				"graphs":{
+					"10.10.3.160:25 SMTP":{
+						"label":"10.10.3.160:25 SMTP",
+						"sufix":"(% of successful connections)",
+						"ident":"",
+						"graphName":"10.10.3.170_authsources.1",
+						"status":0,
+						"value":100
+					}
+				},
+				"status":0
+			}
+		},
+		"Archive: 10.1.30.64":{
+			"label":"Archive: 10.1.30.64",
+			"eDirectory Connectivity":{
+				"label":"eDirectory Connectivity",
+				"help":"eDirectory_Connectivity_Auth_Archive",
+				"graphs":{
+					"10.1.30.64":{
+						"label":"10.1.30.64",
+						"sufix":"(0-Failed, 1-OK)",
+						"ident":"eDirectory Connectivity",
+						"graphName":"10.1.30.64_edirauthconn.1",
+						"status":0,
+						"value":1
+					}
+				},
+				"status":0
+			}
+		},
+		"status":0
+	},
+	"Netmail Archive":{
+		"label":"Netmail Archive",
+		"10.1.30.64":{
+			"label":"10.1.30.64",
+			"Type":{
+				"label":"Type",
+				"help":"Node_Type_Archive",
+				"value":"Master",
+				"graphs":{
+				},
+				"status":3
+			},
+			"Version":{
+				"label":"Version",
+				"help":"version",
+				"value":"5.3.1.234",
+				"graphs":{
+				},
+				"status":3
+			},
+			"Operation":{
+				"label":"Operation",
+				"help":"Operation_Archive",
+				"graphs":{
+					"Node Status":{
+						"label":"Node Status",
+						"sufix":"(0-Down, 1-Up)",
+						"ident":"",
+						"graphName":"10.1.30.64_nodestate",
+						"value":1,
+						"status":0
+					}
+				},
+				"status":0
+			},
+			"Cluster Connectivity":{
+				"label":"Cluster Connectivity",
+				"help":"Cluster_Connectivity_Archive",
+				"graphs":{
+					"Cluster Connectivity":{
+						"label":"Cluster Connectivity",
+						"sufix":"(0-All Failed, 1-Some Failed, 2-All Good)",
+						"ident":"",
+						"graphName":"10.1.30.64_netmailnodelocationaccess",
+						"value":1,
+						"status":1
+					}
+				},
+				"status":1
+			},
+			"Storage Connectivity":{
+				"label":"Storage Connectivity",
+				"help":"Storage_Connectivity_Archive",
+				"graphs":{
+					"Storage Connectivity":{
+						"label":"Storage Connectivity",
+						"sufix":"(0-All Failed, 1-Some Failed, 2-All Good)",
+						"ident":"",
+						"graphName":"10.1.30.64_storageconn",
+						"value":1,
+						"status":1
+					}
+				},
+				"status":1
+			},
+			"Logging Connectivity":{
+				"label":"Logging Connectivity",
+				"help":"Logging_Connectivity_Archive",
+				"graphs":{
+					"Logging Connectivity":{
+						"label":"Logging Connectivity",
+						"sufix":"(0-Failed, 1-OK)",
+						"ident":"",
+						"graphName":"10.1.30.64_loggingconn",
+						"value":1,
+						"status":0
+					}
+				},
+				"status":0
+			},
+			"Connectivity to Index":{
+				"label":"Connectivity to Index",
+				"help":"Connectivity_to_Index_Search_Archive",
+				"graphs":{
+					"Connectivity to Index":{
+						"label":"Connectivity to Index",
+						"sufix":"(0-Failed, 1-OK)",
+						"ident":"",
+						"graphName":"10.1.30.64_name",
+						"value":1,
+						"status":0
+					}
+				},
+				"status":0
+			},
+			"Free Temp Space":{
+				"label":"Free Temp Space",
+				"help":"Free_Temp_Space_Archive",
+				"graphs":{
+					"Temp Space Available":{
+						"label":"Temp Space Available",
+						"sufix":"(% Free)",
+						"ident":"",
+						"graphName":"10.1.30.64_tmpspace",
+						"value":55,
+						"status":0
+					}
+				},
+				"status":0
+			}
+		},
+		"status":1
+	},
+	"Netmail Secure":{
+		"label":"Netmail Secure",
+		"10.10.3.170":{
+			"label":"10.10.3.170",
+			"Version":{
+				"label":"Version",
+				"help":"version",
+				"value":"Netmail Secure 5.3.1.154684-debug",
+				"graphs":{
+				},
+				"status":3
+			},
+			"Spools":{
+				"label":"Spools",
+				"help":"Spools",
+				"graphs":{
+					"Sender Verification":{
+						"label":"Sender Verification",
+						"sufix":"Spooled Messages",
+						"ident":"",
+						"graphName":"10.10.3.170_senderverificationspooled",
+						"value":0,
+						"status":0
+					},
+					"Anti Virus":{
+						"label":"Anti Virus",
+						"sufix":"Spooled Messages",
+						"ident":"",
+						"graphName":"10.10.3.170_antivirusspooled",
+						"value":0,
+						"status":0
+					},
+					"Attachment Blocking":{
+						"label":"Attachment Blocking",
+						"sufix":"Spooled Messages",
+						"ident":"",
+						"graphName":"10.10.3.170_attachementblockingspooled",
+						"value":0,
+						"status":0
+					},
+					"Anti Spam":{
+						"label":"Anti Spam",
+						"sufix":"Spooled Messages",
+						"ident":"",
+						"graphName":"10.10.3.170_antispamspooled",
+						"value":32,
+						"status":0
+					},
+					"Content Filter":{
+						"label":"Content Filter",
+						"sufix":"Spooled Messages",
+						"ident":"",
+						"graphName":"10.10.3.170_contentfilterspooled",
+						"value":0,
+						"status":0
+					},
+					"Surbl":{
+						"label":"Surbl",
+						"sufix":"Spooled Messages",
+						"ident":"",
+						"graphName":"10.10.3.170_surblspooled",
+						"value":0,
+						"status":0
+					},
+					"Delivery":{
+						"label":"Delivery",
+						"sufix":"Spooled Messages",
+						"ident":"",
+						"graphName":"10.10.3.170_deliveryspooled",
+						"value":0,
+						"status":0
+					}
+				},
+				"status":0
+			},
+			"SMTP Modules":{
+				"label":"SMTP Modules",
+				"help":"SMTP_Modules",
+				"graphs":{
+					"RBL Module":{
+						"label":"RBL Module",
+						"sufix":"",
+						"ident":"",
+						"graphName":"10.10.3.170_rbl",
+						"value":0,
+						"status":0
+					},
+					"SPF Module":{
+						"label":"SPF Module",
+						"sufix":"",
+						"ident":"",
+						"graphName":"10.10.3.170_spf",
+						"value":0,
+						"status":0
+					},
+					"RDNS Module":{
+						"label":"RDNS Module",
+						"sufix":"",
+						"ident":"",
+						"graphName":"10.10.3.170_rdns",
+						"value":0,
+						"status":0
+					},
+					"DBL Module":{
+						"label":"DBL Module",
+						"sufix":"",
+						"ident":"",
+						"graphName":"10.10.3.170_dbl",
+						"value":0,
+						"status":0
+					}
+				},
+				"status":0
+			},
+			"Logging Connectivity":{
+				"label":"Logging Connectivity",
+				"help":"Logging_Connectivity_Secure",
+				"graphs":{
+					"Logging Connectivity":{
+						"label":"Logging Connectivity",
+						"sufix":"(% of successful connections)",
+						"ident":"",
+						"graphName":"10.10.3.170_loging",
+						"value":100,
+						"status":0
+					}
+				},
+				"status":0
+			}
+		},
+		"status":0
+	},
+	"Netmail Store":{
+		"label":"Netmail Store",
+		"Secure: 10.10.3.170":{
+			"label":"Secure: 10.10.3.170",
+			"Netmail Store Connectivity":{
+				"label":"Netmail Store Connectivity",
+				"help":"Netmail_Store_Connectivity_Secure",
+				"graphs":{
+					"Netmail Store Connectivity":{
+						"label":"Netmail Store Connectivity",
+						"sufix":"(0-Failed, 1-OK, 2-Unknown)",
+						"ident":"",
+						"graphName":"10.10.3.170_securestore",
+						"value":2,
+						"status":3
+					}
+				},
+				"status":3
+			},
+			"Netmail Store Proxy Connectivity":{
+				"label":"Netmail Store Proxy Connectivity",
+				"help":"Netmail_Store_Proxy_Connectivity_Secure",
+				"graphs":{
+					"Netmail Store Proxy Connectivity":{
+						"label":"Netmail Store Proxy Connectivity",
+						"sufix":"(0-Failed, 1-OK, 2-Unknown)",
+						"ident":"",
+						"graphName":"10.10.3.170_securestoreproxy",
+						"value":2,
+						"status":3
+					}
+				},
+				"status":3
+			}
+		},
+		"Archive: 10.1.30.64":{
+			"label":"Archive: 10.1.30.64",
+			"Netmail Store Connectivity":{
+				"label":"Netmail Store Connectivity",
+				"help":"Netmail_Store_Connectivity_Archive",
+				"graphs":{
+					"castor":{
+						"label":"castor",
+						"sufix":"(0-Failed, 1-OK)",
+						"ident":"",
+						"graphName":"10.1.30.64_archivenetmailstoreconn.1",
+						"status":0,
+						"value":1
+					}
+				},
+				"status":0
+			}
+		},
+		"status":0
+	},
+	"Index Servers":{
+		"label":"Index Servers",
+		"Archive Connectivity: 10.1.30.64":{
+			"label":"Archive Connectivity: 10.1.30.64",
+			"Connectivity to Index":{
+				"label":"Connectivity to Index",
+				"help":"Connectivity_to_Index_Admin_Archive",
+				"graphs":{
+					"Connectivity to Index":{
+						"label":"Connectivity to Index",
+						"sufix":"(0-Failed, 1-OK)",
+						"ident":"",
+						"graphName":"10.1.30.64_connadmidx",
+						"value":1,
+						"status":0
+					}
+				},
+				"status":0
+			},
+			"Index BuildGroup":{
+				"label":"Index BuildGroup",
+				"help":"Index_BuildGroup_Archive",
+				"graphs":{
+					"bg0":{
+						"label":"bg0",
+						"sufix":"(0-Failed, 1-OK)",
+						"ident":"Index Connectivity",
+						"graphName":"10.1.30.64_netmailindexbuildgroupstate.1",
+						"status":0,
+						"value":1
+					},
+					"bg_4_6":{
+						"label":"bg_4_6",
+						"sufix":"(0-Failed, 1-OK)",
+						"ident":"Index Connectivity",
+						"graphName":"10.1.30.64_netmailindexbuildgroupstate.2",
+						"status":0,
+						"value":1
+					},
+					"bg1":{
+						"label":"bg1",
+						"sufix":"(0-Failed, 1-OK)",
+						"ident":"Index Connectivity",
+						"graphName":"10.1.30.64_netmailindexbuildgroupstate.3",
+						"status":0,
+						"value":1
+					},
+					"bgAudits":{
+						"label":"bgAudits",
+						"sufix":"(0-Failed, 1-OK)",
+						"ident":"Index Connectivity",
+						"graphName":"10.1.30.64_netmailindexbuildgroupstate.4",
+						"status":0,
+						"value":1
+					}
+				},
+				"status":0
+			}
+		},
+		"status":0
+	},
+	"Netmail SecureSend":{
+		"label":"Netmail SecureSend",
+		"status":3
+	},
+	"Netmail Search":{
+		"label":"Netmail Search",
+		"Client Access Node: 10.1.30.64":{
+			"label":"Client Access Node: 10.1.30.64",
+			"User Authentication":{
+				"label":"User Authentication",
+				"help":"User_Authentication_Search",
+				"graphs":{
+					"User Authentication":{
+						"label":"User Authentication",
+						"sufix":"(0-Failed, 1-OK)",
+						"ident":"",
+						"graphName":"10.1.30.64_analytics",
+						"value":1,
+						"status":0
+					}
+				},
+				"status":0
+			},
+			"Stub Resolution":{
+				"label":"Stub Resolution",
+				"help":"Stub_Resolution_Archive",
+				"graphs":{
+					"Stub Resolution":{
+						"label":"Stub Resolution",
+						"sufix":"(0-Failed, 1-OK)",
+						"ident":"",
+						"graphName":"10.1.30.64_stubbing",
+						"value":1,
+						"status":0
+					}
+				},
+				"status":0
+			}
+		},
+		"status":0
+	}
+}

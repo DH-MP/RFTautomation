@@ -1,0 +1,57 @@
+{
+	"Exchange":{
+		"label":"Exchange",
+		"Secure: SECURE.IP":{
+			"label":"Secure: SECURE.IP",
+			"Mail Routes":{
+				"label":"Mail Routes",
+				"help":"Mail_Routes_Delivery_Secure",
+				"graphs":{
+					"Local Delivery":{
+						"label":"Local Delivery",
+						"sufix":"(% of successful connections)",
+						"ident":"",
+						"graphName":"SECURE.IP_mailroute.1",
+						"status":0,
+						"value":100
+					}
+				},
+				"status":2
+			}
+		},
+		"Archive:ARCHIVE.IP;MailServerName;MAIL.IP":{
+			"label":"Archive: ARCHIVE.IP<BR>&nbsp;&nbsp;&nbsp;Exchange 2010 SP1 and Up (On-Premises)&nbsp;MAIL.IP",
+			"Exchange Connectivity":{
+				"label":"Exchange Connectivity",
+				"help":"Exchange_Connectivity_User_Archive",
+				"graphs":{
+					"User Access":{
+						"label":"User Access",
+						"sufix":"(0-Failed, 1-OK)",
+						"ident":"",
+						"graphName":"ARCHIVE.IP_useracess",
+						"value":1,
+						"status":0
+					}
+				},
+				"status":2
+			},
+			"Exchange PowerShell":{
+				"label":"Exchange PowerShell",
+				"help":"Exchange_Connectivity_PowerShell_Archive",
+				"graphs":{
+					"PowerShell Connectivity":{
+						"label":"PowerShell Connectivity",
+						"sufix":"(0-Failed, 1-OK)",
+						"ident":"",
+						"graphName":"ARCHIVE.IP_pwshell",
+						"value":1,
+						"status":0
+					}
+				},
+				"status":2
+			}
+		},
+		"status":2
+	}
+}

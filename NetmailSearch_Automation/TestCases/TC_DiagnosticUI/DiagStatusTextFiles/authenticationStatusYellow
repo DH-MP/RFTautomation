@@ -1,0 +1,42 @@
+{
+	"Authentication Source":{
+			"label":"Authentication Source",
+			"Secure: SECURE.IP":{
+				"label":"Secure: SECURE.IP",
+				"Authentication Sources":{
+					"label":"Authentication Sources",
+					"help":"Authentication_Sources_Secure",
+					"graphs":{
+						"SECURE.IP:25 SMTP":{
+							"label":"SECURE.IP:25 SMTP",
+							"sufix":"(% of successful connections)",
+							"ident":"",
+							"graphName":"SECURE.IP_authsources.1",
+							"status":0,
+							"value":100
+						}
+					},
+					"status":1
+				}
+			},
+			"Archive: ARCHIVE.IP":{
+				"label":"Archive: ARCHIVE.IP",
+				"eDirectory Connectivity":{
+					"label":"eDirectory Connectivity",
+					"help":"eDirectory_Connectivity_Auth_Archive",
+					"graphs":{
+						"ARCHIVE.IP":{
+							"label":"ARCHIVE.IP",
+							"sufix":"(0-Failed, 1-OK)",
+							"ident":"eDirectory Connectivity",
+							"graphName":"ARCHIVE.IP_edirauthconn.1",
+							"status":0,
+							"value":1
+						}
+					},
+					"status":1
+				}
+			},
+			"status":1
+		}
+}
