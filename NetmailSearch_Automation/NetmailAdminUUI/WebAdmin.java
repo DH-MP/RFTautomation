@@ -145,22 +145,30 @@ public class WebAdmin extends WebAdminHelper
 	 */
 	public void addProxiesAccess(String userName, String accessedUserList){
 		html_admin().click();
+		text_idFilter().click();
+		browser_htmlBrowser().inputKeys("^a");
+		browser_htmlBrowser().inputKeys(userName);
+		button_findbutton().click();
 		button_findbutton().click();
 		logInfo("clicked find button");
-		sleep(30);
-		list_idUserList().click();
-		browser_htmlBrowser().inputKeys(userName);
+		sleep(10);
+		list_idUserList().click(atText(userName));
 		logInfo("selected "+userName+" on user list");
 		button_selectButton().click();
 		logInfo("click select button");
-		
 		for(String user : accessedUserList.split(",")){
-			list_idUserList().click();
+			text_idFilter().click();
+			browser_htmlBrowser().inputKeys("^a");
 			browser_htmlBrowser().inputKeys(user);
+			button_findbutton().click();
+			sleep(10);
+			logInfo("clicked find button");
+			list_idUserList().click(atText(user));
 			logInfo("click "+user+" in proxy list");
 			button_addButton().click();
 			logInfo("click add button");
 		}
+		
 		button_savebutton().click();
 		logInfo("Clicked Save button");
 		button_htmlDialogButtonOK().waitForExistence(30, 2);
@@ -178,7 +186,12 @@ public class WebAdmin extends WebAdminHelper
 	 */
 	public void removeProxiesAccess(String userName, String accessedUserList){
 		html_admin().click();
+		
+		text_idFilter().click();
+		browser_htmlBrowser().inputKeys("^a");
+		browser_htmlBrowser().inputKeys(userName);
 		button_findbutton().click();
+		
 		sleep(30);
 		logInfo("clicked find button");
 		list_idUserList().click(atText(userName));
@@ -289,23 +302,32 @@ public class WebAdmin extends WebAdminHelper
 		}
 		logInfo("click X button on successful save");
 		
+		runJob(accountName);
+		
+	}
+	
+	public void runJob(String accountName){
 		selectPageTab("Job Settings");
 		sleep(3);
 	
 		//Select User
-		button_settingUsersSelect().click();
+		if(button_settingUsersSelect().exists()){
+			button_settingUsersSelect().click();
+		}else{
+			button_settingUsersSelect2().click();
+		}
 		logInfo("clicked user select button");
 		
-		for(TestObject options : list_indexUserListB().getChildren()){
+		for(TestObject options : list_userSelectionListB().getChildren()){
 			((GuiTestObject)options).click();
-			button_index_Remove().click();
+			button_userSelectionRemove().click();
 		}
 		
-		button_indexLoadbutton().click();
+		button_userSelectionLoad().click();
 		logInfo("clicked load button");
-		list_index_UserListA().click(atText(accountName));
+		list_userSelectionListA().click(atText(accountName));
 		logInfo("selecting "+accountName+" in index location");
-		button_index_Add().click();
+		button_userSelectionAdd().click();
 		logInfo("clicked add button");
 		button_index_OK().click();
 		logInfo("clicked OK button");
@@ -321,7 +343,6 @@ public class WebAdmin extends WebAdminHelper
 		logInfo("clicked RUN button");
 		button_htmlDialogButtonOK().click();
 		logInfo("clicked OK button on dialog");
-		
 	}
 	
 	public void runSyncAB(String exUser, String exPassword, String powerShellURL, String exEmail){
@@ -373,6 +394,39 @@ public class WebAdmin extends WebAdminHelper
 		}
 	}
 	
+
+	/**
+	 * Method: pageActions
+	 * precondition: button are loaded
+	 * Description: the save cancel, rename clone, delete button on the bottom of the page
+	 * Example: 
+	 */
+	public void clickActionBarButton(String buttonName){
+		TestObject button = html_allButtons().find(atDescendant(".class", "Html.INPUT.button", ".value", buttonName))[0];
+		((GuiTestObject) button).click();
+		logInfo(String.format("clicked  %s button", buttonName));
+	}
+	
+	/**
+	 * Method: pageActions
+	 * precondition: agent container page
+	 * Description: the save cancel, rename clone, delete button on the bottom of the page
+	 * Example: 
+	 */
+	public void createJob(String jobName, boolean createAgent){
+		clickActionBarButton("Create");
+		
+		text_jobName().waitForExistence(10, 2);
+		text_jobName().click();
+		BrowserTestObject browser = (BrowserTestObject) text_jobName().getTopMappableParent();
+		browser.inputChars(jobName);
+		if(createAgent){
+			button_jobCreate().click();
+		}else{
+			button_jobCancel().click();
+		}
+	}
+	
 	private boolean foundJob(){
 		TestObject[] jobs = table_runningJob().find(atDescendant(".tag", "TR"), false);
 		for(TestObject job : jobs){
@@ -384,6 +438,8 @@ public class WebAdmin extends WebAdminHelper
 		}
 		return false;
 	}
+	
+	
 
 	public void setJobName(String jobName) {
 		this.jobName = jobName;

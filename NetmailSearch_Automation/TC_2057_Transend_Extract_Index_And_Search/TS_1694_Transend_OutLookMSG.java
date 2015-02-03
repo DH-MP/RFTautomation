@@ -6,6 +6,9 @@ import java.util.Map;
 import resources.TC_2057_Transend_Extract_Index_And_Search.TS_1694_Transend_OutLookMSGHelper;
 import utilities.HelperClass;
 import Case_Management.manageCase;
+import NetmailAdminUUI.Storage;
+import NetmailAdminUUI.StorageLocation;
+import NetmailAdminUUI.WebAdmin;
 import NetmailSearch_General.NetmailLogin;
 import NetmailSearch_General.adminLogin;
 import Netmail_WebAdmin.webAdmin;
@@ -99,19 +102,29 @@ public class TS_1694_Transend_OutLookMSG extends TS_1694_Transend_OutLookMSGHelp
 		browser_htmlBrowser().activate();
 	
 		//WebAdmin
-		webAdmin wa = new webAdmin();
-		wa.login(webAdminUserName, webAdminPassword);	
-		wa.createStorage("File System", name, "\\\\10.1.30.64\\TransendData\\"+name);	
-		wa.createStorageLocation( 
+		Storage storage = new Storage();
+		StorageLocation storageLocation = new StorageLocation();
+		WebAdmin webadmin = new WebAdmin();
+		webadmin.loadWebadminUUI();
+		webadmin.login();
+		storage.create("File System", name, targetSharedDirectory, "administrator", "123Password");
+		storageLocation.create(
 				"Standard", 
 				name, 
-				"automation", 
-				name, "\\\\10.1.30.64\\TransendData\\"+name, 
+				"testing storage intregity", 
+				name, 
+				"", 
+				name, 
+				"", 
+				targetSharedDirectory, 
+				"administrator", 
+				"123Password", 
 				"Administrator@BASE2012@First Organization@User"
 		);
-		wa.index(name, targetUserCN, indexName);
-		sleep(10);
-		wa.waitForIndexing(indexName);
+		webadmin.navigateTree("Archive>Cluster.*>Agents>Index>"+indexName);
+		webadmin.indexAccount(targetUserCN, name);
+		webadmin.navigateTree("Archive");
+		webadmin.waitForJob(indexName);
 		
 		
 //		//Restart services
@@ -122,26 +135,27 @@ public class TS_1694_Transend_OutLookMSG extends TS_1694_Transend_OutLookMSGHelp
 		login("");
 		
 		/********************NEW CASE***************************/
-		button_newCasebutton().click();
-		logInfo("Clicked NewCase");
-		sleep(0.5);
-		//DATA
-		Object[] cmNewCase = {	name,
-								"nothing",
-								"New",
-								"Claim",
-								"06/13/14",
-								"06/13/14",
-								"General Liability",
-								"Workplace",
-								true,
-								name,
-								"netmail",
-								false,
-		};
-		
-		callScript("Case_Management.manageCase", cmNewCase);
+		manageCase mc = new manageCase();
+		mc.setName(name);
+		mc.setDescription("nothing");
+		mc.setStatus("New");
+		mc.setCaseClass("Claim");
+		mc.setOpenDate("06/13/14");
+		mc.setCloseDate("06/13/14");
+		mc.setCaseType("General Liability");
+		mc.setCaseSubType("Workplace");
+		mc.setCheckLoadAllCase(true);
+		mc.setLocations(name);
+		mc.setFilterWord("a");
+		mc.setCancelOperation(false);
+		mc.newCase();
 		login(name);
+		
+		webadmin.loadWebadminUUI();
+		webadmin.login();
+		storage.delete(name);
+		storageLocation.delete(name);
+		
 		
 	}
 	

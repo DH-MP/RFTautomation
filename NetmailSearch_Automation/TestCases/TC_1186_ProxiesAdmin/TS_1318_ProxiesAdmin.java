@@ -78,8 +78,8 @@ public class TS_1318_ProxiesAdmin extends TS_1318_ProxiesAdminHelper
 		wa.loadWebadminUUI();
 		wa.login();
 		sleep(10);
-//		
-//		//Run SYNCAB
+		
+		//Run SYNCAB
 //		wa.navigateTree("Cluster");
 //		wa.selectPageTab("Address Book Sync");
 //		wa.runSyncAB(null, null, null, null);//run current settings

@@ -1,12 +1,18 @@
 package TC_2057_Transend_Extract_Index_And_Search;
+import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
+
+import org.apache.commons.io.FileUtils;
 
 import resources.TC_2057_Transend_Extract_Index_And_Search.TS_1691_Transend_GroupWiseHelper;
 import utilities.HelperClass;
 
 import Case_Management.manageCase;
+import NetmailAdminUUI.Storage;
+import NetmailAdminUUI.StorageLocation;
+import NetmailAdminUUI.WebAdmin;
 import NetmailSearch_General.NetmailLogin;
 import NetmailSearch_General.adminLogin;
 import Netmail_WebAdmin.indexer;
@@ -80,6 +86,18 @@ public class TS_1691_Transend_GroupWise extends TS_1691_Transend_GroupWiseHelper
 			e.printStackTrace();
 		}
 		
+		//Setup
+		File directory = new File(targetSharedDirectory);
+		if(directory.exists()){
+			try {
+				FileUtils.cleanDirectory(directory);
+			} catch (IOException e1) {
+				logError(e1.getMessage());
+				e1.printStackTrace();
+			}
+		}
+		
+		
 		//Evaluation message
 		evaluationPopUp_OKbutton().waitForExistence(150, 3);	
 		evaluationPopUp_OKbutton().click();
@@ -122,51 +140,60 @@ public class TS_1691_Transend_GroupWise extends TS_1691_Transend_GroupWiseHelper
 		browser_htmlBrowser().loadUrl(webAdminIP);
 		browser_htmlBrowser().activate();
 	
-		//WebAdmin
-		webAdmin wa = new webAdmin();
-		wa.login(webAdminUserName, webAdminPassword);	
-		wa.createStorage("File System", name, "\\\\10.1.30.64\\TransendData\\"+name);	
-		wa.createStorageLocation( 
+		//Webadmin
+		Storage storage = new Storage();
+		StorageLocation storageLocation = new StorageLocation();
+		WebAdmin webadmin = new WebAdmin();
+		webadmin.loadWebadminUUI();
+		webadmin.login();
+		storage.create("File System", name, targetSharedDirectory, "administrator", "123Password");
+		storageLocation.create(
 				"Standard", 
 				name, 
-				"automation", 
+				"testing storage intregity", 
 				name, 
-				"\\\\10.1.30.64\\TransendData\\"+name, 
+				"", 
+				name, 
+				"", 
+				targetSharedDirectory, 
+				"administrator", 
+				"123Password", 
 				"Administrator@BASE2012@First Organization@User"
 		);
-		sleep(10);
-		wa.index(name, targetUserName, indexName);
-		wa.waitForIndexing(indexName);
+		webadmin.navigateTree("Archive>Cluster.*>Agents>Index>"+indexName);
+		webadmin.indexAccount(targetUserCN, name);
+		webadmin.navigateTree("Archive");
+		webadmin.waitForJob(indexName);
 		
 		
-		//Restart services
-		HelperClass.startOrStopNetmailServices(false, IP, workSpace);
-		HelperClass.startOrStopNetmailServices(true, IP, workSpace);
+//		//Restart services
+//		HelperClass.startOrStopNetmailServices(false, IP, workSpace);
+//		HelperClass.startOrStopNetmailServices(true, IP, workSpace);
 		
 		//Login netmail search and new case
 		login("");
 		
 		/********************NEW CASE***************************/
-		button_newCasebutton().click();
-		logInfo("Clicked NewCase");
-		sleep(0.5);
-		//DATA
-		Object[] cmNewCase = {	name,
-								"nothing",
-								"New",
-								"Claim",
-								"06/13/14",
-								"06/13/14",
-								"General Liability",
-								"Workplace",
-								true,
-								name,
-								"a",
-								false,
-		};
-		callScript("Case_Management.manageCase", cmNewCase);
+		manageCase mc = new manageCase();
+		mc.setName(name);
+		mc.setDescription("nothing");
+		mc.setStatus("New");
+		mc.setCaseClass("Claim");
+		mc.setOpenDate("06/13/14");
+		mc.setCloseDate("06/13/14");
+		mc.setCaseType("General Liability");
+		mc.setCaseSubType("Workplace");
+		mc.setCheckLoadAllCase(true);
+		mc.setLocations(name);
+		mc.setFilterWord("a");
+		mc.setCancelOperation(false);
+		mc.newCase();
 		login(name);
 		
+		webadmin.loadWebadminUUI();
+		webadmin.login();
+		storage.delete(name);
+		storageLocation.delete(name);
 		
 	}
 	

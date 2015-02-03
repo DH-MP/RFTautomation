@@ -38,17 +38,17 @@ public class TS_MultiplePrintThousandItems extends TS_MultiplePrintThousandItems
 	public void testMain(Object[] args) 
 	{
 		final int numberOfPrint = 3;
-		NetmailLogin.login();
-		adminLogin.selectUserType("Super User");
-		
+//		NetmailLogin.login();
+//		adminLogin.selectUserType("Super User");
+//		
 		manageCase mc = new manageCase();
-		mc.setName("TS_MultiplePrintThousandItems");
-		mc.setLocations("ALS");
-		mc.setUsers("smith@greg.dom2po1.dom2");
-		mc.newCase();
-		
-		HelperClass.navigateLocation("ALS>smith>Mailbox");
-		
+//		mc.setName("TS_MultiplePrintThousandItems");
+//		mc.setLocations("ALS");
+//		mc.setUsers("smith@greg.dom2po1.dom2");
+//		mc.newCase();
+//		
+//		HelperClass.navigateLocation("ALS>smith>Mailbox");
+//		
 		int messageCount = 1000;
 			
 		Common.preferencePageSize(200);

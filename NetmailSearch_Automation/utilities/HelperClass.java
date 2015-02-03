@@ -79,6 +79,10 @@ public class HelperClass extends RationalTestScript {
 		return browsers[0];
 	}
 	
+	public static TestObject getActivePage(){
+		TestObject [] body = findBrowser().find(atDescendant( ".tag", "BODY"), true);
+		return body[0].find(atChild(".tag", "DIV", "class", new RegularExpression("^(\\s)*x-panel(\\s)*$", false)))[0];
+	}
 	public static TestObject[] getActiveTabBody(){
 		TestObject [] tabPanelBody = find(atDescendant( ".tag", "DIV", "class", new RegularExpression("^(\\s)*x-tab-panel-body x-tab-panel-body-top(\\s)*$", false)), true);
 		return tabPanelBody[0].find(atChild(".tag", "DIV", "class", new RegularExpression("^(\\s)*x-panel x-panel-noborder(\\s)*$", false)));
@@ -97,7 +101,7 @@ public class HelperClass extends RationalTestScript {
 	//TABS
 	public static GuiTestObject findActiveTab(){
 		//This method just find the tabs, not the body of the tab.
-		TestObject[] tab = find(atDescendant(".tag", "LI", "class", "x-tab-strip-closable x-tab-strip-active"), true);
+		TestObject[] tab = getActivePage().find(atDescendant(".tag", "LI", "class", "x-tab-strip-closable x-tab-strip-active"), true);
 		while( tab.length != 1){
 			tab = find(atDescendant(".tag", "LI", "class", "x-tab-strip-closable x-tab-strip-active"), true);
 		}

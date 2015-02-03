@@ -20,11 +20,11 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>WebAdmin</b><br>
- * Generated     : <b>2014/07/24 4:10:32 PM</b><br>
+ * Generated     : <b>2015/01/17 10:07:53 PM</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows Server 2008 R2 x86 6.1 <br>
  * 
- * @since  July 24, 2014
+ * @since  January 17, 2015
  * @author Administrator
  */
 public abstract class WebAdminHelper extends utilities.MySuperHelper
@@ -182,55 +182,7 @@ public abstract class WebAdminHelper extends utilities.MySuperHelper
 	}
 	
 	/**
-	 * index_Load: with default state.
-	 *		.type : button
-	 * 		.value : Load
-	 * 		.class : Html.INPUT.button
-	 */
-	protected GuiTestObject button_indexLoadbutton() 
-	{
-		return new GuiTestObject(
-                        getMappedTestObject("button_indexLoadbutton"));
-	}
-	/**
-	 * index_Load: with specific test context and state.
-	 *		.type : button
-	 * 		.value : Load
-	 * 		.class : Html.INPUT.button
-	 */
-	protected GuiTestObject button_indexLoadbutton(TestObject anchor, long flags) 
-	{
-		return new GuiTestObject(
-                        getMappedTestObject("button_indexLoadbutton"), anchor, flags);
-	}
-	
-	/**
-	 * index_Add: with default state.
-	 *		.id : bttnAdd
-	 * 		.type : button
-	 * 		.value : Add  >>
-	 * 		.class : Html.INPUT.button
-	 */
-	protected GuiTestObject button_index_Add() 
-	{
-		return new GuiTestObject(
-                        getMappedTestObject("button_index_Add"));
-	}
-	/**
-	 * index_Add: with specific test context and state.
-	 *		.id : bttnAdd
-	 * 		.type : button
-	 * 		.value : Add  >>
-	 * 		.class : Html.INPUT.button
-	 */
-	protected GuiTestObject button_index_Add(TestObject anchor, long flags) 
-	{
-		return new GuiTestObject(
-                        getMappedTestObject("button_index_Add"), anchor, flags);
-	}
-	
-	/**
-	 * index_OK: with default state.
+	 * userSelectionOK: with default state.
 	 *		.type : button
 	 * 		.value : OK
 	 * 		.class : Html.INPUT.button
@@ -241,7 +193,7 @@ public abstract class WebAdminHelper extends utilities.MySuperHelper
                         getMappedTestObject("button_index_OK"));
 	}
 	/**
-	 * index_OK: with specific test context and state.
+	 * userSelectionOK: with specific test context and state.
 	 *		.type : button
 	 * 		.value : OK
 	 * 		.class : Html.INPUT.button
@@ -253,28 +205,53 @@ public abstract class WebAdminHelper extends utilities.MySuperHelper
 	}
 	
 	/**
-	 * index_Remove: with default state.
-	 *		.id : bttnRemove
-	 * 		.type : button
-	 * 		.value : Remove
+	 * jobCancel: with default state.
+	 *		.type : button
+	 * 		.value : Cancel
 	 * 		.class : Html.INPUT.button
+	 * 		.classIndex : 1
 	 */
-	protected GuiTestObject button_index_Remove() 
+	protected GuiTestObject button_jobCancel() 
 	{
 		return new GuiTestObject(
-                        getMappedTestObject("button_index_Remove"));
+                        getMappedTestObject("button_jobCancel"));
 	}
 	/**
-	 * index_Remove: with specific test context and state.
-	 *		.id : bttnRemove
-	 * 		.type : button
-	 * 		.value : Remove
+	 * jobCancel: with specific test context and state.
+	 *		.type : button
+	 * 		.value : Cancel
 	 * 		.class : Html.INPUT.button
+	 * 		.classIndex : 1
 	 */
-	protected GuiTestObject button_index_Remove(TestObject anchor, long flags) 
+	protected GuiTestObject button_jobCancel(TestObject anchor, long flags) 
 	{
 		return new GuiTestObject(
-                        getMappedTestObject("button_index_Remove"), anchor, flags);
+                        getMappedTestObject("button_jobCancel"), anchor, flags);
+	}
+	
+	/**
+	 * jobCreate: with default state.
+	 *		.type : button
+	 * 		.value : Create
+	 * 		.class : Html.INPUT.button
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject button_jobCreate() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("button_jobCreate"));
+	}
+	/**
+	 * jobCreate: with specific test context and state.
+	 *		.type : button
+	 * 		.value : Create
+	 * 		.class : Html.INPUT.button
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject button_jobCreate(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("button_jobCreate"), anchor, flags);
 	}
 	
 	/**
@@ -503,6 +480,112 @@ public abstract class WebAdminHelper extends utilities.MySuperHelper
 	}
 	
 	/**
+	 * settingUsersSelect2: with default state.
+	 *		.text : 
+	 * 		.id : 
+	 * 		.type : button
+	 * 		.value : Select
+	 * 		.title : 
+	 * 		.class : Html.INPUT.button
+	 * 		.name : CButton2
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject button_settingUsersSelect2() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("button_settingUsersSelect2"));
+	}
+	/**
+	 * settingUsersSelect2: with specific test context and state.
+	 *		.text : 
+	 * 		.id : 
+	 * 		.type : button
+	 * 		.value : Select
+	 * 		.title : 
+	 * 		.class : Html.INPUT.button
+	 * 		.name : CButton2
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject button_settingUsersSelect2(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("button_settingUsersSelect2"), anchor, flags);
+	}
+	
+	/**
+	 * userSelectionAdd: with default state.
+	 *		.id : bttnAdd
+	 * 		.type : button
+	 * 		.value : Add  >>
+	 * 		.class : Html.INPUT.button
+	 */
+	protected GuiTestObject button_userSelectionAdd() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("button_userSelectionAdd"));
+	}
+	/**
+	 * userSelectionAdd: with specific test context and state.
+	 *		.id : bttnAdd
+	 * 		.type : button
+	 * 		.value : Add  >>
+	 * 		.class : Html.INPUT.button
+	 */
+	protected GuiTestObject button_userSelectionAdd(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("button_userSelectionAdd"), anchor, flags);
+	}
+	
+	/**
+	 * userSelectionLoad: with default state.
+	 *		.type : button
+	 * 		.value : Load
+	 * 		.class : Html.INPUT.button
+	 */
+	protected GuiTestObject button_userSelectionLoad() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("button_userSelectionLoad"));
+	}
+	/**
+	 * userSelectionLoad: with specific test context and state.
+	 *		.type : button
+	 * 		.value : Load
+	 * 		.class : Html.INPUT.button
+	 */
+	protected GuiTestObject button_userSelectionLoad(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("button_userSelectionLoad"), anchor, flags);
+	}
+	
+	/**
+	 * userSelectionRemove: with default state.
+	 *		.id : bttnRemove
+	 * 		.type : button
+	 * 		.value : Remove
+	 * 		.class : Html.INPUT.button
+	 */
+	protected GuiTestObject button_userSelectionRemove() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("button_userSelectionRemove"));
+	}
+	/**
+	 * userSelectionRemove: with specific test context and state.
+	 *		.id : bttnRemove
+	 * 		.type : button
+	 * 		.value : Remove
+	 * 		.class : Html.INPUT.button
+	 */
+	protected GuiTestObject button_userSelectionRemove(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("button_userSelectionRemove"), anchor, flags);
+	}
+	
+	/**
 	 * Xbutton: with default state.
 	 *		.type : button
 	 * 		.value : X
@@ -568,6 +651,29 @@ public abstract class WebAdminHelper extends utilities.MySuperHelper
 	}
 	
 	/**
+	 * AllButtons: with default state.
+	 *		.id : AllButtons
+	 * 		.className : bluelineabove
+	 * 		.class : Html.DIV
+	 */
+	protected GuiTestObject html_allButtons() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("html_allButtons"));
+	}
+	/**
+	 * AllButtons: with specific test context and state.
+	 *		.id : AllButtons
+	 * 		.className : bluelineabove
+	 * 		.class : Html.DIV
+	 */
+	protected GuiTestObject html_allButtons(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("html_allButtons"), anchor, flags);
+	}
+	
+	/**
 	 * framework: with default state.
 	 *		.id : framework
 	 * 		.class : Html.DIV
@@ -613,7 +719,7 @@ public abstract class WebAdminHelper extends utilities.MySuperHelper
 	 * Archive: with default state.
 	 *		.text : Archive
 	 * 		.class : Html.A
-	 * 		.classIndex : 2
+	 * 		.classIndex : RegularExpression(2|7)
 	 * 		class : x-tree-node-anchor
 	 */
 	protected GuiTestObject link_archive() 
@@ -625,7 +731,7 @@ public abstract class WebAdminHelper extends utilities.MySuperHelper
 	 * Archive: with specific test context and state.
 	 *		.text : Archive
 	 * 		.class : Html.A
-	 * 		.classIndex : 2
+	 * 		.classIndex : RegularExpression(2|7)
 	 * 		class : x-tree-node-anchor
 	 */
 	protected GuiTestObject link_archive(TestObject anchor, long flags) 
@@ -740,52 +846,6 @@ public abstract class WebAdminHelper extends utilities.MySuperHelper
 	}
 	
 	/**
-	 * indexUserListB: with default state.
-	 *		.id : UserListB
-	 * 		.class : Html.SELECT
-	 * 		class : userlist
-	 */
-	protected SelectGuiSubitemTestObject list_indexUserListB() 
-	{
-		return new SelectGuiSubitemTestObject(
-                        getMappedTestObject("list_indexUserListB"));
-	}
-	/**
-	 * indexUserListB: with specific test context and state.
-	 *		.id : UserListB
-	 * 		.class : Html.SELECT
-	 * 		class : userlist
-	 */
-	protected SelectGuiSubitemTestObject list_indexUserListB(TestObject anchor, long flags) 
-	{
-		return new SelectGuiSubitemTestObject(
-                        getMappedTestObject("list_indexUserListB"), anchor, flags);
-	}
-	
-	/**
-	 * index_UserListA: with default state.
-	 *		.id : UserListA
-	 * 		.class : Html.SELECT
-	 * 		class : userlist
-	 */
-	protected SelectGuiSubitemTestObject list_index_UserListA() 
-	{
-		return new SelectGuiSubitemTestObject(
-                        getMappedTestObject("list_index_UserListA"));
-	}
-	/**
-	 * index_UserListA: with specific test context and state.
-	 *		.id : UserListA
-	 * 		.class : Html.SELECT
-	 * 		class : userlist
-	 */
-	protected SelectGuiSubitemTestObject list_index_UserListA(TestObject anchor, long flags) 
-	{
-		return new SelectGuiSubitemTestObject(
-                        getMappedTestObject("list_index_UserListA"), anchor, flags);
-	}
-	
-	/**
 	 * UserListA: with default state.
 	 *		.id : UserListA
 	 * 		.className : userlist
@@ -831,6 +891,52 @@ public abstract class WebAdminHelper extends utilities.MySuperHelper
 	{
 		return new SelectGuiSubitemTestObject(
                         getMappedTestObject("list_userListB"), anchor, flags);
+	}
+	
+	/**
+	 * UserSelectionListA: with default state.
+	 *		.id : UserListA
+	 * 		.class : Html.SELECT
+	 * 		class : userlist
+	 */
+	protected SelectGuiSubitemTestObject list_userSelectionListA() 
+	{
+		return new SelectGuiSubitemTestObject(
+                        getMappedTestObject("list_userSelectionListA"));
+	}
+	/**
+	 * UserSelectionListA: with specific test context and state.
+	 *		.id : UserListA
+	 * 		.class : Html.SELECT
+	 * 		class : userlist
+	 */
+	protected SelectGuiSubitemTestObject list_userSelectionListA(TestObject anchor, long flags) 
+	{
+		return new SelectGuiSubitemTestObject(
+                        getMappedTestObject("list_userSelectionListA"), anchor, flags);
+	}
+	
+	/**
+	 * UserSelectionListB: with default state.
+	 *		.id : UserListB
+	 * 		.class : Html.SELECT
+	 * 		class : userlist
+	 */
+	protected SelectGuiSubitemTestObject list_userSelectionListB() 
+	{
+		return new SelectGuiSubitemTestObject(
+                        getMappedTestObject("list_userSelectionListB"));
+	}
+	/**
+	 * UserSelectionListB: with specific test context and state.
+	 *		.id : UserListB
+	 * 		.class : Html.SELECT
+	 * 		class : userlist
+	 */
+	protected SelectGuiSubitemTestObject list_userSelectionListB(TestObject anchor, long flags) 
+	{
+		return new SelectGuiSubitemTestObject(
+                        getMappedTestObject("list_userSelectionListB"), anchor, flags);
 	}
 	
 	/**
@@ -967,6 +1073,72 @@ public abstract class WebAdminHelper extends utilities.MySuperHelper
 	{
 		return new TextGuiTestObject(
                         getMappedTestObject("text_c_EXUSEREMAIL"), anchor, flags);
+	}
+	
+	/**
+	 * idFilter: with default state.
+	 *		.text : 
+	 * 		type : text
+	 * 		.id : idFilter
+	 * 		.class : Html.INPUT.text
+	 * 		.title : 
+	 * 		name : 
+	 * 		.classIndex : 0
+	 * 		class : 
+	 */
+	protected TextGuiTestObject text_idFilter() 
+	{
+		return new TextGuiTestObject(
+                        getMappedTestObject("text_idFilter"));
+	}
+	/**
+	 * idFilter: with specific test context and state.
+	 *		.text : 
+	 * 		type : text
+	 * 		.id : idFilter
+	 * 		.class : Html.INPUT.text
+	 * 		.title : 
+	 * 		name : 
+	 * 		.classIndex : 0
+	 * 		class : 
+	 */
+	protected TextGuiTestObject text_idFilter(TestObject anchor, long flags) 
+	{
+		return new TextGuiTestObject(
+                        getMappedTestObject("text_idFilter"), anchor, flags);
+	}
+	
+	/**
+	 * jobName: with default state.
+	 *		.text : 
+	 * 		type : text
+	 * 		.id : 
+	 * 		.title : 
+	 * 		.class : Html.INPUT.text
+	 * 		name : Name
+	 * 		class : 
+	 * 		.classIndex : 1
+	 */
+	protected TextGuiTestObject text_jobName() 
+	{
+		return new TextGuiTestObject(
+                        getMappedTestObject("text_jobName"));
+	}
+	/**
+	 * jobName: with specific test context and state.
+	 *		.text : 
+	 * 		type : text
+	 * 		.id : 
+	 * 		.title : 
+	 * 		.class : Html.INPUT.text
+	 * 		name : Name
+	 * 		class : 
+	 * 		.classIndex : 1
+	 */
+	protected TextGuiTestObject text_jobName(TestObject anchor, long flags) 
+	{
+		return new TextGuiTestObject(
+                        getMappedTestObject("text_jobName"), anchor, flags);
 	}
 	
 	/**

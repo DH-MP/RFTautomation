@@ -256,7 +256,7 @@ public class MessageWordListTab_SuperUser extends MessageWordListTab_SuperUserHe
 					//Check if highlight is broken
 					if(!matchesBody){
 						String contentOfBody = frame_mbMessageBody().find(atDescendant(".class", "Html.BODY"), false)[0].getProperty(".text").toString();
-						String regexp = "(?i).*\\b"+line.replace(" ", "\\b[^a-zA-Z0-9]*\\b")+"\\b.*";
+						String regexp = "(?i).*\\b"+line.replace(" ", "[^a-zA-Z0-9]*")+"\\b.*";
 						if(contentOfBody.matches(regexp) ){
 							matchesBody = true;
 							logError("Highlight is broken");
@@ -292,7 +292,7 @@ public class MessageWordListTab_SuperUser extends MessageWordListTab_SuperUserHe
 						//Check if highlight is broken
 						if(!matchesBody){
 							String contentOfBody = frame_mbMessageBody().find(atDescendant(".class", "Html.BODY"), false)[0].getProperty(".text").toString();
-							String regexp = "(?i).*\\b"+word.replace(" ", "\\b[^a-zA-Z0-9]*\\b")+"\\b.*";
+							String regexp = "(?i).*\\b"+word.replace(" ", "[^a-zA-Z0-9]*")+"\\b.*";
 							if(contentOfBody.matches(regexp) ){
 								matchesBody = true;
 								logError("Highlight is broken");

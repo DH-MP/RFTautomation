@@ -54,12 +54,12 @@ public class TS_981_NormalUser extends TS_981_NormalUserHelper
 		ps[2] = new Property(".text", "ALS");
 		GuiTestObject alsLink = (GuiTestObject) html_folderTree0().find(atDescendant(ps), true)[0];
 		GuiTestObject expander = (GuiTestObject) alsLink.getParent().getChildren()[1];
-		expander.click();
+//		expander.click();
 		sleep(3);	
 
 		ps[0] = new Property(".class", "Html.A");
 		ps[1] = new Property("class", "x-tree-node-anchor");
-		ps[2] = new Property(".text", "Amy S");
+		ps[2] = new Property(".text", "Amy");
 		GuiTestObject AmySLink = (GuiTestObject) alsLink.getParent().getParent().find(atDescendant(ps), true)[0];
 		expander = (GuiTestObject) AmySLink.getParent().getChildren()[1];
 		expander.click();
@@ -500,6 +500,7 @@ public class TS_981_NormalUser extends TS_981_NormalUserHelper
 		message.doubleClick();
 		logInfo("open message in netmail search with the name:"+nameOfMessage);
 		sleep(2);
+		waitForloading();
 	}
 	
 	public void forwardMessage(String messageName, String recipient, String forwardMessage){

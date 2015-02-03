@@ -156,8 +156,6 @@ public class TS_977_AND_978_SuperUserExportsTheSearchResults extends TS_977_AND_
 			e.printStackTrace();
 		}
 
-		
-		
 		//Verify NetmailSearchLite.exe
 		try {
 			HelperClass.CloseAllBrowsers();
@@ -298,12 +296,12 @@ public class TS_977_AND_978_SuperUserExportsTheSearchResults extends TS_977_AND_
 		TestObject listOfDB = html_innerBodyLeftPanel().getChildren()[0].getChildren()[0].getChildren()[0];
 		
 		//ExpandExport
-		((GuiTestObject)listOfDB.find(atChild(".class", "Html.DIV", ".text", "Export"), false)[0].find(atChild(".class", "Html.IMG"))[0]).click();
+//		((GuiTestObject)listOfDB.find(atChild(".class", "Html.DIV", ".text", "Export"), false)[0].find(atChild(".class", "Html.IMG"))[0]).click();
 		logInfo("Expand on the top tree in left side folder");
 		sleep(1);
 		
 		//Expand First User
-		TestObject listOfUser = listOfDB.find(atChild(".class", "Html.UL"))[0];
+		TestObject listOfUser = listOfDB.find(atChild(".class", "Html.UL"), false)[0];
 		((GuiTestObject)listOfUser.find(atChild(".class", "Html.LI"), false)[0].getChildren()[0].find(atChild(".class", "Html.IMG"))[1]).click();
 		logInfo("Expand first user");
 	}
@@ -358,8 +356,7 @@ public class TS_977_AND_978_SuperUserExportsTheSearchResults extends TS_977_AND_
 		logInfo("Clicked add new tab");
 		sleep(1);
 		vpManual("TabSizeIncrease", InitialTabSize+1,HelperClass.findAllTabs().length ).performTest();
-		browser_htmlBrowser().activate();
-		browser_htmlBrowser().click();
+
 		HelperClass.findActiveTab().click(RIGHT);
 		logInfo("right click  active tab");
 		link_tabClose().click();
@@ -376,6 +373,7 @@ public class TS_977_AND_978_SuperUserExportsTheSearchResults extends TS_977_AND_
 			((GuiTestObject)checkbox[0]).click();
 		}
 		
+		button_selectionsbutton().hover();
 		button_selectionsbutton().click();
 		button_selectionsbutton().unregister();
 		logInfo("clicked selection");

@@ -48,7 +48,7 @@ public class indexer extends indexerHelper
 		logInfo("expand index agent tree");
 		
 		SpyMappedTestObject indexInstance = this.getMappedTestObject("html_indexInstance");
-		indexInstance.setProperty(".text", "indexinator", 100);
+		indexInstance.setProperty(".text", indexName, 100);
 		html_indexInstance().click();
 		logInfo("click index");
 

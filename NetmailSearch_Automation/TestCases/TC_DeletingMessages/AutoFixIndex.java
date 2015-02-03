@@ -109,8 +109,10 @@ public class AutoFixIndex extends AutoFixIndexHelper
 				FileUtils.cleanDirectory(targetLocation);
 				FileUtils.copyDirectory(baselineDeletedLocation, targetLocation);
 				logInfo("Replace GVautomation folder data with deleted data");
-				while(FileUtils.sizeOf(targetLocation) != FileUtils.sizeOf(baselineLocation)){
-					System.out.println(FileUtils.sizeOf(targetLocation)/FileUtils.sizeOf(baselineLocation));
+				while(FileUtils.sizeOf(targetLocation) != FileUtils.sizeOf(baselineDeletedLocation)){
+					System.out.println(targetLocation+" : "+FileUtils.sizeOf(targetLocation));
+					System.out.println(baselineLocation+" : "+FileUtils.sizeOf(baselineDeletedLocation));
+					System.out.println(FileUtils.sizeOf(targetLocation)/FileUtils.sizeOf(baselineDeletedLocation));
 					sleep(10);
 				}
 			} catch (IOException e1) {

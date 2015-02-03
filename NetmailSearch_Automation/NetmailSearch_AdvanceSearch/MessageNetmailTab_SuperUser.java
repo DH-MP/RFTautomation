@@ -224,7 +224,7 @@ public class MessageNetmailTab_SuperUser extends MessageNetmailTab_SuperUserHelp
 					
 					switch (fields[k].trim()){
 						case "exact":
-							regexp = "(?i).*\\b"+values[k].trim().replace(" ", "\\b[^a-zA-Z\\d]\\b")+"\\b.*";
+							regexp = "(?i).*\\b"+values[k].trim().replace(" ", "[^a-zA-Z\\d]*")+"\\b.*";
 							isFound = findWordInMessage(regexp);
 							bool.add(isFound);
 							vpManual("NetmailSearch_exactPhrase", true, isFound).performTest();
@@ -322,7 +322,6 @@ public class MessageNetmailTab_SuperUser extends MessageNetmailTab_SuperUserHelp
 		
 		//Check
 		String contentOfBody = frame_mbMessageBody().find(atDescendant(".class", "Html.BODY"), false)[0].getProperty(".text").toString();
-		regexp = "(?i).*\\b"+regexp.replace(" ", "\\b[^a-zA-Z0-9]*\\b")+"\\b.*";
 		if(contentOfBody.matches(regexp) ){
 			matchesBody = true;
 		}
