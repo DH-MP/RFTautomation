@@ -67,7 +67,8 @@ public class TS_975_SuperUserExportOnePDFPerItem extends TS_975_SuperUserExportO
 		//AdminLogin
 		adminLogin.selectUserType(dpString("userType"));
 		adminLogin.selectCase(dpString("caseName"));
-		sleep(10);
+		sleep(5);
+		waitForloading();
 		
 		Export_SuperUser esu = new Export_SuperUser();
 		esu.setExportName(dpString("exportName"));
@@ -79,7 +80,6 @@ public class TS_975_SuperUserExportOnePDFPerItem extends TS_975_SuperUserExportO
 		esu.setAdditionalOptions(dpString("additionalOptions"));
 		esu.setIsLargeExport(dpBoolean("largeExport"));
 		esu.create();
-		
 		
 		//Setup
 		for(String file : files){

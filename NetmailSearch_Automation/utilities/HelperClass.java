@@ -29,13 +29,20 @@ import com.rational.test.ft.value.*;
 import com.rational.test.ft.vp.*;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 
-public class HelperClass extends RationalTestScript {
+public class HelperClass extends MySuperHelper {
 	
 	public static void oneBrowserSetup(){
+		
+		String browserCode = new HelperScript().browserVersion;
+		String browserName = "Internet Explorer";
+		if(browserCode.contains("FF")){
+			browserName = "Mozilla Firefox";
+		}
+		
 		TestObject[] browsers = find(atDescendant(".class", "Html.HtmlBrowser"));
 		if(browsers.length>1){
 			CloseAllBrowsers();
-			startBrowser("Internet Explorer","http://www.google.com");
+			startBrowser(browserName,"http://www.google.com");
 			logInfo("Open IE");
 			sleep(2);
 			
@@ -46,7 +53,7 @@ public class HelperClass extends RationalTestScript {
 			logInfo("Maximize browser");
 			
 		}else if(browsers.length==0){
-			startBrowser("Internet Explorer","http://www.google.com");
+			startBrowser(browserName,"http://www.google.com");
 			sleep(2);
 			
 			TestObject browser = findBrowser();

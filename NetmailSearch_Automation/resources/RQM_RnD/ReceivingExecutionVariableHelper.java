@@ -20,15 +20,82 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>ReceivingExecutionVariable</b><br>
- * Generated     : <b>2014/06/10 6:10:57 PM</b><br>
+ * Generated     : <b>2015/02/23 11:41:47 AM</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows Server 2008 R2 x86 6.1 <br>
  * 
- * @since  June 10, 2014
+ * @since  February 23, 2015
  * @author Administrator
  */
 public abstract class ReceivingExecutionVariableHelper extends utilities.MySuperHelper
 {
+	/**
+	 * HtmlDialogButtonOpenWith: with default state.
+	 *		.text : Open with
+	 * 		.class : Html.DialogButton
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject button_htmlDialogButtonOpenWit() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("button_htmlDialogButtonOpenWit"));
+	}
+	/**
+	 * HtmlDialogButtonOpenWith: with specific test context and state.
+	 *		.text : Open with
+	 * 		.class : Html.DialogButton
+	 * 		.classIndex : 0
+	 */
+	protected GuiTestObject button_htmlDialogButtonOpenWit(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("button_htmlDialogButtonOpenWit"), anchor, flags);
+	}
+	
+	/**
+	 * HtmlDialogButtonSaveFile: with default state.
+	 *		.text : Save File
+	 * 		.class : Html.DialogButton
+	 * 		.classIndex : 2
+	 */
+	protected GuiTestObject button_htmlDialogButtonSaveFil() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("button_htmlDialogButtonSaveFil"));
+	}
+	/**
+	 * HtmlDialogButtonSaveFile: with specific test context and state.
+	 *		.text : Save File
+	 * 		.class : Html.DialogButton
+	 * 		.classIndex : 2
+	 */
+	protected GuiTestObject button_htmlDialogButtonSaveFil(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("button_htmlDialogButtonSaveFil"), anchor, flags);
+	}
+	
+	/**
+	 * HtmlDialog: with default state.
+	 *		.class : Html.Dialog
+	 * 		.caption : Opening exportPST_Custom.zip
+	 */
+	protected TopLevelTestObject html_htmlDialog() 
+	{
+		return new TopLevelTestObject(
+                        getMappedTestObject("html_htmlDialog"));
+	}
+	/**
+	 * HtmlDialog: with specific test context and state.
+	 *		.class : Html.Dialog
+	 * 		.caption : Opening exportPST_Custom.zip
+	 */
+	protected TopLevelTestObject html_htmlDialog(TestObject anchor, long flags) 
+	{
+		return new TopLevelTestObject(
+                        getMappedTestObject("html_htmlDialog"), anchor, flags);
+	}
+	
 	
 
 	protected ReceivingExecutionVariableHelper()

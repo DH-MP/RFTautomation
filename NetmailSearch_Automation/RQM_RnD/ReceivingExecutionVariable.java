@@ -1,5 +1,7 @@
 package RQM_RnD;
 import resources.RQM_RnD.ReceivingExecutionVariableHelper;
+import utilities.HelperClass;
+
 import com.rational.test.ft.*;
 import com.rational.test.ft.object.interfaces.*;
 import com.rational.test.ft.object.interfaces.SAP.*;
@@ -29,10 +31,13 @@ public class ReceivingExecutionVariable extends ReceivingExecutionVariableHelper
 	 */
 	public void testMain(Object[] args) 
 	{
-		IVariablesManager vm =getVariablesManager();
-		IParameter A = vm.getInputParameter("A");
+		TestObject[] x = html_htmlDialog().find(atDescendant(".text", "OK"), true);
+		System.out.println(x.length);
 		
-		vpManual("ReceivingExecutionVariable", "blood", A.getValue()).performTest();
+	}
+	
+	public void openSesame(){
+		logInfo("versionbbbbb"+version);
 	}
 }
 

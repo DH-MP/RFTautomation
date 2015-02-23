@@ -30,45 +30,31 @@ import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
  */
 public abstract class MySuperHelper extends RationalTestScript
 {
-	public  String IP = "10.1.30.64";
-	public  String webAdminIP = "";
-	public  String webAdminUUI = "";
-	public  String URL = "";
-	public  String adminUserName = "administrator";	
-	public  String adminPassword = "Pa$$w0rd";
-	public 	String webAdminUserName = "netmail";
-	public  String webAdminPassword = "M3ss4g1ng";
-	public 	String remoteWorkSpace = "\\\\10.10.23.61\\Data\\NetmailSearch_v5.3.1";
-	public  String version = "n/a";
+	public static String browserVersion = "FF17"; //IE_9, IE_11, Chrome_32, FF_17
+	public static String IP = "10.1.30.64";
+	public static String webAdminIP = "";
+	public static String webAdminUUI = "";
+	public static String URL = "";
+	public static String adminUserName = "administrator";	
+	public static String adminPassword = "123Password"; //"Pa$$w0rd";
+	public static String webAdminUserName = "netmail";
+	public static String webAdminPassword = "M3ss4g1ng";
+	public static String remoteWorkSpace = "\\\\10.10.23.61\\Data\\NetmailSearch_v5.3.1";
+	public static String version = "n/a";
 	private IVariablesManager IVM;
 	private TestObject[] browsers = find(atDescendant(".class", "Html.HtmlBrowser"));
 	
 	
 	public MySuperHelper(){	
-
-		
-		//RQM variable override default values IP, adminusername, adminpassword
-		IVariablesManager vm = getVariablesManager();
-		IParameter rqmIP = vm.getInputParameter("ip");
-		IParameter rqmVersion = vm.getInputParameter("version");
-		
-		IP = rqmIP == null ? IP : rqmIP.getValue();
-		version = rqmVersion == null ? version : rqmVersion.getValue();
-		URL = "http://"+IP+":8888";
-		webAdminIP = "http://"+IP+":89";
-		webAdminUUI = "http://"+IP+":8989";
-		
-		IParameter rqmUserName = vm.getInputParameter("adminUserName");
-		IParameter rqmPassword = vm.getInputParameter("adminPassword");
-		
-		if(rqmUserName != null | rqmPassword !=null){
-			logInfo("Overriding default credential with RQM execution variables");
-			logInfo("RQMCRED:"+ rqmUserName.getValue()+"/"+rqmPassword.getValue());
-			this.adminUserName = rqmUserName.getValue();
-			this.adminPassword = rqmPassword.getValue();
-		}
 	}
 	
+//	@Override
+//	public IVariablesManager getVariablesManager(){
+//		if(IVM == null){
+//			IVM = getScriptCaller() == null ? super.getVariablesManager() : getScriptCaller().getVariablesManager();
+//		}
+//		return IVM;
+//	}
 	
 	
 
@@ -96,6 +82,33 @@ public abstract class MySuperHelper extends RationalTestScript
 		return;
 	}
 	
+	@Override
+	public void onInitialize(){
+		//RQM variable override default values IP, adminusername, adminpassword
+		IVariablesManager IVM = getVariablesManager();
+		IParameter rqmIP = IVM.getInputParameter("ip");
+		IParameter rqmVersion = IVM.getInputParameter("version");
+		IParameter bVersion = IVM.getInputParameter("browserVersion");
+		
+		IP = rqmIP == null ? IP : rqmIP.getValue();
+		version = rqmVersion == null ? version : rqmVersion.getValue();
+		browserVersion = bVersion == null ? browserVersion : bVersion.getValue();
+		URL = "http://"+IP+":8888";
+		webAdminIP = "http://"+IP+":89";
+		webAdminUUI = "http://"+IP+":8989";
+		
+		IParameter rqmUserName = IVM.getInputParameter("adminUserName");
+		IParameter rqmPassword = IVM.getInputParameter("adminPassword");
+		
+		if(rqmUserName != null | rqmPassword !=null){
+			logInfo("Overriding default credential with RQM execution variables");
+			logInfo("RQMCRED:"+ rqmUserName.getValue()+"/"+rqmPassword.getValue());
+			this.adminUserName = rqmUserName.getValue();
+			this.adminPassword = rqmPassword.getValue();
+		}
+	}
+	
+	@Override
 	public void onTerminate(){
 		//logInfo("Called on terminate");
 		unregisterAll();
@@ -112,15 +125,6 @@ public abstract class MySuperHelper extends RationalTestScript
 		return testObject.find(atChild(properties), savable);
 	}
 	
-	@Override
-	public  IVariablesManager getVariablesManager(){
-		if(IVM == null){
-			IVM = getScriptCaller() == null ? super.getVariablesManager() : getScriptCaller().getVariablesManager();
-		}
-		return IVM;
-	}
-	
-	
 	protected void useParentDataPool() {
 		//http://stackoverflow.com/questions/3323083/rational-functional-tester-how-can-i-get-scripts-called-from-a-parent-script-t
         if(this.getScriptCaller() != null) {
@@ -131,7 +135,7 @@ public abstract class MySuperHelper extends RationalTestScript
             }                           
         }
     }
-	
+
 	
 	
 }

@@ -29,8 +29,12 @@ public class PassingExecutionVariable extends PassingExecutionVariableHelper
 	 */
 	public void testMain(Object[] args) 
 	{
-		IVariablesManager vm =getVariablesManager();
-		IVariable passing = vm.createOutputVariable("A", "blood");
+		System.out.println();
+		IVariablesManager vm = getVariablesManager();
+		IParameter rqmVersion = vm.getInputParameter("qqqversion");
+		logInfo(String.valueOf(rqmVersion == null));
+		logInfo("versionaaaaa"+version);
+		new ReceivingExecutionVariable().openSesame();
 	}
 }
 

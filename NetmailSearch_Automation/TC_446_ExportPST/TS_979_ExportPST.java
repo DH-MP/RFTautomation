@@ -94,7 +94,7 @@ public class TS_979_ExportPST extends TS_979_ExportPSTHelper
 		for(String file : files){
 			file = file.trim();
 
-			downloadFile(file);
+			esu.downloadExportFile(file);
 			if(files.length>1){
 				//RFT BUG when downloading: No object can be found after notification bar appears;
 				HelperClass.CloseAllBrowsers();
@@ -228,60 +228,5 @@ public class TS_979_ExportPST extends TS_979_ExportPSTHelper
 		waitForloading();
 	}
 	
-	
-	
-	
-	private void downloadFile(String file){
-		file = file.trim();
-		Property[] rowProperty = {	new Property(".tag", "TABLE"),
-				new Property(".text", new RegularExpression("(?i).*"+file+".*", false)),
-				new Property("class", "x-grid3-row-table"),
-		};
-		
-		TestObject[] exportFiles = html_exportFilesList().find(atDescendant(rowProperty), true);
-		if(exportFiles.length >= 1){
-			
-			//Double Click file
-			((GuiTestObject)exportFiles[0]).click();
-			((GuiTestObject)exportFiles[0]).doubleClick();
-			logInfo("Selected < "+ file +" > file to download");
-			sleep(5);
-			
-			//IE Notification Control
-			TestObject downloadObject = HelperClass.ieNotificationElement("Notification bar Text");
-			int counter = 0;
-			while(downloadObject==null){
-				((GuiTestObject)exportFiles[0]).doubleClick();
-				sleep(5);
-				downloadObject = HelperClass.ieNotificationElement("Notification bar Text");
-				if(counter++>10){
-					logError("Could not find IE notification bar to save file");
-					break;
-				}
-			}
-			
-			String downloadFileText = downloadObject.getProperty(".text").toString();
-			String expectedDownloadMessage = "Do you want to open or save "+file+" from .*";
-			logInfo("Verifying if < "+downloadFileText+" > mathces < "+expectedDownloadMessage+" >" );
-			logTestResult("Correct_download_Message", downloadFileText.matches(expectedDownloadMessage) );
-			HelperClass.ieNotificationElement("Save").click();
-			logInfo("Clicked Save file on browser");
-			sleep(2);
-			
-			
-			//Wait for download to finish
-			downloadFileText = HelperClass.ieNotificationElement("Notification bar Text").getProperty(".text").toString();
-			while(!downloadFileText.matches(".*download has completed\\..*")){
-				downloadFileText = HelperClass.ieNotificationElement("Notification bar Text").getProperty(".text").toString();
-				sleep(8);
-			}
-			HelperClass.ieNotificationElement("Close").click();
-			sleep(1);
-			logInfo("Clicked close button for finished download notification");
-			
-		}else{
-			logError("Could not find export file by the name < "+ file +" >");
-		}
-	}
 }
 

@@ -93,7 +93,7 @@ public class NetmailLogin extends NetmailLoginHelper
 			sleep(6);
 		}catch(Exception  e){
 			utilities.HelperClass.CloseAllBrowsers();
-			startApp("http://www.google.com");
+			utilities.HelperClass.oneBrowserSetup();
 			browser_htmlBrowser().waitForExistence(120, DISABLED);
 			browser_htmlBrowser().deleteCookies();
 			sleep(5);
@@ -110,12 +110,12 @@ public class NetmailLogin extends NetmailLoginHelper
 		button_languagebutton().click();
 		TestObject[] languages = html_languageUL().find(atDescendant(".class", "Html.LI"));
 		try{
-		vpManual("NumOfLanguageOption", 5, languages.length).performTest();
-		vpManual("FirstLanguageOption", "English", languages[0].getProperty(".text")).performTest();
-		vpManual("SecondLanguageOption", "Français", languages[1].getProperty(".text")).performTest();
-		vpManual("ThirdLanguageOption", "Français (Canadien)", languages[2].getProperty(".text")).performTest();
-		vpManual("FourthLanguageOption", "Deutsch", languages[3].getProperty(".text")).performTest();
-		vpManual("FourthLanguageOption", "Magyar", languages[4].getProperty(".text")).performTest();
+			vpManual("NumOfLanguageOption", 5, languages.length).performTest();
+			vpManual("FirstLanguageOption", "English", languages[0].getProperty(".text")).performTest();
+			vpManual("SecondLanguageOption", "Français", languages[1].getProperty(".text")).performTest();
+			vpManual("ThirdLanguageOption", "Français (Canadien)", languages[2].getProperty(".text")).performTest();
+			vpManual("FourthLanguageOption", "Deutsch", languages[3].getProperty(".text")).performTest();
+			vpManual("FourthLanguageOption", "Magyar", languages[4].getProperty(".text")).performTest();
 		}catch(Exception e){
 			logError("failed language verification");
 			logInfo(e.getMessage());

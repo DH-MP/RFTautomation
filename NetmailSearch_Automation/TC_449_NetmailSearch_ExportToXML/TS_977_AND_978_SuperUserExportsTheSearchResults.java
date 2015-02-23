@@ -87,47 +87,8 @@ public class TS_977_AND_978_SuperUserExportsTheSearchResults extends TS_977_AND_
 		
 		//Download Export
 		String file = dpString("fileToDownload").trim();
-		Property[] rowProperty = {	new Property(".tag", "TABLE"),
-							new Property(".text", new RegularExpression("(?i).*"+file+".*", false)),
-							new Property("class", "x-grid3-row-table"),
-		};
-		TestObject[] exportFiles = html_exportFilesList().find(atDescendant(rowProperty), true);
-		if(exportFiles.length == 1){
-			((GuiTestObject)exportFiles[0]).doubleClick();
-			logInfo("Selected < "+ file +" > file to download");
-			sleep(10);
-		}else{
-			logError("Could not find export file by the name < "+ file +">");
-		}
-		
-		//IE Notification Control
-		TestObject downloadObject = HelperClass.ieNotificationElement("Notification bar Text");
-		int counter = 0;
-		while(downloadObject==null){
-			sleep(2);//wait a bit
-			downloadObject = HelperClass.ieNotificationElement("Notification bar Text");
-			if(counter++>10){
-				logError("Could not find notification bar");
-				break;
-			}
-		}
-		
-		String downloadFileText = downloadObject.getProperty(".text").toString();
-		String expectedDownloadMessage = "Do you want to open or save "+file+" from .*";
+		esu.downloadExportFile(file);
 
-		logInfo("Verifying if < "+downloadFileText+" > mathces < "+expectedDownloadMessage+" >" );
-		logTestResult("Correct_download_Message", downloadFileText.matches(expectedDownloadMessage) );
-		HelperClass.ieNotificationElement("Save").click();
-		logInfo("Clicked Save file on browser");
-		sleep(2);
-		
-		
-		//Wait for download to finish
-		waitForDownloadCompletion();
-
-		HelperClass.ieNotificationElement("Close").click();
-		logInfo("Clicked close button for finished download notification");
-		
 		//Extract ISO
 		Thread  t= new Thread(){
 			public void run(){

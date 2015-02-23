@@ -1,5 +1,6 @@
 package NetmailSearch_PrintAndExport;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 
@@ -146,7 +147,7 @@ public class Export_SuperUser extends Export_SuperUserHelper
 			
 			//HACK: 5.3.1 changed the default option
 			for(TestObject option : guiOptions){
-				if(!Boolean.parseBoolean(option.getProperty("CHECKED").toString())){
+				if(!Boolean.parseBoolean(option.getProperty(".checked").toString())){
 					((GuiTestObject)option).click();
 				}
 			}
@@ -239,6 +240,7 @@ public class Export_SuperUser extends Export_SuperUserHelper
 			//Super user export case button
 			button_exportCasebutton().click();
 		}catch(ObjectNotFoundException e){
+			//For netmail lite
 			java.awt.Rectangle bounds = (java.awt.Rectangle) table_netmailLite_exportButton().getProperty(".bounds");
 			table_netmailLite_exportButton().click(atPoint(bounds.width-3,bounds.height/2));
 		}
@@ -387,6 +389,52 @@ public class Export_SuperUser extends Export_SuperUserHelper
 	}
 	
 	public void downloadExportFile(String fileName){
+		if(browserVersion.contentEquals("IE9")){
+			downloadExportFile_IE9(fileName);
+		}
+		else if(browserVersion.contains("FF")){
+			downloadExportFile_FF(fileName);
+		}
+	}
+	private void downloadExportFile_FF(String fileName){
+		//Download Export
+		Property[] rowProperty = {	new Property(".tag", "TABLE"),
+							new Property(".text", new RegularExpression("(?i).*"+fileName+".*", false)),
+							new Property("class", "x-grid3-row-table"),
+		};
+		TestObject[] exportFiles = html_exportFilesList().find(atDescendant(rowProperty), true);
+		if(exportFiles.length == 1){
+			((GuiTestObject)exportFiles[0]).click();
+			((GuiTestObject)exportFiles[0]).doubleClick();
+			logInfo("Selected < "+ fileName +" > file to download");
+			sleep(10);
+		}else{
+			logError("Could not find export file by the name < "+ fileName +">");
+		}
+		
+		try{
+			button_downloadSaveFileRadio().click();
+			html_htmlDialog_FF17().inputKeys("{ENTER}");
+			sleep(10);//wait a bit
+		}catch(ObjectNotFoundException e){
+			((GuiTestObject)exportFiles[0]).click();
+			((GuiTestObject)exportFiles[0]).doubleClick();
+			button_downloadSaveFileRadio().click();
+			browser_htmlBrowser().inputKeys("{ENTER}");
+			sleep(10);//wait a bit
+		}
+		
+		//Wait for download to finish
+		File partFile = new File("C:\\Users\\Administrator\\Downloads\\"+fileName+".part");
+		while(partFile.exists()){
+			System.out.println("found");
+			sleep(10);
+		}
+		
+		
+	}
+	
+	private void downloadExportFile_IE9(String fileName){
 		//Download Export
 		Property[] rowProperty = {	new Property(".tag", "TABLE"),
 							new Property(".text", new RegularExpression("(?i).*"+fileName+".*", false)),
@@ -437,6 +485,10 @@ public class Export_SuperUser extends Export_SuperUserHelper
 		HelperClass.ieNotificationElement("Close").click();
 		logInfo("Clicked close button for finished download notification");	
 	}
+	
+	
+	
+	
 	
 	public void openWhenTopExportComplete(String expectedStatus){
 		TestObject[] exports = html_exportList().find(atDescendant(".tag", "TABLE", "class", "x-grid3-row-table"), true);

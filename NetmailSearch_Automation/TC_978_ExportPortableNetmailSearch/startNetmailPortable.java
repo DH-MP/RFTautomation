@@ -88,62 +88,12 @@ public class startNetmailPortable extends startNetmailPortableHelper
 		
 		//Download Export
 		String file = this.file.trim();
-		Property[] rowProperty = {	new Property(".tag", "TABLE"),
-							new Property(".text", new RegularExpression("(?i).*"+file+".*", false)),
-							new Property("class", "x-grid3-row-table"),
-		};
-		TestObject[] exportFiles = html_exportFilesList().find(atDescendant(rowProperty), true);
-		if(exportFiles.length == 1){
-			((GuiTestObject)exportFiles[0]).doubleClick();
-			logInfo("Selected < "+ file +" > file to download");
-			sleep(10);
-		}else{
-			logError("Could not find export file by the name < "+ file +">");
-		}
+		esu.downloadExportFile(file);
 		
-		//IE Notification Control
-		TestObject downloadObject = HelperClass.ieNotificationElement("Notification bar Text");
-		int counter = 0;
-		while(downloadObject==null){
-			sleep(2);//wait a bit
-			downloadObject = HelperClass.ieNotificationElement("Notification bar Text");
-			if(counter == 5){
-				((GuiTestObject)exportFiles[0]).doubleClick();
-			}
-			if(counter++>10){
-				logError("Could not find notification bar");
-				break;
-			}
-		}
-		
-		String downloadFileText = downloadObject.getProperty(".text").toString();
-		String expectedDownloadMessage = "Do you want to open or save "+file+" from .*";
-	
-		logInfo("Verifying if < "+downloadFileText+" > mathces < "+expectedDownloadMessage+" >" );
-		logTestResult("Correct_download_Message", downloadFileText.matches(expectedDownloadMessage) );
-		HelperClass.ieNotificationElement("Save").click();
-		logInfo("Clicked Save file on browser");
-		sleep(2);
-		
-		
-		//Wait for download to finish
-		try{
-			downloadFileText = HelperClass.ieNotificationElement("Notification bar Text").getProperty(".text").toString();
-			while(!downloadFileText.matches(".*download has completed\\..*")){
-				downloadFileText = HelperClass.ieNotificationElement("Notification bar Text").getProperty(".text").toString();
-				sleep(10);
-			}
-		}catch(NullPointerException e){
-			//due to rare chances of not finding object, just wait very long for download to finish
-			sleep(300);
-		}
-		HelperClass.ieNotificationElement("Close").click();
-		logInfo("Clicked close button for finished download notification");
 		
 		//extractISO
 		extractISO( this.file, "", extractLocation, fileLocation, workspace, winrarPath);
-
-		
+	
 		//Delete Export
 		HelperClass.CloseAllBrowsers();
 		sleep(3);

@@ -20,11 +20,11 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>Export_SuperUser</b><br>
- * Generated     : <b>2014/08/05 11:27:57 AM</b><br>
+ * Generated     : <b>2015/02/23 11:58:49 AM</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows Server 2008 R2 x86 6.1 <br>
  * 
- * @since  August 05, 2014
+ * @since  February 23, 2015
  * @author Administrator
  */
 public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
@@ -32,8 +32,8 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	/**
 	 * htmlBrowser: with default state.
 	 *		.class : Html.HtmlBrowser
-	 * 		.browserName : MS Internet Explorer
-	 * 		.processName : iexplore.exe
+	 * 		.browserName : RegularExpression(MS Internet Explorer|Firefox.*)
+	 * 		.processName : RegularExpression(iexplore\.exe|firefox\.exe)
 	 */
 	protected BrowserTestObject browser_htmlBrowser() 
 	{
@@ -43,8 +43,8 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	/**
 	 * htmlBrowser: with specific test context and state.
 	 *		.class : Html.HtmlBrowser
-	 * 		.browserName : MS Internet Explorer
-	 * 		.processName : iexplore.exe
+	 * 		.browserName : RegularExpression(MS Internet Explorer|Firefox.*)
+	 * 		.processName : RegularExpression(iexplore\.exe|firefox\.exe)
 	 */
 	protected BrowserTestObject browser_htmlBrowser(TestObject anchor, long flags) 
 	{
@@ -102,6 +102,29 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	{
 		return new GuiTestObject(
                         getMappedTestObject("button_deleteExportedFilesbutt"), anchor, flags);
+	}
+	
+	/**
+	 * downloadSaveFileRadio: with default state.
+	 *		.text : Save File
+	 * 		.class : Html.DialogButton
+	 * 		.classIndex : 2
+	 */
+	protected GuiTestObject button_downloadSaveFileRadio() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("button_downloadSaveFileRadio"));
+	}
+	/**
+	 * downloadSaveFileRadio: with specific test context and state.
+	 *		.text : Save File
+	 * 		.class : Html.DialogButton
+	 * 		.classIndex : 2
+	 */
+	protected GuiTestObject button_downloadSaveFileRadio(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("button_downloadSaveFileRadio"), anchor, flags);
 	}
 	
 	/**
@@ -255,11 +278,9 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	
 	/**
 	 * NextButton: with default state.
-	 *		.text : Next »
-	 * 		type : button
-	 * 		.title : 
+	 *		type : button
 	 * 		.class : Html.BUTTON
-	 * 		.name : 
+	 * 		.contentText : Next »
 	 * 		class :  x-btn-text
 	 * 		.classIndex : 0
 	 */
@@ -270,11 +291,9 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	}
 	/**
 	 * NextButton: with specific test context and state.
-	 *		.text : Next »
-	 * 		type : button
-	 * 		.title : 
+	 *		type : button
 	 * 		.class : Html.BUTTON
-	 * 		.name : 
+	 * 		.contentText : Next »
 	 * 		class :  x-btn-text
 	 * 		.classIndex : 0
 	 */
@@ -574,6 +593,27 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	}
 	
 	/**
+	 * HtmlDialog_FF17: with default state.
+	 *		.class : Html.Dialog
+	 * 		.caption : Opening exportPST_Custom.zip
+	 */
+	protected TopLevelTestObject html_htmlDialog_FF17() 
+	{
+		return new TopLevelTestObject(
+                        getMappedTestObject("html_htmlDialog_FF17"));
+	}
+	/**
+	 * HtmlDialog_FF17: with specific test context and state.
+	 *		.class : Html.Dialog
+	 * 		.caption : Opening exportPST_Custom.zip
+	 */
+	protected TopLevelTestObject html_htmlDialog_FF17(TestObject anchor, long flags) 
+	{
+		return new TopLevelTestObject(
+                        getMappedTestObject("html_htmlDialog_FF17"), anchor, flags);
+	}
+	
+	/**
 	 * reminderMessage: with default state.
 	 *		.text : When exporting to Portable Netmail Search with Audit Files selected, Comments an ...
 	 * 		.className : ext-mb-text
@@ -674,12 +714,8 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	/**
 	 * newExport: with default state.
 	 *		.text : New Export
-	 * 		.href : http://10.10.24.80:8888/index.html#
-	 * 		.title : 
 	 * 		.class : Html.A
-	 * 		.name : 
 	 * 		class : x-menu-item
-	 * 		.classIndex : 0
 	 */
 	protected GuiTestObject link_newExport() 
 	{
@@ -689,12 +725,8 @@ public abstract class Export_SuperUserHelper extends utilities.MySuperHelper
 	/**
 	 * newExport: with specific test context and state.
 	 *		.text : New Export
-	 * 		.href : http://10.10.24.80:8888/index.html#
-	 * 		.title : 
 	 * 		.class : Html.A
-	 * 		.name : 
 	 * 		class : x-menu-item
-	 * 		.classIndex : 0
 	 */
 	protected GuiTestObject link_newExport(TestObject anchor, long flags) 
 	{

@@ -104,6 +104,7 @@ public class adminLogin extends adminLoginHelper
 			((GuiTestObject)searchCase[0]).click();
 			button_openCasebutton().click();
 		}
+		sleep(5);
 		waitForloading();
 		waitForloading();
 	}

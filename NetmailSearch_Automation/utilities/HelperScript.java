@@ -33,8 +33,6 @@ public class HelperScript extends HelperScriptHelper
 	 * @author Administrator
 	 */
 	
-
-	
 	Object[] parameters;
 	public void testMain(Object[] args) 
 	{

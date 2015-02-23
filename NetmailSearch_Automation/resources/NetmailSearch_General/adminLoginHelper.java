@@ -20,11 +20,11 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>adminLogin</b><br>
- * Generated     : <b>2014/11/27 5:38:26 PM</b><br>
+ * Generated     : <b>2015/02/22 1:29:04 PM</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows Server 2008 R2 x86 6.1 <br>
  * 
- * @since  November 27, 2014
+ * @since  February 22, 2015
  * @author Administrator
  */
 public abstract class adminLoginHelper extends utilities.MySuperHelper
@@ -131,9 +131,12 @@ public abstract class adminLoginHelper extends utilities.MySuperHelper
 	
 	/**
 	 * requireReviewCaseTXT: with default state.
-	 *		.text : We have detected that some cases are currently in a state that requires your rev ...
+	 *		.offsetTop : NR:Range[5 .. 10]
+	 * 		.text : Some cases require review and have been highlighted in the case list. Click on a ...
 	 * 		.className : ext-mb-text
+	 * 		.title : 
 	 * 		.class : Html.SPAN
+	 * 		.contentText : Some cases require review and have been highlighted in the case list.    Click o ...
 	 */
 	protected GuiTestObject html_requireReviewCaseTXT() 
 	{
@@ -142,9 +145,12 @@ public abstract class adminLoginHelper extends utilities.MySuperHelper
 	}
 	/**
 	 * requireReviewCaseTXT: with specific test context and state.
-	 *		.text : We have detected that some cases are currently in a state that requires your rev ...
+	 *		.offsetTop : NR:Range[5 .. 10]
+	 * 		.text : Some cases require review and have been highlighted in the case list. Click on a ...
 	 * 		.className : ext-mb-text
+	 * 		.title : 
 	 * 		.class : Html.SPAN
+	 * 		.contentText : Some cases require review and have been highlighted in the case list.    Click o ...
 	 */
 	protected GuiTestObject html_requireReviewCaseTXT(TestObject anchor, long flags) 
 	{
@@ -180,7 +186,7 @@ public abstract class adminLoginHelper extends utilities.MySuperHelper
 	/**
 	 * extComp1036: with default state.
 	 *		.class : Html.DIV
-	 * 		.classIndex : 17
+	 * 		.classIndex : NR:Range[15 .. 20]
 	 */
 	protected GuiTestObject html_roleSelectionWindow2() 
 	{
@@ -190,7 +196,7 @@ public abstract class adminLoginHelper extends utilities.MySuperHelper
 	/**
 	 * extComp1036: with specific test context and state.
 	 *		.class : Html.DIV
-	 * 		.classIndex : 17
+	 * 		.classIndex : NR:Range[15 .. 20]
 	 */
 	protected GuiTestObject html_roleSelectionWindow2(TestObject anchor, long flags) 
 	{

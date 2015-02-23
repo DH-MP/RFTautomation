@@ -325,6 +325,7 @@ public class manageCase extends manageCaseHelper
 		mc.setTestMode(false);
 		mc.setStatus("Closed");
 		mc.delete(caseName);
+		sleep(5);
 	}
 	private manageCase delete(String caseName){
 		if(html_requireReviewCaseTXT().exists()){

@@ -20,11 +20,11 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>PassingExecutionVariable</b><br>
- * Generated     : <b>2014/06/10 1:23:08 PM</b><br>
+ * Generated     : <b>2015/02/23 1:44:45 PM</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows Server 2008 R2 x86 6.1 <br>
  * 
- * @since  June 10, 2014
+ * @since  February 23, 2015
  * @author Administrator
  */
 public abstract class PassingExecutionVariableHelper extends utilities.MySuperHelper

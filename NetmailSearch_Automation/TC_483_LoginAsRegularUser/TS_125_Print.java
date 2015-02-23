@@ -131,7 +131,7 @@ public class TS_125_Print extends TS_125_PrintHelper
 			TestObject[] printOptions = html_exportWindow2().find(atDescendant(".class", "Html.INPUT.checkbox"),true);
 			//HACK: 5.3.1 changed the default option
 			for(TestObject option : printOptions){
-				if(!Boolean.parseBoolean(option.getProperty("CHECKED").toString())){
+				if(!Boolean.parseBoolean(option.getProperty(".checked").toString())){
 					((GuiTestObject)option).click();
 				}
 			}
