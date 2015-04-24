@@ -51,7 +51,7 @@ public class WebAdmin extends WebAdminHelper
 	 * Description: load IE to webadmin
 	 * Example: 
 	 */
-	public void loadWebadminUUI(){
+	public void loadWebadminUUI(String ip){
 		try{
 			utilities.HelperClass.oneBrowserSetup();
 			browser_htmlBrowser().waitForExistence(120, DISABLED);
@@ -68,12 +68,16 @@ public class WebAdmin extends WebAdminHelper
 			logInfo("lost track of Browser:"+e.toString());
 		}
 		sleep(5);
+		
 
 		sleep(4);
 		if(link_overridelink().exists()){
 			link_overridelink().click();
 		}
 		text_username().waitForExistence(200, 5);
+	}
+	public void loadWebadminUUI(){
+		loadWebadminUUI(ip);
 	}
 	
 	/**
