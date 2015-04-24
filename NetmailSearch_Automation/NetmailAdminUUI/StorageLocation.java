@@ -162,22 +162,22 @@ public class StorageLocation extends StorageLocationHelper
 		text_password().click();
 		browser_htmlBrowser(document_objectDetails(),DEFAULT_FLAGS).inputChars(password);
 		
-		
+		//5.4.0 No More Super User
 		//Adding Super User
-		button_addSuperUser().click();
-		logInfo("Click Storage Tab in new storage window");
-		button_listUsersbutton().click();
-		logInfo("Click list user in users window");
-		sleep(6);
-		
-		list_userListA().click(atText(superUser));
-		logInfo("Selected < "+superUser+" > in user window");
-		
-		button_listUserAdd().click();
-		logInfo("Click add in users window");
-		
-		button_oKbutton().click();
-		logInfo("Click ok in users window");
+//		button_addSuperUser().click();
+//		logInfo("Click Storage Tab in new storage window");
+//		button_listUsersbutton().click();
+//		logInfo("Click list user in users window");
+//		sleep(6);
+//		
+//		list_userListA().click(atText(superUser));
+//		logInfo("Selected < "+superUser+" > in user window");
+//		
+//		button_listUserAdd().click();
+//		logInfo("Click add in users window");
+//		
+//		button_oKbutton().click();
+//		logInfo("Click ok in users window");
 		
 		button_savebutton().click();
 		logInfo("Click save user in new storage window");

@@ -176,7 +176,7 @@ public class TS_992_AddTagsAndComments_NetmailLite extends TS_992_AddTagsAndComm
 		
 		//Msg1 VP
 		resultsColumn = results[0].find(atDescendant(".class", "Html.TD", "class", new RegularExpression(".*x-grid3-td-12.*", false)), false);
-		vpManual("Msg1TaggedRemoved", "", resultsColumn[0].getProperty(".contentText").toString().trim()).performTest();
+		vpManual("Msg1TaggedRemoved", "", resultsColumn[0].getProperty(".contentText").toString().replaceAll("[^\\p{Alpha}]+","")).performTest();
 		
 	//Remove Privilege
 		for(int i =0; i<5; i++){
@@ -190,7 +190,7 @@ public class TS_992_AddTagsAndComments_NetmailLite extends TS_992_AddTagsAndComm
 		results = body().find(atDescendant(".class", "Html.TABLE", "class", "x-grid3-row-table"), true);	
 		//Msg2 VP
 		resultsColumn = results[1].find(atDescendant(".class", "Html.TD", "class", new RegularExpression(".*x-grid3-td-12.*", false)), false);
-		vpManual("Msg2TaggedRemoved", "", resultsColumn[0].getProperty(".contentText").toString().trim()).performTest();
+		vpManual("Msg2TaggedRemoved", "", resultsColumn[0].getProperty(".contentText").toString().replaceAll("[^\\p{Alpha}]+","")).performTest();
 				
 	//Remove Flagged
 		for(int i =0; i<5; i++){
@@ -204,7 +204,7 @@ public class TS_992_AddTagsAndComments_NetmailLite extends TS_992_AddTagsAndComm
 		results = body().find(atDescendant(".class", "Html.TABLE", "class", "x-grid3-row-table"), true);
 		//Msg3 VP
 		resultsColumn = results[2].find(atDescendant(".class", "Html.TD", "class", new RegularExpression(".*x-grid3-td-12.*", false)), false);
-		vpManual("Msg3TaggedRemoved", "", resultsColumn[0].getProperty(".contentText").toString().trim()).performTest();
+		vpManual("Msg3TaggedRemoved", "", resultsColumn[0].getProperty(".contentText").toString().replaceAll("[^\\p{Alpha}]+","")).performTest();
 		
 	// Remove Work Product
 		for(int i =0; i<5; i++){
@@ -218,7 +218,7 @@ public class TS_992_AddTagsAndComments_NetmailLite extends TS_992_AddTagsAndComm
 		results = body().find(atDescendant(".class", "Html.TABLE", "class", "x-grid3-row-table"), true);
 		//Msg4VP
 		resultsColumn = results[3].find(atDescendant(".class", "Html.TD", "class", new RegularExpression(".*x-grid3-td-12.*", false)), false);
-		vpManual("Msg3TaggedRemoved", "", resultsColumn[0].getProperty(".contentText").toString().trim()).performTest();
+		vpManual("Msg3TaggedRemoved", "", resultsColumn[0].getProperty(".contentText").toString().replaceAll("[^\\p{Alpha}]+","")).performTest();
 		
 		
 	//Remove Comment

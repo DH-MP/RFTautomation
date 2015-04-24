@@ -20,11 +20,11 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>adminLogin</b><br>
- * Generated     : <b>2015/02/22 1:29:04 PM</b><br>
+ * Generated     : <b>2015/04/08 5:48:32 PM</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows Server 2008 R2 x86 6.1 <br>
  * 
- * @since  February 22, 2015
+ * @since  April 08, 2015
  * @author Administrator
  */
 public abstract class adminLoginHelper extends utilities.MySuperHelper
@@ -32,8 +32,6 @@ public abstract class adminLoginHelper extends utilities.MySuperHelper
 	/**
 	 * htmlBrowser: with default state.
 	 *		.class : Html.HtmlBrowser
-	 * 		.browserName : MS Internet Explorer
-	 * 		.processName : iexplore.exe
 	 */
 	protected BrowserTestObject browser_htmlBrowser() 
 	{
@@ -43,13 +41,38 @@ public abstract class adminLoginHelper extends utilities.MySuperHelper
 	/**
 	 * htmlBrowser: with specific test context and state.
 	 *		.class : Html.HtmlBrowser
-	 * 		.browserName : MS Internet Explorer
-	 * 		.processName : iexplore.exe
 	 */
 	protected BrowserTestObject browser_htmlBrowser(TestObject anchor, long flags) 
 	{
 		return new BrowserTestObject(
                         getMappedTestObject("browser_htmlBrowser"), anchor, flags);
+	}
+	
+	/**
+	 * CaseOpen: with default state.
+	 *		.text : Open Case
+	 * 		type : button
+	 * 		.class : Html.BUTTON
+	 * 		.contentText : Open Case
+	 * 		class :  x-btn-text load-tb-icon
+	 */
+	protected GuiTestObject button_caseOpen() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("button_caseOpen"));
+	}
+	/**
+	 * CaseOpen: with specific test context and state.
+	 *		.text : Open Case
+	 * 		type : button
+	 * 		.class : Html.BUTTON
+	 * 		.contentText : Open Case
+	 * 		class :  x-btn-text load-tb-icon
+	 */
+	protected GuiTestObject button_caseOpen(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("button_caseOpen"), anchor, flags);
 	}
 	
 	/**
@@ -79,33 +102,6 @@ public abstract class adminLoginHelper extends utilities.MySuperHelper
 	{
 		return new GuiTestObject(
                         getMappedTestObject("button_continuebutton"), anchor, flags);
-	}
-	
-	/**
-	 * OpenCasebutton: with default state.
-	 *		.text : Open Case
-	 * 		type : button
-	 * 		.class : Html.BUTTON
-	 * 		.contentText : Open Case
-	 * 		class :  x-btn-text load-tb-icon
-	 */
-	protected GuiTestObject button_openCasebutton() 
-	{
-		return new GuiTestObject(
-                        getMappedTestObject("button_openCasebutton"));
-	}
-	/**
-	 * OpenCasebutton: with specific test context and state.
-	 *		.text : Open Case
-	 * 		type : button
-	 * 		.class : Html.BUTTON
-	 * 		.contentText : Open Case
-	 * 		class :  x-btn-text load-tb-icon
-	 */
-	protected GuiTestObject button_openCasebutton(TestObject anchor, long flags) 
-	{
-		return new GuiTestObject(
-                        getMappedTestObject("button_openCasebutton"), anchor, flags);
 	}
 	
 	/**
@@ -186,7 +182,7 @@ public abstract class adminLoginHelper extends utilities.MySuperHelper
 	/**
 	 * extComp1036: with default state.
 	 *		.class : Html.DIV
-	 * 		.classIndex : NR:Range[15 .. 20]
+	 * 		.classIndex : NR:Range[15 .. 25]
 	 */
 	protected GuiTestObject html_roleSelectionWindow2() 
 	{
@@ -196,7 +192,7 @@ public abstract class adminLoginHelper extends utilities.MySuperHelper
 	/**
 	 * extComp1036: with specific test context and state.
 	 *		.class : Html.DIV
-	 * 		.classIndex : NR:Range[15 .. 20]
+	 * 		.classIndex : NR:Range[15 .. 25]
 	 */
 	protected GuiTestObject html_roleSelectionWindow2(TestObject anchor, long flags) 
 	{

@@ -59,7 +59,7 @@ public class TS_981_NormalUser extends TS_981_NormalUserHelper
 
 		ps[0] = new Property(".class", "Html.A");
 		ps[1] = new Property("class", "x-tree-node-anchor");
-		ps[2] = new Property(".text", "Amy");
+		ps[2] = new Property(".text", "Amy S");
 		GuiTestObject AmySLink = (GuiTestObject) alsLink.getParent().getParent().find(atDescendant(ps), true)[0];
 		expander = (GuiTestObject) AmySLink.getParent().getChildren()[1];
 		expander.click();
@@ -71,79 +71,82 @@ public class TS_981_NormalUser extends TS_981_NormalUserHelper
 		GuiTestObject mailboxLink = (GuiTestObject) AmySLink.getParent().getParent().find(atDescendant(ps), true)[0];
 		mailboxLink.click();
 		
-		
-		//Current Message
-		TestObject visibleResultContainer = HelperClass.getActiveTabBody()[0].find(atDescendant(".class", "Html.DIV", "class", new RegularExpression(".*x-panel x-panel-noborder x-grid-panel",false)))[0];
-		TestObject[] messages = visibleResultContainer.find(atDescendant(".class", "Html.TABLE", "class", "x-grid3-row-table"), true);
-		String[] messageText = new String[messages.length];
-		for(int i = 0; i<messages.length; i++){
-			messageText[i] = messages[i].getProperty(".contentText").toString();
-		}
-		
-		//Advance Search
-		HashMap<String, String> query = new HashMap<String, String> ();
-		query.put("subject", dpString("subject")); 
-		query.put("sender", dpString("sender")); 
-		query.put("recipient", dpString("recipient"));
-		query.put("body", dpString("body"));
-		query.put("sendDate1", dpString("sendDate1")); 
-		query.put("sendDate2",dpString("sendDate2"));
-		query.put("rcvDate1", dpString("rcvDate1"));
-		query.put("rcvDate2", dpString("rcvDate2"));  
-		query.put("personal",dpString("personal")); 
-		query.put("category",dpString("category"));
-		
-		HashMap<String, Boolean> booleanQuery = new HashMap<String, Boolean> ();
-		booleanQuery.put("typeMail", dpBoolean("checkTypeMail")); 
-		booleanQuery.put("typeAppointment", dpBoolean("checkTypeAppointment"));
-		booleanQuery.put("typeTask", dpBoolean("checkTypeTask"));			
-		booleanQuery.put("typeNote", dpBoolean("checkTypeNote"));
-		booleanQuery.put("searchEmbedded",dpBoolean("checkSearchEmbedded"));
-		booleanQuery.put("invalidRcvDateRange", dpBoolean("invalidRcvDateRange"));
-		booleanQuery.put("invalidSentDateRange", dpBoolean("invalidSendDateRange"));
-		booleanQuery.put("expectedResults", dpBoolean("expectedResults"));
-		Object[] asmnu = {query, booleanQuery};
-		callScript("NetmailSearch_AdvanceSearch.Message_NormalUser", asmnu);
-		
-		clearSearch();
-		
-		//Attachement Search
-		if(!(dpString("filename").isEmpty() && dpString("fileSize1").isEmpty() && dpString("fileSize2").isEmpty())){
-			Object[] asanu = {dpString("filename"), dpString("fileSize1"), dpString("fileSize2")};
-			callScript("NetmailSearch_AdvanceSearch.Attachment_NormalUser", asanu);
-		}
-
-		
-		//Validate clear search
-		clearSearch();
-		logInfo("clear search clicked under advance search dropdown");
-		visibleResultContainer = HelperClass.getActiveTabBody()[0].find(atDescendant(".class", "Html.DIV", "class", new RegularExpression(".*x-panel x-panel-noborder x-grid-panel",false)))[0];
-		TestObject[] messages2 = visibleResultContainer.find(atDescendant(".class", "Html.TABLE", "class", "x-grid3-row-table"), true);
-		String[] messageText2 = new String[messages.length];
-		for(int i = 0; i<messages2.length; i++){
-			messageText2[i] = messages2[i].getProperty(".contentText").toString();
-		}
-		boolean clearSearch = true;
-		if(messageText2.length == messageText.length){
-			for(int i = 0; i<messageText2.length; i++){
-				if(!messageText2[i].contentEquals(messageText[i])){
-					clearSearch = false;
-					logError("Message number "+i, getRootTestObject().getScreenSnapshot());
+		try{
+			//Current Message
+			TestObject visibleResultContainer = HelperClass.getActiveTabBody()[0].find(atDescendant(".class", "Html.DIV", "class", new RegularExpression(".*x-panel x-panel-noborder x-grid-panel",false)))[0];
+			TestObject[] messages = visibleResultContainer.find(atDescendant(".class", "Html.TABLE", "class", "x-grid3-row-table"), true);
+			String[] messageText = new String[messages.length];
+			for(int i = 0; i<messages.length; i++){
+				messageText[i] = messages[i].getProperty(".contentText").toString();
+			}
+			
+			//Advance Search
+			HashMap<String, String> query = new HashMap<String, String> ();
+			query.put("subject", dpString("subject")); 
+			query.put("sender", dpString("sender")); 
+			query.put("recipient", dpString("recipient"));
+			query.put("body", dpString("body"));
+			query.put("sendDate1", dpString("sendDate1")); 
+			query.put("sendDate2",dpString("sendDate2"));
+			query.put("rcvDate1", dpString("rcvDate1"));
+			query.put("rcvDate2", dpString("rcvDate2"));  
+			query.put("personal",dpString("personal")); 
+			query.put("category",dpString("category"));
+			
+			HashMap<String, Boolean> booleanQuery = new HashMap<String, Boolean> ();
+			booleanQuery.put("typeMail", dpBoolean("checkTypeMail")); 
+			booleanQuery.put("typeAppointment", dpBoolean("checkTypeAppointment"));
+			booleanQuery.put("typeTask", dpBoolean("checkTypeTask"));			
+			booleanQuery.put("typeNote", dpBoolean("checkTypeNote"));
+			booleanQuery.put("searchEmbedded",dpBoolean("checkSearchEmbedded"));
+			booleanQuery.put("invalidRcvDateRange", dpBoolean("invalidRcvDateRange"));
+			booleanQuery.put("invalidSentDateRange", dpBoolean("invalidSendDateRange"));
+			booleanQuery.put("expectedResults", dpBoolean("expectedResults"));
+			Object[] asmnu = {query, booleanQuery};
+			callScript("NetmailSearch_AdvanceSearch.Message_NormalUser", asmnu);
+			
+			clearSearch();
+			
+			//Attachement Search
+			if(!(dpString("filename").isEmpty() && dpString("fileSize1").isEmpty() && dpString("fileSize2").isEmpty())){
+				Object[] asanu = {dpString("filename"), dpString("fileSize1"), dpString("fileSize2")};
+				callScript("NetmailSearch_AdvanceSearch.Attachment_NormalUser", asanu);
+			}
+	
+			
+			//Validate clear search
+			clearSearch();
+			logInfo("clear search clicked under advance search dropdown");
+			visibleResultContainer = HelperClass.getActiveTabBody()[0].find(atDescendant(".class", "Html.DIV", "class", new RegularExpression(".*x-panel x-panel-noborder x-grid-panel",false)))[0];
+			TestObject[] messages2 = visibleResultContainer.find(atDescendant(".class", "Html.TABLE", "class", "x-grid3-row-table"), true);
+			String[] messageText2 = new String[messages.length];
+			for(int i = 0; i<messages2.length; i++){
+				messageText2[i] = messages2[i].getProperty(".contentText").toString();
+			}
+			boolean clearSearch = true;
+			if(messageText2.length == messageText.length){
+				for(int i = 0; i<messageText2.length; i++){
+					if(!messageText2[i].contentEquals(messageText[i])){
+						clearSearch = false;
+						logError("Message number "+i, getRootTestObject().getScreenSnapshot());
+					}
 				}
 			}
+			logTestResult("Advance Clear Search working", clearSearch);
+			
+			if(performForwardingMessage){
+				//Forward Message Tests
+	//			TestMessageWithNoAttachment();
+				//TODO: BROKEN missing messages NOT GROUPWISE
+	//			NetmailLogin.login(dpString("userName"), dpString("password"), dpBoolean("failToLogin"));
+	//			TestMessageWithAttachment();
+	//			NetmailLogin.login(dpString("userName"), dpString("password"), dpBoolean("failToLogin"));		
+	//			TestMessageWithNestedMessage();
+			}
+			
+		}catch(Exception e){
+			logError(e.getMessage());
 		}
-		logTestResult("Advance Clear Search working", clearSearch);
-		
-		if(performForwardingMessage){
-			//Forward Message Tests
-//			TestMessageWithNoAttachment();
-			//TODO: BROKEN missing messages NOT GROUPWISE
-//			NetmailLogin.login(dpString("userName"), dpString("password"), dpBoolean("failToLogin"));
-//			TestMessageWithAttachment();
-//			NetmailLogin.login(dpString("userName"), dpString("password"), dpBoolean("failToLogin"));		
-//			TestMessageWithNestedMessage();
-		}
-		
 		unregisterAll();
 	}
 	

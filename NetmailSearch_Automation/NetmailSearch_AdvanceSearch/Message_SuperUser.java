@@ -484,6 +484,15 @@ public class Message_SuperUser extends Message_SuperUserHelper
 							sleep(2);
 							waitForloading();
 							
+							try{
+								text_mbSubject().getProperty(".value").toString();
+							}catch(ObjectNotFoundException e){
+								((GuiTestObject)result).hover();
+								((GuiTestObject)result).doubleClick();
+								sleep(2);
+								waitForloading();
+							}
+							
 							//Subject VF
 							if(!subject.isEmpty()){
 								String resultString = text_mbSubject().getProperty(".value").toString();

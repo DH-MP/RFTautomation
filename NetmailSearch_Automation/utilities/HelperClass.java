@@ -68,6 +68,14 @@ public class HelperClass extends MySuperHelper {
 		TestObject[] browsers = find(atDescendant(".class", "Html.HtmlBrowser"));
 		for(TestObject browser : browsers){
 			((BrowserTestObject) browser).close();
+			sleep(5);
+		}
+		TestObject[] dialogs = find(atDescendant(".class", "Html.Dialog"));
+		if(dialogs.length>0){
+			for(TestObject dialog: dialogs){
+				TestObject button = dialog.find(atDescendant(".class", "Html.DialogButton", ".text", "OK"))[0];
+				((GuiTestObject)button).click();
+			}
 		}
 	}
 	

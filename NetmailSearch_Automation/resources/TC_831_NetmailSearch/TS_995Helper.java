@@ -20,11 +20,11 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>TS_995</b><br>
- * Generated     : <b>2014/10/26 5:32:52 PM</b><br>
+ * Generated     : <b>2015/04/08 5:48:32 PM</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows Server 2008 R2 x86 6.1 <br>
  * 
- * @since  October 26, 2014
+ * @since  April 08, 2015
  * @author Administrator
  */
 public abstract class TS_995Helper extends utilities.MySuperHelper
@@ -32,8 +32,6 @@ public abstract class TS_995Helper extends utilities.MySuperHelper
 	/**
 	 * htmlBrowser: with default state.
 	 *		.class : Html.HtmlBrowser
-	 * 		.browserName : MS Internet Explorer
-	 * 		.processName : iexplore.exe
 	 */
 	protected BrowserTestObject browser_htmlBrowser() 
 	{
@@ -43,8 +41,6 @@ public abstract class TS_995Helper extends utilities.MySuperHelper
 	/**
 	 * htmlBrowser: with specific test context and state.
 	 *		.class : Html.HtmlBrowser
-	 * 		.browserName : MS Internet Explorer
-	 * 		.processName : iexplore.exe
 	 */
 	protected BrowserTestObject browser_htmlBrowser(TestObject anchor, long flags) 
 	{
@@ -59,8 +55,8 @@ public abstract class TS_995Helper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		class :  x-btn-text
 	 * 		.classIndex : 0
+	 * 		class :  x-btn-text
 	 */
 	protected GuiTestObject button_adminbutton() 
 	{
@@ -74,8 +70,8 @@ public abstract class TS_995Helper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		class :  x-btn-text
 	 * 		.classIndex : 0
+	 * 		class :  x-btn-text
 	 */
 	protected GuiTestObject button_adminbutton(TestObject anchor, long flags) 
 	{
@@ -90,8 +86,8 @@ public abstract class TS_995Helper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		class :  x-btn-text search-tb-icon
 	 * 		.classIndex : 0
+	 * 		class :  x-btn-text search-tb-icon
 	 */
 	protected GuiTestObject button_button() 
 	{
@@ -105,8 +101,8 @@ public abstract class TS_995Helper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		class :  x-btn-text search-tb-icon
 	 * 		.classIndex : 0
+	 * 		class :  x-btn-text search-tb-icon
 	 */
 	protected GuiTestObject button_button(TestObject anchor, long flags) 
 	{
@@ -121,8 +117,8 @@ public abstract class TS_995Helper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		.classIndex : 0
 	 * 		class :  x-btn-text
+	 * 		.classIndex : 0
 	 */
 	protected GuiTestObject button_cancelbutton2() 
 	{
@@ -136,8 +132,8 @@ public abstract class TS_995Helper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		.classIndex : 0
 	 * 		class :  x-btn-text
+	 * 		.classIndex : 0
 	 */
 	protected GuiTestObject button_cancelbutton2(TestObject anchor, long flags) 
 	{
@@ -179,8 +175,8 @@ public abstract class TS_995Helper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		.classIndex : 0
 	 * 		class :  x-btn-text edit-tb-icon
+	 * 		.classIndex : 0
 	 */
 	protected GuiTestObject button_caseManagementbutton() 
 	{
@@ -194,13 +190,40 @@ public abstract class TS_995Helper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		.classIndex : 0
 	 * 		class :  x-btn-text edit-tb-icon
+	 * 		.classIndex : 0
 	 */
 	protected GuiTestObject button_caseManagementbutton(TestObject anchor, long flags) 
 	{
 		return new GuiTestObject(
                         getMappedTestObject("button_caseManagementbutton"), anchor, flags);
+	}
+	
+	/**
+	 * CaseOpen: with default state.
+	 *		.text : Open Case
+	 * 		type : button
+	 * 		.class : Html.BUTTON
+	 * 		.contentText : Open Case
+	 * 		class :  x-btn-text load-tb-icon
+	 */
+	protected GuiTestObject button_caseOpen() 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("button_caseOpen"));
+	}
+	/**
+	 * CaseOpen: with specific test context and state.
+	 *		.text : Open Case
+	 * 		type : button
+	 * 		.class : Html.BUTTON
+	 * 		.contentText : Open Case
+	 * 		class :  x-btn-text load-tb-icon
+	 */
+	protected GuiTestObject button_caseOpen(TestObject anchor, long flags) 
+	{
+		return new GuiTestObject(
+                        getMappedTestObject("button_caseOpen"), anchor, flags);
 	}
 	
 	/**
@@ -239,8 +262,8 @@ public abstract class TS_995Helper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		.classIndex : 0
 	 * 		class :  x-btn-text edit-tb-icon
+	 * 		.classIndex : 0
 	 */
 	protected GuiTestObject button_editCasebutton() 
 	{
@@ -254,8 +277,8 @@ public abstract class TS_995Helper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		.classIndex : 0
 	 * 		class :  x-btn-text edit-tb-icon
+	 * 		.classIndex : 0
 	 */
 	protected GuiTestObject button_editCasebutton(TestObject anchor, long flags) 
 	{
@@ -270,8 +293,8 @@ public abstract class TS_995Helper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		.classIndex : 0
 	 * 		class :  x-btn-text
+	 * 		.classIndex : 0
 	 */
 	protected GuiTestObject button_languagebutton() 
 	{
@@ -285,8 +308,8 @@ public abstract class TS_995Helper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		.classIndex : 0
 	 * 		class :  x-btn-text
+	 * 		.classIndex : 0
 	 */
 	protected GuiTestObject button_languagebutton(TestObject anchor, long flags) 
 	{
@@ -301,8 +324,8 @@ public abstract class TS_995Helper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		.classIndex : 0
 	 * 		class :  x-btn-text
+	 * 		.classIndex : 0
 	 */
 	protected GuiTestObject button_loginbutton() 
 	{
@@ -316,8 +339,8 @@ public abstract class TS_995Helper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		.classIndex : 0
 	 * 		class :  x-btn-text
+	 * 		.classIndex : 0
 	 */
 	protected GuiTestObject button_loginbutton(TestObject anchor, long flags) 
 	{
@@ -361,8 +384,8 @@ public abstract class TS_995Helper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		class :  x-btn-text new-tb-icon
 	 * 		.classIndex : 0
+	 * 		class :  x-btn-text new-tb-icon
 	 */
 	protected GuiTestObject button_newCasebutton() 
 	{
@@ -376,40 +399,13 @@ public abstract class TS_995Helper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		class :  x-btn-text new-tb-icon
 	 * 		.classIndex : 0
+	 * 		class :  x-btn-text new-tb-icon
 	 */
 	protected GuiTestObject button_newCasebutton(TestObject anchor, long flags) 
 	{
 		return new GuiTestObject(
                         getMappedTestObject("button_newCasebutton"), anchor, flags);
-	}
-	
-	/**
-	 * OpenCasebutton: with default state.
-	 *		.text : Open Case
-	 * 		type : button
-	 * 		.class : Html.BUTTON
-	 * 		.contentText : Open Case
-	 * 		class :  x-btn-text load-tb-icon
-	 */
-	protected GuiTestObject button_openCasebutton() 
-	{
-		return new GuiTestObject(
-                        getMappedTestObject("button_openCasebutton"));
-	}
-	/**
-	 * OpenCasebutton: with specific test context and state.
-	 *		.text : Open Case
-	 * 		type : button
-	 * 		.class : Html.BUTTON
-	 * 		.contentText : Open Case
-	 * 		class :  x-btn-text load-tb-icon
-	 */
-	protected GuiTestObject button_openCasebutton(TestObject anchor, long flags) 
-	{
-		return new GuiTestObject(
-                        getMappedTestObject("button_openCasebutton"), anchor, flags);
 	}
 	
 	/**
@@ -419,8 +415,8 @@ public abstract class TS_995Helper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		class : RegularExpression(.*x-btn-text x-tbar-page-first)
 	 * 		.classIndex : 0
+	 * 		class : RegularExpression(.*x-btn-text x-tbar-page-first)
 	 */
 	protected GuiTestObject button_paginationFirstPageButt() 
 	{
@@ -434,8 +430,8 @@ public abstract class TS_995Helper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		class : RegularExpression(.*x-btn-text x-tbar-page-first)
 	 * 		.classIndex : 0
+	 * 		class : RegularExpression(.*x-btn-text x-tbar-page-first)
 	 */
 	protected GuiTestObject button_paginationFirstPageButt(TestObject anchor, long flags) 
 	{
@@ -450,8 +446,8 @@ public abstract class TS_995Helper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		class : RegularExpression(.*x-btn-text x-tbar-page-next)
 	 * 		.classIndex : 0
+	 * 		class : RegularExpression(.*x-btn-text x-tbar-page-next)
 	 */
 	protected GuiTestObject button_paginationNextButton() 
 	{
@@ -465,8 +461,8 @@ public abstract class TS_995Helper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		class : RegularExpression(.*x-btn-text x-tbar-page-next)
 	 * 		.classIndex : 0
+	 * 		class : RegularExpression(.*x-btn-text x-tbar-page-next)
 	 */
 	protected GuiTestObject button_paginationNextButton(TestObject anchor, long flags) 
 	{
@@ -481,8 +477,8 @@ public abstract class TS_995Helper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		class :  x-btn-text
 	 * 		.classIndex : 0
+	 * 		class :  x-btn-text
 	 */
 	protected GuiTestObject button_preferencesbutton() 
 	{
@@ -496,8 +492,8 @@ public abstract class TS_995Helper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		class :  x-btn-text
 	 * 		.classIndex : 0
+	 * 		class :  x-btn-text
 	 */
 	protected GuiTestObject button_preferencesbutton(TestObject anchor, long flags) 
 	{
@@ -513,8 +509,8 @@ public abstract class TS_995Helper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		.classIndex : 0
 	 * 		class :  x-btn-text
+	 * 		.classIndex : 0
 	 */
 	protected GuiTestObject button_yesbutton() 
 	{
@@ -529,8 +525,8 @@ public abstract class TS_995Helper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.BUTTON
 	 * 		.name : 
-	 * 		.classIndex : 0
 	 * 		class :  x-btn-text
+	 * 		.classIndex : 0
 	 */
 	protected GuiTestObject button_yesbutton(TestObject anchor, long flags) 
 	{
@@ -855,7 +851,7 @@ public abstract class TS_995Helper extends utilities.MySuperHelper
 	/**
 	 * extComp1036: with default state.
 	 *		.class : Html.DIV
-	 * 		.classIndex : 17
+	 * 		.classIndex : NR:Range[15 .. 25]
 	 */
 	protected GuiTestObject html_roleSelectionWindow() 
 	{
@@ -865,7 +861,7 @@ public abstract class TS_995Helper extends utilities.MySuperHelper
 	/**
 	 * extComp1036: with specific test context and state.
 	 *		.class : Html.DIV
-	 * 		.classIndex : 17
+	 * 		.classIndex : NR:Range[15 .. 25]
 	 */
 	protected GuiTestObject html_roleSelectionWindow(TestObject anchor, long flags) 
 	{
@@ -956,8 +952,8 @@ public abstract class TS_995Helper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.A
 	 * 		.name : 
-	 * 		.classIndex : 0
 	 * 		class : x-menu-item x-menu-check-item
+	 * 		.classIndex : 0
 	 */
 	protected GuiTestObject link_highlight_extComp1510() 
 	{
@@ -970,8 +966,8 @@ public abstract class TS_995Helper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.A
 	 * 		.name : 
-	 * 		.classIndex : 0
 	 * 		class : x-menu-item x-menu-check-item
+	 * 		.classIndex : 0
 	 */
 	protected GuiTestObject link_highlight_extComp1510(TestObject anchor, long flags) 
 	{
@@ -985,8 +981,8 @@ public abstract class TS_995Helper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.A
 	 * 		.name : 
-	 * 		class : x-menu-item x-menu-check-item x-menu-group-item
 	 * 		.classIndex : 0
+	 * 		class : x-menu-item x-menu-check-item x-menu-group-item
 	 */
 	protected GuiTestObject link_page100() 
 	{
@@ -999,8 +995,8 @@ public abstract class TS_995Helper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.A
 	 * 		.name : 
-	 * 		class : x-menu-item x-menu-check-item x-menu-group-item
 	 * 		.classIndex : 0
+	 * 		class : x-menu-item x-menu-check-item x-menu-group-item
 	 */
 	protected GuiTestObject link_page100(TestObject anchor, long flags) 
 	{
@@ -1014,8 +1010,8 @@ public abstract class TS_995Helper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.A
 	 * 		.name : 
-	 * 		class : x-menu-item x-menu-check-item x-menu-group-item
 	 * 		.classIndex : 0
+	 * 		class : x-menu-item x-menu-check-item x-menu-group-item
 	 */
 	protected GuiTestObject link_page20() 
 	{
@@ -1028,8 +1024,8 @@ public abstract class TS_995Helper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.A
 	 * 		.name : 
-	 * 		class : x-menu-item x-menu-check-item x-menu-group-item
 	 * 		.classIndex : 0
+	 * 		class : x-menu-item x-menu-check-item x-menu-group-item
 	 */
 	protected GuiTestObject link_page20(TestObject anchor, long flags) 
 	{
@@ -1043,8 +1039,8 @@ public abstract class TS_995Helper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.A
 	 * 		.name : 
-	 * 		class : x-menu-item x-menu-check-item x-menu-group-item
 	 * 		.classIndex : 0
+	 * 		class : x-menu-item x-menu-check-item x-menu-group-item
 	 */
 	protected GuiTestObject link_page200() 
 	{
@@ -1057,8 +1053,8 @@ public abstract class TS_995Helper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.A
 	 * 		.name : 
-	 * 		class : x-menu-item x-menu-check-item x-menu-group-item
 	 * 		.classIndex : 0
+	 * 		class : x-menu-item x-menu-check-item x-menu-group-item
 	 */
 	protected GuiTestObject link_page200(TestObject anchor, long flags) 
 	{
@@ -1072,8 +1068,8 @@ public abstract class TS_995Helper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.A
 	 * 		.name : 
-	 * 		class : x-menu-item x-menu-check-item x-menu-group-item
 	 * 		.classIndex : 0
+	 * 		class : x-menu-item x-menu-check-item x-menu-group-item
 	 */
 	protected GuiTestObject link_page50() 
 	{
@@ -1086,8 +1082,8 @@ public abstract class TS_995Helper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.A
 	 * 		.name : 
-	 * 		class : x-menu-item x-menu-check-item x-menu-group-item
 	 * 		.classIndex : 0
+	 * 		class : x-menu-item x-menu-check-item x-menu-group-item
 	 */
 	protected GuiTestObject link_page50(TestObject anchor, long flags) 
 	{
@@ -1100,8 +1096,8 @@ public abstract class TS_995Helper extends utilities.MySuperHelper
 	 *		.text : Page Size
 	 * 		.title : 
 	 * 		.class : Html.A
-	 * 		class : x-menu-item x-menu-item-arrow
 	 * 		.classIndex : 0
+	 * 		class : x-menu-item x-menu-item-arrow
 	 */
 	protected GuiTestObject link_pageSize() 
 	{
@@ -1113,8 +1109,8 @@ public abstract class TS_995Helper extends utilities.MySuperHelper
 	 *		.text : Page Size
 	 * 		.title : 
 	 * 		.class : Html.A
-	 * 		class : x-menu-item x-menu-item-arrow
 	 * 		.classIndex : 0
+	 * 		class : x-menu-item x-menu-item-arrow
 	 */
 	protected GuiTestObject link_pageSize(TestObject anchor, long flags) 
 	{
@@ -1174,8 +1170,8 @@ public abstract class TS_995Helper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.TABLE
 	 * 		.caption : 
-	 * 		.classIndex : 4
 	 * 		class : x-btn  x-btn-noicon x-btn-over
+	 * 		.classIndex : 4
 	 */
 	protected StatelessGuiSubitemTestObject table_exportMenuBtn() 
 	{
@@ -1188,8 +1184,8 @@ public abstract class TS_995Helper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.TABLE
 	 * 		.caption : 
-	 * 		.classIndex : 4
 	 * 		class : x-btn  x-btn-noicon x-btn-over
+	 * 		.classIndex : 4
 	 */
 	protected StatelessGuiSubitemTestObject table_exportMenuBtn(TestObject anchor, long flags) 
 	{
@@ -1230,8 +1226,8 @@ public abstract class TS_995Helper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.TABLE
 	 * 		.caption : 
-	 * 		.classIndex : 6
 	 * 		class : x-grid3-row-table
+	 * 		.classIndex : 6
 	 */
 	protected StatelessGuiSubitemTestObject table_htmlTable_6() 
 	{
@@ -1244,8 +1240,8 @@ public abstract class TS_995Helper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.TABLE
 	 * 		.caption : 
-	 * 		.classIndex : 6
 	 * 		class : x-grid3-row-table
+	 * 		.classIndex : 6
 	 */
 	protected StatelessGuiSubitemTestObject table_htmlTable_6(TestObject anchor, long flags) 
 	{
@@ -1259,8 +1255,8 @@ public abstract class TS_995Helper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.TABLE
 	 * 		.caption : 
-	 * 		.classIndex : 1
 	 * 		class : x-btn tma-language-btn x-btn-noicon x-btn-over
+	 * 		.classIndex : 1
 	 */
 	protected StatelessGuiSubitemTestObject table_tmaLanguageBtn() 
 	{
@@ -1273,8 +1269,8 @@ public abstract class TS_995Helper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.TABLE
 	 * 		.caption : 
-	 * 		.classIndex : 1
 	 * 		class : x-btn tma-language-btn x-btn-noicon x-btn-over
+	 * 		.classIndex : 1
 	 */
 	protected StatelessGuiSubitemTestObject table_tmaLanguageBtn(TestObject anchor, long flags) 
 	{
@@ -1288,8 +1284,8 @@ public abstract class TS_995Helper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.TABLE
 	 * 		.caption : 
-	 * 		.classIndex : 0
 	 * 		class : x-btn headerLink x-btn-noicon x-box-item
+	 * 		.classIndex : 0
 	 */
 	protected StatelessGuiSubitemTestObject table_userDropDown2() 
 	{
@@ -1302,8 +1298,8 @@ public abstract class TS_995Helper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.TABLE
 	 * 		.caption : 
-	 * 		.classIndex : 0
 	 * 		class : x-btn headerLink x-btn-noicon x-box-item
+	 * 		.classIndex : 0
 	 */
 	protected StatelessGuiSubitemTestObject table_userDropDown2(TestObject anchor, long flags) 
 	{
@@ -1318,8 +1314,8 @@ public abstract class TS_995Helper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.INPUT.text
 	 * 		name : 
-	 * 		class : x-form-text x-form-field x-form-num-field x-tbar-page-number
 	 * 		.classIndex : 0
+	 * 		class : x-form-text x-form-field x-form-num-field x-tbar-page-number
 	 */
 	protected TextGuiTestObject text__3() 
 	{
@@ -1333,8 +1329,8 @@ public abstract class TS_995Helper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.INPUT.text
 	 * 		name : 
-	 * 		class : x-form-text x-form-field x-form-num-field x-tbar-page-number
 	 * 		.classIndex : 0
+	 * 		class : x-form-text x-form-field x-form-num-field x-tbar-page-number
 	 */
 	protected TextGuiTestObject text__3(TestObject anchor, long flags) 
 	{
@@ -1349,8 +1345,8 @@ public abstract class TS_995Helper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.INPUT.password
 	 * 		.name : pwd
-	 * 		.classIndex : 0
 	 * 		class : x-form-text x-form-field
+	 * 		.classIndex : 0
 	 */
 	protected TextGuiTestObject text_pwd() 
 	{
@@ -1364,8 +1360,8 @@ public abstract class TS_995Helper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.INPUT.password
 	 * 		.name : pwd
-	 * 		.classIndex : 0
 	 * 		class : x-form-text x-form-field
+	 * 		.classIndex : 0
 	 */
 	protected TextGuiTestObject text_pwd(TestObject anchor, long flags) 
 	{
@@ -1380,8 +1376,8 @@ public abstract class TS_995Helper extends utilities.MySuperHelper
 	 * 		.type : text
 	 * 		.title : 
 	 * 		.class : RegularExpression(Html\.INPUT\.text|Html\.INPUT)
-	 * 		.classIndex : 0
 	 * 		class : x-form-text x-form-field x-trigger-noedit
+	 * 		.classIndex : 0
 	 */
 	protected TextGuiTestObject text_quickCaseComboBox() 
 	{
@@ -1395,8 +1391,8 @@ public abstract class TS_995Helper extends utilities.MySuperHelper
 	 * 		.type : text
 	 * 		.title : 
 	 * 		.class : RegularExpression(Html\.INPUT\.text|Html\.INPUT)
-	 * 		.classIndex : 0
 	 * 		class : x-form-text x-form-field x-trigger-noedit
+	 * 		.classIndex : 0
 	 */
 	protected TextGuiTestObject text_quickCaseComboBox(TestObject anchor, long flags) 
 	{
@@ -1437,8 +1433,8 @@ public abstract class TS_995Helper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.INPUT.text
 	 * 		.name : uid
-	 * 		.classIndex : 0
 	 * 		class : x-form-text x-form-field
+	 * 		.classIndex : 0
 	 */
 	protected TextGuiTestObject text_uid() 
 	{
@@ -1453,8 +1449,8 @@ public abstract class TS_995Helper extends utilities.MySuperHelper
 	 * 		.title : 
 	 * 		.class : Html.INPUT.text
 	 * 		.name : uid
-	 * 		.classIndex : 0
 	 * 		class : x-form-text x-form-field
+	 * 		.classIndex : 0
 	 */
 	protected TextGuiTestObject text_uid(TestObject anchor, long flags) 
 	{

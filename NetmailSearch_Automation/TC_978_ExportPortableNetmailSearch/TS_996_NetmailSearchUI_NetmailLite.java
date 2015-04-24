@@ -139,6 +139,7 @@ public class TS_996_NetmailSearchUI_NetmailLite extends TS_996_NetmailSearchUI_N
 		results = visibleResultContainer.find(atDescendant(".class", "Html.TABLE", "class", "x-grid3-row-table"), true);
 		vpManual("Result_Displayed_20", true, results.length<=20).performTest();
 		unregisterAll();
+
 	}
 	
 	
@@ -149,6 +150,7 @@ public class TS_996_NetmailSearchUI_NetmailLite extends TS_996_NetmailSearchUI_N
 		link_userDD_Logout().click();
 		button_yesbutton().click();
 		yesbutton().click();
+		sleep(150);
 	}
 }
 

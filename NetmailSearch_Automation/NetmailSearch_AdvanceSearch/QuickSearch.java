@@ -54,9 +54,12 @@ public class QuickSearch extends QuickSearchHelper
 	
 	public void search(String searchTerm){
 		text_quickSearchField0().click();
+		logInfo("Clicked quick search Field");
 		browser_htmlBrowser().inputChars(searchTerm);
+		logInfo("Input Search Term: "+searchTerm);
 		browser_htmlBrowser().inputKeys("{ENTER}");
 	}
+	
 	public void validateQuickSearch(String searchTerm, Boolean expectedResults)
 	{
 		TestObject[] results = HelperClass.getActiveTabBody()[0].find(atDescendant(".class", "Html.TABLE", "class", "x-grid3-row-table"), true);

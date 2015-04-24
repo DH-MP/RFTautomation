@@ -96,13 +96,13 @@ public class adminLogin extends adminLoginHelper
 		
 		/******Click Case*******/
 		if( caseListName != null && !caseListName.isEmpty()){
-			String info = "As super user login, selecting the case: %s ";
+			String info = "SELECTING CASE: %s ";
 			logInfo(String.format(info, caseListName));
 			html_caseListDIV_extGen166().waitForExistence(1000, DISABLED);
 			sleep(0.5);
 			TestObject[] searchCase = html_caseListDIV_extGen166().find(atDescendant(".class", "Html.DIV", ".text", caseListName), false);
 			((GuiTestObject)searchCase[0]).click();
-			button_openCasebutton().click();
+			button_caseOpen().click();
 		}
 		sleep(5);
 		waitForloading();

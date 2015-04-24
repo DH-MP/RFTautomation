@@ -7,7 +7,7 @@
 // file will be lost when automatically updated.
 
 package resources.TC_831_NetmailSearch;
-
+import utilities.MySuperHelper;
 import com.rational.test.ft.object.interfaces.*;
 import com.rational.test.ft.object.interfaces.SAP.*;
 import com.rational.test.ft.object.interfaces.WPF.*;
@@ -20,14 +20,14 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>TS_1256</b><br>
- * Generated     : <b>2014/05/13 2:50:39 PM</b><br>
+ * Generated     : <b>2015/02/24 11:13:03 PM</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows Server 2008 R2 x86 6.1 <br>
  * 
- * @since  May 13, 2014
+ * @since  February 24, 2015
  * @author Administrator
  */
-public abstract class TS_1256Helper extends RationalTestScript
+public abstract class TS_1256Helper extends utilities.MySuperHelper
 {
 	/**
 	 * Preferencesbutton: with default state.

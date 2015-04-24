@@ -30,13 +30,13 @@ import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
  */
 public abstract class MySuperHelper extends RationalTestScript
 {
-	public static String browserVersion = "FF17"; //IE_9, IE_11, Chrome_32, FF_17
+	public static String browserVersion = "IE_9"; //IE_9, IE_11, Chrome_32, FF_17
 	public static String IP = "10.1.30.64";
 	public static String webAdminIP = "";
 	public static String webAdminUUI = "";
 	public static String URL = "";
 	public static String adminUserName = "administrator";	
-	public static String adminPassword = "123Password"; //"Pa$$w0rd";
+	public static String adminPassword = "Pa$$w0rd"; //"Pa$$w0rd";
 	public static String webAdminUserName = "netmail";
 	public static String webAdminPassword = "M3ss4g1ng";
 	public static String remoteWorkSpace = "\\\\10.10.23.61\\Data\\NetmailSearch_v5.3.1";
@@ -85,6 +85,7 @@ public abstract class MySuperHelper extends RationalTestScript
 	@Override
 	public void onInitialize(){
 		//RQM variable override default values IP, adminusername, adminpassword
+		logInfo("OnInitialize");
 		IVariablesManager IVM = getVariablesManager();
 		IParameter rqmIP = IVM.getInputParameter("ip");
 		IParameter rqmVersion = IVM.getInputParameter("version");
@@ -97,12 +98,19 @@ public abstract class MySuperHelper extends RationalTestScript
 		webAdminIP = "http://"+IP+":89";
 		webAdminUUI = "http://"+IP+":8989";
 		
+		logInfo("IP:"+IP);
+		logInfo("version:"+version);
+		logInfo("browserVersion:"+browserVersion);
+		logInfo("URL:"+URL);
+		logInfo("webAdminIP:"+webAdminIP);
+		logInfo("webAdminUUI:"+webAdminUUI);
+		
 		IParameter rqmUserName = IVM.getInputParameter("adminUserName");
 		IParameter rqmPassword = IVM.getInputParameter("adminPassword");
 		
 		if(rqmUserName != null | rqmPassword !=null){
-			logInfo("Overriding default credential with RQM execution variables");
-			logInfo("RQMCRED:"+ rqmUserName.getValue()+"/"+rqmPassword.getValue());
+			logInfo("Overriding default credential with RQM execution variables");		
+			logInfo("RQM_CRED: "+ rqmUserName.getValue()+"/"+rqmPassword.getValue());
 			this.adminUserName = rqmUserName.getValue();
 			this.adminPassword = rqmPassword.getValue();
 		}

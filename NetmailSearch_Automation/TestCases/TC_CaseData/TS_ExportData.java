@@ -58,7 +58,7 @@ public class TS_ExportData extends TS_ExportDataHelper
 		
 		TestObject export = esu.getExportObject(exportName);
 		TestObject[] columns = export.find(atDescendant(".tag", "TD"), false);
-		vpManual("correct_export_caseName", caseName, columns[1].getProperty(".text")).performTest();
+		vpManual("correctExport_CName", caseName, columns[1].getProperty(".text").toString().trim()).performTest();
 		esu.closeExportManagementWindow();
 		
 		mc.setName(caseName+"EDITED");
@@ -68,7 +68,7 @@ public class TS_ExportData extends TS_ExportDataHelper
 		sleep(5);
 		export = esu.getExportObject(exportName);
 		columns = export.find(atDescendant(".tag", "TD"), false);
-		vpManual("correct_export_caseName", caseName+"EDITED", columns[1].getProperty(".text")).performTest();
+		vpManual("correctExport_EditCName", caseName+"EDITED", columns[1].getProperty(".text").toString().trim()).performTest();
 		esu.closeExportManagementWindow();
 		
 		

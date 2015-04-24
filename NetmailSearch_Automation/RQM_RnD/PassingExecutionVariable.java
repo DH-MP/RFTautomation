@@ -1,5 +1,7 @@
 package RQM_RnD;
 import resources.RQM_RnD.PassingExecutionVariableHelper;
+import utilities.HelperClass;
+
 import com.rational.test.ft.*;
 import com.rational.test.ft.object.interfaces.*;
 import com.rational.test.ft.object.interfaces.SAP.*;
@@ -29,12 +31,8 @@ public class PassingExecutionVariable extends PassingExecutionVariableHelper
 	 */
 	public void testMain(Object[] args) 
 	{
-		System.out.println();
-		IVariablesManager vm = getVariablesManager();
-		IParameter rqmVersion = vm.getInputParameter("qqqversion");
-		logInfo(String.valueOf(rqmVersion == null));
-		logInfo("versionaaaaa"+version);
-		new ReceivingExecutionVariable().openSesame();
+		HelperClass.CloseAllBrowsers();
+		
 	}
 }
 

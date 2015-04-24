@@ -44,6 +44,7 @@ public class TS_977_AND_978_SuperUserExportsTheSearchResults extends TS_977_AND_
 				   winrarPath = "",
 				   fileLocation = "",
 				   extractLocation = "";
+	private Process netmailLite = null;
 	
 	public void testMain(Object[] args) 
 	{
@@ -121,7 +122,7 @@ public class TS_977_AND_978_SuperUserExportsTheSearchResults extends TS_977_AND_
 		try {
 			HelperClass.CloseAllBrowsers();
 			logInfo("Closer all browser");
-			Process netmailLite = Runtime.getRuntime().exec(extractLocation+"\\NetmailSearchLite.exe");
+			netmailLite = Runtime.getRuntime().exec(extractLocation+"\\NetmailSearchLite.exe");
 			logInfo("Launched netmail search lite");
 			browser_htmlBrowser().waitForExistence(240, DISABLED);
 			sleep(10);
@@ -366,6 +367,21 @@ public class TS_977_AND_978_SuperUserExportsTheSearchResults extends TS_977_AND_
 			waitForDownloadCompletion();
 			sleep(10);
 		}
+	}
+	
+	@Override
+	public void onTerminate(){
+		if(netmailLite != null){
+			netmailLite.destroy();
+		}
+	}
+	
+	@Override
+	public boolean onUnhandledException(java.lang.Throwable e){
+		if(netmailLite != null){
+			netmailLite.destroy();
+		}
+		return super.onUnhandledException(e);
 	}
 }
 

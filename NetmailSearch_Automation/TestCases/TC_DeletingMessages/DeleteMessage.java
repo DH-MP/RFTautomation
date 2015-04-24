@@ -139,6 +139,8 @@ public class DeleteMessage extends DeleteMessageHelper
 		adminLogin.superUser();
 		adminLogin.selectCase("GVautomation");
 		HelperClass.navigateLocation("GVautomation>ProxyAdminTest>Inbox");
+		sleep(5);
+		waitForloading();
 		
 		//Verify commited
 		int oldResult = results.length;

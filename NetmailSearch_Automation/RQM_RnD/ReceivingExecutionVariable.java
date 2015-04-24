@@ -31,8 +31,13 @@ public class ReceivingExecutionVariable extends ReceivingExecutionVariableHelper
 	 */
 	public void testMain(Object[] args) 
 	{
-		TestObject[] x = html_htmlDialog().find(atDescendant(".text", "OK"), true);
-		System.out.println(x.length);
+		
+		// Window: tm12.exe: Transend Migrator 12 - C:\ProgramData\Transend\default_v12.tmd
+		tDropDownEditButtonwindow().click(atPoint(8,8));
+		
+		// Window: tm12.exe: 
+		listlist().click(atName("Exchange Server 2013"), atPoint(145,13));
+		
 		
 	}
 	

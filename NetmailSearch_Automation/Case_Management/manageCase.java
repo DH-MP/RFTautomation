@@ -613,6 +613,8 @@ public class manageCase extends manageCaseHelper
 			for(String location : locationNames){
 				checkLocations(location);
 				waitForloading();
+				waitForloading();
+				waitForloading();
 			}
 		}
 		

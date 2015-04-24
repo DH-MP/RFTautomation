@@ -108,6 +108,7 @@ public class TS_1318_ProxiesAdmin extends TS_1318_ProxiesAdminHelper
 		String newName = renameUser(userDN, ldapHost, exAdminDN, exAdminPassword, null);
 		
 		//Run SYNCAB
+		unregisterAll();
 		wa.loadWebadminUUI();
 		wa.login();
 		sleep(10);

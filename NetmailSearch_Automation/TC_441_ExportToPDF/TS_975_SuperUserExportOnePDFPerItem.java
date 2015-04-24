@@ -48,6 +48,8 @@ public class TS_975_SuperUserExportOnePDFPerItem extends TS_975_SuperUserExportO
 					attachmentFileName= "";
 	
 	private String[] files;
+	
+	private Export_SuperUser esu = null;
 
 	public void testMain(Object[] args) 
 	{
@@ -70,7 +72,7 @@ public class TS_975_SuperUserExportOnePDFPerItem extends TS_975_SuperUserExportO
 		sleep(5);
 		waitForloading();
 		
-		Export_SuperUser esu = new Export_SuperUser();
+		esu = new Export_SuperUser();
 		esu.setExportName(dpString("exportName"));
 		esu.setSearchTabs(dpString("searchTabIndex"));
 		esu.setItemOptions(dpInt("itemOption"));
@@ -95,10 +97,10 @@ public class TS_975_SuperUserExportOnePDFPerItem extends TS_975_SuperUserExportO
 		//Download Export zip file(s)
 		for(String file : files){
 			file = file.trim();
-			downloadFile(file);
-			if(files.length>1){
-				
-				//RFT BUG when downloading: No object can be found after notification bar appears;
+			esu.downloadExportFile(file);
+			
+			//RFT BUG when downloading: No object can be found after notification bar appears;
+			if(files.length>1){	
 				HelperClass.CloseAllBrowsers();
 				
 				//Login
@@ -157,22 +159,22 @@ public class TS_975_SuperUserExportOnePDFPerItem extends TS_975_SuperUserExportO
 			sleep(5);
 			waitForloading();
 			
-			downloadFile(attachmentFileName);
+			esu.downloadExportFile(attachmentFileName);
 			
 			//Validate Attachment
 //			verifyAttachement(attachmentFileName);
 			
 		}
 		
-		//Delete Export
-		HelperClass.CloseAllBrowsers();
-		logInfo("Close all browsers"); //Bug bypass: There is a RFT bug when notification bar comes up no object can be found anymore.
-		//Login
-		NetmailLogin.login();
-		//AdminLogin
-		adminLogin.selectUserType(dpString("userType"));
-		adminLogin.selectCase(dpString("caseName"));
-		deleteExport();
+//		//Delete Export
+//		HelperClass.CloseAllBrowsers();
+//		logInfo("Close all browsers"); //Bug bypass: There is a RFT bug when notification bar comes up no object can be found anymore.
+//		//Login
+//		NetmailLogin.login();
+//		//AdminLogin
+//		adminLogin.selectUserType(dpString("userType"));
+//		adminLogin.selectCase(dpString("caseName"));
+//		deleteExport();
 		
 		//Delete Files
 //		for(String file : files){
@@ -232,65 +234,6 @@ public class TS_975_SuperUserExportOnePDFPerItem extends TS_975_SuperUserExportO
 			hs.extractZip(fileLocation+"\\"+file, extractLocation, workspace);
 		}
 		logInfo("ZIP Extraction Complete!");
-	}
-	
-	
-	
-	private void downloadFile(String file){
-		
-		file = file.trim();
-		html_exportFilesList().waitForExistence(120, DISABLED);
-		sleep(2);
-		
-		Property[] rowProperty = {	new Property(".tag", "TABLE"),
-				new Property(".text", new RegularExpression("(?i).*"+file+".*", false)),
-				new Property("class", "x-grid3-row-table"),
-		};
-		
-		TestObject[] exportFiles = html_exportFilesList().find(atDescendant(rowProperty), true);
-		if(exportFiles.length >= 1){
-			
-			//Double Click file
-			((GuiTestObject)exportFiles[0]).click();
-			((GuiTestObject)exportFiles[0]).doubleClick();
-			logInfo("Selected < "+ file +" > file to download");
-			sleep(10);
-			
-			//IE Notification Control
-			TestObject downloadObject = findNotificationBar("Notification bar Text");
-			if(downloadObject == null){
-				((GuiTestObject)exportFiles[0]).doubleClick();
-				downloadObject = findNotificationBar("Notification bar Text");
-			}
-			
-			String downloadFileText = downloadObject.getProperty(".text").toString();
-			String expectedDownloadMessage = "Do you want to open or save "+file+" from .*";
-			logInfo("Verifying if < "+downloadFileText+" > mathces < "+expectedDownloadMessage+" >" );
-			logTestResult("Correct_download_Message", downloadFileText.matches(expectedDownloadMessage) );
-			HelperClass.ieNotificationElement("Save").click();
-			logInfo("Clicked Save file on browser");
-			sleep(10);
-			
-			
-			//Wait for download to finish
-			TestObject downloadingBar = findNotificationBar("Notification bar Text");
-			downloadFileText = downloadingBar.getProperty(".text").toString();
-			while(!downloadFileText.matches(".*download has completed\\..*")){
-				downloadFileText = HelperClass.ieNotificationElement("Notification bar Text").getProperty(".text").toString();
-				sleep(8);
-			}
-			
-			//Close IE Notification
-			while(HelperClass.ieNotificationElement("Close") != null){
-				HelperClass.ieNotificationElement("Close").click();
-				sleep(1);
-			}
-			logInfo("Clicked close button for finished download notification");
-			
-		}else{
-			logError("Could not find export file by the name < "+ file +" >");
-			stop();
-		}
 	}
 	
 	

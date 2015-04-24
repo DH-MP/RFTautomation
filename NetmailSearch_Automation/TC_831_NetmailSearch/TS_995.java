@@ -37,7 +37,8 @@ public class TS_995 extends TS_995Helper
 	 */
 	public void testMain(Object[] args) 
 	{
-//Login
+		
+		//Login
 		HelperClass.CloseAllBrowsers();
 		sleep(2);
 		HelperClass.oneBrowserSetup();
@@ -52,59 +53,59 @@ public class TS_995 extends TS_995Helper
 		if(dpBoolean("failToLogin"))
 			return;
 
-//Admin Login
+		//Admin Login
 		adminLogin.selectUserType("Super User");
 		adminLogin.selectCase(dpString("caseListName"));
-
-//Check user dropdown
-		logInfo("Check User dropdown menu");
-		button_preferencesbutton().click();
-		link_userDropDown_Language().hover();
-		sleep(0.5);
-		//html_extGen95().performTest(IE_userDropDown_languageDropDownVP());
-		link_userDropDown_Theme().hover();
-		sleep(0.5);
-		//html_extGen95_2().performTest(userdropdown_THEMEVP());
 		
-//CaseManagementToolBar
-		logInfo("Check if edit case button works");
-		button_editCasebutton().click();
-		sleep(1);
-		button_newCase_Cancelbutton().click();
+		try{
+			//Check user dropdown
+			logInfo("Check User dropdown menu");
+			button_preferencesbutton().click();
+			link_userDropDown_Language().hover();
+			sleep(0.5);
+			//html_extGen95().performTest(IE_userDropDown_languageDropDownVP());
+			link_userDropDown_Theme().hover();
+			sleep(0.5);
+			//html_extGen95_2().performTest(userdropdown_THEMEVP());
+			
+			//CaseManagementToolBar
+			logInfo("Check if edit case button works");
+			button_editCasebutton().click();
+			sleep(1);
+			button_newCase_Cancelbutton().click();
+			
+			logInfo("Check if new case button works");		
+			button_newCasebutton().click();
+			sleep(1);
+			button_newCase_Cancelbutton().waitForExistence(1000, DISABLED);
+			button_newCase_Cancelbutton().click();
+			
+			logInfo("Check if casemanagement button works");
+			button_caseManagementbutton().click();
+			manageCase.clickOkButtonReviewCase();
+			button_caseList_Cancelbutton().click();
 		
-		logInfo("Check if new case button works");		
-		button_newCasebutton().click();
-		sleep(1);
-		button_newCase_Cancelbutton().waitForExistence(1000, DISABLED);
-		button_newCase_Cancelbutton().click();
-		
-		logInfo("Check if casemanagement button works");
-		button_caseManagementbutton().click();
-		manageCase.clickOkButtonReviewCase();
-		button_caseList_Cancelbutton().click();
+			logInfo("Select the case name <"+dpString("quickCaseListName")+"> under quick case list dropdown");
+			text_quickCaseComboBox().click();
+			html_quickCaseList2().hover();
+			sleep(5);
+			
+			RegularExpression regexp = new RegularExpression("x-combo-list-item( x-combo-selected)*", false);
+			TestObject[] quickCase = html_quickCaseList2().find(atDescendant(".className", regexp, ".contentText" , dpString("quickCaseListName")), false);
+			((GuiTestObject) quickCase[0]).hover();
+			browser_htmlBrowser().inputKeys("{ENTER}");
 	
-		logInfo("Select the case name <"+dpString("quickCaseListName")+"> under quick case list dropdown");
-		text_quickCaseComboBox().click();
-		html_quickCaseList2().hover();
-		sleep(5);
-		
-		RegularExpression regexp = new RegularExpression("x-combo-list-item( x-combo-selected)*", false);
-		TestObject[] quickCase = html_quickCaseList2().find(atDescendant(".className", regexp, ".contentText" , dpString("quickCaseListName")), false);
-		((GuiTestObject) quickCase[0]).hover();
-		quickCase = html_quickCaseList2().find(atDescendant(".className", regexp, ".contentText" , dpString("quickCaseListName")), false);
-		((GuiTestObject) quickCase[0]).click();
-		sleep(3);
-		waitForloading();
-
-		
-//Testing Highlight and quicksearch
-		testHighlightAndQuickSearch(dpString("quickSearchTerm"), dpInt("expectedNumberOfResults"));
-		
-//Test Pagination: Number of Display Result for 3 pages
-		if(dpBoolean("testPagination")){
-			testPagination();
+			
+			//Testing Highlight and quicksearch
+			testHighlightAndQuickSearch(dpString("quickSearchTerm"), dpInt("expectedNumberOfResults"));
+			
+			//Test Pagination: Number of Display Result for 3 pages
+			if(dpBoolean("testPagination")){
+				testPagination();
+			}
+		}catch(Exception e){
+			logError(e.getMessage());
 		}
-		
 	}
 	
 	public void testPagination(){
@@ -199,7 +200,7 @@ public class TS_995 extends TS_995Helper
 			To+=pageSize;		
 			results = find(atDescendant(".class", "Html.TABLE", "class", "x-grid3-row-table"), true);
 			vpManual("Result_Displayed_"+pageSize, pageSize, results.length).performTest();
-			valid = ((String)html_displayingXofX().getProperty(".text")).matches(".*Displaying "+From+" - "+To+" of (\\d)*");
+			valid = ((String)html_displayingXofX().getProperty(".text")).matches(".*Displaying "+From+" - "+To+" of about (\\d)*");
 			vpManual("Pagination_DisplayedCorrectly", true, valid).performTest();
 			From+=pageSize;
 			button_paginationNextButton().click();

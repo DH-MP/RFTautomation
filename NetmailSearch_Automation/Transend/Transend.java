@@ -108,9 +108,9 @@ public class Transend extends TransendHelper
 		sourceFrom_Dropdownwindow().click();
 		logInfo("Open dropdown");
 		logInfo("Selected < "+sourceType+" >");
+		tDropDownFormwindow().inputChars(sourceType.substring(0,2));
 		
 		if(sourceType.contentEquals("Exchange Server 2013")){
-			tDropDownFormwindow().inputChars("Ex");
 			sourceListlist().click(atName(sourceType));
 			sourceExchange2013();	
 		}
@@ -131,7 +131,6 @@ public class Transend extends TransendHelper
 		}
 		
 		if(sourceType.contentEquals("Google Single User") ){	
-			tDropDownFormwindow().inputChars("go");
 			sourceListlist().click(atName("Google Single User"));
 			if(emailSection){
 				sourceGmailEmail();	
@@ -141,7 +140,6 @@ public class Transend extends TransendHelper
 		}
 		
 		if(sourceType.contentEquals("Yahoo (via IMAP)") ){	
-			tDropDownFormwindow().inputChars("ya");
 			sourceListlist().click(atName("Yahoo Mail <i>(via IMAP) </i>"));
 			if(emailSection){
 				sourceYahooEmail();	
@@ -155,6 +153,7 @@ public class Transend extends TransendHelper
 		
 		//TARGET
 		targetTo_DropDownwindow().click();
+		tDropDownFormwindow().inputChars(targetType.substring(0,2));
 		targetListlist().click(atName(targetType));
 		logInfo("Selected targetType < "+targetType+" >");
 		
@@ -229,8 +228,6 @@ public class Transend extends TransendHelper
 					transendMigratorMigrationOptio().inputKeys("{DOWN}");
 				}
 			}
-			logInfo("Finish applying folder setting");
-			folder_OKbutton().click(atPoint(22,10));	
 		}
 		
 		if(!selectedFoldersNoRegexp.isEmpty()){
@@ -246,6 +243,9 @@ public class Transend extends TransendHelper
 			migrationOptionslist().click(RIGHT);
 			contextpopupMenu().click(atPath("Manual Edit"));
 		}
+		
+		logInfo("Finish applying folder setting");
+		folder_OKbutton().click(atPoint(22,10));	
 	}
 	
 	private void sourceExchange2013(){
@@ -321,14 +321,8 @@ public class Transend extends TransendHelper
 	
 	private void sourceGmailEmail(){
 		serverDomainComOrIPAddresstext().click();
-		transendMigratorCProgramDataTr().inputKeys("^a{BKSP}imap.gmail.com;993");
-		logInfo("input imap gmail address");
-		
-		sourceEmailtext().click();
-		sourceEmailtext().click(RIGHT);
-		contextpopupMenu().click(atPath("Select All"));
-		transendMigratorCProgramDataTr().inputKeys("{BKSP}");
-		sourceEmailtext().doubleClick(atPoint(1,1));
+		transendMigratorCProgramDataTr().inputKeys("^a{BKSP}");
+		serverDomainComOrIPAddresstext().click();
 		transendMigratorCProgramDataTr().inputChars(sourceUserEmail);
 		logInfo("Input source user email < "+sourceUserEmail+" > ");
 				

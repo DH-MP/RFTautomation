@@ -104,6 +104,7 @@ public class TS_991_AdvanceSearch_Audit extends TS_991_AdvanceSearch_AuditHelper
 			link_messageAuditTab().click();
 			logInfo("Clicked Audit Tab");
 			waitForloading();
+			sleep(10); //just in case for very large audit files
 			
 			
 			logInfo("Validating Results:"+i);
@@ -210,7 +211,7 @@ public class TS_991_AdvanceSearch_Audit extends TS_991_AdvanceSearch_AuditHelper
 					}
 					
 					if(dpBoolean("tagFlagged")){
-						tagResult.put("tagFlagged", messageHasTag("tagFlagged", new RegularExpression("(?i)Flagged--.*", false)));
+						tagResult.put("Flagged", messageHasTag("Flagged", new RegularExpression("(?i)Flagged--.*", false)));
 					}
 					
 					if(dpBoolean("workProduct")){

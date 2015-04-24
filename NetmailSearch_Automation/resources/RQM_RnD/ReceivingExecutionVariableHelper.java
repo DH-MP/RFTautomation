@@ -20,11 +20,11 @@ import com.rational.test.ft.vp.IFtVerificationPoint;
 import com.ibm.rational.test.ft.object.interfaces.sapwebportal.*;
 /**
  * Script Name   : <b>ReceivingExecutionVariable</b><br>
- * Generated     : <b>2015/02/23 11:41:47 AM</b><br>
+ * Generated     : <b>2015/04/20 9:46:15 PM</b><br>
  * Description   : Helper class for script<br>
  * Original Host : Windows Server 2008 R2 x86 6.1 <br>
  * 
- * @since  February 23, 2015
+ * @since  April 20, 2015
  * @author Administrator
  */
 public abstract class ReceivingExecutionVariableHelper extends utilities.MySuperHelper
@@ -94,6 +94,54 @@ public abstract class ReceivingExecutionVariableHelper extends utilities.MySuper
 	{
 		return new TopLevelTestObject(
                         getMappedTestObject("html_htmlDialog"), anchor, flags);
+	}
+	
+	/**
+	 * List: with default state.
+	 *		.class : .List
+	 * 		.name : null
+	 * 		.classIndex : 0
+	 */
+	protected GuiSubitemTestObject listlist() 
+	{
+		return new GuiSubitemTestObject(
+                        getMappedTestObject("listlist"));
+	}
+	/**
+	 * List: with specific test context and state.
+	 *		.class : .List
+	 * 		.name : null
+	 * 		.classIndex : 0
+	 */
+	protected GuiSubitemTestObject listlist(TestObject anchor, long flags) 
+	{
+		return new GuiSubitemTestObject(
+                        getMappedTestObject("listlist"), anchor, flags);
+	}
+	
+	/**
+	 * TDropDownEditButton: with default state.
+	 *		.text : null
+	 * 		.class : TDropDownEditButton
+	 * 		.name : null
+	 * 		.classIndex : 0
+	 */
+	protected GuiSubitemTestObject tDropDownEditButtonwindow() 
+	{
+		return new GuiSubitemTestObject(
+                        getMappedTestObject("tDropDownEditButtonwindow"));
+	}
+	/**
+	 * TDropDownEditButton: with specific test context and state.
+	 *		.text : null
+	 * 		.class : TDropDownEditButton
+	 * 		.name : null
+	 * 		.classIndex : 0
+	 */
+	protected GuiSubitemTestObject tDropDownEditButtonwindow(TestObject anchor, long flags) 
+	{
+		return new GuiSubitemTestObject(
+                        getMappedTestObject("tDropDownEditButtonwindow"), anchor, flags);
 	}
 	
 	

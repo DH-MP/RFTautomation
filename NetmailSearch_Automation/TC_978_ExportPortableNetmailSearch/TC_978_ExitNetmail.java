@@ -33,6 +33,7 @@ public class TC_978_ExitNetmail extends TC_978_ExitNetmailHelper
 		link_userDD_Logout().click();
 		button_yesbutton().click();
 		yesbutton().click();
+		sleep(150);
 	}
 }
 

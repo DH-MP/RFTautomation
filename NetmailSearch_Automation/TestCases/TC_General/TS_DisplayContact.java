@@ -60,6 +60,8 @@ public class TS_DisplayContact extends TS_DisplayContactHelper
 			wa.setIp(IP);
 			wa.setUserName(adminUserName);
 			wa.setPassword(adminPassword);
+			wa.loadWebadminUUI();
+			wa.login();
 			
 			wa.navigateTree("Archive>Cluster.*>Agents>Archive>ok");
 			wa.archiveAccount("rft@BASE2012@First Organization@User", "GVautomation");

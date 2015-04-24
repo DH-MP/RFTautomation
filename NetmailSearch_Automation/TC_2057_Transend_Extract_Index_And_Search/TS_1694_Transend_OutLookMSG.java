@@ -44,7 +44,7 @@ public class TS_1694_Transend_OutLookMSG extends TS_1694_Transend_OutLookMSGHelp
 	 * @author Administrator
 	 */
 	Process transend = null;
-	private String transendExePath = "C:\\Program Files (x86)\\Transend Migrator\\tmship\\tm11.exe";
+	private String transendExePath = "C:\\Program Files (x86)\\Transend Migrator 12\\tmship\\tm12.exe";
 	private String workSpace = remoteWorkSpace+"\\NetmailSearch_Automation";
 	private String webAdminIP = "http://"+IP+":89";
 	private String webAdminUserName = "netmail";

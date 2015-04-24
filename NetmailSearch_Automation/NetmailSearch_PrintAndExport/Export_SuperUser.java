@@ -389,7 +389,7 @@ public class Export_SuperUser extends Export_SuperUserHelper
 	}
 	
 	public void downloadExportFile(String fileName){
-		if(browserVersion.contentEquals("IE9")){
+		if(browserVersion.contentEquals("IE_9")){
 			downloadExportFile_IE9(fileName);
 		}
 		else if(browserVersion.contains("FF")){
@@ -444,7 +444,7 @@ public class Export_SuperUser extends Export_SuperUserHelper
 		if(exportFiles.length == 1){
 			((GuiTestObject)exportFiles[0]).doubleClick();
 			logInfo("Selected < "+ fileName +" > file to download");
-			sleep(10);
+			sleep(15);
 		}else{
 			logError("Could not find export file by the name < "+ fileName +">");
 		}
@@ -479,7 +479,7 @@ public class Export_SuperUser extends Export_SuperUserHelper
 			}
 		}catch(NullPointerException e){
 			//due to rare chances of not finding object, just wait very long for download to finish
-			sleep(400);
+			sleep(600);
 		}
 		//Close ieNotifcation
 		HelperClass.ieNotificationElement("Close").click();

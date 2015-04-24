@@ -9,6 +9,8 @@ import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.util.PDFTextStripper;
 
 import resources.TC_978_ExportPortableNetmailSearch.TS_1015_Print_NetmailLiteHelper;
+import NetmailSearch_PrintAndExport.Export_SuperUser;
+
 import com.rational.test.ft.*;
 import com.rational.test.ft.object.interfaces.*;
 import com.rational.test.ft.object.interfaces.SAP.*;
@@ -96,14 +98,17 @@ public class TS_1015_Print_NetmailLite extends TS_1015_Print_NetmailLiteHelper
 		
 		if(!dpBoolean("printInBackground")){
 			html_finishPrintWindowClose().click();
+			if(browserVersion.contains("IE")){
+				button_ieDownloadSave().click();
+				sleep(3);
+				button_ieDownloadClose().click();
+				sleep(1);
+				logInfo("Download Saved");
+			}
 		}
 		
 		//Save file, DEFAULT DOWNLOAD LOCATION SHOULD BE DOWNLOADS
-		button_ieDownloadSave().click();
-		sleep(3);
-		button_ieDownloadClose().click();
-		sleep(1);
-		logInfo("Download Saved");
+
 		
 		//Verify pdf
 //		verifyPDF(dpString("expectedFileName_PrintMethod"), dpString("pdfName_PrintMethod"), null);
@@ -206,11 +211,6 @@ public class TS_1015_Print_NetmailLite extends TS_1015_Print_NetmailLiteHelper
 		}
 	}
 	
-	
-	
-	
-	
-	
 	private void downloadBackgroundPrint(){
 		button_backgroundbutton().click();
 		logInfo("clicked print in background");
@@ -242,8 +242,11 @@ public class TS_1015_Print_NetmailLite extends TS_1015_Print_NetmailLiteHelper
 		
 		//Download print 
 		doubleClickExportfile(dpString("pdfName_PrintMethod"));
-		
-		
+		if(browserVersion.contains("FF")){
+			Export_SuperUser esu = new Export_SuperUser();
+			esu.setExportName(dpString("pdfName_PrintMethod"));
+			esu.downloadExportFile(dpString("pdfName_PrintMethod"));
+		}	
 	}
 	
 	

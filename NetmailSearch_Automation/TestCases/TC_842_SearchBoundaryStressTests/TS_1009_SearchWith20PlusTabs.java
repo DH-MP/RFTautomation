@@ -68,7 +68,7 @@ public class TS_1009_SearchWith20PlusTabs extends TS_1009_SearchWith20PlusTabsHe
 		}	
 		
 		mc.saveCurrentCase();
-		sleep(20);
+		sleep(120);
 		browser_htmlBrowser().inputKeys("{F5}");
 		sleep(20);
 		

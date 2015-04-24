@@ -43,7 +43,7 @@ public class TS_1695_Transend_Google extends TS_1695_Transend_GoogleHelper
 	 * @author Administrator
 	 */
 	Process transend = null;
-	private String transendExePath = "C:\\Program Files (x86)\\Transend Migrator\\tmship\\tm11.exe";
+	private String transendExePath = "C:\\Program Files (x86)\\Transend Migrator 12\\tmship\\tm12.exe";
 	private String workSpace = remoteWorkSpace+"\\NetmailSearch_Automation";
 	private String webAdminIP = "http://"+IP+":89";
 	private String webAdminUserName = "netmail";
@@ -106,9 +106,9 @@ public class TS_1695_Transend_Google extends TS_1695_Transend_GoogleHelper
 		
 		t.startSingleMigration();
 			
-		HelperClass.oneBrowserSetup();
-		browser_htmlBrowser().loadUrl(webAdminIP);
-		browser_htmlBrowser().activate();
+//		HelperClass.oneBrowserSetup();
+//		browser_htmlBrowser().loadUrl(webAdminIP);
+//		browser_htmlBrowser().activate();
 	
 		//WebAdmin
 		Storage storage = new Storage();
@@ -169,10 +169,10 @@ public class TS_1695_Transend_Google extends TS_1695_Transend_GoogleHelper
 	
 	private void login(String caseName){
 		//Login
-		NetmailLogin.login();
+		NetmailLogin.login(webAdminUserName, webAdminPassword);
 			
 		//Admin Login
-		adminLogin.selectUserType("Super User");
+//		adminLogin.selectUserType("Super User");
 		if(caseName != null && !caseName.isEmpty()){
 			adminLogin.selectCase(caseName);
 		}else{

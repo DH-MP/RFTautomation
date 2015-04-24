@@ -220,6 +220,18 @@ public class MessageWordListTab_SuperUser extends MessageWordListTab_SuperUserHe
 			msg.doubleClick();
 			sleep(2);
 			waitForloading();
+			try{
+				text_mbSubject().getProperty(".value").toString();
+			}catch(ObjectNotFoundException e){
+				msg.hover();
+				msg.click();
+				msg.doubleClick();
+				sleep(2);
+				waitForloading();
+			}
+			
+			
+			waitForloading();
 			logInfo("Opened message number "+i);
 			logInfo("Validating if word list matches this msg information");
 			text_mbSubject().waitForExistence(120, DISABLED);

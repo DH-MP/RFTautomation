@@ -167,7 +167,7 @@ public class TS_989_SearchTab_NetmailLite extends TS_989_SearchTab_NetmailLiteHe
 	//Verify the search query is cloned
 		GuiTestObject quickSearch = ((GuiTestObject)activeTabBody[0].find(atDescendant(".tag", "INPUT", "id", new RegularExpression("quickSearchField\\d", false)), true)[0]);
 		logInfo("Verifying quick search field of cloned tab");
-		vpManual("searchQueryCloned", quickSearchTerm, quickSearch.getProperty("value") ).performTest();
+		vpManual("searchQueryCloned", quickSearchTerm, quickSearch.getProperty(".value") ).performTest();
 		
 	//Validate the search query is highlighted in clone
 		logInfo("Verifying if search term is highlighted in cloned tab");

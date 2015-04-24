@@ -191,14 +191,18 @@ public class TS_125_Print extends TS_125_PrintHelper
 			
 		}else{
 			html_finishPrintWindowClose().click();
+			if(browserVersion.contains("IE")){
+				//Save file, DEFAULT DOWNLOAD LOCATION SHOULD BE DOWNLOADS
+				button_ieDownload_Save().click();
+				sleep(10);
+				button_ieDownload_Close().click();
+				sleep(1);
+				logInfo("Download Saved");
+			}
 		}
 		
-		//Save file, DEFAULT DOWNLOAD LOCATION SHOULD BE DOWNLOADS
-		button_ieDownload_Save().click();
-		sleep(10);
-		button_ieDownload_Close().click();
-		sleep(1);
-		logInfo("Download Saved");
+
+
 		
 		//Verify pdf
 		String[] masks = {};
@@ -392,7 +396,11 @@ public class TS_125_Print extends TS_125_PrintHelper
 		
 		//Download print 
 		doubleClickExportfile(dpString("pdfName_PrintMethod"));
-		
+		if(browserVersion.contains("FF")){
+			Export_SuperUser esu = new Export_SuperUser();
+			esu.setExportName(dpString("pdfName_PrintMethod"));
+			esu.downloadExportFile(dpString("pdfName_PrintMethod"));
+		}	
 		
 	}
 	

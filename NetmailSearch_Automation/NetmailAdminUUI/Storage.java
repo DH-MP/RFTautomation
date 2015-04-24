@@ -77,7 +77,7 @@ public class Storage extends StorageHelper
 		logInfo("click addButon");
 		
 		if(storageType.contentEquals("File System")){
-			TestObject[] radios = html_divDeviceTypes().find(atDescendant(".type", "radio", ".classIndex", "3"));
+			TestObject[] radios = html_divDeviceTypes().find(atDescendant(".type", "radio", ".classIndex", "4"));
 			((GuiTestObject) radios[0]).click();
 		}		
 		button_nextbutton().click();

@@ -46,7 +46,7 @@ public class TS_ItemCounts extends TS_ItemCountsHelper
 		Common.preferencePageSize(200);
 		waitForloading();
 		
-		TestObject[] folders = HelperClass.navigateLocation("GVautomation>rft").getChildren();
+		TestObject[] folders = null;
 		try{
 			folders = HelperClass.navigateLocation("GVautomation>rft").getChildren();
 		}catch(Exception e){
